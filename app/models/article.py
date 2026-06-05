@@ -16,6 +16,12 @@ class Article(SQLModel, table=True):
     keywords: List[str] = Field(default=[], sa_column=Column(JSON), description="Article keywords")
     md_content: Optional[str] = Field(default=None, sa_column=Column(TEXT), description="Markdown content")
 
+    # Parsing status: imported → analyzing → success/fail
+    status: str = Field(
+        default="imported",
+        description="Article parsing status (imported/analyzing/success/fail)"
+    )
+
     created_at: datetime = Field(default_factory=datetime.utcnow)
     updated_at: datetime = Field(default_factory=datetime.utcnow)
 

@@ -89,6 +89,27 @@
                 </div>
             </div>
 
+            <!-- Article Parsing -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-6">
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">文章解析</h2>
+
+                <p class="text-sm text-gray-600 mb-4">
+                    将文章的 Markdown 内容解析为 JSON 格式，提取各个版块和条目信息。解析后的 JSON 将保存到 data/articles 目录。
+                </p>
+
+                <button
+                    @click="batchParse"
+                    :disabled="batchParsing"
+                    class="px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 disabled:bg-gray-300 disabled:cursor-not-allowed"
+                >
+                    <span x-text="batchParsing ? '解析中...' : '开始批量解析'"></span>
+                </button>
+
+                <div x-show="parseResult" class="mt-4 p-4 rounded-md" :class="parseSuccess ? 'bg-green-50' : 'bg-red-50'">
+                    <p class="text-sm font-medium" :class="parseSuccess ? 'text-green-800' : 'text-red-800'" x-text="parseResult"></p>
+                </div>
+            </div>
+
             <!-- Import Data -->
             <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-6">
                 <h2 class="text-lg font-semibold text-gray-900 mb-4">导入数据</h2>
@@ -164,6 +185,9 @@
                 importResult: null,
                 reindexing: false,
                 reindexResult: null,
+                batchParsing: false,
+                parseResult: null,
+                parseSuccess: false,
                 toast: { show: false, message: '' },
 
                 async init() {
@@ -227,6 +251,32 @@
                         this.showToast('重建失败: ' + error.message);
                     } finally {
                         this.reindexing = false;
+                    }
+                },
+
+                async batchParse() {
+                    this.batchParsing = true;
+                    this.parseResult = null;
+
+                    try {
+                        const response = await fetch('/api/articles/batch-parse', {
+                            method: 'POST'
+                        });
+                        const result = await response.json();
+
+                        if (response.ok) {
+                            this.parseResult = result.message || '批量解析任务已启动';
+                            this.parseSuccess = true;
+                            this.showToast('解析任务已启动');
+                        } else {
+                            this.parseResult = result.error || '启动失败';
+                            this.parseSuccess = false;
+                        }
+                    } catch (error) {
+                        this.parseResult = '启动失败: ' + error.message;
+                        this.parseSuccess = false;
+                    } finally {
+                        this.batchParsing = false;
                     }
                 },
 
