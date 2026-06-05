@@ -326,6 +326,11 @@
                 </div>
             </div>
         </div>
+
+        <!-- Toast -->
+        <div x-show="toast.show" x-transition class="fixed bottom-4 right-4 bg-gray-900 text-white px-6 py-3 rounded-lg shadow-lg z-50">
+            <span x-text="toast.message"></span>
+        </div>
     </div>
 
     <script>
@@ -348,6 +353,7 @@
                 importing: false,
                 importResult: null,
                 importSuccess: false,
+                toast: { show: false, message: '' },
 
                 async init() {
                     await this.loadArticles();
@@ -432,15 +438,22 @@
                         const result = await response.json();
 
                         if (response.ok) {
-                            alert(result.message || '解析任务提交成功，正在解析中');
+                            this.showToast(result.message || '解析任务提交成功，正在解析中');
                             // Update local status to analyzing
                             article.status = 'analyzing';
                         } else {
-                            alert('解析失败: ' + (result.error || '未知错误'));
+                            this.showToast('解析失败: ' + (result.error || '未知错误'));
                         }
                     } catch (error) {
-                        alert('解析失败: ' + error.message);
+                        this.showToast('解析失败: ' + error.message);
                     }
+                },
+
+                showToast(message) {
+                    this.toast = { show: true, message };
+                    setTimeout(() => {
+                        this.toast.show = false;
+                    }, 3000);
                 },
 
                 confirmDelete(article) {
@@ -466,12 +479,13 @@
                             this.deleteDialogOpen = false;
                             this.articleToDelete = null;
                             await this.loadArticles();
+                            this.showToast('删除成功');
                         } else {
                             const result = await response.json();
-                            alert('删除失败: ' + (result.error || '未知错误'));
+                            this.showToast('删除失败: ' + (result.error || '未知错误'));
                         }
                     } catch (error) {
-                        alert('删除失败: ' + error.message);
+                        this.showToast('删除失败: ' + error.message);
                     } finally {
                         this.deleting = false;
                         lucide.createIcons();
