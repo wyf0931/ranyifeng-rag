@@ -60,29 +60,22 @@
 
             <!-- Filter Section -->
             <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 mb-6">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center space-x-4">
-                        <label class="text-sm font-medium text-gray-700">筛选条件:</label>
-                        <div class="relative">
-                            <select x-model="filters.section" @change="applyFilters"
-                                class="h-9 px-3 pr-8 text-sm border border-gray-300 rounded-md bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none appearance-none cursor-pointer hover:bg-gray-50 transition-colors">
-                                <option value="">全部版块</option>
-                                <template x-for="section in sections" :key="section">
-                                    <option :value="section" x-text="section"></option>
-                                </template>
-                            </select>
-                            <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
-                                <svg class="h-4 w-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9 6 6 6-6"></path>
-                                </svg>
-                            </div>
+                <div class="flex items-center space-x-4">
+                    <label class="text-sm font-medium text-gray-700">筛选条件:</label>
+                    <div class="relative">
+                        <select x-model="filters.section" @change="applyFilters"
+                            class="h-9 px-3 pr-8 text-sm border border-gray-300 rounded-md bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none appearance-none cursor-pointer hover:bg-gray-50 transition-colors">
+                            <option value="">全部版块</option>
+                            <template x-for="section in sections" :key="section">
+                                <option :value="section" x-text="section"></option>
+                            </template>
+                        </select>
+                        <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                            <svg class="h-4 w-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9 6 6 6-6"></path>
+                            </svg>
                         </div>
                     </div>
-                    <button @click="openImportDialog"
-                            class="inline-flex items-center px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
-                        <i data-lucide="download" class="w-4 h-4 mr-2"></i>
-                        URL 导入
-                    </button>
                 </div>
             </div>
 
@@ -270,55 +263,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- URL Import Dialog -->
-        <div x-show="importDialogOpen" x-transition class="fixed inset-0 z-50" style="display: none;">
-            <!-- Backdrop -->
-            <div class="fixed inset-0 bg-black/50" @click="closeImportDialog"></div>
-
-            <!-- Dialog -->
-            <div class="fixed z-50 bg-white rounded-lg shadow-xl flex flex-col border border-gray-200"
-                 style="top: 50%; left: 50%; transform: translate(-50%, -50%); width: min(600px, 90vw); max-height: 90vh;">
-                <div class="p-6">
-                    <h2 class="text-lg font-semibold text-gray-900 mb-4">URL 导入</h2>
-
-                    <div class="mb-4">
-                        <label class="block text-sm font-medium text-gray-700 mb-2">请输入 URL（每行一个）</label>
-                        <textarea x-model="importUrls"
-                                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none resize-none"
-                                  rows="8"
-                                  placeholder="https://example.com/article1&#10;https://example.com/article2&#10;https://example.com/article3"></textarea>
-                        <p class="mt-2 text-xs text-gray-500">支持一次性输入多个 URL，每行一个。系统将在后台自动抓取并转换为 Markdown 格式。</p>
-                    </div>
-
-                    <!-- Import Status -->
-                    <div x-show="importResult" class="mb-4 p-4 rounded-md" :class="importSuccess ? 'bg-green-50' : 'bg-red-50'">
-                        <p class="text-sm font-medium" :class="importSuccess ? 'text-green-800' : 'text-red-800'" x-text="importResult"></p>
-                    </div>
-                </div>
-
-                <!-- Close Button -->
-                <button type="button" @click="closeImportDialog"
-                        class="absolute top-4 right-4 rounded-sm text-gray-400 opacity-70 transition-all hover:opacity-100 hover:text-gray-600 focus:outline-none cursor-pointer">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-
-                <!-- Footer -->
-                <div class="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end p-6 border-t border-gray-200">
-                    <button @click="closeImportDialog"
-                            class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md text-gray-700 bg-white border border-gray-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
-                        取消
-                    </button>
-                    <button @click="submitUrls"
-                            :disabled="importing || !importUrls.trim()"
-                            class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
-                        <span x-text="importing ? '处理中...' : '开始导入'"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
     </div>
 
     <script>
@@ -334,11 +278,6 @@
                 pageSize: 20,
                 dialogOpen: false,
                 selectedItem: null,
-                importDialogOpen: false,
-                importUrls: '',
-                importing: false,
-                importResult: null,
-                importSuccess: false,
 
                 async init() {
                     await this.loadItems();
@@ -383,60 +322,6 @@
                     this.selectedItem = null;
                 },
 
-                openImportDialog() {
-                    this.importDialogOpen = true;
-                    this.importUrls = '';
-                    this.importResult = null;
-                },
-
-                closeImportDialog() {
-                    this.importDialogOpen = false;
-                    this.importUrls = '';
-                    this.importResult = null;
-                },
-
-                async submitUrls() {
-                    if (!this.importUrls.trim()) return;
-
-                    this.importing = true;
-                    this.importResult = null;
-
-                    try {
-                        // Parse URLs (split by lines)
-                        const urls = this.importUrls.split('\n')
-                            .map(url => url.trim())
-                            .filter(url => url.length > 0);
-
-                        if (urls.length === 0) {
-                            this.importResult = '请输入至少一个有效的 URL';
-                            this.importSuccess = false;
-                            return;
-                        }
-
-                        const response = await fetch('/api/import-urls', {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ urls })
-                        });
-
-                        const result = await response.json();
-
-                        if (response.ok) {
-                            this.importResult = result.message || `成功提交 ${result.urls_count} 个 URL，正在后台处理中...`;
-                            this.importSuccess = true;
-                            this.importUrls = '';
-                        } else {
-                            this.importResult = result.error || '导入失败';
-                            this.importSuccess = false;
-                        }
-                    } catch (error) {
-                        this.importResult = '导入失败: ' + error.message;
-                        this.importSuccess = false;
-                    } finally {
-                        this.importing = false;
-                    }
-                },
-
                 formatDateShort(dateStr) {
                     if (!dateStr) return '-';
                     const date = new Date(dateStr);
@@ -459,9 +344,6 @@
                 const app = document.querySelector('[x-data]')._x_dataStack[0];
                 if (app.dialogOpen) {
                     app.closeDialog();
-                }
-                if (app.importDialogOpen) {
-                    app.closeImportDialog();
                 }
             }
         });
