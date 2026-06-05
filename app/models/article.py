@@ -22,6 +22,13 @@ class Article(SQLModel, table=True):
         description="Article parsing status (imported/analyzing/success/fail)"
     )
 
+    # LLM parsing usage metrics (all optional)
+    parse_duration: Optional[float] = Field(default=None, description="Parsing duration in seconds")
+    parse_input_tokens: Optional[int] = Field(default=None, description="Input tokens used")
+    parse_output_tokens: Optional[int] = Field(default=None, description="Output tokens generated")
+    parse_cached_tokens: Optional[int] = Field(default=None, description="Cached tokens")
+    parse_output_length: Optional[int] = Field(default=None, description="Output length in characters")
+
     created_at: datetime = Field(default_factory=datetime.utcnow)
     updated_at: datetime = Field(default_factory=datetime.utcnow)
 

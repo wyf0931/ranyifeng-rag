@@ -93,6 +93,7 @@ class MarkdownToJSONService:
         Returns:
             Dict with parsing result status and details
         """
+        import time
         from sqlalchemy import create_engine
 
         engine = create_engine(f"sqlite:///{settings.database_path}")
@@ -110,27 +111,57 @@ class MarkdownToJSONService:
             session.commit()
 
             try:
-                # Call LLM to parse markdown
-                result_json = await self._call_llm(article.md_content)
+                # Start timing
+                start_time = time.time()
 
-                if result_json is None:
+                # Call LLM to parse markdown
+                result = await self._call_llm(article.md_content)
+
+                # End timing
+                duration = time.time() - start_time
+
+                if result is None:
                     article.status = "fail"
                     session.commit()
                     return {"success": False, "error": "Failed to get valid JSON from LLM"}
 
+                result_json = result.get("json")
+                usage = result.get("usage", {})
+
                 # Save JSON file
                 json_path = self._save_json_file(article.number, result_json)
+
+                # Store usage metrics
+                article.parse_duration = round(duration, 2)
+                article.parse_input_tokens = usage.get("prompt_tokens")
+                article.parse_output_tokens = usage.get("completion_tokens")
+                article.parse_cached_tokens = usage.get("cached_tokens")
+                article.parse_output_length = len(result_json.get("title", "")) + sum(
+                    len(item.get("title", "") + (item.get("description", "" or "")))
+                    for section in result_json.get("sections", [])
+                    for item in section.get("items", [])
+                )
 
                 # Update status to success
                 article.status = "success"
                 session.commit()
 
-                logger.info(f"Successfully parsed article {article_id} (#{article.number})")
+                logger.info(
+                    f"Successfully parsed article {article_id} (#{article.number}) "
+                    f"in {duration:.2f}s - "
+                    f"tokens: {usage.get('prompt_tokens', 0)}→{usage.get('completion_tokens', 0)}"
+                )
                 return {
                     "success": True,
                     "article_id": article_id,
                     "number": article.number,
-                    "json_path": str(json_path)
+                    "json_path": str(json_path),
+                    "usage": {
+                        "duration": round(duration, 2),
+                        "input_tokens": usage.get("prompt_tokens"),
+                        "output_tokens": usage.get("completion_tokens"),
+                        "cached_tokens": usage.get("cached_tokens"),
+                    }
                 }
 
             except Exception as e:
@@ -147,7 +178,7 @@ class MarkdownToJSONService:
             markdown_content: The markdown content to parse
 
         Returns:
-            Parsed JSON dict, or None if parsing failed
+            Dict with 'json' (parsed JSON) and 'usage' (token usage), or None if parsing failed
         """
         try:
             response = await self.client.chat.completions.create(
@@ -164,9 +195,24 @@ class MarkdownToJSONService:
             content = response.choices[0].message.content
             logger.debug(f"LLM response length: {len(content)} chars")
 
+            # Extract usage information
+            usage = {
+                "prompt_tokens": response.usage.prompt_tokens if response.usage else 0,
+                "completion_tokens": response.usage.completion_tokens if response.usage else 0,
+                "total_tokens": response.usage.total_tokens if response.usage else 0,
+                "cached_tokens": getattr(response.usage, "cached_tokens", 0) if response.usage else 0,
+            }
+
             # Try to parse JSON
             parsed_json = self._parse_and_validate_json(content)
-            return parsed_json
+
+            if parsed_json is None:
+                return None
+
+            return {
+                "json": parsed_json,
+                "usage": usage
+            }
 
         except Exception as e:
             logger.error(f"Error calling LLM: {e}")
