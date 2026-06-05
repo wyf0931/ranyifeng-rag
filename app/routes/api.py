@@ -78,3 +78,42 @@ def stats():
         })
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+
+@api_bp.route("/items", methods=["GET"])
+def get_items():
+    """Get all items with optional section filter."""
+    try:
+        from sqlmodel import Session, select
+        from app.models import Item, Article
+
+        section_filter = request.args.get("section")
+
+        with db_service.get_session() as session:
+            query = select(Item, Article).join(Article, Item.article_id == Article.id)
+
+            if section_filter:
+                query = query.where(Item.section_name == section_filter)
+
+            results = session.exec(query).all()
+
+            items = []
+            for item, article in results:
+                items.append({
+                    "id": item.id,
+                    "title": item.title,
+                    "link": item.link,
+                    "description": item.description,
+                    "user": item.user,
+                    "user_link": item.user_link,
+                    "images": item.images,
+                    "section_name": item.section_name,
+                    "article_id": item.article_id,
+                    "article_title": article.title,
+                    "article_number": article.number,
+                    "article_link": article.link
+                })
+
+            return jsonify(items)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
