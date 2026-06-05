@@ -102,6 +102,14 @@
                 </form>
             </div>
 
+            <!-- Loading State -->
+            <div x-show="loading" class="text-center py-12">
+                <div class="inline-flex items-center space-x-2 bg-white rounded-lg shadow-sm border border-gray-200 px-6 py-4">
+                    <span class="text-gray-700">可信AI，Thinking</span>
+                    <span class="text-gray-700" x-text="loadingDots"></span>
+                </div>
+            </div>
+
             <!-- Results -->
             <div x-show="result" class="space-y-6">
                 <!-- Answer -->
@@ -194,11 +202,30 @@
             return {
                 query: '',
                 loading: false,
+                loadingDots: '',
                 result: null,
+                dotsInterval: null,
 
                 get cleanAnswer() {
                     if (!this.result?.answer) return '';
                     return cleanMarkdown(this.result.answer);
+                },
+
+                startLoadingAnimation() {
+                    this.loadingDots = '.';
+                    let dotCount = 1;
+                    this.dotsInterval = setInterval(() => {
+                        dotCount = dotCount % 3 + 1;
+                        this.loadingDots = '.'.repeat(dotCount);
+                    }, 500);
+                },
+
+                stopLoadingAnimation() {
+                    if (this.dotsInterval) {
+                        clearInterval(this.dotsInterval);
+                        this.dotsInterval = null;
+                    }
+                    this.loadingDots = '';
                 },
 
                 async submitQuery() {
@@ -206,6 +233,7 @@
 
                     this.loading = true;
                     this.result = null;
+                    this.startLoadingAnimation();
 
                     try {
                         const response = await fetch('/api/query', {
@@ -226,6 +254,7 @@
                         alert('搜索失败: ' + error.message);
                     } finally {
                         this.loading = false;
+                        this.stopLoadingAnimation();
                         lucide.createIcons();
                     }
                 }
