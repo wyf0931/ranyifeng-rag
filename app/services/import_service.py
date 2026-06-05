@@ -3,6 +3,7 @@ from typing import Dict, Any, List
 from sqlmodel import Session, select
 from app.models import Article, Item
 from app.services.database import db_service
+from loguru import logger
 
 
 class ImportService:
@@ -10,11 +11,15 @@ class ImportService:
         self.session = None
 
     def import_from_json(self, json_path: str) -> Dict[str, int]:
-        """Import article data from JSON file."""
+        """Import article data from JSON file. Skips invalid JSON files."""
         import json
 
-        with open(json_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
+        try:
+            with open(json_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, UnicodeDecodeError) as e:
+            logger.warning(f"Skipping invalid JSON file {json_path}: {e}")
+            return {"articles_created": 0, "articles_updated": 0, "items_created": 0, "items_updated": 0}
 
         return self._process_article(data)
 
@@ -92,7 +97,7 @@ class ImportService:
         return stats
 
     def import_from_directory(self, directory: str) -> Dict[str, int]:
-        """Import all JSON files from directory."""
+        """Import all JSON files from directory. Skips invalid JSON files."""
         total_stats = {"articles_created": 0, "articles_updated": 0, "items_created": 0, "items_updated": 0}
 
         articles_dir = Path(directory)
@@ -100,10 +105,14 @@ class ImportService:
             raise FileNotFoundError(f"Directory not found: {directory}")
 
         for json_file in articles_dir.glob("*.json"):
-            print(f"Processing {json_file.name}...")
-            stats = self.import_from_json(str(json_file))
-            for key in total_stats:
-                total_stats[key] += stats[key]
+            logger.info(f"Processing {json_file.name}...")
+            try:
+                stats = self.import_from_json(str(json_file))
+                for key in total_stats:
+                    total_stats[key] += stats[key]
+            except Exception as e:
+                logger.error(f"Error processing {json_file.name}: {e}")
+                continue
 
         return total_stats
 
