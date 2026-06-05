@@ -21,6 +21,13 @@ class ImportService:
             logger.warning(f"Skipping invalid JSON file {json_path}: {e}")
             return {"articles_created": 0, "articles_updated": 0, "items_created": 0, "items_updated": 0}
 
+        # Validate required fields for article structure
+        required_fields = ["title", "link", "number", "sections"]
+        missing_fields = [field for field in required_fields if field not in data]
+        if missing_fields:
+            logger.warning(f"Skipping malformed JSON file {json_path}: missing required fields {missing_fields}")
+            return {"articles_created": 0, "articles_updated": 0, "items_created": 0, "items_updated": 0}
+
         return self._process_article(data)
 
     def _process_article(self, data: Dict[str, Any]) -> Dict[str, int]:
@@ -50,7 +57,7 @@ class ImportService:
             for section in data.get("sections", []):
                 section_name = section["name"]
                 for item_data in section.get("items", []):
-                    item_stats = self._process_item(session, item_data, section_name, article.id)
+                    item_stats = self._process_item(session, item_data, section_name, article.id, article.link)
                     stats["items_created"] += item_stats["items_created"]
                     stats["items_updated"] += item_stats["items_updated"]
 
@@ -59,18 +66,33 @@ class ImportService:
         return stats
 
     def _process_item(
-        self, session: Session, item_data: Dict[str, Any], section_name: str, article_id: int
+        self, session: Session, item_data: Dict[str, Any], section_name: str, article_id: int, article_link: str
     ) -> Dict[str, int]:
-        """Process a single item."""
+        """Process a single item. Uses article_link as default if item link is missing."""
         stats = {"items_created": 0, "items_updated": 0}
 
-        # Check if item exists by link + title
-        existing = session.exec(
-            select(Item).where(
-                Item.link == item_data["link"],
-                Item.title == item_data["title"]
-            )
-        ).first()
+        # Get item link, default to article link if missing or empty
+        item_link = item_data.get("link")
+        if not item_link or item_link.strip() == "":
+            item_link = article_link
+
+        # Check if item exists by link + title (only if link is different from article link)
+        existing = None
+        if item_link and item_link != article_link:
+            existing = session.exec(
+                select(Item).where(
+                    Item.link == item_link,
+                    Item.title == item_data["title"]
+                )
+            ).first()
+        else:
+            # For items using article link, check by title + article_id
+            existing = session.exec(
+                select(Item).where(
+                    Item.title == item_data["title"],
+                    Item.article_id == article_id
+                )
+            ).first()
 
         if existing:
             item = existing
@@ -79,11 +101,12 @@ class ImportService:
             item.user_link = item_data.get("user_link")
             item.images = item_data.get("images", [])
             item.section_name = section_name
+            item.link = item_link
             stats["items_updated"] += 1
         else:
             item = Item(
                 title=item_data["title"],
-                link=item_data["link"],
+                link=item_link,
                 description=item_data.get("description", ""),
                 user=item_data.get("user"),
                 user_link=item_data.get("user_link"),

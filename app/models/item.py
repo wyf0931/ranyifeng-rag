@@ -9,7 +9,7 @@ class Item(SQLModel, table=True):
 
     id: Optional[int] = Field(default=None, primary_key=True)
     title: str = Field(index=True, description="Item title")
-    link: str = Field(description="Item URL")
+    link: Optional[str] = Field(default=None, description="Item URL")
     description: str = Field(default="", description="Item description")
     user: Optional[str] = Field(default=None, description="Submitter username")
     user_link: Optional[str] = Field(default=None, description="Submitter URL")
