@@ -1,4 +1,5 @@
 from typing import Dict, Any, List, TypedDict, Annotated
+from loguru import logger
 from langchain_openai import ChatOpenAI
 from langgraph.graph import StateGraph, END
 from langgraph.checkpoint.memory import MemorySaver
@@ -32,6 +33,7 @@ class RAGService:
         def rewrite_query(state: RAGState) -> RAGState:
             """Rewrite user query for better search."""
             query = state["query"]
+            logger.info(f"[rewrite_query] START - query: {query}")
 
             prompt = f"""请改写以下用户查询信息，作为搜索 keywords。
 
@@ -50,20 +52,24 @@ user query: {query}
             response = self.llm.invoke(prompt)
             state["rewritten_query"] = response.content.strip()
             state["loop_count"] = state.get("loop_count", 0) + 1
+            logger.info(f"[rewrite_query] END - rewritten_query: {state['rewritten_query']}, loop_count: {state['loop_count']}")
             return state
 
         def search(state: RAGState) -> RAGState:
             """Search for relevant content."""
-            query = state.get("rewritten_query", state["query"])
+            query = state.get("rewritten_query") or state["query"]
+            logger.info(f"[search] START - query: {query}")
             results = db_service.search(query, limit=settings.max_search_results)
             state["search_results"] = results
+            logger.info(f"[search] END - found {len(results)} results")
             return state
 
         def think(state: RAGState) -> RAGState:
             """Think about search results and decide if more info needed."""
-            query = state.get("rewritten_query", state["query"])
+            query = state.get("rewritten_query") or state["query"]
             results = state.get("search_results", [])
             loop_count = state.get("loop_count", 0)
+            logger.info(f"[think] START - query: {query}, results_count: {len(results)}, loop_count: {loop_count}")
 
             # Format search results
             context = "\n".join([
@@ -108,12 +114,14 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
             if loop_count >= settings.max_thinking_loops:
                 decision = "ANSWER"
 
+            logger.info(f"[think] END - decision: {decision}, improved_query: {improved_query}")
             return state
 
         def generate_answer(state: RAGState) -> RAGState:
             """Generate final answer based on all search results."""
             query = state["query"]
             results = state.get("search_results", [])
+            logger.info(f"[generate_answer] START - query: {query}, results_count: {len(results)}")
 
             # Build comprehensive context
             context_parts = []
@@ -150,6 +158,7 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
                 "sources": [r["link"] for r in results]
             })
 
+            logger.info(f"[generate_answer] END - answer generated successfully")
             return state
 
         def should_continue(state: RAGState) -> str:
