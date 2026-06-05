@@ -1,4 +1,5 @@
 from flask import Blueprint, request, jsonify
+from loguru import logger
 from app.services.rag_service import rag_service
 from app.services.import_service import import_service
 from app.services.database import db_service
@@ -150,6 +151,7 @@ def get_articles():
                     "number": article.number,
                     "keywords": article.keywords or [],
                     "md_content": article.md_content,
+                    "status": article.status or "imported",
                     "created_at": article.created_at.isoformat() if article.created_at else None,
                     "updated_at": article.updated_at.isoformat() if article.updated_at else None
                 })
@@ -521,6 +523,64 @@ def import_urls():
             "message": f"Processing {len(valid_urls)} URLs in background",
             "task_id": result.get("task_id"),
             "urls_count": len(valid_urls)
+        })
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@api_bp.route("/articles/<int:article_id>/parse", methods=["POST"])
+def parse_article(article_id):
+    """Parse a single article's markdown content to JSON."""
+    try:
+        from app.services.md_to_json_service import md_to_json_service
+        import threading
+
+        def _parse_task():
+            import asyncio
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+            try:
+                result = loop.run_until_complete(md_to_json_service.parse_article(article_id))
+                logger.info(f"Parse task completed for article {article_id}: {result}")
+            finally:
+                loop.close()
+
+        # Run in background thread
+        thread = threading.Thread(target=_parse_task, daemon=True)
+        thread.start()
+
+        return jsonify({
+            "success": True,
+            "message": "解析任务提交成功，正在解析中"
+        })
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@api_bp.route("/articles/batch-parse", methods=["POST"])
+def batch_parse_articles():
+    """Parse all articles with markdown content to JSON."""
+    try:
+        from app.services.md_to_json_service import md_to_json_service
+        import threading
+
+        def _batch_parse_task():
+            import asyncio
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+            try:
+                result = loop.run_until_complete(md_to_json_service.batch_parse_imported_articles())
+                logger.info(f"Batch parse completed: {result}")
+            finally:
+                loop.close()
+
+        # Run in background thread
+        thread = threading.Thread(target=_batch_parse_task, daemon=True)
+        thread.start()
+
+        return jsonify({
+            "success": True,
+            "message": "批量解析任务已启动，正在后台处理中..."
         })
     except Exception as e:
         return jsonify({"error": str(e)}), 500
