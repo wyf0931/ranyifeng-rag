@@ -33,12 +33,48 @@ fi
 # Function to kill process on a port
 kill_port() {
     local port=$1
-    local pids=$(lsof -ti :$port 2>/dev/null)
-    if [ -n "$pids" ]; then
-        echo -e "${YELLOW}Killing processes on port $port: $pids${NC}"
+    local max_attempts=3
+    local attempt=1
+
+    while [ $attempt -le $max_attempts ]; do
+        local pids=$(lsof -ti :$port 2>/dev/null)
+        if [ -z "$pids" ]; then
+            return 0
+        fi
+
+        echo -e "${YELLOW}Attempt $attempt/$max_attempts: Killing processes on port $port: $pids${NC}"
+
+        # Check if any process is ControlCe (AirPlay Receiver)
+        local has_controlce=false
+        for pid in $pids; do
+            if ps -p "$pid" -o command= 2>/dev/null | grep -q "ControlCe"; then
+                has_controlce=true
+                echo -e "${RED}Warning: ControlCe (AirPlay Receiver) detected on port $port${NC}"
+                echo -e "${YELLOW}This is a macOS system service that may restart automatically${NC}"
+                echo -e "${YELLOW}Consider disabling AirPlay Receiver in System Settings or use a different port${NC}"
+            fi
+        done
+
+        # Kill all processes
         echo "$pids" | xargs kill -9 2>/dev/null || true
-        sleep 1
-    fi
+
+        # Wait and check if port is free
+        sleep 2
+        pids=$(lsof -ti :$port 2>/dev/null)
+        if [ -z "$pids" ]; then
+            if [ "$has_controlce" = true ]; then
+                echo -e "${GREEN}Port $port freed (but ControlCe may restart)${NC}"
+            else
+                echo -e "${GREEN}Port $port freed successfully${NC}"
+            fi
+            return 0
+        fi
+
+        attempt=$((attempt + 1))
+    done
+
+    echo -e "${RED}Failed to free port $port after $max_attempts attempts${NC}"
+    return 1
 }
 
 # Function to check and kill port if occupied
@@ -48,14 +84,9 @@ ensure_port_free() {
     if [ -n "$pids" ]; then
         echo -e "${YELLOW}Port $port is occupied by: $pids${NC}"
         echo -e "${YELLOW}Attempting to free the port...${NC}"
-        kill_port "$port"
-        # Verify port is free
-        pids=$(lsof -ti :$port 2>/dev/null)
-        if [ -n "$pids" ]; then
-            echo -e "${RED}Failed to free port $port${NC}"
+        if ! kill_port "$port"; then
             return 1
         fi
-        echo -e "${GREEN}Port $port freed successfully${NC}"
     fi
     return 0
 }
