@@ -33,7 +33,12 @@ class RAGService:
             """Rewrite user query for better search."""
             query = state["query"]
 
-            prompt = f"""请改写以下用户查询信息，作为搜索 keywords 。
+            prompt = f"""请改写以下用户查询信息，作为搜索 keywords。
+例如：user query: "如何提升学习效率？"
+rewritten keywords: "提升 学习效率 方法 技巧"
+user query: "为什么我的代码报错之前没有输出？"
+rewritten keywords: "代码 报错 没有 输出 原因"
+
 原始查询: {query}
 
 只返回重写后的keywords，不要其他内容。"""
