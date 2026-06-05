@@ -117,3 +117,101 @@ def get_items():
             return jsonify(items)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+
+@api_bp.route("/dictionary", methods=["GET"])
+def get_dictionary():
+    """Get all words from jieba custom dictionary."""
+    try:
+        from pathlib import Path
+        from app.config import settings
+
+        dict_path = Path(settings.jieba_dict_path)
+        words = []
+
+        if dict_path.exists():
+            with open(dict_path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith('#'):
+                        parts = line.split()
+                        if parts:
+                            words.append(parts[0])
+
+        return jsonify(words)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@api_bp.route("/dictionary", methods=["POST"])
+def add_dictionary_word():
+    """Add a word to jieba custom dictionary."""
+    try:
+        from pathlib import Path
+        from app.config import settings
+
+        data = request.get_json()
+        word = data.get("word", "").strip()
+
+        if not word:
+            return jsonify({"error": "Word is required"}), 400
+
+        dict_path = Path(settings.jieba_dict_path)
+        dict_path.parent.mkdir(parents=True, exist_ok=True)
+
+        # Read existing words
+        existing_words = set()
+        if dict_path.exists():
+            with open(dict_path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith('#'):
+                        parts = line.split()
+                        if parts:
+                            existing_words.add(parts[0])
+
+        # Check if word already exists
+        if word in existing_words:
+            return jsonify({"success": True, "message": "Word already exists", "skipped": True})
+
+        # Append new word with default frequency and noun tag
+        with open(dict_path, 'a', encoding='utf-8') as f:
+            f.write(f"{word} 5 n\n")
+
+        return jsonify({"success": True, "message": "Word added successfully", "skipped": False})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@api_bp.route("/dictionary/<word>", methods=["DELETE"])
+def delete_dictionary_word(word):
+    """Delete a word from jieba custom dictionary."""
+    try:
+        from pathlib import Path
+        from app.config import settings
+
+        word = word.strip()
+        if not word:
+            return jsonify({"error": "Word is required"}), 400
+
+        dict_path = Path(settings.jieba_dict_path)
+
+        if not dict_path.exists():
+            return jsonify({"error": "Dictionary file not found"}), 404
+
+        # Read all lines and filter out the word
+        lines = []
+        with open(dict_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                parts = line.strip().split()
+                if parts and parts[0] == word:
+                    continue  # Skip this line (delete the word)
+                lines.append(line)
+
+        # Write back without the deleted word
+        with open(dict_path, 'w', encoding='utf-8') as f:
+            f.writelines(lines)
+
+        return jsonify({"success": True, "message": "Word deleted successfully"})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500

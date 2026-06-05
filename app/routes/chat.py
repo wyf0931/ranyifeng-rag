@@ -9,6 +9,12 @@ def index():
     return render_template("chat.html")
 
 
+@chat_bp.route("/dictionary")
+def dictionary():
+    """Render dictionary management page."""
+    return render_template("dictionary.html")
+
+
 @chat_bp.route("/dataset")
 def dataset():
     """Render dataset management page."""

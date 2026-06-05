@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>词典管理 - 科技爱好者周刊 RAG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        [x-cloak] { display: none !important; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div x-data="dictionaryApp()" x-cloak class="min-h-screen">
+        <!-- Header -->
+        <header class="bg-white border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue-600"></i>
+                        <h1 class="text-xl font-bold text-gray-900">词典管理</h1>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <a href="/" class="text-gray-600 hover:text-gray-900 flex items-center space-x-1">
+                            <i data-lucide="search" class="w-5 h-5"></i>
+                            <span>搜索</span>
+                        </a>
+                        <a href="/dataset" class="text-gray-600 hover:text-gray-900 flex items-center space-x-1">
+                            <i data-lucide="database" class="w-5 h-5"></i>
+                            <span>数据集</span>
+                        </a>
+                        <a href="/admin" class="text-gray-600 hover:text-gray-900 flex items-center space-x-1">
+                            <i data-lucide="settings" class="w-5 h-5"></i>
+                            <span>管理</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-7xl mx-auto px-4 py-6">
+            <!-- Header with Add Button -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 mb-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h2 class="text-lg font-semibold text-gray-900">自定义分词词典</h2>
+                        <p class="text-sm text-gray-600 mt-1">管理 jieba 自定义分词，用于优化搜索效果</p>
+                    </div>
+                    <button @click="showAddDialog = true"
+                            class="inline-flex items-center px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
+                        <i data-lucide="plus" class="w-4 h-4 mr-2"></i>
+                        新增词条
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dictionary Words Grid -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                <!-- Loading State -->
+                <div x-show="loading" class="text-center py-12">
+                    <div class="inline-block animate-spin rounded-full h-8 w-8 border-4 border-gray-300 border-t-blue-600"></div>
+                    <p class="text-gray-600 mt-4">加载中...</p>
+                </div>
+
+                <!-- Empty State -->
+                <div x-show="!loading && words.length === 0" class="text-center py-12">
+                    <i data-lucide="file-text" class="w-16 h-16 text-gray-300 mx-auto mb-4"></i>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">暂无词条</h3>
+                    <p class="text-gray-500">点击"新增词条"添加自定义分词</p>
+                </div>
+
+                <!-- Words Grid -->
+                <div x-show="!loading && words.length > 0">
+                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">
+                        <template x-for="(word, index) in words" :key="index">
+                            <div class="group relative bg-gray-50 hover:bg-red-50 border border-gray-200 hover:border-red-200 rounded-lg px-3 py-2 text-center transition-colors">
+                                <span class="text-sm text-gray-700" x-text="word"></span>
+                                <!-- Delete Button -->
+                                <button @click="confirmDelete(word)"
+                                        class="absolute -top-2 -right-2 bg-red-500 hover:bg-red-600 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity focus:opacity-100 focus:outline-none">
+                                    <i data-lucide="trash-2" class="w-3 h-3"></i>
+                                </button>
+                            </div>
+                        </template>
+                    </div>
+                    <div class="mt-4 text-sm text-gray-500">
+                        共 <span x-text="words.length" class="font-semibold text-gray-900"></span> 个词条
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Add Word Dialog -->
+        <div x-show="showAddDialog" class="fixed inset-0 z-50 flex items-center justify-center p-4" style="display: none;">
+            <div class="absolute inset-0 bg-black/50" @click="showAddDialog = false"></div>
+            <div class="relative bg-white rounded-lg shadow-xl max-w-md w-full p-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">新增词条</h3>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">词条</label>
+                        <input type="text"
+                               x-model="newWord"
+                               @keyup.enter="addWord"
+                               class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                               placeholder="输入要添加的词条">
+                        <p class="text-xs text-gray-500 mt-1">建议输入专有名词、技术术语等需要精确分词的词汇</p>
+                    </div>
+                    <div class="flex justify-end space-x-3">
+                        <button @click="showAddDialog = false"
+                                class="px-4 py-2 text-sm font-medium rounded-md text-gray-700 bg-white border border-gray-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                            取消
+                        </button>
+                        <button @click="addWord"
+                                :disabled="!newWord.trim() || adding"
+                                class="px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                            <span x-show="!adding" class="flex items-center">
+                                <i data-lucide="save" class="w-4 h-4 mr-2"></i>
+                                保存
+                            </span>
+                            <span x-show="adding" class="flex items-center">
+                                <div class="animate-spin rounded-full h-4 w-4 border-2 border-white border-t-transparent mr-2"></div>
+                                保存中...
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delete Confirmation Dialog -->
+        <div x-show="showDeleteDialog" class="fixed inset-0 z-50 flex items-center justify-center p-4" style="display: none;">
+            <div class="absolute inset-0 bg-black/50" @click="showDeleteDialog = false"></div>
+            <div class="relative bg-white rounded-lg shadow-xl max-w-sm w-full p-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">确认删除</h3>
+                <p class="text-sm text-gray-600 mb-4">
+                    确定要删除词条 "<span x-text="wordToDelete" class="font-medium text-gray-900"></span>" 吗？
+                </p>
+                <div class="flex justify-end space-x-3">
+                    <button @click="showDeleteDialog = false"
+                            class="px-4 py-2 text-sm font-medium rounded-md text-gray-700 bg-white border border-gray-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                        取消
+                    </button>
+                    <button @click="deleteWord"
+                            :disabled="deleting"
+                            class="px-4 py-2 text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 disabled:bg-gray-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2">
+                        <span x-show="!deleting" class="flex items-center">
+                            <i data-lucide="trash-2" class="w-4 h-4 mr-2"></i>
+                            删除
+                        </span>
+                        <span x-show="deleting" class="flex items-center">
+                            <div class="animate-spin rounded-full h-4 w-4 border-2 border-white border-t-transparent mr-2"></div>
+                            删除中...
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function dictionaryApp() {
+            return {
+                words: [],
+                loading: true,
+                showAddDialog: false,
+                showDeleteDialog: false,
+                newWord: '',
+                wordToDelete: '',
+                adding: false,
+                deleting: false,
+                message: { show: false, text: '', type: 'success' },
+
+                async init() {
+                    await this.loadWords();
+                    lucide.createIcons();
+                },
+
+                async loadWords() {
+                    this.loading = true;
+                    try {
+                        const response = await fetch('/api/dictionary');
+                        this.words = await response.json();
+                    } catch (error) {
+                        this.showMessage('加载词条失败', 'error');
+                    } finally {
+                        this.loading = false;
+                    }
+                },
+
+                async addWord() {
+                    if (!this.newWord.trim()) return;
+
+                    this.adding = true;
+                    try {
+                        const response = await fetch('/api/dictionary', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ word: this.newWord.trim() })
+                        });
+
+                        const result = await response.json();
+
+                        if (response.ok) {
+                            if (result.skipped) {
+                                this.showMessage('词条已存在，已跳过', 'success');
+                            } else {
+                                this.showMessage('词条添加成功', 'success');
+                            }
+                            this.newWord = '';
+                            this.showAddDialog = false;
+                            await this.loadWords();
+                        } else {
+                            this.showMessage(result.error || '添加失败', 'error');
+                        }
+                    } catch (error) {
+                        this.showMessage('添加失败: ' + error.message, 'error');
+                    } finally {
+                        this.adding = false;
+                        lucide.createIcons();
+                    }
+                },
+
+                confirmDelete(word) {
+                    this.wordToDelete = word;
+                    this.showDeleteDialog = true;
+                },
+
+                async deleteWord() {
+                    this.deleting = true;
+                    try {
+                        const response = await fetch(`/api/dictionary/${encodeURIComponent(this.wordToDelete)}`, {
+                            method: 'DELETE'
+                        });
+
+                        if (response.ok) {
+                            this.showMessage('词条删除成功', 'success');
+                            this.showDeleteDialog = false;
+                            await this.loadWords();
+                        } else {
+                            const result = await response.json();
+                            this.showMessage(result.error || '删除失败', 'error');
+                        }
+                    } catch (error) {
+                        this.showMessage('删除失败: ' + error.message, 'error');
+                    } finally {
+                        this.deleting = false;
+                        lucide.createIcons();
+                    }
+                },
+
+                showMessage(text, type = 'success') {
+                    this.message = { show: true, text, type };
+                    setTimeout(() => {
+                        this.message.show = false;
+                    }, 3000);
+                }
+            };
+        }
+
+        // Handle escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const app = document.querySelector('[x-data]')._x_dataStack[0];
+                if (app) {
+                    app.showAddDialog = false;
+                    app.showDeleteDialog = false;
+                }
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
