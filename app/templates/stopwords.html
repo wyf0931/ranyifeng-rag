@@ -54,11 +54,12 @@
                 <h1 class="text-2xl font-bold text-gray-900">停用词管理</h1>
             </div>
 
-            <!-- Action Bar -->
+            <!-- Header with Add and Import Buttons -->
             <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 mb-6">
                 <div class="flex items-center justify-between">
-                    <div class="text-sm text-gray-500">
-                        共 <span x-text="stopwords.length" class="font-semibold text-gray-900"></span> 个停用词
+                    <div>
+                        <h2 class="text-lg font-semibold text-gray-900">自定义停用词列表</h2>
+                        <p class="text-sm text-gray-600 mt-1">管理 jieba 停用词，用于过滤无意义的词汇</p>
                     </div>
                     <div class="flex items-center space-x-3">
                         <button @click="openImportDialog"
@@ -76,26 +77,32 @@
             </div>
 
             <!-- Stopwords Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
-                <template x-for="word in stopwords" :key="word">
-                    <div class="group relative bg-white rounded-lg shadow-sm border border-gray-200 p-3 hover:shadow-md transition-shadow">
-                        <span class="text-sm text-gray-700" x-text="word"></span>
-                        <button @click="confirmDelete(word)"
-                                class="absolute top-1 right-1 opacity-0 group-hover:opacity-100 transition-opacity p-1 text-red-500 hover:text-red-700 rounded">
-                            <i data-lucide="trash-2" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-                </template>
-            </div>
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                <!-- Empty State -->
+                <div x-show="stopwords.length === 0" class="text-center py-12">
+                    <i data-lucide="filter" class="w-16 h-16 text-gray-300 mx-auto mb-4"></i>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">暂无停用词</h3>
+                    <p class="text-gray-500">点击"添加停用词"添加自定义停用词</p>
+                </div>
 
-            <!-- Empty State -->
-            <div x-show="stopwords.length === 0" class="text-center py-12">
-                <i data-lucide="filter" class="w-12 h-12 text-gray-300 mx-auto mb-4"></i>
-                <p class="text-gray-500">暂无停用词</p>
-                <button @click="openAddDialog"
-                        class="mt-4 inline-flex items-center px-4 py-2 text-sm font-medium rounded-md text-blue-600 bg-blue-50 hover:bg-blue-100 transition-colors">
-                    添加第一个停用词
-                </button>
+                <!-- Words Grid -->
+                <div x-show="stopwords.length > 0">
+                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">
+                        <template x-for="(word, index) in stopwords" :key="index">
+                            <div class="group relative bg-gray-50 hover:bg-red-50 border border-gray-200 hover:border-red-200 rounded-lg px-3 py-2 text-center transition-colors">
+                                <span class="text-sm text-gray-700" x-text="word"></span>
+                                <!-- Delete Button -->
+                                <button @click="confirmDelete(word)"
+                                        class="absolute -top-2 -right-2 bg-red-500 hover:bg-red-600 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity focus:opacity-100 focus:outline-none">
+                                    <i data-lucide="trash-2" class="w-3 h-3"></i>
+                                </button>
+                            </div>
+                        </template>
+                    </div>
+                    <div class="mt-4 text-sm text-gray-500">
+                        共 <span x-text="stopwords.length" class="font-semibold text-gray-900"></span> 个停用词
+                    </div>
+                </div>
             </div>
         </main>
 
