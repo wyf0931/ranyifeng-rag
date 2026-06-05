@@ -34,14 +34,18 @@ class RAGService:
             query = state["query"]
 
             prompt = f"""请改写以下用户查询信息，作为搜索 keywords。
-例如：user query: "如何提升学习效率？"
+
+output should be concise keywords that capture the essence of the query, suitable for searching a database of article titles. Use space to separate keywords.
+
+example:
+user query: "如何提升学习效率？"
 rewritten keywords: "提升 学习效率 方法 技巧"
+
 user query: "为什么我的代码报错之前没有输出？"
 rewritten keywords: "代码 报错 没有 输出 原因"
 
-原始查询: {query}
-
-只返回重写后的keywords，不要其他内容。"""
+user query: {query}
+"""
 
             response = self.llm.invoke(prompt)
             state["rewritten_query"] = response.content.strip()

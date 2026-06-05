@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>科技爱好者周刊 RAG</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@mariozechner/mini-lit@0.3.0/dist/MarkdownBlock.js"></script>
     <style>
         [x-cloak] { display: none !important; }
         .markdown-content h1, .markdown-content h2, .markdown-content h3 {
@@ -141,7 +141,7 @@
                         <span>AI 回答</span>
                     </h2>
                     <div class="prose prose-sm max-w-none">
-                        <markdown-block x-bind:content="result?.answer || ''"></markdown-block>
+                        <div class="markdown-content" x-html="marked.parse(result?.answer || '')"></div>
                     </div>
                 </div>
             </div>
@@ -163,6 +163,9 @@
     </div>
 
     <script>
+        // Make marked available globally for Alpine.js
+        window.marked = marked;
+
         function chatApp() {
             return {
                 query: '',

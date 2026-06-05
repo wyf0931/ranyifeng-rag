@@ -10,10 +10,8 @@ Prefix dict has been built successfully.
  * Restarting with stat
 Building prefix dict from the default dictionary ...
 Loading model from cache /var/folders/5v/700s3sm52515s850tx6tbtsc0000gn/T/jieba.cache
-Loading model cost 0.219 seconds.
+Loading model cost 0.235 seconds.
 Prefix dict has been built successfully.
  * Debugger is active!
- * Debugger PIN: 476-734-820
-127.0.0.1 - - [05/Jun/2026 18:06:28] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [05/Jun/2026 18:06:29] "GET /dataset HTTP/1.1" 200 -
-127.0.0.1 - - [05/Jun/2026 18:06:29] "GET /api/items HTTP/1.1" 200 -
+ * Debugger PIN: 239-823-840
+127.0.0.1 - - [05/Jun/2026 18:12:10] "POST /api/query HTTP/1.1" 200 -
