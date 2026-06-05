@@ -87,7 +87,7 @@ start() {
 
     # Start Flask in background
     cd "$PROJECT_ROOT"
-    nohup "$VENV_DIR/bin/python3" run.py > "$LOG_FILE" 2>&1 &
+    nohup uv run python run.py > "$LOG_FILE" 2>&1 &
 
     echo $! > "$PID_FILE"
 
