@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Operations script for RAG system
-# Usage: ./bin/ops.sh [start|stop|restart|logs|status]
+# Usage: ./bin/ops.sh [start|stop|restart|logs|status] [options]
 
 set -e
 
@@ -30,7 +30,43 @@ if [ -f "$ENV_FILE" ]; then
     export $(cat "$ENV_FILE" | grep -v '^#' | xargs)
 fi
 
+# Function to kill process on a port
+kill_port() {
+    local port=$1
+    local pids=$(lsof -ti :$port 2>/dev/null)
+    if [ -n "$pids" ]; then
+        echo -e "${YELLOW}Killing processes on port $port: $pids${NC}"
+        echo "$pids" | xargs kill -9 2>/dev/null || true
+        sleep 1
+    fi
+}
+
+# Function to check and kill port if occupied
+ensure_port_free() {
+    local port=$1
+    local pids=$(lsof -ti :$port 2>/dev/null)
+    if [ -n "$pids" ]; then
+        echo -e "${YELLOW}Port $port is occupied by: $pids${NC}"
+        echo -e "${YELLOW}Attempting to free the port...${NC}"
+        kill_port "$port"
+        # Verify port is free
+        pids=$(lsof -ti :$port 2>/dev/null)
+        if [ -n "$pids" ]; then
+            echo -e "${RED}Failed to free port $port${NC}"
+            return 1
+        fi
+        echo -e "${GREEN}Port $port freed successfully${NC}"
+    fi
+    return 0
+}
+
 start() {
+    # Parse optional --port argument
+    if [[ "$1" == "--port" && -n "$2" ]]; then
+        PORT="$2"
+        export FLASK_PORT="$PORT"
+    fi
+
     if [ -f "$PID_FILE" ]; then
         PID=$(cat "$PID_FILE")
         if ps -p "$PID" > /dev/null 2>&1; then
@@ -41,7 +77,13 @@ start() {
         fi
     fi
 
-    echo -e "${GREEN}Starting Flask server...${NC}"
+    # Ensure port is free
+    if ! ensure_port_free "$PORT"; then
+        echo -e "${RED}Failed to start Flask - port $PORT is in use${NC}"
+        return 1
+    fi
+
+    echo -e "${GREEN}Starting Flask server on port $PORT...${NC}"
 
     # Start Flask in background
     cd "$PROJECT_ROOT"
@@ -91,9 +133,15 @@ stop() {
 }
 
 restart() {
+    # Parse optional --port argument
+    if [[ "$1" == "--port" && -n "$2" ]]; then
+        PORT="$2"
+        export FLASK_PORT="$PORT"
+    fi
+
     stop
     sleep 1
-    start
+    start "$@"
 }
 
 logs() {
@@ -126,13 +174,15 @@ status() {
 # Main
 case "${1:-}" in
     start)
-        start
+        shift
+        start "$@"
         ;;
     stop)
         stop
         ;;
     restart)
-        restart
+        shift
+        restart "$@"
         ;;
     logs)
         logs
@@ -141,7 +191,11 @@ case "${1:-}" in
         status
         ;;
     *)
-        echo "Usage: $0 [start|stop|restart|logs|status]"
+        echo "Usage: $0 [start|stop|restart|logs|status] [--port PORT]"
+        echo "Examples:"
+        echo "  $0 start              # Start on default port 5000"
+        echo "  $0 start --port 8000  # Start on port 8000"
+        echo "  $0 restart --port 8000 # Restart on port 8000"
         exit 1
         ;;
 esac
