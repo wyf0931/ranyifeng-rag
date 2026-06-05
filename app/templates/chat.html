@@ -185,21 +185,6 @@
         // Make marked available globally for Alpine.js
         window.marked = marked;
 
-        // Clean markdown formatting issues
-        function cleanMarkdown(text) {
-            if (!text) return '';
-
-            // Fix bold formatting with spaces/punctuation around **
-            // Convert ** "text" ** to **"text"**
-            text = text.replace(/\*\*\s+([^\s*])/, '**$1');  // Remove space after opening **
-            text = text.replace(/([^\s*])\s+\*\*/, '$1**');  // Remove space before closing **
-            // Fix ** "text" ** style
-            text = text.replace(/\*\*\s+"([^"]+)"\s+\*\*/g, '**"$1"**');
-            text = text.replace(/\*\*\s+'([^']+)'\s+\*\*/g, "**'$1'**");
-
-            return text;
-        }
-
         function chatApp() {
             return {
                 query: '',
@@ -209,8 +194,7 @@
                 dotsInterval: null,
 
                 get cleanAnswer() {
-                    if (!this.result?.answer) return '';
-                    return cleanMarkdown(this.result.answer);
+                    return this.result?.answer || '';
                 },
 
                 startLoadingAnimation() {
