@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理面板 - 科技爱好者周刊 RAG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        [x-cloak] { display: none !important; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div x-data="adminApp()" x-cloak class="min-h-screen">
+        <!-- Header -->
+        <header class="bg-white border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="settings" class="w-8 h-8 text-blue-600"></i>
+                        <h1 class="text-xl font-bold text-gray-900">管理面板</h1>
+                    </div>
+                    <a href="/" class="text-gray-600 hover:text-gray-900 flex items-center space-x-1">
+                        <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                        <span>返回搜索</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-7xl mx-auto px-4 py-6">
+            <!-- Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-gray-600">文章总数</p>
+                            <p class="text-2xl font-bold text-gray-900" x-text="stats.articles || '-'"></p>
+                        </div>
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue-500"></i>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-gray-600">条目总数</p>
+                            <p class="text-2xl font-bold text-gray-900" x-text="stats.items || '-'"></p>
+                        </div>
+                        <i data-lucide="list" class="w-8 h-8 text-green-500"></i>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-gray-600">系统状态</p>
+                            <p class="text-lg font-bold text-green-600">运行中</p>
+                        </div>
+                        <i data-lucide="check-circle" class="w-8 h-8 text-green-500"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Import Data -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-6">
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">导入数据</h2>
+
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">文件或目录路径</label>
+                        <input
+                            type="text"
+                            x-model="importPath"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="data/articles 或 data/article-example.json"
+                        >
+                    </div>
+
+                    <div class="flex space-x-3">
+                        <button
+                            @click="importData"
+                            :disabled="importing || !importPath.trim()"
+                            class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed"
+                        >
+                            <span x-text="importing ? '导入中...' : '开始导入'"></span>
+                        </button>
+                    </div>
+
+                    <!-- Import Results -->
+                    <div x-show="importResult" class="mt-4 bg-blue-50 rounded-lg p-4">
+                        <h3 class="font-medium text-gray-900 mb-2">导入结果</h3>
+                        <div class="text-sm text-gray-700 space-y-1">
+                            <p>新建文章: <span x-text="importResult?.articles_created || 0"></span></p>
+                            <p>更新文章: <span x-text="importResult?.articles_updated || 0"></span></p>
+                            <p>新建条目: <span x-text="importResult?.items_created || 0"></span></p>
+                            <p>更新条目: <span x-text="importResult?.items_updated || 0"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reindex -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">重建索引</h2>
+
+                <p class="text-sm text-gray-600 mb-4">
+                    在更新 jieba 分词词典后，需要重建全文搜索索引。
+                </p>
+
+                <button
+                    @click="reindex"
+                    :disabled="reindexing"
+                    class="px-6 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 disabled:bg-gray-300 disabled:cursor-not-allowed"
+                >
+                    <span x-text="reindexing ? '重建中...' : '重建索引'"></span>
+                </button>
+
+                <div x-show="reindexResult" class="mt-4 bg-green-50 rounded-lg p-4">
+                    <p class="text-sm text-green-700" x-text="reindexResult"></p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Toast -->
+        <div x-show="toast.show" x-transition class="fixed bottom-4 right-4 bg-gray-900 text-white px-6 py-3 rounded-lg shadow-lg">
+            <span x-text="toast.message"></span>
+        </div>
+    </div>
+
+    <script>
+        function adminApp() {
+            return {
+                stats: {},
+                importPath: 'data/articles',
+                importing: false,
+                importResult: null,
+                reindexing: false,
+                reindexResult: null,
+                toast: { show: false, message: '' },
+
+                async init() {
+                    await this.loadStats();
+                    lucide.createIcons();
+                },
+
+                async loadStats() {
+                    try {
+                        const response = await fetch('/api/stats');
+                        this.stats = await response.json();
+                    } catch (error) {
+                        this.showToast('加载统计信息失败');
+                    }
+                },
+
+                async importData() {
+                    if (!this.importPath.trim()) return;
+
+                    this.importing = true;
+                    this.importResult = null;
+
+                    try {
+                        const response = await fetch('/api/import', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ path: this.importPath })
+                        });
+
+                        const result = await response.json();
+
+                        if (response.ok) {
+                            this.importResult = result.stats;
+                            await this.loadStats();
+                            this.showToast('导入成功');
+                        } else {
+                            this.showToast('导入失败: ' + result.error);
+                        }
+                    } catch (error) {
+                        this.showToast('导入失败: ' + error.message);
+                    } finally {
+                        this.importing = false;
+                    }
+                },
+
+                async reindex() {
+                    this.reindexing = true;
+                    this.reindexResult = null;
+
+                    try {
+                        const response = await fetch('/api/reindex', { method: 'POST' });
+                        const result = await response.json();
+
+                        if (response.ok) {
+                            this.reindexResult = result.message;
+                            this.showToast('索引重建成功');
+                        } else {
+                            this.showToast('重建失败: ' + result.error);
+                        }
+                    } catch (error) {
+                        this.showToast('重建失败: ' + error.message);
+                    } finally {
+                        this.reindexing = false;
+                    }
+                },
+
+                showToast(message) {
+                    this.toast = { show: true, message };
+                    setTimeout(() => {
+                        this.toast.show = false;
+                    }, 3000);
+                }
+            };
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>

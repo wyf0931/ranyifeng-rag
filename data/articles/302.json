@@ -1,0 +1,413 @@
+{
+	"title": "科技爱好者周刊（第 302 期）：创业虽然好，不敢推荐了",
+	"link": "https://www.ruanyifeng.com/blog/2024/05/weekly-issue-302.html",
+	"number": "302",
+	"sections": [
+		{
+			"name": "封面图",
+			"items": [
+				{
+					"title": "形似灯笼的稻田塔",
+					"link": "https://www.gooood.cn/the-lantern-in-the-paddy-field-china-by-powerchina-huadong-engineering-corporation-limited-air-colab-studio.htm",
+					"description": "宁波奉化在稻田里建了一个形似灯笼的塔，高23米，成为当地的景观与大地艺术品。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202405/bg2024053001.webp"
+					]
+				}
+			]
+		},
+		{
+			"name": "创业虽然好，不敢推荐了",
+			"items": [
+				{
+					"title": "保罗·格拉汉姆谈创业观点的转变",
+					"link": "https://www.paulgraham.com/google.html",
+					"description": "分析当前创业环境变化，指出创业成功率下降、高薪难获、打工也能学新技术，建议年轻人先在大公司积累再考虑创业。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202405/bg2024052606.webp"
+					]
+				}
+			]
+		},
+		{
+			"name": "活动",
+			"items": [
+				{
+					"title": "稀土开发者大会2024",
+					"link": "https://conf.juejin.cn/xdc2024/?utm_source=ryf",
+					"description": "6月28-29日在北京举办的大型开发者活动，含12个分论坛与70多场前沿技术演讲，支持早鸟票购票与现场直播。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202405/bg2024053007.webp"
+					]
+				}
+			]
+		},
+		{
+			"name": "科技动态",
+			"items": [
+				{
+					"title": "阶梯草地",
+					"link": "https://news.cqnews.net/1/detail/1242225478734929920/web/content_1242225478734929920.html",
+					"description": "上海网红阶梯草地，带树荫遮阳，适合上班族午休打卡，提升绿地实用价值。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202405/bg2024052910.webp"
+					]
+				},
+				{
+					"title": "空气蛋白质",
+					"link": "https://www.speciesunite.com/news-stories/future-of-food-this-company-just-opened-the-worlds-first-air-protein-factory",
+					"description": "芬兰公司利用微生物和空气中的二氧化碳合成蛋白质粉末，过程类似酿酒，已用于制作巧克力。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202404/bg2024042411.webp"
+					]
+				},
+				{
+					"title": "毕业现金",
+					"link": "https://www.npr.org/2024/05/23/1252943784/a-billionaire-surprised-graduates-onstage-with-cash-but-its-not-all-theirs-to-keep",
+					"description": "麻省大学毕业演讲企业家赠送现金，要求毕业生将一半送给需要的人，分享给予的快乐。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202405/bg2024052605.webp"
+					]
+				},
+				{
+					"title": "破解电子钱包",
+					"link": "https://www.wired.com/story/roboform-password-3-million-dollar-crypto-wallet/",
+					"description": "黑客利用RoboForm早期版本Bug，成功找回2013年存储的300万美元比特币钱包密码。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202405/bg2024053002.webp"
+					]
+				}
+			]
+		},
+		{
+			"name": "工具",
+			"items": [
+				{
+					"title": "雷池网站防护软件",
+					"link": "https://waf-ce.chaitin.cn/",
+					"description": "开源WAF项目，基于Nginx的反向代理，智能语义分析过滤恶意请求，GitHub 9000+ star。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202405/bg2024052708.webp"
+					]
+				},
+				{
+					"title": "SocialScreenshots",
+					"link": "https://socialscreenshots.com/editor",
+					"description": "在线截图美化软件。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202405/bg2024052607.webp"
+					]
+				},
+				{
+					"title": "Sink",
+					"link": "https://github.com/ccbikai/Sink",
+					"description": "基于Cloudflare的短链接应用，带有访问统计。",
+					"user": "@ccbikai",
+					"user_link": "https://github.com/ruanyf/weekly/issues/4529",
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202405/bg2024052702.webp"
+					]
+				},
+				{
+					"title": "PicImpact",
+					"link": "https://github.com/besscroft/PicImpact",
+					"description": "基于Next.js的Web相册程序。",
+					"user": "@besscroft",
+					"user_link": "https://github.com/ruanyf/weekly/issues/4526",
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202405/bg2024052801.webp"
+					]
+				},
+				{
+					"title": "Gallery-Portfolio",
+					"link": "https://github.com/linyuxuanlin/Gallery-Portfolio",
+					"description": "开源瀑布流照片展示程序，后端支持Cloudflare R2。",
+					"user": "@linyuxuanlin",
+					"user_link": "https://github.com/ruanyf/weekly/issues/4535",
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202405/bg2024053004.webp"
+					]
+				},
+				{
+					"title": "widget-qrcode",
+					"link": "https://github.com/mumuy/widget-qrcode",
+					"description": "网页二维码web component组件，支持自定义风格与Logo。",
+					"user": "@mumuy",
+					"user_link": "https://github.com/ruanyf/weekly/issues/4530",
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202405/bg2024052802.webp"
+					]
+				},
+				{
+					"title": "ChatTTS",
+					"link": "https://github.com/2noise/ChatTTS",
+					"description": "专为对话场景设计的文本转语音模型，支持中英文。",
+					"user": "@JoeDeanx",
+					"user_link": "https://github.com/ruanyf/weekly/issues/4546",
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202405/bg2024053005.webp"
+					]
+				},
+				{
+					"title": "KeepChatGPT",
+					"link": "https://github.com/xcanwin/KeepChatGPT",
+					"description": "为ChatGPT页面增强功能的油猴脚本。",
+					"user": "@Y024",
+					"user_link": "https://github.com/ruanyf/weekly/issues/4548",
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202405/bg2024053006.webp"
+					]
+				},
+				{
+					"title": "Mail-in-a-Box",
+					"link": "https://github.com/mail-in-a-box/mailinabox",
+					"description": "封装好的邮件服务器程序，快速搭建个人电子邮件服务。",
+					"user": null,
+					"user_link": null,
+					"images": []
+				},
+				{
+					"title": "Subtitle",
+					"link": "https://github.com/innovatorved/subtitle",
+					"description": "使用Whisper ASR模型进行语音识别并生成本地视频字幕的Python程序。",
+					"user": null,
+					"user_link": null,
+					"images": []
+				},
+				{
+					"title": "cobalt",
+					"link": "https://github.com/wukko/cobalt",
+					"description": "开源视频下载工具，支持B站、Youtube、Instagram、Twitter等。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202311/bg2023112701.webp"
+					]
+				},
+				{
+					"title": "LLM 交互式图表",
+					"link": "https://columns.ai/chatgpt",
+					"description": "用户输入描述即可自动生成图表的网站。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202405/bg2024052501.webp"
+					]
+				},
+				{
+					"title": "tldraw",
+					"link": "https://tldraw.dev/introduction",
+					"description": "React组件，用于实现网页画板功能。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202311/bg2023112707.webp"
+					]
+				}
+			]
+		},
+		{
+			"name": "文章",
+			"items": [
+				{
+					"title": "GitHub 的评论附件漏洞",
+					"link": "https://www.bleepingcomputer.com/news/security/github-comments-abused-to-push-malware-via-microsoft-repo-urls/",
+					"description": "指出GitHub论坛附件URL的迷惑性漏洞，被用于分发恶意软件。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202404/bg2024042203.webp"
+					]
+				},
+				{
+					"title": "2200美元的 MacBook 不支持双屏幕",
+					"link": "https://notes.nokun.eu/post/2024-05-26-expensive-laptops-dont-pro/",
+					"description": "新款MacBook Pro 14 M3芯片竟然不支持屏幕盖合时的双屏显示。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202405/bg2024052703.webp"
+					]
+				},
+				{
+					"title": "span 元素可以干什么",
+					"link": "https://onlyspans.net/",
+					"description": "收集HTML span 元素的各种创意用法案例。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202404/bg2024042205.webp"
+					]
+				},
+				{
+					"title": "如何在 JavaScript 中快速读取文件",
+					"link": "https://lemire.me/blog/2024/03/12/how-to-read-files-quickly-in-javascript/",
+					"description": "比较JavaScript读取文件的5种方法及性能差异。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202403/bg2024031404.webp"
+					]
+				},
+				{
+					"title": "如何使用 mac 内置的 OCR",
+					"link": "https://blog.greg.technology/2024/01/02/how-do-you-ocr-on-a-mac.html",
+					"description": "教程介绍如何巧妙使用macOS自带的OCR文字识别功能。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202401/bg2024010702.webp"
+					]
+				},
+				{
+					"title": "为什么我的代码报错之前没有输出",
+					"link": "https://blog.yelinaung.com/posts/what-happened-to-my-print/",
+					"description": "科普C语言内置行缓冲机制如何影响代码执行结果与报错显示。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202401/bg2024010710.webp"
+					]
+				}
+			]
+		},
+		{
+			"name": "资源",
+			"items": [
+				{
+					"title": "方块中的方块",
+					"link": "https://kingbird.myphotos.cc/packing/squares_in_squares.html",
+					"description": "收集能容纳n个单位正方形的最小正方形算法与可视化。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202311/bg2023111315.webp"
+					]
+				},
+				{
+					"title": "掌握比特币：开放区块链编程",
+					"link": "https://github.com/bitcoinbook/bitcoinbook/blob/develop/BOOK.md",
+					"description": "免费阅读的英文电子书，讲解比特币与区块链编程。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202405/bg2024052701.webp"
+					]
+				},
+				{
+					"title": "Docland",
+					"link": "https://docland.io/",
+					"description": "快速查找Java API的网站。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202405/bg2024052704.webp"
+					]
+				},
+				{
+					"title": "矢量数据库介绍",
+					"link": "https://zilliz.com/blog?tag=39&page=2",
+					"description": "介绍矢量数据库的文章集合，讲解相似性搜索基础。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202307/bg2023071310.webp"
+					]
+				}
+			]
+		},
+		{
+			"name": "图片",
+			"items": [
+				{
+					"title": "真实的月球照片",
+					"link": "https://old.reddit.com/r/space/comments/wtl9fj/two_years_ago_i_teamed_up_with_a_fellow_redditor/",
+					"description": "天文爱好者耗时两年合成的高清月球照片，还原月球真实色彩，微红为富铁区，蓝色为富钛区。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202208/bg2022082201.webp"
+					]
+				},
+				{
+					"title": "磁带点播机",
+					"link": "https://www.scopeofwork.net/2023-01-30/",
+					"description": "1972年松下发布的可自动连续播放多盘磁带的复古点播机。",
+					"user": null,
+					"user_link": null,
+					"images": [
+						"https://cdn.beekka.com/blogimg/asset/202312/bg2023121708.webp"
+					]
+				}
+			]
+		},
+		{
+			"name": "文摘",
+			"items": [
+				{
+					"title": "低利率与低犯罪率之间的惊人联系",
+					"link": "https://thecrimereport.org/2016/12/06/the-startling-link-between-low-interest-rates-and-low-crime/",
+					"description": "研究发现低利率会降低犯罪率，因偿债压力减轻并促进经济繁荣就业增加。",
+					"user": null,
+					"user_link": null,
+					"images": []
+				},
+				{
+					"title": "AI 最好被理解为一种新的数字物种",
+					"link": "https://futurism.com/microsoft-executive-ai-digital-species",
+					"description": "预测AI将被视为数字伴侣，成为人生旅程的新伙伴。",
+					"user": "Mustafa Suleyman",
+					"user_link": null,
+					"images": []
+				},
+				{
+					"title": "AI 将所有软件工程师变成了机器学习工程师",
+					"link": "https://olshansky.substack.com/p/vibe-checks-are-all-you-need",
+					"description": "认为AI技术将促使所有软件工程师转型为机器学习工程师。",
+					"user": "Olshansky",
+					"user_link": null,
+					"images": []
+				},
+				{
+					"title": "房价大幅上涨不会创造财富，而是重新分配财富",
+					"link": "https://www.theguardian.com/australia-news/2023/nov/27/australian-housing-wealth-is-meaningless-destructive-and-fundamentally-changing-our-society",
+					"description": "房价上涨仅是财富再分配，会让继承和运气凌驾于教育与努力之上。",
+					"user": "英国卫报",
+					"user_link": null,
+					"images": []
+				}
+			]
+		},
+		{
+			"name": "言论",
+			"items": [
+				{
+					"title": "勇敢并不意味着不害怕",
+					"link": "https://news.ycombinator.com/item?id=40487188",
+					"description": "真正的勇敢是克服恐惧，坚持完成必须做的事情。",
+					"user": "Hacker News 读者",
+					"user_link": null,
+					"images": []
+				}
+			]
+		}
+	]
+}
