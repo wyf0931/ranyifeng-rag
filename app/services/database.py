@@ -75,6 +75,9 @@ class DatabaseService:
 
     def search(self, query: str, limit: int = 5) -> List[Dict[str, Any]]:
         """Search using FTS5 with jieba tokenization."""
+        if not query or not query.strip():
+            return []
+
         conn = sqlite3.connect(self.db_path)
         conn.row_factory = sqlite3.Row
         cursor = conn.cursor()
@@ -82,11 +85,14 @@ class DatabaseService:
         # Tokenize query with jieba
         tokens = jieba.lcut(query)
 
-        # Filter out single characters and common stop words
+        # Filter out single characters, whitespace, and common stop words
         # Use OR query for better recall
-        search_tokens = [t for t in tokens if len(t) > 1]
+        search_tokens = [t for t in tokens if len(t) > 1 and t.strip()]
         if not search_tokens:
-            search_tokens = tokens
+            search_tokens = [t for t in tokens if t.strip()]
+
+        if not search_tokens:
+            return []
 
         # Use OR query to match any token
         search_query = " OR ".join(search_tokens)
