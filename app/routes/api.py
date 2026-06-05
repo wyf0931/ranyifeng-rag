@@ -131,7 +131,7 @@ def get_articles():
         search = request.args.get("search", "")
 
         with db_service.get_session() as session:
-            query = select(Article).order_by(Article.number.desc())
+            query = select(Article)
 
             if search:
                 query = query.where(
@@ -153,6 +153,15 @@ def get_articles():
                     "created_at": article.created_at.isoformat() if article.created_at else None,
                     "updated_at": article.updated_at.isoformat() if article.updated_at else None
                 })
+
+            # Sort by number as integer (descending)
+            def sort_key(article):
+                try:
+                    return -int(article['number'])  # Negative for descending
+                except (ValueError, TypeError):
+                    return 0  # Non-numeric numbers go to end
+
+            articles.sort(key=sort_key)
 
             return jsonify(articles)
     except Exception as e:
