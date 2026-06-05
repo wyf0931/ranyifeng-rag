@@ -69,6 +69,13 @@
 
         <!-- Main Content -->
         <main class="flex-1 max-w-6xl mx-auto w-full px-4 py-6">
+            <!-- Empty State -->
+            <div x-show="!result && !loading" class="text-center py-12">
+                <i data-lucide="search" class="w-16 h-16 text-gray-300 mx-auto mb-4"></i>
+                <h3 class="text-lg font-medium text-gray-900 mb-2">开始搜索</h3>
+                <p class="text-gray-500">输入问题，从阮一峰科技爱好者周刊中找到答案</p>
+            </div>
+
             <!-- Search Input Bar -->
             <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 mb-6">
                 <form @submit.prevent="submitQuery" class="flex items-center space-x-3">
@@ -89,13 +96,6 @@
                         <span>搜</span>
                     </button>
                 </form>
-            </div>
-
-            <!-- Empty State -->
-            <div x-show="!result && !loading" class="text-center py-12">
-                <i data-lucide="search" class="w-16 h-16 text-gray-300 mx-auto mb-4"></i>
-                <h3 class="text-lg font-medium text-gray-900 mb-2">开始搜索</h3>
-                <p class="text-gray-500">输入问题，从阮一峰科技爱好者周刊中找到答案</p>
             </div>
 
             <!-- Results -->
