@@ -158,6 +158,31 @@ def get_articles():
         return jsonify({"error": str(e)}), 500
 
 
+@api_bp.route("/articles/<int:article_id>", methods=["DELETE"])
+def delete_article(article_id):
+    """Delete an article by ID."""
+    try:
+        from sqlmodel import Session, select, delete
+        from app.models import Article, Item
+
+        with db_service.get_session() as session:
+            # Check if article exists
+            article = session.get(Article, article_id)
+            if not article:
+                return jsonify({"error": "Article not found"}), 404
+
+            # Delete associated items first
+            session.exec(delete(Item).where(Item.article_id == article_id))
+
+            # Delete the article
+            session.delete(article)
+            session.commit()
+
+        return jsonify({"success": True, "message": "Article deleted successfully"})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
 @api_bp.route("/dictionary", methods=["GET"])
 def get_dictionary():
     """Get all words from jieba custom dictionary."""
