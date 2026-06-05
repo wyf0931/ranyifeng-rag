@@ -167,13 +167,14 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
         # Build graph
         workflow = StateGraph(RAGState)
 
-        workflow.add_node("rewrite", rewrite_query)
+        # workflow.add_node("rewrite", rewrite_query)
         workflow.add_node("search", search)
         workflow.add_node("think", think)
         workflow.add_node("generate", generate_answer)
 
-        workflow.set_entry_point("rewrite")
-        workflow.add_edge("rewrite", "search")
+        # workflow.set_entry_point("rewrite")
+        workflow.set_entry_point("search")
+        # workflow.add_edge("rewrite", "search")
         workflow.add_edge("search", "think")
 
         workflow.add_conditional_edges(
