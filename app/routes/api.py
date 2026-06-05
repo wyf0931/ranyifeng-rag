@@ -152,6 +152,11 @@ def get_articles():
                     "keywords": article.keywords or [],
                     "md_content": article.md_content,
                     "status": article.status or "imported",
+                    "parse_duration": article.parse_duration,
+                    "parse_input_tokens": article.parse_input_tokens,
+                    "parse_output_tokens": article.parse_output_tokens,
+                    "parse_cached_tokens": article.parse_cached_tokens,
+                    "parse_output_length": article.parse_output_length,
                     "created_at": article.created_at.isoformat() if article.created_at else None,
                     "updated_at": article.updated_at.isoformat() if article.updated_at else None
                 })
