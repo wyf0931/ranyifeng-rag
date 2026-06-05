@@ -120,6 +120,44 @@ def get_items():
         return jsonify({"error": str(e)}), 500
 
 
+@api_bp.route("/articles", methods=["GET"])
+def get_articles():
+    """Get all articles with optional filter."""
+    try:
+        from sqlmodel import Session, select
+        from app.models import Article
+
+        search = request.args.get("search", "")
+
+        with db_service.get_session() as session:
+            query = select(Article).order_by(Article.number.desc())
+
+            if search:
+                query = query.where(
+                    (Article.title.contains(search)) |
+                    (Article.number.contains(search))
+                )
+
+            results = session.exec(query).all()
+
+            articles = []
+            for article in results:
+                articles.append({
+                    "id": article.id,
+                    "title": article.title,
+                    "link": article.link,
+                    "number": article.number,
+                    "keywords": article.keywords or [],
+                    "md_content": article.md_content,
+                    "created_at": article.created_at.isoformat() if article.created_at else None,
+                    "updated_at": article.updated_at.isoformat() if article.updated_at else None
+                })
+
+            return jsonify(articles)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
 @api_bp.route("/dictionary", methods=["GET"])
 def get_dictionary():
     """Get all words from jieba custom dictionary."""

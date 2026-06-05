@@ -21,6 +21,12 @@ def dataset():
     return render_template("dataset.html")
 
 
+@chat_bp.route("/articles")
+def articles():
+    """Render articles management page."""
+    return render_template("articles.html")
+
+
 @chat_bp.route("/admin")
 def admin():
     """Render admin page."""
