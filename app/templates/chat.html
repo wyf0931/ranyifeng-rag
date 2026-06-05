@@ -188,6 +188,10 @@
         // Clean markdown formatting issues
         function cleanMarkdown(text) {
             if (!text) return '';
+
+            // Fix list numbering: "1.Item" → "1. Item"
+            text = text.replace(/(\d+)\.([^\s])/g, '$1. $2');
+
             // Fix bold formatting with spaces/punctuation around **
             // Convert ** "text" ** to **"text"**
             text = text.replace(/\*\*\s+([^\s*])/, '**$1');  // Remove space after opening **
@@ -195,6 +199,7 @@
             // Fix ** "text" ** style
             text = text.replace(/\*\*\s+"([^"]+)"\s+\*\*/g, '**"$1"**');
             text = text.replace(/\*\*\s+'([^']+)'\s+\*\*/g, "**'$1'**");
+
             return text;
         }
 
