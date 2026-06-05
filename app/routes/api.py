@@ -317,6 +317,109 @@ def delete_stopword(word):
         return jsonify({"error": str(e)}), 500
 
 
+@api_bp.route("/dictionary/batch", methods=["POST"])
+def batch_import_dictionary():
+    """Batch import words to jieba custom dictionary."""
+    try:
+        from pathlib import Path
+        from app.config import settings
+
+        data = request.get_json()
+        words = data.get("words", [])
+
+        if not words:
+            return jsonify({"error": "Words are required"}), 400
+
+        dict_path = Path(settings.jieba_dict_path)
+        dict_path.parent.mkdir(parents=True, exist_ok=True)
+
+        # Read existing words
+        existing_words = set()
+        if dict_path.exists():
+            with open(dict_path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    parts = line.strip().split()
+                    if parts:
+                        existing_words.add(parts[0])
+
+        # Count new and skipped words
+        added_count = 0
+        skipped_count = 0
+
+        # Append new words
+        with open(dict_path, 'a', encoding='utf-8') as f:
+            for word in words:
+                word = word.strip()
+                if word and word not in existing_words:
+                    f.write(f"{word} 5 n\n")
+                    existing_words.add(word)
+                    added_count += 1
+                else:
+                    skipped_count += 1
+
+        return jsonify({
+            "success": True,
+            "message": f"Batch import completed: {added_count} added, {skipped_count} skipped",
+            "added": added_count,
+            "skipped": skipped_count
+        })
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@api_bp.route("/stopwords/batch", methods=["POST"])
+def batch_import_stopwords():
+    """Batch import words to jieba stopwords file."""
+    try:
+        from pathlib import Path
+        from app.config import settings
+
+        data = request.get_json()
+        words = data.get("words", [])
+
+        if not words:
+            return jsonify({"error": "Words are required"}), 400
+
+        stopwords_path = Path(settings.jieba_stopwords_path)
+        stopwords_path.parent.mkdir(parents=True, exist_ok=True)
+
+        # Read existing words
+        existing_words = set()
+        if stopwords_path.exists():
+            with open(stopwords_path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith('#'):
+                        existing_words.add(line)
+
+        # Count new and skipped words
+        added_count = 0
+        skipped_count = 0
+
+        # Append new words
+        with open(stopwords_path, 'a', encoding='utf-8') as f:
+            for word in words:
+                word = word.strip()
+                if word and word not in existing_words:
+                    f.write(f"{word}\n")
+                    existing_words.add(word)
+                    added_count += 1
+                else:
+                    skipped_count += 1
+
+        # Reload stopwords in database service
+        db_service.reload_stopwords()
+
+        return jsonify({
+            "success": True,
+            "message": f"Batch import completed: {added_count} added, {skipped_count} skipped",
+            "added": added_count,
+            "skipped": skipped_count
+        })
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
 @api_bp.route("/import-urls", methods=["POST"])
 def import_urls():
     """Import articles from URLs using trafilatura."""
