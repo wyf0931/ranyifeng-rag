@@ -1,0 +1,400 @@
+{
+  "title": "科技爱好者周刊（第 391 期）：AI 的贫富分化",
+  "link": "https://www.ruanyifeng.com/blog/2026/04/weekly-issue-391.html",
+  "number": 391,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "AI 的贫富分化",
+          "link": "",
+          "description": "我越来越觉得，AI 跟其他技术不一样，不仅带来技术变革，还会带来社会变革。\n\n简单说，AI 会带来贫富分化。\n\n其他技术实际上会消灭贫富分化，实现\"消费者平等\"，即穷人和富人消费的东西是一样的。\n\n比如，大家喝一样的可口可乐，用一样的苹果手机，开一样的特斯拉。甚至互联网也是如此，世界首富马斯克和你用一样的网站、一样的手机 App。\n\n但是，AI 模型不是这样。**在大模型面前，穷人和富人是不平等的**。\n\n在未来，普通人肯定用不起顶级的大模型。其实，现在就是如此了，最贵的 AI 编程套餐是 Claude Code 的 Max 套餐，月费200美元，很多人已经用不起了。\n\nOpenAI 曾经设想过[月费2万美元的套餐](https://www.thepaper.cn/newsDetail_forward_30320495)，提供最顶级、无限量的大模型服务。\n\n![](https://cdn.beekka.com/blogimg/asset/202603/bg2026032207.webp)\n\n要是真的推出，只有富豪才用得起。\n\n这反映了一个简单的事实：**费用越贵，模型效果越好**。因为模型的效果与算力相关，更多的算力、更大的上下文、更多的参数，都需要钱。\n\n这跟工业品完全相反。工业品有规模效应，产量越高，单位成本越低。一旦大规模生产，价格就会越来越便宜。\n\n但是，**大模型不存在规模效应**，模型的大规模生产需要更多的服务器，这并不会让单位成本降低，反而可能因为扩建机房，改造电路和水路，而变得更贵。\n\n未来社会大概是这样的：富人和穷人用不同的模型。最顶级模型的服务----规划、咨询、生成内容、自动化......----需要支付高昂的使用费，而普通人就使用免费模型，效果当然也很普通。\n\n不过，我也看到马斯克[最近说](https://wap.cj.sina.cn/7x24/4762771)，未来还有另一种可能。\n\n![](https://cdn.beekka.com/blogimg/asset/202603/bg2026032206.webp)\n\n他的意思是，算力本质上是能源转化的一种形式。人类最终会实现廉价能源的大量供应（空间太阳能？），所以算力将变得足够便宜，所有人都将用最好的模型。\n\n可能吗？我不知道，感觉还是前一种情况更现实。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026032207.webp",
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026032206.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "模型能力的一种衡量方法",
+          "link": "https://emptysqua.re/blog/review-measuring-ai-ability-to-complete-long-software-tasks/",
+          "description": "怎么衡量大模型的能力？\n\n现在的方法是使用一个测试集，去计算大模型的分数。它的缺点是，只能用于横向比较，很难衡量进步速度。\n\n最近，一篇论文提出了[一种新的衡量方法](https://emptysqua.re/blog/review-measuring-ai-ability-to-complete-long-software-tasks/)。\n\n科学家首先计算，人类完成某一项任务需要多少时间。比如，计算 4 + 5 + 7，人类需要2秒，而计算 37 * 52 * 19，可能需要1分钟。\n\n然后，测试大模型能否以50%的成功率完成这项任务。\n\n研究发现，GPT-2 以50%成功率能够完成的任务，时间范围是两秒；Claude 3.7 Sonnet 是50分钟；O3 接近两小时；Opus 4.6 约为12小时。\n\n也就是说，人类需要12小时才能完成的任务，Opus 4.6 的成功概率是50%。\n\n![](https://cdn.beekka.com/blogimg/asset/202604/bg2026040201.webp)\n\n结果就是上图，可以发现，大模型的进化速度在对数坐标下是一根直线。\n\n**每7个月，大模型能够以50%成功率完成的任务，时间范围扩大一倍**。按照这个趋势，大模型将在2027年至2031年间，以50%的成功率完成人类专家需要一个月才能完成的任务。\n\n如果这篇论文正确，就意味着年底发布的模型，将比年初强一倍。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026040201.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "用户协议的彩蛋",
+          "link": "https://www.cape.co/blog/easter-egg-in-privacy-policy",
+          "description": "软件服务的用户协议，又长又难懂，很少有用户阅读，但是里面有很多重要内容。\n\n一家美国通信运营商，为了表示自己很重视用户权益，鼓励大家阅读《用户协议》，并偷偷在里面加入了一个彩蛋。\n\n![](https://cdn.beekka.com/blogimg/asset/202603/bg2026033101.webp)\n\n上图高亮的句子写道：\"如果你读到这句话，请发邮件到我们的信箱，赢取免费的瑞士旅游。\"\n\n上线二周后，才有人发邮件，询问这事是否真实。由于只有一个人来信，所以她就免费去瑞士了。\n\n从这件事可以看出，即使有彩蛋，也没人阅读《用户协议》。我现在的做法是让大模型帮忙，询问\"这份协议有哪些对用户不利的地方\"，很快就得到了答案。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026033101.webp"
+          ]
+        },
+        {
+          "title": "触摸屏指甲油",
+          "link": "https://www.livescience.com/chemistry/chemistry-student-develops-clear-polish-that-turns-your-fingernail-into-a-touch-screen-stylus",
+          "description": "广泛使用的电容式触摸屏，有一个问题，就是戴手套使用会失灵。\n\n原因是它要求触摸物（比如手指）必须导电，这样屏幕才会产生电场扰动，从而确定触摸的位置。\n\n![](https://cdn.beekka.com/blogimg/asset/202603/bg2026032802.webp)\n\n解决方法也很简单，就是在手套指尖涂一层指甲油，指甲油里面的金属碎屑可以导电。\n\n美国的一名化学系本科生，在学习化妆品化学时，发明了一种改进型的透明指甲油，专门用于戴手套使用触摸屏。\n\n这种指甲油是透明的，涂在手套上看不见，也可以涂在裸甲上，当作抛光剂。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026032802.webp"
+          ]
+        },
+        {
+          "title": "Copilot 插入广告",
+          "link": "https://github.com/search?q=%22%E2%9A%A1+Quickly+spin+up+copilot+coding+tasks%22&type=pullrequests",
+          "description": "Copilot 是 GitHub 推出的 AI 助手，上周有用户发现，它会自动插入广告。\n\n![](https://cdn.beekka.com/blogimg/asset/202604/bg2026040106.webp)\n\n上图是 Copilot 自动提交的[一个 Pull Request](https://github.com/rab781/RabTradebot/pull/77)，它在提交说明的结尾（红框处）加入了一个广告，介绍应用程序 Raycast。\n\n在 GitHub [搜索一下](https://github.com/search?q=%22%E2%9A%A1+Quickly+spin+up+copilot+coding+tasks%22&type=pullrequests)，就会发现已经有超过11,400个 PR 都包含了相同的广告词。\n\n经过用户抗议，GitHub 暂止停止了这个功能。但这是一个危险的信号，表示 GitHub 想利用用户增加收入。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026040106.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "小米 MiMo v2 Pro 评测",
+          "link": "https://decrypt.co/362633/xiaomi-mimo-v2-pro-review-so-good-mistaken-deepseek-v4",
+          "description": "小米发布了 MiMo V2 系列大模型，本文是国外媒体的评测，给出了很高的评价。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026033002.webp"
+          ]
+        },
+        {
+          "title": "我用 AI 生成了一个 JavaScript 引擎",
+          "link": "https://p.ocmatos.com/blog/jsse-a-javascript-engine-built-by-an-agent.html",
+          "description": "作者用六周时间，生成了一个100%通过 test262 测试集的 JavaScript 引擎，涵盖所有98,426个场景。本文是对这件事的介绍。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026040105.webp"
+          ]
+        },
+        {
+          "title": "解剖 .claude/ 目录",
+          "link": "https://blog.dailydoseofds.com/p/anatomy-of-the-claude-folder",
+          "description": "Claude Code 会生成 .claude/ 子目录，所有 AI 处理的底层数据都放在里面，本文研究这个目录到底有什么。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026033114.webp"
+          ]
+        },
+        {
+          "title": "一致性哈希介绍",
+          "link": "https://eli.thegreenplace.net/2025/consistent-hashing",
+          "description": "一致性哈希（Consistent hashing）是一种缓存定位算法，在增加或减少缓存服务器的情况下，可以不改变缓存所在的原始位置。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202510/bg2025102001.webp"
+          ]
+        },
+        {
+          "title": "笔记本如何用作单板计算机的 HDMI 显示器",
+          "link": "https://danielmangum.com/posts/laptop-hdmi-monitor-sbc/",
+          "description": "作者使用一张 HDMI 转 USB 采集卡，将笔记本电脑用作树莓派的显示器。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202510/bg2025101009.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "EmDash",
+          "link": "https://github.com/emdash-cms/emdash",
+          "description": "AI 生成的 WordPress 复刻，基于 TypeScript 语言，支持插件，据说功能基本一样，参见[介绍文章](https://blog.cloudflare.com/emdash-wordpress/)。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026040202.webp"
+          ]
+        },
+        {
+          "title": "SubscriptionHub",
+          "link": "https://github.com/wangwangit/SubscriptionHub",
+          "description": "基于 Cloudflare Workers 的订阅管理系统，可以发送各种订阅的到期通知，通过 Telegram、Webhook 等通知渠道。",
+          "user": "wangwangit",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9411",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026032706.webp"
+          ]
+        },
+        {
+          "title": "WeChat-bot",
+          "link": "https://github.com/xixihhhh/WeChat-bot",
+          "description": "开源的微信机器人消息管理平台，自带应用市场，通过点击安装应用，给微信 Bot 加功能。",
+          "user": "xixihhhh",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9404",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026032705.webp"
+          ]
+        },
+        {
+          "title": "wxWebHook",
+          "link": "https://github.com/aristorechina/wxWebHook",
+          "description": "通过 WebHook 向微信用户发消息。",
+          "user": "aristorechina",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9412",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026032707.webp"
+          ]
+        },
+        {
+          "title": "lixian.online",
+          "link": "https://lixian.online",
+          "description": "获取 VSCode 插件、Chrome 扩展和 Docker 镜像的离线安装包的工具，[代码开源](https://github.com/LiaoGuoYin/lixian.online)。",
+          "user": "LiaoGuoYin",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9455",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026033115.webp"
+          ]
+        },
+        {
+          "title": "rename.tools",
+          "link": "https://rename.tools",
+          "description": "浏览器端的批量文件重命名工具，支持各种规则设定，[代码开源](https://github.com/chenz24/rename.tools)。",
+          "user": "chenz24",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9461",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026033116.webp"
+          ]
+        },
+        {
+          "title": "SubFont",
+          "link": "https://github.com/Yuri-NagaSaki/SubFont",
+          "description": "开源的字幕字体子集化工具，将所需的字体字形嵌入字幕文件。",
+          "user": "Yuri-NagaSaki",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9466",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026033117.webp"
+          ]
+        },
+        {
+          "title": "Pretext 人体轮廓文字排版",
+          "link": "https://github.com/fifteen42/pretext",
+          "description": "基于 [Pretext](https://github.com/chenglou/pretext)（文字排版计算库）的一个小应用，将摄像头捕捉的人体轮廓通过文字排版实时展示。",
+          "user": "fifteen42",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9472",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026040101.webp"
+          ]
+        },
+        {
+          "title": "Cuspread",
+          "link": "https://github.com/AnalyseDeCircuit/Cuspread",
+          "description": "基于 Rust 语言的跨平台 SSH 终端，功能较多，使用 Tauri 桌面框架。",
+          "user": "AnalyseDeCircuit",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9474",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026040103.webp"
+          ]
+        },
+        {
+          "title": "wtree",
+          "link": "https://github.com/FatDoge/wtree",
+          "description": "git worktree 的图形化管理界面。",
+          "user": "FatDoge",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9483",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026040104.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI 相关",
+      "items": [
+        {
+          "title": "claude-agent-sdk",
+          "link": "https://github.com/idoubi/claude-agent-sdk",
+          "description": "基于 Claude Code 源码实现的 claude-agent-sdk 的开源替代品，用于 AI Agent 的开发，完全兼容原始接口，不依赖本地 cli 进程。",
+          "user": "idoubi",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9473",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026040102.webp"
+          ]
+        },
+        {
+          "title": "AgentWeb",
+          "link": "https://github.com/Mr-ZhangBo/AgentWeb",
+          "description": "统一管理本地所有 AI 智能体的 Web 控制台，支持多工作区隔离、飞书远程协同、Skills 生态等。",
+          "user": "Mr-ZhangBo",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9395",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026032704.webp"
+          ]
+        },
+        {
+          "title": "ArcReel",
+          "link": "https://github.com/ArcReel/ArcReel",
+          "description": "开源的 AI 视频生成工作台，输入一本小说，自动完成剧本、人物设计、分镜、短视频生成。",
+          "user": "Pollo3470",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9393",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026032703.webp"
+          ]
+        },
+        {
+          "title": "Canvas Terminal",
+          "link": "https://github.com/blueberrycongee/canvas-terminal",
+          "description": "开源桌面应用，所有终端铺在无限画布上，方便管理 AI 编程工具。",
+          "user": "blueberrycongee",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9434",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026033001.webp"
+          ]
+        },
+        {
+          "title": "OpenCove",
+          "link": "https://github.com/DeadWaveWave/opencove",
+          "description": "类似 Canvas Terminal 的项目。",
+          "user": "DeadWaveWave",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9497",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026040204.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "Claude Code 互动式教程",
+          "link": "https://github.com/ruanyf/weekly/issues/9393",
+          "description": "Claude Code 的互动式教程，通过11个小练习，掌握这个 AI 编程工具。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026033102.webp"
+          ]
+        },
+        {
+          "title": "Claude Code 源码解析",
+          "link": "",
+          "description": "根据 Claude Code 泄漏的源码，一步步图解演示，输入提示词后软件内部如何处理。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026040108.webp"
+          ]
+        },
+        {
+          "title": "机器学习入门教程",
+          "link": "https://github.com/dreddnafious/thereisnospoon/blob/main/ml-primer.md",
+          "description": "工程师的机器学习教程，解释基本概念。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026033108.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "欧洲年度树木",
+          "link": "https://nicenews.com/environment/european-tree-of-the-year-winners-2026/",
+          "description": "欧洲有一个\"欧洲年度树木\"的评选，初听觉得很奇怪，但仔细一想，就会发现这个活动有很多好处：提高城市知名度，促进生态保护，推动旅游业......\n\n国内下面就是今年的\"欧洲年度树木\"。\n\n立陶宛鲁凯村的橡树，树龄400年。\n\n![](https://cdn.beekka.com/blogimg/asset/202603/bg2026033103.webp)\n\n以下是其他入围决赛的树木。\n\n斯洛伐克的野生苹果树\n\n![](https://cdn.beekka.com/blogimg/asset/202603/bg2026033104.webp)\n\n波兰的榆树\n\n![](https://cdn.beekka.com/blogimg/asset/202603/bg2026033105.webp)\n\n拉脱维亚的菩提树\n\n![](https://cdn.beekka.com/blogimg/asset/202603/bg2026033106.webp)\n\n葡萄牙的柏树\n\n![](https://cdn.beekka.com/blogimg/asset/202603/bg2026033107.webp)",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026033103.webp",
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026033104.webp",
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026033105.webp",
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026033106.webp",
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026033107.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "文摘1：编程的80%内容",
+          "link": "",
+          "description": "我花在 AI 编程的时间越多，对自己的职业生涯的担忧就越少，即使 AI 的编程能力越来越强。\n\n因为，我发现 AI 编程只是流程的一部分，我的工作不仅仅是编写代码。\n\n我的真正工作是，**找出可以用代码解决的问题，然后解决它们，并验证解决方案是否有效**。\n\nAI 最终或许能够完全承担中间的编码部分，并帮助解决第一部分和最后一部分，但无论如何，仍然需要有人去发现问题、定义问题并确认问题已经得到解决。\n\n这就是我的工作的80%内容。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "文摘2：摩尔定律的伴生效应",
+          "link": "",
+          "description": "摩尔定律指的是，大约每两年，芯片上的晶体管数量就会翻一番。\n\n但是，它还有一个伴生效应，很少人提到。那就是，大约每五年，芯片工厂的建造成本就会翻一番，而能承担这种成本的芯片公司数量则会减半。\n\n二十五年前，大约有40家公司，可以建造芯片工厂，每个工厂的建造成本约为20亿至40亿美元。如今，只剩下两家或三家芯片公司（数量取决于你对英特尔的乐观程度），可以建造最先进的芯片工厂，建造成本飙升到几百亿美元。\n\n如果按照这种趋势再过10年，芯片工厂的建设成本继续翻倍飙升，也许只有一家公司或根本没有公司，能够负担这样的成本。\n\n目前，芯片的制造工艺已经逼近1纳米，再往下发展，技术壁垒和资金壁垒将同时接近极限。\n\n我预计，摩尔定律很快就会失效，未来增长主要在于算力，而不是单块芯片的计算能力。\n\n未来的芯片将会像二手车，行驶速度都差不多，只是新旧差异。我甚至觉得，2035年生产的芯片和2065年生产的芯片之间，将几乎没有什么实质性区别。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "Claude Code 源码泄漏事件评论",
+          "link": "https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/",
+          "description": "源代码的 map 文件不小心发布到 npm，这种错误听起来似乎不可能，但当你意识到很大一部分代码库很可能是由你正在发布的 AI 编写的，一切就容易理解了。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "拉里·芬克：体力劳动者的未来",
+          "link": "https://www.bbc.com/news/articles/c9wqrdkx8ppo",
+          "description": "人工智能的蓬勃发展，使得某些办公室工作的需求可能并不大，而将创造大量电工、焊工和水管工的工作岗位。\n\n以前，我们告诉所有年轻人去上大学，从事银行业、媒体或法律行业，现在需要平衡一下，有些人或许更适合做体力劳动者，在水暖工和电工这些领域，职业生涯同样可以很成功。",
+          "user": "拉里·芬克",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "别让 AI 替你写作",
+          "link": "https://alexhwoods.com/dont-let-ai-write-for-you/",
+          "description": "写作的目的不在于写完，而在于增进你自己的理解，进而增进周围人的理解。\n\n让 AI 为你写作，就像花钱请人为你健身一样。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "你的工作不是编程",
+          "link": "https://codeandcake.dev/posts/2025-12-12-your-job-isnt-programming",
+          "description": "程序员的工作不是编程，而是通过抽象，来管理软件的复杂性。如果你做到了这一点，那么编程就很容易了。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

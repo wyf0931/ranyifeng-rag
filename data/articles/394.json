@@ -1,0 +1,383 @@
+{
+  "title": "科技爱好者周刊（第 394 期）：第二次 API 开放浪潮",
+  "link": "https://www.ruanyifeng.com/blog/2026/04/weekly-issue-394.html",
+  "number": 394,
+  "sections": [
+    {
+      "name": "封面图",
+      "items": [
+        {
+          "title": "封面图",
+          "link": "https://x.com/steventey/status/1689986179746197504",
+          "description": "我见过的最酷广告牌，只有一行命令，推广一个 AI 工具包。普通人看不懂也没关系，反正不是给他们用的。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042008.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "第二次 API 开放浪潮",
+      "items": [
+        {
+          "title": "第二次 API 开放浪潮",
+          "link": "https://brandur.org/second-wave-api-first",
+          "description": "如果你在互联网行业足够久，大概会记得，以前有过一次 API 开放的浪潮。\n\n那是15年前的2011年，云服务刚兴起不久，各种平台纷纷开放自己的 API。\n\n![](https://cdn.beekka.com/blogimg/asset/202604/bg2026042102.webp)\n\n那时，Facebook 和 Twitter 都发布了自己的 API，开放了平台数据。GitHub 的 API 设计简直是艺术品，几乎可以获得任何想要的功能。\n\n平台的想法是，开放的 API 有助于用户和第三方加入，来开发各种插件和扩展程序，从而推动平台的增长，提高用户留存率和满意度。\n\n那时还有一个叫做 [ProgrammableWeb](https://en.wikipedia.org/wiki/ProgrammableWeb) 的网站（现已关闭），它的名字就代表了当时人们的信念：互联网可以通过 API 编程，把各种平台的数据连接在一起。\n\n![](https://cdn.beekka.com/blogimg/asset/202604/bg2026042103.webp)\n\n但是，事情的发展跟预想完全相反。\n\n平台发现，API 很难盈利，因为无法插入广告，而且自家的数据会帮助其他公司的生意，造成用户流失。\n\n于是，它们纷纷改变做法，限制和关闭 API，不再分享数据，将用户留在自家的\"围墙花园\"。\n\n如今，Facebook 和 Twitter 的 API 已经形同虚设，第三方客户端遭到彻底禁用。GitHub 虽然还保持开放的 API，但也采取了管控，增加了身份验证和速率限制，要想构建全功能的第三方应用也很困难。\n\n正当人们觉得这将是常态，[转变](https://brandur.org/second-wave-api-first)出现了。\n\n就在2025年的下半年，大模型达到了临界点，变得真正强大，可用于生产环境了。\n\n人们很快意识到，如果大模型只会思考，不能执行代码，用处就不大。**AI 的最大价值不是内容生成，而是内容生成 + 自动化**，这样才能最大限度解放人力、创造价值。AI 自动化，自己执行代码的典型代表就是\"龙虾\"（OpenClaw）。\n\n![](https://cdn.beekka.com/blogimg/asset/202604/bg2026042104.webp)\n\n自动化意味着 AI 必须能够调用其他平台，进而意味着，其他平台必须先开放自己的 API。\n\n突然之间，API 不再是累赘，而是接入 AI 的必须条件。没有 API，你的平台就进入不了 AI 工作流，各种 Agent 也就不能代表用户在你的平台上工作。\n\n同样两个平台，一家有 API，另一家没有，后者就很可能被市场放弃，因为大模型无法接入它，也就无法对它自动化，AI 用户只能转向它的竞品。\n\n平台意识到了，谁尽快开放 API，谁就抢占了先机。所以，强如腾讯也会在龙虾爆红后，以最快的速度开放了微信接口，让龙虾可以向微信发消息。\n\n![](https://cdn.beekka.com/blogimg/asset/202604/bg2026042315.webp)\n\n腾讯也害怕，在龙虾的世界里没有自己的一席之地。其他平台就更不用说了，抢着通过 MCP 和 Skill 开放自家的操作接口。\n\n这表明，**第二次 API 开放浪潮正在到来**。这一次将比上一次开放得更彻底，更易用。\n\n（1）这次开放的不仅是云服务，还有很多日常生活服务：外卖、电商、银行......甚至还有很多原本根本不会有 API 的服务，比如餐馆和球馆的预订。\n\n（2）这次的 API 不需要手动编程，你只需使用自然语言，由大模型翻译后调用。\n\n（3）这次的 API 是消费者通过 AI 调用，使用目的是代表用户行事。以前 API 是由应用程序调用，使用目的是获取数据。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042102.webp",
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042103.webp",
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042104.webp",
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042315.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "机器人半马",
+      "items": [
+        {
+          "title": "机器人半马",
+          "link": "https://news.sina.com.cn/zx/gj/2026-04-19/doc-inhvackq0239220.shtml",
+          "description": "上周末，北京亦庄举行了第二次人形机器人的半马比赛。\n\n超过100个人形机器人参加比赛，看谁最快跑完21.0975公里。最终，冠军成绩是50分26秒，超过了人类最快的选手（半马的人类世界纪录是1小时02分52秒）。\n\n根据网友拍摄的[现场视频](https://x.com/xiaohu/status/2045786816213815411)，机器人跑到一定距离就要进入补给站，由工作人员更换电池，并加入冰块（或者干冰）防止过热。\n\n这就是说，机器人的内置电池支持不了一小时的运行时间。\n\n宇树公开发售的 [H2 人形机器人](https://www.unitree.com/cn/H2)，续航时间是3小时。在长跑这种剧烈运动时，续航应该会大打折扣。而且，功率相同时，体重较轻的机器人在赛跑中有优势，也就意味着不能多携带电池。\n\n这样看上去，人形机器人目前的实用性还是很有限。不插电时，一到两个小时就要充电，那样的话，很多事情就不适合做了。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042005.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GPT Images 2.0",
+      "items": [
+        {
+          "title": "GPT Images 2.0 发布",
+          "link": "https://openai.com/zh-Hans-CN/index/introducing-chatgpt-images-2-0/",
+          "description": "本周，OpenAI 发布 GPT Image 2.0 模型，据说是目前最强的图像模型，性能超过了谷歌的 Nano Banana 2 Pro。\n\n根据 OpenAI 的介绍，它的文字渲染有较大进步，很好地支持汉字，可以生成复杂的解释性图片。\n\n大家可以去 [ChatGPT.com](https://chatgpt.com/images) 免费试用。\n\n我做了一个比较，生成一张小狗在古镇屋檐下午睡的图片。这是 GPT Images 1 的结果。\n\n![](https://cdn.beekka.com/blogimg/asset/202604/bg2026042306.webp)\n\n这是 GPT Images 2.0 的结果。\n\n![](https://cdn.beekka.com/blogimg/asset/202604/bg2026042305.webp)",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042304.webp",
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042306.webp",
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042305.webp"
+          ]
+        },
+        {
+          "title": "Flipbook：解释性图片浏览器",
+          "link": "https://flipbook.page/",
+          "description": "它是一个解释性图片浏览器，用户输入一个主题，它会自动生成详细解释的图片。\n\n![](https://cdn.beekka.com/blogimg/asset/202604/bg2026042307.webp)\n\n上图是输入\"汽水\"生成的解释图片，点击局部，还能生成进一步的解释。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042307.webp"
+          ]
+        },
+        {
+          "title": "Awesome GPT Image 2 提示词仓库",
+          "link": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2",
+          "description": "网上已经有收集提示词的 Awesome 仓库，大家可以看看别人的优秀例子。",
+          "user": "@DophinL",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9728",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042308.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI 是扩展神器",
+      "items": [
+        {
+          "title": "AI 是扩展神器",
+          "link": "https://mattstromawn.com/writing/expansion-artifacts/",
+          "description": "AI 有一个特点，不仅能够压缩信息，更善于扩展信息。它会推断出模糊不清的部分，更能生成缺失的部分，填补上看似合理的细节。\n\n这意味着，AI 是扩展神器。[有人](https://mattstromawn.com/writing/expansion-artifacts/)设想了这样的场景：\n\n- 公司 CEO 开会时口述了一个设想。\n- AI 将其扩展成一份战略文件。\n- AI 将战略文件转化为产品规格。\n- AI 用氛围编程生成代码原型。\n- AI 根据代码原型，撰写出发布文案和公关稿。\n\n看到了吗，AI 可以把脑子里的一个想法，不断扩展出文档、代码、产品、发布会、就业......\n\n人们总是说，将来的世界是物质产品极大丰富的世界，AI 看上去就是这一类工具：**凡是它能生成的东西，都将变得极大丰富**。"
+        }
+      ]
+    },
+    {
+      "name": "小轿车的车载厕所",
+      "items": [
+        {
+          "title": "小轿车的车载厕所",
+          "link": "https://chejiahao.autohome.com.cn/info/25229950",
+          "description": "赛力斯申请了一个小轿车的\"车载厕所\"专利。\n\n![](https://cdn.beekka.com/blogimg/asset/202604/bg2026042003.webp)\n\n座椅装在一个滑轨上，向后滑动就会露出下方的坐便器。\n\n![](https://cdn.beekka.com/blogimg/asset/202604/bg2026042004.webp)\n\n这个马桶配备了加热元件，用于蒸发尿液并烘干其他污物，但还是需要定期手动清空。同时，车内配备风扇和排气管，用于换气。\n\n这个装置对于小轿车，使用场景有限，只适合高速公路大堵车的情况。但是，对于跑长途的大货车，倒是很实用。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042003.webp",
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042004.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "不要使用 Ollama",
+          "link": "https://sleepingrobots.com/dreams/stop-using-ollama/",
+          "description": "Ollama 是一个运行本地大模型的工具，本文提出它有诸多问题，建议改用 llama.cpp 和 LM Studio。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026041801.webp"
+          ]
+        },
+        {
+          "title": "npmx 的功能",
+          "link": "https://nesbitt.io/2026/04/16/features-everyone-should-steal-from-npmx.html",
+          "description": "有人为 npmjs.com 做了一个新的前端 npmx.dev，解决了很多开发者要求已久的功能。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042202.webp"
+          ]
+        },
+        {
+          "title": "不要过长的链式调用",
+          "link": "https://allthingssmitty.com/2026/04/20/why-i-dont-chain-everything-in-javascript-anymore/",
+          "description": "JavaScript 语言可以写出很长的链式调用（上图），有些程序员很喜欢用。本文提出链式调用有一些缺点，不宜过长。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042313.webp"
+          ]
+        },
+        {
+          "title": "异步编程技术的演变和实际成果",
+          "link": "https://causality.blog/essays/what-async-promised/",
+          "description": "一篇概述，介绍异步编程的由来，如何发展出 async/await 这种普遍接受的解法，以及存在的问题，写得比较深入。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042314.webp"
+          ]
+        },
+        {
+          "title": "被动雷达的工作原理",
+          "link": "https://www.passiveradar.com/how-passive-radar-works/",
+          "description": "雷达可以主动发射电波侦测飞行物，也可以不发射电波，只监听电波变化，这就叫被动雷达。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026041806.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Little Snitch Linux 版",
+          "link": "https://www.obdev.at/products/littlesnitch/index.html",
+          "description": "著名的网络通信监控软件 Little Snitch，终于推出了 Linux 版，可以用它看到每个应用跟什么网址通信。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026041812.webp"
+          ]
+        },
+        {
+          "title": "quien",
+          "link": "https://github.com/retlehs/quien/",
+          "description": "查询域名信息的终端工具，提供清晰易用的界面。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026041807.webp"
+          ]
+        },
+        {
+          "title": "ggsql",
+          "link": "https://ggsql.org/",
+          "description": "可以生成图形的 SQL 查询工具，直接查询数据库，将结果表示成可视化图形，参见介绍文章。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042101.webp"
+          ]
+        },
+        {
+          "title": "开源 Mac 录屏应用",
+          "link": "",
+          "description": "开源的 Mac 录屏应用，可以绕过录屏检测机制，让被录制的应用无法感知正在被录屏。",
+          "user": "@jrainlau",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9663",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026041804.webp"
+          ]
+        },
+        {
+          "title": "开源 Chrome 插件（标签主页变标签管理器）",
+          "link": "",
+          "description": "开源的 Chrome 插件，把新打开的标签主页变成标签管理器。",
+          "user": "@V-IOLE-T",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9665",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042001.webp",
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026041805.webp"
+          ]
+        },
+        {
+          "title": "动物森友会风格的 React UI 组件库",
+          "link": "",
+          "description": "《动物森友会》风格的 React UI 组件库。",
+          "user": "@guokaigdg",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9668",
+          "images": []
+        },
+        {
+          "title": "CUPS Web",
+          "link": "https://github.com/hanxi/cups-web",
+          "description": "网页版打印机管理工具，通过浏览器远程控制打印机，支持多用户、打印记录追踪等功能。",
+          "user": "@hanxi",
+          "user_link": "https://github.com/ruanyf/weekly/issues/8587",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026041901.webp"
+          ]
+        },
+        {
+          "title": "开源访客统计服务",
+          "link": "",
+          "description": "开源的访客统计服务，提供 PV/UV 统计、热门文章、趋势图等，一个实例服务多个站点。",
+          "user": "@thinkycx",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9677",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026041902.webp"
+          ]
+        },
+        {
+          "title": "HiKid",
+          "link": "https://github.com/xiaochong/hi-kid",
+          "description": "帮助小朋友练习英语口语和听力的桌面应用，完全免费，目前仅支持 macOS。",
+          "user": "@Hao4Wang",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9689",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042002.webp"
+          ]
+        },
+        {
+          "title": "Kite Desktop",
+          "link": "https://github.com/eryajf/kite-desktop",
+          "description": "桌面端的 K8S 多集群管理工具。",
+          "user": "@eryajf",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9719",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042302.webp"
+          ]
+        },
+        {
+          "title": "Project River",
+          "link": "",
+          "description": "Git 仓库提交历史的可视化河流图，支持多项目对比、贡献者信息等特性。",
+          "user": "@Lionad-Morotar",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9722",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042303.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI 相关",
+      "items": [
+        {
+          "title": "OpenAI Privacy Filter",
+          "link": "https://openai.com/index/introducing-openai-privacy-filter/",
+          "description": "如何才能避免把敏感信息（比如姓名、地址、电话、密码）发给大模型？\n\nOpenAI 给出了答案：Privacy Filter。这是一个本地运行的大模型，它先处理后再发给线上大模型。\n\n比如，原文是\"产品发布日期是2026年9月18日\"，处理后就是\"产品发布日期是[PRIVATE_DATE]\"。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042312.webp"
+          ]
+        },
+        {
+          "title": "开源 AI 网关",
+          "link": "",
+          "description": "开源的 AI 网关，可以接入主流大模型，然后对外提供统一的 API（OpenAI 兼容）和管理后台。",
+          "user": "@star7th",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9657",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026041802.webp"
+          ]
+        },
+        {
+          "title": "Nezha（哪吒）",
+          "link": "https://github.com/hanshuaikang/nezha",
+          "description": "开源的 AI 编程任务管理器，快速切换多任务管理，集成了原生终端、会话管理、代码编辑、Git 等功能，大小不到 10MB。",
+          "user": "@hanshuaikang",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9714",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042301.webp"
+          ]
+        },
+        {
+          "title": "Gemini 水印去除工具",
+          "link": "",
+          "description": "Gemini 生成图片的可见水印去除工具，图片不需要上传到服务器，直接在本地浏览器处理。",
+          "user": "@liuyan-wjy",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9664",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026041803.webp"
+          ]
+        },
+        {
+          "title": "mini-cc",
+          "link": "https://github.com/you-want/mini-cc",
+          "description": "开源的 AI 编程 Agent，作用类似于 Claude Code，采用多语言架构，目前已完成 TypeScript 实现。",
+          "user": "@RainyNight9",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9681",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "键盘打字声收集网站",
+          "link": "",
+          "description": "一个有意思的网站，收集键盘打字的声音。你可以先听一下某种键盘的打字声，再确定是否购买它。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042006.webp"
+          ]
+        },
+        {
+          "title": "软件工程定律",
+          "link": "https://lawsofsoftwareengineering.com/",
+          "description": "这个网站收集各种软件相关的定律，目前有56条。比如，\"帕金森定律\"（Parkinson's Law）：工作量总是会增加，直至填满所有可用时间。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042201.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "最小的英文字体",
+          "description": "最小的英文字体有多小？1x1 像素不可能，2x2 不可能，3x3 理论上可以，实际上无法阅读。4x4 难以绘制多笔画的字符。因此英文字体最小就是 5x5 像素。\n\n上面字体中，大多数小写字母比大写字母小一个像素，从而使两者可以在视觉上区分。整个字体仅占用350字节的内存，适合老式设备。\n\n除了 5x5 字体，还有 3x5 和 4x5 字体，但辨识效果都不好。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042309.webp",
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042310.webp",
+            "https://cdn.beekka.com/blogimg/asset/202604/bg2026042311.webp"
+          ]
+        },
+        {
+          "title": "里海石油城",
+          "description": "里海是世界最大湖泊，面积相当于云南省。上个世纪中期，苏联在湖面上建设石油平台，最多时共有约320个生产基地，包含2,000口井，通过100多英里的桥梁连接起来。5000多人生活在这些平台上，形成水上城市。\n\n随着油田枯竭和油价波动，产量下降，人们大多离开，平台年久失修。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202411/bg2024111007.webp",
+            "https://cdn.beekka.com/blogimg/asset/202411/bg2024111008.webp",
+            "https://cdn.beekka.com/blogimg/asset/202411/bg2024111009.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "言论1",
+          "link": "https://finance.yahoo.com/quote/FIG/",
+          "description": "美国鞋类生产商 Allbirds 宣布转型为 AI 公司，股价一天暴涨了5倍。这让人想起2017年，美国一家名为\"长岛冰茶\"的饮料企业，宣布转型为区块链公司，卖柠檬茶的同时，探索区块链的投资机会，股价也是暴涨。后来，它的区块链业务还没建立好，就破产了。",
+          "user": "雅虎"
+        },
+        {
+          "title": "言论2",
+          "link": "",
+          "description": "Figma 拥有近 2000 名员工（当然并非所有员工都从事产品开发），而 Anthropic 新推出的 Claude Design 的开发团队，我甚至怀疑是否超过10个人。",
+          "user": "《Figma 的困境》"
+        },
+        {
+          "title": "言论3",
+          "link": "https://jsomers.net/blog/the-paper-computer",
+          "description": "我对未来世界的憧憬是，她或许不那样充满未来感，反而更像田园牧歌。我们可以回归传统的生活形态，同时又不放弃新技术带来的便利，几乎无需再去看屏幕或触碰屏幕。",
+          "user": "jsomers.net"
+        },
+        {
+          "title": "言论4",
+          "link": "https://www.joanwestenberg.com/the-rime-of-the-ancient-maintainer/",
+          "description": "每一种文化都会造就反映其最深层焦虑的英雄。硅谷最焦虑的，就是增长停滞，无法创造出大受市场欢迎的新产品，所以大肆宣传\"英雄开发者\"：他们能在午夜发布新功能，凭借着咖啡因带来的强大意志力，将白板上的涂鸦变成价值数十亿美元的独角兽企业。",
+          "user": "《古典维护者的挽歌》"
+        }
+      ]
+    }
+  ]
+}

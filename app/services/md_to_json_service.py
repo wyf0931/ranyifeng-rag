@@ -321,12 +321,13 @@ class MarkdownToJSONService:
         """
         Parse all articles with status='imported' that have markdown content.
 
-        This runs sequentially (no concurrency) to avoid overwhelming the LLM.
+        Uses concurrent processing with up to 4 parallel LLM requests.
         Articles are sorted by issue number in descending order.
 
         Returns:
             Dict with batch parsing results
         """
+        import asyncio
         from sqlalchemy import create_engine, desc, cast, Integer
 
         engine = create_engine(f"sqlite:///{settings.database_path}")
@@ -349,7 +350,25 @@ class MarkdownToJSONService:
                 "articles": []
             }
 
-        logger.info(f"Found {len(articles)} articles to parse")
+        logger.info(f"Found {len(articles)} articles to parse (max 4 concurrent)")
+
+        # Semaphore to limit concurrent requests to 4
+        semaphore = asyncio.Semaphore(4)
+
+        async def parse_with_semaphore(article):
+            """Parse article with semaphore to limit concurrency."""
+            async with semaphore:
+                logger.info(f"Parsing article {article.id} (#{article.number})...")
+                result = await self.parse_article(article.id)
+
+                return {
+                    "article": article,
+                    "result": result
+                }
+
+        # Process all articles concurrently with semaphore
+        tasks = [parse_with_semaphore(article) for article in articles]
+        outcomes = await asyncio.gather(*tasks, return_exceptions=True)
 
         results = {
             "total": len(articles),
@@ -358,11 +377,14 @@ class MarkdownToJSONService:
             "articles": []
         }
 
-        # Parse articles one by one (sequential, no concurrency)
-        for article in articles:
-            logger.info(f"Parsing article {article.id} (#{article.number})...")
+        for outcome in outcomes:
+            if isinstance(outcome, Exception):
+                logger.error(f"Parse task failed with exception: {outcome}")
+                results["failed"] += 1
+                continue
 
-            result = await self.parse_article(article.id)
+            article = outcome["article"]
+            result = outcome["result"]
 
             if result.get("success"):
                 results["success"] += 1
