@@ -72,7 +72,7 @@
         </header>
 
         <!-- Main Content -->
-        <main class="flex-1 max-w-6xl mx-auto w-full px-4 py-6">
+        <main class="flex-1 max-w-4xl mx-auto w-full px-4 py-6">
             <!-- Empty State -->
             <div x-show="!result && !loading" class="text-center py-12">
                 <i data-lucide="search" class="w-16 h-16 text-gray-300 mx-auto mb-4"></i>
@@ -81,7 +81,7 @@
             </div>
 
             <!-- Search Input Bar -->
-            <div class="max-w-2xl mx-auto mb-6">
+            <div class="max-w-4xl mx-auto mb-6">
                 <form @submit.prevent="submitQuery" class="flex items-center space-x-3">
                     <input
                         type="text"
@@ -104,6 +104,17 @@
 
             <!-- Results -->
             <div x-show="result" class="space-y-6">
+                <!-- Answer -->
+                <div x-show="result?.answer" class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-4 flex items-center space-x-2">
+                        <i data-lucide="message-square" class="w-5 h-5 text-green-600"></i>
+                        <span>AI 回答</span>
+                    </h2>
+                    <div class="prose prose-sm max-w-none">
+                        <div class="markdown-content" x-html="marked.parse(cleanAnswer || '')"></div>
+                    </div>
+                </div>
+
                 <!-- RAG Process Tracker -->
                 <div x-show="result" class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
                     <h2 class="text-lg font-semibold text-gray-900 mb-4 flex items-center space-x-2">
@@ -149,17 +160,6 @@
                                 </a>
                             </template>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Answer -->
-                <div x-show="result?.answer" class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-                    <h2 class="text-lg font-semibold text-gray-900 mb-4 flex items-center space-x-2">
-                        <i data-lucide="message-square" class="w-5 h-5 text-green-600"></i>
-                        <span>AI 回答</span>
-                    </h2>
-                    <div class="prose prose-sm max-w-none">
-                        <div class="markdown-content" x-html="marked.parse(cleanAnswer || '')"></div>
                     </div>
                 </div>
             </div>
