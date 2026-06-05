@@ -94,7 +94,7 @@ class DatabaseService:
         cursor = conn.cursor()
 
         # Tokenize query with jieba
-        tokens = jieba.lcut(query)
+        tokens = jieba.cut_for_search(query)
 
         # Filter out single characters, whitespace, and stopwords
         search_tokens = [t for t in tokens if len(t) > 1 and t.strip() and t not in self.stopwords]
