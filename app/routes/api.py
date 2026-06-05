@@ -2,6 +2,7 @@ from flask import Blueprint, request, jsonify
 from app.services.rag_service import rag_service
 from app.services.import_service import import_service
 from app.services.database import db_service
+from app.services.trafilatura_service import trafilatura_service
 
 api_bp = Blueprint("api", __name__)
 
@@ -213,5 +214,38 @@ def delete_dictionary_word(word):
             f.writelines(lines)
 
         return jsonify({"success": True, "message": "Word deleted successfully"})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@api_bp.route("/import-urls", methods=["POST"])
+def import_urls():
+    """Import articles from URLs using trafilatura."""
+    try:
+        data = request.get_json()
+        urls = data.get("urls", [])
+
+        if not urls:
+            return jsonify({"error": "URLs are required"}), 400
+
+        # Filter valid URLs
+        valid_urls = []
+        for url in urls:
+            url = url.strip()
+            if url and (url.startswith("http://") or url.startswith("https://")):
+                valid_urls.append(url)
+
+        if not valid_urls:
+            return jsonify({"error": "No valid URLs provided"}), 400
+
+        # Process URLs asynchronously
+        result = trafilatura_service.process_urls_async(valid_urls)
+
+        return jsonify({
+            "success": True,
+            "message": f"Processing {len(valid_urls)} URLs in background",
+            "task_id": result.get("task_id"),
+            "urls_count": len(valid_urls)
+        })
     except Exception as e:
         return jsonify({"error": str(e)}), 500

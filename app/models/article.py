@@ -1,4 +1,5 @@
-from sqlmodel import SQLModel, Field, Relationship
+from sqlmodel import SQLModel, Field, Relationship, Column
+from sqlalchemy import TEXT, JSON
 from typing import Optional, List
 from datetime import datetime
 
@@ -10,6 +11,10 @@ class Article(SQLModel, table=True):
     title: str = Field(index=True, description="Article title")
     link: str = Field(unique=True, index=True, description="Article URL (unique)")
     number: str = Field(index=True, description="Issue number")
+
+    # New fields for trafilatura content
+    keywords: List[str] = Field(default=[], sa_column=Column(JSON), description="Article keywords")
+    md_content: Optional[str] = Field(default=None, sa_column=Column(TEXT), description="Markdown content")
 
     created_at: datetime = Field(default_factory=datetime.utcnow)
     updated_at: datetime = Field(default_factory=datetime.utcnow)
