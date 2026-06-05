@@ -1,0 +1,345 @@
+{
+  "title": "科技爱好者周刊（第 397 期）：财富正在向 AI 集中",
+  "link": "https://www.ruanyifeng.com/blog/2026/05/weekly-issue-397.html",
+  "number": 397,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "财富正在向 AI 集中",
+          "description": "AI 相关的所有东西，最近都在上涨。\n\n看看股票，就知道了。内存、储存、CPU、服务器、液冷、光通信、变压器......股价全部在涨，更不要提，前期已经涨过的芯片、模型、算力了，甚至铜和铝也在涨。\n\n这些股票的上涨幅度之大，令人咂舌。就以内存为例，世界三大内存厂商有两家在韩国，单单这两家公司就把韩国股市，从2600点一年之内拉到7600点。\n\n2024年10月，三星公司董事长还因为半导体业绩不佳而[道歉](https://news.qq.com/rain/a/20241008A04KR000)，结果今年很可能成为[世界最赚钱公司](https://xueqiu.com/6600079272/374314156)。\n\n![](https://cdn.beekka.com/blogimg/asset/202605/bg2026052001.webp)\n\n另一家内存大厂 SK 海力士更夸张。它跟工会有劳资协议，10%的利润要分给员工。有人计算了，门卫、司机、前台都算进去，每个员工今年平均可以拿到奖金[610万人民币](https://finance.sina.com.cn/roll/2026-05-12/doc-inhxrfsp8418114.shtml)。\n\n![](https://cdn.beekka.com/blogimg/asset/202605/bg2026052002.webp)\n\n至于 AI 模型公司，更是人人都是亿万富翁。OpenAI 去年向600个员工[回购](https://m.thepaper.cn/newsDetail_forward_33161999)了66亿美元的股票，平均每人拿到近1000万美元。\n\n![](https://cdn.beekka.com/blogimg/asset/202605/bg2026052003.webp)\n\n这些事情表明，**社会财富正在重新分配，快速向 AI 集中**。\n\n**这影响到了所有人**。哪怕你根本不使用 AI，但是物价的上涨、资金从本行业流向 AI，不可避免影响到你。\n\n日常使用的电子设备（手机和电脑）、电子元件、基本的生产资料（比如铜和铝）都在涨价。如果你在一个跟 AI 无关的行业，很可能吃不到 AI 的红利，反而被它伤害，因为你会面临成本上升、需求不足、投资减少。\n\n古人说\"一将功成万骨枯\"，AI 的崛起不知伴随着多少其他行业的陨落。\n\n虽然每一次技术革命，都必然伴随财富的重新分配。但是，这一次的 AI 革命，推进速度格外快，力度格外大，引发的再分配效应也格外猛烈。\n\n作为一个普通人，尤其是身在互联网和软件行业的普通人，似乎也没有其他选择，总是被财富诱惑，只能紧跟潮流拥抱 AI。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026052001.webp",
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026052002.webp",
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026052003.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "别用 AI 估算碳水含量",
+          "link": "https://www.diabettech.com/i-asked-ai-to-count-my-carbs-27000-times-it-couldnt-give-me-the-same-answer-twice/",
+          "description": "糖尿病人需要控糖，不仅要少吃糖，还要少吃碳水化合物（米饭和面粉），因为碳水最终也会变为糖。\n\n所以，他需要知道，食物里面含有多少碳水。\n\n很自然的想法就是，吃之前拍一张食物照片，交给 AI 估计碳水含量。\n\n![](https://cdn.beekka.com/blogimg/asset/202605/bg2026052004.webp)\n\n一位英国医生就做了[一个实验](https://www.diabettech.com/i-asked-ai-to-count-my-carbs-27000-times-it-couldnt-give-me-the-same-answer-twice/)，把13张食物的照片（比如奶酪三明治、西班牙海鲜饭、焦糖布丁）提交给四个大模型----GPT-5.4、Claude Sonnet 4.6、Gemini 2.5 Pro、Gemini 3.1 Pro----估计碳水含量。\n\n结果让人大跌眼镜，四个模型给出的回答不一样。而且，同一张照片多次提交给同一个模型，回答也不一样。\n\n就拿上面这张西班牙海鲜饭的照片为例，分别多次提交给四个模型，模型的估计值如下图。\n\n![](https://cdn.beekka.com/blogimg/asset/202605/bg2026050910.webp)\n\n可以看到，每个模型估计同一张照片的碳水含量，波动范围都很大。其中，波动最大的是 Gemini 2.5 Pro，碳水含量估计值从 55 克到 484 克，整整相差了 429 克！估计值相对集中的是 Claude Sonnet 4.6，但波动范围也不小。\n\n![](https://cdn.beekka.com/blogimg/asset/202605/bg2026050909.webp)\n\n再以奶酪三明治的照片为例，包装上注明的碳水含量为40克，但 GPT-5.4 估计值平均为74克，其他三个模型为28克，都不正确。\n\n另外，大模型也无法准确识别食物，比如有时会认为奶酪三明治里面夹着一块熟肉。\n\n所以，别用大模型估算食物的碳水含量，也不要让大模型做任何精确的医疗估算，它根本做不到。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026052004.webp",
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026050910.webp",
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026050909.webp"
+          ]
+        },
+        {
+          "title": "微软淘汰短信验证码",
+          "link": "https://www.windowslatest.com/2026/05/19/microsoft-is-killing-sms-codes-for-microsoft-account-sign-in-aggressively-pushes-passkeys-on-windows-11/",
+          "description": "很多网站登录时，会给你发一条验证码的短信。\n\n![](https://cdn.beekka.com/blogimg/asset/202605/bg2026051908.webp)\n\n这种做法有风险。首先，攻击者可能会欺骗移动运营商，将你的电话号码绑定到他的 SIM 卡，从而短信都发到他的手机。其次，短信是明文发送，很容易泄漏。\n\n微软公司本周确认，将[放弃短信验证码](https://www.windowslatest.com/2026/05/19/microsoft-is-killing-sms-codes-for-microsoft-account-sign-in-aggressively-pushes-passkeys-on-windows-11/)，改用 Passkey、一次性时间码（TOTP）、以及验证过的邮件地址。\n\n其中，Passkey 密钥将是 Windows 11 以后主要的验证方式。\n\n这种做法就是为每个用户生成一对密钥，保存在 Windows 的密码管理器，只有通过面部识别、指纹扫描器或 PIN 码才能唤起私钥验证，安全性非常高。\n\n![](https://cdn.beekka.com/blogimg/asset/202605/bg2026051909.webp)\n\n下面是一篇 [Passkey 的介绍文章](https://kerkour.com/passkeys)（英文），侧重于概念，写得言简意赅，可以参考。\n\n![](https://cdn.beekka.com/blogimg/asset/202605/bg2026051608.webp)",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051908.webp",
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051909.webp",
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051608.webp"
+          ]
+        },
+        {
+          "title": "亚马逊供应链服务",
+          "link": "https://press.aboutamazon.com/2026/5/amazon-launches-amazon-supply-chain-services-opening-its-logistics-network-to-all-businesses",
+          "description": "本月，亚马逊宣布推出\"亚马逊供应链服务\"（ASCS），把自己的货运、配送、仓储和包裹运输向用户开放。\n\n![](https://cdn.beekka.com/blogimg/asset/202605/bg2026051904.webp)\n\n任何公司现在都可以把自己的商品业务，建立在亚马逊的物流基础设施之上，宝洁、3M 等公司已经开始用了。\n\n这让人[想起了2006年](https://gadallon.substack.com/p/the-third-time-amazon-did-this-what)，亚马逊开放了自己的网络基础设施，做成 AWS（亚马逊网络服务），直接导致云时代的到来。\n\n![](https://cdn.beekka.com/blogimg/asset/202605/bg2026052005.webp)\n\n现在，它又开放了仓储和物流，会不会改变制造业？\n\n以后，做实物产品越来越简单了，只要把产品设计出来，生产可以外包，物流和销售都可以购买标准化服务。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051904.webp",
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026052005.webp"
+          ]
+        },
+        {
+          "title": "打字机模型",
+          "link": "https://writingball.blogspot.com/2026/05/the-rokr-wooden-typewriter-closer-look.html",
+          "description": "最近，我看到一个[模型玩具](https://writingball.blogspot.com/2026/05/the-rokr-wooden-typewriter-closer-look.html)，感觉很不错。\n\n![](https://cdn.beekka.com/blogimg/asset/202605/bg2026050914.webp)\n\n这是深圳一家公司推出的19世纪机械打字机模型。买回家后，需要自己拼装。\n\n![](https://cdn.beekka.com/blogimg/asset/202605/bg2026050915.webp)\n\n最有趣的是，拼装好以后，它可以用来打字，但功能比较少，不能切换大小写，只支持大写字母。\n\n它不仅是模型玩具，还可以用来了解打字机原理，在海外市场也引起了关注。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026050914.webp",
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026050915.webp"
+          ]
+        },
+        {
+          "title": "GitHub Pages 有域名盗用问题",
+          "link": "https://meertens.dev/blog/github-enables-domain-abuse/",
+          "description": "如果你的域名指向 GitHub Pages，最好看一下这篇文章，某些情况下，你的二级域名可能会被盗用。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051905.webp"
+          ]
+        },
+        {
+          "title": "JavaScript ShadowRealm API 简介",
+          "link": "https://css-tricks.com/soon-we-can-finally-banish-javascript-to-the-shadowrealm/",
+          "description": "ShadowRealm 是一个新的 JS API，允许在单线程环境里面建立多个域，每个域拥有自己的全局对象，独立运行，互不干扰，可以彼此通信。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051302.webp"
+          ]
+        },
+        {
+          "title": "Firefox 配置指南",
+          "link": "https://sciops.net/information/technology/firefox/",
+          "description": "作者介绍自己的做法，将 Firefox 配置成一个好用的浏览器。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051201.webp"
+          ]
+        },
+        {
+          "title": "被撤销证书的检查机制",
+          "link": "https://blog.apnic.net/2026/04/24/revocation-of-x-509-certificates/",
+          "description": "网站的 HTTPS 证书可能会被证书当局撤销，用户如何知道呢？本文介绍现有的三种检查机制。问题是它们都有缺陷，Chrome 没有采用任何一种。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051002.webp"
+          ]
+        },
+        {
+          "title": "临时性基础设施",
+          "link": "https://lukasniessen.medium.com/ephemeral-infrastructure-why-short-lived-is-a-good-thing-2cf26afd75ef",
+          "description": "本文提出，大型系统除了绝对需要保持状态的部分（例如数据库、消息队列等），其余部分都应采用无状态的临时性基础设施（比如容器）。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202512/bg2025120607.webp"
+          ]
+        },
+        {
+          "title": "微型铝热反应",
+          "link": "https://sciencedemonstrations.fas.harvard.edu/presentations/microscale-thermite-reaction",
+          "description": "铝热反应是指，铝与氧化铁（铁锈）在高温下发生剧烈放热，温度可达2500~3500℃。本文介绍一种引发微型铝热反应的方法：两只生锈的铁球，一只包上铝箔，互相碰撞即可。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051712.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Abogen",
+          "link": "https://github.com/denizsafak/abogen",
+          "description": "一个跨平台的桌面应用，将 ePub/PDF/text 文件转成有声书。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081106.webp"
+          ]
+        },
+        {
+          "title": "FFmpeg Explorer",
+          "link": "https://github.com/antiboredom/ffmpeg-explorer",
+          "description": "通过可视化图形、生成 FFmpeg 命令的网页应用，代码开源。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024101508.webp"
+          ]
+        },
+        {
+          "title": "股票行情 JS SDK",
+          "link": "https://github.com/chengzuopeng/stock-sdk",
+          "description": "获取股票行情的开源 JavaScript SDK，纯前端抓取，无需后端服务，实时行情来自腾讯财经/东方财富等公开接口。",
+          "user": "chengzuopeng",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9933",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051601.webp"
+          ]
+        },
+        {
+          "title": "Zephyr",
+          "link": "https://github.com/Juwan-Hwang/Zephyr",
+          "description": "开源的 Mihomo/Clash 跨平台桌面客户端。",
+          "user": "Juwan-Hwang",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9936",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051602.webp"
+          ]
+        },
+        {
+          "title": "DimCut",
+          "link": "https://github.com/hughfenghen/dimcut",
+          "description": "开源的剪辑软件，将时间轴折叠成多行，并在时间轴上方显示插入的文字，所有处理在本地浏览器完成。",
+          "user": "hughfenghen",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9978",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051901.webp"
+          ]
+        },
+        {
+          "title": "Macbook 刘海便签工具",
+          "link": "https://github.com/oil-oil/notch-note",
+          "description": "隐藏在 Macbook 的刘海里面的便签工具，鼠标 Hover 时自动展开。",
+          "user": "oil-oil",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9983",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051903.webp"
+          ]
+        },
+        {
+          "title": "流式 markdown 渲染库",
+          "link": "https://github.com/Simon-He95/stream-markdown",
+          "description": "针对 AI 吐出的流式 markdown 的渲染库，提供 Vue 实现。",
+          "user": "Simon-He95",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9999",
+          "images": []
+        },
+        {
+          "title": "TXT 文件桌面阅读器",
+          "link": "https://github.com/ssnangua/txt-reader",
+          "description": "跨平台的 TXT 文件桌面阅读器，可以给内容上色，还支持章节识别、空行压缩、行首缩进、语音朗读、AI 阅读助手等功能。",
+          "user": "ssnangua",
+          "user_link": "https://github.com/ruanyf/weekly/issues/10004",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026052006.webp"
+          ]
+        },
+        {
+          "title": "Forgejo",
+          "link": "https://forgejo.org/",
+          "description": "Gitea 的一个分叉项目，可以用来搭建自己的 Git 服务器，自带 Web 前端，作为个人的 GitHub 服务。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024101702.webp"
+          ]
+        },
+        {
+          "title": "HTML 实时编辑插件",
+          "link": "https://marketplace.visualstudio.com/items?itemName=xxx",
+          "description": "开源的 VS Code 插件，实时编辑预览 HTML 文件。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024101402.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI 相关",
+      "items": [
+        {
+          "title": "移除 AI 图片水印工具",
+          "link": "https://github.com/example/remove-watermark",
+          "description": "移除 AI 图片水印的命令行工具，也是一个 Python 软件包，可见水印和不可见水印（比如谷歌的 SynthID）都能移除。",
+          "images": []
+        },
+        {
+          "title": "AVC (Agent View Controller)",
+          "link": "https://github.com/study8677/Agent_View_Controller-AVC",
+          "description": "将 AI Agent 终端的确认文字，变成可交互的网页弹窗，可以作为 Agent 的 Skill 使用。",
+          "user": "study8677",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9979",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051902.webp"
+          ]
+        },
+        {
+          "title": "Lucarne",
+          "link": "https://github.com/tuchg/Lucarne",
+          "description": "把本地运行的 AI Agent 接到微信 / Telegram，让你离开电脑也能收到进展、审批权限、回复问题、接续会话。",
+          "user": "tuchg",
+          "user_link": "https://github.com/ruanyf/weekly/issues/9995",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026052101.webp"
+          ]
+        },
+        {
+          "title": "在线体验 token 生成速度",
+          "link": "https://example.com/token-speed",
+          "description": "每秒生成10个 token，是快是慢？20个呢？这个网站让你在线体验 token 生成速度。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "高斯泼溅作品集 (SuperSplat)",
+          "link": "https://superspl.at/",
+          "description": "高斯泼溅（Gaussian Splatting）是一种算法，可以将多张照片合成为 3D 图像。网站 SuperSplat 提供在线的高斯泼溅处理，可以上传照片进行处理，还能浏览很多合成好的 3D 模型。大家看作品《草莓》，效果非常好。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051910.webp",
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051911.webp"
+          ]
+        },
+        {
+          "title": "IP66",
+          "link": "https://ip66.dev/",
+          "description": "免费的 IP 地理位置数据库，可以自由下载，在脚本中调用查询。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202603/bg2026030404.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "支撑智利的双手",
+          "link": "https://medium.com/@breid.at/why-the-silicon-of-quantum-computing-is-being-destroyed-en-masse-in-the-atacama-desert-41d3a9b823bf",
+          "description": "智利是世界最大的产铜国，近一半的出口为铜，占世界年供应量的比重最高为60%，至今仍有25%。智利最大的铜生产中心在阿塔卡马沙漠，沙漠入口的小镇有一个雕塑《支撑智利的双手》。这个雕塑是一双巨大的铜制双手，托举起智利地图，象征此地的铜矿对智利的巨大贡献。下面是智利沙漠铜矿的照片，可以看到巨大的矿坑和旁边矿石的沉淀池。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051906.webp",
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051907.webp"
+          ]
+        },
+        {
+          "title": "S 形曲线",
+          "link": "https://www.astralcodexten.com/p/the-sigmoids-wont-save-you",
+          "description": "有一个经验法则，所有的增长曲线最终都会变成 S 形曲线。比如，下面是指数式增长曲线。最终，增长会放缓，变成 S 形曲线。这是普遍现象，所有增长曲线最终都会变成下面的这样，增长曲线到一定阶段后就会变平。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051603.webp",
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051604.webp",
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026051605.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "多面手和专才",
+          "link": "https://ochagavia.nl/blog/the-undercover-generalist/",
+          "description": "自从我成为自由职业、独立接活以后，我一直感受到多面手程序员与专家程序员之间的对立关系。我发现有一句话很准确：\"理论上，所有公司都喜欢适应性强、能承担多个岗位的程序员。但实际上，大多数招聘职位更偏向专家。\"这意味着，即使你是多面手程序员，找工作时也必须让自己看上去像专家。我的问题是，我不觉得自己的技能属于特定类别。我把自己看作一个解决问题的黑客，受好奇心驱动，解决那些自己有兴趣的问题。什么工具适合解决某个问题，我就学习使用那种工具。然而，在我独立接活后，将自己说成多面手，就很影响我招揽客户。客户希望听到你说自己是专家，而不是说\"我是计算机通才\"之类的模糊说法。他们的问题包括：你是前端工程师还是后端工程师？你使用 .NET 还是 Python？你专长于 AWS 还是 Azure？......我不怪他们......客户面对的是具体的问题，确实很难评估雇佣多面手程序员的价值。于是，我决定改变沟通策略，说人们想听的话。我对自己的定位变成了，一位专注于系统编程和开源软件的 Rust 专家程序员。我按照这个定位包装自己。它很快就发挥了作用，让我整年都有工作合同！",
+          "images": []
+        },
+        {
+          "title": "长时间洗澡或游泳皮肤起皱原因",
+          "description": "长时间洗澡或游泳，皮肤会出现皱纹，甚至变色，这是为什么？你可能不相信，这至今仍然是一个未解之谜，并没有公认的解释。以前的看法是，这是因为皮肤吸收水分后膨胀，导致肿胀和弯曲。但是上个世纪30年代的研究人员观察到，手指神经受损的人浸水后不会形成皱纹。这说明，皱纹原因与皮肤无关，而与神经系统有关。现在，科学界的主流解释是，当手和脚与水接触超过几分钟后，皮肤中的汗管就会打开，让水流入皮肤组织。皮肤增加的水份，会减少皮肤中盐的比例。神经系统就会向大脑发送盐水平降低的信号，进而神经系统就会做出反应，开始收缩血管，减少水的渗入。血管收缩了，但是最外层的皮肤并没有变小，就会导致外侧的皮肤失去了支撑，就会像泄了气的气球一样，自上而下地下陷，形成皱纹。这就像干了的葡萄起皱一样----它内部失去的体积多于表面积。这种血管收缩还会导致皮肤变苍白，因为皮下血管的血液减少了。这与你洗热水澡时，血管扩张而导致皮肤变红的情况正好相反。所以，皮肤起皱是由神经系统引发的。如果神经受损，血管就收不到大脑信号，不会发生收缩，皮肤也就不会起皱。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023083007.webp",
+            "https://cdn.beekka.com/blogimg/asset/202605/bg2026052102.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "言论1",
+          "description": "过去一两年，我一直完全依赖 AI 进行编程，自己一行代码都没写过。有一天，我自己动手写了一篇文章，没有用 AI，但写完后我忍不住把它复制粘贴到 Claude 里，看看 AI 怎么想，因为我担心文章逻辑混乱、文笔幼稚，或者漏掉了什么内容。这就是大量使用 AI 的后果，它让你滋生自我怀疑，我已经不太相信自己，更相信 AI 了。",
+          "images": []
+        },
+        {
+          "title": "言论2",
+          "description": "无论工具发展到何种程度，无论它们变得多么强大，它们始终只是工具。它们无法取代我们的理性和价值观，依然由你来选择什么值得去创造。",
+          "images": []
+        },
+        {
+          "title": "放慢速度",
+          "link": "https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/",
+          "description": "我建议放慢速度，给自己一些时间，思考你到底在构建什么，以及为什么要构建。这样你才有机会告诉自己\"不，我们不需要这个\"。",
+          "images": []
+        },
+        {
+          "title": "言论4",
+          "description": "石油行业有一句谚语：一家健康的石油公司由一位地质学家负责，一家成熟的石油公司由一位工程师负责，一家衰落的石油公司由一位会计师负责，一家垂死的石油公司由一位律师负责。",
+          "images": []
+        },
+        {
+          "title": "言论5",
+          "description": "blackbookbj 说：专家和全面型人才那个太真实了。大部分单位其实都这样，既要你是专家型人才、又说你要是复合型人才。",
+          "images": []
+        },
+        {
+          "title": "言论6",
+          "description": "john 说：> 无论工具发展到何种程度，无论它们变得多么强大，它们始终只是工具。它们无法取代我们的理性和价值观，依然由你来选择什么值得去创造。我们关心的是理性和价值观嘛，我们关心的是工作岗位。你工作岗位被取代了无法取代价值观有个啥用。",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

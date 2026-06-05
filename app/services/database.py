@@ -135,6 +135,23 @@ class DatabaseService:
         """Reload stopwords from file."""
         self._load_stopwords()
 
+    def cleanup_stale_parsing_status(self):
+        """Reset articles with 'analyzing' status to 'fail' on startup."""
+        with self.get_session() as session:
+            from app.models import Article
+            from sqlmodel import select
+
+            # Find articles with analyzing status
+            query = select(Article).where(Article.status == "analyzing")
+            articles = session.exec(query).all()
+
+            if articles:
+                for article in articles:
+                    article.status = "fail"
+                session.commit()
+                return len(articles)
+            return 0
+
 
 # Global database service instance
 db_service = DatabaseService()
