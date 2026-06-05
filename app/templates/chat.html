@@ -7,9 +7,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@mariozechner/mini-lit@0.3.0/dist/mini-lit.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@mariozechner/mini-lit@0.3.0/dist/MarkdownBlock.js"></script>
     <style>
         [x-cloak] { display: none !important; }
+        .markdown-content h1, .markdown-content h2, .markdown-content h3 {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .markdown-content h1 { font-size: 1.5rem; }
+        .markdown-content h2 { font-size: 1.25rem; }
+        .markdown-content h3 { font-size: 1.1rem; }
+        .markdown-content p { margin-bottom: 0.75rem; }
+        .markdown-content ul, .markdown-content ol { margin-left: 1.5rem; margin-bottom: 0.75rem; }
+        .markdown-content li { margin-bottom: 0.25rem; }
+        .markdown-content code { background: #f3f4f6; padding: 0.125rem 0.25rem; border-radius: 0.25rem; font-size: 0.875rem; }
+        .markdown-content pre { background: #1f2937; color: #f9fafb; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; margin: 0.75rem 0; }
+        .markdown-content pre code { background: transparent; color: inherit; }
+        .markdown-content blockquote { border-left: 4px solid #d1d5db; padding-left: 1rem; margin: 0.75rem 0; color: #6b7280; }
+        .markdown-content a { color: #2563eb; text-decoration: underline; }
+        .markdown-content table { border-collapse: collapse; width: 100%; margin: 0.75rem 0; }
+        .markdown-content th, .markdown-content td { border: 1px solid #e5e7eb; padding: 0.5rem; }
+        .markdown-content th { background: #f9fafb; }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -116,7 +135,7 @@
                         <span>AI 回答</span>
                     </h2>
                     <div class="prose prose-sm max-w-none">
-                        <div class="text-gray-700 whitespace-pre-wrap" x-text="result?.answer"></div>
+                        <markdown-block x-bind:content="result?.answer || ''"></markdown-block>
                     </div>
                 </div>
             </div>
