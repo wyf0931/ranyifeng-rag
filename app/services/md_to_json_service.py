@@ -276,11 +276,12 @@ class MarkdownToJSONService:
         Parse all articles with status='imported' that have markdown content.
 
         This runs sequentially (no concurrency) to avoid overwhelming the LLM.
+        Articles are sorted by issue number in descending order.
 
         Returns:
             Dict with batch parsing results
         """
-        from sqlalchemy import create_engine
+        from sqlalchemy import create_engine, desc, cast, Integer
 
         engine = create_engine(f"sqlite:///{settings.database_path}")
 
@@ -289,7 +290,7 @@ class MarkdownToJSONService:
                 (Article.status == "imported") &
                 (Article.md_content != None) &
                 (Article.md_content != "")
-            )
+            ).order_by(desc(cast(Article.number, Integer)))
 
             articles = session.exec(query).all()
 
