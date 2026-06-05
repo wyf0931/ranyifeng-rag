@@ -38,12 +38,12 @@ SYSTEM_PROMPT = """you are a helpful assistant of convert markdown article to js
     "number": 123,
     "sections": [
         {
-            "name": "工具",
+            "name": "section name (e.g. 开篇小故事，活动，文章，工具，资源，特定领域（例如 Ai等），图片，文摘，言论，References，往期回顾等)",
             "items": [
                 {
                     "title": "该条目的标题",
                     "link": "从对应编号的 reference 中提取",
-                    "description": "该条信息的解释或说明",
+                    "description": "该条信息的解释或说明，如果是开篇小故事，则是整段故事内容的 Markdown，包含图片、链接等（optional）； ",
                     "user": "投稿人，一般都会提到，optional",
                     "user_link": "投稿连接，根据编号在 reference 中找对应的链接地址，optional",
                     "images": [
@@ -57,16 +57,12 @@ SYSTEM_PROMPT = """you are a helpful assistant of convert markdown article to js
 ```
 
 ## Filter rules:
-- 不需要的 section：开篇小故事、往期回顾；
+- 不需要的 section：往期回顾；
 
 ## 输出要求：
 - 直接输出干净的 json 数据，不需要任何解释和说明；
 - number 字段必须是数字类型，不要字符串；
 """
-
-# Section names to filter out
-FILTERED_SECTIONS = ["开篇小故事", "往期回顾"]
-
 
 class MarkdownToJSONService:
     """Service for converting article markdown to JSON."""
@@ -97,7 +93,11 @@ class MarkdownToJSONService:
         Returns:
             Dict with parsing result status and details
         """
-        with Session(settings.engine) as session:
+        from sqlalchemy import create_engine
+
+        engine = create_engine(f"sqlite:///{settings.database_path}")
+
+        with Session(engine) as session:
             article = session.get(Article, article_id)
             if not article:
                 return {"success": False, "error": "Article not found"}
@@ -172,7 +172,7 @@ class MarkdownToJSONService:
             logger.error(f"Error calling LLM: {e}")
             return None
 
-    def _parse_and_validate_json(self, content: str) -> Optional[Dict[str, Any]]:
+    def _parse_and_validate_json(self, content: str | None) -> Optional[Dict[str, Any]]:
         """
         Parse and validate JSON content, attempting to fix common errors.
 
@@ -280,7 +280,11 @@ class MarkdownToJSONService:
         Returns:
             Dict with batch parsing results
         """
-        with Session(settings.engine) as session:
+        from sqlalchemy import create_engine
+
+        engine = create_engine(f"sqlite:///{settings.database_path}")
+
+        with Session(engine) as session:
             query = select(Article).where(
                 (Article.status == "imported") &
                 (Article.md_content != None) &
