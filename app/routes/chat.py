@@ -25,3 +25,9 @@ def dataset():
 def admin():
     """Render admin page."""
     return render_template("admin.html")
+
+
+@chat_bp.route("/stopwords")
+def stopwords():
+    """Render stopwords management page."""
+    return render_template("stopwords.html")

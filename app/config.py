@@ -18,6 +18,7 @@ class Settings(BaseSettings):
     search_timeout: int = Field(default=30, description="Search timeout in seconds")
 
     jieba_dict_path: str = Field(default="data/jieba_custom.dict", description="Custom jieba dictionary")
+    jieba_stopwords_path: str = Field(default="data/jieba_stopwords.txt", description="Jieba stopwords file")
 
     class Config:
         env_file = ".env"

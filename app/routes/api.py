@@ -218,6 +218,105 @@ def delete_dictionary_word(word):
         return jsonify({"error": str(e)}), 500
 
 
+@api_bp.route("/stopwords", methods=["GET"])
+def get_stopwords():
+    """Get all stopwords from jieba stopwords file."""
+    try:
+        from pathlib import Path
+        from app.config import settings
+
+        stopwords_path = Path(settings.jieba_stopwords_path)
+        words = []
+
+        if stopwords_path.exists():
+            with open(stopwords_path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith('#'):
+                        words.append(line)
+
+        return jsonify(words)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@api_bp.route("/stopwords", methods=["POST"])
+def add_stopword():
+    """Add a word to jieba stopwords file."""
+    try:
+        from pathlib import Path
+        from app.config import settings
+
+        data = request.get_json()
+        word = data.get("word", "").strip()
+
+        if not word:
+            return jsonify({"error": "Word is required"}), 400
+
+        stopwords_path = Path(settings.jieba_stopwords_path)
+        stopwords_path.parent.mkdir(parents=True, exist_ok=True)
+
+        # Read existing stopwords
+        existing_words = set()
+        if stopwords_path.exists():
+            with open(stopwords_path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith('#'):
+                        existing_words.add(line)
+
+        # Check if word already exists
+        if word in existing_words:
+            return jsonify({"success": True, "message": "Word already exists", "skipped": True})
+
+        # Append new word
+        with open(stopwords_path, 'a', encoding='utf-8') as f:
+            f.write(f"{word}\n")
+
+        # Reload stopwords in database service
+        db_service.reload_stopwords()
+
+        return jsonify({"success": True, "message": "Stopword added successfully", "skipped": False})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@api_bp.route("/stopwords/<word>", methods=["DELETE"])
+def delete_stopword(word):
+    """Delete a word from jieba stopwords file."""
+    try:
+        from pathlib import Path
+        from app.config import settings
+
+        word = word.strip()
+        if not word:
+            return jsonify({"error": "Word is required"}), 400
+
+        stopwords_path = Path(settings.jieba_stopwords_path)
+
+        if not stopwords_path.exists():
+            return jsonify({"error": "Stopwords file not found"}), 404
+
+        # Read all lines and filter out the word
+        lines = []
+        with open(stopwords_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                if line.strip() == word:
+                    continue  # Skip this line (delete the word)
+                lines.append(line)
+
+        # Write back without the deleted word
+        with open(stopwords_path, 'w', encoding='utf-8') as f:
+            f.writelines(lines)
+
+        # Reload stopwords in database service
+        db_service.reload_stopwords()
+
+        return jsonify({"success": True, "message": "Stopword deleted successfully"})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
 @api_bp.route("/import-urls", methods=["POST"])
 def import_urls():
     """Import articles from URLs using trafilatura."""

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>停用词管理 - 科技爱好者周刊 RAG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        [x-cloak] { display: none !important; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div x-data="stopwordsApp()" x-cloak class="min-h-screen">
+        <!-- Header -->
+        <header class="bg-white border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="filter" class="w-8 h-8 text-blue-600"></i>
+                        <h1 class="text-xl font-bold text-gray-900">停用词管理</h1>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <a href="/" class="text-gray-600 hover:text-gray-900 flex items-center space-x-1">
+                            <i data-lucide="search" class="w-5 h-5"></i>
+                            <span>搜索</span>
+                        </a>
+                        <a href="/dictionary" class="text-gray-600 hover:text-gray-900 flex items-center space-x-1">
+                            <i data-lucide="book" class="w-5 h-5"></i>
+                            <span>词典</span>
+                        </a>
+                        <a href="/dataset" class="text-gray-600 hover:text-gray-900 flex items-center space-x-1">
+                            <i data-lucide="database" class="w-5 h-5"></i>
+                            <span>数据集</span>
+                        </a>
+                        <a href="/admin" class="text-gray-600 hover:text-gray-900 flex items-center space-x-1">
+                            <i data-lucide="settings" class="w-5 h-5"></i>
+                            <span>管理</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-7xl mx-auto px-4 py-6">
+            <!-- Action Bar -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 mb-6">
+                <div class="flex items-center justify-between">
+                    <div class="text-sm text-gray-500">
+                        共 <span x-text="stopwords.length" class="font-semibold text-gray-900"></span> 个停用词
+                    </div>
+                    <button @click="openAddDialog"
+                            class="inline-flex items-center px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
+                        <i data-lucide="plus" class="w-4 h-4 mr-2"></i>
+                        添加停用词
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stopwords Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
+                <template x-for="word in stopwords" :key="word">
+                    <div class="group relative bg-white rounded-lg shadow-sm border border-gray-200 p-3 hover:shadow-md transition-shadow">
+                        <span class="text-sm text-gray-700" x-text="word"></span>
+                        <button @click="confirmDelete(word)"
+                                class="absolute top-1 right-1 opacity-0 group-hover:opacity-100 transition-opacity p-1 text-red-500 hover:text-red-700 rounded">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </template>
+            </div>
+
+            <!-- Empty State -->
+            <div x-show="stopwords.length === 0" class="text-center py-12">
+                <i data-lucide="filter" class="w-12 h-12 text-gray-300 mx-auto mb-4"></i>
+                <p class="text-gray-500">暂无停用词</p>
+                <button @click="openAddDialog"
+                        class="mt-4 inline-flex items-center px-4 py-2 text-sm font-medium rounded-md text-blue-600 bg-blue-50 hover:bg-blue-100 transition-colors">
+                    添加第一个停用词
+                </button>
+            </div>
+        </main>
+
+        <!-- Add Stopword Dialog -->
+        <div x-show="addDialogOpen" x-transition class="fixed inset-0 z-50" style="display: none;">
+            <div class="fixed inset-0 bg-black/50" @click="closeAddDialog"></div>
+            <div class="fixed z-50 bg-white rounded-lg shadow-xl flex flex-col border border-gray-200"
+                 style="top: 50%; left: 50%; transform: translate(-50%, -50%); width: min(400px, 90vw);">
+                <div class="p-6">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-4">添加停用词</h2>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">停用词</label>
+                        <input x-model="newWord"
+                               @keyup.enter="addWord"
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                               placeholder="输入停用词"
+                               ref="wordInput">
+                        <p class="mt-2 text-xs text-gray-500">停用词将在搜索时被过滤掉，不参与匹配</p>
+                    </div>
+                </div>
+                <button type="button" @click="closeAddDialog"
+                        class="absolute top-4 right-4 rounded-sm text-gray-400 opacity-70 transition-all hover:opacity-100 hover:text-gray-600 focus:outline-none cursor-pointer">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <div class="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end p-6 border-t border-gray-200">
+                    <button @click="closeAddDialog"
+                            class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md text-gray-700 bg-white border border-gray-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
+                        取消
+                    </button>
+                    <button @click="addWord"
+                            :disabled="!newWord.trim() || adding"
+                            class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
+                        <span x-text="adding ? '添加中...' : '添加'"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delete Confirmation Dialog -->
+        <div x-show="deleteDialogOpen" x-transition class="fixed inset-0 z-50" style="display: none;">
+            <div class="fixed inset-0 bg-black/50" @click="closeDeleteDialog"></div>
+            <div class="fixed z-50 bg-white rounded-lg shadow-xl flex flex-col border border-gray-200"
+                 style="top: 50%; left: 50%; transform: translate(-50%, -50%); width: min(400px, 90vw);">
+                <div class="p-6">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-4">确认删除</h2>
+                    <p class="text-sm text-gray-600">
+                        确定要删除停用词 "<span x-text="wordToDelete" class="font-medium text-gray-900"></span>" 吗？
+                    </p>
+                </div>
+                <button type="button" @click="closeDeleteDialog"
+                        class="absolute top-4 right-4 rounded-sm text-gray-400 opacity-70 transition-all hover:opacity-100 hover:text-gray-600 focus:outline-none cursor-pointer">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <div class="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end p-6 border-t border-gray-200">
+                    <button @click="closeDeleteDialog"
+                            class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md text-gray-700 bg-white border border-gray-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
+                        取消
+                    </button>
+                    <button @click="deleteWord"
+                            :disabled="deleting"
+                            class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 disabled:bg-gray-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-colors">
+                        <span x-text="deleting ? '删除中...' : '删除'"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toast -->
+        <div x-show="toast.show" x-transition class="fixed bottom-4 right-4 bg-gray-900 text-white px-6 py-3 rounded-lg shadow-lg">
+            <span x-text="toast.message"></span>
+        </div>
+    </div>
+
+    <script>
+        function stopwordsApp() {
+            return {
+                stopwords: [],
+                addDialogOpen: false,
+                deleteDialogOpen: false,
+                newWord: '',
+                wordToDelete: '',
+                adding: false,
+                deleting: false,
+                toast: { show: false, message: '' },
+
+                async init() {
+                    await this.loadStopwords();
+                    lucide.createIcons();
+                },
+
+                async loadStopwords() {
+                    try {
+                        const response = await fetch('/api/stopwords');
+                        this.stopwords = await response.json();
+                    } catch (error) {
+                        this.showToast('加载停用词失败');
+                    }
+                },
+
+                openAddDialog() {
+                    this.addDialogOpen = true;
+                    this.newWord = '';
+                    this.$nextTick(() => {
+                        this.$refs.wordInput?.focus();
+                    });
+                },
+
+                closeAddDialog() {
+                    this.addDialogOpen = false;
+                    this.newWord = '';
+                },
+
+                async addWord() {
+                    if (!this.newWord.trim()) return;
+
+                    this.adding = true;
+
+                    try {
+                        const response = await fetch('/api/stopwords', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ word: this.newWord.trim() })
+                        });
+
+                        const result = await response.json();
+
+                        if (response.ok && !result.skipped) {
+                            await this.loadStopwords();
+                            this.showToast('添加成功');
+                            this.closeAddDialog();
+                        } else if (result.skipped) {
+                            this.showToast('停用词已存在');
+                        } else {
+                            this.showToast('添加失败: ' + (result.error || '未知错误'));
+                        }
+                    } catch (error) {
+                        this.showToast('添加失败: ' + error.message);
+                    } finally {
+                        this.adding = false;
+                    }
+                },
+
+                confirmDelete(word) {
+                    this.wordToDelete = word;
+                    this.deleteDialogOpen = true;
+                },
+
+                closeDeleteDialog() {
+                    this.deleteDialogOpen = false;
+                    this.wordToDelete = '';
+                },
+
+                async deleteWord() {
+                    this.deleting = true;
+
+                    try {
+                        const response = await fetch(`/api/stopwords/${encodeURIComponent(this.wordToDelete)}`, {
+                            method: 'DELETE'
+                        });
+
+                        const result = await response.json();
+
+                        if (response.ok) {
+                            await this.loadStopwords();
+                            this.showToast('删除成功');
+                            this.closeDeleteDialog();
+                        } else {
+                            this.showToast('删除失败: ' + (result.error || '未知错误'));
+                        }
+                    } catch (error) {
+                        this.showToast('删除失败: ' + error.message);
+                    } finally {
+                        this.deleting = false;
+                    }
+                },
+
+                showToast(message) {
+                    this.toast = { show: true, message };
+                    setTimeout(() => {
+                        this.toast.show = false;
+                    }, 3000);
+                }
+            };
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+
+        // Close dialogs on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const app = document.querySelector('[x-data]')._x_dataStack[0];
+                if (app.addDialogOpen) {
+                    app.closeAddDialog();
+                }
+                if (app.deleteDialogOpen) {
+                    app.closeDeleteDialog();
+                }
+            }
+        });
+    </script>
+</body>
+</html>

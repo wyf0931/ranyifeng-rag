@@ -10,12 +10,23 @@ class DatabaseService:
     def __init__(self):
         self.db_path = settings.database_path
         self.engine = None
+        self.stopwords: set = set()
         self._init_jieba()
+        self._load_stopwords()
 
     def _init_jieba(self):
         """Initialize jieba with custom dictionary if exists."""
         if Path(settings.jieba_dict_path).exists():
             jieba.load_userdict(settings.jieba_dict_path)
+
+    def _load_stopwords(self):
+        """Load stopwords from file if exists."""
+        stopwords_path = Path(settings.jieba_stopwords_path)
+        if stopwords_path.exists():
+            with open(stopwords_path, 'r', encoding='utf-8') as f:
+                self.stopwords = set(line.strip() for line in f if line.strip() and not line.startswith('#'))
+        else:
+            self.stopwords = set()
 
     def init_db(self):
         """Initialize database and create tables."""
@@ -85,11 +96,10 @@ class DatabaseService:
         # Tokenize query with jieba
         tokens = jieba.lcut(query)
 
-        # Filter out single characters, whitespace, and common stop words
-        # Use OR query for better recall
-        search_tokens = [t for t in tokens if len(t) > 1 and t.strip()]
+        # Filter out single characters, whitespace, and stopwords
+        search_tokens = [t for t in tokens if len(t) > 1 and t.strip() and t not in self.stopwords]
         if not search_tokens:
-            search_tokens = [t for t in tokens if t.strip()]
+            search_tokens = [t for t in tokens if t.strip() and t not in self.stopwords]
 
         if not search_tokens:
             return []
@@ -120,6 +130,10 @@ class DatabaseService:
         if self.engine is None:
             self.init_db()
         return Session(self.engine)
+
+    def reload_stopwords(self):
+        """Reload stopwords from file."""
+        self._load_stopwords()
 
 
 # Global database service instance
