@@ -112,7 +112,8 @@ def get_items():
                     "article_id": item.article_id,
                     "article_title": article.title,
                     "article_number": article.number,
-                    "article_link": article.link
+                    "article_link": article.link,
+                    "created_at": item.created_at.isoformat() if item.created_at else None
                 })
 
             return jsonify(items)
