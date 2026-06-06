@@ -70,6 +70,17 @@
                                    class="h-9 px-3 pr-8 text-sm border border-gray-300 rounded-md bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
                                    placeholder="搜索标题或期号...">
                         </div>
+                        <div class="relative">
+                            <select x-model="filters.status"
+                                    @change="applyFilters"
+                                    class="h-9 pl-3 pr-8 text-sm border border-gray-300 rounded-md bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
+                                <option value="">全部状态</option>
+                                <option value="imported">已导入</option>
+                                <option value="analyzing">解析中</option>
+                                <option value="success">成功</option>
+                                <option value="fail">失败</option>
+                            </select>
+                        </div>
                     </div>
                     <button @click="openImportDialog"
                             class="inline-flex items-center px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
@@ -347,7 +358,8 @@
                 articles: [],
                 filteredArticles: [],
                 filters: {
-                    search: ''
+                    search: '',
+                    status: ''
                 },
                 currentPage: 1,
                 pageSize: 20,
@@ -380,11 +392,22 @@
 
                 applyFilters() {
                     this.filteredArticles = this.articles.filter(article => {
+                        // Search filter
                         if (this.filters.search) {
                             const search = this.filters.search.toLowerCase();
-                            return (article.title && article.title.toLowerCase().includes(search)) ||
-                                   (article.number && article.number.toLowerCase().includes(search));
+                            if (!((article.title && article.title.toLowerCase().includes(search)) ||
+                                   (article.number && article.number.toLowerCase().includes(search)))) {
+                                return false;
+                            }
                         }
+
+                        // Status filter
+                        if (this.filters.status) {
+                            if (article.status !== this.filters.status) {
+                                return false;
+                            }
+                        }
+
                         return true;
                     });
                     this.currentPage = 1;
