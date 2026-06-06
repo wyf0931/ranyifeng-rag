@@ -123,6 +123,26 @@ def get_items():
         return jsonify({"error": str(e)}), 500
 
 
+@api_bp.route("/items/<int:item_id>", methods=["DELETE"])
+def delete_item(item_id):
+    """Delete an item by ID."""
+    try:
+        from sqlmodel import Session, select, delete
+        from app.models import Item
+
+        with db_service.get_session() as session:
+            item = session.get(Item, item_id)
+            if not item:
+                return jsonify({"error": "Item not found"}), 404
+
+            session.delete(item)
+            session.commit()
+
+            return jsonify({"success": True, "message": "Item deleted successfully"})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
 @api_bp.route("/items/search", methods=["GET"])
 def search_items():
     """Search items using FTS5 with jieba tokenization."""
