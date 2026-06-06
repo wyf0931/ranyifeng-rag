@@ -139,10 +139,16 @@
                                         <span class="text-sm text-gray-600" x-text="formatDateShort(item.created_at)"></span>
                                     </td>
                                     <td class="px-6 py-4 text-right">
-                                        <button @click="viewItem(item)"
-                                                class="inline-flex items-center justify-center w-8 h-8 rounded-md bg-blue-100 hover:bg-blue-200 text-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                                            <i data-lucide="eye" class="w-4 h-4"></i>
-                                        </button>
+                                        <div class="flex items-center justify-end space-x-2">
+                                            <button @click="viewItem(item)"
+                                                    class="inline-flex items-center justify-center w-8 h-8 rounded-md bg-blue-100 hover:bg-blue-200 text-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                                <i data-lucide="eye" class="w-4 h-4"></i>
+                                            </button>
+                                            <button @click="confirmDeleteItemFromList(item)"
+                                                    class="inline-flex items-center justify-center w-8 h-8 rounded-md bg-red-100 hover:bg-red-200 text-red-600 transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2">
+                                                <i data-lucide="trash-2" class="w-4 h-4"></i>
+                                            </button>
+                                        </div>
                                     </td>
                                 </tr>
                             </template>
@@ -522,6 +528,11 @@
                 },
 
                 confirmDeleteItem() {
+                    this.deleteDialogOpen = true;
+                },
+
+                confirmDeleteItemFromList(item) {
+                    this.selectedItem = item;
                     this.deleteDialogOpen = true;
                 },
 
