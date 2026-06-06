@@ -123,6 +123,49 @@ def get_items():
         return jsonify({"error": str(e)}), 500
 
 
+@api_bp.route("/items/search", methods=["GET"])
+def search_items():
+    """Search items using FTS5 with jieba tokenization."""
+    try:
+        query = request.args.get("q", "").strip()
+        section_filter = request.args.get("section")
+        limit = int(request.args.get("limit", 100))
+
+        if not query:
+            return jsonify([])
+
+        # Use database FTS5 search
+        results = db_service.search(query, limit=limit)
+
+        # Apply section filter if provided
+        if section_filter:
+            results = [r for r in results if r.get("section_name") == section_filter]
+
+        # Format results to match items API format
+        items = []
+        for r in results:
+            items.append({
+                "id": r["id"],
+                "title": r["title"],
+                "link": r["link"],
+                "description": r["description"],
+                "user": r.get("user", ""),
+                "user_link": r.get("user_link", ""),
+                "images": r.get("images", []),
+                "section_name": r["section_name"],
+                "article_id": r["article_id"],
+                "article_title": r["article_title"],
+                "article_number": r.get("article_number", ""),
+                "article_link": r["article_link"],
+                "created_at": r.get("created_at")
+            })
+
+        return jsonify(items)
+    except Exception as e:
+        logger.error(f"Search items failed: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
+
+
 @api_bp.route("/articles", methods=["GET"])
 def get_articles():
     """Get all articles with optional filter."""
