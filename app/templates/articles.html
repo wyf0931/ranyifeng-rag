@@ -170,14 +170,32 @@
                         条，共 <span class="font-medium" x-text="filteredArticles.length"></span> 条
                     </div>
                     <div class="flex items-center space-x-2">
+                        <button @click="currentPage = 1" :disabled="currentPage === 1"
+                                class="px-3 py-1 text-sm border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">
+                            首页
+                        </button>
                         <button @click="currentPage--" :disabled="currentPage === 1"
                                 class="px-3 py-1 text-sm border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">
                             上一页
                         </button>
-                        <span class="text-sm text-gray-600" x-text="currentPage"></span>
+                        <template x-for="page in visiblePages">
+                            <div class="inline-flex">
+                                <span x-show="page === '...'" class="px-2 py-1 text-sm text-gray-500">...</span>
+                                <button x-show="page !== '...'" x-cloak @click="currentPage = page"
+                                        :class="currentPage === page
+                                            ? 'px-3 py-1 text-sm bg-blue-500 text-white rounded-md'
+                                            : 'px-3 py-1 text-sm border border-gray-300 rounded-md hover:bg-gray-50 transition-colors'">
+                                    <span x-text="page"></span>
+                                </button>
+                            </div>
+                        </template>
                         <button @click="currentPage++" :disabled="currentPage * pageSize >= filteredArticles.length"
                                 class="px-3 py-1 text-sm border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">
                             下一页
+                        </button>
+                        <button @click="currentPage = totalPages" :disabled="currentPage === totalPages"
+                                class="px-3 py-1 text-sm border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">
+                            末页
                         </button>
                     </div>
                 </div>
@@ -377,7 +395,16 @@
 
                 async init() {
                     await this.loadArticles();
-                    lucide.createIcons();
+                    this.$nextTick(() => lucide.createIcons());
+
+                    // Watch for page changes to refresh icons
+                    this.$watch('currentPage', () => {
+                        this.$nextTick(() => lucide.createIcons());
+                    });
+                },
+
+                refreshIcons() {
+                    this.$nextTick(() => lucide.createIcons());
                 },
 
                 async loadArticles() {
@@ -411,11 +438,57 @@
                         return true;
                     });
                     this.currentPage = 1;
+                    this.refreshIcons();
                 },
 
                 get paginatedArticles() {
                     const start = (this.currentPage - 1) * this.pageSize;
                     return this.filteredArticles.slice(start, start + this.pageSize);
+                },
+
+                get totalPages() {
+                    return Math.ceil(this.filteredArticles.length / this.pageSize);
+                },
+
+                get visiblePages() {
+                    const total = this.totalPages;
+                    const current = this.currentPage;
+                    const delta = 2; // Number of pages to show on each side
+
+                    if (total <= 7) {
+                        // Show all pages if 7 or fewer
+                        return Array.from({ length: total }, (_, i) => i + 1);
+                    }
+
+                    // Always show first page
+                    const pages = [1];
+
+                    if (current <= delta + 3) {
+                        // Near the beginning
+                        for (let i = 2; i <= Math.min(5, total - 1); i++) {
+                            pages.push(i);
+                        }
+                        if (total > 5) {
+                            pages.push('...');
+                            pages.push(total);
+                        }
+                    } else if (current >= total - delta - 2) {
+                        // Near the end
+                        pages.push('...');
+                        for (let i = Math.max(total - 4, 2); i <= total; i++) {
+                            pages.push(i);
+                        }
+                    } else {
+                        // In the middle
+                        pages.push('...');
+                        for (let i = current - delta; i <= current + delta; i++) {
+                            pages.push(i);
+                        }
+                        pages.push('...');
+                        pages.push(total);
+                    }
+
+                    return pages;
                 },
 
                 viewArticle(article) {
