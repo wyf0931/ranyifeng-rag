@@ -12,6 +12,7 @@ class RAGState(TypedDict):
     rewritten_query: str
     search_results: List[Dict[str, Any]]
     thinking: str
+    decision: str
     answer: str
     loop_count: int
     history: List[Dict[str, str]]
@@ -49,7 +50,11 @@ rewritten keywords: "代码 报错 没有 输出 原因"
 user query: {query}
 """
 
-            response = self.llm.invoke(prompt)
+            messages = [
+                {"role": "system", "content": "You are a helpful assistant that rewrites user queries into search keywords."},
+                {"role": "user", "content": prompt}
+            ]
+            response = self.llm.invoke(messages)
             state["rewritten_query"] = response.content.strip()
             state["loop_count"] = state.get("loop_count", 0) + 1
             logger.info(f"[rewrite_query] END - rewritten_query: {state['rewritten_query']}, loop_count: {state['loop_count']}")
@@ -120,11 +125,13 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
                         improved_query = line.split(":", 1)[1].strip()
 
                 state["thinking"] = reasoning
+                state["decision"] = decision  # Store decision for should_continue to use
                 state["rewritten_query"] = improved_query
 
                 # Check loop limit
                 if loop_count >= settings.max_thinking_loops:
                     decision = "ANSWER"
+                    state["decision"] = decision
 
                 logger.info(f"[think] END - decision: {decision}, improved_query: {improved_query}")
                 return state
@@ -194,39 +201,38 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
                 return state
 
         def should_continue(state: RAGState) -> str:
-            """Decide whether to continue searching or generate answer."""
-            thinking = state.get("thinking", "")
+            """Decide whether to rewrite, continue searching or generate answer."""
+            decision = state.get("decision", "ANSWER")
             loop_count = state.get("loop_count", 0)
 
             if loop_count >= settings.max_thinking_loops:
                 return "generate"
 
-            if "CONTINUE" in thinking or "continue" in thinking.lower():
-                return "search"
+            if decision == "CONTINUE":
+                return "rewrite"  # Go to rewrite instead of directly to search
             return "generate"
 
         # Build graph
         workflow = StateGraph(RAGState)
 
-        # workflow.add_node("rewrite", rewrite_query)
+        workflow.add_node("rewrite", rewrite_query)
         workflow.add_node("search", search)
         workflow.add_node("think", think)
         workflow.add_node("generate", generate_answer)
 
-        # workflow.set_entry_point("rewrite")
         workflow.set_entry_point("search")
-        # workflow.add_edge("rewrite", "search")
         workflow.add_edge("search", "think")
 
         workflow.add_conditional_edges(
             "think",
             should_continue,
             {
-                "search": "search",
+                "rewrite": "rewrite",
                 "generate": "generate"
             }
         )
 
+        workflow.add_edge("rewrite", "search")
         workflow.add_edge("generate", END)
 
         return workflow.compile()
@@ -239,6 +245,7 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
                 "rewritten_query": "",
                 "search_results": [],
                 "thinking": "",
+                "decision": "",
                 "answer": "",
                 "loop_count": 0,
                 "history": []
