@@ -238,10 +238,11 @@
 
                     this.loading = true;
                     this.result = null;
+                    this.timeline = [];
                     this.startLoadingAnimation();
 
                     try {
-                        const response = await fetch('/api/query', {
+                        const response = await fetch('/api/query/stream', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json',
@@ -253,14 +254,123 @@
                             throw new Error('搜索失败');
                         }
 
-                        this.result = await response.json();
+                        const reader = response.body.getReader();
+                        const decoder = new TextDecoder();
+                        let buffer = '';
+
+                        while (true) {
+                            const { done, value } = await reader.read();
+                            if (done) break;
+
+                            buffer += decoder.decode(value, { stream: true });
+
+                            const lines = buffer.split('\n\n');
+                            buffer = lines.pop();
+
+                            for (const line of lines) {
+                                if (!line.trim()) continue;
+
+                                const lines_list = line.split('\n');
+                                let eventType = 'message';
+                                let data = {};
+
+                                for (const l of lines_list) {
+                                    if (l.startsWith('event: ')) {
+                                        eventType = l.substring(7);
+                                    } else if (l.startsWith('data: ')) {
+                                        try {
+                                            data = JSON.parse(l.substring(6));
+                                        } catch (e) {
+                                            console.error('Failed to parse SSE data:', l);
+                                        }
+                                    }
+                                }
+
+                                this.handleSSEEvent(eventType, data);
+                            }
+                        }
+
                     } catch (error) {
                         console.error('Error:', error);
+
+                        this.timeline.push({
+                            type: 'error',
+                            message: error.message,
+                            timestamp: new Date()
+                        });
+
                         alert('搜索失败: ' + error.message);
                     } finally {
                         this.loading = false;
                         this.stopLoadingAnimation();
                         lucide.createIcons();
+                    }
+                },
+
+                handleSSEEvent(eventType, data) {
+                    const timestamp = new Date();
+
+                    switch (eventType) {
+                        case 'search_start':
+                            this.timeline.push({
+                                type: 'search',
+                                status: 'start',
+                                query: data.query,
+                                timestamp
+                            });
+                            break;
+
+                        case 'search_complete':
+                            const lastSearch = this.timeline.findLast(t => t.type === 'search');
+                            if (lastSearch) {
+                                lastSearch.status = 'complete';
+                                lastSearch.resultsCount = data.results_count;
+                            } else {
+                                this.timeline.push({
+                                    type: 'search',
+                                    status: 'complete',
+                                    resultsCount: data.results_count,
+                                    timestamp
+                                });
+                            }
+                            break;
+
+                        case 'think_complete':
+                            this.timeline.push({
+                                type: 'think',
+                                iteration: data.iteration,
+                                reasoning: data.reasoning,
+                                decision: data.decision,
+                                timestamp
+                            });
+                            break;
+
+                        case 'rewrite_complete':
+                            this.timeline.push({
+                                type: 'rewrite',
+                                iteration: data.iteration,
+                                newQuery: data.new_query,
+                                timestamp
+                            });
+                            break;
+
+                        case 'answer_complete':
+                            this.result = {
+                                answer: data.answer,
+                                sources: data.sources,
+                                loop_count: data.total_iterations
+                            };
+                            break;
+
+                        case 'error':
+                            this.timeline.push({
+                                type: 'error',
+                                message: data.error,
+                                timestamp
+                            });
+                            this.loading = false;
+                            this.stopLoadingAnimation();
+                            break;
                     }
                 }
             };
