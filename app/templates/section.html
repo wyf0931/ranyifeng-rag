@@ -99,14 +99,15 @@
                 <div x-show="!loading && filteredSections.length > 0">
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                         <template x-for="(section, index) in filteredSections" :key="section.name">
-                            <div class="group relative bg-gray-50 hover:bg-blue-50 border border-gray-200 hover:border-blue-200 rounded-lg px-4 py-3 transition-colors">
+                            <div @click="goToArticles(section.name)"
+                                 class="group relative bg-gray-50 hover:bg-blue-50 border border-gray-200 hover:border-blue-200 rounded-lg px-4 py-3 transition-colors cursor-pointer">
                                 <div class="flex items-center justify-between">
                                     <div class="flex-1 min-w-0">
                                         <span class="text-sm font-medium text-gray-900 block truncate" x-text="section.name"></span>
                                         <span class="text-xs text-gray-500" x-text="section.count + ' 个条目'"></span>
                                     </div>
                                     <!-- Edit Button -->
-                                    <button @click="openEditDialog(section)"
+                                    <button @click.stop="openEditDialog(section)"
                                             class="ml-2 p-1.5 bg-blue-100 hover:bg-blue-200 text-blue-600 rounded-md opacity-0 group-hover:opacity-100 transition-opacity focus:opacity-100 focus:outline-none">
                                         <i data-lucide="edit-2" class="w-3.5 h-3.5"></i>
                                     </button>
@@ -235,6 +236,10 @@
                             section.name.toLowerCase().includes(search)
                         );
                     }
+                },
+
+                goToArticles(sectionName) {
+                    window.location.href = `/articles?section=${encodeURIComponent(sectionName)}`;
                 },
 
                 openEditDialog(section) {
