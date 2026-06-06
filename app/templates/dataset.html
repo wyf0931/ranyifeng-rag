@@ -201,97 +201,102 @@
         </main>
 
         <!-- Item Detail Dialog -->
-        <div x-show="dialogOpen" x-transition class="fixed inset-0 z-50" style="display: none;">
+        <div x-show="dialogOpen" class="fixed inset-0 z-50" style="display: none;">
             <!-- Backdrop -->
-            <div class="fixed inset-0 bg-black/50" @click="closeDialog"></div>
+            <div class="fixed inset-0 bg-black/50 z-40" @click="closeDialog"></div>
 
             <!-- Dialog -->
-            <div class="fixed z-50 bg-white rounded-lg shadow-xl flex flex-col border border-gray-200"
+            <div class="fixed z-50 bg-white rounded-lg shadow-xl border border-gray-200"
                  style="top: 50%; left: 50%; transform: translate(-50%, -50%); width: min(600px, 90vw); max-height: 90vh;">
-                <div class="p-6 overflow-y-auto">
-                    <div class="mb-4">
-                        <h2 class="text-lg font-semibold text-gray-900 mb-2" x-text="selectedItem?.title"></h2>
-                        <div class="flex items-center space-x-2">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800"
-                                  x-text="selectedItem?.section_name">
-                            </span>
-                            <span class="text-sm text-gray-500" x-text="'ID: ' + selectedItem?.id"></span>
+                <!-- Header -->
+                <div class="pr-8 p-6 border-b border-gray-200">
+                    <h2 class="text-lg font-semibold text-gray-900" x-text="selectedItem?.title"></h2>
+                    <p class="text-sm text-gray-500 mt-1">
+                        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800 mr-2"
+                              x-text="selectedItem?.section_name"></span>
+                        ID: <span x-text="selectedItem?.id"></span>
+                    </p>
+                </div>
+
+                <!-- Content -->
+                <div class="p-6 overflow-y-auto flex flex-col gap-4" style="max-height: calc(90vh - 140px);">
+                    <!-- Link -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">链接</label>
+                        <a :href="selectedItem?.link" target="_blank" rel="noopener noreferrer"
+                           class="text-sm text-blue-600 hover:text-blue-800 hover:underline break-all"
+                           x-text="selectedItem?.link">
+                        </a>
+                    </div>
+
+                    <!-- Description -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">描述</label>
+                        <div class="text-sm text-gray-600 bg-gray-50 rounded-lg p-3 whitespace-pre-wrap border border-gray-200"
+                             x-text="selectedItem?.description || '无描述'">
                         </div>
                     </div>
 
-                    <div class="space-y-4">
-                        <div>
-                            <h3 class="text-sm font-medium text-gray-700 mb-1">链接</h3>
-                            <a :href="selectedItem?.link" target="_blank" rel="noopener noreferrer"
-                               class="text-sm text-blue-600 hover:text-blue-800 hover:underline break-all"
-                               x-text="selectedItem?.link">
-                            </a>
-                        </div>
-
-                        <div>
-                            <h3 class="text-sm font-medium text-gray-700 mb-1">描述</h3>
-                            <div class="text-sm text-gray-600 bg-gray-50 rounded-md p-3 whitespace-pre-wrap"
-                                 x-text="selectedItem?.description || '无描述'">
-                            </div>
-                        </div>
-
-                        <div>
-                            <h3 class="text-sm font-medium text-gray-700 mb-1">提交者</h3>
-                            <div class="text-sm text-gray-600">
-                                <template x-if="selectedItem?.user">
-                                    <span>
-                                        <span x-text="selectedItem?.user"></span>
-                                        <a :href="selectedItem?.user_link" target="_blank" rel="noopener noreferrer"
-                                           class="text-blue-600 hover:text-blue-800 hover:underline ml-2"
-                                           x-show="selectedItem?.user_link"
-                                           x-text="'(' + selectedItem?.user_link + ')'">
-                                        </a>
-                                    </span>
-                                </template>
-                                <template x-if="!selectedItem?.user">
-                                    <span class="text-gray-400">无</span>
-                                </template>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h3 class="text-sm font-medium text-gray-700 mb-3">图片</h3>
-                            <div class="flex flex-wrap gap-3">
-                                <template x-if="selectedItem?.images && selectedItem.images.length > 0">
-                                    <template x-for="(image, index) in selectedItem.images" :key="index">
-                                        <a :href="image" target="_blank" rel="noopener noreferrer"
-                                           class="inline-block">
-                                            <img :src="image" alt="Image" class="w-56 h-auto max-h-64 object-cover rounded-lg border border-gray-200 hover:opacity-90 transition-opacity shadow-sm">
-                                        </a>
-                                    </template>
-                                </template>
-                                <template x-if="!selectedItem?.images || selectedItem.images.length === 0">
-                                    <span class="text-sm text-gray-400">无图片</span>
-                                </template>
-                            </div>
-                        </div>
-
-                        <div class="border-t border-gray-200 pt-4">
-                            <h3 class="text-sm font-medium text-gray-700 mb-2">所属文章</h3>
-                            <div class="bg-gray-50 rounded-md p-3 space-y-2">
-                                <div>
-                                    <span class="text-xs text-gray-500">标题</span>
-                                    <a :href="selectedItem?.article_link" target="_blank" rel="noopener noreferrer"
-                                       class="text-sm font-medium text-blue-600 hover:text-blue-800 hover:underline block"
-                                       x-text="selectedItem?.article_title">
+                    <!-- User -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">提交者</label>
+                        <div class="text-sm text-gray-600">
+                            <template x-if="selectedItem?.user">
+                                <span>
+                                    <span x-text="selectedItem?.user"></span>
+                                    <a :href="selectedItem?.user_link" target="_blank" rel="noopener noreferrer"
+                                       class="text-blue-600 hover:text-blue-800 hover:underline ml-2"
+                                       x-show="selectedItem?.user_link"
+                                       x-text="'(' + selectedItem?.user_link + ')'">
                                     </a>
-                                </div>
-                                <div>
-                                    <span class="text-xs text-gray-500">期号</span>
-                                    <span class="text-sm text-gray-900 block" x-text="'第 ' + selectedItem?.article_number + ' 期'"></span>
-                                </div>
-                                <div>
-                                    <span class="text-xs text-gray-500">链接</span>
-                                    <a :href="selectedItem?.article_link" target="_blank" rel="noopener noreferrer"
-                                       class="text-xs text-blue-600 hover:text-blue-800 hover:underline break-all block"
-                                       x-text="selectedItem?.article_link">
+                                </span>
+                            </template>
+                            <template x-if="!selectedItem?.user">
+                                <span class="text-gray-400">无</span>
+                            </template>
+                        </div>
+                    </div>
+
+                    <!-- Images -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">图片</label>
+                        <div class="flex flex-wrap gap-3">
+                            <template x-if="selectedItem?.images && selectedItem.images.length > 0">
+                                <template x-for="(image, index) in selectedItem.images" :key="index">
+                                    <a :href="image" target="_blank" rel="noopener noreferrer"
+                                       class="inline-block">
+                                        <img :src="image" alt="Image" class="w-56 h-auto max-h-64 object-cover rounded-lg border border-gray-200 hover:opacity-90 transition-opacity">
                                     </a>
-                                </div>
+                                </template>
+                            </template>
+                            <template x-if="!selectedItem?.images || selectedItem.images.length === 0">
+                                <span class="text-sm text-gray-400">无图片</span>
+                            </template>
+                        </div>
+                    </div>
+
+                    <!-- Article Info -->
+                    <div class="border-t border-gray-200 pt-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">所属文章</label>
+                        <div class="bg-gray-50 rounded-lg p-3 space-y-2 border border-gray-200">
+                            <div>
+                                <span class="text-xs text-gray-500">标题</span>
+                                <a :href="selectedItem?.article_link" target="_blank" rel="noopener noreferrer"
+                                   class="text-sm font-medium text-blue-600 hover:text-blue-800 hover:underline block"
+                                   x-text="selectedItem?.article_title">
+                                </a>
+                            </div>
+                            <div>
+                                <span class="text-xs text-gray-500">期号</span>
+                                <span class="text-sm text-gray-900 block" x-text="'第 ' + selectedItem?.article_number + ' 期'"></span>
+                            </div>
+                            <div>
+                                <span class="text-xs text-gray-500">链接</span>
+                                <a :href="selectedItem?.article_link" target="_blank" rel="noopener noreferrer"
+                                   class="text-xs text-blue-600 hover:text-blue-800 hover:underline break-all block"
+                                   x-text="selectedItem?.article_link">
+                                </a>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -299,7 +304,7 @@
 
                 <!-- Close Button -->
                 <button type="button" @click="closeDialog"
-                        class="absolute top-4 right-4 rounded-sm text-gray-400 opacity-70 transition-all hover:opacity-100 hover:text-gray-600 focus:outline-none cursor-pointer">
+                        class="absolute top-4 right-4 rounded-sm text-gray-400 opacity-70 transition-all hover:opacity-100 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 cursor-pointer">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
@@ -308,11 +313,11 @@
                 <!-- Footer -->
                 <div class="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end p-6 border-t border-gray-200">
                     <button @click="closeDialog"
-                            class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md text-gray-700 bg-white border border-gray-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
+                            class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-lg text-gray-700 bg-white border border-gray-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
                         关闭
                     </button>
                     <button @click="confirmDeleteItem"
-                            class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-colors">
+                            class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-lg text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-colors">
                         <i data-lucide="trash-2" class="w-4 h-4 mr-2"></i>
                         删除
                     </button>
@@ -320,40 +325,66 @@
             </div>
         </div>
 
-        <!-- Edit Section Dialog -->
-        <div x-show="editDialogOpen" class="fixed inset-0 z-50 flex items-center justify-center p-4" style="display: none;">
-            <div class="absolute inset-0 bg-black/50" @click="closeEditDialog"></div>
-            <div class="relative bg-white rounded-lg shadow-xl max-w-md w-full p-6">
-                <h3 class="text-lg font-semibold text-gray-900 mb-4">修改板块</h3>
-                <div class="space-y-4">
+        <!-- Edit Dialog -->
+        <div x-show="editDialogOpen" class="fixed inset-0 z-50" style="display: none;">
+            <!-- Backdrop -->
+            <div class="fixed inset-0 bg-black/50 z-40" @click="closeEditDialog"></div>
+
+            <!-- Dialog -->
+            <div class="fixed z-50 bg-white rounded-lg shadow-xl border border-gray-200"
+                 style="top: 50%; left: 50%; transform: translate(-50%, -50%); width: min(500px, 90vw);">
+                <!-- Header -->
+                <div class="pr-8 p-6 border-b border-gray-200">
+                    <h2 class="text-lg font-semibold text-gray-900">编辑条目</h2>
+                    <p class="text-sm text-gray-500 mt-1">修改条目的标题和板块</p>
+                </div>
+
+                <!-- Content -->
+                <div class="p-6 flex flex-col gap-4">
+                    <!-- Title -->
                     <div>
-                        <div class="mb-3">
-                            <span class="text-sm text-gray-500">条目</span>
-                            <div class="text-sm font-medium text-gray-900" x-text="editingItem?.title"></div>
-                        </div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">标题</label>
+                        <input type="text"
+                               x-model="newTitle"
+                               class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                               placeholder="输入标题">
                     </div>
+
+                    <!-- Current Section -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">当前板块</label>
-                        <div class="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded-md text-gray-900" x-text="editingItem?.section_name"></div>
+                        <div class="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded-lg text-gray-900" x-text="editingItem?.section_name"></div>
                     </div>
+
+                    <!-- New Section -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">新板块</label>
                         <select x-model="newSection"
-                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
+                                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
                             <template x-for="section in sections" :key="section">
                                 <option :value="section" x-text="section"></option>
                             </template>
                         </select>
                     </div>
                 </div>
-                <div class="flex justify-end space-x-3 mt-6">
+
+                <!-- Close Button -->
+                <button type="button" @click="closeEditDialog"
+                        class="absolute top-4 right-4 rounded-sm text-gray-400 opacity-70 transition-all hover:opacity-100 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 cursor-pointer">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <!-- Footer -->
+                <div class="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end p-6 border-t border-gray-200">
                     <button @click="closeEditDialog"
-                            class="px-4 py-2 text-sm font-medium rounded-md text-gray-700 bg-white border border-gray-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                            class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-lg text-gray-700 bg-white border border-gray-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
                         取消
                     </button>
-                    <button @click="saveItemSection"
-                            :disabled="!newSection || updating"
-                            class="px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                    <button @click="saveItemChanges"
+                            :disabled="(!newTitle?.trim() && !newSection) || updating"
+                            class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
                         <span x-show="!updating" class="flex items-center">
                             <i data-lucide="save" class="w-4 h-4 mr-2"></i>
                             保存
@@ -368,29 +399,47 @@
         </div>
 
         <!-- Delete Confirmation Dialog -->
-        <div x-show="deleteDialogOpen" class="fixed inset-0 z-50 flex items-center justify-center p-4" style="display: none;">
-            <div class="absolute inset-0 bg-black/50" @click="closeDeleteDialog"></div>
-            <div class="relative bg-white rounded-lg shadow-xl max-w-sm w-full p-6">
-                <h3 class="text-lg font-semibold text-gray-900 mb-2">确认删除</h3>
-                <p class="text-sm text-gray-600 mb-4">
-                    确定要删除条目 "<span class="font-medium text-gray-900" x-text="selectedItem?.title"></span>" 吗？
-                </p>
-                <div class="flex justify-end space-x-3">
+        <div x-show="deleteDialogOpen" class="fixed inset-0 z-50" style="display: none;">
+            <!-- Backdrop -->
+            <div class="fixed inset-0 bg-black/50 z-40" @click="closeDeleteDialog"></div>
+
+            <!-- Dialog -->
+            <div class="fixed z-50 bg-white rounded-lg shadow-xl border border-gray-200"
+                 style="top: 50%; left: 50%; transform: translate(-50%, -50%); width: min(400px, 90vw);">
+                <!-- Header -->
+                <div class="pr-8 p-6 border-b border-gray-200">
+                    <h2 class="text-lg font-semibold text-gray-900">确认删除</h2>
+                    <p class="text-sm text-gray-600 mt-1">
+                        确定要删除条目 "<span class="font-medium text-gray-900" x-text="selectedItem?.title"></span>" 吗？
+                    </p>
+                </div>
+
+                <!-- Content (empty for delete confirmation) -->
+                <div class="p-6"></div>
+
+                <!-- Close Button -->
+                <button type="button" @click="closeDeleteDialog"
+                        class="absolute top-4 right-4 rounded-sm text-gray-400 opacity-70 transition-all hover:opacity-100 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 cursor-pointer">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <!-- Footer -->
+                <div class="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end p-6 border-t border-gray-200">
                     <button @click="closeDeleteDialog"
-                            class="px-4 py-2 text-sm font-medium rounded-md text-gray-700 bg-white border border-gray-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                            class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-lg text-gray-700 bg-white border border-gray-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
                         取消
                     </button>
                     <button @click="deleteItem"
                             :disabled="deleting"
-                            class="px-4 py-2 text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 disabled:bg-gray-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2">
+                            class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-lg text-white bg-red-600 hover:bg-red-700 disabled:bg-gray-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-colors">
                         <span x-show="!deleting" class="flex items-center">
                             <i data-lucide="trash-2" class="w-4 h-4 mr-2"></i>
                             删除
                         </span>
                         <span x-show="deleting" class="flex items-center">
                             <div class="animate-spin rounded-full h-4 w-4 border-2 border-white border-t-transparent mr-2"></div>
-                            删除中...
-                        </span>
                     </button>
                 </div>
             </div>
@@ -418,6 +467,7 @@
                 deleting: false,
                 editDialogOpen: false,
                 editingItem: null,
+                newTitle: '',
                 newSection: '',
                 updating: false,
 
@@ -623,6 +673,7 @@
 
                 openEditDialog(item) {
                     this.editingItem = item;
+                    this.newTitle = item.title;
                     this.newSection = item.section_name;
                     this.editDialogOpen = true;
                 },
@@ -630,34 +681,64 @@
                 closeEditDialog() {
                     this.editDialogOpen = false;
                     this.editingItem = null;
+                    this.newTitle = '';
                     this.newSection = '';
                 },
 
-                async saveItemSection() {
-                    if (!this.editingItem || !this.newSection) return;
+                async saveItemChanges() {
+                    if (!this.editingItem) return;
+
+                    // Check if there are any changes
+                    const titleChanged = this.newTitle.trim() && this.newTitle.trim() !== this.editingItem.title;
+                    const sectionChanged = this.newSection && this.newSection !== this.editingItem.section_name;
+
+                    if (!titleChanged && !sectionChanged) {
+                        this.closeEditDialog();
+                        return;
+                    }
 
                     this.updating = true;
 
                     try {
-                        const response = await fetch(`/api/items/${this.editingItem.id}/section`, {
-                            method: 'PUT',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ section: this.newSection })
-                        });
+                        // Update title if changed
+                        if (titleChanged) {
+                            const titleResponse = await fetch(`/api/items/${this.editingItem.id}/title`, {
+                                method: 'PUT',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({ title: this.newTitle.trim() })
+                            });
 
-                        if (response.ok) {
-                            this.closeEditDialog();
-                            await this.loadItems();
-                        } else {
-                            const result = await response.json();
-                            alert('修改失败: ' + (result.error || '未知错误'));
+                            if (!titleResponse.ok) {
+                                const result = await titleResponse.json();
+                                alert('标题修改失败: ' + (result.error || '未知错误'));
+                                return;
+                            }
                         }
+
+                        // Update section if changed
+                        if (sectionChanged) {
+                            const sectionResponse = await fetch(`/api/items/${this.editingItem.id}/section`, {
+                                method: 'PUT',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({ section: this.newSection })
+                            });
+
+                            if (!sectionResponse.ok) {
+                                const result = await sectionResponse.json();
+                                alert('板块修改失败: ' + (result.error || '未知错误'));
+                                return;
+                            }
+                        }
+
+                        this.closeEditDialog();
+                        await this.loadItems();
                     } catch (error) {
                         alert('修改失败: ' + error.message);
                     } finally {
                         this.updating = false;
                         this.$nextTick(() => lucide.createIcons());
                     }
+                },
                 },
 
                 formatDateShort(dateStr) {

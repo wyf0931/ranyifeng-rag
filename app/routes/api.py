@@ -174,6 +174,37 @@ def update_item_section(item_id):
         return jsonify({"error": str(e)}), 500
 
 
+@api_bp.route("/items/<int:item_id>/title", methods=["PUT"])
+def update_item_title(item_id):
+    """Update item's title."""
+    try:
+        from sqlmodel import Session, select
+        from app.models import Item
+
+        data = request.get_json()
+        new_title = data.get("title")
+
+        if not new_title:
+            return jsonify({"error": "Title is required"}), 400
+
+        with db_service.get_session() as session:
+            item = session.get(Item, item_id)
+            if not item:
+                return jsonify({"error": "Item not found"}), 404
+
+            item.title = new_title
+            session.commit()
+            session.refresh(item)
+
+            return jsonify({
+                "success": True,
+                "message": "Title updated successfully",
+                "title": item.title
+            })
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
 @api_bp.route("/items/search", methods=["GET"])
 def search_items():
     """Search items using FTS5 with jieba tokenization."""
