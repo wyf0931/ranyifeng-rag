@@ -71,13 +71,14 @@ user query: {query}
             loop_count = state.get("loop_count", 0)
             logger.info(f"[think] START - query: {query}, results_count: {len(results)}, loop_count: {loop_count}")
 
-            # Format search results
-            context = "\n".join([
-                f"- {r['title']} ({r['article_title']}): {r['description']}"
-                for r in results
-            ])
+            try:
+                # Format search results
+                context = "\n".join([
+                    f"- {r['title']} ({r['article_title']}): {r['description']}"
+                    for r in results
+                ])
 
-            prompt = f"""用户查询: {query}
+                prompt = f"""用户查询: {query}
 
 搜索结果:
 {context}
@@ -91,31 +92,37 @@ DECISION: [CONTINUE/ANSWER]
 REASONING: [你的分析过程]
 IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
 
-            response = self.llm.invoke(prompt)
-            content = response.content.strip()
+                response = self.llm.invoke(prompt)
+                content = response.content.strip()
 
-            # Parse response
-            decision = "ANSWER"
-            improved_query = query
-            reasoning = ""
-
-            for line in content.split("\n"):
-                if line.startswith("DECISION:"):
-                    decision = line.split(":", 1)[1].strip().upper()
-                elif line.startswith("REASONING:"):
-                    reasoning = line.split(":", 1)[1].strip()
-                elif line.startswith("IMPROVED_QUERY:"):
-                    improved_query = line.split(":", 1)[1].strip()
-
-            state["thinking"] = reasoning
-            state["rewritten_query"] = improved_query
-
-            # Check loop limit
-            if loop_count >= settings.max_thinking_loops:
+                # Parse response
                 decision = "ANSWER"
+                improved_query = query
+                reasoning = ""
 
-            logger.info(f"[think] END - decision: {decision}, improved_query: {improved_query}")
-            return state
+                for line in content.split("\n"):
+                    if line.startswith("DECISION:"):
+                        decision = line.split(":", 1)[1].strip().upper()
+                    elif line.startswith("REASONING:"):
+                        reasoning = line.split(":", 1)[1].strip()
+                    elif line.startswith("IMPROVED_QUERY:"):
+                        improved_query = line.split(":", 1)[1].strip()
+
+                state["thinking"] = reasoning
+                state["rewritten_query"] = improved_query
+
+                # Check loop limit
+                if loop_count >= settings.max_thinking_loops:
+                    decision = "ANSWER"
+
+                logger.info(f"[think] END - decision: {decision}, improved_query: {improved_query}")
+                return state
+            except Exception as e:
+                logger.error(f"[think] ERROR: {e}", exc_info=True)
+                state["thinking"] = f"思考过程出错: {str(e)}"
+                state["rewritten_query"] = query
+                # On error, default to answering with current results
+                return state
 
         def generate_answer(state: RAGState) -> RAGState:
             """Generate final answer based on all search results."""
@@ -123,19 +130,20 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
             results = state.get("search_results", [])
             logger.info(f"[generate_answer] START - query: {query}, results_count: {len(results)}")
 
-            # Build comprehensive context
-            context_parts = []
-            for r in results:
-                context_parts.append(f"""
+            try:
+                # Build comprehensive context
+                context_parts = []
+                for r in results:
+                    context_parts.append(f"""
 标题: {r['title']}
 来源: {r['article_title']} - {r['article_link']}
 描述: {r['description']}
 链接: {r['link']}
 """)
 
-            context = "\n".join(context_parts)
+                context = "\n".join(context_parts)
 
-            prompt = f"""基于以下搜索结果回答用户查询。
+                prompt = f"""基于以下搜索结果回答用户查询。
 
 用户查询: {query}
 
@@ -144,22 +152,29 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
 
 请提供准确、有帮助的答案。如果搜索结果不足以回答问题，请诚实地说明。"""
 
-            response = self.llm.invoke(prompt)
-            state["answer"] = response.content.strip()
+                response = self.llm.invoke(prompt)
+                state["answer"] = response.content.strip()
 
-            # Update history
-            if "history" not in state:
-                state["history"] = []
-            state["history"].append({
-                "query": query,
-                "rewritten_query": state.get("rewritten_query", ""),
-                "thinking": state.get("thinking", ""),
-                "answer": state["answer"],
-                "sources": [r["link"] for r in results]
-            })
+                # Update history
+                if "history" not in state:
+                    state["history"] = []
+                state["history"].append({
+                    "query": query,
+                    "rewritten_query": state.get("rewritten_query", ""),
+                    "thinking": state.get("thinking", ""),
+                    "answer": state["answer"],
+                    "sources": [r["link"] for r in results]
+                })
 
-            logger.info(f"[generate_answer] END - answer generated successfully")
-            return state
+                logger.info(f"[generate_answer] END - answer generated successfully")
+                return state
+            except Exception as e:
+                logger.error(f"[generate_answer] ERROR: {e}", exc_info=True)
+                state["answer"] = f"生成回答时出错: {str(e)}\n\n搜索结果:\n" + "\n".join([
+                    f"- {r['title']}: {r['description']}"
+                    for r in results[:5]
+                ])
+                return state
 
         def should_continue(state: RAGState) -> str:
             """Decide whether to continue searching or generate answer."""

@@ -21,6 +21,7 @@ def query():
         result = rag_service.query(query)
         return jsonify(result)
     except Exception as e:
+        logger.error(f"Query failed: {e}", exc_info=True)
         return jsonify({"error": str(e)}), 500
 
 
