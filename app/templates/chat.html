@@ -246,28 +246,6 @@
                         <span>信息溯源</span>
                     </h2>
 
-                    <!-- Query Rewrite -->
-                    <div class="mb-4">
-                        <div class="flex items-center space-x-2 text-sm text-gray-600 mb-2">
-                            <i data-lucide="edit-3" class="w-4 h-4"></i>
-                            <span>查询重写</span>
-                        </div>
-                        <div class="bg-blue-50 rounded-lg p-3">
-                            <p class="text-sm text-gray-700" x-text="result?.rewritten_query || '使用原始查询'"></p>
-                        </div>
-                    </div>
-
-                    <!-- Thinking -->
-                    <div class="mb-4">
-                        <div class="flex items-center space-x-2 text-sm text-gray-600 mb-2">
-                            <i data-lucide="brain" class="w-4 h-4"></i>
-                            <span>思考过程 (循环次数: <span x-text="result?.loop_count || 0"></span>)</span>
-                        </div>
-                        <div class="bg-yellow-50 rounded-lg p-3">
-                            <p class="text-sm text-gray-700" x-text="result?.thinking || '分析搜索结果...'"></p>
-                        </div>
-                    </div>
-
                     <!-- Sources -->
                     <div>
                         <div class="flex items-center space-x-2 text-sm text-gray-600 mb-2">
