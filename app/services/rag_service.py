@@ -94,9 +94,11 @@ DECISION: [CONTINUE/ANSWER]
 REASONING: [你的分析过程]
 IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
 
+                logger.info(f"[think] Invoking LLM...")
                 response = self.llm.invoke(prompt)
-                content = response.content.strip()
+                logger.info(f"[think] LLM invoke completed, got response type: {type(response)}")
 
+                content = response.content.strip()
                 logger.info(f"[think] LLM response received, length: {len(content)} chars")
 
                 # Parse response
@@ -122,7 +124,8 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
                 logger.info(f"[think] END - decision: {decision}, improved_query: {improved_query}")
                 return state
             except Exception as e:
-                logger.error(f"[think] ERROR: {e}", exc_info=True)
+                logger.error(f"[think] ERROR at line {e.__traceback__.tb_lineno if hasattr(e, '__traceback__') else 'unknown'}: {e}", exc_info=True)
+                logger.error(f"[think] ERROR type: {type(e).__name__}, args: {e.args}")
                 state["thinking"] = f"思考过程出错: {str(e)}"
                 state["rewritten_query"] = query
                 # On error, default to answering with current results
