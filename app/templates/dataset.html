@@ -9,6 +9,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         [x-cloak] { display: none !important; }
+        .dialog-hidden { display: none !important; }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -201,7 +202,7 @@
         </main>
 
         <!-- Item Detail Dialog -->
-        <div x-show="dialogOpen" class="fixed inset-0 z-50" style="display: none;">
+        <div x-show="dialogOpen" :class="dialogOpen ? '' : 'dialog-hidden'" class="fixed inset-0 z-50">
             <!-- Backdrop -->
             <div class="fixed inset-0 bg-black/50 z-40" @click="closeDialog"></div>
 
@@ -326,7 +327,7 @@
         </div>
 
         <!-- Edit Dialog -->
-        <div x-show="editDialogOpen" class="fixed inset-0 z-50" style="display: none;">
+        <div x-show="editDialogOpen" :class="editDialogOpen ? '' : 'dialog-hidden'" class="fixed inset-0 z-50">
             <!-- Backdrop -->
             <div class="fixed inset-0 bg-black/50 z-40" @click="closeEditDialog"></div>
 
@@ -399,7 +400,7 @@
         </div>
 
         <!-- Delete Confirmation Dialog -->
-        <div x-show="deleteDialogOpen" class="fixed inset-0 z-50" style="display: none;">
+        <div x-show="deleteDialogOpen" :class="deleteDialogOpen ? '' : 'dialog-hidden'" class="fixed inset-0 z-50">
             <!-- Backdrop -->
             <div class="fixed inset-0 bg-black/50 z-40" @click="closeDeleteDialog"></div>
 
