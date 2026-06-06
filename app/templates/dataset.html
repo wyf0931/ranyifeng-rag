@@ -201,7 +201,7 @@
         </main>
 
         <!-- Item Detail Dialog -->
-        <div x-show="dialogOpen" class="fixed inset-0 z-50" style="display: none;">
+        <div x-show="dialogOpen" :style="dialogOpen ? '' : 'display: none;'" class="fixed inset-0 z-50">
             <!-- Backdrop -->
             <div class="fixed inset-0 bg-black/50 z-40" @click="closeDialog"></div>
 
@@ -326,7 +326,7 @@
         </div>
 
         <!-- Edit Dialog -->
-        <div x-show="editDialogOpen" class="fixed inset-0 z-50" style="display: none;">
+        <div x-show="editDialogOpen" :style="editDialogOpen ? '' : 'display: none;'" class="fixed inset-0 z-50">
             <!-- Backdrop -->
             <div class="fixed inset-0 bg-black/50 z-40" @click="closeEditDialog"></div>
 
@@ -399,7 +399,7 @@
         </div>
 
         <!-- Delete Confirmation Dialog -->
-        <div x-show="deleteDialogOpen" class="fixed inset-0 z-50" style="display: none;">
+        <div x-show="deleteDialogOpen" :style="deleteDialogOpen ? '' : 'display: none;'" class="fixed inset-0 z-50">
             <!-- Backdrop -->
             <div class="fixed inset-0 bg-black/50 z-40" @click="closeDeleteDialog"></div>
 
