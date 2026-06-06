@@ -78,6 +78,8 @@ user query: {query}
                     for r in results
                 ])
 
+                logger.info(f"[think] Calling LLM with context length: {len(context)} chars")
+
                 prompt = f"""用户查询: {query}
 
 搜索结果:
@@ -94,6 +96,8 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
 
                 response = self.llm.invoke(prompt)
                 content = response.content.strip()
+
+                logger.info(f"[think] LLM response received, length: {len(content)} chars")
 
                 # Parse response
                 decision = "ANSWER"
