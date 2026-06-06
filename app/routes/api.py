@@ -633,3 +633,78 @@ def batch_parse_articles():
         })
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+
+@api_bp.route("/sections", methods=["GET"])
+def get_sections():
+    """Get all unique sections with item counts."""
+    try:
+        from sqlmodel import Session, select, func
+        from app.models import Item
+
+        with db_service.get_session() as session:
+            # Query to get unique sections and their counts
+            query = select(
+                Item.section_name,
+                func.count(Item.id).label('count')
+            ).group_by(Item.section_name).order_by(Item.section_name)
+
+            results = session.exec(query).all()
+
+            sections = [
+                {"name": row.section_name, "count": row.count}
+                for row in results
+            ]
+
+            # Sort by count descending, then by name
+            sections.sort(key=lambda x: (-x["count"], x["name"]))
+
+            return jsonify(sections)
+    except Exception as e:
+        logger.error(f"Get sections failed: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
+
+
+@api_bp.route("/sections/rename", methods=["POST"])
+def rename_section():
+    """Rename a section and update all related items."""
+    try:
+        from sqlmodel import Session, select
+        from app.models import Item
+
+        data = request.get_json()
+        old_name = data.get("old_name", "").strip()
+        new_name = data.get("new_name", "").strip()
+
+        if not old_name or not new_name:
+            return jsonify({"error": "Old name and new name are required"}), 400
+
+        if old_name == new_name:
+            return jsonify({"error": "New name must be different from old name"}), 400
+
+        with db_service.get_session() as session:
+            # Find all items with the old section name
+            query = select(Item).where(Item.section_name == old_name)
+            items = session.exec(query).all()
+
+            if not items:
+                return jsonify({"error": f"Section '{old_name}' not found"}), 404
+
+            # Update all items to use the new section name
+            updated_count = 0
+            for item in items:
+                item.section_name = new_name
+                updated_count += 1
+
+            session.commit()
+
+            logger.info(f"Renamed section '{old_name}' to '{new_name}', updated {updated_count} items")
+
+            return jsonify({
+                "success": True,
+                "message": f"Successfully renamed section from '{old_name}' to '{new_name}'",
+                "updated_count": updated_count
+            })
+    except Exception as e:
+        logger.error(f"Rename section failed: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500

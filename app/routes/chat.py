@@ -37,3 +37,9 @@ def admin():
 def stopwords():
     """Render stopwords management page."""
     return render_template("stopwords.html")
+
+
+@chat_bp.route("/section")
+def section():
+    """Render section management page."""
+    return render_template("section.html")
