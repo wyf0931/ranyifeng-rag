@@ -280,5 +280,152 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
                 "loop_count": 0
             }
 
+    def query_stream(self, query: str):
+        """Execute RAG query with streaming timeline events.
+
+        Yields events as they happen during the RAG workflow:
+        - search_start, search_complete
+        - think_complete
+        - rewrite_complete
+        - answer_complete
+        - error (if something goes wrong)
+        """
+        try:
+            initial_state: RAGState = {
+                "query": query,
+                "rewritten_query": "",
+                "search_results": [],
+                "thinking": "",
+                "decision": "",
+                "answer": "",
+                "loop_count": 0,
+                "history": []
+            }
+
+            yield {"type": "search_start", "data": {"query": query}}
+
+            current_query = query
+            all_search_results = []
+            loop_count = 0
+
+            while loop_count <= settings.max_thinking_loops:
+                loop_count += 1
+
+                results = db_service.search(current_query, limit=settings.max_search_results)
+                all_search_results.extend(results)
+
+                yield {
+                    "type": "search_complete",
+                    "data": {
+                        "iteration": loop_count,
+                        "results_count": len(results),
+                        "query": current_query
+                    }
+                }
+
+                context = "\n".join([
+                    f"- {r['title']} ({r['article_title']}): {r['description']}"
+                    for r in results
+                ])
+
+                think_prompt = f"""用户查询: {current_query}
+
+搜索结果:
+{context}
+
+请分析:
+1. 这些结果是否足够回答用户查询?
+2. 如果不够，需要如何改进搜索keywords?
+
+返回格式:
+DECISION: [CONTINUE/ANSWER]
+REASONING: [你的分析过程]
+IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
+
+                messages = [
+                    {"role": "system", "content": "You are a helpful assistant that analyzes search results and decides if more information is needed."},
+                    {"role": "user", "content": think_prompt}
+                ]
+                response = self.llm.invoke(messages)
+                content = response.content.strip()
+
+                decision = "ANSWER"
+                reasoning = ""
+                improved_query = current_query
+
+                for line in content.split("\n"):
+                    if line.startswith("DECISION:"):
+                        decision = line.split(":", 1)[1].strip().upper()
+                    elif line.startswith("REASONING:"):
+                        reasoning = line.split(":", 1)[1].strip()
+                    elif line.startswith("IMPROVED_QUERY:"):
+                        improved_query = line.split(":", 1)[1].strip()
+
+                yield {
+                    "type": "think_complete",
+                    "data": {
+                        "iteration": loop_count,
+                        "reasoning": reasoning,
+                        "decision": decision
+                    }
+                }
+
+                if decision == "ANSWER" or loop_count >= settings.max_thinking_loops:
+                    break
+
+                yield {
+                    "type": "rewrite_complete",
+                    "data": {
+                        "iteration": loop_count,
+                        "new_query": improved_query
+                    }
+                }
+
+                current_query = improved_query
+
+            context_parts = []
+            for r in all_search_results:
+                context_parts.append(f"""
+标题: {r['title']}
+来源: {r['article_title']} - {r['article_link']}
+描述: {r['description']}
+链接: {r['link']}
+""")
+
+            context = "\n".join(context_parts)
+            answer_prompt = f"""基于以下搜索结果回答用户查询。
+
+用户查询: {query}
+
+搜索结果:
+{context}
+
+请提供准确、有帮助的答案。如果搜索结果不足以回答问题，请诚实地说明。"""
+
+            messages = [
+                {"role": "system", "content": "You are a helpful assistant that answers questions based on search results from technology weekly articles."},
+                {"role": "user", "content": answer_prompt}
+            ]
+            response = self.llm.invoke(messages)
+            answer = response.content.strip()
+
+            sources = list({r["link"] for r in all_search_results})
+
+            yield {
+                "type": "answer_complete",
+                "data": {
+                    "answer": answer,
+                    "sources": sources,
+                    "total_iterations": loop_count
+                }
+            }
+
+        except Exception as e:
+            logger.error(f"[query_stream] ERROR: {e}", exc_info=True)
+            yield {
+                "type": "error",
+                "data": {"error": str(e)}
+            }
+
 
 rag_service = RAGService()
