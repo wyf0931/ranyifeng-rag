@@ -216,26 +216,45 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
 
     def query(self, query: str) -> Dict[str, Any]:
         """Execute RAG query."""
-        initial_state: RAGState = {
-            "query": query,
-            "rewritten_query": "",
-            "search_results": [],
-            "thinking": "",
-            "answer": "",
-            "loop_count": 0,
-            "history": []
-        }
+        try:
+            initial_state: RAGState = {
+                "query": query,
+                "rewritten_query": "",
+                "search_results": [],
+                "thinking": "",
+                "answer": "",
+                "loop_count": 0,
+                "history": []
+            }
 
-        result = self.graph.invoke(initial_state)
+            result = self.graph.invoke(initial_state)
 
-        return {
-            "query": result["query"],
-            "rewritten_query": result.get("rewritten_query", ""),
-            "thinking": result.get("thinking", ""),
-            "answer": result.get("answer", ""),
-            "sources": result.get("history", [{}])[-1].get("sources", []),
-            "loop_count": result.get("loop_count", 0)
-        }
+            # Safely extract sources from history
+            sources = []
+            history = result.get("history", [])
+            if history and len(history) > 0:
+                last_entry = history[-1]
+                if isinstance(last_entry, dict):
+                    sources = last_entry.get("sources", [])
+
+            return {
+                "query": result["query"],
+                "rewritten_query": result.get("rewritten_query", ""),
+                "thinking": result.get("thinking", ""),
+                "answer": result.get("answer", ""),
+                "sources": sources,
+                "loop_count": result.get("loop_count", 0)
+            }
+        except Exception as e:
+            logger.error(f"[query] ERROR: {e}", exc_info=True)
+            return {
+                "query": query,
+                "rewritten_query": "",
+                "thinking": f"查询出错: {str(e)}",
+                "answer": "抱歉，查询过程中出现错误。请稍后重试。",
+                "sources": [],
+                "loop_count": 0
+            }
 
 
 rag_service = RAGService()
