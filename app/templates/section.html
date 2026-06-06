@@ -99,7 +99,7 @@
                 <div x-show="!loading && filteredSections.length > 0">
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                         <template x-for="(section, index) in filteredSections" :key="section.name">
-                            <div @click="goToArticles(section.name)"
+                            <div @click="goToDataset(section.name)"
                                  class="group relative bg-gray-50 hover:bg-blue-50 border border-gray-200 hover:border-blue-200 rounded-lg px-4 py-3 transition-colors cursor-pointer">
                                 <div class="flex items-center justify-between">
                                     <div class="flex-1 min-w-0">
@@ -238,8 +238,8 @@
                     }
                 },
 
-                goToArticles(sectionName) {
-                    window.location.href = `/articles?section=${encodeURIComponent(sectionName)}`;
+                goToDataset(sectionName) {
+                    window.location.href = `/dataset?section=${encodeURIComponent(sectionName)}`;
                 },
 
                 openEditDialog(section) {

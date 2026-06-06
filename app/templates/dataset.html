@@ -325,6 +325,13 @@
                 searchDebounceTimer: null,
 
                 async init() {
+                    // Read section from URL query parameter
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const sectionParam = urlParams.get('section');
+                    if (sectionParam) {
+                        this.filters.section = decodeURIComponent(sectionParam);
+                    }
+
                     await this.loadItems();
                     this.$nextTick(() => lucide.createIcons());
 

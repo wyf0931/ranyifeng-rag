@@ -85,13 +85,6 @@
                                 <option value="fail">失败</option>
                             </select>
                         </div>
-                        <div x-show="filters.section" class="flex items-center space-x-2 bg-blue-50 px-3 py-1.5 rounded-md">
-                            <span class="text-sm text-gray-600">板块:</span>
-                            <span class="text-sm font-medium text-blue-700" x-text="filters.section"></span>
-                            <button @click="clearSectionFilter" class="ml-1 text-gray-400 hover:text-gray-600">
-                                <i data-lucide="x" class="w-4 h-4"></i>
-                            </button>
-                        </div>
                     </div>
                     <button @click="openImportDialog"
                             class="inline-flex items-center px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
@@ -388,8 +381,7 @@
                 filteredArticles: [],
                 filters: {
                     search: '',
-                    status: '',
-                    section: ''
+                    status: ''
                 },
                 currentPage: 1,
                 pageSize: 20,
@@ -406,13 +398,6 @@
                 toast: { show: false, message: '' },
 
                 async init() {
-                    // Read section from URL query parameter
-                    const urlParams = new URLSearchParams(window.location.search);
-                    const sectionParam = urlParams.get('section');
-                    if (sectionParam) {
-                        this.filters.section = decodeURIComponent(sectionParam);
-                    }
-
                     await this.loadArticles();
                     this.$nextTick(() => lucide.createIcons());
 
@@ -454,23 +439,10 @@
                             }
                         }
 
-                        // Section filter
-                        if (this.filters.section) {
-                            if (article.section !== this.filters.section) {
-                                return false;
-                            }
-                        }
-
                         return true;
                     });
                     this.currentPage = 1;
                     this.refreshIcons();
-                },
-
-                clearSectionFilter() {
-                    this.filters.section = '';
-                    this.applyFilters();
-                    this.$nextTick(() => lucide.createIcons());
                 },
 
                 get paginatedArticles() {
