@@ -96,14 +96,12 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
 
                 logger.info(f"[think] Invoking LLM...")
 
-                # Try using messages format instead of string prompt
+                # Use messages format for LangChain ChatOpenAI
                 messages = [
                     {"role": "system", "content": "You are a helpful assistant that analyzes search results and decides if more information is needed."},
                     {"role": "user", "content": prompt}
                 ]
                 response = self.llm.invoke(messages)
-
-                logger.info(f"[think] LLM invoke completed, got response type: {type(response)}")
 
                 content = response.content.strip()
                 logger.info(f"[think] LLM response received, length: {len(content)} chars")
