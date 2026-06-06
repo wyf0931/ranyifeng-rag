@@ -198,6 +198,10 @@
                 result: null,
                 dotsInterval: null,
 
+                // Timeline state
+                timeline: [],
+                showTimeline: false,
+
                 get cleanAnswer() {
                     return this.result?.answer || '';
                 },
@@ -217,6 +221,16 @@
                         this.dotsInterval = null;
                     }
                     this.loadingDots = '';
+                },
+
+                formatTime(timestamp) {
+                    if (!timestamp) return '';
+                    const date = new Date(timestamp);
+                    return date.toLocaleTimeString('zh-CN', {
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        second: '2-digit'
+                    });
                 },
 
                 async submitQuery() {
