@@ -1,4 +1,4 @@
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify, Response, stream_with_context
 from loguru import logger
 from app.services.rag_service import rag_service
 from app.services.import_service import import_service
@@ -22,6 +22,44 @@ def query():
         return jsonify(result)
     except Exception as e:
         logger.error(f"Query failed: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
+
+
+@api_bp.route("/query/stream", methods=["POST"])
+def query_stream():
+    """SSE endpoint for streaming RAG query timeline."""
+    import json
+
+    data = request.get_json()
+    query = data.get("query", "")
+
+    if not query:
+        def error_gen():
+            yield f"event: error\n"
+            yield f"data: {json.dumps({'error': 'Query is required'})}\n\n"
+        return Response(error_gen(), mimetype="text/event-stream")
+
+    try:
+        def generate():
+            try:
+                for event in rag_service.query_stream(query):
+                    yield f"event: {event['type']}\n"
+                    yield f"data: {json.dumps(event['data'])}\n\n"
+            except Exception as e:
+                logger.error(f"Query stream error: {e}", exc_info=True)
+                yield f"event: error\n"
+                yield f"data: {json.dumps({'error': str(e)})}\n\n"
+
+        return Response(
+            stream_with_context(generate()),
+            mimetype="text/event-stream",
+            headers={
+                "Cache-Control": "no-cache",
+                "X-Accel-Buffering": "no"
+            }
+        )
+    except Exception as e:
+        logger.error(f"Query stream failed: {e}", exc_info=True)
         return jsonify({"error": str(e)}), 500
 
 
