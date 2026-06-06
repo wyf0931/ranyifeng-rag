@@ -672,10 +672,16 @@
                 },
 
                 openEditDialog(item) {
+                    console.log('Opening edit dialog for item:', item);
+                    if (!item) {
+                        console.error('Item is null or undefined');
+                        return;
+                    }
                     this.editingItem = item;
-                    this.newTitle = item.title;
-                    this.newSection = item.section_name;
+                    this.newTitle = item.title || '';
+                    this.newSection = item.section_name || '';
                     this.editDialogOpen = true;
+                    console.log('Edit dialog opened:', this.editDialogOpen, 'sections:', this.sections);
                 },
 
                 closeEditDialog() {

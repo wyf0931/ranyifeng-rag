@@ -110,7 +110,8 @@ class DatabaseService:
         # Search with FTS5
         cursor.execute("""
             SELECT i.id, i.title, i.link, i.description, i.section_name,
-                   i.article_id, a.title as article_title, a.link as article_link,
+                   i.user, i.user_link, i.images, i.created_at,
+                   i.article_id, a.title as article_title, a.number as article_number, a.link as article_link,
                    bm25(items_fts) as rank
             FROM items_fts
             JOIN items i ON items_fts.rowid = i.id
