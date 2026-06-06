@@ -1,0 +1,401 @@
+{
+  "title": "科技爱好者周刊（第 329 期）：示意图利器 D2",
+  "link": "https://www.ruanyifeng.com/blog/2024/12/weekly-issue-329.html",
+  "number": 329,
+  "sections": [
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "AI 编程挑战赛",
+          "link": "https://zjsms.com/iUNhdBEk/",
+          "description": "全国性的 AI 编程大赛，只要你善用 AI 编程，在 AI 的帮助之下，做出创新应用，或者快速解出算法题，就能参赛。参赛不仅锻炼 AI 编程能力，还能丰富自己的经历，如果得奖，就能在简历上写一笔，帮助就业。比赛总奖池20万，一等奖的奖金4万元。学生和非学生分开评奖，获奖者还有 offer 机会，可以直通终面（包含实习岗与正式岗）。比赛分为算法和应用两个赛道，可以提交自己的创新应用，也可以选择完成算法题。大赛现在已经开始报名。创新应用在12月16日开放作品提交，算法比赛现在可以参加线上常规赛，决赛是线下举行的黑客马拉松。两个赛道的决赛阶段，都要求使用豆包 MarsCode 的 AI 编程能力，作为辅助工具。本次 AI 编程巅峰挑战赛，由豆包MarsCode 和稀土掘金社区共同发起，面向全国程序员。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024121211.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "深湖冷却",
+          "link": "https://www.theglobeandmail.com/business/industry-news/property-report/article-the-worlds-largest-deep-lake-water-cooling-project-just-got-bigger/",
+          "description": "加拿大最大城市多伦多，就在安大略湖旁边。安大略湖是一个很深的湖，最深处达到244米。多伦多市正在建设一个非常酷的项目，使用安大略湖底的冷水，为城市提供冷却系统。安大略湖底部的水温是很低的，该项目从水底85米处取水，即使盛夏，水温也只有4摄氏度。这些水经过40公里的管道，进入市中心的热交换站，为城市带来天然的冷气。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024041412.webp"
+          ]
+        },
+        {
+          "title": "自走桌",
+          "link": "https://www.decarpentier.nl/carpentopod",
+          "description": "一位国外工程师，制作了一张会自己行走的桌子。这张木头桌子有12条腿，每次可以同时移动三条腿，每条腿都用电机驱动。桌子内部有无线接收器，用来接收遥控信号。远端计算机发出遥控命令，并计算出移动哪几条腿，每条腿移动的角度和幅度。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024091217.webp",
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024091218.webp",
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024091219.webp"
+          ]
+        },
+        {
+          "title": "瘫痪网络的机器狗",
+          "link": "https://www.tomshardware.com/tech-industry/big-tech/dog-like-robot-jams-home-networks-and-disables-devices-during-police-raids-dhs-develops-neo-robot-for-walking-denial-of-service-attacks",
+          "description": "很多犯罪分子都在屋外装了摄像头，监控室外的风吹草动。美国国土安全部研发了一款机器狗，它的唯一作用就是瘫痪无线摄像头的通信。这个机器狗配备了一个天线阵列，接近目标后，会侦测周围无线信号的频率和信道，然后发送大量干扰信号，使得网络堵塞，无法通信。所有无线通信的智能家居设备，都会因此失效，包括摄像头。所以，重要地点的摄像头必须是有线的。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072405.webp",
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072406.webp"
+          ]
+        },
+        {
+          "title": "无豆咖啡",
+          "link": "https://www.bbc.com/news/articles/c4gv0rvx0dvo",
+          "description": "一些西方公司最近推出\"无豆咖啡\"，就是不使用咖啡豆制作的咖啡。它采用废弃的枣子或果核，提取生物质，然后添加提取自茶叶的咖啡因，使其具有咖啡的味道。因此，它比较环保，可以减少食物垃圾，也不必破坏森林种植咖啡树。据说，它的味道非常接近优质咖啡，普通人喝不出差异。只是成本不便宜，略高于传统的优质咖啡豆。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024091303.webp",
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024091304.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "CSS 重置（2024版）",
+          "link": "https://www.joshwcomeau.com/css/custom-css-reset/",
+          "description": "作者提出，最新的 CSS 重置（CSS reset，即更改浏览器默认样式）只需要9条规则，每一条都详细解释。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024102501.webp"
+          ]
+        },
+        {
+          "title": "Monokai 的历史",
+          "link": "https://monokai.pro/history",
+          "description": "本文介绍流行的代码编辑器配色方案 Monokai 的诞生历史。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024103102.webp"
+          ]
+        },
+        {
+          "title": "并发运行（Concurrency）和并行运行（Parallelism）：以 JavaScript 为例",
+          "link": "https://www.rugu.dev/en/blog/concurrency-and-parallelism/",
+          "description": "本文解释并发和并行的区别，然后给出 JavaScript 的示例。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024091302.webp"
+          ]
+        },
+        {
+          "title": "直接链接网页的某段文本",
+          "link": "https://alfy.blog/2024/10/19/linking-directly-to-web-page-content.html",
+          "description": "浏览器现在支持，URL 直接链接到网页的某个文本片段（text fragment）（上图的高亮部分），本文介绍如何使用。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024102409.webp"
+          ]
+        },
+        {
+          "title": "了解多重 DNS",
+          "link": "https://blog.hyperknot.com/p/understanding-round-robin-dns",
+          "description": "多重 DNS 就是同一个域名有多个 DNS 解析记录，可用来均衡负载。作者就测试了，均衡负载是否真能生效。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024102705.webp"
+          ]
+        },
+        {
+          "title": "感知器是什么",
+          "link": "https://medium.com/@vincentlambert0/it-all-started-with-a-perceptron-86bd0fb80b96",
+          "description": "本文解释神经网络的基础概念\"感知器\"（Perceptron）。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024102908.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "示意图利器 D2",
+          "link": "https://d2lang.com",
+          "description": "D2 是一款基于文本代码的作图工具，可以命令行使用，也可以浏览器使用。它有一个线上生成器 play.d2lang.com。基本语法：节点、连线、箭头、形状修改等。示例：A -> B 表示从A到B的箭头；A.shape: circle 将节点变成圆形；A.style.stroke: red 改变线条颜色。更多语法参考文档。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024121201.webp",
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024120613.webp",
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024121202.webp",
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024120601.webp",
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024120602.webp",
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024120603.webp",
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024120604.webp",
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024120606.webp",
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024120609.webp",
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024120610.webp",
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024120611.webp",
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024120614.webp",
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024120607.webp",
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024120608.webp",
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024120612.webp"
+          ]
+        },
+        {
+          "title": "FilePizza",
+          "link": "https://file.ch3nyang.top",
+          "description": "开源的文件传输工具，匿名加密，只需访问网页，即可连接到其他设备，基于 webRTC 和 Vue.js。",
+          "user": "@ch3ny4ng",
+          "user_link": "https://github.com/ch3ny4ng",
+          "images": []
+        },
+        {
+          "title": "Share Screen",
+          "link": "https://github.com/markliuyuxiang/ShareScreen",
+          "description": "从浏览器分享你的屏幕给其他人，适合用来演示。",
+          "user": "@markliuyuxiang",
+          "user_link": "https://github.com/markliuyuxiang",
+          "images": []
+        },
+        {
+          "title": "PMAtron",
+          "link": "https://github.com/maskerprc/pmatron",
+          "description": "将 phpMyAdmin 用 Electron 封装成跨平台桌面软件。",
+          "user": "@MaskerPRC",
+          "user_link": "https://github.com/maskerprc",
+          "images": []
+        },
+        {
+          "title": "ExcelUtil",
+          "link": "https://github.com/JerryFan626/ExcelUtil",
+          "description": "基于 Java 语言的 Excel 文件解析工具，可以用来提取数据。",
+          "user": "@JerryFan626",
+          "user_link": "https://github.com/JerryFan626",
+          "images": []
+        },
+        {
+          "title": "Readest",
+          "link": "https://github.com/chrox/readest",
+          "description": "一款开源电子书阅读器，跨平台桌面应用，基于 Next.js 15和 Tauri v2。",
+          "user": "@chrox",
+          "user_link": "https://github.com/chrox",
+          "images": []
+        },
+        {
+          "title": "IMG2AVIF",
+          "link": "https://img2avif.com",
+          "description": "一个网页工具，将各种格式的图片转成 AVIF 格式。",
+          "user": "@malagebidi",
+          "user_link": "https://github.com/malagebidi",
+          "images": []
+        },
+        {
+          "title": "YT Pics",
+          "link": "https://www.ytpics.com/",
+          "description": "一个 Web 应用，输入 YouTube 网址和指定时间，它会自动截取该时间的截图。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202402/bg2024021106.webp"
+          ]
+        },
+        {
+          "title": "Web2pdf",
+          "link": "https://github.com/dvcoolarun/web2pdf",
+          "description": "一个命令行工具，将网页保存成 PDF 文件，有很多增强功能（自定义样式、生成目录等）。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "CheerpJ",
+          "link": "https://labs.leaningtech.com/blog/cheerpj-3.0",
+          "description": "浏览器里面的 JVM 编译器，让 Java 程序可以在浏览器运行。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202402/bg2024021302.webp"
+          ]
+        },
+        {
+          "title": "fuzzy-search",
+          "link": "https://github.com/m31coding/fuzzy-search",
+          "description": "一个前端的模糊搜索库，支持东亚语言。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "AI 相关",
+      "items": [
+        {
+          "title": "AI Speaking",
+          "link": "https://github.com/Orenoid/AISpeaking",
+          "description": "基于 AI 的口语对话练习应用。",
+          "user": "@Orenoid",
+          "user_link": "https://github.com/Orenoid",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024121002.webp"
+          ]
+        },
+        {
+          "title": "AIGIF",
+          "link": "https://aigif.net",
+          "description": "GIF 动图搜索，可对图片人物进行换脸。",
+          "user": "@markliuyuxiang",
+          "user_link": "https://github.com/markliuyuxiang",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024121204.webp"
+          ]
+        },
+        {
+          "title": "Imagenie",
+          "link": "https://github.com/zhongweili/imagenie",
+          "description": "跨平台的桌面应用，使用 AI 在本地处理图片，比如人像修复、超分辨率放大、背景移除。",
+          "user": "@zhongweili",
+          "user_link": "https://github.com/zhongweili",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024121206.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "启动顺序图",
+          "link": "https://blog.archive.org/2024/06/01/the-backrooms-of-the-internet-archive/",
+          "description": "这篇文章记录了 Linux 和 Android 各自的系统启动顺序。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024011705.webp"
+          ]
+        },
+        {
+          "title": "中文电子书",
+          "link": "https://github.com/isno/tech-book",
+          "description": "开源的中文电子书，梳理网络、云、容器、集群等知识。",
+          "user": "@isno",
+          "user_link": "https://github.com/isno",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024121205.webp"
+          ]
+        },
+        {
+          "title": "英语新闻分级阅读网站",
+          "link": "https://www.englishnews.org/",
+          "description": "英语新闻分级阅读网站，实时更新新闻，分为三种难度，有重点词汇、理解测试和朗读音频。",
+          "user": "@meterscao",
+          "user_link": "https://github.com/meterscao",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024121207.webp"
+          ]
+        },
+        {
+          "title": "周刊讨论卡片",
+          "link": "https://github.com/inshub/weekly-cards",
+          "description": "这个网站将周刊讨论区的投稿，转成新闻卡片形式呈现。",
+          "user": "@inshub",
+          "user_link": "https://github.com/inshub",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024121208.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "密室照片",
+          "link": "https://blog.archive.org/2024/06/01/the-backrooms-of-the-internet-archive/",
+          "description": "2010年，美国互联网上流传一组密室照片，看上去非常空旷神秘。它们没有任何说明，不知道是在哪里拍的，也不知道是谁拍的。这样反而激起了网友的兴趣。经过不断转发，这些照片逐渐成为美国互联网经久不衰的一个神话，成为了很多电影和游戏的灵感，比如《命运规划局》、《黑暗城市》、《异次元杀阵》。最近，通过互联网档案馆（archive.org）的努力，现在终于查明，这组照片是一家家具店的二楼，当时正在进行翻新，一间间的小房间正是家具的陈列室。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202406/bg2024060904.webp",
+            "https://cdn.beekka.com/blogimg/asset/202406/bg2024060905.webp",
+            "https://cdn.beekka.com/blogimg/asset/202406/bg2024060906.webp",
+            "https://cdn.beekka.com/blogimg/asset/202406/bg2024060907.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "大众审美",
+          "link": "https://www.alexmurrell.co.uk/articles/the-age-of-average",
+          "description": "人们眼中的美和丑，其实都是受到社会的影响，很少有人拥有自己独立的审美标准。1990年代初期，两位俄罗斯艺术家委托一家美国市场研究公司，进行市场调查，向1001位美国人询问下面的问题。... 调查完成后，两位艺术家根据大多数人的偏好，绘制一幅画。理论上，这幅画应该受到最多社会大众的喜爱。后来，他们又在其他国家做这个调查，得到一个惊人的结果：每个国家的调查结果（即大众偏好），几乎都是一致的。\"人们想要的都是风景画，周围有几个人物，前景是动物，主要色调是蓝色。\" 他们根据11个不同国家的调查结果，画出来的11幅画看上去几乎一样。这证明了，全世界的大众审美正在趋同。从电影到时尚，从建筑到广告，全世界的人们喜欢差不多的东西，各国审美越来越接近，独特性越来越少。举例来说，AirBnB 上面的公寓，不管是哪个国家，装潢风格很多都是雷同的，可以称为 AirBnB 美学：白墙、原木、胶囊咖啡机、扶手椅、裸砖、木搁板、灯泡。这种 AirBnB 美学既有工业主义的粗犷原始，又有古典主义的优雅极简。这种风格还影响到了咖啡店。世界各地的咖啡店（包括餐厅），也慢慢变得相似：粗糙的木桌、宽大的窗户、朴素的吊灯。总之，随着互联网连接全球，全世界正在形成统一的大众审美。以后，无论去到哪个国家，旅馆和咖啡店可能都是一样的装修。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023032914.webp",
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023032915.webp",
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023032916.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "生活中的顺利遵循的过程",
+          "link": "",
+          "description": "我生活中一切顺利的事情都遵循相同的过程: (1) 我关注自己喜欢的事情。 (2) 我找到多做这些事情的方法。 (3) 我让有趣的人很容易发现我在做这些事情。 (4) 我和他们一起出去玩，一起做项目。",
+          "user": "亨里克·卡尔森",
+          "user_link": "https://www.henrikkarlsson.xyz/p/unfolding",
+          "images": []
+        },
+        {
+          "title": "伟大的科学家对想法的批判态度",
+          "link": "",
+          "description": "伟大的科学家是想法大胆的人，但是对自己的想法同时持有高度批判的态度。接受自己的猜想之前，他们首先会严厉尝试反驳它。只有发现很难反驳成功时，他们才相信自己的想法是对的。",
+          "user": "卡尔·波普尔",
+          "user_link": "https://igorpak.wordpress.com/2020/12/10/what-if-they-are-all-wrong/",
+          "images": []
+        },
+        {
+          "title": "编程语言的速度因人而异",
+          "link": "",
+          "description": "作为一个至少用过十几种语言进行过商业开发的程序员，我完全不同意有人说，一种语言的编程速度优于另一种语言。语言的编程速度因人而异，符合程序员的个人经历和思维习惯的语言，写起来最快。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "地球是湿岩石",
+          "link": "",
+          "description": "我长期以来一直认为地球是一个\"水星球\"，存在着大量的水覆盖星球。直到我做了数学计算，才意识到地球实际上是太空中的一块湿岩石，更像是用喷雾器喷了十几次的保龄球。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

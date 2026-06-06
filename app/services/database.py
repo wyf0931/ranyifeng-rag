@@ -84,7 +84,7 @@ class DatabaseService:
         # Rebuild will use the same logic as _create_fts_table
         self._create_fts_table()
 
-    def search(self, query: str, limit: int = 5) -> List[Dict[str, Any]]:
+    def search(self, query: str, limit: int = 100) -> List[Dict[str, Any]]:
         """Search using FTS5 with jieba tokenization."""
         if not query or not query.strip():
             return []

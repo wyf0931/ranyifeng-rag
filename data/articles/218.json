@@ -1,0 +1,407 @@
+{
+  "title": "科技爱好者周刊（第 218 期）：葡萄酒，樱花，全球变暖",
+  "link": "https://www.ruanyifeng.com/blog/2022/08/weekly-issue-218.html",
+  "number": 218,
+  "sections": [
+    {
+      "name": "封面图",
+      "items": [
+        {
+          "title": "",
+          "link": "https://e360.yale.edu/features/putting-solar-panels-atop-parking-lots-a-green-energy-solution",
+          "description": "美国新泽西州的一个露天停车场，全部架设了太阳能大棚，既可以用光伏板发电，又防止车辆被暴晒。这种做法值得推广。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080705.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "葡萄酒与全球变暖",
+          "link": "https://tamino.wordpress.com/2022/08/02/french-heat/",
+          "description": "法国葡萄酒产区保存着1354年以来每年开始采摘葡萄的日期。夏天越热，葡萄成熟越早，采摘日期越早。学者从这些日期倒推历史上每年夏天的平均气温，结果如图红线所示。可以看到，该地区夏季气温以前基本稳定，20世纪晚期以后开始一路上升，目前处于历史最高点。\n\n![]()",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080807.webp",
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080808.webp"
+          ]
+        },
+        {
+          "title": "樱花与全球变暖",
+          "link": "https://www.washingtonpost.com/weather/2021/03/29/japan-kyoto-cherry-blossoms-record/",
+          "description": "京都是古代日本首都，史书记载了每年樱花的盛开日期，可追溯到公元812年。气温越高，樱花开得越早。19世纪平均开花日期为4月17日，进入20世纪后越来越早，2021年和2022年均在3月26日盛开。这跟京都平均气温上升同步，从19世纪有气象记录以来，京都平均气温上升了3.4摄氏度。\n\n![]()",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080809.webp",
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080810.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "西班牙香肠",
+          "link": "https://edition.cnn.com/2022/08/05/europe/scientist-space-image-chorizo-intl-scli-scn/index.html",
+          "description": "一位法国物理学家在推特发布一张照片，声称是韦伯望远镜最新拍摄的比邻星，成千上万的用户转发。第二天他道歉说这是西班牙香肠在黑色背景下的特写。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080601.webp"
+          ]
+        },
+        {
+          "title": "月球熔岩管",
+          "link": "https://www.universetoday.com/156932/lava-tubes-on-the-moon-maintain-comfortable-room-temperatures-inside/",
+          "description": "科学家确认月球存在熔岩管（地下的山洞），内部温度始终保持在17摄氏度，适合人类生存。可以考虑在里面建立月球基地。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080407.webp",
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080406.webp"
+          ]
+        },
+        {
+          "title": "掰手腕辅助器",
+          "link": "https://www.cnbeta.com/articles/tech/1302007.htm",
+          "description": "视频博主手工耿发明了“掰手腕辅助器”，解决右手和左手无法比赛的问题。双方通过对一个假手发力，假手之间通过齿轮衔接，将同向力转换成相对方向的力。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080803.webp",
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080804.webp"
+          ]
+        },
+        {
+          "title": "亚洲最深钻井",
+          "link": "http://www.dzwww.com/xinwen/guoneixinwen/202208/t20220810_10655028.htm",
+          "description": "中国石化在塔里木盆地顺北油田钻了亚洲最深的钻井，深度为9300米。目前该油田垂直深度超过8000米的钻井共41口，已顺利产油。世界最深钻井是前苏联打的，深度12.2公里。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081102.webp",
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081103.webp"
+          ]
+        },
+        {
+          "title": "世界最高木结构建筑",
+          "link": "",
+          "description": "今年7月，美国威斯康星州的 Ascent 大楼落成，高度86.6米，是世界最高木结构建筑。除了混凝土底座、电梯和楼梯，其他都是木结构。如果解决防火和强度问题，木材真的可以取代砖块建筑。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081104.webp",
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081105.webp",
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081106.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "雷军2022年度演讲",
+          "link": "https://www.sohu.com/a/576060273_358836",
+          "description": "2022年8月11日，雷军主题演讲《永远相信美好的事情即将发生》的全文。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081120.webp"
+          ]
+        },
+        {
+          "title": "拆解一根快充线",
+          "link": "https://www.cnbeta.com/articles/tech/1300733.htm",
+          "description": "作者拆解了一根 65W 的 Type-C 快充线，里面的结构还是挺复杂的。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080606.webp"
+          ]
+        },
+        {
+          "title": "10个实用写作技巧",
+          "link": "https://threadreaderapp.com/thread/1554667451203276801.html",
+          "description": "作者学到的10个写好文章的实用技巧。原文是推特长推，属于对英文资料的一些总结。",
+          "user": "zonemeen",
+          "user_link": "https://github.com/zonemeen"
+        },
+        {
+          "title": "Web Component 死了吗？",
+          "link": "https://levelup.gitconnected.com/are-web-components-dead-12e404e0f4b0",
+          "description": "Web Component 是浏览器原生支持的组件规范，谷歌一直在推。它已经诞生10年了，本文回顾了历史，讨论这种技术的前景。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022063023.webp"
+          ]
+        },
+        {
+          "title": "扩展 SaaS 业务的方法",
+          "link": "https://staysaasy.com/product/2022/03/23/expanding-saas-business.html",
+          "description": "写给 SaaS 创业者的商业文章，介绍应该怎么定位和扩张业务。给出的建议很实在，可操作性比较强。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022041101.webp"
+          ]
+        },
+        {
+          "title": "Chrome 的实时字幕",
+          "link": "https://support.google.com/chrome/answer/10538231?hl=en",
+          "description": "Chrome 浏览器内置了实时字幕功能，同步将语音转成文字，显示在网页上。菜单\"设置/高级/Accessibility/Captions\"可以打开。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022041704.webp"
+          ]
+        },
+        {
+          "title": "旧安卓手机用作 Web 服务器",
+          "link": "https://lbrito1.github.io/blog/2020/02/repurposing-android.html",
+          "description": "本文演示如何将旧安卓手机变成 Web 服务器，架设内网服务。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062404.webp"
+          ]
+        },
+        {
+          "title": "我错了，CRDT 是未来",
+          "link": "https://josephg.com/blog/crdts-are-the-future/",
+          "description": "解释和比较了 CRDT 和 OT 这两种多人的实时同步算法，主要用来实现多人同时编辑文档。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022041703.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "新兴搜索引擎",
+      "items": [
+        {
+          "title": "Kagi",
+          "link": "https://kagi.com/",
+          "description": "提供收费搜索服务，免费账户每月搜索50次。保证没有广告、不保存用户信息，中文搜索也较准确。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022060510.webp"
+          ]
+        },
+        {
+          "title": "yep",
+          "link": "https://yep.com/",
+          "description": "广告收入的90%返还给内容的创作者。英文搜索质量还可以，中文不行。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022060511.webp"
+          ]
+        },
+        {
+          "title": "Neeva",
+          "link": "https://neeva.com/",
+          "description": "没有广告，承诺不保存用户信息，由前谷歌工程师创建，搜索质量相当好。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080510.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "StemRoller",
+          "link": "https://www.stemplayer.com/",
+          "description": "将歌曲的人声和伴奏分离，生成单独的音轨。只支持处理 Youtube 视频，CPU 占用高。GitHub 有源码。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080605.webp"
+          ]
+        },
+        {
+          "title": "文本生成声音模型",
+          "link": "",
+          "description": "腾讯和北大合作的一个模型，根据文本生成声音，例如输入\"鸟儿和昆虫在白天鸣叫\"，就会生成对应的声音。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080802.webp"
+          ]
+        },
+        {
+          "title": "TWINT",
+          "link": "https://github.com/twintproject/twint",
+          "description": "开源的推特数据抓取分析工具，不需要注册即可使用。另有 Instagram 的数据抓取分析工具 Osintgram。"
+        },
+        {
+          "title": "Shottr",
+          "link": "https://shottr.cc/",
+          "description": "Mac 电脑的免费截屏软件，性能非常好，支持滚动截屏，还可以像素级修补图像。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022061901.webp"
+          ]
+        },
+        {
+          "title": "infinite",
+          "link": "https://github.com/fzdwx/infinite",
+          "description": "Go 语言的交互式命令行组件库，提供 progress、group、mulit select、input text、confirm 等常用组件。",
+          "user": "fzdwx",
+          "user_link": "https://github.com/fzdwx"
+        },
+        {
+          "title": "Temir",
+          "link": "https://github.com/webfansplz/temir",
+          "description": "使用 Vue.js 开发命令行工具的框架。",
+          "user": "webfansplz",
+          "user_link": "https://github.com/webfansplz",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081108.webp"
+          ]
+        },
+        {
+          "title": "vuepress-theme-reco",
+          "link": "",
+          "description": "Vuepress 的一个模板库，通过 GitHub Actions 直接构建出一个静态博客。",
+          "user": "eryajf",
+          "user_link": "https://github.com/eryajf",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081004.webp"
+          ]
+        },
+        {
+          "title": "Melody",
+          "link": "https://github.com/foamzou/melody",
+          "description": "个人用户的音乐管理工具，可以在网上搜索歌曲，然后一键下载或者上传到云盘。",
+          "user": "foamzou",
+          "user_link": "https://github.com/foamzou",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081109.webp"
+          ]
+        },
+        {
+          "title": "crypto-js wasm",
+          "link": "",
+          "description": "哈希和加密算法库 crypto-js 的 wasm 版本。",
+          "user": "PeterAlfredLee",
+          "user_link": "https://github.com/PeterAlfredLee"
+        },
+        {
+          "title": "Rainbond",
+          "link": "https://www.rainbond.com/",
+          "description": "云应用管理平台，快速架设、使用、管理容器和 K8S 集群。",
+          "user": "yangkaa",
+          "user_link": "https://github.com/yangkaa",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081006.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "Knots 3D",
+          "link": "https://knots3d.com/knots/en_us/ALL",
+          "description": "使用 3D 动画一步步演示如何打各种绳结。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022052802.webp"
+          ]
+        },
+        {
+          "title": "多邻国粤语课程",
+          "link": "https://zh-cn.duolingo.com/course/zh-HK/zh/%E5%AD%A6%E4%B9%A0-%E4%B8%AD%E6%96%87%EF%BC%88%E7%B2%A4%E8%AF%AD%EF%BC%89",
+          "description": "多邻国最新推出的免费粤语课程。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080811.webp"
+          ]
+        },
+        {
+          "title": "UISET",
+          "link": "https://uiset.com/",
+          "description": "收集免费 UI 资源（插图、图标、颜色等）的网站，可以通过 GitHub 仓库提交新资源。",
+          "user": "bimohxh",
+          "user_link": "https://github.com/bimohxh",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081005.webp"
+          ]
+        },
+        {
+          "title": "折纸地球仪",
+          "link": "http://joachimesque.com/globe/index.html.en",
+          "description": "这个网站提供 A4 的模板下载，打印出来，可以自己粘成地球仪。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081201.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "隐形屋",
+          "link": "https://www.odditycentral.com/architecture/londons-invisible-house-is-covered-in-mirrors.html",
+          "description": "伦敦有一座房屋，靠街的一面全部装上了镜子，巨大的镜子反射街景。镜子是单向的，路人看不到里面，屋主可以看到外面。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022032806.webp",
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080702.webp"
+          ]
+        },
+        {
+          "title": "巨大的桌面环境",
+          "link": "https://twitter.com/johncoogan/status/1507777821992632320",
+          "description": "外国网友在推特上展示一些巨大的桌面环境。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022032808.webp",
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022032809.webp",
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022032810.webp",
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022032811.webp",
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022032812.webp"
+          ]
+        },
+        {
+          "title": "盘古中央山脉",
+          "link": "https://vividmaps.com/central-pangean-mountains/",
+          "description": "远古时地球陆地都在同一块大陆，今天的英国苏格兰山脉、美国阿巴拉契亚山脉等曾是一条山脉，称为盘古中央山脉。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080703.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "如何让电梯变快",
+          "link": "https://news.ycombinator.com/item?id=30764970",
+          "description": "一座新办公大楼的电梯太慢，租户抱怨。电梯公司更换需要1亿美元。一个承包商花50万美元在电梯里装上大镜子，租户不再抱怨。奥秘在于问题不在于电梯慢，而在于人们感到厌烦，而人们看着镜子里的自己永远不会厌倦。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081121.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "",
+          "link": "https://daydreamsinruby.com/staring-at-a-blank-page/",
+          "description": "有时候我在电脑前写不出东西，后来想通：写不出来没关系，这是为好作品的发生创造时间和空间。"
+        },
+        {
+          "title": "",
+          "link": "https://biggestfish.substack.com/p/planning-is-for-doing",
+          "description": "制定计划就是为了实施，如果不实施，计划本身并没有价值。如果你清楚地如何得到结果，完全可以没有计划。"
+        },
+        {
+          "title": "",
+          "link": "https://medium.com/@maximetopolov/drupal-is-dying-6129b4bd3d22",
+          "description": "Drupal 曾经是世界最流行内容管理系统，但过于复杂且维护成本高昂，导致走向衰落。"
+        },
+        {
+          "title": "",
+          "link": "https://www.artnews.com/art-in-america/features/tauba-auerbach-s-v-z-sfmoma-1234612921/",
+          "description": "未来几十年将是一个无序时代：超级大国相互冲突、社会不平等加剧、经济发展缓慢、世代争吵、生态系统恶化、大量人口生活艰难。— 德意志银行2020年研究报告"
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "20年前，数据库只有关系数据库。现在大型企业平均会用到七种不同的数据库，如 Snowflake、Clickhouse、Timescale 等。"
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "FlowUs 个人专栏",
+          "link": "https://flowus.cn?promotionChannel=GW_RYF_01",
+          "description": "国产软件 FlowUs 提供个人专栏服务，集成了\"文档+表格+网盘\"，适合知识库、数据管理、文件存储多种用途。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022072108.webp"
+          ]
+        }
+      ]
+    }
+  ]
+}

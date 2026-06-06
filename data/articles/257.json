@@ -1,0 +1,409 @@
+{
+  "title": "科技爱好者周刊（第 257 期）：黄仁勋的 Nvidia 故事",
+  "link": "https://www.ruanyifeng.com/blog/2023/06/weekly-issue-257.html",
+  "number": 257,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "黄仁勋的 Nvidia 故事",
+          "link": "",
+          "description": "黄仁勋大概是硅谷最有影响力的华人。\n\n1993年，他跟两个朋友一起创办了芯片设计公司 Nvidia（中文名\"英伟达\"）。当时是小公司，可现在是美国第五大科技公司（仅次于苹果、微软、谷歌和亚马逊）。\n\n十年前，如果你买了 Nvidia 的股票，现在都要笑死了，因为它上涨了[105倍](https://www.chinaz.com/2023/0527/1528509.shtml)！最近十年美国涨幅第一名的股票就是它。\n\n上周，黄仁勋突然出现在台湾，被拍到在饶河街夜市买小吃。\n\n后来大家才知道，他要参加5月27日的台大毕业典礼，他是今年的演讲嘉宾。\n\n我推荐这个演讲，网上有[全文](https://www.businessweekly.com.tw/focus/blog/3012429)。原文是英语，已经译成中文。\n\n他只讲了20分钟，但是解开了我心中一直的疑问：Nvidia 是怎么发家的。下面就是我根据这个演讲，整理出来的 Nvidia 的故事。\n\n黄仁勋说，**为什么要创立 Nvidia？因为我们看好加速计算。**\n\n人类对计算速度的要求一定会越来越高，CPU 只能做通用计算，加速计算需要定制的专用硬件，所以我们的创业目标就是加速计算的硬件。\n\n市场需求量最大的加速计算硬件，就是游戏的图形芯片（GPU），所以我们选择游戏显卡作为创业产品。我们只做芯片设计，生产全部外包。\n\n1994年，我们的第一个客户是日本游戏公司 SEGA，我们为它的游戏主机设计显卡。\n\n（图片说明：Nvidia 的第一个产品，SEGA 游戏机的 [NV1 显卡](https://segaretro.org/NV1)。）\n\n但是第二年，微软发布了 Windows 平台的图形接口 Direct3D。我们一下子就慌了，因为它跟我们的设计是冲突的。\n\n我们最终选择中止 SEGA 的合约，**改为 Windows 平台开发 GPU**。这是一步险棋，因为 SEGA 是我们唯一的客户，却被我们踢走了。我们的资金只能支持6个月，如果这点时间里面，拿不出新产品，我们就只有倒闭了。\n\n幸运的是，快要没钱的时候，我们设计出了 Riva 128，这块芯片取得了成功。到了1997年底，它的出货量超过100万张，我们就这样活了下来。\n\n我们为 Windows 平台设计显卡，一直干了10年。\n\n虽然产品很受欢迎，但是有一个问题：**人们只用这些显卡打游戏，无法用于其他的加速计算。** 因为那时的 GPU 必须通过 Windows 的接口使用，受制于操作系统，用户无法直接操作 GPU，很难将其用于自己的用途。\n\n为了扩展 GPU 的用途，**2007年我们推出了 CUDA 框架，让用户可以操作 GPU 底层接口**，定制化编程，满足自己的加速计算需求。GPU 从此可以用于科学运算、物理模拟等各方面。\n\n令人失望的是，市场需求始终不旺，而我们推进 CUDA 的成本非常高。那几年，我们的利润受到严重拖累，股价低迷。内部也出现分歧，有人提出放弃 CUDA。\n\n谁能想到，命运的转折点突然出现了。**2014年，人们发现 CUDA 能够满足 AI 训练的大量计算**，它一下子就变得异常火爆。随着 AI 的快速发展，我们从此走上了康庄大道，股价一飞冲天。\n\n除了 AI，我们也尝试把加速计算推广到其他新兴领域。\n\n2007年 iPhone 诞生了，手机芯片成为了一个超级市场。我们开始考虑为安卓手机开发芯片。\n\n但是，手机芯片是集成的，CPU、GPU、通信芯片（调制解调器）做在一起。**如果我们要做安卓芯片，就必须研发通信芯片。这跟我们的加速计算方向是不符合的。**\n\n我们不得不做出一个艰难的决定：放弃手机市场。为了弥补这个损失，**我们选择进军另一个更符合我们的市场：自动驾驶的车用芯片。** 自动驾驶的计算量非常大，市场也很广阔。\n\n上面就是 Nvidia 的简史。回顾这段历史可以看到，只要你坚信自己的大方向是对的，不妨就坚持做下去，不要害怕遇到挫折，也不要被眼前利益诱惑，最终会看到回报，Nvidia 就是这样走过来的。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052809.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052812.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052810.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052811.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052813.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052905.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052906.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052907.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "抖音全源码实战：如何应对超大工程复杂度",
+          "link": "https://www.bagevent.com/event/8479092?bag_track=001",
+          "description": "抖音官方安卓团队技术交流活动第四期，包含五个演讲：插件化架构演进之路、虚拟机优化实践、体验优化实践、稳定性优化及工具体系建设。时间：6月11日下午。可免费报名线上直播。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023060103.webp",
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023060104.webp"
+          ]
+        },
+        {
+          "title": "云原生沙龙：Serverless 实际应用探讨",
+          "link": "https://www.bagevent.com/event/sales/rr8fx9nlwz3ykg7m65evetbr3ualrtjt",
+          "description": "字节基础架构团队与稀土掘金社区联合举办的技术沙龙，探讨 Serverless 落地实践。时间：6月3日下午。地点：北京方恒时尚中心（字节工区）。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023060105.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "带触摸屏的移动硬盘",
+          "link": "",
+          "description": "美国网友制作了一个很有创意的移动硬盘。它的外壳模仿传统的3.5寸软盘，但是上面带有一个彩色触摸屏，可以查看里面到底包含了哪些文件。大多数程序员家里，都有一堆移动硬盘和 U 盘。要搞清楚里面有什么文件，就需要把它们插到电脑上，这很麻烦。这个装置就解决了这个问题。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023030202.webp",
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023030203.webp"
+          ]
+        },
+        {
+          "title": "全息马戏团",
+          "link": "https://www.smithsonianmag.com/smart-news/german-circus-uses-stunning-holograms-instead-live-animal-performers-180972376/",
+          "description": "一家德国马戏团举行一场 3D 全息马戏表演，完全不使用真实的动物。表演现场一共有11台投影机，分布在不同的方位，观众等于在观看360度视频。马戏团说，这样有利于保护动物，不必为了娱乐和赚钱而圈养训练它们。另外，观众还能看到一些以前没法表演的奇观，比如巨大的金鱼在空中游动。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023030204.webp"
+          ]
+        },
+        {
+          "title": "3D 打印篮球",
+          "link": "https://www.dezeen.com/2023/03/08/wilsons-airless-3d-printed-basketball/",
+          "description": "著名篮球品牌 Wilson 开发了一款 3D 打印篮球。这种篮球是打印出来的，内部中空，表面布满了网眼，采用弹性聚合材料，最大优点就是不用充气。传统篮球必需充气，气压太高或太低，都会影响手感。3D 打印篮球就没有这个问题，尺寸、重量、弹性都与传统篮球接近，目前的问题就是还不够耐用。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031301.webp",
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031302.webp",
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031303.webp"
+          ]
+        },
+        {
+          "title": "七天环游世界",
+          "link": "https://www.usatoday.com/story/travel/2023/05/18/new-guinness-world-record-travel-seven-wonders-week/70232560007/",
+          "description": "一个美国男子实现了\"七天游览世界七大奇观\"的壮举。他在七天时间（6天16小时14分钟）里面，亲身游览了以下七个地点：中国长城、印度泰姬陵、约旦佩特拉古城、意大利罗马斗兽场、巴西里约热内卢的基督救世主塑像、秘鲁马丘比丘、墨西哥奇琴伊察。由于时间实在太紧张，他必须在每个景点打卡后，立刻赶往飞机场，乘坐最近的航班离开。这七天的吃饭和睡觉，他都在飞机上，中间只在罗马吃过一顿麦当劳。这次活动是一家旅行社赞助的。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052805.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052806.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052807.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052808.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "Meta 裁员亲历记",
+          "link": "https://www.huxiu.com/article/1600148.html",
+          "description": "Meta 公司一共裁掉了1万多个员工，一位亲历者讲述自己被裁过程和感受，有很多细节。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052604.webp"
+          ]
+        },
+        {
+          "title": "我用 GPT 给电子厂带货",
+          "link": "https://t.cj.sina.com.cn/articles/view/6286736254/176b7fb7e01901df3u",
+          "description": "作者介绍自己怎么用 ChatGPT 大批量制作营销文章和视频。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052803.webp"
+          ]
+        },
+        {
+          "title": "越来越庞大的显卡",
+          "link": "https://m.cnbeta.com.tw/view/1362895.htm",
+          "description": "微星推出了一款原型显卡，号称是为了下一代 RTX 5090 显卡准备的设计，厚达空前的4.2个插槽。里面主要是散热的铜片，一般的机箱根本放不下。很难想象，这么发展下去，未来的游戏电脑会是什么样。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023060107.webp"
+          ]
+        },
+        {
+          "title": "Deno 支持 npm 打包",
+          "link": "https://deno.com/blog/v1.34",
+          "description": "Deno 1.34 版引入了一个新功能，可以把 Node.js 程序和 npm 模块打包，成为一个二进制文件，支持 Windows/Mac/Linux 全平台。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052516.webp"
+          ]
+        },
+        {
+          "title": "popover API 介绍",
+          "link": "https://developer.chrome.com/blog/introducing-popover-api/",
+          "description": "网页的弹出层是很常用的 UI 模式，Chrome 正式推出了 popover API，浏览器内置了弹层组件。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052402.webp"
+          ]
+        },
+        {
+          "title": "如何制作 GitHub 个人主页",
+          "link": "https://www.bengreenberg.dev/posts/2023-04-09-github-profile-dynamic-content/",
+          "description": "本文演示 GitHub 个人主页如何定制，并且使用脚本，通过 GitHub Actions 定期更新。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023041101.webp"
+          ]
+        },
+        {
+          "title": "谷歌 AI 备忘录",
+          "link": "https://www.semianalysis.com/p/google-we-have-no-moat-and-neither",
+          "description": "这篇文章据说是谷歌内部泄漏的，一位研究员写给高管的备忘录，看上去像真的。他分析了目前 AI 的发展状况，提出谷歌的应对策略，建议加大开源力度。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "CSV to Image",
+          "link": "https://csv-to-image.com/",
+          "description": "这个开源工具可以将 CSV 文件转成图片。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011906.webp"
+          ]
+        },
+        {
+          "title": "SAMIST",
+          "link": "https://github.com/dibrale/samist",
+          "description": "一个 Python 桌面程序，为 Meta 公司的 AI 模型 SAM 提供了图形界面，可以提取照片里面的物体。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052702.webp"
+          ]
+        },
+        {
+          "title": "Git-Sim",
+          "link": "https://initialcommit.com/blog/git-sim",
+          "description": "一个命令行工具，可以生成图片或动画，显示某个 Git 命令对当前仓库的影响。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023012301.webp",
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023060114.webp"
+          ]
+        },
+        {
+          "title": "Reader Mode",
+          "link": "",
+          "description": "一个开源的 Chrome 插件，可以将网页转成阅读模式，并且内置了 AI 总结、翻译、Mardown 转换等功能。（@zhongyiio 投稿）",
+          "user": "zhongyiio",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3162",
+          "images": []
+        },
+        {
+          "title": "MIB",
+          "link": "https://github.com/QC2168/mib",
+          "description": "一款开源的 Windows 桌面应用，将安卓手机备份到桌面电脑，支持增量备份。（@QC2168 投稿）",
+          "user": "QC2168",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3148",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023060108.webp"
+          ]
+        },
+        {
+          "title": "Rubic",
+          "link": "https://rubic.jaskang.vip/",
+          "description": "一个响应式小程序开发框架，采用跟 Vue3 一样的编程模型。（@JasKang 投稿）",
+          "user": "JasKang",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3150",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023060110.webp"
+          ]
+        },
+        {
+          "title": "SQLucky",
+          "link": "https://github.com/tenie/SQLucky",
+          "description": "一款开源的数据库可视化操作工具，基于 Java，用来平替同类付费软件。（@tenie 投稿）",
+          "user": "tenie",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3154",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023060112.webp"
+          ]
+        },
+        {
+          "title": "ChatGPT 聊天客户端 (Flutter)",
+          "link": "",
+          "description": "一款开源的 ChatGPT 聊天客户端，基于 Flutter，支持手机和桌面所有平台。（@bravekingzhang 投稿）",
+          "user": "bravekingzhang",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3151",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023060111.webp"
+          ]
+        },
+        {
+          "title": "Mastodon iOS 客户端",
+          "link": "",
+          "description": "开源的社交媒体 Mastodon 的 iOS 客户端，功能比较多，还在不断开发中。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023012502.webp"
+          ]
+        },
+        {
+          "title": "Juice Shop",
+          "link": "https://github.com/juice-shop/juice-shop",
+          "description": "一个用作安全训练的 Web 应用，里面包含了最常用的10种安全漏洞，供练习者破解。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023012503.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "Fluent 2 设计风格",
+          "link": "https://fluent2.microsoft.design/",
+          "description": "微软发布新的设计风格 Fluent 2，不仅用于 Windows，还提供用于 Web 和 iOS 的组件。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052804.webp"
+          ]
+        },
+        {
+          "title": "计算机专业学习路线",
+          "link": "",
+          "description": "据说站长是北大学生，参考美国名校的计算机培养方案，整理的计算机专业学习路线。（@Stein283036 投稿）",
+          "user": "Stein283036",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3149",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023060109.webp"
+          ]
+        },
+        {
+          "title": "Docker and Kubernetes 完整开发指南 (B站搬运)",
+          "link": "https://www.bilibili.com/read/cv21266100",
+          "description": "Udemy 视频课程，搬运到了 B 站，有中文字幕。通过 Node.js 项目，循序渐进学习 Docker 和 Kubernetes。（@lyf61 投稿）",
+          "user": "lyf61",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3156",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023060113.webp"
+          ]
+        },
+        {
+          "title": "Database from Scratch",
+          "link": "",
+          "description": "介绍数据库原理的英文电子书，前半部分可以免费阅读。作者还另著有一本《自己实现 Redis》。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023042409.webp"
+          ]
+        },
+        {
+          "title": "LLM 教程",
+          "link": "",
+          "description": "介绍 LLM（大规模语言模型）的免费教程网站。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052602.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "佛罗里达海滩",
+          "link": "https://www.thisiscolossal.com/2022/12/tom-hegen-beach-series/",
+          "description": "一个美国摄影师专门拍摄佛罗里达州的热门海滩，人群和遮阳伞的照片非常惊艳。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022122202.webp",
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022122203.webp",
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022122204.webp",
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022122205.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "为什么硬件很难做",
+          "link": "https://threadreaderapp.com/thread/1604018884662951938.html",
+          "description": "一年前，我们收到客户的报告，我们生产的工业机器人出现了莫名其妙的故障。我们取回了故障机器人，硬件和软件团队进行了各种分析，总是无法复现用户遇到的故障。我们猜测，原因大概是耦合器松了，导致电机无法带动车轮。于是，我们重新设计了耦合器。但是，产品都在用户手里，很难一个个回收进行更换。我们就想出了另外一种方法，让用户自己操作，打开机器人，重新拧紧耦合器。根据用户反馈，这个方法有效，机器人没有再出现故障。后面整整一年，都平安无事。正当我们忘了这件事，上个月客户又报告，故障重新出现了。我们想这一定不是原来的故障，肯定是别的原因导致的。我们取回了机器人，在公司开关了几百次，跟一年前一样，我们无法复现用户遇到的故障。后来，有人突发奇想，将机器人放入冰箱。第二天早上我们把它拿出来，很神奇，故障就出现了。过了十分钟，故障在室温下又消失了。于是我们明白了，它跟温度有关系。为了彻底搞清楚问题，公司放午餐的冰箱，箱塞满了机器人。最终，我们确定有一个组件在特定温度下，会产生噪声信号，导致了故障。只要移除两个电阻就可以修复它。这次真的是彻底修复了。事后证明，去年的故障也是这个原因。当时，我们让客户拆开机器，重新拧紧耦合器，使得机器内部的温度上升了，所以故障就消失。实际上这个故障跟耦合器完全无关。再加上后来冬天过去了，天气转暖，故障就再也没有出现。等到冬天再次到来，故障就重新出现了。我们的机器人属于很简单的那种，只有数百个零件，但是每个零件都可能发现不可预测、难以发现的故障，这就是为什么硬件很难做的原因。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023060116.webp",
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022121801.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "以后不再有《教父》，也不再有《绿野仙踪》，只有15秒的人类愚蠢片段。",
+          "link": "https://www.theguardian.com/us-news/2023/may/26/hollywood-writers-strike-artificial-intelligence",
+          "description": "一位好莱坞编剧，谈他怎么看待 TikTok",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "财务成功的最快途径，是在三个不同的即将上市的公司各自工作四年，然后四十岁就可以退休。",
+          "link": "https://lethain.com/forty-year-career/",
+          "description": "《四十年的职业生涯》",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "我建议购买一本《成功人士的七个习惯》，但不要阅读，而是烧掉它，从而做出一个象征性姿态，跟这类成功学决绝。",
+          "link": "https://news.ycombinator.com/item?id=35847971",
+          "description": "Linus Torvalds，Linux 创始人",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "我想关掉 Youtube 的短视频（Shorts）功能，点击\"删除\"按钮，结果它显示\"此功能将隐藏30天\"。我感觉像被某个寻求晋升的谷歌产品经理打了一记耳光，他告诉我，他比我更了解我的需求。",
+          "link": "",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "title": "科技爱好者周刊（第 362 期）：GitHub 工程师谈系统设计",
+  "link": "https://www.ruanyifeng.com/blog/2025/08/weekly-issue-362.html",
+  "number": 362,
+  "sections": [
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "我所知的良好的系统设计",
+          "link": "https://www.seangoedecke.com/good-system-design/",
+          "description": "上周，我读到一篇文章，作者是 GitHub 的高级工程师肖恩·戈德克（sean goedecke）。\n\n![](https://cdn.beekka.com/blogimg/asset/202508/bg2025081814.webp)\n\n文章题目是《我所知的良好的系统设计》。\n\n![](https://cdn.beekka.com/blogimg/asset/202508/bg2025081818.webp)\n\n读完后，我觉得写得不错。GitHub 工程师总结经验，教大家设计一个良好的系统，不是空泛之谈。下面是我的一些摘录。\n\n1、\n程序设计是组装代码，系统设计是组装服务。\n程序设计的组件是变量、函数、类等，系统设计的组件是服务器、数据库、缓存、队列、事件总线、代理等。\n\n2、\n如果一个系统很长时间不出错，它的设计就是良好的。\n如果你进一步看了代码，脱口而出：\"哈，这比我想的要简单\"，或者\"这个部分不用我操心，即使出问题也容易解决\"，它的设计就是优秀的。\n\n3、\n良好的系统设计，总是从一个有效的简单系统发展而来。千万不要从零开始设计一个复杂的系统。\n\n4、\n系统设计的难点在于状态。尽量采用无状态组件，最小化\"有状态组件\"的数量。\n状态的复杂性在于，你无法简单地重启服务。一旦出错，往往需要手动修复状态。\n\n5、\n状态需要保存在数据库。数据库是最重要的系统组件，用来管理状态。\n数据库的设计目标是每张表易于理解：打开看一下表结构，就能大致了解存储的数据内容及其原因。\n千万不要采用复杂的表结构（也就是数据结构），会给代码带来极大的复杂性和性能约束。\n\n6、\n数据库往往是系统瓶颈，因为每个页面请求可能要调用数十次、数百次数据库，而且是按顺序调用。\n为了避免瓶颈，数据库可以做成一个写入节点和多个只读副本。数据查询都发往只读副本，数据写入发往写入节点。\n写入节点与只读副本之间，存在数据复制延迟。如果更新一条记录后，你需要立即读取它，那么可以将数据放入内存，写入数据库成功后从内存读取。\n\n7、\n耗时的操作要拆分出来，放在后台作业（即系统外部的单独服务），排队完成。\n后台作业主要分成两个组件：一个队列服务，一个作业运行器（从队列中获取任务并执行）。\n队列任务的软件，可以用 Redis（需要尽快执行的任务），也可以用数据库（不着急的任务）。\n\n8、\n如果数据的生成速度和读取速度不匹配，经典解决方案就是缓存。\n缓存的最简单做法，就是把数据保存在内存，否则就使用专门的键值存储软件（比如 Redis 或 Memcached），后者的好处是多个服务器可以共享缓存。\n初级工程师希望缓存所有内容，而高级工程师希望尽量少用缓存。因为缓存是状态的来源，不可避免需要校验状态和处理状态过期。\n\n9、\n除了缓存和后台作业，大型系统通常还有事件中心，一般用的是 Kafka。\n事件中心也是一个队列，存放的是\"某件事发生了\"的消息。比如，用户注册触发了\"新帐户创建\"事件，该事件就放入事件中心，然后由事件中心去通知订阅该事件的多个服务：发送欢迎电子邮件、设置个人空间等等。\n事件中心适用于，发送事件的代码不关心其他服务如何处理事件，或者事件量很大且对响应时间不太敏感。\n不要过度使用事件，很多时候，更简单的做法是让一个服务请求另一个服务的 API。\n为了便于除错，所有日志最好都放在一起，你可以立即看到另一个服务的响应。\n\n10、推拉\n如果数据需要传送到多处，有拉取（pull）和推送（push）两种选择。\n一般来说，拉取比较简单（比如大多数网站采用的轮询），推送更节省资源，不需要用户主动请求数据，一旦后端数据发生变化，服务器主动将数据推送给每个客户端。\n如果你确实需要向100万个客户端提供最新数据（就像 GMail 那样），应该采用推送还是拉取？这要视情况而定。如果采用推送，就要把每次推送放入一个事件队列，并让一大群事件处理器从队列中拉取数据并推送。如果采用拉取，就要部署一堆（比如100台）快速的只读缓存服务器，处理所有读取流量。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081814.webp",
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081818.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "谷歌的两个AI新产品",
+      "items": [
+        {
+          "title": "Imagen 4",
+          "link": "https://developers.googleblog.com/en/announcing-imagen-4-fast-and-imagen-4-family-generally-available-in-the-gemini-api/",
+          "description": "谷歌最新的'文生图'模型，可以在官网免费使用。图片生成速度很快，效果相当好。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081708.webp",
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081707.webp",
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081805.webp"
+          ]
+        },
+        {
+          "title": "Learning About",
+          "link": "https://learning.google.com/experiments/learn-about?src=signup",
+          "description": "谷歌的新型学习平台，使用 AI 生成学习教程。输入你想要学习的主题，它会返回一篇简单的教程，里面还会列出各种学习主题，可以进一步深入学习。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081806.webp",
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081807.webp",
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081808.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "英国内政部警车加装面部识别系统",
+          "link": "https://news.sky.com/story/facial-recognition-vans-to-be-rolled-out-across-police-forces-in-england-13410613",
+          "description": "警车一边开，一边扫描路上行人的面孔，跟警方的数据库比对。如果发现可疑人士，就发出警报。据称，该技术在伦敦试运行期间，12个月内已抓到了580名嫌疑人。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081815.webp"
+          ]
+        },
+        {
+          "title": "Keeps - 语音明信片",
+          "link": "https://www.sendkeeps.com/",
+          "description": "一家美国公司推出Keeps，用户上传照片并留下语音，它会把照片打印成明信片，背后是二维码，寄给收件人，手机扫描二维码即可听到语音。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081302.webp",
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081303.webp"
+          ]
+        },
+        {
+          "title": "维基百科最多语言版本的条目",
+          "link": "https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Signpost/2025-08-09/Disinformation_report",
+          "description": "维基百科条目大卫·伍德沃德(David Woodard)竟有335种语言版本，是所有条目中最多的。大部分由同一用户创建，是自我推销行为，现已被删除只留20种语言。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081304.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "GitHub Models 的免费 AI 服务",
+          "link": "https://github.blog/ai-and-ml/llms/solving-the-inference-problem-for-open-source-ai-projects-with-github-models/",
+          "description": "GitHub提供免费的AI模型调用，有GPT-4o、DeepSeek-R1、Llama 3等模型，不过有用量限制。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025082008.webp"
+          ]
+        },
+        {
+          "title": "用 JavaScript 生成迷宫",
+          "link": "https://jrsinclair.com/articles/2025/joy-of-immutable-data-recursion-pure-functions-javascript-mazes/",
+          "description": "用通俗的语言介绍一种生成迷宫的简单算法，给出JS的实现。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025082006.webp"
+          ]
+        },
+        {
+          "title": "Cloudflare 不是 CDN",
+          "link": "https://magecdn.com/blog/2025/08/11/cloudflare-not-a-cdn/",
+          "description": "Cloudflare提供无限流量的免费CDN，那么为什么它还有收费的CDN？本文告诉你，除了流量，CDN还有其他指标。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081816.webp"
+          ]
+        },
+        {
+          "title": "Git 如何处理大文件",
+          "link": "https://tylercipriani.com/blog/2025/08/15/git-lfs/",
+          "description": "几十MB的大文件，不适合放入Git仓库。如果一定要放，要使用一个扩展Git LFS。但是它不太好用，作者提出改进建议。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081713.webp"
+          ]
+        },
+        {
+          "title": "10个有用的 VS Code 插件",
+          "link": "https://www.xda-developers.com/vs-code-extensions-i-cant-live-without/",
+          "description": "作者介绍10个他已经离不开的VS Code插件。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202505/bg2025052504.webp"
+          ]
+        },
+        {
+          "title": "TCP 初始拥塞窗口的问题",
+          "link": "https://jeclark.net/articles/tcp-initcwnd/?tag=performance",
+          "description": "TCP协议有一个'拥塞窗口'的设计，会根据网络状况，自动调整发送数据包的数量。本文通俗地解释这个概念，并提出改进的方案。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081706.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "doxx",
+          "link": "https://github.com/bgreenwell/doxx",
+          "description": "终端查看docx文件的命令行工具。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081809.webp"
+          ]
+        },
+        {
+          "title": "音译",
+          "link": "",
+          "description": "面向企事业单位内网环境的一个'语音转文字'的管理协作平台。",
+          "user": "weynechen",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7542",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081601.webp"
+          ]
+        },
+        {
+          "title": "P2P Remote Desktop",
+          "link": "",
+          "description": "一个开源的Windows远程桌面工具，直接运行可执行文件打开远程桌面，无需配置和安装。",
+          "user": "miroslavpejic85",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7547",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081602.webp"
+          ]
+        },
+        {
+          "title": "智能时钟",
+          "link": "",
+          "description": "一个开源硬件项目，基于ESP8266的智能时钟，可以显示时间和天气，支持小爱同学语音控制，自带Web和小程序客户端。",
+          "user": "AkenClub",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7553",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081703.webp"
+          ]
+        },
+        {
+          "title": "智能清理工具",
+          "link": "",
+          "description": "开源的Mac应用，智能清理工具，使用AI分析要删除的文件。",
+          "user": "GitDzreal93",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7555",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081704.webp"
+          ]
+        },
+        {
+          "title": "Firefox二维码插件",
+          "link": "",
+          "description": "Firefox浏览器的开源插件，为页面生成类似Chrome的二维码。",
+          "user": "liuliangsir",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7563",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081801.webp"
+          ]
+        },
+        {
+          "title": "离线翻译插件",
+          "link": "",
+          "description": "Chrome浏览器的离线翻译插件，基于浏览器新的Translator API和Language Detector API，不用网络也能翻译。",
+          "user": "AnYi-0",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7562",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081802.webp"
+          ]
+        },
+        {
+          "title": "ipynb转换工具",
+          "link": "",
+          "description": "这个网站可以将ipynb文件转化为PDF、HTML和Python。",
+          "user": "CurioChen77",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7587",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025082003.webp"
+          ]
+        },
+        {
+          "title": "Docker镜像下载脚本",
+          "link": "",
+          "description": "一个Python脚本，用于从指定镜像源下载Docker镜像，支持并发下载、智能缓存（layer增量更新）。",
+          "user": "luckfu",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5931#issuecomment-3205330268"
+        },
+        {
+          "title": "Make Graph",
+          "link": "https://makegraph.app/editor",
+          "description": "在线图表制作网站，支持主流图表类型，可导出SVG。",
+          "user": "bimohxh",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7597",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025082102.webp"
+          ]
+        },
+        {
+          "title": "ChartFromText",
+          "link": "https://chartfromtext.com/",
+          "description": "输入数据，在线生成各种图表。",
+          "user": "StevenWuHao",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7601",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025082104.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI 相关",
+      "items": [
+        {
+          "title": "OpenAI 生成式AI演进时间线",
+          "link": "",
+          "description": "OpenAI的官方项目，展示AI的发展历程：每一年，同样的提示语，不一样的输出。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081709.webp"
+          ]
+        },
+        {
+          "title": "MCP Explorer",
+          "link": "",
+          "description": "这个Web应用可以用作MCP客户端，指定AI模型和MCP服务器，在线使用。",
+          "user": "mcpexplorer",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7550",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081701.webp"
+          ]
+        },
+        {
+          "title": "终端AI编码代理",
+          "link": "",
+          "description": "基于终端的AI编码代理，Claude Code的开源替代品。",
+          "user": "Blushyes",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7561",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081803.webp"
+          ]
+        },
+        {
+          "title": "Claude Code Status Bar Monitor",
+          "link": "https://github.com/leeguooooo/claude-code-usage-bar",
+          "description": "Claude Code的插件，实时显示使用量和重置时间等信息。",
+          "user": "leeguooooo",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7588",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025082005.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "中小学语文示范诵读库",
+          "link": "https://edu.cnr.cn/eduzt/ywkwsfsd/",
+          "description": "中央人民广播电台中小学语文示范诵读库的Web前端，课文按年级、学期分类。",
+          "user": "ZedeX",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7556",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081705.webp"
+          ]
+        },
+        {
+          "title": "在线硬件测试平台",
+          "link": "https://volumeshader.org/zh",
+          "description": "网页测试各种硬件（GPU、屏幕、网络、摄像头、声音、鼠标、键盘）。",
+          "user": "linhuaqian",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7552",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081702.webp"
+          ]
+        },
+        {
+          "title": "业余无线电执照考试模拟（2025 题库）",
+          "link": "https://github.com/AlliotTech/ham-exam-web",
+          "description": "基于官方最新题库构建的在线模拟与练习的Web应用。",
+          "user": "AlliotTech",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7585",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025082002.webp"
+          ]
+        },
+        {
+          "title": "Citywalki",
+          "link": "",
+          "description": "这个网站让你感受在世界200多个城市步行/开车/飞无人机。选择城市和移动方式后，它会全屏播放相应的Youtube视频。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081804.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "轮胎在沙漠中滚动",
+          "link": "https://www.youtube.com/watch?v=tLpQ5bcxouw",
+          "description": "一群艺术家爬上智利最高的沙丘之一，在上面扔下一只轮胎，用无人机全程拍摄，看看它会滚动多久。轮胎在沙漠里，差不多滚动了三分钟，视频就是这三分钟的全程滚动，非常壮观和纾压。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081710.webp",
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081711.webp",
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081712.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "沃兹尼亚克的故事",
+          "link": "https://daringfireball.net/linked/2025/08/15/woz-on-slashdot",
+          "description": "沃兹尼亚克75岁生日，网友留言惋惜他卖掉苹果股票，他回复：'我卖掉和捐赠了所有苹果股票，原因是财富和权力不是我生活的目的。我更希望自己拥有快乐和幸福...' 以及关于他从不记录开销、慷慨赠送亲友、买电影院的故事。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025082103.webp"
+          ]
+        },
+        {
+          "title": "",
+          "description": "从学生时代起，他就对自己的财富漫不经心。后来有钱了，也依然如此。他从不记录自己的开销，也懒得听取理财建议。别人寻求帮助时，他经常当场开出支票。与乔布斯严格保管自己的苹果股票不同，他送给了父母、姐姐和弟弟400万美元股票，送给了朋友200万美元股票。父亲在他车里捡到过25万美元的未兑现支票，感叹说：'像他这样的人不应该有那么多钱。' 一次，他来到苹果公司大声宣布：'我的律师建议多元化投资，所以我刚刚买下了一家电影院。' 但放映黑帮电影引发抗议，他参加社区会议，承诺不放映暴力或色情电影，然后坐在空荡荡的剧院里不停看电影，扮演审查员的角色。"
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "关于写书的动力",
+          "description": "我计划写一本 Gleam 编程语言的书。但是，AI 已经能非常清晰地解释 Gleam 了，而且还能回应读者的任何要求。虽然我自信，自己目前写得要比 AI 好，但是实在没有理由，说服自己去这样做。你花数百小时写书，赚到的钱根本不值得这样付出。有了 AI，我不知道，人们以后写书的动力是什么，大概只会为了乐趣而写作。",
+          "user": "《AI 引发的身份危机》",
+          "user_link": "https://dusty.phillips.codes/2025/06/08/my-ai-driven-identity-crisis/"
+        },
+        {
+          "title": "关于与中国打交道",
+          "description": "让我难以抗拒的是，与中国打交道比与世界其他任何地方打交道都容易得多。我给中国某人发邮件，对方肯定会在24小时内回复，更有可能在4小时内。给一家欧盟或美国公司发邮件，通常要等上好几天才能收到回复。在与中国公司打交道时，我从未见过这种情况，一次也没有。而且，他们的 B2B 大型电商平台几乎总是提供全天候在线客服和采购支持。"
+        },
+        {
+          "title": "关于 AI 学习错觉",
+          "description": "AI 不会减少你掌握新技能所需要付出的努力，只会让你产生不必学习就已经学会的错觉。"
+        },
+        {
+          "title": "可靠透明的程序",
+          "description": "可靠、透明的程序通常不符合程序设计者的利益。",
+          "user": "尼克劳斯·维尔特（Niklaus Wirth），计算机科学家，图灵奖得主",
+          "user_link": "https://en.wikiquote.org/wiki/Niklaus_Wirth"
+        }
+      ]
+    }
+  ]
+}

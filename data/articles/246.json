@@ -1,0 +1,317 @@
+{
+  "title": "科技爱好者周刊（第 246 期）：永不丢失的网络身份",
+  "link": "https://www.ruanyifeng.com/blog/2023/03/weekly-issue-246.html",
+  "number": 246,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "本周话题：永不丢失的网络身份",
+          "description": "1、\n\n在影视作品中，大家可能都见过这样的情节：某人从昏迷中醒来，丧失了记忆，无论如何想不起来\"我是谁\"。\n\n![](https://cdn.beekka.com/blogimg/asset/202303/bg2023031505.webp)\n\n\n他不知道自己的姓名、年龄、住址，没有身份证和其他证物，也没有任何知情人。\n\n就这样，**他变成了一个没有身份的人，丧失了曾经属于自己的一切。**\n\n![](https://cdn.beekka.com/blogimg/asset/202303/bg2023031506.webp)\n\n\n不过，这样的情节已经不多见了，因为现在有 DNA 数据库，查一下 DNA 就知道你是谁。即使查不到本人，也能查到亲戚。\n\n\"我是谁\"这个问题，很大程度上已经解决了。你永远是你，你的身份已经不会丢了。\n\n2、\n\n但是，人们除了社会身份，现在还有网络身份。网络身份的丢失，才是更现实的问题。\n\n**网络身份就是你的互联网账号。** 如果丢失，你就会丧失在该账号下拥有的一切，甚至可能从互联网消失。\n\n![](https://cdn.beekka.com/blogimg/asset/202303/bg2023031507.webp)\n\n\n以后，影视剧的情节大概会变成下面这样：某人从昏迷中醒来，丧失了记忆，**无论如何想不起自己的网名。**\n\n没了网络身份，他在网上的资产、联系人、活动记录，就都丢失了。\n\n3、\n\n丢失网络身份的风险，其实比想象的大。\n\n大家不一定意识到，**你的网络身份并不真正属于你，** 不仅可能丢失和遗忘，还可能被剥夺。\n\n现在的互联网服务，一般要求用户使用手机号或邮箱地址注册。这两样东西都不真正属于用户。\n\n手机号属于电信服务商，邮箱属于邮箱服务商和域名服务商。如果他们收回你的手机号、邮箱、域名，你的网络身份就麻烦了，如果不能更改，很可能丢失。\n\n4、\n\n不仅账号的名称不属于你，而且账号的法律所有权也不属于你。\n\n举例来说，微信账号的所有权[属于腾讯公司](https://tech.sina.com.cn/roll/2020-09-08/doc-iivhuipp3172175.shtml)。[微信服务协议](https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=default&head=true)的 7.1.2 条就明确写明：\n\n\"微信帐号的所有权归腾讯公司所有，用户完成申请注册手续后，仅获得微信帐号的使用权。\"\n\n\n基本上，各种网络服务的账号，都属于服务提供商，用户只有使用权。\n\n因此，**服务商随时可以单方面暂停或注销你的账号，这是完全合法的。** 特朗普被推特禁言，就属于这种情况。\n\n5、\n\n如果我们不真正拥有自己的网络身份，实际上就不真正拥有互联网上我们名下的一切。\n\n那么，**有没有办法，让网络身份真正属于使用者，完全受你控制，其他任何人都无法夺走，永不丢失呢？**\n\n回答是有办法的，而且已经实现了。\n\n方法就是你用一个密钥对，作为自己的网络身份，公钥是你的用户 ID，私钥用来身份验证。\n\n这保证了每个用户的身份都是唯一的，只要私钥不泄漏，任何人都无法夺走你的账号。\n\n事实上，加密货币的身份体系就是这样设计的。用户用钱包表示身份，每个钱包的编号就是用户的公钥，必须用对应的私钥，才能往里面存取加密货币。这保证了你对钱包的绝对控制。\n\n前一阵子，有一个新兴的社交网络上线，叫做 [Nostr](https://nostr.com/)。\n\n![](https://cdn.beekka.com/blogimg/asset/202303/bg2023031601.webp)\n\n\n你可以像使用推特一样，在它上面发言，与他人交流。不同之处在于，它的账号就是每个人的公钥，而且可以自己架设服务，因此不存在账号被关停这种事情，并且账号跟域名之间没有绑定关系。\n\n6、\n\n如果每个人都选择公钥作为自己的账号，那么不难想到，可以把所有人的公钥都放到区块链上。以后，查找某人的网络身份，只要检索一下区块链就可以了。\n\n事实上，这是我能想到的区块链的最佳用途。唯一的问题是，区块链的读取是免费的，但是写入需要手续费。\n\n我们可以把写入的费用，看作网络身份的登记费。只要一次性付费，你的这个身份就随时随地可以查到，没有任何人可以篡改，永不丢失。\n\n7、\n\n读到这里，细心的读者会说，这依然没有解决文章开头的场景啊。\n\n如果你得了失忆症，忘记了自己的公钥，你的网络身份不是照样丢失吗？\n\n事实上，这个问题也有人想出了解法，他就是现在如日中天的 OpenAI 公司的首席执行官山姆·阿特曼（Sam Altman）。\n\n![](https://cdn.beekka.com/blogimg/asset/202303/bg2023031602.webp)\n\n\n他在2020年跟他人合伙创立了 [WorldCoin 项目](https://worldcoin.org/)，就是为了解决这个问题。\n\n![](https://cdn.beekka.com/blogimg/asset/202303/bg2023031603.webp)\n\n\n该项目的核心是一个叫做 [World ID](https://techcrunch.com/2023/03/07/worldcoin-cofounded-by-sam-altman-is-betting-the-next-big-thing-in-ai-is-proving-you-are-human/) 的业务，目标是为每个人提供一个全球性的网络身份。\n\n具体做法就是扫描用户的虹膜，将用户的生物信息存进 WorldCoin 的区块链，同时为用户生成一个密钥对，作为网络 ID。\n\n![](https://cdn.beekka.com/blogimg/asset/202303/bg2023031604.webp)\n\n\n这样的话，即使失忆了，只要扫描一下虹膜，就能找回你的公钥，从而得到你的网络身份。\n\nWorld ID 本月刚刚[发布了 SDK](https://worldcoin.org/blog/announcements/introducing-world-id-and-sdk)，正式对外运作了。如果你愿意被它扫描一下虹膜，就可以拿到你的 World ID，感兴趣的同学可以关注一下。希望这种\"密钥对作为网络身份\"的实践，能够推广和普及。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031505.webp",
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031506.webp",
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031507.webp",
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031601.webp",
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031602.webp",
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031603.webp",
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031604.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "月球时间",
+          "link": "https://www.esa.int/Applications/Navigation/Telling_time_on_the_Moon",
+          "description": "未来十年中，多个月球项目会同时开展，它们之间需要互相通信，比如多台月球车之间的通信。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031201.webp"
+          ]
+        },
+        {
+          "title": "菲律宾考试帽子",
+          "description": "菲律宾的一所大学，学生考试作弊成风，互相抄袭。一位教师就想了一个对策，规定学生只有戴上能遮住两侧眼角的帽子，才能参加考试。最终，学生 DIY 了各种各样的帽子，照片在网上疯狂流传。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102411.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102412.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102413.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102414.webp"
+          ]
+        },
+        {
+          "title": "吊扇的空气过滤器",
+          "link": "https://www.jefftk.com/p/ceiling-air-purifier",
+          "description": "一个老外程序员自己动手，在家里做了一个巨型空气过滤器，专用于吊扇。做法是在吊扇周围架上一圈 HEPA 滤网。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022060512.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022060513.jpg"
+          ]
+        },
+        {
+          "title": "火星氧气机",
+          "link": "https://phys.org/news/2022-08-moxie-reliably-oxygen-mars.html",
+          "description": "2021年2月，美国的毅力号火星车成功着陆火星。MOXIE 氧气机已经成功运行了7次，每小时可以在火星上制造6克氧气。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022090114.webp",
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022090115.webp",
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022090116.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "如何在个人电脑运行 LLaMA",
+          "link": "https://til.simonwillison.net/llms/llama-7b-m2",
+          "description": "LLaMA 是 Meta 公司的 AI 模型，效果号称超过 ChatGPT。本文教你在个人电脑运行这个模型。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031407.webp"
+          ]
+        },
+        {
+          "title": "CSS 的 initial-letter 属性",
+          "link": "https://developer.chrome.com/blog/control-your-drop-caps-with-css-initial-letter/",
+          "description": "CSS 新增了一个 initial-letter 属性，用来设置首字母下沉的样式。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011905.webp"
+          ]
+        },
+        {
+          "title": "WordPress 是怎么诞生的？",
+          "link": "https://levelup.gitconnected.com/meet-a-programmer-who-turned-an-open-source-platform-into-a-7-500-000-000-company-645e14c53c8",
+          "description": "本文介绍2003年，19岁的美国程序员 Matt Mullenweg 怎么会创建开源软件 WordPress。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011502.webp"
+          ]
+        },
+        {
+          "title": "Replit 诞生记",
+          "link": "https://www.the5to9.xyz/p/replit-800m-side-project",
+          "description": "Replit 是运行在网页上的编程 IDE，作者是一个约旦人，后来移民到美国。本文介绍他的创业过程。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011603.webp"
+          ]
+        },
+        {
+          "title": "我用 Orange Pi 做了一个 NAS",
+          "link": "https://www.instructables.com/DIY-Raspberry-Orange-Pi-NAS-That-Really-Looks-Like/",
+          "description": "作者从硬件到软件，完全自己动手，从头做出了一个 NAS 网络存储装置。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011601.webp"
+          ]
+        },
+        {
+          "title": "Web 浏览器引擎的历史",
+          "link": "https://eylenburg.github.io/browser_engines.htm",
+          "description": "本文梳理历史上出现过的浏览器引擎。"
+        }
+      ]
+    },
+    {
+      "name": "AI相关软件",
+      "items": [
+        {
+          "title": "Prompt 优化工具",
+          "link": "https://github.com/hanxiao/weekly/issues/2974",
+          "description": "专为生成式 AI 优化输入提示（prompt）的工具。",
+          "user": "hanxiao",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031402.webp"
+          ]
+        },
+        {
+          "title": "Chatbox",
+          "link": "https://github.com/Bin-Huang/chatbox",
+          "description": "OpenAI API 跨平台桌面客户端，主要用作 Prompt Debugging Console。",
+          "user": "Bin-Huang",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031409.webp"
+          ]
+        },
+        {
+          "title": "Chaty",
+          "link": "https://github.com/cosin2077/chaty",
+          "description": "一个命令行工具，支持使用一条命令，完成 ChatGPT 的各种相关操作。",
+          "user": "cosin2077"
+        },
+        {
+          "title": "PowerGPT",
+          "link": "https://github.com/ouromoros/PowerGPT",
+          "description": "一个 Windows PowerShell 工具，输入你想要完成的操作，它会用 AI 返回对应的 Windows 命令行命令。",
+          "user": "ouromoros"
+        },
+        {
+          "title": "Writely",
+          "link": "https://github.com/anc95/writely",
+          "description": "Chrome 浏览器插件，类似于 Notion AI，支持在任意编辑器网页上进行写作辅助。",
+          "user": "anc95",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031410.webp"
+          ]
+        },
+        {
+          "title": "智能文案小助手",
+          "link": "https://github.com/CatsAndMice/lanlan",
+          "description": "一个开源的 ChatGPT 前端表单页面，输入提示，自动生成文案。",
+          "user": "CatsAndMice",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031412.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Jami",
+          "link": "https://jami.net/",
+          "description": "一个开源的团队协作软件，可以文字聊天、视频通话、屏幕共享等。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022122201.webp"
+          ]
+        },
+        {
+          "title": "PHPWebStudy",
+          "link": "https://github.com/xpf0000/PHPWebStudy",
+          "description": "MacOS 系统 PHP 和 Web 开发环境管理工具，方便各软件的启动/重启、配置查看修改、日志排查等等。",
+          "user": "xpf0000",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031401.webp"
+          ]
+        },
+        {
+          "title": "Huntly",
+          "link": "https://github.com/lcomplete/huntly",
+          "description": "一款自托管的信息管理工具，可以订阅 RSS 和自动保存浏览过的网页，支持多维度的分类和搜索。",
+          "user": "lcomplete",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031405.webp"
+          ]
+        },
+        {
+          "title": "网页电路模拟器",
+          "link": "https://github.com/jerrylususu/??",
+          "description": "网页电路模拟器，可以添加电子元件、导出电路、分享 URL 等等。",
+          "user": "jerrylususu",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031403.webp"
+          ]
+        },
+        {
+          "title": "RxEditor",
+          "link": "https://github.com/rxdrag/rxeditor",
+          "description": "一款开源的可视化低代码前端工具，可以拖拽生成和编辑组件，目前仅支持 React。",
+          "user": "rxdrag",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031404.webp"
+          ]
+        },
+        {
+          "title": "Zarm",
+          "link": "https://zarm.design/",
+          "description": "基于 React 的企业级移动端 UI 组库。",
+          "user": "dominicleo",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031411.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "User Agent 字符串大全",
+          "link": "https://www.whatismybrowser.com/guides/the-latest-user-agent/",
+          "description": "这个网站提供各种最新版本浏览器的 User Agent 字符串。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022121803.webp"
+          ]
+        },
+        {
+          "title": "webЯcade",
+          "link": "https://www.webrcade.com/",
+          "description": "一个开源网站，让你在网页玩老游戏机（任天堂、世嘉等）的游戏，可以自己上传游戏 ROM。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022092604.webp"
+          ]
+        },
+        {
+          "title": "Rust 课程",
+          "link": "https://github.com/google/comprehensive-rust",
+          "description": "安卓团队编写的为期四天的 Rust 课程，从基本语法到高级主题，最后一天还会讲到 Rust 如何用于安卓开发。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022122211.webp"
+          ]
+        },
+        {
+          "title": "汇编语言编程导论",
+          "link": "https://github.com/pkivolowitz/asm_book",
+          "description": "一本英文的开源教程，向 C/C++ 学习者介绍 ARM 64 的汇编语言。"
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "FogCam 最古老的直播摄像头",
+          "link": "https://fogcam.org/",
+          "description": "旧金山州立大学行政大楼四楼有一个世界最古老的直播摄像头，至今还在直播校园状况。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022100402.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022100403.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022100407.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "如果风静止了",
+          "link": "https://thebulletin.org/2022/09/gone-with-the-winds-what-happens-if-there-is-a-global-terrestrial-stilling/",
+          "description": "风力发电的前提是必须有源源不断的风。2021年欧洲发生'风旱'，风速下降。科学家认为未来风速将放缓。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031413.webp",
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031414.webp",
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023031415.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "艺术家看到的不是世界的本来面目，而是一些更丰富、更简单、更强大的东西。",
+          "description": "-- [《照片编辑》](https://simonsarris.substack.com/p/photo-editing-respecting-context)"
+        },
+        {
+          "title": "一种普遍存在的误解是，不应该吃过期食物。",
+          "description": "-- 本文作者"
+        },
+        {
+          "title": "我不考虑使用投票来选择政策。我认为这表明了领导人思想上的虚弱，无法规划路线。",
+          "description": "-- 李光耀"
+        },
+        {
+          "title": "行动是绝望的解药。",
+          "description": "-- [琼·贝兹](https://www.brainyquote.com/quotes/joan_baez_132657)"
+        },
+        {
+          "title": "一些软件公司可以将最简单的软件项目，变成一系列艰苦的流程，包含无休止的会议，以及大量'相关者'的参与。",
+          "description": "-- 本文作者"
+        }
+      ]
+    }
+  ]
+}

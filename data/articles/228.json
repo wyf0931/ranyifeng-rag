@@ -1,0 +1,400 @@
+{
+  "title": "科技爱好者周刊（第 228 期）：人类和人生的意义",
+  "link": "https://www.ruanyifeng.com/blog/2022/10/weekly-issue-228.html",
+  "number": 228,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "人类和人生的意义",
+          "link": "https://www.ruanyifeng.com/blog/2022/10/weekly-issue-228.html",
+          "description": "这几天睡觉前，我在读《季羡林文集》。\n\n![](https://cdn.beekka.com/blogimg/asset/202210/bg2022102302.webp)\n\n季羡林先生2009年就去世了，出版社请了他儿子季承写序言。\n\n![](https://cdn.beekka.com/blogimg/asset/202210/bg2022102303.webp)\n\n季承（1935-2018），中国科学院高能物理所高级工程师，曾任李政道先生主持的中国高等科学技术中心顾问，与李政道有着长达三十年的紧密合作。（摘自\n\n[百度百科]）\n\n网上一查就知道了，季承跟他老爹[关系不太好](https://www.163.com/dy/article/H533IIGD0543L395.html)，十多年不相往来。\n\n这种情况下，他其实不想写他老爹，但是出版社一定要他写。万般无奈之下，他找了一篇自己不相干的文章作为序言。\n\n\"我并不敢为先父的著作写序，但青岛出版社的盛情难却，只好写点不是序的序，以应所求。正好前些时，我胡乱写了一篇短文《也谈人生》，这篇短文抄在下面，就算交卷了吧。\"\n\n\n他用作序言的这篇《也谈人生》很短，只有600字，但是谈了一个终极问题：人生的意义是什么？\n\n我惊奇地发现，这篇序言写得很好，解开了我一直没有想通的一个疑惑。读完整本书，最难忘的还是这篇不相干的文章。\n\n![](https://cdn.beekka.com/blogimg/asset/202210/bg2022102503.webp)\n\n\n我把这篇短文的主要部分贴在下面。\n\n人生有没有意义？人类又有什么意义？\n\n我说，\n\n人生是有意义的，而人类则是没有意义的。询问人类的存在有没有意义，就等于询问地球或宇宙的存在有没有意义一样，是得不到答案的。\n\n人生的意义是什么呢？它的意义就在于为没有意义的人类工作、服务等等，其目的不外乎是使人类生活得更好并得以延续。\n\n反正人类是现实的存在，你又是其中一员，你有义务使它发展延续。你只要这样做了，你的人生就具有了意义，或者说价值，并不一定要去理会人类存在的意义。\n\n\n大家看明白，他的意思吗？\n\n他的意思是，要想通人生的意义，就要先想通人类的意义。但是他认为，人类作为一个物种，是没有意义的，就像你问恐龙的意义是什么一样。\n\n但是，人类既然存在了，你就没有选择。你的人生意义就是帮助其他人、乃至人类这个物种的生存和发展。\n\n因此，实现人生意义的最好方法，就是做对社会有益的事情，让社会和人类延续。最低限度上，只要正常的劳动和工作，你的人生就有意义了。\n\n大家同意他的这个说法吗？\n\n我觉得对我很有启发，让我想通了，一件事可以在宏观上没有意义，但是在微观上有意义。\n\n西方哲学有一个流派，叫做\"存在主义\"，认为世界是荒谬的。我也有这种感觉，经常产生无力感，一方面觉得徒劳，不可能逃脱，另一方面又觉得必须做点什么。\n\n这篇短文更让我确信，不能停下来，你唯一的出路（或者说对抗方法），就是保持工作，做一点有益于社会的事情，只有这样才能在没有意义的世界里找到一点意义。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102302.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102303.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102503.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "掘金未来大会",
+          "link": "http://conf.juejin.cn/future2022?utm_source=ryf",
+          "description": "掘金这一次就办了一个这样的大会，叫做\"掘金未来大会\"。他们请来上游的技术提供商和下游的技术消费厂商，为开发者分析，未来市场可能会有怎样的技术需求，以及会流行什么技术。大会是今年12月2日（星期五），点击链接了解详情并报名预约直播。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102401.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102402.webp"
+          ]
+        },
+        {
+          "title": "首届全国编程挑战赛",
+          "link": "https://juejin.cn/challenge/1?utm_source=ryf",
+          "description": "掘金还举办了首届全国编程挑战赛，这是国内少有的前端编程比赛，欢迎大家提交自己的作品。各种原创作品（网页游戏、网页动画、UI 特效、3D 建模等皆可）都能参赛，只要可以在\"码上掘金\"平台运行即可。作品提交截止时间是11月22日。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102103.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102101.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102010.webp"
+          ]
+        },
+        {
+          "title": "2022中国开发者生态报告问卷调查",
+          "link": "https://wj.ictr.com.cn/answer/s/8iw15u3Met",
+          "description": "为了了解中国开发者的现状（年龄、行业、技术方向、使用的工具等等），掘金发起了一次大型问卷调查，欢迎广大开发者参与。目标收集足够的有效问卷，最终完成《2022中国开发者生态报告》。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102403.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "太阳能围栏",
+          "link": "https://techcrunch.com/2022/07/18/look-out-putin-ukrainian-woman-invents-solar-for-balconies-to-wean-europe-off-russian-gas/",
+          "description": "一家德国公司推出了太阳能围栏，只要装在家庭阳台上，就能太阳能发电。它的最大优点就是不占空间，可以跟建筑物很自然地结合。缺点是价格贵，发电量不高。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022071901.webp",
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022071902.webp"
+          ]
+        },
+        {
+          "title": "AI 合影",
+          "link": "https://petapixel.com/2022/10/14/photographer-creates-ai-girlfriend-to-stave-off-nosy-relatives/",
+          "description": "一个印度摄影师发现了 AI 图片引擎的新用途。他一个人旅游，拍的都是单人照。有一天突然灵机一动，他告诉 AI 引擎\"在我身旁加一个漂亮姑娘\"，就这样得到了男女合影。这些照片里面的女伴都是不存在的。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101903.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101904.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101905.webp"
+          ]
+        },
+        {
+          "title": "手术萨克斯",
+          "link": "https://www.iflscience.com/watch-a-man-play-the-sax-while-surgeons-operate-on-his-brain-65840",
+          "description": "一个美国音乐家患了脑瘤，需要开颅手术。医生要求进行清醒开颅手术，保持清醒的目的是让医生时刻知道病人的大脑在正常工作。医生递给他一把萨克斯，让他一边手术一边吹萨克斯，只要音乐不停，医生就知道他的大脑是正常的。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102613.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102614.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102615.webp"
+          ]
+        },
+        {
+          "title": "月球摩托车",
+          "link": "https://kottke.org/22/04/a-custom-built-moon-motorcycle",
+          "description": "一家摩托车公司设计了第一款月球使用的电动两轮摩托车。它的材料是铝和碳纤维，特别轻，全车只有136公斤。设计充分考虑了月球重力下的跳跃前进。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050406.webp",
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050407.webp",
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050408.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "中国科学论文三大指标跃居世界第一",
+          "link": "https://cn.nikkei.com/industry/scienceatechnology/49484-2022-08-10-01-58-20.html",
+          "description": "日本媒体报道，自然科学领域研究论文的三个重要指标----论文总数，引用次数排名前10%的论文、排名前1%的论文----中国全都排名2019年的世界第一，超过美国。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102601.webp"
+          ]
+        },
+        {
+          "title": "为 Chromium 实现 HEVC 硬解",
+          "link": "https://zhuanlan.zhihu.com/p/541082191",
+          "description": "字节跳动工程师和 Intel 工程师合作，为 Chrome 浏览器加上 HEVC 支持，也就是支持 H.265 视频编码，该功能已经发布在最新的 Chrome 107。Chrome 之所以一直不加这个功能，是因为 H.265 解码器需要付费。这次的实现很聪明，调用了系统的解码能力，不涉及付费问题。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102602.webp"
+          ]
+        },
+        {
+          "title": "Pico 4 真实体验",
+          "link": "https://www.bilibili.com/video/BV1ZN4y1w7Br/",
+          "description": "字节新出的 VR 头盔 Pico 4，规格很诱人，作者亲身体验后，却发现存在诸多问题。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102007.webp"
+          ]
+        },
+        {
+          "title": "JavaScript 的月份为什么从 0 开始",
+          "link": "https://www.jefftk.com/p/history-of-zero-based-months",
+          "description": "JavaScript 的月份是从0开始计数。本文追溯这种做法的源头，谁第一个用0代表1月份。",
+          "images": []
+        },
+        {
+          "title": "禁止 Cookie 会发生什么",
+          "link": "https://blog.tomayac.com/2022/08/30/things-not-available-when-someone-blocks-all-cookies/",
+          "description": "如果禁止 Chrome 浏览器保存 Cookie，很多相关 API 都将一起关闭，比如 localStorage 和 IndexedDB，导致很多网站根本无法使用。",
+          "images": []
+        },
+        {
+          "title": "用 JavaScript 追踪飞机信号",
+          "link": "https://charliegerard.dev/blog/aircraft-radar-system-rtl-sdr-web-usb/",
+          "description": "本文介绍使用 Web USB API，让浏览器读取 USB 设备，接收飞机发出 ADS-B 信号。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022090301.webp"
+          ]
+        },
+        {
+          "title": "安卓 Firefox 浏览器如何安装插件",
+          "link": "https://www.ghacks.net/2022/10/20/firefox-beta-for-android-now-supports-custom-add-on-collections/",
+          "description": "Firefox 的安卓版现在有一个功能，可以在电脑上选定一组插件，然后在手机上一次性安装。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102012.webp"
+          ]
+        },
+        {
+          "title": "一张图表，一个信息",
+          "link": "https://datadino.substack.com/p/one-idea-per-chart",
+          "description": "可视化图表的一个问题就是太复杂，不容易看懂。本文用实例解释，一张图表只适合表达一个信息，如果信息太多，就应该拆分图表。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022082910.webp"
+          ]
+        },
+        {
+          "title": "MacOS 开启 sudo 的指纹认证",
+          "link": "https://it.digitaino.com/use-touchid-to-authenticate-sudo-on-macos/",
+          "description": "sudo 命令需要输入根用户的密码，MacOS 支持用指纹替代 sudo 密码。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022082701.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Turbopack",
+          "link": "https://turbo.build/pack",
+          "description": "Vercel 公司发布新一代打包器 Turbopack，号称比 Webpack 快700倍，比 Vite 快10倍。而且，它还出自 Webpack 作者之手。Turopack 可以看作是 Rust 语言重写的 Webpack，目前还处于初期，后面有计划支持兼容 Webpack 插件。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102603.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102604.webp"
+          ]
+        },
+        {
+          "title": "Lyrebird",
+          "link": "https://github.com/lyrebird-voice-changer/lyrebird",
+          "description": "Linux 平台的一个变声器软件，可以把你的声音变成男声、女声、播音员等等。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050707.webp"
+          ]
+        },
+        {
+          "title": "HyperUI",
+          "link": "https://www.hyperui.dev/",
+          "description": "一个 Tailwind CSS 组件库。如果你不清楚 Tailwind CSS 的那些类名应该怎么搭配，可以看看这个库。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050711.webp"
+          ]
+        },
+        {
+          "title": "OneMark",
+          "link": "https://onemark.neuxlab.cn/",
+          "description": "微软的免费笔记软件 OneNote 的 Markdown 插件，可以用 Markdown 语法输入笔记。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102701.webp"
+          ],
+          "user": "WeiXinLee",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2699"
+        },
+        {
+          "title": "base2048",
+          "link": "https://github.com/qntm/base2048",
+          "description": "一个 JS 库，将 Base64 扩展到了2048个字符，从而使得二进制数据，可以转成非常短的字符串。",
+          "images": []
+        },
+        {
+          "title": "积木头像",
+          "link": "",
+          "description": "一个微信小程序（搜索\"积木头像\"），可以生成 notion 风格头像，支持各个部位的定制和背景色。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102706.webp"
+          ],
+          "user": "bimohxh",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2705"
+        },
+        {
+          "title": "checkmake",
+          "link": "https://github.com/mrtazz/checkmake",
+          "description": "一个检查 Makefile 文件有没有错误的工具。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202202/bg2022022312.webp"
+          ]
+        },
+        {
+          "title": "criterion",
+          "link": "https://github.com/Snaipe/Criterion",
+          "description": "C/C++ 的单元测试框架。",
+          "images": []
+        },
+        {
+          "title": "DaRemote",
+          "link": "https://play.google.com/store/apps/details?id=com.deskangel.daremote&hl=en_US&gl=US",
+          "description": "一个安卓应用，内置 SSH 客户端，可以登陆服务器，以图形展示服务器的实时状态。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022032012.webp"
+          ]
+        },
+        {
+          "title": "craiyon",
+          "link": "https://www.craiyon.com/",
+          "description": "开源 AI 绘图引擎 DALL·E mini 改名后的样子，根据文本生成图像，免费使用。特点是速度比较快（不超过2分钟），效果也不错。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102707.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "折纸教程",
+          "link": "https://origami.kosmulski.org/blog/2022-10-23-fujimoto-books-public-domain",
+          "description": "日本折纸大师藤本修三（1922-2015）写的五本折纸教程，现在由他后人放入公共领域，全部可以免费下载。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102404.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102405.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102406.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102407.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102408.webp"
+          ]
+        },
+        {
+          "title": "AI 自拍",
+          "link": "https://www.strmr.com/",
+          "description": "用户向该网站上传5～10张自拍照，它就会用 AI 模型生成一张很帅的自拍。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102606.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102607.webp",
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080405.webp"
+          ]
+        },
+        {
+          "title": "TLS 1.3 协议图解",
+          "link": "https://tls13.ulfheim.net/",
+          "description": "作者使用图片，详细解释新版本的 TLS 1.3 协议的每个步骤和每个字节的含义。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102705.webp"
+          ]
+        },
+        {
+          "title": "编程语言和工具的速查表",
+          "link": "https://jaywcjlove.github.io/reference",
+          "description": "该网站收集了各种编程语言和工具的速查表，带有源码仓库。",
+          "images": [],
+          "user": "jaywcjlove",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2704"
+        },
+        {
+          "title": "图形和游戏开发的 3D 数学入门",
+          "link": "https://gamemath.com/book/intro.html",
+          "description": "免费阅读的英文教程，介绍 3D 图形软件开发所需要的数学知识。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022052306.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "五台发动机的飞机",
+          "link": "https://www.flightradar24.com/blog/how-qantas-ferried-an-engine-on-the-wing-of-a-747/",
+          "description": "普通飞机最多只有四个发动机，但是一架澳大利亚客机曾经临时\"装过\"第五个发动机。2011年，澳大利亚航空公司的一架波音747客机，飞到南非约翰内斯堡以后，一个发动机突发故障。他们把一台备用发动机装在下一架飞往南非的波音747的机翼下方，成为一架有5个发动机的飞机。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022060907.webp",
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022060908.webp",
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022060909.webp"
+          ]
+        },
+        {
+          "title": "OpenSSL 图形界面",
+          "link": "",
+          "description": "OpenSSL 是一个命令行工具，主要用于加密通信。它带有大量参数，如果做成图形界面，会是什么样子？有人就设计了一个，因为参数实在太多，最后就是下面这种恐怖的样子。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022061102.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "TikTok 与唱片公司",
+          "link": "",
+          "description": "TikTok 已经在欧美成为音乐传播的主渠道。美国的唱片公司现在要求歌手，新歌只有在 TikTok 走红以后，才能发专辑。哈尔希（Halsey）是一位已经成名的女歌手，也被要求在 TikTok 发新歌。她发了很多视频，没有一首走红。最后，她实在忍不住了，发了一个痛哭的视频。\"我想出专辑，但是公司不同意，因为我没有一首歌在 TikTok 走红。我已经卖出的专辑超过1.65亿张，但是现在我没有办法出新专辑。\"出乎意料，这个视频走红了。唱片公司看到她有人气了，终于同意出专辑了。这件事在美国音乐引起了议论，很多人认为，唱片公司太短视了，这样下去，整个唱片业岌岌可危。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102702.webp",
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022060301.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "2010年，中央情报局发现，拉登可能藏身在巴基斯坦农村的一座神秘三层小楼...",
+          "link": "https://www.politico.com/news/magazine/2021/04/30/osama-bin-laden-death-white-house-oral-history-484793",
+          "description": "2010年，中央情报局发现，拉登可能藏身在巴基斯坦农村的一座神秘三层小楼，但是无法确定。他们就开始监视楼外的晾衣绳，通过晾晒衣服的种类和数量，判断楼里住了什么人和多少人。"
+        },
+        {
+          "title": "现在是成为 Linux 用户的好时机。这个系统已经很成熟...",
+          "link": "",
+          "description": "现在是成为 Linux 用户的好时机。这个系统已经很成熟，对普通用户有很好的可用性。硬件基本上开箱即用，而且你免费拥有丰富且最新的驱动程序、bug 的快速修复、接近企业级的大型社区维护更新。"
+        },
+        {
+          "title": "软件的可观察性有三大支柱：指标、跟踪和日志。",
+          "link": "https://www.datadoghq.com/three-pillars-of-observability/",
+          "description": "软件的可观察性有三大支柱：指标、跟踪和日志。"
+        },
+        {
+          "title": "电子游戏是现在还在学校的这一代人接触的主要媒体...",
+          "link": "https://togelius.blogspot.com/2022/08/apology-for-video-games-research.html",
+          "description": "电子游戏是现在还在学校的这一代人接触的主要媒体。对他们来说，电子游戏不仅是一项活动，还是社交生活的主要部分。明天的世界将会建立在电子游戏的设计和习惯之上。"
+        },
+        {
+          "title": "开源项目的作者有一个真正的特权...",
+          "link": "http://antirez.com/news/134",
+          "description": "开源项目的作者有一个真正的特权，那就是你是唯一决定软件设计的人，可以体验一把主宰一切的感觉。只要你觉得别人的建议或设计与你的目标不相符，就有权拒绝他们。"
+        }
+      ]
+    },
+    {
+      "name": "历史上的本周",
+      "items": [
+        {
+          "title": "2021年（第180期）：你想住在中国哪里？",
+          "link": "https://www.ruanyifeng.com/blog/2021/10/weekly-issue-180.html",
+          "description": ""
+        },
+        {
+          "title": "2020年（第130期）：低龄化的互联网",
+          "link": "https://www.ruanyifeng.com/blog/2020/10/weekly-issue-130.html",
+          "description": ""
+        },
+        {
+          "title": "2019年（第78期）：下一个风口是什么行业？",
+          "link": "https://www.ruanyifeng.com/blog/2019/10/weekly-issue-78.html",
+          "description": ""
+        },
+        {
+          "title": "2018年（第27期）：乔布斯的\"热情假设\"对不对？",
+          "link": "https://www.ruanyifeng.com/blog/2018/10/weekly-issue-27.html",
+          "description": ""
+        }
+      ]
+    }
+  ]
+}

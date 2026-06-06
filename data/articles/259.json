@@ -1,0 +1,361 @@
+{
+  "title": "科技爱好者周刊（第 259 期）：如何免费使用 ChatGPT",
+  "link": "https://www.ruanyifeng.com/blog/2023/06/weekly-issue-259.html",
+  "number": 259,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "如何免费使用 ChatGPT",
+          "description": "本篇文章介绍如何免费使用 ChatGPT，包括替代网站、Bing Chat 等方法。\n\nOpenAI 要求验证手机号，国内的手机都通不过。也就是说，它不希望国内用户使用这个服务。\n\n我们不揣测，它为什么这么做。但是我觉得，媒体不应该隐讳，也不要自嗨，应该直说，**ChatGPT 不欢迎中国大陆用户**。\n\n当然，不欢迎使用，不等于不能使用。找一个境外手机号码，或者买一个别人的账号，就可以使用 ChatGPT 了。\n\n而且，实际上不必这么麻烦，有很多变通方法，用起来更简单。**我的态度一贯是实用主义**，不在乎 OpenAI 的政策，只要想用，那就去用，多多了解国外的最新科技，打破技术封锁。\n\n这种想法的程序员，大概很多，否则为什么 ChatGPT 的变通访问方法，像雨后春笋那样冒出来。下面，我来总结一下这些方法，方便大家。\n\n**（1）使用替代网站**。国外网友搭建了著名的 [FreeGPT](https://freegpt.one/)，向全世界免费开放，不需要账号就能使用。\n\n类似的网站还有 [Chat GPT Demo](https://chatgptdemo.net/zh-hans)。国内也有很多，搜索\"ChatGPT源\"就能找到。GitHub 有好几个仓库（[1](https://github.com/LiLittleCat/awesome-free-chatgpt)，[2](https://github.com/lzwme/chatgpt-sites)，[3](https://github.com/xxxily/hello-ai/blob/main/home/FreeChatGPTSiteList.md)），收集了几百个中介网址。\n\n**（2）使用 Bing Chat**。微软的 Edge 浏览器推出了 Bing Chat 功能，集成了 ChatGPT，可以免费聊天，甚至还能生成图片。\n\n麻烦的是它只向美国用户开放。国内用户要使用这个服务，必须全程从美国 IP 地址访问，另外还需要注册一个全新用户，参考[这篇教程](https://kerrynotes.com/bing-keeps-prompting-to-login-to-continue-chat/)。\n\n此外，微软旗下的 [Skype](https://www.skype.com/en/blogs/2023-02-bing-bot-in-skype/) 也集成了 Bing Chat。\n\n大家可能都忘了 Skype 吧，这个软件还活着。而且，它有几乎所有平台的客户端。安装后，将 Bing [添加为联系人](https://www.gizmochina.com/2023/03/04/how-to-add-bing-chatgpt-in-skype/)即可。\n\n最后，再说一件搞笑的事情。\n\n第三方手机浏览器 Vivaldi，长期被当作二等公民对待，实在忍不下去了，最近决定把自己的 User Agent 伪装成 Edge 浏览器。于是，只要你的手机安装了 Vivaldi，莫名其妙也能[免费使用 Bing Chat](https://vivaldi.com/blog/vivaldi-on-android-6-1/)。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061401.webp",
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061303.webp",
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061402.webp",
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061403.webp",
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061404.webp",
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061521.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "稀土开发者大会",
+          "description": "国内规模最大的开发者活动之一，2023稀土开发者大会，6月30日～7月1日。线上免费预约，北京线下两日个人票199元。详情点击[链接](https://conf.juejin.cn/xdc2023/?utm_source=ryf0616)。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061518.webp",
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061523.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "防溅小便池",
+          "link": "https://arstechnica.com/science/2022/11/the-angle-at-which-dogs-pee-inspired-optimal-design-for-splash-free-urinal/",
+          "description": "加拿大滑铁卢大学的科学家，收集了各种男用小便池，研究什么样的形状最能防止溅出。经过流体力学模拟，最佳设计是高大、细长的结构，底部最好放置强力吸水材料。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112901.webp"
+          ]
+        },
+        {
+          "title": "培养肉上市",
+          "link": "https://www.npr.org/sections/health-shots/2022/11/14/1136186819/cultivated-cultured-meat-heathy-climate-change",
+          "description": "美国食药局 FDA 批准，一种动物细胞的培养肉可以在美国上市。培养肉不是动物身上长出来的，而是在实验室里面培养出来的。上图的工厂每年可以生产22吨培养肉。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112902.webp",
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112903.webp"
+          ]
+        },
+        {
+          "title": "AI 教堂",
+          "link": "https://apnews.com/article/germany-church-protestants-chatgpt-ai-sermon-651f21c24cfb47e3122e987a7263d348",
+          "description": "6月9日，一家德国教堂举行了完全由 AI 主持的礼拜，人们倾听 AI 布道。AI 化身为一个黑人男子，布道内容由 ChatGPT 生成，整个过程40分钟。很多人表示有趣，但也有人觉得恶心。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061202.webp",
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061203.webp",
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061204.webp"
+          ]
+        },
+        {
+          "title": "风琴大门",
+          "link": "https://www.windmusik.com/html/turharfe.htm#T",
+          "description": "一位德国音乐爱好者，为自家大门装上了琴弦，将其变成了风琴大门。门上挖通风口，装上琴弦，风吹过时振动发声，经过调试非常悦耳。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081803.webp",
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081805.webp",
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081804.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "当 ChatGPT 参加高考",
+          "link": "https://mp.weixin.qq.com/s/HG_Axf38ljcaQTfi9pyJvA",
+          "description": "如果让 ChatGPT 参加2023年数学高考，它可以得几分？",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061522.webp"
+          ]
+        },
+        {
+          "title": "当人类数据用完，AI 或将越来越笨",
+          "link": "https://m.thepaper.cn/newsDetail_forward_23467960",
+          "description": "机器生成的数据，能用来训练 AI 吗？英国科研人员发现这种情况下，模型将会崩溃。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061509.webp"
+          ]
+        },
+        {
+          "title": "高效计算三角函数的 CORDIC 算法",
+          "link": "http://www.longluo.me/blog/2023/06/07/CORDIC-algorithm/",
+          "description": "本文介绍一种简化的三角函数计算方法，不必使用泰勒公式逼近。",
+          "user": "longluo",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061508.webp"
+          ]
+        },
+        {
+          "title": "通过 Cloudflare 穿透防火墙",
+          "link": "https://iq.thc.org/tunnel-via-cloudflare-to-any-tcp-service",
+          "description": "本文是一篇教程，介绍如何通过 Cloudflare 隧道，让 SSH 连接防火墙或内网里面，正常情况下无法连接的电脑。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052005.webp"
+          ]
+        },
+        {
+          "title": "AI 自动生成字幕",
+          "link": "https://www.spapas.net/2023/05/22/ai-auto-subtitling/",
+          "description": "本文介绍使用 Whisper 模型，自动将视频语音转成文字，并生成字幕。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052208.webp"
+          ]
+        },
+        {
+          "title": "你不一定需要数据库索引",
+          "link": "https://www.jefftk.com/p/you-dont-always-need-indexes",
+          "description": "教科书总是说，数据库检索需要建立索引。但是，如果数据库不大，完全可以不建索引，不会影响检索速度。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052601.webp"
+          ]
+        },
+        {
+          "title": "如何让二维码变成图像",
+          "link": "https://stable-diffusion-art.com/qr-code/",
+          "description": "本文是一篇教程，教你如何使用 Stable Diffusion，将二维码变成一幅图像。另有一篇类似的教程。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061301.webp"
+          ]
+        },
+        {
+          "title": "视觉信息论",
+          "link": "https://colah.github.io/posts/2015-09-Visual-Information/",
+          "description": "这篇长文用大量例子，讲解怎么用可视化表示信息。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052501.webp"
+          ]
+        },
+        {
+          "title": "空气过滤机与正压新风系统的比较",
+          "link": "https://www.airgradient.com/open-airgradient/blog/air-purifier-vs-positive-pressure-fresh-air-system-an-unfair-battle/",
+          "description": "保持室内空气干净，有两种做法，一种是使用空气过滤器，另一种是使用正压新风系统，让室内空气压力大于室外，从而室外的脏空气无法进入。本文比较哪一种方法更好。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023060905.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Mosh",
+          "link": "https://mosh.org/",
+          "description": "SSH 替代品，用来登陆服务器。最大特点是会话不会因为丢线而中断。下次连接或者换台机器连接，还能进入前一次会话。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023042008.webp"
+          ]
+        },
+        {
+          "title": "Ezno",
+          "link": "https://github.com/kaleidawave/ezno",
+          "description": "一个用 Rust 语言写的 TypeScript 编译器，目标是作为官方 tsc 的替代品。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023060906.webp"
+          ]
+        },
+        {
+          "title": "Bark",
+          "link": "https://github.com/suno-ai/bark",
+          "description": "一个语音生成引擎，效果不错，可以在朗读的同时，发出大笑、叹息和哭泣，还可以生成音乐。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023042101.webp"
+          ]
+        },
+        {
+          "title": "trzsz-ssh (tssh)",
+          "link": "https://github.com/trzsz/trzsz-ssh",
+          "description": "用 Go 实现的 ssh 客户端，可以记住登陆过的服务器，内置支持上传和下载文件。",
+          "user": "lonnywong",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061506.webp"
+          ]
+        },
+        {
+          "title": "STDF",
+          "link": "https://github.com/dufu1991/stdf",
+          "description": "基于 Svelte 与 Tailwind 的移动页面组件库。",
+          "user": "dufu1991",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061503.webp"
+          ]
+        },
+        {
+          "title": "Vue Devtools 插件 Inspect",
+          "link": "https://github.com/zjxxxxxxxxx/inspect",
+          "description": "一个 Vue 的开发者工具，点击页面上的某个元素，它自动打开代码编辑器，定位到对应的代码位置。",
+          "user": "zh-lx",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061504.webp"
+          ]
+        },
+        {
+          "title": "tiny-player",
+          "link": "https://github.com/wangrongding/tiny-player",
+          "description": "极简的网页视频播放器，支持硬解/软解，可以自定义各种控件样式。",
+          "user": "wangrongding",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061505.webp"
+          ]
+        },
+        {
+          "title": "Keka 解压软件（多进程解压）",
+          "link": "https://github.com/hxz393/Keka",
+          "description": "Windows 解压软件，针对多核 CPU 和高速固态硬盘优化，实现多进程同时解压，比普通解压软件速度快。",
+          "user": "hxz393",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061507.webp"
+          ]
+        },
+        {
+          "title": "Monitor (前端报错监控)",
+          "link": "https://github.com/qiujunlin/monitor",
+          "description": "一个前端页面报错的监控平台，需要自己搭建，类似于 sentry，但是功能更强大一些。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023042201.webp"
+          ]
+        },
+        {
+          "title": "Keyv",
+          "link": "https://keyvhq.js.org/",
+          "description": "一个键值对存储的操作库，提供简单的操作方法，支持多种数据库（MySQL、PostgreSQL、SQLite、Redis等等）作为后端。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023042404.webp"
+          ]
+        },
+        {
+          "title": "Jellylade",
+          "link": "https://app.jellylade.com/",
+          "description": "一个美化网页截图的 Web 工具。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023042602.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "中国高等院校三千所",
+          "link": "https://laosheng.top/fuwu/yuanxiao",
+          "description": "这个网站收集中国大专院校名单和网址，按照中管、部本、省本、专科的顺序形成中国高校层级图谱。",
+          "user": "DiamonWoo",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061502.webp"
+          ]
+        },
+        {
+          "title": "提示工程入门（Prompt Engineering Guide）",
+          "link": "https://www.promptingguide.ai/",
+          "description": "一本人工智能和提示工程的入门电子书。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023060301.webp"
+          ]
+        },
+        {
+          "title": "GitHub Actions 入门",
+          "link": "https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions",
+          "description": "通过10个详细注释的示例，解释怎么使用 GitHub Actions。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022012504.webp"
+          ]
+        },
+        {
+          "title": "编译器设计入门（Introduction to Compilers and Language Design）",
+          "link": "https://www3.nd.edu/~dthain/compilerbook/",
+          "description": "一本免费阅读的英文教科书，介绍编译器设计的基本知识。内容很新，2021年才完稿。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022052305.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "颜色变少了",
+          "description": "一个推特用户提出他的观察，我们周围的颜色现在似乎比以前少了。展示了以前的停车场和现在的停车场，以前的房间和现在的房间对比。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022072811.webp",
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022072812.webp",
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022072813.webp",
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022072814.webp"
+          ]
+        },
+        {
+          "title": "毒枭潜艇",
+          "description": "哥伦比亚贩毒集团使用潜艇向国外运送毒品。这些潜艇实际上并没有完全潜入水中，在水面上露出很少一截，但是难以被发现。最惊人的是，这些潜艇是贩毒集团在哥伦比亚丛林工厂里面自己建造的。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023010601.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023010602.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023010603.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023010604.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023010605.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023010606.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023010607.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023010608.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "数字化存储与记忆的持久性",
+          "description": "曾几何时，瑞典人家里只有一本书，那就是《圣经》。后来电脑出现，照片保存在磁盘和光盘上。再后来，智能手机和云存储出现，人们开始在云上存储大量数据。我们正在使用前所未有的细节记录生活，但几乎从不抽出时间浏览。**我很好奇，未来的人们如何回忆过去？** 即使一切以数字形式保存，有形的物品实在太少了。我的祖母得了老年痴呆症，翻看旧照片能减轻痛苦。等到我们年老时，我们不会有这样的老相册，我们又拿什么怀念过去呢？",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061512.webp",
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061513.webp",
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061514.webp",
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023061516.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "如果你想做你自己，就意味着要打一场最艰难的仗",
+          "description": "这个世界日以继夜、竭尽全力让你成为其他人，如果你想做你自己，就意味着要打一场最艰难的仗。",
+          "user": "E·E·卡明斯"
+        },
+        {
+          "title": "人们依靠机器，希望这能带给他们更多自由，但这只会让拥有机器的人奴役他们",
+          "description": "人们依靠机器，希望这能带给他们更多自由，但这只会让拥有机器的人奴役他们。",
+          "user": "弗兰克·赫伯特"
+        },
+        {
+          "title": "作为管理者，你的角色不是自己完成工作，而是改善团队目标、团队人员和工作流程",
+          "description": "作为管理者，你的角色不是自己完成工作，即使你非常擅长干这些事。你的角色是改善团队目标、团队人员和工作流程，尽可能让团队产生乘数效应，放大你的资源。",
+          "user": "Julie Zhuo"
+        },
+        {
+          "title": "我的20年软件开发生涯，构建的东西现在要么是技术债，要么已经弃用",
+          "description": "我的20年软件开发生涯，构建的东西现在要么是技术债，要么已经弃用。这是免不了的。新技术来来去去，程序员不愿意学习用不到的技能，而且技术栈的变化速度很快，大家总是希望简历上有热门的新事物。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "title": "科技爱好者周刊（第 232 期）：好用的平面设计软件",
+  "link": "https://www.ruanyifeng.com/blog/2022/11/weekly-issue-232.html",
+  "number": 232,
+  "sections": [
+    {
+      "name": "封面图",
+      "items": [
+        {
+          "title": "世界最大的金鱼",
+          "link": "https://baijiahao.baidu.com/s?id=1750192547565880670",
+          "description": "一个英国钓鱼爱好者在法国，钓到了世界最大的金鱼，重达30公斤，已经活了20年。拍完照后，他就把金鱼放生了。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112303.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "本周话题",
+      "items": [
+        {
+          "title": "好用的平面设计软件",
+          "description": "介绍了 Canva（可画）、Adobe Express、Microsoft Designer、ColorFu、Design Editor 等平面设计软件。作者分享使用 Canva 制作图片的经历，以及 Canva 的创始人故事和行业地位。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022053109.webp",
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022053108.webp",
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022092115.webp",
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022053111.webp",
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112302.webp",
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022082402.webp",
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112501.webp",
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022053112.webp",
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022082401.webp"
+          ],
+          "user": null,
+          "user_link": null
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "抖音安卓技术分享会",
+          "link": "https://www.bagevent.com/event/8337204?bag_track=001",
+          "description": "12月10日下午2点，抖音安卓工程师与观众现场交流。主办方为字节跳动技术沙龙，准备了礼品抽奖。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112305.webp",
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112304.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "步枪射击纪录",
+          "link": "https://cowboystatedaily.com/2022/09/20/at-4-4-miles-wyoming-team-sets-new-rifle-shot-world-record/",
+          "description": "美国怀俄明州一群射击爱好者从7公里外命中直径20厘米的圆点，子弹飞行24秒，需考虑地球弧度。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022092402.webp",
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022092403.webp",
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022092404.webp"
+          ]
+        },
+        {
+          "title": "机器猫",
+          "link": "https://www.sohu.com/a/452307124_747919",
+          "description": "松下发售宠物机器猫 NICOBO，直径20厘米，毛茸茸小球，会摇尾巴、发出咕咕声，售价约2000元人民币。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022111712.webp",
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022111713.webp",
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022111714.webp",
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022111715.webp"
+          ]
+        },
+        {
+          "title": "空间太阳能电站",
+          "link": "https://www.pingwest.com/w/273590",
+          "description": "中国空间站系统总设计师杨宏透露，中国空间站将为未来的空间太阳能电站提供在轨技术验证。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112204.webp"
+          ]
+        },
+        {
+          "title": "裁判专用手表",
+          "link": "https://finance.sina.com.cn/chanjing/cyxw/2022-11-21/doc-imqmmthc5362298.shtml",
+          "description": "世界杯裁判佩戴智能腕表，通过体育场内14个高速摄像头检测足球是否整体越过门线，手表立即震动并显示进球信息。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112414.webp",
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112415.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "手机摄像头检测核辐射",
+          "link": "https://www.yystv.cn/p/10117",
+          "description": "分析网络传言手机摄像头能检测核辐射，虽然后来证实是伪造，但手机摄像头确实可能检测核辐射。"
+        },
+        {
+          "title": "AI 作图创业高潮",
+          "link": "https://www.baijing.cn/article/41647",
+          "description": "文字生成图片的 AI 作图模型流行后，国内出现许多尝试创业的小程序。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112307.webp"
+          ]
+        },
+        {
+          "title": "改造城中村",
+          "link": "https://mp.weixin.qq.com/s/kUfI5rzuV7fPuDqXiGA2Cg",
+          "description": "建筑师改造深圳城中村5栋农民自建房，改造成漂亮现代建筑。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112203.webp"
+          ]
+        },
+        {
+          "title": "HTML 的 <template> 元素",
+          "link": "https://kittygiraudel.com/2022/09/30/templating-in-html/",
+          "description": "入门教程介绍如何使用 <template> 元素。"
+        },
+        {
+          "title": "Web 开发的未来是边缘网络",
+          "link": "https://deno.com/blog/the-future-of-web-is-on-the-edge",
+          "description": "介绍边缘网络（edge）是什么及其好处。"
+        },
+        {
+          "title": "朝天鸣枪的物理学",
+          "link": "https://www.1point21interactive.com/celebratory-gunfire/",
+          "description": "通过物理学计算证明朝天鸣枪掉下来的子弹是致命的。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022093006.webp"
+          ]
+        },
+        {
+          "title": "Raft 共识机制的通俗解释",
+          "link": "https://www.cockroachlabs.com/blog/raft-is-so-fetch/",
+          "description": "使用电影《Mean Girls》人物解释 Raft 共识机制。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022100405.webp"
+          ]
+        },
+        {
+          "title": "一种计算二进制位的有趣算法",
+          "link": "http://www.robalni.org/posts/20220428-counting-set-bits-in-an-interesting-way.txt",
+          "description": "介绍一种简单有趣的算法来计算二进制数中包含多少个1。"
+        },
+        {
+          "title": "CNAME 循环会发生什么事情？",
+          "link": "https://alexanderell.is/posts/cnames/",
+          "description": "实验两个 CNAME 域名互相指向对方的结果。"
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Stable Diffusion 2.0",
+          "link": "https://stability.ai/blog/stable-diffusion-v2-release",
+          "description": "AI 作图模型发布 2.0 版，图片质量提高，性能优化，仅需一个 GPU 即可运行。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112410.webp"
+          ]
+        },
+        {
+          "title": "Diffusion Bee",
+          "link": "https://diffusionbee.com/",
+          "description": "MacOS 应用，将 Stable Diffusion 模型做成安装包，带有图形界面。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022091301.webp"
+          ]
+        },
+        {
+          "title": "Google 开源芯片项目",
+          "link": "https://www.zerotoasiccourse.com/",
+          "description": "谷歌发起项目，任何人都可提交芯片设计，由代工厂以130纳米制程制作，旨在建立开源芯片设计生态。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112413.webp"
+          ]
+        },
+        {
+          "title": "Grape",
+          "link": "https://www.grape.codes/",
+          "description": "提供 Web IDE 用于演示代码操作，可录制操作过程并播放。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022091004.webp"
+          ]
+        },
+        {
+          "title": "Tipi",
+          "link": "https://github.com/meienberger/runtipi",
+          "description": "家庭服务器管理界面，集成流媒体、代码托管、BT 下载等服务，点击即可启动容器。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022091101.webp"
+          ]
+        },
+        {
+          "title": "中科大测速网站",
+          "link": "https://test.ustc.edu.cn/",
+          "description": "中国科学技术大学提供的网速测试网站。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112402.webp"
+          ]
+        },
+        {
+          "title": "PicHoro",
+          "link": "https://github.com/Kuingsmile/PicHoro",
+          "description": "手机端图床管理和文件上传下载工具，基于 Flutter。",
+          "user": "@Kuingsmile",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2756",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112403.webp"
+          ]
+        },
+        {
+          "title": "ssh-poor-mans-deploy",
+          "link": "https://neverbounce.com/blog/ssh-poor-mans-deploy",
+          "description": "SSH 服务器，用户登录时自动启动容器，用户感觉不到底层机器。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022091109.webp"
+          ]
+        },
+        {
+          "title": "Foliate",
+          "link": "https://johnfactotum.github.io/foliate/",
+          "description": "开源网页阅读器，用于阅读 EPUB 电子书。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022091110.webp"
+          ]
+        },
+        {
+          "title": "wtf",
+          "link": "https://github.com/dlenski/wtf",
+          "description": "Python 命令行脚本，处理文本文件多余空行空格，提供多种配置项。"
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "Lexica",
+          "link": "https://lexica.art/",
+          "description": "Stable Diffusion 模型搜索引擎，搜索 AI 生成的各种图片。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112409.webp"
+          ]
+        },
+        {
+          "title": "INS",
+          "link": "https://github.com/zhaoolee/ins",
+          "description": "收集各种有用有趣的工具，每天用 GitHub Actions 检查链接可用性。",
+          "user": "@zhaoolee",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2759",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112411.webp"
+          ]
+        },
+        {
+          "title": "Vim 配置教程",
+          "link": "https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/",
+          "description": "详细教程教你如何配置 NeoVim 编辑器（第一部分），还有第二部分。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022041706.webp"
+          ]
+        },
+        {
+          "title": "CodeGuessr",
+          "link": "https://codeguessr.com/",
+          "description": "代码小游戏，从 GitHub 排名前100仓库随机返回一个文件，让你猜是哪个仓库。",
+          "user": "@jerrylususu",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2754",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112401.webp"
+          ]
+        },
+        {
+          "title": "Wokwi",
+          "link": "https://wokwi.com/",
+          "description": "模拟各种物联网开发板（树莓派 Pico、Arduino、ESP32等），在网页上运行代码并看到硬件模拟结果。",
+          "user": "@mingpepe",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2757",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112404.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片与视频",
+      "items": [
+        {
+          "title": "活动日历",
+          "link": "https://ilyabirman.net/forebruary/",
+          "description": "将日历打印成卡片，前面加一个活动窗口，移动窗口可表示任意月份。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022063001.webp",
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022063002.webp"
+          ]
+        },
+        {
+          "title": "杭州富阳西站自动灭火系统",
+          "description": "杭州富阳西站的自动灭火系统威力很大，算法可能是火焰红外线感知或视觉识别，但大堂中央不太可能着火。"
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "AWS 与区块链",
+          "link": "https://www.tbray.org/ongoing/When/202x/2022/11/19/AWS-Blockchain",
+          "description": "作者回忆在 AWS 担任技术主管时，评估区块链后建议不开发应用，仅提供分布式基础设施。后来 AWS 未将区块链作为战略方向。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112418.webp"
+          ]
+        },
+        {
+          "title": "日记的作用",
+          "description": "作者坚持写日记六七年，认为日记就像编程中的橡皮鸭，通过描述问题理清思路，反思自己。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112420.webp",
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112421.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "言论1",
+          "description": "我做了几十年编码，我的职业生涯都被敏捷开发破坏了。没错，你始终是机器的一个齿轮，但敏捷开发让你每时每刻都感觉到这一点。"
+        },
+        {
+          "title": "言论2",
+          "description": "欧洲近代领先的原因是内部竞争，诸侯互相掠夺竞争，推动了发明创造。"
+        },
+        {
+          "title": "言论3",
+          "link": "http://www.paulgraham.com/convince.html",
+          "description": "如果你要说服其他人向你的项目投资，你应该先说服自己，为什么你愿意把时间和金钱投入这个项目，然后向其他人解释这一点，他们就会相信你。",
+          "user": "保罗·格拉汉姆"
+        },
+        {
+          "title": "言论4",
+          "description": "宇宙的奇妙在于，最开始只有一些氢原子，后来竟然演变出了人类文明。"
+        },
+        {
+          "title": "言论5",
+          "link": "https://codewithstyle.info/software-vs-systems/",
+          "description": "初级工程师关心编写软件；高级工程师关心构建系统，他们首先质疑是否需要构建软件，询问它解决什么问题等。",
+          "user": "《什么是高级工程师？》"
+        }
+      ]
+    }
+  ]
+}

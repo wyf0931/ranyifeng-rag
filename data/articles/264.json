@@ -1,0 +1,350 @@
+{
+  "title": "科技爱好者周刊（第 264 期）：Elasticsearch 的启示",
+  "link": "https://www.ruanyifeng.com/blog/2023/07/weekly-issue-264.html",
+  "number": 264,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "Elasticsearch 的启示",
+          "link": "",
+          "description": "上月的\"红帽事件\"，说明开源软件的\"客服模式\"行不通，我在[上一期](https://www.ruanyifeng.com/blog/2023/07/weekly-issue-263.html)已经写了自己的看法。\n\n那么，开源软件如何赚钱呢？**既不能卖软件，又不能卖支持服务，该怎么办呢？**\n\n我一直思考这个问题，觉得行业的发展、个人的前途，都跟它有关系。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023072304.webp)\n\n我现在的看法是，**只剩下一种模式是可行的**，开源软件只有这样才能商业化，那就是 Elasticsearch 的模式。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023072305.webp)\n\nElasticsearch 是著名的搜索软件，市场份额非常大，很多大型网站的背后都是它。\n\n2004年，以色列程序员谢伊·巴农（Shay Banon）为了方便妻子查找菜谱，写了一个简单的搜索工具，这就是 Elasticsearch 的由来。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023072306.webp)\n\n一开始，Elasticsearch 采用最宽松的 Apache 许可证，几乎没有任何限制，你怎么用都可以。\n\n后来，谢伊·巴农拿了风投，成立了公司，雇了程序员，就必须有收入，否则公司就要裁员关门。\n\n**他想到的办法，就是提供云服务**。你不必自己搭建搜索了，我搭建好了，你买了就能用。这样你比较省心，我也有收入了。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023072307.webp)\n\n但是，他万万没有想到，这种模式也行不通。原因是**开源软件不是独占性的，如果你的软件太成功，其他人也可以提供服务**，而且卖得更便宜，最终把你打败，拿到更大的市场份额。\n\nElasticsearch 倒霉的地方在于，遇到的竞争对手是亚马逊，世界第一的云服务商。\n\n亚马逊不花一分钱，拿到 Elasticsearch 的代码，搭建搜索服务出售，很快就让原始作者没生意了。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023072308.webp)\n\n眼看公司有挂掉的风险，Elasticsearch 做出了一个石破天惊的决定。\n\n2021年，谢伊·巴农宣布，放弃 Apache 许可证，改用新的许可证：代码依然开源，但是不允许用户销售该软件的云服务，除非你愿意公开整个服务端。（注意，是整个服务端，不仅是搜索的部分。）\n\n亚马逊明摆着不会接受这个条件，所以新的许可证实质就是不允许亚马逊（也包括谷歌和微软）再卖 Elasticsearch 云服务了。\n\n作为业界老大，亚马逊当然咽不下这口气。它索性撕破脸，把 Elasticsearch 的代码分叉，开始维护自己的版本，起名为[OpenSearch](https://aws.amazon.com/cn/opensearch-service/)，继续采用 Apache 许可证，让社区无偿使用。双方就对干起来了。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023072601.webp)\n\n现在还看不出来谁赢谁输，但是不管怎样，Elasticsearch 有了起码的生存保障，收入稳定下来了。你要用正宗的搜索服务，只有买他家的。\n\n我认为，**这是目前唯一可行的开源软件商业模式**。\n\n有人把它叫做\"[开源核心模式](https://handbook.opencoreventures.com/open-core-business-model)\"：代码的核心功能是开源的，可以免费使用，但是存在某些限制，比如云服务是独家的，或者某些插件和周边工具是闭源的，需要付费。\n\n目前，采用这种模式的知名开源软件，除了 Elasticsearch，还有 MongoDB。\n\n**开源软件创业，建议就采用这种模式**。你同时维护两个版本：一个是开源的社区版，让大家免费使用，积累用户和口碑；另一个是收费的企业版，拥有更多功能和客服支持。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072304.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072305.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072306.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072307.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072308.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072601.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "超声波冬眠",
+          "link": "https://www.science.org/content/article/ultrasound-brain-pulses-put-mice-hibernation-state",
+          "description": "华盛顿大学的研究团队发现，对准老鼠大脑的某个部位发射超声波脉冲，会使得老鼠进入冬眠。\n\n这意味着，冬眠可以人工触发。这或许可以用于执行长途太空任务的宇航员，让其在长途旅行中进入冬眠状态。\n\n不过，有的科学家不认同这个发现，认为这只不过是超声波发射能量，激活了大脑的温度神经元，欺骗大脑认为环境温度升高，从而自动降低了动物体温，让动物进入不活跃状态。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052901.webp"
+          ]
+        },
+        {
+          "title": "美国网络可信标志",
+          "link": "https://www.theverge.com/2023/7/18/23798153/fcc-cyber-trust-mark-biden-security",
+          "description": "美国政府宣布，将对联网的家用电器推行\"网络可信标志\"（下图），表示该设备是信息安全的。\n\n这个标志带有一个 Logo 和二维码，用户扫描后，会进入详细说明的网页。\n\n目前，该标志是自愿加入，但也说不准哪一天就变成了强制认证。那时，如果不发给中国公司，就等于是变相的市场壁垒。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072401.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072402.webp"
+          ]
+        },
+        {
+          "title": "医院黑匣子",
+          "link": "https://www.wsj.com/amp/articles/surgery-technology-data-black-boxes-a8bc483b",
+          "description": "一家加拿大公司推出了\"医院黑匣子\"，类似于飞机的黑匣子，记录手术过程中产生的一切信息，包括视频、音频、仪器数据等等。\n\n该设备可以用于事后的手术分析，以减少医疗错误、保障患者安全、提高手术效率，还能用于医生培训。如果手术出错，它有助于了解到底哪一步发生了问题。\n\n有些医生反对该设备，认为属于对医生的监控，会增加医疗诉讼。为了平息反对意见，该设备目前自动对所有数据进行匿名化处理，即使数据泄露，外界也无法使用。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023032102.webp"
+          ]
+        },
+        {
+          "title": "太阳射电望远镜",
+          "link": "http://www.stdaily.com/index/kejixinwen/202305/ae99861e29034bd59c22a768234af466.shtml",
+          "description": "全世界最大的太阳射电望远镜，在甘孜稻城启用。\n\n它由313部天线组成，排列在直径1公里的圆环上。圆环中央是机房和定标塔，用来协调和控制所有天线。\n\n每一台天线的直径6米，会跟随太阳的方向转动，用来监控太阳活动。\n\n所有天线协同观测，就能形成虚拟的超大口径天线，从而实现对太阳爆发活动的高精度成像。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072701.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072702.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072703.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072704.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072705.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "泄露的谷歌薪酬数据",
+          "link": "https://www.businessinsider.com/google-salaries-leaked-data-employees-engineers-sales-cloud-2023-7",
+          "description": "谷歌内网的一份文档泄漏，里面有详细的员工薪酬数据，本文整理了不同工种的工资最大值、最小值，以及奖金和股票收益。\n\n2022年，谷歌员工的薪酬中位数为279,802 美元，是科技业薪酬最高的公司之一。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072102.webp"
+          ]
+        },
+        {
+          "title": "Dan Abramov 宣布离开 Meta 团队",
+          "link": "https://www.reddit.com/r/reactjs/comments/154trk7/comment/jsrbysw/",
+          "description": "著名前端程序员 Dan Abramov 写了15条系列推文，解释他为什么从 Meta 辞职，离开 React 团队。",
+          "user": "hacker0limbo",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3289",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072706.webp"
+          ]
+        },
+        {
+          "title": "使用 Map/WeakMap 处理 DOM 节点",
+          "link": "https://www.macarthur.me/posts/maps-for-dom-nodes",
+          "description": "Map 和 WeakMap 作为 JS 语言新增的数据结构，很多人不清楚它们的用法。作者给出了一个实际的例子。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023050602.webp"
+          ]
+        },
+        {
+          "title": "继承与组合",
+          "link": "https://buttondown.email/hillelwayne/archive/when-to-prefer-inheritance-to-composition/",
+          "description": "如果你要扩展一个类，可以使用继承（inheritance），也可以使用组合（composition）。本文讨论它们的区别和适用场合。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023050601.webp"
+          ]
+        },
+        {
+          "title": "CPU 对分支代码的影响",
+          "link": "https://johnnysswlab.com/how-branches-influence-the-performance-of-your-code-and-what-can-you-do-about-it/",
+          "description": "本文分析 CPU 怎么处理代码，进而讨论分支语句（if）应该怎么写，执行效率比较高。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023050610.webp"
+          ]
+        },
+        {
+          "title": "Object.keys() 的返回值类型",
+          "link": "https://vladimirzdrazil.com/posts/object-keys-keyof-t/",
+          "description": "本文是 TypeScript 科普文章，解释 Object.keys() 方法的返回值类型，为什么是`string[]`，而不是`(keyof T)[]`。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023050802.webp"
+          ]
+        },
+        {
+          "title": "NixOS 安装快速指南",
+          "link": "https://borretti.me/article/nixos-for-the-impatient",
+          "description": "NixOS 是一个 Linux 发行版，它有一个系统配置文件，记录所安装的软件。只要有这个文件，就能还原出一模一样的系统。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023051001.webp"
+          ]
+        },
+        {
+          "title": "这个博客托管在我的 Android 手机上",
+          "link": "https://androidblog.a.pinggy.io/",
+          "description": "作者介绍怎么把安卓手机当作服务器，托管网站。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023051002.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Random Generator",
+          "link": "https://randomgenerator.vercel.app/",
+          "description": "一个生成各种随机值的 JS 库。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052221.webp"
+          ]
+        },
+        {
+          "title": "Primo",
+          "link": "https://primocms.org/",
+          "description": "一个开源的内容管理系统（CMS），作为 WordPress 的替代品而开发，基于 JavaScript 的 Svelte 框架。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072202.webp"
+          ]
+        },
+        {
+          "title": "Redirect Detective",
+          "link": "https://redirectdetective.com/",
+          "description": "一个浏览器插件，显示当前页面的所有重定向跳转。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052510.webp"
+          ]
+        },
+        {
+          "title": "Clang.js",
+          "link": "https://github.com/luoxuhai/clang.js",
+          "description": "在浏览器直接运行 C/C++ 代码。",
+          "user": "luoxuhai",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3297",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072707.webp"
+          ]
+        },
+        {
+          "title": "Epub 阅读器",
+          "link": "https://github.com/daGaiGuanYu/epub-reader",
+          "description": "一个网页的 Epub 阅读器，可以离线使用。",
+          "user": "daGaiGuanYu",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3302",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072708.webp"
+          ]
+        },
+        {
+          "title": "Automa",
+          "link": "https://www.automa.site/",
+          "description": "Chrome 浏览器插件，用来设置任务自动化。另外，Chrome 有内置的用户行为录制。",
+          "user": "dllen",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3301",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072710.webp"
+          ]
+        },
+        {
+          "title": "Rickrack",
+          "link": "https://eigenmiao.com/yanhuo",
+          "description": "开源的调色板软件，提供多种色彩搭配功能，适用于各种设计场景。",
+          "user": "eigenmiao",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3306",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072711.webp"
+          ]
+        },
+        {
+          "title": "Pym.js",
+          "link": "https://github.com/nprapps/pym.js",
+          "description": "一个控制 iframe 窗口的 JS 库，可以根据加载网页的内容，调整 iframe 窗口的高度和宽度，并提供许多其他功能。",
+          "images": []
+        },
+        {
+          "title": "Standard Ebooks",
+          "link": "https://standardebooks.org/",
+          "description": "Epub 电子书生成工具，参见教程。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011103.webp"
+          ]
+        },
+        {
+          "title": "Tablane",
+          "link": "https://tablane.net/",
+          "description": "一个开源的 Web 软件，用来进行任务管理。它实际上是一个列表管理软件，任何可以表示成列表的东西，都可以用它管理。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011206.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "Starlink 卫星覆盖图",
+          "link": "https://satellitemap.space/",
+          "description": "该网站实时显示 Starlink 卫星的位置，目前有4000多颗。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023042907.webp"
+          ]
+        },
+        {
+          "title": "AI 图片搜索引擎",
+          "link": "https://lexica.art/",
+          "description": "这个网站是 AI 图片的搜索引擎，搜到的所有图片都是人工智能生成的。\n\n想法是好的，但是图片有点少，搜索效果不理想。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022100101.webp"
+          ]
+        },
+        {
+          "title": "ChatGPT 中文在线",
+          "link": "https://chatgpt.aibang.run/",
+          "description": "ChatGPT 的使用页面，并且收集了相关资源。",
+          "user": "jqsl2012",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3307",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072709.webp"
+          ]
+        },
+        {
+          "title": "全球音乐体育大全",
+          "link": "https://github.com/ruanyf/weekly/issues/3287",
+          "description": "家里的娃学习打击乐，经常需要到 Youtube 平台搜索一些曲子，观看学习。作者就写了这个微信小程序，可以搜索和下载。",
+          "user": "rmrf",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3287",
+          "images": []
+        },
+        {
+          "title": "GPYTHON",
+          "link": "https://gpython.aibang.run/",
+          "description": "AI 辅助的 Python 学习网站，在线练习编码。",
+          "user": "stanxing",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3308",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072712.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "最长的视线",
+          "link": "https://beyondrange.wordpress.com/2016/08/03/pic-de-finestrelles-pic-gaspard-ecrins-443-km/",
+          "description": "2016年7月16日，一位摄影师在西班牙海拔2820米的比利牛斯山脉上，拍到了一张照片（下图），可以看到远处的阿尔卑斯山。\n\n这两个地点相隔443公里，被吉尼斯认证为世界最长的视线，没有人看得比这更远了。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023020819.webp",
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023020820.webp",
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023020821.webp"
+          ]
+        },
+        {
+          "title": "芭比长城",
+          "link": "https://www.sohu.com/a/677626814_121124374",
+          "description": "生成式 AI 诞生以后，只有想不到的图片，没有生成不了的图片。\n\n最近，电影《芭比》上映，一位国外建筑师不禁突发奇想，如果长城变成芭比娃娃风格，会是什么样？下面就是 AI 生成的图片。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072719.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072720.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072721.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "涤纶如何重新流行",
+          "link": "https://www.worksinprogress.co/issue/how-polyester-bounced-back/",
+          "description": "涤纶（学名：聚酯纤维）是一种化学纤维，诞生于上个世纪20年代，曾经流行一时。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023072713.webp)\n\n那时，人们把它看作一种神奇面料。\n\n它不会起皱，因此不必熨烫，而且很柔软，也容易上色，能够生产出各种鲜艳的布料，非常适合拍照片和上电视。\n\n更重要的是，它很便宜，也不容易磨损，可以穿很久。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023072714.webp)\n\n但是，到了20世纪80年代，它突然不流行了。\n\n原因是它会抽丝和起球，时间一长，表面就变得毛绒绒。\n\n最要命的是，它不透气，穿着时间一长，你会感到很闷，并且会因汗水而发臭。人们渐渐形成一种印象，只有收入低的人才会穿涤纶服装。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023072716.webp)\n\n涤纶的价格因此一落千丈。正当人们以为，涤纶服装将被淘汰时，事情发生了变化。\n\n进入21世纪以后，健身变得越来越流行，人们喜欢户外跑步、在健身房锻炼、爬山和远足。运动服装公司很快意识到，涤纶很适合户外服装，因为它不透气，所以保温效果好；改造以后不吸水，所以可以快干；它重量轻，所以满足运动服装的轻便要求；它不易磨损，所以足够坚固，适合户外环境。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023072717.webp)\n\n一旦涤纶的市场重新出现以后，运动服装公司就使用最新的材料科学，进一步改造涤纶。\n\n他们把涤纶编织成羊毛的结构，使其看上去像羊毛材料，但是更轻、更保温、更排水。这使得涤纶迅速占领了户外服装市场。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023072718.webp)\n\n涤纶的一大缺点是排斥水，这注定它不适合直接接触人体，直接套在皮肤外面会汗流浃背，很不舒服。\n\n研究人员开始研究，能否增加涤纶的吸水性。经过几年的努力，终于成功推出了吸湿排汗的涤纶纤维，采用的办法是在纤维中间增加圆孔，让纤维变成空心，因此就具有毛细管的吸水效应，可以将汗水排走。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023072715.webp)\n\n一旦解决了吸水问题，涤纶就非常适合做运动背心和运动内衣。它又薄又轻，柔软耐用，不会产生异味，而且可以机洗。\n\n随着运动人口的增多，以及涤纶的价格优势，今天，涤纶是世界排名第一的纺织面料，占全球纤维消费量的一半以上，约为第二名棉花的两倍。年产量接近5800万吨，是上世纪80年代的10倍多。再没有人抱怨它的外观和穿着感受，事实上人们变得太喜欢涤纶服装了。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072713.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072714.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072716.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072717.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072718.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072715.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "在任何一个领域，刻意练习都是造就顶尖人才的方法，也是顶尖人才用来保持领先地位的方法。如果你想成为专业人士，刻意训练自己是绝对必不可少的。",
+          "link": "https://fs.blog/deliberate-practice-guide/",
+          "description": "-- 刻意练习终极指南",
+          "images": []
+        },
+        {
+          "title": "如果你是一个高级工程师或者高级管理者，你所做的一切都有很高的机会成本，所以你选择的工作必须很重要。",
+          "link": "https://smyachenkov.com/posts/book-review-the-staff-engineers-path/",
+          "description": "-- 《高级工程师的道路》",
+          "images": []
+        },
+        {
+          "title": "越来越多的人觉得，成年的价值正在下降，而且成年的年龄也在被推迟。结果，我们的社会变得越来越幼稚化。",
+          "link": "https://iq.hse.ru/en/news/219491658.html",
+          "description": "-- 《幼稚主义是一种常态》",
+          "images": []
+        },
+        {
+          "title": "以前是我们学习计算机的语言，以后是让计算机学习我们的语言。",
+          "link": "https://alphalist.com/podcast/78-stephen-wolfram-founder-ceo-of-wolfram-research",
+          "description": "-- Stephen Wolfram",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

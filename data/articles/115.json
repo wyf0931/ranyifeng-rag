@@ -1,0 +1,391 @@
+{
+  "title": "科技爱好者周刊（第 115 期）：保护你的 DNA，不要泄漏",
+  "link": "https://www.ruanyifeng.com/blog/2020/07/weekly-issue-115.html",
+  "number": 115,
+  "sections": [
+    {
+      "name": "封面图",
+      "items": [
+        {
+          "title": "封面图",
+          "link": "https://www.instagram.com/p/CCDW-Z1l5BF/",
+          "description": "澳门去年11月举办龙马巡游，该大型机械装置为中法团队合作打造，上身为龙，下身为马，身体各部分都能动，还能喷火。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070117.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "本周话题",
+      "items": [
+        {
+          "title": "保护你的 DNA，不要泄漏",
+          "link": "",
+          "description": "上周，美国佛罗里达州通过了[《DNA 隐私法》](https://www.washingtonexaminer.com/politics/florida-becomes-first-state-to-enact-dna-privacy-law-blocking-insurers-from-genetic-data)，成为美国第一个对 DNA 立法的州。它明文规定 DNA 属于个人隐私，保险公司不得获取 DNA 测试的结果。\n\n![](https://cdn.beekka.com/blogimg/asset/202007/bg2020070601.jpg)\n\n为什么 DNA 不能让保险公司知道？\n\n因为 DNA 包含了一个人所有的遗传信息，你有什么基因缺陷，一查 DNA 都能知道。保险公司拿到你的 DNA 以后，就能识别你可能会得哪些疾病，于是相应调整费率，或拒绝你投保人寿险和医疗险。\n\nDNA 不仅对保险公司有用，对就业和招生也有用，可以用来找出基因上最合适的人选。所以，DNA 里面的个人信息可能不利于你，要注意保护，防止泄漏。\n\nDNA 测序已经是一项常规技术了，普通实验室都能做，毫无难度。现在，新生儿出生前，医院都会建议孕妇做一下产前 DNA 检查，防止遗传病。2018年，湖南一个孕妇[起诉华大基因公司](https://www.huxiu.com/article/252310.html)，原因就是该公司的 DNA 检查一切正常，但是新生儿生出来有严重的遗传病。\n\n![](https://cdn.beekka.com/blogimg/asset/202007/bg2020070602.jpg)\n\n如果 DNA 检查发现遗传缺陷，这个新生儿是不会生出来的。引申一下，这对成人也一样，如果你的 DNA 泄漏了，有时就直接出局了。\n\nDNA 检测现在有多便利？电商平台搜一下\"DNA 检测\"、\"DNA 测序\"，会返回很多结果。\n\n![](https://cdn.beekka.com/blogimg/asset/202007/bg2020070603.jpg)\n\nDNA 也很容易获得，头发、血液、唾液、身体组织都能用来检测。所以，保护 DNA 的难度其实挺大的，只能说个人要有保护意识，尽量不留下 DNA 痕迹。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070601.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070602.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070603.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "算法面试的必考知识点",
+          "link": "",
+          "description": "讲座的主要内容是针对 LeetCode 的海量题库，精选 30 道 BAT 大厂面试高频特色算法题，重点讲解面试的必考知识点，教学风格通俗易懂，零基础的同学也可以听。录播、直播、线上答疑相结合，配合小测试和课后作业，保证教学效果。\n\n主讲老师是覃超，他曾担任 Facebook 多年面试官，作为 Facebook Messenger Tech Lead，主导和参与了 Facebook App、Facebook Messenger、Facebook Phone 等产品的研发工作。离开Facebook以后，他与极客大学合作，亲自授课，传授大厂面试经验。通过覃超老师指导的学员，很多都拿到了硅谷公司以及国内顶级互联网公司 Offer。",
+          "user": "覃超",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070902.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070901.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070903.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资讯",
+      "items": [
+        {
+          "title": "平流层飞船",
+          "link": "https://www.geekwire.com/2020/space-perspective-reboots-vision-flying-passengers-stratosphere-balloon/",
+          "description": "美国一家私人公司提出了\"平流层飞船\"计划，让游客乘坐飞船上升到平流层（距离地面30公里），体验一下太空的感觉，票价预计为每人12.5万美元。飞船可以乘坐八名乘客和一名飞行员，先进行长达两个小时的上升，然后在空中停留两个小时，最后再花两个小时下降。\n\n飞船的上升动力，主要来自一个巨大的充满氢气的气球。飞船内部有酒吧，还有一个\"拥有世界上最佳视野\"的厕所，甚至有 Wifi。该公司计划飞船在2024年完工，目前已经在[官网](https://thespaceperspective.com/fly/)接受预订。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020062804.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020062805.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020062806.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020062807.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020062808.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070103.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070102.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070104.jpg"
+          ]
+        },
+        {
+          "title": "AI 溺水救生系统",
+          "link": "",
+          "description": "夏季的海滩有很多人，如果发生溺水，不容易发现。为了帮助救生员尽快发现溺水者，以色列创业公司 Sightbit 开发了一套 AI 溺水救生系统，使用摄像头自动侦测溺水者，还能发现无人看管的孩子和异常的水流。\n\n该系统接受了\"成千上万张照片\"的训练，只要三个摄像头，就能监控300米的海岸线。它会自动识别游泳者，一旦发现危险，就会出现闪烁框，救生员可以单击警报，放大查看。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070112.jpg"
+          ]
+        },
+        {
+          "title": "加州大学旧金山分校电脑中毒",
+          "link": "",
+          "description": "6月1日，加州大学旧金山分校（UCSF）的电脑中毒，出现了上图的对话框，要求支付赎金，才能继续使用电脑。\n\n旧金山分校立刻根据留下的 Email 地址，与黑客取得联系。黑客要求支付赎金300万美元，旧金山分校说新冠病毒使得学校财务很困难，希望只支付78万美元。最后，双方讨价还价，黑客同意了114万美元的赎金。第二天，旧金山大学就将116.4个比特币转移到了对方的电子钱包，然后就得到了解密软件。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070112.jpg"
+          ]
+        },
+        {
+          "title": "自动结算的购物车",
+          "link": "https://www.instagram.com/p/CB-EdKKnWs8/?igshid=i4pqo65w8voq",
+          "description": "合肥某超市出现了带有自助结算装置的购物车。消费者从货架取完商品后，使用该装置扫描二维码，然后手机付款，就完成了整个自助结算的过程。\n\n这个装置可能不容易推广。它最大的问题是，购物车需要经常充电，而且容易遭到破坏或偷窃，一旦被人拿走，超市会有较大的损失。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070122.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070121.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070120.jpg"
+          ]
+        },
+        {
+          "title": "宝马汽车操作系统",
+          "link": "",
+          "description": "德国宝马汽车公司最近发布了新的汽车操作系统，最引人注目的是将许多汽车功能做进了系统，让它们都变成了软件服务，像自动导航、自动远光灯、甚至加热座椅都变成了软件控制。\n\n新的系统还带有收费设置，这意味着，这些服务都可以改成按小时收费，付款后才能开启。以后，你可能需要按月购买服务包（service pack），才能使用汽车的某些功能，比如冬季购买加热座椅服务，夜里购买自动远光灯服务。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070203.jpg"
+          ]
+        },
+        {
+          "title": "科学家发现山顶老鼠",
+          "link": "",
+          "description": "在海拔6700米的安第斯山脉的山顶，发现了老鼠。这是已知生活区域最高的哺乳动物。这些老鼠吃什么，目前还是一个迷，那个高度没有植物，氧气只有海平面的一半。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020063006.jpg"
+          ]
+        },
+        {
+          "title": "小米滑动相机专利",
+          "link": "",
+          "description": "申请了滑动相机专利，手机背面设置一个滑动条，上面装了三个摄像头。要用前置摄像头时，滑动条会自动滑出，这样手机正面就可以实现全面屏。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020062308.jpg"
+          ]
+        },
+        {
+          "title": "红光防视力下降",
+          "link": "",
+          "description": "发表研究成果，每天盯着红光看几分钟，有助于防止老年人视力下降。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070202.jpg"
+          ]
+        },
+        {
+          "title": "推特工程部门替换术语",
+          "link": "",
+          "description": "宣布开始替换带有歧视性的软件术语，比如\"黑名单\"（blacklist）改为\"拒绝名单\"（denylist），\"白名单\"改为\"允许名单\"（allowlist）。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070301.jpg"
+          ]
+        },
+        {
+          "title": "中国电子书厂商 Onyx 违反 GPL",
+          "link": "",
+          "description": "拒绝发布设备源码，那是根据 Linux 内核改的，明显违反了 GPL 许可证。Reddit 社区正在讨论，开源软件有没有办法在中国维权。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070505.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "Vim 的由来",
+          "link": "https://pragmaticpineapple.com/how-did-vim-become-so-popular/",
+          "description": "Vim 有30多年历史，目前依然是最流行的编辑器之一。本文简要地回顾了历史，它的一些主要的设计决定，到底是怎么来的。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070107.jpg"
+          ]
+        },
+        {
+          "title": "史上最难的定位挑战",
+          "link": "https://nixintel.info/osint/using-flight-tracking-for-geolocation-quiztime-30th-october-2019/",
+          "description": "一个推特用户发了一张照片，空荡荡的蓝天上有一架飞机。他给出了三个已知条件，本文分析如何根据下面三个条件，定位他在哪里拍这张照片。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070111.jpg"
+          ]
+        },
+        {
+          "title": "Makefile 的静态网站实现",
+          "link": "https://metin.nextc.org/posts/The_Idea_Of_Makefile_Blog.html",
+          "description": "现在有各种各样的静态网站工具，比如 Jekyll 和 Hugo 等。作者提出，Makefile 也可以用来实现静态网站，这样就不需要任何外部工具了，只维护一个 Makefile 配置文件即可。",
+          "images": []
+        },
+        {
+          "title": "哈希算法的种类",
+          "link": "https://pradeeploganathan.com/blockchain/hashing/",
+          "description": "这篇文章用相对通俗的语言，介绍了目前常用的几种哈希算法，以及它们各自适用的场景。",
+          "images": []
+        },
+        {
+          "title": "React Hooks 的常见的错误写法",
+          "link": "https://www.lorenzweiss.de/common_mistakes_react_hooks/",
+          "description": "Hooks 是前端框架 React 现在主推的写法，它很灵活，但也很容易误用。本文作者总结了四个错误写法，虽然能够运行，但是不应该这样写。",
+          "images": []
+        },
+        {
+          "title": "字体反爬的攻与防",
+          "link": "https://cjting.me/2020/07/01/douyu-crawler-and-font-anti-crawling/",
+          "description": "作者因为业务原因需要爬取一批斗鱼主播的相关数据，结果发现斗鱼使用了一种很有意思的反爬技术：字体反爬。",
+          "images": []
+        },
+        {
+          "title": "分页查询不要使用 OFFSET 和 LIMIT 语法",
+          "link": "https://hackernoon.com/please-dont-use-offset-and-limit-for-your-pagination-8ux3u4y",
+          "description": "数据查询时，如果数据多，就需要分页，一般使用 OFFSET 和 LIMIT 语法。这篇文章提出，这样做不好，耗费资源，有性能问题。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070502.jpg"
+          ]
+        },
+        {
+          "title": "写给 JavaScript 程序员的 Rust 教程",
+          "link": "http://www.sheshbabu.com/posts/rust-for-javascript-developers-functions-and-control-flow/",
+          "description": "一组系列文章，使用 JavaScript 作为例子，介绍 Rust 语言。",
+          "images": []
+        },
+        {
+          "title": "Git 多行提交信息的简单方法",
+          "link": "https://www.stefanjudis.com/today-i-learned/git-commit-accepts-several-message-flags-m-to-allow-multiline-commits/",
+          "description": "`git commit` 命令的 `-m` 参数用来指定提交信息，但是这样提交的信息只有一行。本文介绍实现多行信息的简单方法。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "ward",
+          "link": "https://github.com/B-Software/Ward",
+          "description": "一个简单的服务器监控的仪表盘，基于 Java。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070113.jpg"
+          ]
+        },
+        {
+          "title": "jsonbase",
+          "link": "https://github.com/Devs-Garden/jsonbase",
+          "description": "一个 JavaScript 数据库，后端数据都存成 JSON 格式文件，可以用来学习怎么自己实现关系型数据库。",
+          "images": []
+        },
+        {
+          "title": "guietta",
+          "link": "https://github.com/alfiopuglisi/guietta",
+          "description": "一个 Python 工具，用来生成简单的图形界面。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070302.jpg"
+          ]
+        },
+        {
+          "title": "UIkit",
+          "link": "https://getuikit.com/",
+          "description": "一个前端 Web 组件库，不依赖任何框架，组件类型多、功能强。",
+          "images": []
+        },
+        {
+          "title": "Zettlr",
+          "link": "https://www.zettlr.com/",
+          "description": "一个桌面 Markdown 编辑器，界面美观。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070401.jpg"
+          ]
+        },
+        {
+          "title": "Reabble",
+          "link": "https://reabble.cn/",
+          "description": "Kindle 等电子书阅读器的 RSS 推送服务，绑定 Inoreader 帐号。（@weijarz 投稿）",
+          "images": [],
+          "user": "weijarz"
+        },
+        {
+          "title": "gitqlite",
+          "link": "https://github.com/augmentable-dev/gitqlite",
+          "description": "使用 SQL 语法查询 Git 仓库的工具，比如 `SELECT * FROM commits`。",
+          "images": []
+        },
+        {
+          "title": "honkit",
+          "link": "https://github.com/honkit/honkit",
+          "description": "GitBook 官方不再维护开源版本后，其他人分叉继续开发的版本。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "微软学习 TV",
+          "link": "https://docs.microsoft.com/en-us/learn/tv/",
+          "description": "微软官方的学习视频中心，有各种教程。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020062406.jpg"
+          ]
+        },
+        {
+          "title": "网飞评分网站",
+          "link": "https://flixable.com/",
+          "description": "这是一个Netflix 评价网站，通过抓取 IMDb、metacritic、烂番茄、豆瓣等评分网站的数据，列出 Netflix 各种节目的评分。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020062802.jpg"
+          ]
+        },
+        {
+          "title": "Go 语言编程",
+          "link": "https://www.digitalocean.com/community/books/how-to-code-in-go-ebook",
+          "description": "英文的免费电子书，DigitalOcean 发布的。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070116.jpg"
+          ]
+        },
+        {
+          "title": "Just JavaScript",
+          "link": "https://justjavascript.com/",
+          "description": "著名程序员 Dan Abramov 正在撰写的 JavaScript 教程，他还没有写完。只要在上面网址报名，每写好一部分就会通过邮件发给你。（@hacker0limbo 投稿）",
+          "images": [],
+          "user": "hacker0limbo"
+        },
+        {
+          "title": "webRTC 点对点视频通话",
+          "link": "https://github.com/nashaofu/webrtc-demo",
+          "description": "这个网页演示和讲解，如何在无后端的情况下，通过 webRTC 建立双方的实时视频通话。（@nashaofu 投稿）",
+          "images": [],
+          "user": "nashaofu"
+        },
+        {
+          "title": "Raft 协议动画",
+          "link": "https://github.com/wzxJayce/raft-animation",
+          "description": "通过一步步的动画，讲解 Raft 协议如何保证分布式集群的一致性，以及选举 leader 的过程。（@wzxJayce 投稿）",
+          "images": [],
+          "user": "wzxJayce"
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "盲文的由来",
+          "link": "https://stitcher.io/blog/braille-and-the-history-of-software",
+          "description": "1786年，法国人 Valentin Haüy 发明了第一本凸起字母书，盲人和弱视的人通过触摸读书。\n\n1831年，美国人塞缪尔·豪（Samuel Howe）的美国人受到浮雕字母的启发，发明了一种新的字体，更容易触摸识别，称为波士顿字型。\n\n1932年，六个点的布莱叶盲文，成为国际标准，取代了具体的字母。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070108.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070109.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070110.jpg"
+          ]
+        },
+        {
+          "title": "漫长的雨",
+          "link": "http://www.samweller.net/bradbury-1/2018/11/29/the-essential-bradbury",
+          "description": "《漫长的雨》（The long rain，[中译全文](https://www.sohu.com/a/337866552_771944)）是美国科幻小说作家雷·布拉德伯里（Ray Bradbury）1950年发表的一篇短篇小说。\n\n它讲述四个宇航员因为火箭失事，来到一个不停下雨的星球。这个星球永远在下瓢泼大雨，过去10年一秒都没有停过。宇航员冒着雨水，在丛林里面穿行，拼命寻找前人修建的\"阳光穹顶\"，那里是一个大屋顶，有温暖的人造阳光，以及充足的食物和休息的场所。\n\n小说的开头是这样的：\n\n\"大雨，永远的雨，升腾着汗水和蒸汽的雨。这是密集的瓢泼大雨，像鞭子一样打在眼睛上，飞溅到脚踝上。它是一场淹没其他所有雨水的雨，让人遗忘所有关于雨水的记忆。\"",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070201.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "克拉马托尔核事故",
+          "link": "https://en.wikipedia.org/wiki/Kramatorsk_radiological_accident",
+          "description": "1989年，乌克兰克拉马托尔市 Hvardiytsiv Kantemyrivtsiv 大街7号公寓大楼的居民，向有关部门要求，立即检查该栋大楼是否存在核辐射。1980年到1989年，该楼前后有4人死于白血病。\n\n检查发现，该楼的核辐射极高。最后确认，在85号和52号房间之间的那堵墙壁里面，有一个具有高度放射性的铯-137胶囊。\n\n9年前，这个胶囊在一个采石场丢失，始终没有找到。现在人们知道了，这个丢失的胶囊混在石料里面，做成了混凝土，砌进了这堵墙。\n\n九年的时间里面，两个家庭就在这堵墙旁边生活，其中有一个家庭的孩子的床就放在放射源旁边。事后统计，一共有17个人受到了严重的核辐射。\n\n最终，这堵墙被拆除，铯胶囊由核研究所取出，并进行处置。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020070114.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "李敖",
+          "link": "",
+          "description": "看到抽象的东西，应该尽量使它变得具体；看到具体的东西，应该尽量使它变得抽象。",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "创业公司不要专注于创造产品，而要专注于解决问题。",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "创新型的创业公司，一开始的目标用户应该是对新产品最有兴趣的那2％的人群，并设法与剩下的那 98％的人建立一座桥梁，把那些人推向未来。",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "NPM 现在有130万个软件包，绝大部分都不是长期维护的。即使你找到一个长期维护的软件包，它可能会有10层或更多的依赖，涉及其他数百个包，你根本不可能每一个都去验证。",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "自从第一款游戏机问世，此后的每一款游戏机都出现了盗版。但是，这种情况已经结束了，Xbox One 和 PS4 已经上市了将近6年，没有任何黑客能够破解它们实现盗版游戏。这是游戏机历史上第一次持续了如此长的时间，没有出现破解和盗版。",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

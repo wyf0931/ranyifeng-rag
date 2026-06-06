@@ -1,0 +1,379 @@
+{
+  "title": "每周分享第 27 期",
+  "link": "https://www.ruanyifeng.com/blog/2018/10/weekly-issue-27.html",
+  "number": 27,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "乔布斯的演讲与热情假设",
+          "link": "https://www.ruanyifeng.com/blog/2018/10/weekly-issue-27.html",
+          "description": "2005年，斯坦福大学邀请乔布斯在毕业典礼演讲。这个演讲后来成为经典，《乔布斯传》说\"或许有些演讲对后世影响更大，但是你找不到（比这篇）更好的演讲。\"\n\n演讲中，乔布斯说了一段有名的话。\n\n\"你们的时间有限，所以不要把它浪费在过其他人的生活。最重要的是，你要有勇气跟随你的内心和直觉。某种程度上，它们已经知道你真正想要成为什么样子。其他所有事情都是次要的。\"\n\n这段话后来被称为\"热情假设\"，很多人都引用它鼓励年轻人：寻找职业方向的时候，要跟随内心的热情（passion），去做那些你有强烈意愿从事的工作。\n\n但是，美国最近出版了一本新书《优秀到无法忽略》（[《So Good They Can't Ignore You》](https://commoncog.com/blog/so-good-they-cant-ignore-you/)），声称乔布斯的这个建议是完全错误的，误导年轻人。别的不说，乔布斯本人也不遵守\"热情假设\"。年轻时，他对禅宗思想最感兴趣，去印度学习佛教。如果他真的追随自己的内心，他就应该去当一个禅宗老师，而不是跑回美国创办苹果公司。\n\n这本书认为，以下几个原因导致\"热情假设\"不是一个好的建议。\n\n第一，热情真的很罕见。大部分人都对自己的工作没兴趣，而是对某种爱好（比如打球、钓鱼）有兴趣。如果大部分人都找不到自己的职业热情，你怎么能叫他们去追随热情呢？\n\n第二，热情需要时间来建立。许多人刚开始工作的时候，对自己的职业并没有兴趣，随着时间积累，他们的经验越来越多，能够掌控的东西越来越多，这才慢慢开始热爱自己的工作。找工作阶段，你可能根本不会意识到这个职业就是你的热情所在。\n\n第三，过度强调热情，容易对现状产生不满。2010年的一项调查发现，只有45％的美国人对自己的工作满意。由于很多人相信，无法产生热情的工作不是好工作，导致对职业生涯抱有不切实际的期望，对现有的工作不满意，不断跳槽。\n\n这本书提出，热情不是凭空产生的，它跟自主权有关。如果你在某个职位上的自主权越大，能够掌控的东西越多，就越容易对当前的职业产生热情。与其强调跟随内心的热情，不如强调如何在某种职业里面获得自主权。你必须使自己变得优秀，让别人无法忽视你，同意让你掌控更多的资源，这就是书名的含义。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101901.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101902.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "新闻",
+      "items": [
+        {
+          "title": "南极粒子",
+          "link": "https://www.livescience.com/63692-standard-model-broken-supersymmetry-new-physics.html",
+          "description": "科学家最近确认，南极洲正在向外太空喷射高能粒子，充满能量的粒子从冰层底下发射，直接飞向太空。科学家目前不知道原因。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101903.jpg"
+          ]
+        },
+        {
+          "title": "定制搜索页",
+          "link": "https://posts.withgoogle.com/",
+          "description": "谷歌推出验证服务。只要你验证了身份，就可以定制搜索结果。以后别人在谷歌搜索你，就可以看到你留下的内容。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101904.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101905.jpg"
+          ]
+        },
+        {
+          "title": "美国国土安全部面部识别匹配率低",
+          "link": "https://www.washingtonpost.com/technology/2018/09/19/nearly-half-cellphone-calls-will-be-scams-by-report-says/",
+          "description": "美国国土安全部去年在九个机场测试脸部识别，结果匹配率只有85%，远低于97%的最低标准。",
+          "images": []
+        },
+        {
+          "title": "谷歌搜索的彩蛋",
+          "link": "https://www.rockpapershotgun.com/2018/09/29/recently-discovered-google-easter-egg-is-a-browser-based-text-adventure-game/",
+          "description": "国外用户发现了一个谷歌搜索的彩蛋，搜索 text adventure 后，打开开发者工具，会看到提示，问你要不要玩游戏。回答 yes，就可以开始玩了。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101906.jpg"
+          ]
+        },
+        {
+          "title": "个人信息换咖啡",
+          "link": "https://www.npr.org/sections/thesalt/2018/09/29/643386327/no-cash-needed-at-this-cafe-students-pay-the-tab-with-their-personal-data",
+          "description": "既然别人可以出售我的个人信息牟利，为什么我自己不能出售呢？美国罗德岛有一个咖啡馆，在读的大学生可以免费获取咖啡，条件是提供自己的个人信息，同意接收赞助商的广告信息。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101907.jpg"
+          ]
+        },
+        {
+          "title": "取消方向盘",
+          "link": "https://spectrum.ieee.org/cars-that-think/transportation/self-driving/new-rules-of-the-road-allow-steeringwheelfree-cars",
+          "description": "美国国家公路交通安全管理局（NHTSA）表示，在符合条件的情况下，将允许自动驾驶汽车取消方向盘、脚踏板和后视镜。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101908.jpg"
+          ]
+        },
+        {
+          "title": "加州规定互联网设备必须使用唯一默认密码",
+          "link": "https://mashable.com/article/google-call-screen/",
+          "description": "加州最近通过法律，2020年起，任何在加利福尼亚州制造的互联网连接设备，必须每个设备都有不一样的密码，以提高整体的互联网安全。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101909.jpg"
+          ]
+        },
+        {
+          "title": "软件接电话",
+          "link": "https://mashable.com/article/google-call-screen/",
+          "description": "10月9日发布的谷歌 Pixel 3 手机，里面的\"谷歌助手\"有自动接电话功能，官方明确说能对付推销电话。",
+          "images": []
+        },
+        {
+          "title": "F-16 事故",
+          "link": "https://www.aviation24.be/military-aircraft/belgian-air-component/air-force-f-16-destroyed-maintenance-collateral-damage-second/",
+          "description": "10月11日，比利时空军发生了一件匪夷所思的事故。一名技术人员正在飞机库房，研究F-16 战斗机，不小心激活了战斗机加农炮。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101910.jpg"
+          ]
+        },
+        {
+          "title": "AR 导航",
+          "link": "https://www.cnbeta.com/articles/tech/778259.htm",
+          "description": "高德推出车载 AR 导航，在真实的道路上可以叠加车道线、车辆识别、红绿灯和限速标志等各类对象。",
+          "user": "Anderson-Liu",
+          "user_link": "https://github.com/Anderson-Liu",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101911.jpg"
+          ]
+        },
+        {
+          "title": "2019年美国一半的电话通话将是推销电话和诈骗电话",
+          "link": "https://www.washingtonpost.com/technology/2018/09/19/nearly-half-cellphone-calls-will-be-scams-by-report-says/",
+          "description": "《华盛顿邮报》称，根据统计，2019年美国一半的电话通话，将是推销电话和诈骗电话。",
+          "images": []
+        },
+        {
+          "title": "抗生素可治疗阑尾炎",
+          "link": "https://arstechnica.com/science/2018/09/after-century-of-removing-appendixes-docs-find-antibiotics-can-be-enough/",
+          "description": "芬兰的一项医学统计发现，一般的阑尾炎可能不需要手术，只靠抗生素治疗即可。",
+          "images": []
+        },
+        {
+          "title": "Wi-Fi 联盟发布 Wi-Fi 6 标准",
+          "link": "https://www.wi-fi.org/news-events/newsroom/wi-fi-alliance-introduces-wi-fi-6",
+          "description": "Wi-Fi 联盟发布 Wi-Fi 6 标准，用于支持下一代的 802.11ax 协议的无线连接。",
+          "images": []
+        },
+        {
+          "title": "日本允许对人类胚胎进行基因编辑",
+          "link": "https://www.nature.com/articles/d41586-018-06847-7",
+          "description": "日本提出一个法律草案，允许对人类胚胎进行基因编辑。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "教程",
+      "items": [
+        {
+          "title": "如何写一个 Chrome 浏览器的扩展",
+          "link": "https://www.thepolyglotdeveloper.com/2018/09/creating-basic-chrome-extension/",
+          "description": "想写 Chrome 浏览器的扩展吗？可以看这篇教程，很容易懂。原始代码有一些小问题，我重新做了一个 Demo。",
+          "images": []
+        },
+        {
+          "title": "树莓派如何搭建 NAS",
+          "link": "https://opensource.com/article/18/7/network-attached-storage-Raspberry-Pi",
+          "description": "想要搭建家用储存系统的朋友，可以看这篇教程，使用树莓派和移动硬盘，搭建一个 NAS。",
+          "images": []
+        },
+        {
+          "title": "Kubernetes：令人惊讶的个人项目平台",
+          "link": "http://www.doxsey.net/blog/kubernetes--the-surprisingly-affordable-platform-for-personal-projects",
+          "description": "流行的观点认为，Kubernetes 是一种过于复杂的技术，只适用于非常大的机器群。我认为这可能是错的，Kubernetes 适用于小型项目。",
+          "images": []
+        },
+        {
+          "title": "Kubernetes 用于个人项目？不用了，谢谢！",
+          "link": "https://carlosrdrz.es/kubernetes-for-small-projects/",
+          "description": "本文是对上一篇文章的反驳。",
+          "images": []
+        },
+        {
+          "title": "网页性能的准确测量",
+          "link": "https://nolanlawson.com/2018/09/25/accurately-measuring-layout-on-the-web/",
+          "description": "本文讨论如何使用 window.requestAnimationFrame() 测量脚本操作的准确耗时。",
+          "images": []
+        },
+        {
+          "title": "区块链技术概述",
+          "link": "https://nvlpubs.nist.gov/nistpubs/ir/2018/NIST.IR.8202.pdf",
+          "description": "美国国家标准技术研究所（NIST）编写的介绍区块链的小册子，针对一般读者。",
+          "images": []
+        },
+        {
+          "title": "我为什么起诉 PinScreen？",
+          "link": "http://sadeghi.com/dr-iman-sadeghi-v-pinscreen-inc-et-al/",
+          "description": "一个硅谷工程师起诉了他的华人老板，还制作了一个极其详细的网页。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101912.jpg"
+          ]
+        },
+        {
+          "title": "为什么国际航线的航路如此混乱？",
+          "link": "https://multimedia.scmp.com/news/world/article/2165980/flight-paths/index.html",
+          "description": "《南华早报》的长篇可视化报道，解释为什么国际航线弯弯曲曲。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101913.jpg"
+          ]
+        },
+        {
+          "title": "CSV 和 JSON",
+          "link": "https://medium.com/@martindrapeau/the-state-of-csv-and-json-d97d1486333",
+          "description": "CSV 和 JSON 两种数据格式的介绍和比较。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "JavaScript 模块化编程",
+          "link": "https://github.com/ruanyf/weekly",
+          "description": "开源电子书，介绍如何编写模块化的 JavaScript 代码。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101914.jpg"
+          ]
+        },
+        {
+          "title": "机器学习解释",
+          "link": "https://christophm.github.io/interpretable-ml-book/",
+          "description": "开源电子书，尝试用通俗的语言解释机器学习。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101915.jpg"
+          ]
+        },
+        {
+          "title": "开源火星车",
+          "link": "https://github.com/nasa-jpl/open-source-rover",
+          "description": "美国航空航天局开源了火星漫游车的设计。完全使用市场上可以买到的材料。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101916.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "remi",
+          "link": "https://github.com/dddomodossola/remi",
+          "description": "Python 的图形界面库，最大特点就是采用了 HTML 界面。",
+          "images": []
+        },
+        {
+          "title": "dbxfs",
+          "link": "https://github.com/rianhunter/dbxfs",
+          "description": "允许用户将 Dropbox 目录挂载到本地文件系统。",
+          "images": []
+        },
+        {
+          "title": "ferret",
+          "link": "https://github.com/MontFerret/ferret",
+          "description": "Go 语言写的 web scraping 工具，操作过程是声明式的。",
+          "images": []
+        },
+        {
+          "title": "Sans Forgetica",
+          "link": "https://github.com/Syllo/nvtop",
+          "description": "一种字体，据称有助于增强记忆。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101917.jpg"
+          ]
+        },
+        {
+          "title": "nvtop",
+          "link": "https://github.com/Syllo/nvtop",
+          "description": "Linux 服务器的 top 命令可以查看 CPU 的状态。nvtop 命令则是用来查看 NVidia GPU 的状态。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101918.jpg"
+          ]
+        },
+        {
+          "title": "Mixnode",
+          "link": "https://www.mixnode.com/blog/posts/turn-the-web-into-a-database-an-alternative-to-web-crawling-scraping",
+          "description": "Mixnode 是一个收集了全世界网页的数据库，允许使用类似 SQL 的语法查询网页。",
+          "images": []
+        },
+        {
+          "title": "retejs",
+          "link": "https://github.com/retejs/rete",
+          "description": "可视化编程的 JavaScript 框架。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101919.jpg"
+          ]
+        },
+        {
+          "title": "C++ 2048 game",
+          "link": "https://github.com/Syllo/nvtop",
+          "description": "C++ 编写的2048游戏。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101920.jpg"
+          ]
+        },
+        {
+          "title": "OpenCC",
+          "link": "https://github.com/BYVoid/OpenCC",
+          "description": "中文繁体和简体互相转换的开源工具，C 语言开发的。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "摩托罗拉 Razr V3 手机的故事",
+          "link": "",
+          "description": "2003年7月，摩托罗拉公司发布了 Razr V3 手机。这部手机只是产品小组的一个普通设计，并不是公司主力产品。一开始，摩托罗拉预计销售量是30万部，上市前调高到80万部，上市价格是500美元。最终，这部手机全球一共卖出了1.3亿部，是有史以来最畅销的手机型号之一。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101921.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101922.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101923.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101924.jpg"
+          ]
+        },
+        {
+          "title": "苹果手表的潜力",
+          "link": "https://steveblank.com/2018/09/26/the-apple-watch-tipping-point-time-for-healthcare/",
+          "description": "9月份发布的 Apple Watch 4 在医疗保健上有重大突破。它有两个很好的功能，一是跌倒检测，二是带有美国食品药物管理局认可的心电图功能。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101925.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101926.jpg"
+          ]
+        },
+        {
+          "title": "马尾巴有什么用？",
+          "link": "https://blogs.scientificamerican.com/observations/whats-the-use-of-a-horses-tail/",
+          "description": "从大象到长颈鹿到斑马，大型哺乳动物都有尾巴，它们的目的是什么？这些尾巴看起来很相似 - 它们都是长而薄，上面有黑色的毛发，它们不停地来回摆动。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101927.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "本周图片",
+      "items": [
+        {
+          "title": "不是橙色的水果",
+          "link": "https://hashtag.ai/blog/2018/09/23/fruit.html",
+          "description": "如果你在搜索引擎里面，搜索\"不是橙色的水果\"，结果会恰恰相反，返回的都是橙色的水果。这证明，搜索引擎目前都是基于关键词，而不是语义搜索。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101928.jpg"
+          ]
+        },
+        {
+          "title": "火星基地",
+          "link": "https://twitter.com/elonmusk/status/1043250540379926528",
+          "description": "SpaceX 公司的老板马斯克，在推特上贴出一张图片，表示这是 SpaceX 公司火星基地的设计图片。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101929.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "新奇",
+      "items": [
+        {
+          "title": "穷人的降噪耳机",
+          "link": "http://e1z.ca/code/clog/?p=225",
+          "description": "开放式办公环境，为了避免打扰，通常我们需要一副降噪耳机。但是，好的降噪耳机很贵，有时做工也不令人满意。国外就有开发者想出 DIY 降噪耳机。只要找一副隔音效果较好的有线耳机，然后外接一个蓝牙接收器即可，总成本在300元人民币以下。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101930.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018101931.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "本周金句",
+      "items": [
+        {
+          "title": "如果一个人不想做某件事，通常不是由于客观条件不允许",
+          "link": "http://www.efficientlifeskills.com/if-you-want-to-make-progress-stop-lying-to-yourself/",
+          "description": "如果一个人不想做某件事，通常不是由于客观条件不允许，而是他有下面四种心态之一：恐惧（Fear）、排斥（Rejection）、自卑（Low self-esteem）、怠惰（Laziness）。",
+          "images": []
+        },
+        {
+          "title": "神经疾病（比如帕金森病、癫痫、阿尔茨海默病）都涉及神经系统的故障或损伤",
+          "link": "",
+          "description": "神经疾病（比如帕金森病、癫痫、阿尔茨海默病）都涉及神经系统（大脑，脊髓和神经）的故障或损伤，精神疾病的标志则是行为不安和情绪状态。",
+          "images": []
+        },
+        {
+          "title": "最早，我们做的是一个地理位置应用，人们到了一个地点，可以签到和发照片",
+          "link": "",
+          "description": "最早，我们做的是一个地理位置应用，人们到了一个地点，可以签到和发照片。我们发现，人们对位置不太在乎，只是希望将照片放在那里。后来，由于发展得不好，我们决定简化功能，只保留照片、评论，以及给照片标识位置，应用的名字改成了 Instagram。",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

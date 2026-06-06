@@ -1,0 +1,408 @@
+{
+  "title": "科技爱好者周刊（第 351 期）：GitHub Issues（几乎）是最好的笔记应用",
+  "link": "https://www.ruanyifeng.com/blog/2025/06/weekly-issue-351.html",
+  "number": 351,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "GitHub Issues（几乎）是最好的笔记应用",
+          "link": "https://github.com/features/issues",
+          "description": "本文介绍了 GitHub Issues 作为笔记应用的优势，包括免费、支持标签、Markdown、代码高亮、图表、内部链接、评论搜索、多端客户端、API 等。作者 Simon Willison 认为它是世界上最好的笔记应用，唯一缺点是没有离线支持。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060101.webp",
+            "https://cdn.beekka.com/blogimg/asset/202505/bg2025053102.webp",
+            "https://cdn.beekka.com/blogimg/asset/202505/bg2025053105.webp",
+            "https://cdn.beekka.com/blogimg/asset/202505/bg2025053103.webp",
+            "https://cdn.beekka.com/blogimg/asset/202505/bg2025053104.webp",
+            "https://cdn.beekka.com/blogimg/asset/202505/bg2025053106.webp",
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060407.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "稀土掘金\"夏日寻宝\"",
+          "link": "https://sourl.co/cFpPWp",
+          "description": "国内开发者社区稀土掘金与 Trae 合作推出探索 Trae 智能编程世界的寻宝活动。新用户完成任务可得积分，老用户邀请新人也可攒积分，积分可兑换大疆 Pocket 3、Apple watch、京东卡、机械键盘等奖品。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060504.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "脑脊接口",
+          "link": "https://news.cgtn.com/news/2025-03-05/China-conducts-4th-brain-spine-interface-surgery-on-paralyzed-patients-1Bux8OhJ8ZO/p.html",
+          "description": "上海中山医院尝试脑脊接口手术治疗瘫痪。在大脑皮层植入电极，将脑电波信号发送到脊髓神经，搭建人工桥梁。今年1月手术成功，使一名瘫痪患者在术后24小时内恢复站立和行走能力。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060102.webp"
+          ]
+        },
+        {
+          "title": "无血型的人造血液",
+          "link": "https://www.tokyoweekender.com/entertainment/tech-trends/japanese-scientists-develop-artificial-blood/",
+          "description": "日本科学家从过期捐献血液中提取血红蛋白，制作保护壳消除表面抗原，制成无血型人造血液，可输送给不同血型的人体。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060314.webp"
+          ]
+        },
+        {
+          "title": "Windows 11 开始菜单是 React Native 应用",
+          "link": "https://winaero.com/windows-11-start-menu-revealed-as-resource-heavy-react-native-app-sparks-performance-concerns/",
+          "description": "有性能问题，点击开始菜单可能让一个 CPU 核心飙升到30%到70%的使用率。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202505/bg2025053006.webp"
+          ]
+        },
+        {
+          "title": "日本邮政推出数字地址",
+          "link": "https://www.japantimes.co.jp/business/2025/05/27/companies/japan-post-digital-address/",
+          "description": "用户可领取一个7位数字代表本人地址，邮寄时只需输入数字，搬家也可保持数字地址不变。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202505/bg2025052904.webp"
+          ]
+        },
+        {
+          "title": "微软 .NET 代码仓库允许 AI 自动提交 PR 出现问题",
+          "link": "https://nmn.gl/blog/ai-scam",
+          "description": "AI 自信地提交有 Bug 的代码，人类程序员指出错误后 AI 坚持没错，人类不得不反复解释。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202505/bg2025052517.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "我的 Canonical 面试经历",
+          "link": "https://dustri.org/b/my-experience-with-canonicals-interview-process.html",
+          "description": "Canonical 是 Ubuntu 背后的公司，作者记录面试经历，从初试到老板终面，最重要的问题居然是高中成绩好不好。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060203.webp"
+          ]
+        },
+        {
+          "title": "microSD 卡可靠吗？",
+          "link": "https://old.reddit.com/r/raspberry_pi/comments/1l0v25s/how_reliable_are_microsd_cards_well_as_it_turns/",
+          "description": "作者测试了200多张卡，发现 microSD 保存数据可靠性很差，数据读写循环3000次后大部分卡会故障。评价了10多个常见品牌作为购买参考。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060204.webp"
+          ]
+        },
+        {
+          "title": "Go 不再修改错误处理的语法",
+          "link": "https://go.dev/blog/error-syntax",
+          "description": "Go 语言错误处理因返回单独值导致代码冗余，团队尝试多种方案后宣布不再寻求更好写法，保持现状。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060403.webp"
+          ]
+        },
+        {
+          "title": "NLWeb 协议简介",
+          "link": "https://glama.ai/blog/2025-06-01-what-is-nlweb",
+          "description": "微软提出的接口协议，类似 MCP，是网站与 AI 大模型的对话协议，方便大模型从网站获取数据。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060309.webp"
+          ]
+        },
+        {
+          "title": "运行本地 AI 的教程",
+          "link": "https://anthonylewis.com/2025/06/01/run-your-own-ai/",
+          "description": "使用 Python 工具 llm 快速在本地计算机上运行 AI 模型的短文。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060404.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Paged.js",
+          "link": "https://www.pagedjs.org/",
+          "description": "一个使用 Markdown 语法的排版系统。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060308.webp"
+          ]
+        },
+        {
+          "title": "RsyncUI",
+          "link": "https://github.com/rsyncOSX/RsyncUI",
+          "description": "开源的 Mac 应用，提供 rsync 图形界面，用于与远程服务器传输文件。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202505/bg2025053005.webp"
+          ]
+        },
+        {
+          "title": "Donut",
+          "link": "https://donutbrowser.com/",
+          "description": "浏览器的编排器，可以保存各种不同浏览器配置，根据需要快速启动。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202505/bg2025053001.webp"
+          ]
+        },
+        {
+          "title": "Read Frog（陪读蛙）",
+          "link": "https://readfrog.mengxi.work/zh",
+          "description": "浏览器插件，可翻译页面、提取文章主要内容、给出单词句子详细解释，代码开源。",
+          "user": "mengxi-ream",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6956",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202505/bg2025053007.webp"
+          ]
+        },
+        {
+          "title": "词小悟",
+          "link": "https://www.example.com",
+          "description": "主打图片识记单词的微信小程序。",
+          "user": "fluidog",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6962",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202505/bg2025053101.webp"
+          ]
+        },
+        {
+          "title": "time.is 替代品",
+          "link": "https://www.example.com",
+          "description": "开源的日期时间网站。",
+          "user": "airyland",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6970",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060106.webp"
+          ]
+        },
+        {
+          "title": "naviix",
+          "link": "https://github.com/wswmsword/naviix",
+          "description": "网页键盘导航库，通过方向键选取网页焦点元素。",
+          "user": "wswmsword",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6975",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060301.webp"
+          ]
+        },
+        {
+          "title": "go-v2ex",
+          "link": "https://github.com/seth-shi/go-v2ex",
+          "description": "基于 Go 语言的命令行版 V2EX 客户端。",
+          "user": "seth-shi",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6978",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060303.webp"
+          ]
+        },
+        {
+          "title": "iceframe",
+          "link": "https://www.example.com",
+          "description": "开源的 Web 即时通信系统，基于 webrtc。",
+          "user": "iamtsm",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6986",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060502.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI 相关",
+      "items": [
+        {
+          "title": "AI 模型下载器",
+          "link": "https://www.example.com",
+          "description": "谷歌新发布的安卓 App，允许用户在手机运行 Hugging Face 上的开源 AI 模型，让手机运行本地 AI 模型。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060109.webp"
+          ]
+        },
+        {
+          "title": "Bing 视频生成",
+          "link": "https://www.example.com",
+          "description": "微软 Bing 搜索引擎加入视频生成功能，使用 OpenAI 的 Sora 模型生成免费视频，目前仅在 Bing 手机 App 上开放。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060311.webp"
+          ]
+        },
+        {
+          "title": "AIDocGenius（智能文档助手）",
+          "link": "https://github.com/jiangmuran/AIDocGenius",
+          "description": "Python 脚本，集成 AI 文档摘要、翻译、分析和格式转换。",
+          "user": "jiangmuran",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6958",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060304.webp"
+          ]
+        },
+        {
+          "title": "发型 AI 工具",
+          "link": "https://www.example.com",
+          "description": "免费、免注册的换发型、发色的 AI 工具。",
+          "user": "twjiem",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6961",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202505/bg2025053009.webp"
+          ]
+        },
+        {
+          "title": "epub 阅读助手",
+          "link": "https://readbridge.cc",
+          "description": "AI 驱动的 epub 阅读助手，通过 AI 分析书里的句子，在线试用。",
+          "user": "WindChimeEcho",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6977",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060302.webp"
+          ]
+        },
+        {
+          "title": "TEN VAD",
+          "link": "https://github.com/TEN-framework/ten-vad",
+          "description": "轻量级 AI 模型，检测音频帧中是否存在人声。",
+          "user": "bluemotional",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6979",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060304.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "盲人书库",
+          "link": "https://www.example.com",
+          "description": "中国国家图书馆制作的盲人书库，全站使用无障碍技术，所有内容可有声播放。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060115.webp"
+          ]
+        },
+        {
+          "title": "大学生创新创业项目资源库",
+          "link": "https://www.example.com",
+          "description": "免费的文档资料库，包含互联网+、挑战杯、国创赛、SYB、三创等主流双创赛事。",
+          "user": "urongda",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6959",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202505/bg2025053008.webp"
+          ]
+        },
+        {
+          "title": "通辽宇宙知识库",
+          "link": "https://www.tongliaouniverse.cn",
+          "description": "专为 B 站 UP 主\"小约翰可汗\"粉丝打造的互动式历史探索平台。",
+          "user": "Acorn2",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6990",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060501.webp"
+          ]
+        },
+        {
+          "title": "Reddit 热门帖子聚合网站",
+          "link": "https://www.example.com",
+          "description": "Reddit 热门帖子聚合网站，可以指定多个频道。",
+          "user": "zhangchenchen",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6957",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202505/bg2025053010.webp"
+          ]
+        },
+        {
+          "title": "美国地址生成器",
+          "link": "https://www.usaddrgen.com/zh/",
+          "description": "生成美国虚构身份数据，包括地址、个人信息、就业状况、信用卡。",
+          "user": "watianle",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6972",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060201.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "班克斯的新作品",
+          "link": "https://www.smithsonianmag.com/smart-news/banksy-unveils-new-lighthouse-mural-with-the-words-i-want-to-be-what-you-saw-in-me-in-france-180986719/",
+          "description": "班克斯在法国马赛市一面墙上创作新作品：画了金属安全柱的倒影，是一座亮灯的灯塔，下方写着\"我想成为你所看到的我\"。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060305.webp",
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060306.webp",
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060307.webp"
+          ]
+        },
+        {
+          "title": "ChatGPT 的散文能力",
+          "link": "https://www.example.com",
+          "description": "一位美国用户让 ChatGPT 用文学语言描述纽约的生活，AI 写出了堪比散文家的文字。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202505/bg2025052516.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "太阳死亡时",
+          "link": "https://www.space.com/astronomy/when-the-sun-dies-could-life-survive-on-the-jupiter-ocean-moon-europa",
+          "description": "大约45亿年后，太阳将进入红巨星阶段，吞噬水星金星，地球也将毁灭。太阳系宜居带向外扩展，木卫二可能成为新的生命家园。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060401.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "炒作编码",
+          "link": "https://simonwillison.net/2025/May/31/steve-krouse/",
+          "description": "一种新的编码方式：边刷抖音边让 AI 编码，出错就让 AI 再试，不阅读输出，最后如果无法运行就等待下一个模型。",
+          "user": "Simon Willison",
+          "user_link": "https://simonwillison.net/2025/May/31/steve-krouse/"
+        },
+        {
+          "title": "自己动手做点什么",
+          "link": null,
+          "description": "在机器大量生产平庸之作的时代，自己动手做点什么吧。让它不完美，让它粗糙。",
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "养成新习惯需要66天到8个月",
+          "link": "https://thelogicaloptimist.com/index.php/2015/10/25/the-21-day-myth-create-new-habit/",
+          "description": "一项研究称，养成新的生活习惯平均需要66天，最长需要8个月。",
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "下一代不知道图书馆的用途",
+          "link": null,
+          "description": "习惯使用 AI 大模型的下一代人，将不知道图书馆的用途。",
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "生命中最好的时刻",
+          "link": "https://terriblesoftware.org/2025/04/23/the-hidden-cost-of-ai-coding/",
+          "description": "生命中最好的时刻是那些为了完成困难而有价值的事情，自愿将身心发挥到极限的时刻。",
+          "user": "米哈里·契克森米哈赖",
+          "user_link": "https://terriblesoftware.org/2025/04/23/the-hidden-cost-of-ai-coding/"
+        }
+      ]
+    }
+  ]
+}

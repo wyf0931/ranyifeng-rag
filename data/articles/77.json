@@ -1,0 +1,384 @@
+{
+  "title": "科技爱好者周刊：第 77 期",
+  "link": "https://www.ruanyifeng.com/blog/2019/10/weekly-issue-77.html",
+  "number": 77,
+  "sections": [
+    {
+      "name": "刊首语",
+      "items": [
+        {
+          "title": "刊首语",
+          "description": "十一长假，我看完了韩国电视剧[《阿尔布拉罕宫的回忆》](https://movie.douban.com/subject/27603700/)。\n\n我推荐大家也去看看这个电视剧，不是因为有多好看，而是因为它反映了未来的娱乐业、游戏业的方向。\n\n在电视剧中，主人公遇到了一款 AR 游戏，游戏的虚拟世界与真实世界发生了重合。它应该是世界第一部主要情节发生在 AR 游戏里面的电视剧。\n\n所谓 AR 就是\"增强现实\"（augmented reality），在现实世界上面叠加一个虚拟层，对现实进行了虚拟增强。比如，现实世界是一片沙漠，AR 就在上面增加几只骆驼、一个绿洲，你用游戏设备就能看见，还可以与它们互动，这些骆驼和绿洲只在 AR 世界存在。\n\n主人公走在空旷的大街上。\n\n突然，远处跑来了一队骑兵。\n\n一个阿拉贡王国的武士从天而降，与主人公决斗。\n\n主人公在小酒馆的厕所里面，找到了宝剑，才能击败武士。\n\n一旦脱下隐形眼镜，一切就恢复正常。\n\n电视剧里面，几乎无法分辨，哪个是虚拟世界，哪个是现实世界。我相信总有一天，技术可以做到这一点。那时，你会宁愿活在虚拟世界中，那里跟现实世界一样真实，但是更精彩，你还有漂亮的 avatar（化身）。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019100907.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019100916.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019100908.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019100909.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019100910.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019100911.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019100912.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019100913.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "谱蓝家庭保障顾问",
+      "items": [
+        {
+          "title": "谱蓝家庭保障顾问",
+          "description": "本期周刊得到谱蓝公司的支持，非常感谢。\n\n谱蓝是一个理财服务品牌，致力于将 CFP 国际理财标准与人工智能相结合，目前正在推广家庭的财务保障顾问服务。它提供专家咨询和规划服务，为用户设计最合适自己家庭的理财和保险配置。\n\n大家可能像我一样，一看见保险代理人推销保险，就唯恐避之不及。谱蓝针对市场的这种乱象，采用了完全不一样的方法：专业的理财规划师根据客户需求，先梳理家庭的财务数据，评估最需要保障的环节，然后把数据输入《谱蓝 Pro 人工智能系统》，自动在数据库匹配最合适的理财和保险产品，自动生成个性化家庭保障方案。\n\n谱蓝的创始人是一直支持这个周刊的孙明展老师。他毕业于广州中山大学，曾任金融系、统计系的（兼职）硕士导师，在一家世界500强保险公司担任过精算师。\n\n为了推广理财知识，提高家庭财务保障，他的同名公号 **\"孙明展\"** ，一直在普及相关知识。大家可以查看订阅，值得一读。\n\n**本次，谱蓝公司向这个周刊的读者，免费赠送\"家庭保障定制化服务\"** ，借助上面提到的《谱蓝 Pro 系统》为大家量身定制属于自己的保障方案，当好大家的财务顾问。\n\n微信扫描关注上面的公众号 **\"孙明展\"** ，然后输入 **\"阮一峰 + 你的手机号码\"** ，就可以参加这个活动了。参加者都可以获赠一份价值 800元 的免费保障规划。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019100917.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资讯",
+      "items": [
+        {
+          "title": "垂直农业",
+          "link": "https://www.economist.com/science-and-technology/2019/08/31/new-ways-to-make-vertical-farming-stack-up",
+          "description": "苏格兰一家公司正在开发\"垂直农业\"，在室内种植草莓、甘蓝、莴苣和香菜。\n\n农作物种在托盘里面，托盘一共有9层，40平米的占地可以种植350平米的农作物。每个托盘上方有1000个发光二极管提供照明。手机控制温度、湿度、通风，以及水和养分的培植系统，可以远程操作，一个人就能经营整个农场。\n\n整套系统的成本主要是电力。为了省电，LED 只发出植物所需的颜色，而不是纯白光的全谱光线。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201909/bg2019090802.jpg"
+          ]
+        },
+        {
+          "title": "美国能耗下降",
+          "link": "https://reason.com/2019/10/09/the-economy-keeps-growing-but-americans-are-using-less-steel-paper-fertilizer-and-energy/",
+          "description": "研究人员发现，美国经济发展的同时，资源消耗却在下降。不仅人均消耗更少的资源，而且一些最重要的生产要素（如钢铁、铜、肥料、木材和纸张等）的消费总量也减少了。\n\n上图是美国金属的消费总量变化图。可以看到2000年前后达到顶点，然后就开始下降。其他生产要素也是类似变化。2017年美国的能源总使用量比2008年的峰值下降了近2％，但是同期的 GDP 增长了15％以上。\n\n研究人员认为，这个发现可能会改变我们的传统观念，即经济增长一定伴随资源消耗的增长和自然环境的压力。一旦经济进入成熟阶段以后，增长可能会带来资源消耗的减少。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019101001.jpg"
+          ]
+        },
+        {
+          "title": "反太阳能发电",
+          "link": "https://www.intelligentliving.co/anti-solar-panel-generates-electricity-from-darkness/",
+          "description": "斯坦福大学的科学家制造了一个反太阳能发电装置，该装置专门在夜间发电。\n\n这个装置的发电不是利用太阳光，而是利用热能。夜间大气的温度低于地表温度，利用这个热能差来发电。它的上部是一个20厘米铝盘，漆成黑色，成功地创造了足够的能量为单个小型 LED 灯泡供电（下图）。\n\n如果这个装置的潜力巨大，甚至有可能在白天运行。目前，它还处于概念产品阶段，发电效率与太阳能发电还相去甚远，每平方米发电低于0.5瓦特。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019101002.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019101003.jpg"
+          ]
+        },
+        {
+          "title": "探亲服务",
+          "link": "https://www.newyorker.com/culture/annals-of-inquiry/in-france-elder-care-comes-with-the-mail",
+          "description": "法国推出一项收费服务，每月支付37.90欧元，让邮递员每周探望一次独居老人，看看他们是否一切正常，跟他们说说话，有需要的话还可以帮忙解决。\n\n我觉得这个服务很有必要，也很有前景，建议国内的快递公司也可以推出类似的收费服务。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019101004.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019101006.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019101007.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019101005.jpg"
+          ]
+        },
+        {
+          "title": "AI 面试系统",
+          "link": "https://www.telegraph.co.uk/news/2019/09/27/ai-facial-recognition-used-first-time-job-interviews-uk-find/",
+          "description": "联合利华公司开始在面试中，采用 AI 系统为应聘者打分。这个系统跟踪应聘者的脸部，根据他/她回答问题时的语言、语气和面部表情，给出一个分数，评估是否能胜任工作。\n\n开发这项技术的 Hirevue 公司声称，这套系统使得公司在招聘的第一阶段可以面试更多的应聘者，而不仅仅依靠简历，提供了更可靠、更客观的指标，没有人为偏见。目前，该技术已经在英国进行了10万次面试。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201909/bg2019093001.jpg"
+          ]
+        },
+        {
+          "title": "亚马逊智能设备",
+          "description": "亚马逊公司推出一组智能设备，包括指环、眼镜、烤箱。它们共同的特点，就是具有语音操作界面，即你可以跟它们对话、发出指令。以后，你看到有人在跟自己的戒指说话，比如询问天气，不要感到奇怪。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019100717.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019100716.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019100715.jpg"
+          ]
+        },
+        {
+          "title": "今年的诺贝尔化学奖",
+          "description": "今年的诺贝尔化学奖颁发给了一个日本人。这已经是过去19年第19个得奖的日本人了。出现一两个诺奖得主，或许可以解释为个人天才，但是这么多只能说明整个国家的高等教育和基础研究实力强大。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019100920.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201909/bg2019091001.jpg"
+          ]
+        },
+        {
+          "title": "智利日全食照片",
+          "description": "7月2日的日全食照片，可以清晰看到日珥（太阳喷射出的气流）。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201909/bg2019091806.jpg"
+          ]
+        },
+        {
+          "title": "加州大学洛杉矶分校四足机器人",
+          "description": "建造了一个四足机器人，非常灵活，可以前后移动，也可以左右移动。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201909/bg2019091002.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201909/bg2019091003.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "谷歌新增链接的说明符",
+          "link": "https://webmasters.googleblog.com/2019/09/evolving-nofollow-new-ways-to-identify.html",
+          "description": "谷歌宣布，除了`nofollow`以外，新增两个 HTML 语言中的链接说明，帮助搜索引擎更好地判断链接的性质。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201909/bg2019091103.jpg"
+          ]
+        },
+        {
+          "title": "Netlify 的 FaunaDB 集成",
+          "link": "https://www.netlify.com/blog/2019/09/10/announcing-the-faunadb-add-on-for-netlify/",
+          "description": "Netlify 是一个静态网站服务提供商，它现在接入了云数据库 FaunaDB，为静态网站提供了后端数据库功能。"
+        },
+        {
+          "title": "使用 Socket.io 开发一个最简单聊天应用",
+          "link": "https://hackernoon.com/an-overview-of-frontend-and-backend-interaction-48l031ba",
+          "description": "本文介绍如何通过 Socket.io 这个库，开发一个前后端通过 WebSocket 协议互动的最简单聊天应用。"
+        },
+        {
+          "title": "为什么 Firefox 的 DNS over HTTPS 是危险的？",
+          "link": "https://ungleich.ch/en-us/cms/blog/2019/09/11/turn-off-doh-firefox/",
+          "description": "传统的 DNS 查询不加密，所以不安全。新的 DNS over HTTPS（简写 DoH）是加密查询，Firefox 打算默认开启，本文认为，这样会让所有 DNS 查询都导向一个实体，是危险的。"
+        },
+        {
+          "title": "5G：炒作与现实",
+          "link": "http://www.telirati.com/2019/08/5g-hype-vs-reality.html",
+          "description": "5G 通信是现在的热点，但是很大一部分是炒作。本文分析 5G 的应用场景，以及它的代价和局限。"
+        },
+        {
+          "title": "Excel 的19个替代品",
+          "link": "https://startupstash.com/excel-alternatives/",
+          "description": "本文介绍可以替代 Excel 的19个在线电子表格。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201909/bg2019091301.jpg"
+          ]
+        },
+        {
+          "title": "我最喜欢的 Chrome 插件",
+          "link": "https://www.silvestar.codes/articles/my-favorite-chrome-extensions-for-web-development-mostly/",
+          "description": "作者是一个前端程序员，介绍自己使用的专用于 Web 开发的 Chrome 浏览器插件。"
+        },
+        {
+          "title": "雇佣 Java 程序员的完整指南",
+          "link": "https://www.hackerearth.com/recruit/resources/e-books/hire-java-developer/",
+          "description": "Java 程序员招聘非常常见，本文总结了企业对于初级、中级、高级、架构师各个级别的 Java 程序员应该考察哪些方面。"
+        },
+        {
+          "title": "长途货车司机是中国经济的无名英雄",
+          "link": "https://www.economist.com/china/2019/09/12/chinas-long-distance-lorry-drivers-are-unsung-heroes-of-its-economy",
+          "description": "《经济学人》杂志的报道，中国的制造业和网购都依赖卡车司机，但是没有人知道他们。"
+        },
+        {
+          "title": "未来的游戏物理学",
+          "link": "https://www.escapistmagazine.com/v2/2019/09/10/next-gen-video-game-physics-dennis-gustafsson-interview/",
+          "description": "本文是一个瑞典游戏开发者的专访，介绍他对游戏中的物理学应用的看法。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201909/bg2019091601.jpg"
+          ]
+        },
+        {
+          "title": "追寻核聚变",
+          "link": "https://www.bloomberg.com/news/features/2019-09-28/startups-take-aim-at-nuclear-fusion-energy-s-biggest-challenge",
+          "description": "核电站都是核裂变反应堆，但是更有前景的是核聚变反应堆。这篇长篇的新闻报道，介绍核聚变的研究历史，以及目前的进展。"
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Postwoman",
+          "description": "一个在线 HTTP 请求调试工具，类似 Postman，不过是 Web 版。"
+        },
+        {
+          "title": "WTF",
+          "link": "https://wtfutil.com/",
+          "description": "一个命令行的信息仪表盘，可以定制显示内容。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201908/bg2019082806.jpg"
+          ]
+        },
+        {
+          "title": "gradex",
+          "link": "https://github.com/jwenjian/gradex",
+          "description": "一个开源的在线工具，从上传的图片里面提取两种主色，生成一张渐变的背景图，可以下载。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201908/bg2019082905.jpg"
+          ],
+          "user": "jwenjian",
+          "user_link": "https://github.com/ruanyf/weekly/issues/814"
+        },
+        {
+          "title": "一个命令行的地牢漫游文本游戏",
+          "description": "可以感受一下早期的文字游戏。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201908/bg2019083001.jpg"
+          ]
+        },
+        {
+          "title": "NetNewsWire",
+          "description": "MacOS 的桌面 RSS 阅读器，免费软件。"
+        },
+        {
+          "title": "KeeWeb",
+          "link": "https://keeweb.info/",
+          "description": "免费的密码管理器，有桌面版和 Web 版，兼容 Keepass 格式。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201908/bg2019083103.jpg"
+          ]
+        },
+        {
+          "title": "Xnip",
+          "link": "http://zh.xnipapp.com/",
+          "description": "国产的 Mac 截图软件。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201909/bg2019090107.jpg"
+          ],
+          "user": "ZekeDa",
+          "user_link": "https://github.com/ruanyf/weekly/issues/821"
+        },
+        {
+          "title": "dfile",
+          "link": "https://dfile.app",
+          "description": "一种极简的基于 IPFS 的文件上传和分享工具。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201909/bg2019090201.jpg"
+          ],
+          "user": "coolcode",
+          "user_link": "https://github.com/ruanyf/weekly/issues/826"
+        },
+        {
+          "title": "dbdiagram.io",
+          "description": "创建数据库的实体-关系图的工具。"
+        },
+        {
+          "title": "flowshare",
+          "link": "https://flowshare.io/",
+          "description": "该网站是一个 Howto 网站，允许用户上传多张图片，并添加文字说明，解释如何一步步完成一项任务，比如[《如何为谷歌启用双因素认证》](https://flowshare.io/flow/how-to-turn-on-2fa-for-google)。"
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "日语语法指南",
+          "link": "https://res.wokanxing.info/jpgramma/",
+          "description": "中文的日语初学者教程。",
+          "user": "pizzamx",
+          "user_link": "https://github.com/ruanyf/weekly/issues/836"
+        },
+        {
+          "title": "Python PEG 解析器系列文章中文翻译",
+          "description": "Python 之父 Guido van Rossum 正在连载的 PEG 解析器系列文章的中文翻译，对于了解 Python 的前沿动态很有帮助。",
+          "user": "chinesehuazhou",
+          "user_link": "https://github.com/ruanyf/weekly/issues/843"
+        },
+        {
+          "title": "Python 小众特性",
+          "description": "这个仓库收集一些有趣且鲜为人知的 Python 特性，内容是从英语翻译而来的。",
+          "user": "fengrussell",
+          "user_link": "https://github.com/ruanyf/weekly/issues/849"
+        },
+        {
+          "title": "Free Sketch Resource",
+          "description": "免费的 Sketch 模板文件下载，主要是一些电子设备（比如苹果手机、安卓手机）的设计模板图。"
+        },
+        {
+          "title": "机器学习漫画",
+          "link": "https://cloud.google.com/products/ai/ml-comic-1/",
+          "description": "谷歌推出的机器学习漫画，解释基本知识。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201909/bg2019091605.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "5G 基站",
+          "link": "https://www.wsj.com/articles/cities-are-saying-no-to-5g-...",
+          "description": "下图是美国亚特兰大街头的一个 5G 基站。5G 的频率比 4G 高，基站体积小很多，但是覆盖范围小，在城市中必须大量部署。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201908/bg2019082502.jpg"
+          ]
+        },
+        {
+          "title": "现代小房子",
+          "link": "https://themindcircle.com/modern-tiny-house/",
+          "description": "澳大利亚一对夫妻设计了一栋小房子，只有卡车大小，9米长，2.5米宽，而且装有轮子可以快速移动。房子内设置非常齐全，有两个卧室和两个淋浴间。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201908/bg2019082503.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201908/bg2019082504.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201908/bg2019082505.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201908/bg2019082506.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201908/bg2019082507.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "北纬41度线的数据中心",
+          "description": "谷歌最近宣布在犹他州盐湖城新建一个大型数据中心。这是继微软、Facebook、Apple、雅虎和其他公司以后，又一家沿着北纬41度线新建的数据中心。\n\n上图每一个红点就是一个数据中心，投资数十亿美元。\n\n为什么这些互联网公司都选择北纬41度线，新建数据中心？\n\n这是因为美国东西向的光缆，大部分沿着这条线埋设，而数据中心距离光缆越近越好。\n\n那么，为什么电信服务商选择北纬41度埋设光缆呢？\n\n因为美国第一条横贯北美大陆的铁路，是沿着这条线铺设的。根据美国法律，这条1869年完工的铁路两侧的土地，都属于联合太平洋铁路公司。埋设光缆需要土地，如果你是电信公司，你肯定希望只与联合太平洋铁路这一家公司谈判土地使用权，而不是分开来跟许许多多个体谈判。\n\n那么，为什么第一条横贯北美大陆的铁路沿着北纬41度线架设呢？\n\n因为这条铁路的动工是在南北战争前夕，当时美国国会分裂，北方的议员希望这条铁路铺设在北方，南方的议员希望铺设在南方。从工程角度看，南线方案更理想，不需要穿越落基山脉，施工难度和成本都较低，而且冬季不会有大雪封路。但是投票前夕，双方已经决裂了，南方议员退出了国会，北方议员就投票通过了现在的方案。\n\n这条铁路的起点是在康涅狄格州的一个城市。它之所以被选中，因为此地向西直到落基山脉，都是平原。而且，沿路有一条大河，可以为蒸汽机车提供了良好的锅炉水源。同样的，这条河现在用于数据中心的冷却。这个作为起点的康涅狄格州城市就在北纬41度线上。\n\n150多年前的政治，就这样决定了数十亿美元的现代数据中心投资。"
+        },
+        {
+          "title": "星巴克的储值卡",
+          "link": "https://jpkoning.blogspot.com/2019/08/starbucks-monetary-superpower.html",
+          "description": "下面这篇文章解释了，为什么很多公司让用户预付款购买服务，而且预付款很难拿回来。\n\n星巴克发行储值卡，用户可以把钱存在里面，然后用储值卡购买咖啡。目前，星巴克公司所有储值卡的余额为16亿美元，这相当于用户给星巴克免费贷款16亿美元。\n\n星巴克不是唯一一家从客户那里获得免费贷款的公司，PayPal 也是如此。持有 PayPal 余额的客户实际上是 PayPal 的债权人，PayPal 的客户贷款目前超过200亿美元。与星巴克一样，PayPal 也不会向客户支付任何利息。\n\n但是 PayPal 必须把这些钱放在银行，防止用户随时提款。星巴克的储值卡只能用来买咖啡，所以星巴克可以随时动用这些钱，用于自己的用途。\n\n更有利的是，向银行借钱，银行不会忘记债务，但是让客户使用储值卡，客户可能会忘记这些钱。这意味着许多储值卡和礼品卡，其实没有动用。\n\n每年，星巴克都承认部分储值卡负债将永久消失，这称为\"破损\"，星巴克将此金额视为利润。2018年，该公司确认了1.55亿美元的破损，约占所有储值余额的10％。这相当于星巴克从储值卡得到的贷款利率是-10％！\n\n为了鼓励用户使用储值卡，将更多的钱存在里面，星巴克规定使用储值卡购买咖啡，用户可以得到等值的星星。一定数量的星星就可以换取免费的咖啡。\n\n这就是为什么商家都希望有储值卡。前提是这些商家必须拥有像星巴克这么大的实体店网络。例如，沃尔玛比星巴克大得多，它的礼品卡余额也很多。"
+        }
+      ]
+    },
+    {
+      "name": "言论和数字",
+      "items": [
+        {
+          "description": "每次打开一个源码文件，你都应该让它变得更好。",
+          "user": "DHH",
+          "user_link": "https://spicermatthews.com/blog/spicers-rules-on-how-and-when-to-test-your-code/"
+        },
+        {
+          "description": "最好的工程师不是写代码最多的工程师，而是做出未来可以少写代码的决策的工程师。",
+          "user": "Dan Goldin",
+          "user_link": "https://dangoldin.com/2019/09/16/goldilocks-and-the-three-implementations/"
+        },
+        {
+          "description": "印度的上网人口仅次于中国，2018年为5.66亿，今年将增长11%达到6.27亿（中国为超过8亿）。印度和中国是世界仅有的两个超过5亿上网人口的国家。但是，由于印度人均收入太低（仅为中国的四分之一），印度互联网企业的收入少得可怜，2018年印度数字广告支出仅为15.3亿美元，中国为850亿美元，世界第一的美国为1080亿美元。"
+        },
+        {
+          "description": "RMS（理查德.斯托曼）是一个伟大的人，但遗憾的是，他与更广阔的世界沟通有困难。历史上许多伟大的思想家都是如此。很可悲，这种事情发生在他这样的英雄人物身上，但我相信，只要人们继续为自由软件作斗争，历史会还给他公正。",
+          "user": "HN 读者",
+          "user_link": "https://news.ycombinator.com/item?id=20993811"
+        },
+        {
+          "description": "技术通常只是达到目的的手段，除非你在销售技术，否则追求时髦技术很无聊。我看到太多团队在复杂的技术堆栈上，投入了太多能量，只是为了看起来很酷。\n\n在内心深处，我只希望业务能够成功，干净和健全的系统架构是我追求的，只要能让业务跑起来，使用什么技术都无关紧要。",
+          "user": "HN 读者",
+          "user_link": "https://news.ycombinator.com/item?id=20990939"
+        },
+        {
+          "description": "一次性塑料用品的问题是，我们用一种可以持续数个世纪不降解的材料，制造只使用一次的产品。"
+        }
+      ]
+    },
+    {
+      "name": "招聘信息",
+      "items": [
+        {
+          "title": "高级前端工程师",
+          "link": "https://github.com/ruanyf/weekly/issues/798#issuecomment-540562541",
+          "description": "负责字节跳动的付费中台与作者收入相关产品，欢迎应届生/实习生应聘。工作地点：北京-海淀。从事 Web/Hybrid/Wap/小程序/Flutter 的前端开发工作，要求熟练使用至少一种主流前端开发框架，熟悉服务端 (Go/Node.js)/Flutter/TypeScript 开发者优先。具体要求和联系方式看[这里](https://github.com/ruanyf/weekly/issues/798#issuecomment-540562541)。"
+        },
+        {
+          "title": "秘猿科技",
+          "link": "https://github.com/ruanyf/weekly/issues/798#issuecomment-524289916",
+          "description": "秘猿科技是区块链创业公司，为加密经济提供区块链基础设施和服务。工作地点：杭州或 remote。本公司招聘区块链工程师、高级后端工程师、安全和测试工程师。详细要求和联系方式看[这里](https://github.com/ruanyf/weekly/issues/798#issuecomment-524289916)。"
+        }
+      ]
+    }
+  ]
+}

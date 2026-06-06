@@ -1,0 +1,377 @@
+{
+  "title": "科技爱好者周刊（第 354 期）：8000mAh 手机电池，说明了什么？",
+  "link": "https://www.ruanyifeng.com/blog/2025/06/weekly-issue-354.html",
+  "number": 354,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "8000mAh 手机电池，说明了什么？",
+          "description": "大家发现了吗，手机的电池正在越变越大。\n\n你可以看一下你的手机，电池容量是多少。\n\n仅仅三四年前，手机电池一般都是 4000mAh（毫安时），最多就到 5000mAh。\n\n但是在去年（2024年），电池容量增加到了 6000mAh。今年（2025年）更是出现好几部 [8000mAh 的手机](https://finance.sina.com.cn/tech/roll/2025-06-18/doc-infannhn8353576.shtml)。\n\n更让人惊奇的是，这些手机并没有因为更大的电池，而变得更重更厚。\n\n以某品牌的 8000mAh 手机为例，重量209克，厚度7.98毫米，跟一般的大屏手机差不多。\n\n为什么手机塞进了更多的电池，却没有变重？\n\n原因很简单，**电池技术在这几年出现了突破**。\n\n大家应该听说过\"固态电池\"。它不同于现在的锂电池，最大特点是更高的能量密度，也就是同样的重量可以储存更多的能量。\n\n但是，固态电池还在测试中，量产时间最快也要等到2027年。目前，真正进入市场的是\"[半固态电池](https://baike.baidu.com/item/%E5%8D%8A%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0/12578834)\"。\n\n**半固态电池介入传统锂电池与固态电池之间**，电解液是固态和液态的混合物。\n\n2023年4月份，宁德时代[宣布](https://wallstreetcn.com/articles/3686879)将要生产凝聚态电池，也就是半固态电池。\n\n根据厂家公布的数据，这种电池的能量密度是 500 Wh/kg，也就是每公斤可以储存0.5度电，传统锂电池的能量密度是 250 Wh/kg。\n\n所以，**手机从锂电池换成半固态电池，重量不变，电量翻一倍**，正好从 4000mAh 增加到 8000mAh。从时间上看，半固态电池是2023年发布，2024年投产，2025年进入消费电子产品，时间也刚好。\n\n可以预期，随着越来越多手机换成半固态电池和将来的固态电池，续航时间不再成为问题，充电焦虑将彻底消失。\n\n以今年发布的 8000mAh 手机为例，**续航时间就非常惊人**。根据[评测](https://www.sohu.com/a/905525880_115831)，它可以连续播放25小时的视频。也就是说，中度或轻度使用时，可以两天一充，甚至三天一充。\n\n半固态电池只有中国厂商量产了，目前只用于中国品牌的手机。三星旗舰手机 S25 Ultra 的电池容量，还停留在几年前的 5000mAh，苹果就更差劲了，iPhone 16 Pro 是 3582mAh，iPhone 16 Pro Max 是 4685mAh。所以，中国品牌手机在电池上是世界领先。\n\n固态电池的应用，不限于手机。有[报道](https://electrek.co/2025/06/23/byd-shuts-down-rumors-testing-seal-ev-with-solid-state-batteries/)说，比亚迪正在测试固态电池的汽车，续航里程居然可以达到1875公里。\n\n这意味着，一次充满电，可以从上海开到成都（直线距离1600公里），太不可思议了。\n\n固态电池还使得电动飞机成为可能。飞机需要大量能源，同时又不能有太大的起飞重量，固态电池正好满足。中国的电动飞行器，很可能会像电动汽车一样，成为下一个在全球竞争中脱颖而出的产业。",
+          "link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062501.webp",
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062502.webp",
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062503.webp",
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062504.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "世界最长的航线",
+          "link": "https://news.qq.com/rain/a/20250620A02OW200",
+          "description": "本周，中国东航宣布将开通中国到阿根廷的航线，这将是两国之间的唯一直航航线，也是世界最长航线。\n\n在地球仪上，从中国传过地心就是阿根廷，两国之间的距离，相当于赤道的一半。因此，地球任意两个城市之间，几乎不可能有更长航线了。\n\n赤道的长度是4万公里，这条航线是19,680公里。没有任何民航客机，可以一次性飞2万公里，所以这条航线中途会在新西兰落地休息。\n\n整个飞行时间大约24小时～25小时，十分辛苦，上海到新西兰要11个小时，新西兰到阿根廷又要十几个小时。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062515.webp",
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062516.webp"
+          ]
+        },
+        {
+          "title": "一家以色列的 AI 编程公司，上周以8000万美元被收购",
+          "link": "https://techcrunch.com/2025/06/18/6-month-old-solo-owned-vibe-coder-base44-sells-to-wix-for-80m-cash/",
+          "description": "一家以色列的 AI 编程公司，上周以8000万美元被收购。\n\n这家公司刚刚成立半年，31岁的创始人一开始是兼职的，现在全公司也只有8个人。\n\n它年初才成立，五月份首次实现盈利18.9万美元，六月份就以8000万美元被收购。\n\n这到底反映了我们正处在 AI 的泡沫，还是验证了 Sam Altman 的预言：\"AI 会创造一个人的独角兽（估值10亿美元的创业公司）\"。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062509.webp"
+          ]
+        },
+        {
+          "title": "比尔·盖茨与托瓦兹见面",
+          "link": "https://linuxiac.com/a-historic-photo-torvalds-and-gates-together/",
+          "description": "本周，比尔·盖茨与托瓦兹见面了。\n\n上面照片中，左一是微软 Azure 云服务的首席技术官 Mark Russinovich，他组织了这次饭局。\n\n左二是 Windows 创始人比尔·盖茨，右二是 Linux 创始人托瓦兹（Linus Torvalds），右一是 Windows NT 的首席架构师 Dave Cutler。\n\n比尔·盖茨与托瓦兹从未见过，这是两人第一次见面。多年前，Windows 和 Linux 互相将对方视为敌人，现在创始人都老了，终于一笑泯恩仇。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062507.webp"
+          ]
+        },
+        {
+          "title": "Stack Overflow 快要被 AI 消灭了",
+          "link": "https://www.facebook.com/uyiewnil/posts/pfbid0n2adkNrGgh8TEZXrMfJhRF7KhonUW8CUsPpsjNijoXXQtVbtFyNBWrJLwD7nFca2l",
+          "description": "问答网站 Stack Overflow，快要被 AI 消灭了。\n\n五月份，整个网站上的新发布问题只有20000个，跟刚上线的2008年下半年相仿。\n\n6月份更惨，截止到6月25日，新发布问题只有12015个。\n\n最高峰的2020年，每月的新问题超过30万个。它的访问量曾经排名全球前50名，就这样被 AI 淘汰了。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062511.webp"
+          ]
+        },
+        {
+          "title": "AI 影响了网站的访问量",
+          "link": "https://www.theregister.com/2025/06/22/ai_search_starves_publishers/",
+          "description": "一项研究确认，AI 影响了网站的访问量。\n\n研究发现，谷歌搜索的 AI 总结，让其他网站的访问量下降了30%。\n\n可以想像，随着 AI 大量使用，网站的访问人数还会大大下降。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062303.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "智能插头当作网站开关",
+          "link": "https://www.neilchen.co/blog/kasa",
+          "description": "作者想了一个很聪明的方法，将智能插头当作网站的浏览开关。\n\n如果本机通过 Wifi 检测到插头，就立刻修改`/etc/hosts`文件，使得某些社交网站无法访问。反之，拔出插头，则计算机将该文件再改回原样。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062302.webp"
+          ]
+        },
+        {
+          "title": "网页压缩算法比较",
+          "link": "https://blog.kowalczyk.info/a-5hum/compressing-for-the-browser-in-go.html",
+          "description": "服务器发送给浏览器的网页，一般都是压缩的，主要有四种算法：gzip、deflate、brotli、zstd。\n\n作者用 Go 语言测试，哪种压缩算法对服务器开销比较小。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062401.webp"
+          ]
+        },
+        {
+          "title": "巧解 Docker 镜像拉取失败",
+          "link": "https://mp.weixin.qq.com/s/1kQlYQnKGZg6HVNgmDjQfg",
+          "description": "本文介绍一种拉取 Docker 镜像的变通方法：通过 GitHub workflow 拉取，然后存储到阿里云个人镜像站，并给出脚本。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062402.webp"
+          ],
+          "user": "you8023",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7101"
+        },
+        {
+          "title": "CSS 的部分关键帧",
+          "link": "https://www.joshwcomeau.com/animation/partial-keyframes/",
+          "description": "本文是 CSS 中级教程，介绍 CSS 动画如果只写一个关键帧（起始/结束），也有很多应用场景。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062512.webp"
+          ]
+        },
+        {
+          "title": "让 Claude Code 使用其他模型",
+          "link": "https://nekonull.me/share/claude-code-3rd-party-model/",
+          "description": "Claude Code 只能使用自家模型，本文介绍使用 Claude Bridge，让它可以使用任意第三方模型，从而极大降低使用成本。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062405.webp"
+          ],
+          "user": "jerrylususu",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7114"
+        },
+        {
+          "title": "git notes 命令",
+          "link": "https://tylercipriani.com/blog/2022/11/19/git-notes-gits-coolest-most-unloved-feature/",
+          "description": "git 有一个鲜为人知的 notes 命令，可以往日志添加自定义数据，很适合为每次提交加入元数据。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062304.webp"
+          ]
+        },
+        {
+          "title": "如何减少 OpenAI 的音频/视频费用",
+          "link": "https://george.mand.is/2025/06/openai-charges-by-the-minute-so-make-the-minutes-shorter/",
+          "description": "作者让 OpenAI 概括一个视频的内容，意外发现，如果让文件的播放速度加快到2倍或3倍，OpenAI 的处理费用可以减少30%以上。\n\n原因可能是，加速会让一些短音节变得不明显，从而减少输入 token 的数量。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062601.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "postmarketOS",
+          "link": "https://postmarketos.org/",
+          "description": "一个专门适配移动设备的 Linux 发行版，适合将过时的手机变成 Linux 设备。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062506.webp"
+          ]
+        },
+        {
+          "title": "chrome2userscript",
+          "link": "https://chrom2userscript.pages.dev/",
+          "description": "一个命令行工具，可以将浏览器插件转成 userscript，方便移植。",
+          "images": []
+        },
+        {
+          "title": "Reeden",
+          "link": "https://reeden.app/",
+          "description": "纯本地的电子书阅读软件，支持多个平台，免费版没有数据同步和 AI 功能。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062404.webp"
+          ],
+          "user": "unclezs",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7109"
+        },
+        {
+          "title": "AdaCpp",
+          "link": "https://www.adacpp.com/",
+          "description": "一个基于浏览器的在线 C++ 学习环境，可以编辑/编译代码，并有 AI 的代码解释。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062608.webp"
+          ],
+          "user": "xueywn",
+          "user_link": "https://www.adacpp.com/"
+        },
+        {
+          "title": "Moocup",
+          "link": "https://moocup.jaydip.me/",
+          "description": "一个为图片加上背景渐变色的在线工具。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062301.webp"
+          ]
+        },
+        {
+          "title": "浸入式学语言助手",
+          "link": "https://github.com/xiao-zaiyi/illa-helper",
+          "description": "开源的浏览器翻译插件，根据设定的外语水平，帮助在日常网页浏览中自然地学习外语。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062406.webp"
+          ],
+          "user": "xiao-zaiyi",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7126"
+        },
+        {
+          "title": "数码看板解决方案",
+          "link": "https://github.com/yyfd2013zy/data-panel",
+          "description": "通过局域网展示数位看板的解决方案。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062407.webp"
+          ],
+          "user": "yyfd2013zy",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7127"
+        },
+        {
+          "title": "QueryBox",
+          "link": "https://github.com/zhnd/query-box",
+          "description": "跨平台的桌面端 GraphSQL 调试工具。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062505.webp"
+          ],
+          "user": "zhnd",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7131"
+        },
+        {
+          "title": "RingLink",
+          "link": "https://ring.link/",
+          "description": "国产的远程设备互通组网的工具，类似于 Tailscale。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062609.webp"
+          ],
+          "user": "Aplusink",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7143"
+        },
+        {
+          "title": "LogTape",
+          "link": "https://github.com/dahlia/logtape",
+          "description": "JS 日志库，号称性能好，功能强，参见介绍文章。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062305.webp"
+          ]
+        },
+        {
+          "title": "Project Indigo",
+          "link": "https://www.adobe.com/products/photoshop/indigo.html",
+          "description": "Adobe 推出的一款免费的 iPhone 相机，比原生相机更简单易用，融入了 AI 的自动调整，参见介绍文章。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062612.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI 相关",
+      "items": [
+        {
+          "title": "谷歌 CLI 工具",
+          "link": "https://google-gemini.github.io/gemini-cli/",
+          "description": "谷歌推出的基于终端的 AI 客户端，可以完成各种 AI 操作，包括调用谷歌的视频模型 Veo 和图像模型 Imagen。\n\n此前，其他 AI 公司已经发布了类似的命令行产品，比如 Claude Code 和 OpenAI Codex (CLI)。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062611.webp"
+          ]
+        },
+        {
+          "title": "Twocast",
+          "link": "https://github.com/panyanyany/Twocast",
+          "description": "真人 AI 播客生成器，一键生成 3~5 分钟播客，支持多语言、多音色，免费开源。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062409.webp"
+          ],
+          "user": "panyanyany",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7129"
+        },
+        {
+          "title": "Duck.ai",
+          "link": "https://duck.ai",
+          "description": "DuckDuckGo 推出的免费 AI 聊天服务，强调保护用户隐私。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062605.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "铃声下载网站",
+          "link": "https://www.ringtone.com/",
+          "description": "免费无需注册的铃声搜索下载网站，提供 MP3 格式铃声。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062403.webp"
+          ],
+          "user": "twjiem",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7113"
+        },
+        {
+          "title": "Wikipedia Radio",
+          "link": "https://wikipedia-radio.com/",
+          "description": "这个网站随机播放维基百科里面的音频文件。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062106.webp"
+          ]
+        },
+        {
+          "title": "ICONIC",
+          "link": "https://github.com/YuheshPandian/ICONIC",
+          "description": "一个开源的图标库，专门提供各种软件技术的图标。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062514.webp"
+          ]
+        },
+        {
+          "title": "Linux/Windows 开发 iOS 应用教程",
+          "link": "https://xtool.sh/tutorials/xtool/first-app/",
+          "description": "一个图文教程，使用 xtool 工具在 Linux/Windows 上开发 iOS 应用。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062607.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "印度裔掌管美国科技公司",
+          "link": "",
+          "description": "印度人在美国科技界有着庞大的势力，下图是印度裔掌管的美国科技公司的不完全列表。\n\n微软、谷歌、IBM 都是印度裔掌管的。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062510.webp"
+          ]
+        },
+        {
+          "title": "迪士尼绿",
+          "link": "https://en.wikipedia.org/wiki/Go_Away_Green",
+          "description": "迪士尼乐园使用绿色，对很多基础设施进行油漆。\n\n这样做的目的是，尽量减少游客对基础设施的关注。\n\n这种绿色就被称为\"迪士尼绿\"。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021603.webp",
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021604.webp",
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021605.webp",
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021606.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "离职面谈的建议",
+          "link": "",
+          "description": "当你即将离职，HR 可能想找你进行一次\"离职面谈\"，询问你\"为什么要离职？\"，以及\"跟同事一起工作感觉如何\"。\n\n别上当。你的最佳选择是，推掉这些离职面谈，如果不行，那也不要对任何人或任何事进行批评。\n\n你可以回答，你遇到了一个不想放过的机会，然后很荣幸能跟曾经的同事一起工作，对于这家公司曾经给予的工作机会，充满感激。就这样，离职面谈就可以结束了。\n\n这有几个原因。\n\n（1）离职面谈不会给你带来任何好处，反而会带来很多负面后果。\n\n你的建议和反馈，不会得到采纳和改进。反而，你会被别人认为是一个爱抱怨的人，并可能因此树敌。\n\n没人想树敌。你或许以为自己再也不用和那些领导和同事打交道了，但这个世界真的很小。\n\n（2）一旦你递交了辞呈，在你离开公司之前，你的目标就是让人们永远记得你，对你留下好印象。\n\n你要优雅地离开，不要破坏任何人际关系。无论你心里认为，老板有多愚蠢，部门有多糟糕，都不要说出来。说出来不会有好结果，只会伤害你自己。\n\n（3）同理，不要给同事们发一封冗长的告别电子邮件，告诉他们你为什么离开，这毫无意义且有害。\n\n人们对这种事的记忆力很强。发一封邮件抱怨公司有多糟糕，你就会以这种方式被人们记住，很有可能还会传开，而你所做的一切好事都会被人们忘记。\n\n（4）如果你真的对公司运作有什么建议，最好没辞职的时候就说出来。如果那样没有效果，那么你在离职面谈中给出忠告，更不会有效果了。\n\n（5）离职后，原来的公司变好或变坏，都跟你无关了。你也不应该再关心那些问题了。\n\n总之，最好的离职就是不惹恼别人，悄悄地离开，全力以赴你接下来的路。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "Kent Beck 的言论",
+          "link": "https://simonwillison.net/2025/Jun/22/kent-beck/#atom-everything",
+          "description": "AI 使得我的90%技能，价值变为0，但使得剩下的10%技能，价值增长了1000倍。\n\n每个人在 AI 面前，都需要重新调整自己的技能。\n\n-- Kent Beck，极限编程的创始人",
+          "images": []
+        },
+        {
+          "title": "Anthropic 训练模型的相关言论",
+          "link": "https://simonwillison.net/2025/Jun/24/anthropic-training/",
+          "description": "Anthropic 公司为了训练模型，聘请了谷歌图书扫描项目前主管汤姆·特维（Tom Turvey）。\n\n他的任务是获取\"世界上所有的书籍\"，花费数百万美元购买了数百万本纸质书籍，新的和二手的都有。然后，把这些书都拆了，进行扫描，完成后就扔掉。\n\n-- 美国法院判决书，出版公司控告 Anthropic 未经许可使用版权书籍训练模型，法院一审判 Anthropic 胜诉",
+          "images": []
+        },
+        {
+          "title": "关于博士学位的言论",
+          "link": "",
+          "description": "西方国家的博士学位，基本上是移民计划，而大学很乐意配合。",
+          "images": []
+        },
+        {
+          "title": "Reddit 读者的言论",
+          "link": "https://old.reddit.com/r/ClaudeAI/comments/1lhgdbd/dev_jobs_are_about_to_get_a_hard_reset_and/",
+          "description": "企业将来不会区分\"Python 程序员\"或\"React 程序员\"，招聘的时候，不会在意你会什么语言。企业只会招聘能够解决问题的程序员，不管他们的技术栈。因为有了大模型，编程语言障碍已经完全消失了。\n\n我们已经到了这个地步：学习哪种编程语言无关紧要。现在真正的技能是系统设计、架构、DevOps、云计算----那些在 AI 之上快速构建系统的技能。\n\n-- Reddit 读者",
+          "images": []
+        },
+        {
+          "title": "《隐形的人》中的言论",
+          "link": "https://aeon.co/essays/our-crisis-is-not-loneliness-but-human-beings-becoming-invisible",
+          "description": "社会的危机，不是人变得孤独，而是人变得隐形、没有用处、可有可无。\n\n-- 《隐形的人》",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

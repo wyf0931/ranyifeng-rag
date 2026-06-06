@@ -1,0 +1,327 @@
+{
+  "title": "科技爱好者周刊（第 162 期）：生活就像《吃豆人》游戏",
+  "link": "https://www.ruanyifeng.com/blog/2021/06/weekly-issue-162.html",
+  "number": 162,
+  "sections": [
+    {
+      "name": "封面图",
+      "items": [
+        {
+          "title": "封面图",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060914.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "生活就像《吃豆人》游戏",
+          "link": "https://mahmoud-mohamed-bahaa.medium.com/i-spent-18-months-making-a-decision-heres-what-i-learned-the-pac-man-approach-c943e687413a",
+          "description": "有一个经典游戏，叫做[《吃豆人》](https://baike.baidu.com/item/%E5%90%83%E8%B1%86%E4%BA%BA/9119559)（Pac-Man）。1980年发布的，很多人现在还在玩。\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021060615.jpg)\n\n游戏很简单，吃完迷宫里的豆子，就能过关，但是不能被妖怪抓住。四个妖怪的策略各有不同，红色的在后面追你，粉色的在前面拦截，蓝色的在路口埋伏，橘色的随机漂移。迷宫里还有四颗能量豆，每吃掉一颗，你就能反戈一击，消灭一个妖怪。\n\n谷歌发布过一个[网页在线版](https://www.google.com/search?q=pac-man)，没玩过的朋友可以感受一下。\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021060901.jpg)\n\n提到这个游戏，是因为我最近看到了[一篇文章](https://mahmoud-mohamed-bahaa.medium.com/i-spent-18-months-making-a-decision-heres-what-i-learned-the-pac-man-approach-c943e687413a)。**一个国外的年轻程序员说，他觉得，自己的生活就像一场《吃豆人》游戏。**\n\n大学毕业后，我不知道该干什么。读研究生，还是找一份体面的工作？像其他人一样，最终我选择了那些很光鲜的职业，即使它跟我的兴趣并不吻合。对于未来，我毫无头绪。\n\n我有时觉得，自己的生活与《吃豆人》游戏有许多相似之处。我困在迷宫里，只有快速拿到积分，才能过关。在这个迷宫中，妖怪四处游荡，试图吃掉你，如果被它们抓住，你就会死掉一条命，游戏重新开始。\n\n我的生活好像就是一局游戏。我真的不知道该去哪里，如何晋级，什么时候妖怪会突然出现。\n\n他这么一说，我顿时觉得，《吃豆人》真的很像生活的一个缩影。我们每天都在人生迷宫里探索，寻求出路。各种挫折打击在周围埋伏着，不知道何时，就会向你扑来。想要赢得游戏的唯一方法，就是尽量避开妖怪，快速吃掉能量豆，壮大自己，晋升到下一关。\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021060617.jpg)\n\n以程序员为例，毕业后进入互联网公司，就是游戏开始了。你必须不停闯关，一步步晋升，从初级程序员到中级程序员，再到高级程序员，然后是团队 Leader 或者部门主管。如果有一关卡住了，在某个级别上停留过久，你就很危险，遇到妖怪的概率越来越大，随时可能 Game Over。你最多只有十到十五年的时间，到达中高职级，否则就留不下来，时间一到不得不离开公司。\n\n**不仅是程序员，其它竞争性的行业，都是这种游戏规则。** 大家印象中，大学教授是一个很舒服的职业，不坐班，每年还有寒暑假。但是，国内高校现在引入了美国的制度，而且还是加强版：年轻博士从讲师当起，给你六年时间，竞争寥寥无几的正式编制。如果六年内出不了成果、发不了足够的论文，那就必须离开，因为学校不会养一个讲师养到老。这叫做[\"非升即走\"制度](https://www.163.com/dy/article/FVDFHGVA05488SSE.html)，英语叫做 Tenure track。这不就像《吃豆人》游戏的真人版吗。\n\n进一步说，每天上下班高峰时间，地铁上挤满了人，大家都在参与一线城市这个大型游戏。若干年内，如果得不到结果，就要离开，回到二线或三线城市。\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021060903.jpg)\n\n其实也不是一定要参与这种游戏，你也可以降低物质欲，选择不与其他人竞争的生活。但是，如果已经身在其中，或者不得不参与，那么下面几条《吃豆人》游戏的快速过关策略，似乎可以参考。\n\n（1）不能留在原地，妖怪会感知你的位置。\n\n（2）必须时刻在前进。\n\n（3） 一旦前面的路上出现妖怪，必须立刻改道。\n\n（4）尽快吃掉离你最近的能量豆，取得阶段性成果。"
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "前端构建工具专题课",
+          "description": "大家都知道，前端有一个大名鼎鼎的开发工具，叫做 Webpack。哪怕刚入门的新人，可能都有耳闻：不管你用什么框架，最后都要用它进行构建。自从2012年发布至今，它一直是整个行业首选的构建工具。\n\n但是进入2020年后，情况正在发生变化。随着标准模块格式 ESModule 越来越普及，新的构建工具层出不穷。新工具更易用、速度更快、打包产物更小，对 Webpack 构成严重挑战。\n\nVue.js 的创始人尤雨溪，甚至发过一个动态：再也回不去 Webpack了。\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021061006.jpg)\n\n这引起了一大片焦虑：\n\n- Webpack 是不是要被取代了，还能不能学？\n- Webpack 还没学会，就又来新的了！\n- 完了，现在到底要学哪个？\n\n目前来说，新一代构建工具的主要代表是 Vite（底层是 ESbuild）和 Rollup。它们其实各有适用场景，还谈不上取代 Webpack。\n\n本周的前端视频专题课，就来分析三大工具各自的原理、特点、适用范围。 **《前端构建工具大 PK：深度剖析 Webpack、Vite、Rollup 原理》** 会带大家手写Webpack、Vite 以及 Rollup 项目，对比分析它们各自的强项，深度剖析底层原理，由浅入深，层层递进。\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021061008.jpg)\n\n这个专题课对各种级别的程序员，都做了精心设计。初级程序员可以学习怎么用构建工具做项目，中高级前端则可以学到这些工具的原理和设计思想。\n\n课程中，会针对大厂面试常见的工程化问题，进行讲解。主讲老师还会带大家对比3份简历，并且教你如何写出一份 P6 级别的求职简历。\n\n微信扫码下面二维码，就可以报名，仅象征性收取 **0.99元** 报名费。\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021061007.jpg)\n\n这门课是视频课，上课时间是 6月15日 到 6月17日 每晚 20:00。想听的同学，可以抓紧时间报名。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021061008.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021061007.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "贝佐斯上太空",
+          "link": "https://www.cnbc.com/2021/06/07/jeff-bezos-to-fly-on-blue-origin-first-passenger-flight-in-july.html",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060801.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060802.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060803.jpg"
+          ]
+        },
+        {
+          "title": "哈德逊河人工岛",
+          "link": "https://mp.weixin.qq.com/s/rf0U7OjeGHBvKGpfECMVhA",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060915.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202105/bg2021052502.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060916.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060917.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060918.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202105/bg2021052505.jpg"
+          ]
+        },
+        {
+          "title": "贵州U型弯道",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202105/bg2021051807.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202105/bg2021051808.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202105/bg2021051809.jpg"
+          ]
+        },
+        {
+          "title": "SpaceX 公司",
+          "link": "https://arstechnica.com/science/2021/05/is-spacex-reliable-company-goes-for-100th-successful-flight-in-a-row-today/",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060301.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060303.jpg"
+          ]
+        },
+        {
+          "title": "海信卷曲屏激光电视",
+          "link": "https://ggjd.cnstock.com/company/scp_ggjd/tjd_bbdj/202106/4713062.htm",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060606.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060607.jpg"
+          ]
+        },
+        {
+          "title": "联合国",
+          "link": "https://news.un.org/zh/story/2021/06/1085332",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060407.jpg"
+          ]
+        },
+        {
+          "title": "超音速客机",
+          "link": "https://boomsupersonic.com/united",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060404.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060405.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060406.jpg"
+          ]
+        },
+        {
+          "title": "宇宙暗物质分布图",
+          "link": "https://www.vice.com/en/article/n7be77/scientists-discover-huge-voids-in-the-cosmic-web-connecting-the-universe",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060315.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "西双版纳大象专家谈北迁象群",
+          "link": "http://wap.xinmin.cn/content/31969939.html",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060913.jpg"
+          ]
+        },
+        {
+          "title": "我复原了长安城",
+          "link": "https://www.gcores.com/articles/137634",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060105.jpg"
+          ]
+        },
+        {
+          "title": "我如何抓到偷苹果笔记本的贼",
+          "link": "https://www.douban.com/note/803274306/"
+        },
+        {
+          "title": "StarLink 卫星上网体验报告",
+          "link": "https://www.theverge.com/22435030/starlink-satellite-internet-spacex-review",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060304.jpg"
+          ]
+        },
+        {
+          "title": "信息论之父香农",
+          "link": "https://spectrum.ieee.org/tech-history/cyberspace/claude-shannon-tinkerer-prankster-and-father-of-information-theory",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202105/bg2021052415.jpg"
+          ]
+        },
+        {
+          "title": "UCWeb 的上传数据",
+          "link": "https://hookgab.medium.com/ucbrowser-privacy-study-ecff96fbcee4"
+        },
+        {
+          "title": "WebContainers 简介",
+          "link": "https://blog.stackblitz.com/posts/introducing-webcontainers/",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202105/bg2021052102.jpg"
+          ]
+        },
+        {
+          "title": "程序员为什么喜欢咖啡？",
+          "link": "https://nerdlettering.com/blogs/articles/why-do-programmers-love-coffee"
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "wg-easy",
+          "link": "https://github.com/WireGuard/wg-easy",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202105/bg2021052401.jpg"
+          ]
+        },
+        {
+          "title": "Vosk",
+          "link": "https://alphacephei.com/vosk/index.zh"
+        },
+        {
+          "title": "PINTR",
+          "link": "https://javier.xyz/pintr/",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202105/bg2021052103.jpg"
+          ]
+        },
+        {
+          "title": "Grafar",
+          "link": "https://thoughtspile.github.io/grafar",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202105/bg2021050406.jpg"
+          ]
+        },
+        {
+          "title": "Mockoon",
+          "link": "https://mockoon.com/",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202105/bg2021050401.jpg"
+          ]
+        },
+        {
+          "title": "Kakoune",
+          "link": "http://kakoune.org/",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060204.jpg"
+          ]
+        },
+        {
+          "title": "GitHub 方块热力图生成工具",
+          "link": "https://github.com/yihong0618/2021",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060912.jpg"
+          ],
+          "user": "yihong0618",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1790"
+        },
+        {
+          "title": "Apitest",
+          "link": "https://github.com/sigoden/apitest",
+          "user": "sigoden",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1788"
+        },
+        {
+          "title": "命令行资讯查看工具",
+          "user": "Mayandev",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1787"
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "Freesound 环境音社区",
+          "link": "https://freesound.org/",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202105/bg2021052409.jpg"
+          ]
+        },
+        {
+          "title": "前端 API 查询网站",
+          "link": "https://www.caniemail.com/",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202105/bg2021051107.jpg"
+          ]
+        },
+        {
+          "title": "多人编程游戏（蛇）",
+          "link": "https://www.codingame.com/multiplayer/bot-programming",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060308.jpg"
+          ]
+        },
+        {
+          "title": "数据科学开发环境设置",
+          "link": "https://whiteboxml.com/blog/the-definitive-data-scientist-environment-setup",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060307.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "宇航员摄影大赛获奖作品：土耳其凡湖",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202105/bg2021051405.jpg"
+          ],
+          "description": "下图是今年宇航员地球摄影大赛的获奖作品。\n\n照片中是土耳其的凡湖（Van Lake），地球上最大的碱性湖泊。它也是一个内陆湖泊，所以照片上有清晰的漩涡，表明湖水没有出口。\n\n湖的周围是一个巨大的辉石矿，导致湖中充满了碳酸钙的碎屑。这些碎屑是湖水呈现乳白色混浊的主要原因，并且使得湖水的 pH 值达到了10。"
+        },
+        {
+          "title": "铁磁流体扬声器",
+          "link": "https://hackaday.io/project/179136-ferrofluid-display-cell-bluetooth-speaker"
+        },
+        {
+          "title": "超现实阁楼",
+          "link": "https://www.facebook.com/photo/?fbid=311674710320284",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202105/bg2021051810.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "苹果应用商店的诞生",
+          "link": "https://twitter.com/TechEmails/status/1400270458608664577",
+          "description": "最近，苹果公司与 Epic 游戏公司的官司，正在如火如荼地进行，库克也出庭作证了。\n\n为了证明应用商店的必要性，苹果向法庭提供了很多内部文件。这些文件从来没有公开过，其中有一封是乔布斯2007年的电子邮件，让外界终于了解了应用商店是怎么诞生的。\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021061001.jpg)\n\niPhone 是2007年1月份宣布的，6月29日正式上市。\n\n乔布斯从一开始就极度坚持产品的封闭性，第一代 iPhone 不仅硬件无法扩展，连软件也无法扩展，只能运行预装的 16 个官方应用程序。\n\n乔布斯反对 iPhone 运行外部应用。他曾经告诉开发者，如果他们想为 iPhone 写应用程序，可以写在 Safari 浏览器中运行的 Web 应用。\n\n他说：\"你猜怎么着？我们没有你需要的 SDK！如果你知道如何使用最现代的 Web 标准编写应用程序，你就已经可以为当今的 iPhone 编写出色的应用程序，这就是你需要知道的一切。我们认为，我们已经为作为开发者的你们，提供了非常好的条件。让你们可以立即开始构建 iPhone 应用程序。\"\n\n但是，开发者并不接受乔布斯的这套说辞。很多人设法对 iPhone 进行\"越狱\"，让其可以安装外部应用程序。苹果公司想要制止越狱，唯一的方法就是提供官方 SDK，允许 iPhone 运行外部应用。\n\n当时，苹果负责软件工程的高级副总裁 Bertrand Serlet，不得不硬着头皮，给乔布斯写了[一封 Email](https://twitter.com/TechEmails/status/1400270458608664577)，要求乔布斯能够同意 iPhone 运行外部应用。\n\n![](https://cdn.beekka.com/blogimg/asset/202106/bg2021060701.jpg)\n\n他认为，iPhone 应该做四件事。\n\n（1）允许经过许可的应用，跑在 iPhone 上面，这样可以保护用户。\n\n（2）允许外部应用获得某些权限，同时禁止其它权限，这样可以保护系统。\n\n（3）提供官方的开发平台，运行在 MacOS 上面，包括模拟器、Debugger 等。\n\n（4）提供稳定的对外 API。\n\n乔布斯的回答只有一句话：\"当然可以，只要能在 2008 年 1 月 15 日的 Macworld 上全部推出。\"\n\n这封邮件的日期是2007年10月2日，离乔布斯设定的发布日期只剩下三个多月。乔布斯好像觉得压力还不够大，两周后的 10 月 17 日对外宣布，将在2008 年 2 月之前提供 SDK 。\n\n后来，SDK 实际是在2008年 3 月份推出的，而 App Store 是在那一年的 7 月推出的。\n\n当时，苹果的市值约为 1500 亿美元，今天已经超过了 2 万亿美元，这很大程度是因为 iPhone 的成功，而 iPhone 的成功有很大程度是因为 App Store 的成功。App Store 又促成了许多大型软件公司的诞生，比如 Instagram、SnapChat、Spotify 等等。这一切的源头，都可以追溯到乔布斯的这一封邮件。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021061001.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202106/bg2021060701.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "阿瑟·爱丁顿",
+          "description": "1919年，英国天文学家阿瑟·爱丁顿使用日全食的观测数据，首次证明爱因斯坦的广义相对论是正确的。\n\n当时能看懂广义相对论的没有几个人。据说，一位物理学家当面对爱丁顿说，您是世界上第三个懂广义相对论的人。言外之意，前两个人是爱因斯坦和该物理学家本人。爱丁顿风趣地回答：\"我也在寻找第三个人。\"\n\n-- 何香涛《追逐类星体》"
+        },
+        {
+          "title": "Cloudflare",
+          "description": "根据 Cloudflare 的统计，用户完成网站的图形识别验证码，平均需要32秒。\n\n假设用户每10天就会遇到一次这样的验证码，乘以全球46亿互联网用户，那么人类每天共花费500人年以完成这些验证码。"
+        },
+        {
+          "title": "鲍林",
+          "description": "产生一个好的想法，最佳方法就是先产生许许多多的想法。（The best way to have a good idea is to have a lot of ideas.）\n\n--[鲍林](https://www.brainyquote.com/quotes/linus_pauling_163645)（Linus Pauling），诺贝尔化学奖得主",
+          "link": "https://www.brainyquote.com/quotes/linus_pauling_163645"
+        },
+        {
+          "title": "匿名用户",
+          "description": "我希望通过自己的创业产品，赚一些钱。但是，它的利润一直很微薄，如果我买一些啤酒，整个周末都投入这个产品的开发，那么利润将完全消失。而且，付费用户总数很少，始终让人感觉非常危险。"
+        },
+        {
+          "title": "一位美国科学家",
+          "description": "就算我们今天停止排放二氧化碳，已经排放的那些二氧化碳仍将存在于大气中数百年。如果我们只是设法减少一点排放，那么二氧化碳只会以较慢的速度积累，但仍会上升。\n\n-- [一位美国科学家](https://www.aei.org/op-eds/an-obama-scientist-debunks-the-climate-doom-mongers/)认为人类很难阻止气候变化",
+          "link": "https://www.aei.org/op-eds/an-obama-scientist-debunks-the-climate-doom-mongers/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,437 @@
+{
+  "title": "科技爱好者周刊（第 355 期）：两本《芯片战争》",
+  "link": "https://www.ruanyifeng.com/blog/2025/07/weekly-issue-355.html",
+  "number": 355,
+  "sections": [
+    {
+      "name": "封面图",
+      "items": [
+        {
+          "title": "",
+          "link": "",
+          "description": "重庆某消防站，改造成赛博朋克风格，霓虹灯都是一些防火标语。网上走红以后，该装饰现已被拆。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070201.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "两本《芯片战争》",
+          "link": "",
+          "description": "前些日子，我想找芯片知识的书籍，想起有一本很有名的畅销书，叫做《芯片战争》。\n\n搜索发现，《芯片战争》居然不止一本，而有两本书都叫这个名字。\n\n[《芯片战争》](https://book.douban.com/subject/35659418/)，余盛（华中科技大学出版社，2022）\n\n[《芯片战争》](https://book.douban.com/subject/36350632/)，[美]克里斯·米勒（浙江人民出版社，2023）\n\n一本是中国人写的，另一本是美国人写的。我都读了，下面就是简单的读后感。\n\n为了便于区分，我把中国人写的那本称为\"国人版\"，美国人那本称为\"老美版\"。\n\n这两本书的内容，都是芯片行业的发展史。读完以后，我的最大感受是，**它们可以帮你了解芯片历史，但是帮不了你了解芯片知识**。\n\n因为它们不是科普图书，更不是技术图书，而是经管图书。\n\n我有点后悔，没查一下作者背景。读了才发现，这两个作者，都不是芯片行业人士，甚至不是科技从业者。\n\n国人版的作者是会计系毕业，后来在食品公司工作，他的上一本书写的是粮油贸易。\n\n老美版的作者是政治系毕业，现在是大学教授，专门研究地缘政治，上一本书写的是俄罗斯历史。\n\n可想而知，这样的作者写芯片行业，不会有深入浅出的技术分析，只会关注商业经营层面。\n\n事实上，国人版的内容，不客气地说，全部都是从新闻报道搜集整理而来，编辑成一个个故事，完全是商战书籍。\n\n老美版相对好一些，作者采访了一些当事人，有第一手资料，内容条理比较清楚，更像一本商业历史书。\n\n虽然我对缺乏技术讲解挺失望的，但是**我认为，这两本书还是能带给读者收获**。\n\n很多内容我以前就知道，比如晶体管是怎么来的、集成电路的发明人之争，但还有不少事情是这次读了才知道。\n\n国人版有一个专门的部分，介绍中国芯片发展史，收集了很多相关材料，我还没在其他地方见过，比如江上舟的故事、张汝京的故事、汉芯造假事件、从武汉新芯到长江存储等等，内容详细，带给人很多冲击。\n\n老美版的优点，前面说了，有第一手材料，站得比较高，按照编年史顺序，以人物故事的形式，理清了行业的发展脉络。虽然作者的专业是政治学，但总体上没有加入政治观点，写得比较中性客观。\n\n另外，老美版偶尔会有一些技术概念的通俗讲解，写得挺好。我摘录了一段芯片的种类介绍，放在后面的文摘部分，大家可以看看。\n\n我的结论就是，如果你单纯想了解芯片行业的基本历史，可以读老美版；如果还想了解国内芯片行业的历史，可以读国人版。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062802.webp",
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062803.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "苹果的\"液态玻璃\"设计",
+          "link": "https://512pixels.net/2025/06/finder-icon-fixed/",
+          "description": "曾经将 macOS 文件浏览器 Finder 的图标左右反转。网友质疑后，苹果在下一个测试版又改回来了。上图左边是原来的图标，中间是第一个测试版，右边是第二个测试版。最新图标依然采用玻璃材质，看起来感觉还不错。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062603.webp",
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062604.webp"
+          ]
+        },
+        {
+          "title": "AR 眼镜实时识别路边广告",
+          "link": "https://www.tomshardware.com/maker-stem/engineer-creates-ad-block-for-the-real-world-with-augmented-reality-glasses-no-more-products-or-branding-in-your-everyday-life",
+          "description": "一个比利时工程师写了一个程序，让 AR 眼镜实时识别路边广告。一旦发现广告区域，就在其上覆盖一个红色遮盖层，相当于视觉屏蔽广告。这是我看到的最有创意的 AR 用法。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062902.webp"
+          ]
+        },
+        {
+          "title": "41岁的深圳程序员不租房，在车里住了3年",
+          "link": "https://m.huxiu.com/article/4267559.html",
+          "description": "他老家在300公里外的广东阳江，周末开车回去看妻子孩子，平时睡在车里。他说，以前在出租屋住，一个月要2500元，很小的单间，环境非常差。现在，\"车上开着空调，很舒服的\"。停车一晚是6元，平时洗漱在公园卫生间。他每天都去健身房，洗完澡开车回公园睡觉。至于脏衣服，周末带回老家去洗。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070307.webp",
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070309.webp",
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070310.webp"
+          ]
+        },
+        {
+          "title": "特斯拉无人驾驶交付汽车",
+          "link": "https://www.engadget.com/transportation/tesla-shows-off-its-first-fully-autonomous-delivery-to-convince-us-its-self-driving-cars-work-163805707.html",
+          "description": "上周采用无人驾驶，向客户交付了一辆汽车。汽车从工厂下线后，自己开到客户家里，全程30分钟，中间还走了一段高速公路。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070102.webp"
+          ]
+        },
+        {
+          "title": "美国启用\"鳄鱼恶魔岛\"监狱",
+          "link": "https://finance.sina.com.cn/stock/wbstock/2025-07-02/doc-infeasqa7814647.shtml",
+          "description": "用来拘留非法移民。这个监狱位于热带的佛罗里达州，建在废弃飞机场的跑道上。它根本没有墙，因为周围都是大型沼泽地，里面生活着大量鳄鱼，囚禁者没法越狱。想到在这个地方建设监狱的人，真是有想象力。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070202.webp",
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070203.webp"
+          ]
+        },
+        {
+          "title": "微软正式规定考核 AI 使用量",
+          "link": "https://finance.sina.cn/7x24/2025-06-30/detail-infcwksi6186007.d.html",
+          "description": "评估员工绩效时，要考核 AI 使用量，强制要求员工必须使用 AI。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "Meta 的 AI 人才名单",
+          "link": "https://archive.is/Xp9cN",
+          "description": "《华尔街日报》的报道，Meta 公司搞了一个50人的名单，包括了世界最顶尖的 AI 人才，准备把他们都挖过来，甚至传言开出了1亿美元的天价薪水。我们可以从中了解，AI 人才的身价有多高，争夺有多么激烈。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025063008.webp"
+          ]
+        },
+        {
+          "title": "ECMAScript 2025 的新增语法",
+          "link": "https://2ality.com/2025/06/ecmascript-2025.html",
+          "description": "JS 语法标准发布了2025版，本文罗列了今年的7个新增语法。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062901.webp"
+          ]
+        },
+        {
+          "title": "2010年江西高考理科数学压轴题",
+          "link": "https://github.com/ruanyf/weekly/issues/7184",
+          "description": "知乎上有个问题是高考数学最后一题可以有多难？公认史上最难高考数学题就是2008年江西高考理科数学压轴题，2010年的题目也很难。",
+          "user": "longluo",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7184",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070104.webp"
+          ]
+        },
+        {
+          "title": "通过超声波发送数据",
+          "link": "https://halcy.de/blog/2025/06/27/transmitting-data-via-ultrasound-without-any-special-equipment/",
+          "description": "本文介绍如何让手机浏览器发送超声波，并把数据编码在里面，从而就可以在用户毫无察觉的情况下，跟其他设备通信。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025063010.webp"
+          ]
+        },
+        {
+          "title": "我的程序员人生",
+          "link": "https://emptysqua.re/blog/from-python-programmer-to-distributed-systems-researcher-in-10-years/",
+          "description": "作者的一篇回忆文章，总结了自己的人生，写得很鼓舞人。他在高中想学舞蹈，但是被 3D 动画片吸引，去读了计算机本科，毕业后成了 Python 程序员，后来靠着自学和努力，现在是分布式系统研究员。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070106.webp"
+          ]
+        },
+        {
+          "title": "如何用 JS 写一个浏览器的语音朗读器",
+          "link": "https://jsdev.space/tts-sentence-reader/",
+          "description": "本文是一篇 JS 教程，教你用浏览器的 API，通过内置的 TTS 语音引擎，写一个句子朗读器。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062706.webp"
+          ]
+        },
+        {
+          "title": "Cloudflare 和 Vercel 的沙盒功能",
+          "link": "https://simonwillison.net/2025/Jun/26/sandboxes/",
+          "description": "最近，Cloudflare 和 Vercel 这两家公司，不约而同推出了沙盒功能，运行不受信任的 JS 代码，主要用例是执行大模型生成的代码。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062705.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "code-server",
+          "link": "https://github.com/coder/code-server",
+          "description": "VS Code 的一个服务器版本，让用户通过浏览器使用这个代码编辑器，不需要本地安装。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025063009.webp"
+          ]
+        },
+        {
+          "title": "OpenFLOW",
+          "link": "https://github.com/stan-smith/OpenFLOW",
+          "description": "绘制网络基础设施图的开源工具。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070105.webp"
+          ]
+        },
+        {
+          "title": "Sniffnet",
+          "link": "https://sniffnet.net/",
+          "description": "一个开源的跨平台桌面应用，用来监控本机的网络通信。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025063011.webp"
+          ]
+        },
+        {
+          "title": "WR.DO",
+          "link": "https://github.com/oiov/wr.do/blob/main/README-zh.md",
+          "description": "一个自搭建的域名服务平台，可以基于域名创建子域名、短链接、邮件地址，并提供 API 接口。",
+          "user": "oiov",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7173",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070103.webp"
+          ]
+        },
+        {
+          "title": "PiP-Tool",
+          "link": "https://github.com/yaolifeng0629/UserScript/tree/main/piptool",
+          "description": "开源的浏览器插件，为主流视频网站提供画中画播放功能。关闭浏览器，画中画窗口依然打开。",
+          "user": "yaolifeng0629",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7163",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025063003.webp"
+          ]
+        },
+        {
+          "title": "Gwitter",
+          "link": "https://github.com/SimonAKing/Gwitter",
+          "description": "自搭建的个人微博平台，数据存储在 GitHub issues。",
+          "user": "SimonAKing",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7166",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025063005.webp"
+          ]
+        },
+        {
+          "title": "Auth.js (NextAuth)",
+          "link": "https://github.com/nextauthjs/next-auth",
+          "description": "自搭建的身份认证服务，支持社交平台、邮箱、短信等认证方式，可以作为 Auth0 的替代品。",
+          "user": "byn9826",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7197",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070302.webp"
+          ]
+        },
+        {
+          "title": "SVG to 3D",
+          "link": "https://www.wujieli0207.github.io/svg-to-3d/",
+          "description": "这个网站将平面的 SVG 文件，免费转成 3D。",
+          "user": "wujieli0207",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7165",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025063004.webp"
+          ]
+        },
+        {
+          "title": "CodeBox",
+          "link": "https://www.codebox.club/zh",
+          "description": "一个在线的二维码生成平台，可以定制各种属性。",
+          "user": "gdfsdjj145",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7168",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025063006.webp"
+          ]
+        },
+        {
+          "title": "Technitium DNS",
+          "link": "https://technitium.com/dns/",
+          "description": "一个自搭建的家用 DNS 服务器，带有 Web 界面。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062903.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI相关",
+      "items": [
+        {
+          "title": "VS Code GitHub Copilot Chat 插件开源",
+          "link": "https://github.com/microsoft/vscode-copilot",
+          "description": "微软开源了 VS Code 的 GitHub Copilot Chat 插件，用来跟 AI 对话。据说，GitHub Copilot 本体（主要完成代码补全和生成）很快也会开源。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070303.webp"
+          ]
+        },
+        {
+          "title": "CAPTCHA-automatic-recognition",
+          "link": "https://github.com/ezyshu/UserScript/tree/main/CAPTCHA-automatic-recognition",
+          "description": "一个油猴脚本，通过 AI 自动识别填充网页验证码。",
+          "user": "ezyshu",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7187",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070107.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "Rust 快速教程",
+          "link": "https://github.com/InkSha/rust-tutorial",
+          "description": "一个针对新手的 Rust 快速教程，从零开始写一个管理 Todos 的命令行程序。",
+          "user": "InkSha",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7188",
+          "images": []
+        },
+        {
+          "title": "B 树互动教程",
+          "link": "https://planetscale.com/blog/btrees-and-database-indexes",
+          "description": "这篇教程通过很多互动示例，讲解数据库常用的 B 树数据结构。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024091213.webp"
+          ]
+        },
+        {
+          "title": "雨水流动路径可视化",
+          "link": "https://www.rainflow.com",
+          "description": "全球任意地点的一滴雨，会流到哪里？这个网站给出雨水的流动路径，点击下雨的地点，它会可视化雨水的地面路径。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202501/bg2025012904.webp"
+          ]
+        },
+        {
+          "title": "网站流量查询工具",
+          "link": "https://www.typewe.com",
+          "description": "免费的网站流量信息查询工具。",
+          "user": "typewe",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7202",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070319.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "xAI 办公室",
+          "link": "https://x.com/djcows/status/1940149135426167002",
+          "description": "推特上面，有人贴出了马斯克 xAI 的办公室照片。你要知道，那里员工的身价都是百万美元、千万美元级别的。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070305.webp",
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070306.webp"
+          ]
+        },
+        {
+          "title": "美国邮政局250周年纪念邮票",
+          "link": "",
+          "description": "美国邮政局（USPS）成立于独立战争期间，具体日期是1775年6月26日，上周是250周年纪念日。为了纪念这个日子，它发行了一组20枚连在一起的套票。邮票上是一个典型的美国小镇，街道上唯一的车辆是递送信件和包裹的邮车。大家可以数一下，一共有几辆。邮票共分4行，每行5枚，从上到下描绘了四个季节。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062801.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "芯片的种类",
+          "link": "",
+          "description": "摘自《芯片战争》，[美]克里斯·米勒（浙江人民出版社，2023）\n\n21世纪初，半导体已分为三大类。\n\n第一类是逻辑芯片，就是以逻辑运算为主要功能的芯片，智能手机、计算机、服务器的处理器都属于这一类。\n它的性能强弱主要跟制造工艺有关，内部集成的晶体管越小，性能越强。摩尔定律讲的就是这一类芯片。\n\n第二类是存储芯片，就是存储数据的芯片，分为 DRAM（内存芯片，短期存储数据）和 NAND（记忆卡芯片，长期存储数据）。\nDRAM 过去有几十家生产商，但现在主要是三大巨头：美光、三星和 SK 海力士。后两家都是韩国厂商，美光虽然是美国公司，但它的工厂大多收购而来，所以主要也是在亚洲生产。\nNAND 的生产商之中，三星最大，占据了35%的市场份额，其余有韩国的 SK 海力士、日本的铠侠、美国的美光和西数。\n\n第三类是其他芯片，包括模拟信号转换为数字信号的模拟芯片、与手机网络进行通信的射频芯片，以及管理设备如何使用电力的电源芯片。\n这一类芯片的功能与制造工艺基本无关，而与设计有关，所以摩尔定律对它们不生效，大约四分之三的此类芯片还在用180纳米或以上的工艺生产。\n由于不需要使用更小的晶体管，也不需要经常升级，它们的制造成本要低得多。如今，最大的模拟芯片制造商是德州仪器（TI）。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "",
+          "link": "",
+          "description": "2022年11月30日是一个永载史册的日子，就像第一颗原子弹爆炸，OpenAI 公司推出了 ChatGPT，从此人类再也没有了未被 AI 污染的新数据。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "HTTP 原本用于学术论文。现在它运行着文明。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "孤独是一个建筑问题。\n现在的很多建筑物，不利于人们聚集。我们需要的建筑物，应该是方便步行，并且免费，不属于任何人。以前的城市，有很多这样的地方。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "20世纪90年代，一些工程师意识到：显卡本质就是一个并行处理设备。\n在屏幕上进行图像渲染，这是一个可以并行处理的计算任务----每个像素点的色彩可以独立计算，不需要考虑其他像素点。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "我感觉，如果美国取消芯片出口管制，中国政府就会实施芯片的进口管制，以保护国内芯片产业，打造一个真正能与英伟达/台积电/苹果/谷歌抗衡的芯片制造商。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

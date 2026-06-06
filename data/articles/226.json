@@ -1,0 +1,355 @@
+{
+  "title": "科技爱好者周刊（第 226 期）：谷歌出了什么问题？",
+  "link": "https://www.ruanyifeng.com/blog/2022/10/weekly-issue-226.html",
+  "number": 226,
+  "sections": [
+    {
+      "name": "封面图",
+      "items": [
+        {
+          "title": "山西省晋中的光伏停车棚",
+          "link": "https://www.nytimes.com/2022/09/26/business/china-electric-vehicles.html",
+          "description": "山西省晋中的光伏停车棚。这种停车场非常适合电动车，只要可以停车，就可以充电。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022093002.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "谷歌出了什么问题？",
+          "link": "http://finance.sina.com.cn/tech/csj/2022-10-06/doc-imqmmtha9943707.shtml",
+          "description": "这里记录了谷歌突然关闭游戏平台 Stadia 的事件经过，并讨论了谷歌近年来的创新乏力问题。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101309.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101310.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101311.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101312.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101313.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "超声波传感器",
+          "link": "https://arstechnica.com/cars/2022/10/after-cutting-radar-tesla-now-dropping-ultrasonic-sensors-from-its-evs/",
+          "description": "特斯拉宣布移除前后保险杆上的超声波雷达，完全依靠摄像头进行自动停车。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022100703.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022100704.webp"
+          ]
+        },
+        {
+          "title": "世界最大照相机",
+          "link": "https://petapixel.com/2022/10/04/3200-megapixels-the-worlds-largest-camera-is-almost-complete/",
+          "description": "美国科学家制造完成世界最大照相机，镜头直径1.57米，重3吨，每张照片像素高达32亿。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101002.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101004.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101003.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101006.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101005.webp"
+          ]
+        },
+        {
+          "title": "双足机器人百米跑",
+          "link": "https://v.qq.com/x/page/v3359hf8oto.html",
+          "description": "美国俄勒冈大学制造的双足机器人创造了机器人百米跑世界记录：24.73秒。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022100105.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022100106.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022100201.webp"
+          ]
+        },
+        {
+          "title": "禁止户外广告",
+          "link": "https://www.bbc.com/news/business-62806697",
+          "description": "英国民间团体游说政府禁止户外广告，认为户外是公共空间，不应被广告污染。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022100501.webp"
+          ]
+        },
+        {
+          "title": "相机的加密签名",
+          "link": "https://petapixel.com/2022/08/08/sonys-forgery-proof-tech-adds-crypto-signature-to-photos-in-camera/",
+          "description": "索尼宣布推出相机的加密签名，拍摄完毕自动为照片添加加密签名，防止篡改。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022082302.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "中国运营商为什么不推广 eSIM？",
+          "link": "https://finance.sina.com.cn/jjxw/2022-09-29/doc-imqqsmrp0933136.shtml",
+          "description": "分析国内通信运营商不积极推广 eSIM 的原因。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022092907.webp"
+          ]
+        },
+        {
+          "title": "元宇宙婚礼",
+          "link": "http://www.stcn.com/article/detail/698557.html",
+          "description": "上市公司中青宝的90后董事长在元宇宙举办婚礼，来宾可线上观礼并充值金币送红包。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101319.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101318.webp"
+          ]
+        },
+        {
+          "title": "为什么古代中国没有玻璃业？",
+          "link": "https://erikexamines.substack.com/p/did-the-teacup-hinder-chinese-scientific",
+          "description": "分析中国古代玻璃业不发达的原因，认为中国瓷器太发达以及制度不鼓励创新。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022082101.webp"
+          ]
+        },
+        {
+          "title": "React 的重新渲染",
+          "link": "https://www.joshwcomeau.com/react/why-react-re-renders/",
+          "description": "详细解释触发 React 重新渲染的原因。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081704.webp"
+          ]
+        },
+        {
+          "title": "轻度动态网站",
+          "link": "https://www.devever.net/~hl/mildlydynamic",
+          "description": "回顾网站开发历史，提出未来趋势可能是‘轻度动态网站’。",
+          "images": []
+        },
+        {
+          "title": "PowerToys 用法介绍",
+          "link": "https://www.fourth-wall.co.uk/post/powertoys-11-awesome-features-microsoft-won-t-add-to-windows",
+          "description": "介绍微软官方推出的 Windows 工具集 PowerToys 的11个有用小工具。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050901.webp"
+          ]
+        },
+        {
+          "title": "25个有用的 Mac 小应用",
+          "link": "https://medium.com/@parttimeben/10-little-macos-apps-that-make-a-big-difference-in-2022-part-1-c6428f92a079",
+          "description": "系列文章介绍25个有用的 Mac 小应用。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022070901.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Lyra",
+          "link": "https://lyrasearch.io/",
+          "description": "一个 TypeScript 写的全文搜索引擎，所有数据放在内存中。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080204.webp"
+          ]
+        },
+        {
+          "title": "Fleet",
+          "link": "https://www.jetbrains.com/fleet/",
+          "description": "JetBrains 公司的下一代 IDE，重构了架构和 UI，目前免费。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101316.webp",
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022093003.webp"
+          ]
+        },
+        {
+          "title": "Make-A-Video",
+          "link": "https://phenaki.video/",
+          "description": "Meta 发布的工具，可根据文本自动生成视频，如‘奔跑的一群马’。",
+          "images": []
+        },
+        {
+          "title": "Pagefind",
+          "link": "https://pagefind.app/",
+          "description": "一个静态全文搜索工具，专供静态网站使用，不需要服务器。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080207.webp"
+          ]
+        },
+        {
+          "title": "M-craft 起始页",
+          "link": "https://github.com/leon-kfd/M-craft",
+          "description": "开源浏览器插件，可自定义浏览器的起始页。",
+          "user": "@leon-kfd",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2673",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101011.webp"
+          ]
+        },
+        {
+          "title": "MusicFree 音乐播放器",
+          "link": "https://github.com/maotoumao/MusicFree",
+          "description": "开源安卓平台免费音乐播放器，使用 React Native 编写，支持自定义插件。",
+          "user": "@maotoumao",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2674",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101012.webp"
+          ]
+        },
+        {
+          "title": "pcl.js",
+          "link": "https://pcljs.org/zh-cn/",
+          "description": "将大型 C++ 库 Point Cloud Library 编译为 WebAssembly 运行在浏览器中，供 JavaScript 调用。",
+          "user": "@luoxuhai",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2676",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101013.webp"
+          ]
+        },
+        {
+          "title": "OneDev",
+          "link": "https://github.com/theonedev/onedev",
+          "description": "自托管的 Git 服务器，类似开源 GitHub/GitLab，自带 CI/CD 和看板功能。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080304.webp"
+          ]
+        },
+        {
+          "title": "Stormah",
+          "link": "https://stormah.com/",
+          "description": "一个简易的网页笔记，可指定远程 Git 仓库作为后端。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022061614.webp"
+          ]
+        },
+        {
+          "title": "NoSleep.js",
+          "link": "https://github.com/richtr/NoSleep.js",
+          "description": "让手机不进入休眠状态的 JS 库，原理是插入一段不可见的持续播放的视频。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "识典古籍",
+          "link": "https://www.shidianguji.com/",
+          "description": "北京大学和抖音公益合作的古籍数字化平台，可免费搜索390部经典古籍。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101320.webp"
+          ]
+        },
+        {
+          "title": "Practical Deep Learning for Coders",
+          "link": "https://www.fast.ai/",
+          "description": "fast.ai 推出的最新线上公开课，介绍如何做深度学习项目，有视频和课程资料。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022072201.webp"
+          ]
+        },
+        {
+          "title": "马斯克聊天",
+          "link": "https://danluu.com/elon-twitter-texts/",
+          "description": "整理法院公布的马斯克私聊记录。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022100701.webp"
+          ]
+        },
+        {
+          "title": "AI 播客",
+          "link": "https://podcast.ai/",
+          "description": "国外网友用 AI 生成的一段播客，采访乔布斯，非常逼真。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101106.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "便利贴的正确撕法",
+          "link": "https://tylercipriani.com/blog/2022/05/28/on-the-proper-use-of-post-its/",
+          "description": "便利贴的正确撕法是从侧面撕开，而不是从底部提起。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022053009.webp",
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022053010.webp"
+          ]
+        },
+        {
+          "title": "望远镜的进步",
+          "link": "https://twitter.com/BrianRoemmele/status/1579946200941617152",
+          "description": "1900年以来木星照片的对比，展示望远镜的进步。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101315.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "谷歌关闭 Stadia 后小工作室的遭遇",
+          "link": "https://www.ruanyifeng.com/blog/2022/10/weekly-issue-226.html",
+          "description": "一家美国游戏工作室的负责人在 Reddit 抱怨谷歌突然关闭 Stadia，导致他们五个月的工作白费。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101314.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2022年诺贝尔生理医学奖",
+      "items": [
+        {
+          "title": "2022年诺贝尔生理医学奖",
+          "link": "https://www.ruanyifeng.com/blog/2019/06/weekly-issue-60.html",
+          "description": "授予瑞典遗传生物学家斯万特·帕博，主要成就是对尼安德特人 DNA 进行测序。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022100301.webp",
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019061429.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "言论1",
+          "description": "每当我在网站上看到‘免费订阅’按钮，我就把网站主办方的邮箱提交上去。",
+          "images": []
+        },
+        {
+          "title": "社交网络的终结",
+          "link": "https://www.axios.com/2022/07/25/sunset-social-network-facebook-tiktok",
+          "description": "社交网络的时代始于2003年，正式结束于2022年，标志是Facebook推出类似抖音的发现引擎。",
+          "images": []
+        },
+        {
+          "title": "模仿他人是人生陷阱",
+          "link": "https://www.briantimar.com/notes/mimetic/mimetic/",
+          "description": "不要强迫自己做任何内心讨厌的事情，因为一旦习惯了就难以退出。",
+          "images": []
+        },
+        {
+          "title": "现实生活中的区块链项目",
+          "description": "搜索‘现实生活中的区块链项目’，发现大部分已死亡或无关，只有一个Chainalysis项目与现实相关。",
+          "images": []
+        },
+        {
+          "title": "Node.js 的不足",
+          "description": "Node.js 比不过传统编程语言，缺乏类型系统和编译，代码正确性检查最终发生在用户机器上。",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

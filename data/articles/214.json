@@ -1,0 +1,354 @@
+{
+  "title": "科技爱好者周刊（第 214 期）：你的地图是错的",
+  "link": "https://www.ruanyifeng.com/blog/2022/07/weekly-issue-214.html",
+  "number": 214,
+  "sections": [
+    {
+      "name": "封面图",
+      "items": [
+        {
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022070401.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "本周话题",
+      "items": [
+        {
+          "title": "你的地图是错的",
+          "description": "2010年，美国旧金山举行 [Web 2.0 峰会](https://p2p.ai/2022/06/27/your-map-is-wrong/)。\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022070913.webp)\n\n主办方在会上发布了一张[《互联网地图》](https://www.blendinteractive.com/work/web-2.0-summit-interactive-map/)。\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022070914.webp)\n\n这张地图把互联网划分成不同的势力范围，比如，谷歌是搜索王国，脸书是社交王国，电商王国则是亚马逊和 EBay 双雄鼎立。\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022070915.webp)\n\n当时，脸书的创始人扎克伯格就坐在台上。他一看这张地图，就对主持人说：\"你的地图错了\"。\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022070916.webp)\n\n他说：\n\n\"地图的最大部分一定是未知领域。现在的这张地图让互联网世界看起来像零和游戏，但事实并非如此。我们正在开拓新疆域，创造价值，而不是从别人那里夺走它们。\"\n\n我觉得，这段话说得特别好。所有的地图都是描绘已知的世界，但是，**更大的世界是那些还没有画出来的部分**，那里才是最大的机会。\n\n如果你只盯着地图画出来的部分，那就意味着，你把自己局限在这些疆域。当你发展壮大，就势必要侵入其他人的领域，对方一定会殊死反抗。\n\n但是，如果你把目光放到地图以外，那里其实是更大的世界，有更多的机会，你可以从零开始建立自己的王国。你的时间和精力，用来解决前人没有遇到的问题，而不跟对手进行零和竞争。\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022071301.webp)\n\n现在的这些互联网巨头，我印象中，好像没有一家是通过占领别人的地盘，而成为巨头的。每一家都是因为开创了新领域，而发展壮大。比如，微软建立了桌面操作系统，亚马逊开创了 AWS 云服务，Youtube 创造了流媒体平台，Netflix 建立了视频点播服务，抖音是竖屏短视频再创作。\n\n乔布斯说过一句名言：问消费者他们需要什么是没有意义的，因为他们不知道，只有当你把新事物拿到他们眼前，他们才会意识到自己需要它。他的意思就是开发未知领域，再把消费者领进去，他们会惊叹新世界是多么美妙，而你就成为这里的王者。\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022071302.webp)\n\n马斯克为什么在短短几年中，成为世界首富？因为他做的都是前无古人的事情：第一个大规模生产电动车、第一个建造可重复使用的火箭、第一个卫星上网服务，第一个要把人类移民到火星......他的每一个新领域都有巨大的成长空间，一旦做出成果，他就独享这些地图上新多出来的面积。\n\n**下一次当你查看地图时，请寻找地图以外的未知领域**，那才是建功立业、发展壮大的地方。否则，你只看到现有的世界，你的人生就被局限在那里，为了赢得零和游戏，与对手拼死竞争一点点空间。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022070913.webp",
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022070914.webp",
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022070915.webp",
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022070916.webp",
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022071301.webp",
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022071302.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "新一代云原生数据库",
+          "description": "数据库作为互联网核心软件，正在与云基础设施进一步整合，从\"数据库上云\"（On Cloud）转变成\"云原生数据库\"（In Cloud）。\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022071306.webp)\n\n7月22日举办的2022稀土开发者大会上，有一个专题活动[《新一代云原生数据库》](https://conf.juejin.cn/xdc2022/speaker?id=8&utm_source=ruanyfblogjiangshi)，由字节跳动数据库技术负责人张雷作为出品人，邀请字节、英特尔、美团、谷歌云的数据库专家，带来各自的云原生数据库使用经验分享。\n\n扫描下方海报二维码，就可以免费报名，参与演讲直播和现场交流，以及大会的其他活动。报名参会的开发者还有机会抽奖，赢取丰厚大奖。\n\n![](https://cdn.beekka.com/blogimg/asset/202207/bg2022070610.webp)",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022071306.webp",
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022070610.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "基因编辑错误",
+          "link": "https://www.dailymail.co.uk/news/article-10884147/Vicious-hamsters-bred-lab-accident.html",
+          "description": "人类现在已经可以编辑基因，但这是有风险的。万一编辑错误，后果难以预料。美国佐治亚州立大学的科学家编辑仓鼠的基因，希望增加它的社交性，更容易与同类相处，结果就编辑错误了。\n\n基因编辑过的新一代仓鼠，不但没变得更友善，反而具有异常的攻击性，行为狂野。在笼子里，与同类发生激烈战斗，撕咬和追逐（下图）。科学家无法解释，为什么会出现这种结果。\n\n这个失败的实验充分揭示了基因编辑的危险。如果在人类身上进行基因编辑，谁能保证不出错，万一导致异常的人类，这可怎么办。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022060502.webp",
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022060503.webp"
+          ]
+        },
+        {
+          "title": "阳光普照的时刻",
+          "link": "https://www.timeanddate.com/news/astronomy/99-percent-sunlight-july-8",
+          "description": "有人在网上提问，有没有某一个时刻，阳光可以照到最多的人类？经过计算，每年还真有这样一个时刻，世界99%的人口都可以看见阳光。\n\n这个时刻就是7月8日格林尼治标准时11:15，相当于北京时间19:15。这时，美州、欧洲、非洲和亚洲都是天亮的，虽然中国沿海地区已经是黄昏了（太阳在地平线以下0度到12度），只有大洋洲是天黑的。\n\n这时，看到阳光的人口总共有77亿人，其中超过64亿人在白天，超过12亿人在黄昏。他们相当于地球总人口的99%，只有不到8000万人处于夜间。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022070904.webp"
+          ]
+        },
+        {
+          "title": "星链的海洋上网",
+          "link": "https://www.starlink.com/maritime",
+          "description": "马斯克的星链项目（StarLink）正式推出了海洋上网。只要安装了他们的天线（下图），就能在海中上网，据说网速可以达到 350Mbps。\n\n目前，海洋上网只能通过海事卫星，网速很慢，费用非常贵。星链的这项业务，将彻底解决海洋上网问题，使得用户在海中也能宽带上网。\n\n由于第一期要通过地面的卫星站中转，所以只有欧美的近海能上网（下图的浅蓝色部分）。据说，年底可以实现卫星之间的直接通信，到时候地球的大部分海域，都将可以上网。\n\n它的费用并不便宜，天线安装10000美元，每个月的使用费5000美元。由于星链可能不会进入国内，中国有必要开发自己的卫星上网服务，彻底解决偏远地区和海洋上网问题。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022070803.webp",
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022070804.webp",
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022070805.webp"
+          ]
+        },
+        {
+          "title": "猪心脏移植试验",
+          "link": "https://www.usatoday.com/story/news/health/2022/03/09/human-pig-heart-transplant-patient-dies/9437650002/",
+          "description": "今年1月，美国曾经做过首例猪心脏移植手术，将一颗猪的心脏移植进入人体。术后，病人起初一切正常，但是两个月后还是出现了各种症状而死亡。（上图是医生运送猪心脏，走向手术室。）\n\n经过解剖，医生在那颗猪心脏里面发现了一种巨细胞病毒，怀疑是这种病毒导致了患者的死亡。\n\n为了验证这种假设，医生本周又为两位脑死亡的患者移植了猪心脏。这两位患者的身体还有生理机能，但大脑在法律上已经死亡，经过家属同意，将遗体捐赠做实验。猪心脏移植进入他们的身体，在72小时观察期内，都一切正常。这又朝着人体的猪器官移植推进了一步。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022071414.webp",
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022032303.webp"
+          ]
+        },
+        {
+          "title": "奔驰汽车公司辅助驾驶责任",
+          "description": "奔驰汽车公司承诺，只要使用它的辅助驾驶系统，发生交通事故，它会承担法律责任，不会让司机承担责任。\n\n这跟特斯拉公司形成鲜明对比，特斯拉的立场是，目前的自动驾驶只能辅助用户驾驶，所以用户对交通事故有责任。\n\n不过，奔驰公司虽然愿意承担责任，但是有苛刻的前提条件。\n\n- 行驶速度不超过60公里/小时；\n- 道路上不得有红绿灯、环形交叉路口或其他交通控制系统，也没有施工区域，也就是说主要是高速公路；\n- 该道路必须是奔驰系统里认可的道路；\n- 行驶时间必须是白天、天气晴朗、没有头顶障碍物（隧道）；\n- 坐在驾驶座上的人不能闭上眼睛或睡觉。"
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "银行人脸识别被破解",
+          "link": "https://finance.sina.com.cn/money/bank/gsdt/2022-07-06/doc-imizmscv0377623.shtml",
+          "description": "本文报道了一个真实案例，银行使用人脸识别 + 短信进行身份验证，结果被犯罪分子破解，多名用户的存款被转走。"
+        },
+        {
+          "title": "在游戏《刺客信条》逛希腊",
+          "link": "https://web.archive.org/web/20211010121826/https://www.douban.com/note/814326492/",
+          "description": "游戏《刺客信条：奥德赛》忠实还原了古希腊，本文进行了整理，将游戏里面的场景与真实场景一一对照。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022070708.webp",
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022070709.webp"
+          ]
+        },
+        {
+          "title": "韦伯望远镜与哈勃望远镜图像比较",
+          "link": "https://weibo.com/ttarticle/p/show?id=2309404790688712622283",
+          "description": "本周，美国宇航局发布了韦伯望远镜拍摄的第一批照片。作者将这些照片与30年前发射的哈勃望远镜做了比较，看看影像改进了多少。这里还有一篇详细的韦伯望远镜介绍。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022071304.jpg"
+          ]
+        },
+        {
+          "title": "如何写一个 React 路由组件",
+          "link": "https://github.com/ashok-khanna/react-snippets/blob/main/Router.js",
+          "description": "这是一个带有详细注释的脚本，讲解每一行的含义，不到100行代码，实现了 React 的路由。"
+        },
+        {
+          "title": ".Net 技术的六个误解",
+          "link": "https://blog.devgenius.io/6-net-myths-dispelled-celebrating-21-years-of-net-652795c2ea27",
+          "description": "本文为 .Net 正名，逐一解释常见的6个误解，比如认为 .Net 只能用于 Windows 系统。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022031006.webp"
+          ]
+        },
+        {
+          "title": "如何为静态网页添加 OAuth 登录",
+          "link": "https://abyteofcoding.com/blog/oauth-with-cloudflare-workers-on-a-statically-generated-site/",
+          "description": "本文使用 Cloudflare 的云函数，演示如何没有后端服务器，也能实现 OAuth 登录，并附有示例库。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021120809.webp"
+          ]
+        },
+        {
+          "title": "Postgres 索引入门",
+          "link": "https://blog.crunchydata.com/blog/postgres-indexes-for-newbies",
+          "description": "本文简单介绍了 Postgres 数据库的各种不同索引，及其简单用法。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022012008.webp"
+          ]
+        },
+        {
+          "title": "NixOS 的包管理设计",
+          "link": "https://blog.wesleyac.com/posts/the-curse-of-nixos",
+          "description": "NixOS 是一个 Linux 发行版，具有独一无二的包管理机制，彻底解决了版本冲突问题，不同版本的软件可以同时运行，新版本也可以无痛回滚到任意老版本。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022012507.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Bud",
+          "link": "https://github.com/livebud/bud",
+          "description": "一个 Go 语言的全栈 Web 框架，用它来写网站的前端和后端，编译成一个二进制可执行文件，放到服务器上就能直接运行，不需要其他文件。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022051406.webp"
+          ]
+        },
+        {
+          "title": "Aspect",
+          "link": "https://dev.aspect.app/",
+          "description": "一个 Web 应用，以可视化方式创建 React 组件，快速生成组件代码。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022051407.webp"
+          ]
+        },
+        {
+          "title": "Vexip UI",
+          "link": "https://www.vexipui.com/zh-CN",
+          "description": "个人打造的 Vue 组件库，没有大厂背景，目前有70多个组件。（@qmhc 投稿）",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022071415.webp"
+          ]
+        },
+        {
+          "title": "gacm",
+          "link": "https://github.com/alqmc/gacm",
+          "description": "一个极简的 Git 帐号管理工具，可以用它方便地切换和管理 Git 用户。（@alqmc 投稿）"
+        },
+        {
+          "title": "DBER",
+          "link": "https://dber.tech/",
+          "description": "数据库 ER 图的可视化设计工具，用来设计数据库结构，拖拽生成模型引用关系，可以一键导出 SQL 语句。（@findyourmagic 投稿）",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022071417.webp"
+          ]
+        },
+        {
+          "title": "EnvKey",
+          "link": "https://envkey.com/",
+          "description": "一个服务器密钥和配置的管理软件。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022033118.webp"
+          ]
+        },
+        {
+          "title": "Bing 壁纸仓库",
+          "link": "https://github.com/niumoo/bing-wallpaper",
+          "description": "这个仓库使用 GitHub Actions，每天自动抓取必应首页的壁纸图片。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022013102.webp"
+          ]
+        },
+        {
+          "title": "C2Rust",
+          "link": "https://c2rust.com/",
+          "description": "这个工具可以将 C/C++ 代码转换成 Rust 代码，除了命令行工具，还提供在线转换。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202202/bg2022020310.webp"
+          ]
+        },
+        {
+          "title": "Paperless-ngx",
+          "link": "https://github.com/paperless-ngx/paperless-ngx",
+          "description": "一个用来管理个人文档的开源软件，可以把 PDF、Office、图片文件等都放在里面，需要自己架设服务。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022040102.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "Bash 单行命令集合",
+          "link": "https://github.com/onceupon/Bash-Oneliner",
+          "description": "该仓库收集各种一行的 Bash 命令，用来完成各种不同的任务。"
+        },
+        {
+          "title": "Dracula",
+          "link": "https://draculatheme.com/",
+          "description": "这个网站收集了266个应用的暗色主题，比如 Zsh、Xcode、Vim、Figma 等。（@fish-404 投稿）",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022071416.webp"
+          ]
+        },
+        {
+          "title": "Python 动手做项目",
+          "description": "Python 教学书籍，PDF 免费下载，教初学者动手做22个 Python 小项目。"
+        },
+        {
+          "title": "汇编语言的艺术",
+          "link": "http://www.phatcode.net/res/223/files/html/toc.html",
+          "description": "在线阅读的免费电子书《The art of assembly language programming》，面向初学者的汇编语言教程，从最基本的二进制开始教起。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022030806.webp"
+          ]
+        },
+        {
+          "title": "狗照片占位符",
+          "link": "https://placedog.net/",
+          "description": "该网站提供狗照片作为各种大小的占位符图片，跟猫照片占位符类似。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022031004.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "工位监控",
+          "link": "https://www.qbitai.com/2022/07/36029.html",
+          "description": "网上流传的照片，据说是深圳某公司，每个工位上方都安装了监控探头。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022071411.webp",
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022071413.webp"
+          ]
+        },
+        {
+          "title": "印度人口",
+          "link": "https://ourworldindata.org/world-population-update-2022",
+          "description": "本周发布的《联合国人口报告》，不仅预测印度人口明年会超过中国，成为世界第一；还预测到本世纪末，印度人口是中国的两倍之多（15.3亿 vs 7.67亿）。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022071307.webp"
+          ]
+        },
+        {
+          "title": "零元纸币",
+          "link": "https://karthika2006.wordpress.com/2015/05/13/zero-rupee-note/",
+          "description": "2015年，印度的一个非政府组织印制了0卢比的纸币，样子跟法定的50卢比纸币一样，但是面值为0。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022030805.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "编程健康问题",
+          "description": "编程其实是一种有害健康的职业，而且不知不觉就造成了你的身体伤害。\n\n下面是程序员最常遇到的9种生理健康问题，希望引起大家的警惕。\n\n（1）大量的击键造成的肌肉劳损 (RSI)，最终导致手腕疼痛。\n\n（2）长时间盯着屏幕，使得眼睛出现问题。\n\n（3）不良的坐姿导致背部肌肉紧张，最终出现背部疼痛，尤其是下背部和上肩部。\n\n（4）久坐憋尿导致的肠道和泌尿问题。\n\n（5）久坐导致痔疮和前列腺问题。\n\n（6）喝太多咖啡，导致出现身体脱水。\n\n（7）喝太多咖啡和熬夜，还导致睡眠障碍。\n\n（8）缺乏阳光导致维生素 D 缺乏。\n\n（9）缺乏运动导致的身体僵硬和酸痛。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022071412.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "在互联网上交朋友",
+          "description": "这个星球有将近80亿人，可能有一万人与你非常相似、心灵相通。互联网是你找到他们、并发生联系的最可能方式。",
+          "user": "《在互联网上交朋友》",
+          "user_link": "https://jon.bo/posts/making-friends-online/"
+        },
+        {
+          "title": "地球是一个气候孤儿",
+          "description": "喜马拉雅山脉的冰川是众多河流的发源地，滋养了从巴基斯坦到越南许多国家。这些国家本该一起保护冰川，但是现实是各国只扫门前雪，印度拥有印度的冰川，巴基斯坦拥有巴基斯坦的冰川。",
+          "user": "《地球是一个气候孤儿》",
+          "user_link": "https://www.noemamag.com/the-planet-is-a-political-orphan/"
+        },
+        {
+          "title": "React 类和钩子",
+          "description": "我真的厌倦人们争论 React 类和钩子，哪一种更好。它们都可以完成工作，也都可以写出难以理解和维护的代码。\n\n我最困扰的是，有些人并不理解钩子是如何工作的，但声称用了钩子以后，代码更快了，只是因为他们在某处读到函数式编程是更好的方法。"
+        },
+        {
+          "title": "SpaceX 是加州最后一家大型制造业公司",
+          "description": "SpaceX 是加州最后一家大型制造业公司，加州曾经有十多家汽车厂，现在都没了，甚至我们现在都考虑搬到德克萨斯州。",
+          "user": "马斯克",
+          "user_link": "https://www.complex.com/life/elon-musk-says-hes-creating-a-town-in-texas-called-starbase"
+        },
+        {
+          "title": "面试者收集问题",
+          "description": "我曾经遇过一个面试者，一个问题都答不上来，甚至最简单的问题也不行。他只会说\"我不知道，换一个问题吧\"。\n\n几周后，我意识到他可能是被派来收集面试问题的。因为后来我们雇了一个女生，她完美地回答了所有的面试问题，但是正式入职后，写代码却写得非常糟糕。"
+        }
+      ]
+    },
+    {
+      "name": "鸣谢",
+      "items": [
+        {
+          "title": "FlowUs",
+          "link": "https://flowus.cn?promotionChannel=GW_RYF_01",
+          "description": "国产软件 [FlowUs](https://flowus.cn?promotionChannel=GW_RYF_01) 提供个人专栏服务（查看[周刊专栏](https://ruanyf-weekly.flowus.cn/?code=FLOWUS&promotionChannel=WX_RYF_00)），集成了\"文档+表格+网盘\"，适合知识库、数据管理、文件存储多种用途。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022071305.webp"
+          ]
+        }
+      ]
+    }
+  ]
+}

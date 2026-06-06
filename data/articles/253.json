@@ -1,0 +1,314 @@
+{
+  "title": "科技爱好者周刊（第 253 期）：训练材料用完之日",
+  "link": "https://www.ruanyifeng.com/blog/2023/05/weekly-issue-253.html",
+  "number": 253,
+  "sections": [
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "车轮转向系统",
+          "link": "https://topcarnews.net/hyundais-new-steering-system-may-make-parking-jobs-way-easier-s237901.html",
+          "description": "韩国现代汽车发布了一项新技术，允许每个车轮独立转动90度。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023042801.webp"
+          ]
+        },
+        {
+          "title": "电脑椅的静电",
+          "link": "https://mastodon.social/@haeckerfelix/110272427676278609",
+          "description": "一位国外网友发帖说，他家的显示器经常莫名其妙暗掉几秒钟，然后又好了。他原以为是显示器问题，后来发现只有移动电脑椅、或者坐下站起时，才会发生这个故障。他的电脑椅是宜家的 MARKUS，很多网友回帖说，他们的这把电脑椅也有这个问题。这把椅子的织物材料或者金属座架，容易带有静电，一移动就会导致放电，使得电脑显示器短时间关闭。解决方法似乎只有换掉这把椅子，但也有动手能力强的网友，为椅子接上地线，让它通地，从而解决了放电问题。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023042901.webp",
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023042902.webp",
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023042903.webp",
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023042904.webp"
+          ]
+        },
+        {
+          "title": "无线耳机可以取代助听器",
+          "link": "",
+          "description": "一项研究发现，无线耳机可以取代助听器，帮助听力受损的人。苹果的 Airpods 耳机有一个\"实时收听\"功能，可以放大外界声音，跟助听器的功能很像，实际效果也很好。助听器的价格非常贵，好的要几万元人民币，普通的也要几千。无线耳机如果真能替代，将造福很多失聪的人。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023010505.webp"
+          ]
+        },
+        {
+          "title": "沙坝蓄水池",
+          "link": "https://techxplore.com/news/2023-04-advanced-sand-drought.html",
+          "description": "韩国为了解决山区在旱季断水的问题，新建了该国第一座沙坝蓄水池。坝体内部有一个砂石的蓄水池，平时用来蓄水，需要时打开管道，让水流向下游。这样做据说有三个好处：水的蒸发大大减少；水质在通过沙床时得到改善；冬天的水不结冰。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023043001.webp",
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023043002.webp",
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023043003.webp"
+          ]
+        },
+        {
+          "title": "智能婚戒",
+          "link": "https://language.chinadaily.com.cn/2016-08/22/content_26508362.htm",
+          "description": "一家捷克公司推出\"智能婚戒\"，这种婚戒可以感知佩戴者的心跳，并且能将心跳曲线显示在戒指上。有趣的地方是，它显示的不是自己的心跳，而是对方的心跳。它通过蓝牙与手机通信，只要佩戴者按压戒指，手机就会联络另一只配对的戒指。对方的心跳频率，就会传到你的手机上，心跳曲线也显示在戒指上。发明者称，它让你随时感受到爱人的浪漫心跳。它采用玫瑰金材质，报价是3000美元/对。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023042405.webp",
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023042406.webp",
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023042407.webp",
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023042408.webp"
+          ]
+        },
+        {
+          "title": "我的开源经历",
+          "link": "https://www.v2ex.com/t/934564",
+          "description": "作者分享自己的经历，开发一个图片编辑的网页应用。",
+          "user": "nihaojob",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3081",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023050401.webp"
+          ]
+        },
+        {
+          "title": "如何自己实现 CodePen",
+          "link": "https://decode.sh/building-a-code-pen-type-editor-from-scratch",
+          "description": "CodePen 是著名的网页实时编辑预览工具，本文教你怎么实现它的主要功能，非常简单。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023041602.webp"
+          ]
+        },
+        {
+          "title": "tcpdump 快速上手",
+          "link": "https://jvns.ca/blog/2016/03/16/tcpdump-is-amazing/",
+          "description": "作者教你怎么使用 tcpdump 这个命令行工具，查看某个网站的 TCP 通信。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023020818.webp"
+          ]
+        },
+        {
+          "title": "WebGPU 为什么重要",
+          "link": "https://cohost.org/mcc/post/1406157-i-want-to-talk-about-webgpu",
+          "description": "操作系统的图形 API，目前是不统一的：Windows 是 DirectX，苹果是 Metal，Linux 是 Vulkan。WebGPU 是一种跨平台的解决方案，提供了统一的接口。推荐这篇长文。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023050301.webp"
+          ]
+        },
+        {
+          "title": "我开发 PCalc 的30年",
+          "link": "https://pcalc.com/mac/thirty.html",
+          "description": "作者在1992年为 Macintosh 电脑写了一个计算器 PCalc（上图）。后来，他一直维护这个项目30年，还把它移植到苹果公司的其他设备上，比如 iPhone 和 iWatch（下图）。作者回忆了他这30年。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022122402.webp",
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022122403.webp"
+          ]
+        },
+        {
+          "title": "使用 hurl 自动化 HTTP 测试",
+          "link": "https://brie.dev/2022-http-testing-hurl/",
+          "description": "本文介绍一种简单的方法，使用 hurl 这个软件，对网站 API 进行自动化测试，看它是否正确响应。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022122701.webp"
+          ]
+        },
+        {
+          "title": "编程语言的错误处理机制",
+          "link": "https://www.amazingcto.com/best-way-to-handle-errors-for-a-programming-language/",
+          "description": "本文讨论不同的语言如何处理报错，比如 Java 会抛出异常，而 Go 将错误赋值给一个变量。这里还有一篇相同主题的文章，也值得参考。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023041305.webp"
+          ]
+        },
+        {
+          "title": "疯狂的 C 语言字符串",
+          "link": "https://www.deusinmachina.net/p/c-strings-and-my-slow-descent-to",
+          "description": "本文是 C 语言的字符串教程，从结尾的`\\0`讲到 Unicode，结论就是在 C 语言里面，正确处理字符串是一件多么麻烦的事情。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023040702.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "stagit",
+          "link": "https://git.codemadness.org/stagit/",
+          "description": "这个软件可以将 Git 仓库转为一个静态网站，为每个文件、每次提交生成一个页面。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022121903.webp"
+          ]
+        },
+        {
+          "title": "元标签生成器",
+          "link": "https://websitemetadata.com/meta-tags-generator",
+          "description": "很多社交媒体对于外部 URL，会显示一个卡片，上面有标题、缩略图和页面简要内容。这些信息来自网页里面的元标签，这个工具可以帮助你生成这些元标签。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101001.webp"
+          ]
+        },
+        {
+          "title": "CJK 字体识别",
+          "link": "https://github.com/JeffersonQin/YuzuMarker.FontDetection",
+          "description": "上传一张东亚文字的图片，这个开源工具可以识别这些文字用了什么字体。",
+          "user": "JeffersonQin",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3090",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023050402.webp"
+          ]
+        },
+        {
+          "title": "microblog.pub",
+          "link": "https://microblog.pub/",
+          "description": "一个自托管的开源微博网站，只能一个人使用（即没有多用户），支持 ActivityPub 协议。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022101007.webp"
+          ]
+        },
+        {
+          "title": "mdless",
+          "link": "https://github.com/ttscoff/mdless",
+          "description": "一个终端窗口的 Markdown 文件渲染器，适合用来在终端下阅读 Markdown 文件。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022121804.webp"
+          ]
+        },
+        {
+          "title": "Once.fyi",
+          "link": "https://once.fyi/",
+          "description": "这个网站为用户输入的文本，生成一个用于分享的 URL。但是，这个 URL 只能打开一次，第二次访问就会不存在，有点像\"阅后即焚\"。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023022501.webp"
+          ]
+        },
+        {
+          "title": "Resumable.js",
+          "link": "https://github.com/23/resumable.js",
+          "description": "一个带有上传进度显示的网页多文件上传 JS 库。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023022701.webp"
+          ]
+        },
+        {
+          "title": "snappify",
+          "link": "https://snappify.com/editor",
+          "description": "一个将代码片段生成截图的工具。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022120903.webp"
+          ]
+        },
+        {
+          "title": "RustDesk",
+          "link": "https://rustdesk.com/",
+          "description": "一个开源的远程桌面软件，让你远程操作其他电脑的桌面，有各种操作系统的客户端。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022121003.webp"
+          ]
+        },
+        {
+          "title": "LosslessCut",
+          "link": "https://mifi.no/losslesscut/",
+          "description": "一个视频编辑器，最大特点是不进行重新编码，按照原视频的格式进行剪切连接，因此速度极快。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022121403.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "ChatGPT Prompt Engineering for Developers",
+          "link": "",
+          "description": "吴恩达与 OpenAI 合作的免费英文课程，教大家怎么编写 ChatGPT 提示，做出一个自己的聊天机器人。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023043004.webp"
+          ]
+        },
+        {
+          "title": "The Data Science Course 2023 完整课程（中文字幕）",
+          "link": "",
+          "description": "Udemy 高分付费课程的中文字幕版。",
+          "user": "lyf61",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3093",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023050403.webp"
+          ]
+        },
+        {
+          "title": "QUIC 协议图解（中文版）",
+          "link": "",
+          "description": "解释 QUIC 协议通信的每个字节的含义，原始英文版的翻译。",
+          "user": "cangSDARM",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3094",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023050404.webp"
+          ]
+        },
+        {
+          "title": "Musico",
+          "link": "https://www.musi-co.com/listen/streams",
+          "description": "一个自动生成音乐的 AI 模型，它的官网可以收听这个模型生成的音乐。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022093004.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "云的表情",
+          "link": "https://mymodernmet.com/a-daily-cloud-art/",
+          "description": "一位美国艺术家专门为各种云的照片，添加表情，使得云看上去像一个卡通人物。他原本只是出于无聊，随手拍了一些云的照片，画上表情以后，发到网上。后来，他发现很多人喜欢这些作品，就坚持了下来。他说：\"看着云，你会产生无穷无尽的灵感。\"现在，越来越多的读者向他投稿。他还准备出书。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022111716.webp",
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022111717.webp",
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022111718.webp",
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022111719.webp",
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022111720.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "忙碌的七个层次",
+          "link": "https://randsinrepose.com/archives/the-seven-levels-of-busy/",
+          "description": "生活的忙碌可以分成七个层次。大家可以对照一下，自己属于哪个层次？第 1 级：一点不忙。时间很自由，怎么安排都可以，没有一定要去完成的事项，周末想睡多久就多久。第 2 级：有一些小事。你记得有一些事要做。这些事情是合理的事项，没有截止期，但是你知道这些事迟早要做。第 3 级：有一些重要的事。你有必须要做的事情，需要及时跟踪，不能拖延，你会时刻提醒自己这些事情。第 4 级：日程排满了。你的日程排满了，不得不经常问自己\"什么事情更重要？\"，以便决定先做哪些事，后做哪些事。你没有计划外的时间，不过你还能控制日程。第 5 级：生活出现混乱。你的事情在工作时间做不完，你开始加班了。你经常因为事情来不及，而对别人说\"对不起\"。那些事情并没有被你放弃，只是你不得不赶时间，有些事情执行变得草率。第 6 级：任务做不完。你需要做的事情，超过了你安排日程的能力。即使放弃某些事情，你依然做不完剩下的事情。你的工作时间大大延长，影响到正常生活。你感到非常疲劳。第 7 级：日子过不下去。各种任务塞满了你醒着的每一分钟。吃饭和其他生活必需的事情，都是抽时间来做。你忙起来的时候，甚至饭也没时间吃。你不写日程安排了，因为根本没有时间做计划，每个小时情况都在发生变化。你走路也心不在焉，常常觉得要崩溃，日子过不下去了。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023050405.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "杰弗里·欣顿：我离开谷歌，是为了呼吁 AI 的风险",
+          "link": "https://finance.sina.cn/7x24/2023-05-02/detail-imysiqec8115996.d.html",
+          "description": "\"我离开谷歌，是为了呼吁 AI 的风险，在谷歌任职不方便谈论这些事情。\"",
+          "images": []
+        },
+        {
+          "title": "欧洲的问题是没有将互联网视为可利用的经济机会",
+          "link": "",
+          "description": "\"欧洲的问题是，没有将互联网视为可利用的经济机会，而是看成需要监管的对象。\"",
+          "images": []
+        },
+        {
+          "title": "Yann LeCun：当你的手下变成了比你聪明的 AI 模型时，人们为什么会感到受威胁呢？",
+          "link": "https://twitter.com/ylecun/status/1647533059212812289",
+          "description": "\"大多数人都认为，手下的人比自己聪明，是没有问题的。一般来说，领导人都要聘请比自己聪明的顾问和幕僚。那么，当你的手下变成了比你聪明的 AI 模型时，人们为什么会感到受威胁呢？\"",
+          "images": []
+        },
+        {
+          "title": "要成为优秀程序员，请编写大量代码；要成为顶级程序员，请阅读大量代码。",
+          "link": "",
+          "description": "\"要成为优秀程序员，请编写大量代码；要成为顶级程序员，请阅读大量代码。\"",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

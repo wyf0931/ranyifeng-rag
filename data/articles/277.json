@@ -1,0 +1,336 @@
+{
+  "title": "科技爱好者周刊（第 277 期）：工作台副屏的最佳选择",
+  "link": "https://www.ruanyifeng.com/blog/2023/11/weekly-issue-277.html",
+  "number": 277,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "工作台副屏的最佳选择",
+          "link": "",
+          "description": "以前，我有一个习惯。在电脑旁边，放一个平板，作为副屏。\n\n大屏幕干活，小屏幕做一些自己感兴趣的事情：看视频、查网页、听音乐、玩小游戏等等。\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110302.webp)\n\n不少人都会这样吧。平板作为工作副屏，具有两大优势：可以运行手机 App，触摸屏比鼠标方便。\n\n但是，我后来发现，**平板不适合作为副屏**。今天就来谈谈为什么，以及我是怎么解决的。\n\n平板作为副屏，有几个缺点。\n\n（1）部分 App 只能竖屏，如果横屏使用，就会像下图那样，不得不经常翻转屏幕，很烦人。\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110304.webp)\n\n（2）大部分横屏 App，在平板上体验不佳（下图）。\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110305.webp)\n\n（3）平板的多窗口操作一团糟。无论 iPad 还是安卓，最多只能做到分屏（下图），而且操作繁琐。\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110504.webp)\n\n（4）工作台平板不能太小。我自己的11英寸 iPad 就不够大，看视频不爽，但更大的型号未免就太重了。\n\n（5）iPad 特有的问题：某些安卓应用没有 iOS 版。\n\n由于以上原因，我一直在寻找替代方案。\n\n有一天，我突然想到，**华为和三星这两个牌子的手机有桌面模式。**\n\n所谓\"桌面模式\"，就是 USB-C 线将手机与显示器连起来，手机就会变成一台电脑主机，在显示器上显示类似 PC 的桌面，但其实是安卓系统。\n\n抱着试一试的想法，我买了一台二手的三星手机（建议选择 S 系列）。由于需要谷歌服务框架，我就没有选择华为。\n\n然后，我又花了400多元，买了一个13英寸的触摸显示屏。事后发现买小了，应该买尺寸更大的。\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110505.webp)\n\n大家买的时候要注意，显示屏需要支持\"一线通\"，即要有 USB-C 接口。至于质量不用担心，我的经验是，网上那些没牌子的山寨屏，用起来都不错。\n\n我把手机和显示屏连起来，一切就 OK 了。\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110506.webp)\n\n启动时会显示\"Samsung DeX\"，这是三星桌面模式的商标。接着就会进入桌面，简直是 Windows 桌面的克隆。\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110507.webp)\n\n前面的那些平板问题，在桌面模式下都得到了完美的解决。\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110508.webp)\n\n那些只能竖屏的 App，打开就像上图那样，可以占满100%高度。\n\n最让人满意的，就是多窗口体验。所有窗口可以移动和堆叠，可以放大至全屏，或者缩小成状态栏的一个图标。\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110509.webp)\n\n这就是目前我正在用的副屏方案，我觉得很完美，推荐给大家。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110302.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110304.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110305.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110504.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110505.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110506.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110507.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110508.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110509.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "自助式手机充电器",
+          "link": "",
+          "description": "一个英国学生为伦敦的流浪者，发明了一种自助式手机充电器。\n流浪者通常找不到电源，为了让他们可以使用手机，这种充电器卡在共享自行车的链条上，用磁铁吸住旁边的金属壳。\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023100203.webp)\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023100205.webp)\n伦敦的共享自动车只锁车头，不锁车轮，因此不花钱就可以踩动车轮。通过车轮转动，带动充电器的齿轮，从而实现自助发电。\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023100204.webp)\n只要踩25分钟自行车，就可以给手机充一次电。\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023100206.webp)\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023100207.webp)",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100203.webp",
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100205.webp",
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100204.webp",
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100206.webp",
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100207.webp"
+          ]
+        },
+        {
+          "title": "机器狼防熊",
+          "link": "",
+          "description": "日本山区有熊，夜间会进入村庄觅食。农村都是老年人，如何防熊就成了大问题。\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023100211.webp)\n一家日本模型公司生产了\"机器狼\"，用来让熊远离村庄。\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023100212.webp)\n一到夜里，机器狼的眼睛闪闪发亮，发出刺耳的嚎叫，露出獠牙，还会摇头晃脑。它放在一个无人驾驶底盘上面，底盘载着它前进。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100211.webp",
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100212.webp"
+          ]
+        },
+        {
+          "title": "苹果 M3 发布会视频用 iPhone 拍摄的真相",
+          "link": "",
+          "description": "苹果公司最近的 M3 芯片发布会，所有视频都是用 iPhone 15 Pro Max 手机拍摄的。\n苹果还发布了拍摄的幕后花絮，原意是展示 iPhone 的拍摄能力有多强。\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110802.webp)\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110805.webp)\n但是，专业人士看了以后，发现这个幕后花絮到处都是槽点，根本没有达到宣传目的。\n（1）现场使用了许许多多专业设备：灯光、稳定器、导轨、活动支架、监视器、收音麦克风......所有设备中，iPhone 是最便宜的。\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110803.webp)\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110806.webp)\n（2）拍摄团队使用了 iPhone 的 Log 模式进行精细调色，普通消费者不会用这个模式。\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110804.webp)\n（3）拍摄所用的 App，不是 iPhone 的内置相机，而是第三方公司的 Blackmagic Camera。\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110807.webp)\n上图是花絮中出现的 App 截图，它不是 iPhone 的内置相机。\n（4）现场使用的拍摄参数是 ISO 55 和手动对焦，普通用户无法手动调节这两个参数，并且 iPhone 一直宣传的是自动对焦。\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110808.webp)\n上图中，摄影师正在用旋钮控制对焦。\n（5）编辑视频使用的软件是 Adobe Premiere Pro（下图的背景），而不是苹果自家的 Final Cut Pro。\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110809.webp)\n总之，这个花絮恰恰说明，普通消费者使用 iPhone 15 根本拍不出苹果的宣传视频。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110802.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110805.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110803.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110806.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110804.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110807.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110808.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110809.webp"
+          ]
+        },
+        {
+          "title": "减肥药流行影响粮食市场",
+          "link": "",
+          "description": "美国现在有一种非常火爆的减肥药，叫做 Ozempic。它原用来治疗糖尿病，意外发现可以减肥，从而被疯抢。\n![](https://cdn.beekka.com/blogimg/asset/202310/bg2023100703.webp)\n美国是肥胖症大国，专家估计，未来10年内，7%的美国人口（约2400万人），会服用这个药进行减肥。\n由于该药使得服用者减少20%的热量摄入，这意味着美国全国的食品消费将会显著减少，尤其是那些高热量、高脂肪、含糖的食品。\n最新计算是，2035年时，美国人口虽然在增加，但是所有人口摄入的食品热量，将比现在减少1.7%。一个减肥药会影响国际粮食市场，真是令人意想不到。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100703.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "如何训练 AI 生成个人肖像",
+          "link": "https://www.shruggingface.com/blog/self-portraits-with-stable-diffusion-and-lora",
+          "description": "作者演示，上传一组自拍照供 AI 训练，然后就能根据提示，生成你的个人肖像。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110709.webp"
+          ]
+        },
+        {
+          "title": "Chrome 的 Headless 模式升级",
+          "link": "https://developer.chrome.com/articles/new-headless/",
+          "description": "从 Chrome 112 开始，Headless 模式（无 UI 模式）得到了升级，与 Chrome 浏览器的实际行为完全一致，本文介绍基本用法。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110707.webp"
+          ]
+        },
+        {
+          "title": "我的创业故事：两年内从零到每月4.5万美元",
+          "link": "https://news.tonydinh.com/p/my-solopreneur-story-zero-to-45kmo",
+          "description": "一个越南程序员的自述，辞职两年，做了4个应用，最近收入达到了每月4.5万美元。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023092404.webp"
+          ]
+        },
+        {
+          "title": "男孩概率问题",
+          "link": "https://www.maa.org/external_archive/devlin/devlin_04_10.html",
+          "description": "本文讨论一个概率问题：有两个孩子，已知一个是男孩，请问另一个也是男孩的概率是多少。很多人会回答是50%，这个答案是错的。",
+          "images": []
+        },
+        {
+          "title": "Twitter 社区笔记的算法",
+          "link": "https://vitalik.ca/general/2023/08/16/communitynotes.html",
+          "description": "Twitter 今年推出了一个\"社区笔记\"功能，允许用户对别人的发言撰写笔记，其他用户可以对这些笔记进行投票，系统自动选出一条，跟原始发言一起展示。本文分析该功能背后的开源算法。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082806.webp"
+          ]
+        },
+        {
+          "title": "分片不等于分布式",
+          "link": "https://medium.com/@magda7817/sharded-does-not-imply-distributed-572fdafc4040",
+          "description": "本文区分两个概念，数据库分片（sharding）不等于分布式数据库。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023092302.webp"
+          ]
+        },
+        {
+          "title": "如何让字体等比例缩放？",
+          "link": "https://tobiasahlin.com/blog/responsive-fluid-css-type-scales/",
+          "description": "本文介绍使用 CSS，将字体缩着窗口大小等比例缩放。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023092402.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "Authing 应用网关",
+          "link": "https://www.authing.com/gateway-integration",
+          "description": "Authing 主要做身份认证 SaaS 服务（身份云），他们最近发布了一个重量级产品---- Authing 应用网关。\n他们的解决方案，就是提供一个身份/登录网关，架设在所有内部应用前面，不用改造原有系统，实现 \"一个身份\"登录所有应用。\n\"Authing 应用网关\"同时集成了用户管理、权限管理、负载平衡、路由、安全保护、加密、压缩等功能，为企业提供重要的基础设施，并自带一个简洁直观的管理后台。\n它需要私有部署。感兴趣的朋友可以访问 Authing 官网，详细了解软件信息，并要求演示。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110601.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "SSHFS",
+          "link": "https://github.com/deadbeefsociety/sshfs",
+          "description": "这个工具使用 SSH 协议，将远程服务器挂载成本地目录。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110702.webp"
+          ]
+        },
+        {
+          "title": "sudo",
+          "link": "",
+          "description": "微软推出的命令行自动补全工具。",
+          "images": []
+        },
+        {
+          "title": "KDesign",
+          "link": "https://kingdee.design/",
+          "description": "金蝶的企业级产品设计系统，包括设计规范、设计资源、前端组件库。",
+          "user": "quanzhiyuan",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3606",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110402.webp"
+          ]
+        },
+        {
+          "title": "react-live",
+          "link": "",
+          "description": "一个开源的 React 练习场（playground）。",
+          "user": "fewismuch",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3609",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110714.webp"
+          ]
+        },
+        {
+          "title": "ChatGPT Next Web",
+          "link": "",
+          "description": "一个开源的 ChatGPT 中文网页版，做得非常精致，可以自己部署。这里是 Demo。",
+          "user": "geeeeeeeek",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3611",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110717.webp"
+          ]
+        },
+        {
+          "title": "imgproxy",
+          "link": "",
+          "description": "一个图像处理服务器，可以根据 URL 参数将原图转换成不同大小、格式等，适合用作图像 CDN 的源服务器。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102802.webp"
+          ]
+        },
+        {
+          "title": "Soul",
+          "link": "https://github.com/thevahidal/soul",
+          "description": "一个 JS 库，可以为 SQLite 数据库添加 HTTP 服务，自动提供 RESTful 接口。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022103101.webp"
+          ]
+        },
+        {
+          "title": "Aegis",
+          "link": "https://getaegis.app/",
+          "description": "一个开源的安卓双因素认证的密码管理器。它的最大特点是可以导入导出数据，其他密码管理器好像都没有这个功能。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022110302.webp"
+          ]
+        },
+        {
+          "title": "LazyVim",
+          "link": "https://www.lazyvim.org/",
+          "description": "neovim 的一套配置文件，让其快速变成一个 IDE。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071705.webp"
+          ]
+        },
+        {
+          "title": "Glance",
+          "link": "https://github.com/novoselrok/glance",
+          "description": "一个很有意思的工具，使用 AI 找出代码最重要的部分，高亮显示。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071905.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "张家界国家森林公园3D全景",
+          "link": "",
+          "description": "一个浏览器中访问的 3D 全景展示。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110801.webp"
+          ]
+        },
+        {
+          "title": "Replicate",
+          "link": "",
+          "description": "Replicate 提供数千个 AI 模型的云服务，可以在他们的网站上使用，也可以 API 调用，比如 stability-ai 的 sdxl \"文生图\"模型。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110708.webp"
+          ]
+        },
+        {
+          "title": "五级行政区划查询",
+          "link": "",
+          "description": "该网站可以查询中国34个省份，2800多个县，60多万个行政村历年的行政管辖范围和所属关系变化，源码开源。",
+          "user": "ruiduobao",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3605",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110401.webp"
+          ]
+        },
+        {
+          "title": "TIL（今天我学到的）",
+          "link": "https://github.com/jbranchaud/til",
+          "description": "一个开源笔记库。大家可以学习他做笔记的方式，内容按主题分类，放在 GitHub 上面。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110704.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "USB-C 线标注速率",
+          "link": "",
+          "description": "USB-C 是现在的主流接口，虽然看上去一模一样，但是接口和线材的速率差异很大，肉眼根本无法分辨。\n一家国外品牌率先在 USB-C 线上注明速率，这种做法急需推广。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110705.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110706.webp"
+          ]
+        },
+        {
+          "title": "蒙德里安主题",
+          "link": "",
+          "description": "最近，Linux 的 KDE Plasma 桌面出现了一个蒙德里安皮肤，让人眼前一亮。\n这个皮肤还有 GTK 版本。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110510.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110511.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110512.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110513.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "久坐与站立的健康建议",
+          "link": "",
+          "description": "大部分人工作时，都是坐着。\n\n这是因为坐着消耗的能量少，而且有助于稳定身体，所以精细的任务通常都是坐着完成的，比如驾驶、编程、写作、绘制图纸、显微手术等等。\n\n但是，久坐超过一小时，已被医学证明会引起脂肪沉积，并且增加心脏病风险。\n\n很多人提倡站立工作。站立工作会导致更多的热量燃烧，对身体比较有利。\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110715.webp)\n\n但是，站着工作也有问题。它更累人，站着比坐着多消耗大约20%的能量。站着会给循环系统以及腿和脚带来更大的压力。\n\n如果你本身已经有心脏病，站着工作会导致循环系统的额外负荷，加速颈动脉粥样硬化。另外，长时间站立工作也会增加静脉曲张的风险。所以，整天站着是不健康的。\n\n而且，当人们站着而不是坐着时，许多精细工作的表现也不太好。如果你的工作很重要，或者需要全神贯注，建议还是坐着做。\n\n很多专家建议，定时轮换站着和坐着。最好坐着工作每20到30分钟，就站起来运动1-2分钟。\n\n这时，你不要仅仅站立，要四处走动一下，不需要剧烈运动，只要走动就足够了。这对于促进血液循环很重要。\n\n因此，公司最好建立一种多样化的运动模式，比如要求大家步行到打印机、饮水机，以及站立开会、走楼梯等等。\n\n总之，如果你的工作需要久坐，就一定要记得，每过一会就要站起来走动一下。\n\n![](https://cdn.beekka.com/blogimg/asset/202311/bg2023110716.webp)",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110715.webp",
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110716.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "1",
+          "link": "",
+          "description": "新的科技公司创新，老的科技公司诉讼。"
+        },
+        {
+          "title": "2",
+          "link": "",
+          "description": "个人和小企业适合去传授知识，而大公司不适合。因为大公司受制于保密政策，正式发布的每一个句子都得经由律师过目，再经严格的层层审查。\n大公司的强项是付得起广告，小公司付不起。所以你能在传授知识方面大力投入，而大公司不能。\n-- 《Rework》"
+        },
+        {
+          "title": "3",
+          "link": "",
+          "description": "19世纪末，美国有一个发明家，声称发明了一辆只需一加仑水就可以穿越美国的汽车。过了好多年，他都未能交付这辆车。投资者要求他，要么立刻生产出来，要么退还资金。\n发明家拒绝了，说他现在已经想出了这种汽车的一个更好版本，只需一点点水就能穿越美国，匆忙发布劣质产品有损他的职业尊严，他别无选择只能继续他的研究。"
+        }
+      ]
+    }
+  ]
+}

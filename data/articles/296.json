@@ -1,0 +1,489 @@
+{
+  "title": "科技爱好者周刊（第 296 期）：xz 后门的作者 Jia Tan 是谁？",
+  "link": "https://www.ruanyifeng.com/blog/2024/04/weekly-issue-296.html",
+  "number": 296,
+  "sections": [
+    {
+      "name": "封面图",
+      "items": [
+        {
+          "title": "",
+          "link": "",
+          "description": "去年底建成的南昌东站，以《滕王阁序》的\"落霞与孤鹜齐飞，秋水共长天一色\"为灵感，造型宛如展翅翱翔的羽翼，象征城市的腾飞。（via）",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040706.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "xz 后门的作者 Jia Tan 是谁？",
+          "link": "",
+          "description": "互联网行业最近的重大事件，莫过于 xz 软件的后门。\n\nxz 是一种压缩软件，大量用于 Linux 系统，比如系统管理器 systemD 就用它压缩日志。它是 Linux 的基本组件之一，每台服务器几乎都有它。\n\n今年3月底，有人发现它的新版本有点奇怪，让 SSH 的启动时间慢了500毫秒。进一步调查发现，里面竟然有一个后门。\n\n这件事震惊了业界，因为新版本即将纳入主要的 Linux 发行版（比如 Debian 和 Fedora），只差几天而已。到了那时，服务器带有后门，后果不堪设想。\n\n而且，整个事件经过精心策划，过程长达数年，每一步都毫无破绽，心思之缜密，耐心之好，能力之强，令人后怕。\n\n这个事件开始于2021年4月，一个网名叫做 Jia Tan 的人，第一次向 xz 软件包提交了一个正常的补丁，被顺利合并。\n\n2021年11月和2022年4月，他又提交了两个正常的补丁，也被合并。\n\n然后，突然冒出了几个网友，在邮件列表上向管理员建议，xz 项目缺乏人手，响应迟缓，应该给予 Jia Tan 管理员权限。这个建议被采纳了。但是，人们现在发现，这几个网友都是陌生的邮件地址和名字，根本找不到其他的活动痕迹。\n\n就这样，Jia Tan 成为了管理员，拥有独立发布新版本的权限，先后发了几个版本。虽然他的这些代码可能是无害的，但是扩展了功能，为后面要做的坏事打下了基础。\n\n2024年2月，他添加了后门。代码做了混淆，而且后门不在源代码里面，要在构建阶段才会生成，很难发现。他发了这个版本以后，就开始发信，催促几个大型发行版，尽快收入这个版本。\n\n后门曝光后，Jia Tan 就彻底消失了，没有任何身份信息，也没有其他痕迹，谁也不知道他到底是谁。人们开始搜集线索，试图找出这个人。\n\n他的网名是汉语拼音，邮件全名是 Jia Cheong Tan，中间的 Cheong 似乎是粤语。他的 GitHub 提交时间采用东八时区。他的 IP 地址是新加坡。\n\n一切都在指向，他是一个在新加坡的华人。真的是这样吗？\n\n网名显然是假的，代码提交时间可以更改，至于 IP 地址，已经查明是 VPN 地址。\n\n有没有一种可能，他伪装成华人，栽赃给中国？\n\n有人分析了他在 GitHub 的所有提交。虽然提交时间可以更改，但也不能改得太过分，毕竟要保持提交顺序和及时性，所以还是能看出一点东西。\n\n他的提交，绝大部分采用东八时区的时间，但是有一些是东二时区和东三时区。\n\n研究者相信，他很可能是一个东二时区的欧洲人，伪装成东八时区的中国人。他更改了计算机的时区，但是偶尔有几次忘记了更改。\n\n东二时区的国家（上图的绿色部分），主要是东欧国家，以及一部分北欧国家（芬兰和瑞典）和中东国家（以色列和埃及）。\n\n他来自东二时区，主要理由有三点。\n\n（1）他在东二时区的提交日期是冬季，而东三时区的提交日期是夏季。这正好符合欧洲国家和以色列的夏令时切换。\n\n（2）他明显在手动切换时区。举例来说，2022年10月6日，他先在东八时区的17:00:38进行了一次提交，然后又在东三时区的21:53:09再次提交。两次相差不到十个小时，很难相信这一点时间，他已经从中国来到欧洲写代码。\n\n（3）他在中国的农历假日（中秋节、清明节、春节）都有提交，尤其是2023年春节假期（1月21日到1月27日），他有五天提交记录（分别是22日、23日、24日、26日、27日），这说明他不过春节。相反地，他在欧洲人很重视的假期（圣诞节和新年）却没有提交记录。\n\n综上所述，这个 Jia Tan 很可能来自东二时区。不过，这个人（或者组织）非常小心，而且是技术高手，也许永远也发现不了真实身份。\n\n这件事情提醒我们，开源社区的参与者形形色色，不全是好人，有些人非常阴险，不仅干坏事，还伪装身份，栽赃给他人。因此，我们对他人保持善意的同时，也不能丢失警惕。已经有人提议，重要的开源项目不能接受匿名身份的代码提交者。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040903.webp",
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040902.webp",
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040904.webp",
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040905.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "日本人都姓佐藤",
+          "link": "https://www.spoon-tamago.com/2531-sato-surname-problem/",
+          "description": "一个日本大学教授警告，如果不改变人口下降的趋势，到了2531年，所有日本人都会姓佐藤（sato）。\n\n佐藤是日本目前最常见的姓氏，占总人口的1.5%。由于日本人口正在下降，罕见姓氏不断消失，人口向大姓集中。\n\n而且，日本有法律，强制要求女性婚后改用夫家的姓氏，导致小姓更难生存。\n\n（图片说明：某场比赛时，球员姓氏都是佐藤。）\n\n根据调查，2022年至2023年间，佐藤姓氏增长率高达0.83%。也就是说，总人口在减少，但是佐藤氏在增加。\n\n根据教授的计算，以这个增长率，到了2531年，日本将不存在第二个姓氏，所有人都姓佐藤。\n\n为了警示日本国民，他还办了一个\"佐藤问题网站\"，提出急需改变女性婚后改夫姓的问题。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040206.webp",
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040205.webp",
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040207.webp",
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040204.webp"
+          ]
+        },
+        {
+          "title": "观察最多鸟类的人",
+          "link": "https://www.theguardian.com/environment/2024/mar/24/birding-online-community-10000-species",
+          "description": "iGoTerra 是一个野生动物网上社区，用来记录和管理自己看到的野生动物。\n\n它有一个榜单，列出看到最多鸟类的用户排名。最近，该榜单诞生了有史以来第一位看到超过10000种鸟的人。\n\n创造记录的是一位70岁的美国退休外交官 Peter Kaestner。下图是2024年2月9日他在菲律宾拍到的捕蜘鸟，这是他看到的第10,000种鸟。\n\n这个记录是不可思议的，因为已知的鸟类大约只有1.1万种，这意味着他几乎见过地球上所有鸟。\n\n技术帮助鸟类观察者创造记录。机器学习现在可以从照片中自动认出，这是哪一种鸟，甚至从叫声也可以分辨鸟类，iGoTerra 社区则让爱好者分享在哪里可以看到什么鸟。\n\n另外，由于对于鸟类的理解在发展，物种被不断细分，很多新的鸟类因此诞生。这也是能够突破10000大关的原因之一。\n\n不过，iGoTerra 只要求上传照片或鸟叫的录音作为证据，并不会对真实性进行审核。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040303.webp",
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040304.webp"
+          ]
+        },
+        {
+          "title": "苹果公司的起源",
+          "link": "https://www.vintag.es/2024/04/steve-wozniak-working-in-garage.html",
+          "description": "本月，苹果公司庆祝成立48周年。这家公司是在1976年4月1日由乔布斯和史蒂夫·沃兹尼亚克在美国加州成立的。\n\n当时，他们两个在乔布斯父母的车库里面，组装电脑的电路板对外销售。\n\n车库非常简陋，下面是当时的一些照片，沃兹尼亚克一个人在干活。\n\n两位创始人恐怕都没有料到，苹果后来会发展得这么大，真可谓\"作始也简，将毕也巨\"。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040208.webp",
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040209.webp",
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040210.webp",
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040211.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "史上首位图灵和阿贝尔双料获奖者",
+          "link": "https://www.163.com/dy/article/IVGAHL7K0511ABV6.html",
+          "description": "计算机科学的最高奖\"图灵奖\"刚刚揭晓，普林斯顿高等研究院的数学教授艾维·维格森（Avi Wigderson）。他还拿过数学界的最高奖\"阿贝尔奖\"，是唯一一位双料获奖者。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024041108.webp"
+          ]
+        },
+        {
+          "title": "可以替代 React 的框架",
+          "link": "https://joshcollinsworth.com/blog/antiquated-react",
+          "description": "这篇长文对 React 框架提出批评，认为它的很多做法已经过时。文章后半部分介绍了各种可以替代 React 的前端框架。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023081606.webp"
+          ]
+        },
+        {
+          "title": "如何生成键盘输入统计看板",
+          "link": "https://greptime.com/blogs/2024-03-19-keyboard-monitoring",
+          "description": "本文介绍使用一个 Python 脚本，统计用户在当前计算机按下了什么键。",
+          "user": "tisonkun",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4195",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040306.webp"
+          ]
+        },
+        {
+          "title": "Claude AI 能做，而 ChatGPT 不能做的四件事",
+          "link": "https://www.zdnet.com/article/4-things-claude-ai-can-do-that-chatgpt-cant/",
+          "description": "Claude 是 Anthropic 公司推出的大规模语言模型，有免费版和收费的 Pro 版。本文比较了 Claude 强于 ChatGPT 的四个地方。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090711.webp"
+          ]
+        },
+        {
+          "title": "如何将 Caddy 作为反向代理",
+          "link": "https://linuxiac.com/how-to-set-up-caddy-as-reverse-proxy/",
+          "description": "一篇初学者教程，介绍如何用 Caddy 架设反向代理服务器，它的设置比 nginx 简单，而且自动生成和更新 HTTPS 证书。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024032907.webp"
+          ]
+        },
+        {
+          "title": "我后悔重构了代码",
+          "link": "https://overreacted.io/goodbye-clean-code/",
+          "description": "著名程序员 Dan Abramov 的一篇旧文。他曾经觉得同事的代码太冗余，就擅自重构了，让其变得干净。但是，他后来认识到，那些冗余的代码有可取之处，抽象反而不利于日后的扩展。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023120807.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI 相关",
+      "items": [
+        {
+          "title": "ChatGPT",
+          "link": "http://chatgpt.com/",
+          "description": "OpenAI 宣布，ChatGPT 取消注册要求，不登录就可以使用。但是，收费的功能（比如 ChatGPT 4 和 DALL-E）还是必须登录。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040201.webp"
+          ]
+        },
+        {
+          "title": "Opera",
+          "link": "https://www.opera.com/zh-cn",
+          "description": "Opera 浏览器宣布，通过它就能安装和使用50多个 AI 模型（每个模型占用大约 2GB 空间），大大简化了本地计算机使用 AI 的难度。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040401.webp"
+          ]
+        },
+        {
+          "title": "Suno AI",
+          "link": "https://www.suno.ai/",
+          "description": "Suno AI 是一个\"文生音乐\"的服务。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040305.webp"
+          ]
+        },
+        {
+          "title": "Sunoprompt（Suno AI 提示词工具）",
+          "link": "https://sunoprompt.com/",
+          "description": "网友的这个工具帮助你生成它的提示词，可以调整各种细节。",
+          "user": "Lcorinst",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4194",
+          "images": []
+        },
+        {
+          "title": "Suno AI 音乐下载器",
+          "link": "https://sunoaidownload.com/",
+          "description": "另有一个 Suno AI 音乐下载器。",
+          "user": "AICodeHunt",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4250",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024041104.webp"
+          ]
+        },
+        {
+          "title": "文生图 AI 模型提示词收集网站",
+          "link": "",
+          "description": "一个收集各种文生图 AI 模型的提示词的网站，可以作为参考工具。",
+          "user": "leoli202303",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4209",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040311.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "DOOM 验证码",
+          "link": "https://vivirenremoto.github.io/doomcaptcha/",
+          "description": "DOOM 游戏被用作网页验证码，只有消灭指定数目的敌人，才能通过验证。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024032906.webp"
+          ]
+        },
+        {
+          "title": "开源服务可用性检查工具",
+          "link": "",
+          "description": "一个开源的服务可用性检查工具，记录服务的健康状态，如果发现服务下线，立刻发送通知，可以替代 StatusPage.io。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040301.webp"
+          ]
+        },
+        {
+          "title": "开源工具（自动生成管理后台）",
+          "link": "",
+          "description": "一个开源工具，只需执行一个命令，就会自动分析数据库结构，生成管理后台，号称不用写代码。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040302.webp"
+          ]
+        },
+        {
+          "title": "开源的项目落地页模板",
+          "link": "https://github.com/weijunext/smart-excel-ai",
+          "description": "开源的项目落地页模板，参见介绍文章。",
+          "user": "weijunext",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4197",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040307.webp"
+          ]
+        },
+        {
+          "title": "开源的浏览器插件（GitHub 事件通知）",
+          "link": "https://github.com/qiweiii/github-notifier",
+          "description": "一个开源的浏览器插件，用来监听 GitHub 官方没有提供的一些事件（比如创建 label），事件发生时，浏览器就会发送通知。",
+          "user": "qiweiii",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4199",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040308.webp"
+          ]
+        },
+        {
+          "title": "HeyForm",
+          "link": "https://github.com/heyform/heyform",
+          "description": "一个开源的表单生成器，创建调查、问卷、投票等，可以不编写一行代码。",
+          "user": "iMuFeng",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4207",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040310.webp"
+          ]
+        },
+        {
+          "title": "开源的轻量级论坛",
+          "link": "https://github.com/dafengzhen/light-forum",
+          "description": "一个开源的轻量级论坛，追求界面简洁和使用方便，后端使用 Java，前端使用 Next.js。",
+          "user": "dafengzhen",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4211",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040312.webp"
+          ]
+        },
+        {
+          "title": "VitePress 插件（交互式文档）",
+          "link": "https://github.com/pearmini/vitepress-plugin-codepen",
+          "description": "VitePress 的一个插件，用于在 Markdown 文档插入可以执行的代码块，创建交互式文档。",
+          "user": "pearmini",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4212",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040313.webp"
+          ]
+        },
+        {
+          "title": "Mutative",
+          "link": "https://github.com/unadlib/mutative",
+          "description": "一个操作不可变状态的 JS 库，追求高效。",
+          "user": "unadlib",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4222",
+          "images": []
+        },
+        {
+          "title": "Fusion（RSS 聚合阅读器）",
+          "link": "https://github.com/0x2E/fusion",
+          "description": "一个轻量、简洁的 RSS 聚合和阅读器，使用 Go + Svelte 开发。",
+          "user": "0x2E",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4223",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040501.webp"
+          ]
+        },
+        {
+          "title": "跨平台 Node.js 截图录屏模块",
+          "link": "https://github.com/nashaofu/screenshot",
+          "description": "一个跨平台、零依赖的 Node.js 模块，用于截图和录屏。",
+          "user": "nashaofu",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4224",
+          "images": []
+        },
+        {
+          "title": "流畅阅读（浏览器翻译插件）",
+          "link": "https://github.com/Bistutu/FluentRead",
+          "description": "一款浏览器翻译插件，支持人工智能引擎。",
+          "user": "Bistutu",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4230",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040707.webp"
+          ]
+        },
+        {
+          "title": "keynavish",
+          "link": "https://github.com/lesderid/keynavish",
+          "description": "使用键盘控制鼠标运动的 Windows 软件。",
+          "user": "NomandChan",
+          "user_link": "https://github.com/ruanyf/weekly/issues/55",
+          "images": []
+        },
+        {
+          "title": "K8Z（Kubernetes 管理工具）",
+          "link": "https://github.com/k8zdev/k8z",
+          "description": "管理 Kubernetes 的开源工具，有手机客户端和桌面客户端。",
+          "user": "kofj",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4246",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024041002.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "Next.js 官方教程中文翻译",
+          "link": "",
+          "description": "Next.js 官方教程的中文翻译，构建一个全栈 Web 应用程序。",
+          "user": "qufei1993",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4206",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040309.webp"
+          ]
+        },
+        {
+          "title": "3DP.ing（3D 打印模型搜索引擎）",
+          "link": "https://3dp.ing/",
+          "description": "一个 3D 打印模型的搜索引擎，特点是使用图片搜索。",
+          "user": "wangasa",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4227",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040602.webp"
+          ]
+        },
+        {
+          "title": "免费推广渠道整理",
+          "link": "",
+          "description": "该网站整理了300多个免费推广渠道，包括网站、论坛、网址导航、产品目录等，帮助独立开发者推广产品。",
+          "user": "naxiaoduo",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4240",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040901.webp"
+          ]
+        },
+        {
+          "title": "Cloudflare 服务开源软件仓库",
+          "link": "",
+          "description": "这个仓库收集基于 Cloudflare 服务的各种开源软件。",
+          "user": "zhuima",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4244",
+          "images": []
+        },
+        {
+          "title": "Beej's Guide to Network Concepts 中译",
+          "link": "https://github.com/rogerzhu/-bgnet0-cn/tree/main/src",
+          "description": "网友对《Beej's Guide to Network Concepts》一书的中文翻译。",
+          "user": "rogerzhu",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4248",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "加州一号公路",
+          "link": "https://www.cnn.com/travel/california-highway-1-damage-big-sur/index.html",
+          "description": "加州一号公路从旧金山直到洛杉矶，就建在海岸山脉上，一路沿着太平洋，风景十分优美。\n\n但是，正因为建在海边悬崖上，这条公路经常发生地质灾害。本月就发生了崩塌，一部分公路掉进了太平洋，不得不暂时封闭。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040203.webp",
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024040202.webp"
+          ]
+        },
+        {
+          "title": "梅子坑（月球陨石坑）",
+          "link": "https://www.nasa.gov/image-article/craters-edge/",
+          "description": "梅子坑（plum crater）是一个小型的月球陨石撞击坑，直径约40米，深约10米。\n\n这个陨石坑之所以特别，是因为人类访问过这个地方。\n\n1972年4月21日，阿波罗16号飞船的登月地点，就在梅子坑附近。\n\n宇航员实地考察了这个陨石坑。\n\n当年的脚印至今清晰可见（下图）。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024032901.webp",
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024032902.webp",
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024032904.webp",
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024032903.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "环岛的作用",
+          "link": "https://theconversation.com/what-are-roundabouts-a-transportation-engineer-explains-the-safety-benefits-of-these-circular-intersections-215412",
+          "description": "开车时，你可能已经遇到许多环岛。\n\n你有没有想过，这些路口为什么要造环岛？没有环岛，行车面积不就更大了吗？\n\n本质上，环岛上是一种交通控制措施，相比交通灯控制的传统交叉路口，它们具有多种优势，最重要的一个是安全性。\n\n首先，环岛迫使司机放慢速度，为了调整车头方向，司机不得降速。\n\n其次，环岛减少了潜在冲突点的数量。冲突点就是车辆与车辆、车辆与行人可能发生碰撞的位置，它的数量越多，就越容易发生碰撞。\n\n根据一项研究，环岛只有8个潜在冲突点，而传统的四向交叉路口有32个。\n\n最后，环岛的车道都是紧密相邻的同心圆，并且还有很多进口和出口，迫使车辆减速让行。\n\n根据美国公路管理局估计，环岛取代传统的交叉路口时，可将严重交通事故减少80%到90%。\n\n除了安全性，环岛还有一些其他优点，比如让交通更有秩序，不会出现车辆在交叉路口乱成一团的情形，也能让司机更轻松地掉头。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023102603.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "",
+          "link": "",
+          "description": "马斯克的管理风格非常独特，他不需要非技术性的中层管理人员，员工表现不佳就会被裁，也不喜欢大型会议。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "https://www.spakhm.com/headline-development",
+          "description": "有一种开发模式，叫做\"头条新闻驱动法\"，将项目分解成一个个头条新闻。选择一个日期，可以发布第一个头条新闻，然后拼命工作在该日期发布，接着转到下一个头条新闻，重复上面的过程。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "我们有一栋房子的 WiFi，只在下雨时可用。后来，我发现了原因。它的 WiFi 是通过桥接器连接另一栋房子的 WiFi，窗外的树长高了，挡住了对面房子的信号。下雨时，雨水压低了树叶，信号就又通了。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "每年冬天，室内供暖消耗大量能源。如果我们能够发明更舒适、更保暖的保暖内衣，就可以减少能源消耗，同时不牺牲轻便感。保暖内衣允许我们大幅调低供暖温度，并且成本几乎为零。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "https://www.johndcook.com/blog/2023/01/29/small-scale-automation/",
+          "description": "节省几次击键的工具被高估了，保持注意力专注的工具被低估了。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

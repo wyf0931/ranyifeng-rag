@@ -1,0 +1,348 @@
+{
+  "title": "每周分享第 17 期",
+  "link": "https://www.ruanyifeng.com/blog/2018/08/weekly-issue-17.html",
+  "number": 17,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "全球变暖的现状与后果",
+          "link": "https://www.ruanyifeng.com/blog/2018/08/weekly-issue-17.html",
+          "description": "今天夏天，全球高温创纪录。日本和韩国都是史上最高温，西班牙葡萄牙接近48度的欧洲高温纪录，北纬71度的一个挪威城市32度。全球变暖已经是活生生的现实。科学家估计，目前的年平均气温比工业革命前已经升高了1度。《巴黎气候协议》的目标是，气温升高控制在2度，但是成功的希望据说只有5%。如果学过统计学，你就知道，5%的机会在统计学上可以视作不会发生。\n\n千万不要觉得，2度不算什么，《纽约时报》描述了后果：\n- 升高2度：热带珊瑚礁灭绝，海平面上升几米，波斯湾不适合人类居住。\n- 升高3度：北极的森林和大多数沿海城市被淹没。\n- 升高4度：欧洲永久干旱，中国、印度和孟加拉国大部分地区变成沙漠，美国科罗拉多河接近干涸，美国西南部将不适合居住。\n- 升高5度：人类文明终结。\n\n联合国气候官员称，如果不采取任何行动，目前乐观的估计是全球会升高3度。\n\n气温升高的主要原因是人类大量消耗化石能源，温室气体排放急剧增加。现在的计算是，如果人类排放10000亿吨二氧化碳，地球就会升高2度，目前人类已经排放了6237亿吨。有一个网站实时显示目前排放了多少亿吨。根据计算，2036年3月7日，人类将达到1万亿吨排放量。更热的日子还在后面。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081001.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081002.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "新闻",
+      "items": [
+        {
+          "title": "美国教授认为中国排放难以实现巴黎协定目标",
+          "link": "https://www.ruanyifeng.com/blog/2018/08/weekly-issue-17.html",
+          "description": "《纽约时报》报道，一个美国教授认为，按照中国现在的二氧化碳排放水平，人类无法达到《巴黎协定》规定的减排目标，即全球平均温度比工业化之前上升不超过2摄氏度，除非中国的排放量大幅下降。中国是世界最大的二氧化碳排放国。2017年，中国排放了117亿吨的温室气体，占世界总量的四分之一，其中包括92亿吨的二氧化碳，超过美国和欧盟的总和。按照现在的减排速度，中国的二氧化碳排放量最晚将在2030年达到峰值，到那一年，中国五分之一的能源将来自非化石燃料来源。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081003.jpg"
+          ]
+        },
+        {
+          "title": "美国的贫富分化达到1928年以来最高点",
+          "link": "https://www.cbsnews.com/news/in-5-states-richest-americans-live-in-a-new-gilded-age/",
+          "description": "美国经济研究所发现，美国的贫富分化一直在扩大，已经达到了1928年以来的最高点。现在最富有的1%家庭获得全部收入的22％，只比1928年的23.9％低一点。美国人的年收入至少需要42.2万美元，才能跻身前1％的高收入者。这只是全国平均数，一些州的门槛要高得多，比如康涅狄格州的1%门槛为70万美元。这就是技术革命的一个社会后果，贫富分化不断扩大，中产阶级消失，财富日益集中在少数富豪手里。"
+        },
+        {
+          "title": "开放式办公室是一个糟糕的主意",
+          "link": "https://m.signalvnoise.com/the-open-plan-office-is-a-terrible-horrible-no-good-very-bad-idea-42bd9cd294e3",
+          "description": "Ruby on Rails 的创始人 DHH 公开抨击，开放式办公室是一个极其糟糕的坏主意。有人说，开放式办公室可以增加合作。DHH 说实际情况是，开放式办公导致面对面的互动直线下降，因为人们这时需要通过耳机来集中注意力，交流变成依靠即时消息或电子邮件。最糟糕的情况是，同一房间有不同部门的数十个人，销售、营销、客服、管理者、程序员、设计师都混在一起，他们一定会互相打扰。开放式办公实际带来的不是合作，而是压力和冲突，但它仍然是技术公司的默认配置。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081004.jpg"
+          ]
+        },
+        {
+          "title": "皮质醇贴片可实时测量压力",
+          "link": "https://spectrum.ieee.org/view-from-the-valley/biomedical/diagnostics/new-wearable-sensor-detects-stress-hormone-in-sweat",
+          "description": "斯坦福大学的科学家发明了一种皮肤贴片，可以实时测量汗液里面的皮质醇含量。一般来说，我们觉得压力很大的时候，皮质醇分泌就会增加。以前的测量方法都无法实时得到结果。现在我们可以实时知道人体的感受了，甚至可以找出人群里面最紧张的人，这种传感器为以后更有趣的发明奠定了基础。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081005.jpg"
+          ]
+        },
+        {
+          "title": "DARPA 发起微型机器人竞赛",
+          "link": "https://spectrum.ieee.org/automaton/robotics/robotics-hardware/darpa-wants-your-insect-scale-robots-for-a-micro-olympics",
+          "description": "美国国防部高级研究局（DARPA）发起了一次微型机器人竞赛。现在大多数机器人都是模仿人类的外形，但是昆虫大小的机器人也有巨大的用处。DARPA 要求，这次参赛的机器人重量小于1克，体积小于1立方厘米。DARPA 为所有参赛者提供3200万美元资助，比赛可能在明年3月举行。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081006.jpg"
+          ]
+        },
+        {
+          "title": "最古老的面包距今14000年",
+          "link": "https://www.independent.co.uk/news/science/archaeology/bread-history-cooking-stone-age-middle-east-archaeology-discovery-a8450276.html",
+          "description": "考古学家在约旦的沙漠里面，发现了一个石头砌的炉子，里面居然还有古人烤剩下来的面包屑。这是现存最古老的面包。显微镜下的面包屑可以看到面包经过了充分发酵。年代鉴定以后，所有人都大吃一惊，这个面包炉子距今14000年。那时人类甚至没有开始农业耕作，因此这个面包不是用小麦粉做的，而是来自野生的谷物。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081007.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081008.jpg"
+          ]
+        },
+        {
+          "title": "Bing 新增代码搜索功能",
+          "link": "https://blogs.bing.com/search-quality-insights/2018-07/Intelligent-search-Coding-answers-at-your-fingertips/",
+          "description": "微软的 Bing 搜索引擎新增了代码搜索功能，你问一个编程问题，现在可以直接给出示例代码。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081009.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081010.jpg"
+          ]
+        },
+        {
+          "title": "波士顿动力公司将发售第一款商业产品：四足机器人",
+          "link": "https://www.ruanyifeng.com/blog/2018/08/weekly-issue-17.html",
+          "description": "波士顿动力公司在成立16年后，终于要发售第一款产品了：一个类似小狗的四足机器人，高91厘米，重25公斤。这家公司以前的产品都是供给美国国防部，这是第一款商业产品，预计明年上市。这个机器人的功能非常惊人，可以自动识别道路，避开障碍，上楼下楼，跌倒还能爬起，机械臂可以拿起放下各种东西，请看视频。"
+        },
+        {
+          "title": "博士就业危机：仅五分之一找到教职",
+          "link": "https://www.cbc.ca/radio/thesundayedition/the-sunday-edition-april-8-2018-1.4604763/from-professor-in-waiting-to-florist-why-some-phds-are-quitting-academia-for-unconventional-jobs-1.4604766",
+          "description": "加拿大媒体报道，该国的博士研究生只有五分之一能够找到教职。也就是说，80%的博士只能去企业界或转行，事实上确实有很多博士找不到工作，这篇报道里面就有博士改行当插花师或建筑工。我想，这样的危机在中国一定更严重。因为中国的博士生规模世界第一，但是国内高校的扩张期已经过去了，现在想进高校当老师其实挺难的。如果转行的话，对个人和社会都是一种浪费。如果你有志攻读博士，一定要慎重。"
+        },
+        {
+          "title": "AMD 与中山小霸王推出新游戏主机",
+          "link": "https://www.anandtech.com/show/13153/amd-creates-quad-core-zen-soc-with-24-vega-cus-for-chinese-consoles",
+          "description": "上海的 ChinaJoy 展会上，AMD 宣布与中山小霸王公司合作推出新的游戏主机，CPU 是锐龙，GPU 是Vega，搭配 8GB GDDR5显存，性能将超过索尼 PS4 及微软 Xbox One 游戏机。这台游戏机搭配 128GB SSD + 1TB HDD 硬盘，支持正版Windows 10系统，售价4998元，并有中文独占游戏 Onrush。由于没有自己的操作系统，这个所谓的游戏主机其实是一台 Windows 10 电脑。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081011.jpg"
+          ]
+        },
+        {
+          "title": "OpenAI Five 在 Dota2 对决中 2:1 战胜人类",
+          "link": "https://www.ruanyifeng.com/blog/2018/08/weekly-issue-17.html",
+          "description": "OpenAI Five 与人类高级玩家的 Dota2 第一场比赛结束，AI 以 2：1 获胜。值得一提的是，AI 输掉的第三局是人类故意为它分配了能力较低的角色，而不是让它自己选择角色，AI 自己预估第三局的胜率只有2.9%。8月下旬将进行 AI 与职业团队的比赛。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081012.jpg"
+          ]
+        },
+        {
+          "title": "一句话新闻",
+          "link": "",
+          "description": "随着手机支付的崛起，国内的 ATM 和 POS 设备制造行业大幅衰退，而二维码扫描设备制造业大幅成长。Dart 语言发布2.0版。Android 9.0发布，大量增加了 AI 支持。Mozilla 浏览器计划取消 RSS 支持。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081013.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "教程",
+      "items": [
+        {
+          "title": "如何使用 Node 优化图片？",
+          "link": "https://freshman.tech/image-optimisation/",
+          "description": "本文教你使用 JS 的 imagemin 模块，压缩图片的大小。"
+        },
+        {
+          "title": "DNS over HTTPS",
+          "link": "https://medium.com/@nykolas.z/getting-started-with-dns-over-https-on-firefox-e9b5fc865a43",
+          "description": "DNS 查询都是基于 HTTP 协议的，即使是加密通信，网络服务商依然可以知道你想访问的网站。现在有多种解决方案，本文介绍如何在 Firefox 浏览器打开设置，使得 DNS 协议走 HTTPS 协议。"
+        },
+        {
+          "title": "WebAssembly 的发展方向",
+          "link": "https://blog.scottlogic.com/2018/07/20/wasm-future.html",
+          "description": "WebAssembly 是浏览器可以执行的字节码，使得非 JS 编写的程序可以在浏览器运行。它现在的功能非常少，还处在 MVP（最小可用产品）状态。这篇文章介绍了一些很可能采纳的 WebAssembly 提案。"
+        },
+        {
+          "title": "少子化和人口老龄化综述",
+          "link": "https://www.axios.com/newsletters/axios-am-c7902702-0ed3-46b0-97ba-77a77cd1d16c.html",
+          "description": "全世界发达国家都有少子化和人口老龄化的趋势，这篇文章是我看过的最好的这方面的综述，有大量的数据和事实。除了非洲，其他大洲的人口都接近峰值了，将要开始下降，这意味着许多国家将不得不依靠移民，解决本国人力不足问题。"
+        },
+        {
+          "title": "SVG 动画入门：以加载转子为例",
+          "link": "https://webdesign.tutsplus.com/tutorials/how-to-create-a-loader-icon-with-svg-animations--cms-31542",
+          "description": "本文手把手教你如何写一个最简单的 SVG 动画。"
+        },
+        {
+          "title": "Hash 算法简介",
+          "link": "https://medium.com/zkcapital/the-state-of-hashing-algorithms-the-why-the-how-and-the-future-b21d5c0440de",
+          "description": "Hash 算法的概念性介绍。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081014.jpg"
+          ]
+        },
+        {
+          "title": "为什么飞机驾驶舱不使用触摸屏？",
+          "link": "https://aviation.stackexchange.com/questions/22729/why-are-traditional-knobs-not-replaced-by-touchscreens-in-cockpits",
+          "description": "现在的飞机驾驶舱还是使用物理仪表盘，而不是触摸屏，这是为什么？主要的原因还是物理按钮会形成肌肉记忆，比操作触摸屏更快。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081015.jpg"
+          ]
+        },
+        {
+          "title": "斐波那契数列的计算公式",
+          "link": "https://blog.paulhankin.net/fibonacci/",
+          "description": "如果不用递归，直接算出斐波那契数列的任意项，应该怎么计算？"
+        },
+        {
+          "title": "如何通过 npm 窃取信用卡密码？",
+          "link": "https://hackernoon.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5",
+          "description": "本文讲述了作者通过 npm 发布恶意代码的种种手段，非常值得一读。其中有一个技巧，就是package.js 与 package.min.js 的代码不同，恶意代码只放在后者。"
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "nouns (眨眼控制电脑装置)",
+          "link": "https://getnous.app/",
+          "description": "一个侦测用户眨眼的装置，让用户通过眨眼控制电脑，可以供霍金那样的用户使用。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081016.jpg"
+          ]
+        },
+        {
+          "title": "模拟电路生成器",
+          "link": "https://www.falstad.com/circuit/circuitjs.html",
+          "description": "生成模拟电路的网站。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081017.jpg"
+          ]
+        },
+        {
+          "title": "Zotero",
+          "link": "https://www.zotero.org/",
+          "description": "管理各种论文和报告的免费桌面软件。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081018.jpg"
+          ]
+        },
+        {
+          "title": "fnMatch",
+          "link": "https://github.com/mrkev/fnMatch",
+          "description": "一个让对象进行选择性解构赋值的 JS 库。"
+        },
+        {
+          "title": "jsinspect",
+          "link": "https://github.com/danielstjules/jsinspect",
+          "description": "查出重复代码的工具。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081019.jpg"
+          ]
+        },
+        {
+          "title": "Malvid",
+          "link": "https://malvid.io/",
+          "description": "一个构建 Web Components 的工具，并且能够自动生成文档。"
+        },
+        {
+          "title": "Glances",
+          "link": "https://nicolargo.github.io/glances/",
+          "description": "Glances 是一个用Python编写的跨平台系统监视工具。它自带 Web UI，可以远程监控。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081020.jpg"
+          ]
+        },
+        {
+          "title": "Thonny",
+          "link": "https://thonny.org/",
+          "description": "一个 Python 语言专用的代码编辑器。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081021.jpg"
+          ]
+        },
+        {
+          "title": "git-imerge",
+          "link": "https://github.com/mhagger/git-imerge",
+          "description": "Git 的合并算法是三方合并（three-way），有人认为这种算法并不是最好的。这里是一个两方合并算法，有兴趣的人可以用它替换到 Git 的合并算法。"
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "机械键盘收藏",
+          "link": "https://scrapbox.io/MECHKEYS/",
+          "description": "这个网站收集各种各样的机械键盘。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081022.jpg"
+          ]
+        },
+        {
+          "title": "8086 模拟器教程",
+          "link": "https://github.com/steveklabnik/rust8086",
+          "description": "开源电子书，从零开始讲解如何写一个8080处理器的模拟器。"
+        },
+        {
+          "title": "StackShare",
+          "link": "https://stackshare.io/",
+          "description": "收集各大网站使用的技术栈。"
+        },
+        {
+          "title": "假陨石照片收集",
+          "link": "https://www.washington.edu/news/2018/07/23/fake-meteorite-photos/",
+          "description": "华盛顿大学维护的一个网站，收集各种假陨石的照片，并附上说明，讲解为什么某块石头不是陨石。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081023.jpg"
+          ]
+        },
+        {
+          "title": "Byte 杂志下载",
+          "link": "https://archive.org/details/byte-magazine",
+          "description": "Byte 杂志是上个世纪很有影响的 IT 杂志，archive.org 提供免费下载。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081024.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "幸存者偏见",
+          "link": "https://www.entrepreneur.com/article/287440",
+          "description": "二战时，英国决定要在轰炸机上加装防弹材料，减少被德国炮弹击中时的伤害。他们按照平安返回的轰炸机被击中的位置，为其他轰炸机加装防弹材料。这种方法看上去正确，其实是错的，真正应该加载防弹材料的，恰恰是那些没有被击中的位置。因为这些轰炸机能返回，就说明它们被击中的位置不是很重要，那些被击中要害位置的轰炸机，都没有能够返回。这就叫做幸存者偏见，人们过度重视那些幸存的个体，以为他们的特质就代表整个总体的特质。举例来说，很多创业者总是向某些最成功的企业家学习，比如，比尔盖茨，理查德布兰森，史蒂夫乔布斯，马克扎克伯格，伊隆马斯克等等。殊不知他们可能只是特例，他们的经验不一定普遍适用。"
+        },
+        {
+          "title": "《人类群星闪耀时》节选：大西洋海底电缆",
+          "link": "https://www.ruanyifeng.com/blog/2018/08/weekly-issue-17.html",
+          "description": "1851年，欧洲大陆都已经连通了电报。但是，美洲一直被排除在世界电报网之外。大西洋漫无边际，人们根本就不可能在海面上设立众多中间站，更加不可能用一根电线跨越两个大洋。人们不仅不知道海洋的深度，对它的地质结构也知之甚少，大洋底部的电缆能否承受住巨大的海水压力仍然无从得知。即使从理论和技术上来说，铺设一条如此漫长的海底电缆行得通，但在当时还没有能负载铁铜电缆全部重量的巨轮，也没有一台发电机的功率能输送电流经过如此漫长的距离。就算轮船轻装上阵，也至少要耗费三个星期。并且在此期间，所有的电缆都必须妥善存放，不能露天放置。英国政府提供了曾经的海战旗舰\"阿伽门农\"号，美国政府则\"贡献\"了当时吨位最大的二桅战舰\"尼亚加拉\"号。经过特殊的改造后，这两艘船都能容纳一半的海底电缆。最后，同时也是最关键的问题，就是制造电缆。当时，制造一条连接两大洲的电缆需要非常精湛的技术：它既要有钢筋的坚硬而不易断裂的特性，又有非常大的柔韧性，也必须像丝线一样耐压耐磨而能随意弯曲，还必须实心而有一定的空间。总而言之，电缆必须结实、精密。对整个工程而言，电缆上任何一个微乎其微的磨损和坑洼都会破坏电流的传递。要制造一条这样的电缆，整整需要整座橡胶林的橡胶汁。做一个形象的说明：到工程完工，电缆里使用的铜丝和铁丝长达367000海里，足足能将地球环绕13圈，甚至能将地球和月球连接起来。为此，工厂里的机器整整工作了一年。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081025.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081026.jpg"
+          ]
+        },
+        {
+          "title": "中美电影周的真相",
+          "link": "http://www.kanunu8.com/book3/6860/131447.html",
+          "description": "以下摘自冯小刚的《我把青春献给你》。中国电影周说穿了，就是由一两个美国穷人，打着热爱中国电影的旗号，从中国的制片厂免费拿到一些电影拷贝，在美国华人集中的城市转着圈的卖票放映，从中有利可图的个人行为。国内的电影制片厂也全无版权的概念，拷贝一撒手就是几个月，条件只不过是几张往返美国的机票。\"中国电影周\"放映的电影院条件环境都很差，观众大部分是华人，也有少数闲着没事跟着起哄的白人，因为这些人有强烈的中国情结，看什么破片子都报以热烈的掌声，这些掌声与影片的质量无关，只能反映新老华侨的爱国热情。不明真像的导演误以为自己拍的影片多么伟大，回国后马上约记者采访，据此抱怨国内的发行公司和观众对他影片的冷落是不识货，吹嘘他的影片在美国放映引起轰动。其实也就是寄居美国的少数人自娱自乐的一个派对，主流媒体对此只字未提。所谓的中美文化交流，说白了还是华人与华人的一次收费联谊会，跟美国大众八竿子打不着。"
+        }
+      ]
+    },
+    {
+      "name": "本周图片",
+      "items": [
+        {
+          "title": "2060年世界人口预测",
+          "link": "https://www.ruanyifeng.com/blog/2018/08/weekly-issue-17.html",
+          "description": "上图是2060年的世界人口预测。印度是人口最多的国家，17亿左右；其次是中国，13亿左右；后面是尼日利亚，美国，巴基斯坦，印尼，刚果，巴西，埃塞俄比亚，坦桑尼亚和墨西哥。历史上，亚洲约占世界人口的70％，欧洲大约10％到20％，非洲5％到10％。2060年，非洲人口比重将激增，增加到世界人口的35％左右。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081027.jpg"
+          ]
+        },
+        {
+          "title": "Java 的 public Class 数量",
+          "link": "https://www.azul.com/javas-magic-sauce/",
+          "description": "Java 语言以众多的类著称，但是你知道它一共有多少个 public Class 吗？",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081028.jpg"
+          ]
+        },
+        {
+          "title": "LED 街灯的影响",
+          "link": "https://medium.com/@caseorganic/energy-saved-sleep-lost-the-unintended-consequences-of-led-lighting-c0909d4872d0",
+          "description": "随着 LED 产业的发展，街灯已经大量改成了节能的 LED 灯。传统的昏黄温暖的橙色灯光，变成了明亮的蓝色灯光。有人提出，蓝色的明亮灯光容易对人类造成影响，使得效率降低，失眠和焦虑增加。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201808/bg2018081029.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "本周金句",
+      "items": [
+        {
+          "title": "金句1",
+          "description": "每颗恒星都在不停燃烧，释放能量。如果宇宙是静止的，必然变得越来越热。幸亏宇宙在不停膨胀，把这个问题解决了。（比尔·布莱森《万物简史》）"
+        },
+        {
+          "title": "金句2",
+          "description": "人一生最大的幸运，就是在年富力强时发现了自己的人生使命。（茨威格《人类群星闪耀时》）"
+        },
+        {
+          "title": "金句3",
+          "description": "过去盖起的宫殿中，没有他的位置，他只好在宫殿的旁边，另起炉灶，搭起了一间偏房。问题是偏房越盖越多，越盖越大，越盖越高，渐渐成了一个院落，它就成了另一座宫殿。（刘震云《<我把青春献给你>序言》）"
+        }
+      ]
+    }
+  ]
+}

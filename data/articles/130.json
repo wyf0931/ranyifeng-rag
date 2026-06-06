@@ -1,0 +1,378 @@
+{
+  "title": "科技爱好者周刊（第 130 期）：低龄化的互联网",
+  "link": "https://www.ruanyifeng.com/blog/2020/10/weekly-issue-130.html",
+  "number": 130,
+  "sections": [
+    {
+      "name": "封面图",
+      "items": [
+        {
+          "title": "成都高新区的五岔子步行桥",
+          "link": "https://www.instagram.com/p/CFVqUVOn1jI/",
+          "description": "成都高新区的五岔子步行桥，形状既像一个莫比乌斯环，又像数学里面的无限符号∞。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020100715.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "本周话题",
+      "items": [
+        {
+          "title": "低龄化的互联网",
+          "description": "现在，很多人拍视频为生。每天拍若干条，上传到门户网站，靠网站分红和商业合作赚钱。\n\n对他们来说，视频的播放量就是一切，直接决定了收入的多少。他们最关心的一个问题：什么题材会有大量的观众？\n\n我最近好像知道答案了。我发现，亲子类的视频，也就是跟儿童相关的内容（包括玩具和儿歌），流量都非常好。随便举几个例子，百度的视频搜索\"亲子\"。\n\n![百度视频搜索亲子](https://cdn.beekka.com/blogimg/asset/202010/bg2020100906.jpg)\n\nYoutube 搜\"儿童玩具\"。\n\n![Youtube 儿童玩具](https://cdn.beekka.com/blogimg/asset/202010/bg2020100908.jpg)\n\n搜\"儿歌\"的话，播放量更惊人。\n\n![Youtube 儿歌](https://cdn.beekka.com/blogimg/asset/202010/bg2020100909.jpg)\n\n我看了好几个视频网站，觉得这是普遍现象，亲子类视频的播放量非常高。一个很普通的帐号，非常简单的内容，往往有几十万的播放量，极个别甚至高达千万。\n\n当然我不是说，你拍亲子内容，就一定有很多人看。我的意思是，它获得高流量的机会大于其他视频。\n\n如果确实存在这种现象，那么这是为什么？到底什么人在看这些儿童视频呢？\n\n**唯一的解释似乎是，互联网用户里面，儿童以及相关人群的比例非常高，高得超乎想象。**\n\n我猜想，很多小朋友、家长、婆婆妈妈其实都在网上，构成了互联网很大一部分（超过一半？）的用户，所以儿童视频的流量才会那么高。这些观众平时不太发声，大家听不到他们的声音，但他们是最大的流量来源。这大概也是《爸爸去哪儿》这一类亲子类电视节目，风靡一时的原因。\n\n亲子类视频的流行，其实只是互联网低龄化的一个表现。我有一种感觉，18岁以下的用户，正在主导互联网。不止是视频网站，整个互联网都变得低龄化。青少年用户（甚至少儿用户）的喜好和观点，主导了互联网的生态和潮流。\n\n不要再错误地认为，互联网是社会精英和知识分子主导的园地。恰恰相反，互联网其实是一个低龄化的地方，网上的主流永远反映的是青少年用户的口味。这反过来又决定了互联网产品的形态：你要开发一个面向大众的互联网产品，就别无选择，只能面向青少年用户群体来开发。"
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "前端开发进阶手册",
+          "description": "本周的课程资料是开课吧前端团队精心打造的《前端开发进阶手册》。它是一份前端求职的免费辅导材料，针对国内的前端招聘状况而编写，包括三个方面的内容：高薪前端开发必备-面试技巧、大厂面试必考-算法与数据结构、热门知识点巩固-实战。原价399元，现在可以免费领取。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020102202.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020102201.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资讯",
+      "items": [
+        {
+          "title": "月球望远镜",
+          "link": "https://www.smithsonianmag.com/science-nature/why-astronomers-want-build-seti-observatory-moon-180975966/",
+          "description": "美国科学家最近发表论文，建议在月球上架设射电望远镜，主要原因是地球上的无线电干扰太大，月球背面是宇宙中最安静的地方。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020100401.jpg"
+          ]
+        },
+        {
+          "title": "普济路桥改建",
+          "link": "http://www.landscape.cn/landscape/11218.html",
+          "description": "上海一座人行和非机动车桥将改建成多功能高架公园，通过颜色勾勒出不同动线，设置观景台、野餐广场等。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020100103.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020100102.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020100101.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020100104.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020100105.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020100106.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020100107.jpg"
+          ]
+        },
+        {
+          "title": "掌纹付款",
+          "link": "https://techcrunch.com/2020/09/29/amazon-introduces-the-amazon-one-a-way-to-pay-with-your-palm-when-entering-stores/",
+          "description": "亚马逊推出掌纹付款，第一次使用时将信用卡与掌纹关联，之后手掌在设备上方约一秒钟即可完成扣款。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202009/bg2020093006.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020101002.jpg"
+          ]
+        },
+        {
+          "title": "Excel 导致英国少统计病例",
+          "description": "英国新冠肺炎确诊病例暴增，是因为统计报表使用了 xls 格式，导致超过65536行的数据被省略。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202007/bg2020071422.jpg"
+          ]
+        },
+        {
+          "title": "安第斯秃鹰极少挥动翅膀",
+          "description": "科学家发现安第斯秃鹰在飞行时只用1%的时间挥动翅膀，靠上升气流滑翔节省能量。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020101508.jpg"
+          ]
+        },
+        {
+          "title": "室温超导材料",
+          "link": "https://www.nature.com/articles/d41586-020-02895-0",
+          "description": "美国科学家发现了在15摄氏度下实现零电阻的超导材料，但需要极高的压力。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020101508.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "Service Worker 模拟单页应用 SPA",
+          "link": "https://itnext.io/your-single-page-app-is-now-a-polyfill-7881fb01694e",
+          "description": "使用 Service Worker 拦截请求，通过 fetch() 请求后端网页，再更新前端应用，使用户有 SPA 体验。"
+        },
+        {
+          "title": "去抖和节流的示例解释",
+          "link": "https://css-tricks.com/debouncing-throttling-explained-examples/",
+          "description": "debounce 和 throttle 的差异，通过示例解释，例如无限加载应使用 throttle。"
+        },
+        {
+          "title": "Dockerfile 安全最佳实践",
+          "link": "https://cloudberry.engineering/article/dockerfile-security-best-practices/",
+          "description": "编写 Dockerfile 时的安全注意点。"
+        },
+        {
+          "title": "TiDB 的架构演进哲学",
+          "link": "https://www.infoq.cn/article/Qw_8ubZFgtQlcZmZHBlA",
+          "description": "PingCAP CEO 分享 TiDB 数据库产品的设计哲学。",
+          "user": "@yanqi321",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1458"
+        },
+        {
+          "title": "分屏器能用于线上考试作弊吗？",
+          "link": "https://zhuanlan.zhihu.com/p/155819108",
+          "description": "线上考试时使用分屏器作弊的可能性探讨。",
+          "user": "@Gorvey",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1442"
+        },
+        {
+          "title": "人类探索金星的历史",
+          "link": "https://cn.nytimes.com/science/20201010/venus-spacecraft-life/",
+          "description": "回顾人类飞行器探索金星的历史，金星表面条件极端。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020101708.jpg"
+          ]
+        },
+        {
+          "title": "我们不小心删除了生产数据库",
+          "link": "https://keepthescore.co/blog/posts/deleting_the_production_database/",
+          "description": "作者误将开发环境 SQL 用于生产环境，导致数据库被删除。"
+        },
+        {
+          "title": "哪些编程语言最省电？",
+          "link": "https://thenewstack.io/which-programming-languages-use-the-least-electricity/",
+          "description": "一个团队比较了27种编程语言的耗电情况。"
+        },
+        {
+          "title": "Svelte 和 React 的比较",
+          "link": "https://www.swyx.io/svelte-sites-react-apps/",
+          "description": "作者对 Svelte 和 React 两个前端框架的喜爱和比较。"
+        },
+        {
+          "title": "熔岩灯如何帮助加密？",
+          "link": "https://www.cloudflare.com/zh-cn/learning/ssl/lava-lamp-encryption/",
+          "description": "Cloudflare 通过熔岩灯形状创建随机密钥。",
+          "user": "@hite",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1457"
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "tiptap",
+          "link": "https://github.com/ueberdosis/tiptap",
+          "description": "一个轻量级的富文本编辑器。"
+        },
+        {
+          "title": "FreePN",
+          "link": "https://www.freepn.org/",
+          "description": "一个点对点的 VPN 网络，通过用户共享带宽实现加密访问。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020101703.jpg"
+          ]
+        },
+        {
+          "title": "RabiAPI",
+          "link": "https://github.com/RabiAPI/RabiAPI-Support",
+          "description": "一个 macOS App，将 Java 源码转换为 markdown/asciidoc 格式的 API 接口文档。",
+          "user": "@WhiteCosmos",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1445",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020101706.jpg"
+          ]
+        },
+        {
+          "title": "SciterJS",
+          "link": "https://github.com/c-smile/sciter-js-sdk",
+          "description": "使用 HTML/CSS/JS 构建跨平台桌面应用，比 Electron 更轻量。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020101704.jpg"
+          ]
+        },
+        {
+          "title": "KakaCSS",
+          "link": "https://renzhezhilu.gitee.io/kakacss/",
+          "description": "复制网站内容粘贴后，给出所复制内容的 CSS 样式代码。",
+          "user": "@renzhezhilu",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1441",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020101707.jpg"
+          ]
+        },
+        {
+          "title": "邮件订阅 Telegram 频道",
+          "link": "https://t.me/ruanyf_weekly",
+          "description": "Telegram 频道。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020101808.jpg"
+          ]
+        },
+        {
+          "title": "DocFetcher",
+          "link": "https://docfetcher.sourceforge.io/",
+          "description": "Windows 桌面软件，提供文本文件的全文搜索。"
+        },
+        {
+          "title": "GitHub Action: 同步代码到 Gitee",
+          "link": "https://github.com/Yikun/hub-mirror-action",
+          "description": "用于在 GitHub 和 Gitee 之间同步代码的 GitHub Action。",
+          "user": "@Yikun",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1452"
+        },
+        {
+          "title": "hub-mirror-action",
+          "link": "https://github.com/Yikun/hub-mirror-action",
+          "description": "用于在 GitHub 和 Gitee 之间同步代码。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020101901.jpg"
+          ]
+        },
+        {
+          "title": "emoji-mosaic",
+          "link": "https://github.com/zhaoolee/emoji-mosaic",
+          "description": "开源表情包搜索工具。",
+          "user": "@zhaoolee",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1439"
+        },
+        {
+          "title": "rdrview",
+          "link": "https://github.com/eafer/rdrview",
+          "description": "命令行工具，提取网页内容部分，是 Firefox Reader View 的 C 语言实现。"
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "网络事故分析报告仓库",
+          "link": "https://github.com/danluu/post-mortems",
+          "description": "收集各大互联网公司网络事故的事后分析报告。"
+        },
+        {
+          "title": "响应式电子邮件模版",
+          "link": "https://github.com/leemunroe/responsive-html-email-template",
+          "description": "提供各种主题的响应式电子邮件模版下载。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020101302.jpg"
+          ]
+        },
+        {
+          "title": "Musicnet",
+          "link": "https://homes.cs.washington.edu/~thickstn/musicnet.html",
+          "description": "古典音乐数据集，包含超过一百万个标签，用于 AI 训练。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020101601.jpg"
+          ]
+        },
+        {
+          "title": "Learn X in Y minutes",
+          "link": "https://learnxinyminutes.com/",
+          "description": "按照学习次序，列出各种主题最推荐的学习资料。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020101701.jpg"
+          ]
+        },
+        {
+          "title": "The UNIX Time-Sharing System",
+          "link": "https://people.eecs.berkeley.edu/~brewer/cs262/UNIX.pdf",
+          "description": "丹尼斯·里奇和汤普森1974年的经典论文，介绍 Unix 操作系统。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020101702.jpg"
+          ]
+        },
+        {
+          "title": "WikiMap",
+          "link": "https://wikimap.wiki/",
+          "description": "在地图上显示维基百科的条目。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020102203.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "尼康显微摄影比赛",
+          "link": "https://www.nikonsmallworld.com/galleries/photomicrography-competition",
+          "description": "尼康显微摄影比赛获奖作品，展示显微镜下拍摄的照片。2020年第一名：一条鱼苗的骨骼和鳞片。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020101802.jpg"
+          ]
+        },
+        {
+          "title": "尼康显微摄影比赛2019年第一名",
+          "description": "乌龟胚胎的荧光染色照片。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020101803.jpg"
+          ]
+        },
+        {
+          "title": "圆形耕地",
+          "link": "https://www.atlasobscura.com/articles/why-do-farms-look-like-circles-from-planes",
+          "description": "美国内布拉斯加州农场旋转喷头浇水造成圆形耕地景观。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020083101.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "动物园里的狮子 vs 野外的狮子",
+          "description": "作者保罗·格拉汉姆将大公司员工比作动物园的狮子，创业公司创始人比作野外的狮子，讨论组织大小对主动性的影响。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202010/bg2020101301.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "科学增长速度比人口增长快一个数量级",
+          "link": "https://lelon.io/blog/boosting-scientific-productivity-again",
+          "description": "世界人口年增长率约1.1%，科学家年增长率超过4%，科研成果年增长率约8-9%。",
+          "user": "《再次提高科学生产力》"
+        },
+        {
+          "title": "暗模式不适合文字阅读",
+          "link": "https://commandcenter.blogspot.com/2020/09/color-blindness-is-inaccurate-term.html",
+          "description": "暗模式导致老年人及散光患者阅读困难，纸张白底黑字最易读。",
+          "user": "《色盲的科学解释》"
+        },
+        {
+          "title": "翻译像哈希函数",
+          "description": "有的人翻译文章，经过他的翻译就认不出原文了。",
+          "user": ""
+        },
+        {
+          "title": "JavaScript项目依赖多",
+          "link": "https://www.btao.org/2020/10/02/npm-trust.html",
+          "description": "JavaScript项目平均377个依赖，Java 43个，Python 16个，依赖越多信任的外部开发者越多。",
+          "user": "《NPM 的信任网》"
+        },
+        {
+          "title": "电网需改造为分布式",
+          "description": "太阳能取代化石能源需将电网改造成分布式，每户家庭有电池储能系统。",
+          "user": ""
+        },
+        {
+          "title": "成年人学外语不如儿童快的原因",
+          "description": "小孩犯错会得到纠正，成年人犯错别人不好意思指出。",
+          "user": ""
+        }
+      ]
+    }
+  ]
+}

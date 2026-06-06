@@ -1,0 +1,498 @@
+{
+  "title": "科技爱好者周刊（第 320 期）：乒乓仓",
+  "link": "https://www.ruanyifeng.com/blog/2024/10/weekly-issue-320.html",
+  "number": 320,
+  "sections": [
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "封面图",
+          "link": null,
+          "description": "",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100805.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "乒乓仓",
+          "link": "https://fortune.com/2024/09/27/startup-entrepreneurs-automation-ping-pong-sports-venues-tech-saas-smartphone-apps-pingpod-podplay/",
+          "description": "如果有人给你一笔钱，让你准备一个商业计划，你会选择什么项目？\n\n很大可能，你根本想不出干什么。现在的商业计划太难了，所有领域的商业竞争空前激烈，几乎找不到高增长的领域。\n\n但是前些日子，我看到一篇报道，关于一家美国创业公司的故事，觉得他们的点子非常聪明，可以照搬到国内，不需要很大投资，盈利的可能性很高。\n\n他们选择了一个别人想不到的创业方向：乒乓球。\n\n![](https://cdn.beekka.com/blogimg/asset/202409/bg2024092902.webp)\n\n创始人是一个纽约的股票分析师。他有一个烦恼。每天晚上结束加班，想打一会乒乓球，但是周围根本找不到球馆，就算找到了，也已经关门了。\n\n他后来发现，很多人都有这个需求，想打球但是找不到球场。\n\n终于有一天，他下定决心，既然没有人做这件事，那么我来做。\n\n他租下闲置的店面，改造成乒乓球室，起名为\"乒乓仓\"（PingPod）。\n\n![](https://cdn.beekka.com/blogimg/asset/202409/bg2024092903.webp)\n\n每个仓室放一张乒乓球桌，全天24小时营业，无人管理，通过手机 App 预订，App 会告诉你开门密码。\n\n可以几个朋友一起来打球，也可以一个人来玩。他们提供发球机。\n\n![](https://cdn.beekka.com/blogimg/asset/202409/bg2024092904.webp)\n\n你就跟机器对打，还能调节机器发球的力度和难度。\n\n每个乒乓仓都配有多个摄像头，除了监控，还能将比分显示在屏幕。\n\n![](https://cdn.beekka.com/blogimg/asset/202409/bg2024092907.webp)\n\n屏幕下方有一个粉红色的 REPLAY 按钮，点击后，会回放刚才那一分的录像。\n\n你还可以在手机 App，查看整场比赛的录像，精彩片段可以分享到社交网站。\n\n![](https://cdn.beekka.com/blogimg/asset/202409/bg2024092908.webp)\n\n这个服务一推出，就大受欢迎。每天打球的人络绎不绝。短短几年，乒乓仓已经发展到了70多个，运动项目也从乒乓球，扩展到了台球、棒球击球、匹克球、高尔夫模拟器等。\n\n为了更快的增长，他们现在改成了加盟制，你可以购买 PingPod 品牌经营权，使用他们的 PodPlay 系统，开设自己的乒乓仓。这样一来，他们就从经营体育场地变成科技公司，利润更高。\n\n![](https://cdn.beekka.com/blogimg/asset/202409/bg2024092905.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202409/bg2024092906.webp)\n\n我觉得，这个项目在国内可行。现在各地有很多空置的商业空间，就可以改成这种付费的\"乒乓仓\"，全天开放、价格实惠、使用方便、还有配套的数字化服务。\n\n这样大大增加了体育活动的场所，降低了参与门槛，同时使用数字科技提升体验，一定会有很大的需求。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092902.webp",
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092903.webp",
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092904.webp",
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092907.webp",
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092908.webp",
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092905.webp",
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092906.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "叠纸技术周",
+          "link": null,
+          "description": "游戏开发感兴趣的同学看过来。\n\n国内著名的手游公司\"叠纸游戏\"，马上要举办技术周，**游戏开发团队跟大家面对面**。\n\n简单介绍一下叠纸游戏。它成立于2013年，打造出《奇迹暖暖》《恋与制作人》《闪耀暖暖》《恋与深空》等超人气作品，还有多款在研游戏。\n\n截止今年上半年，全球累计注册用户数近4亿，其中《恋与深空》的流水已达15.9亿元，是流水最多的乙女游戏。\n\n\n他们的技术周是下下周 10月23日-10月26日，地点在上海杨浦区的叠纸大厦，活动内容如下。\n\n\n- 技术大咖面对面：CTO 和在研游戏技术负责人，跟大家现场对话。\n- 技术负责人分享：不同开发岗位背后的技术挑战。\n- 在研游戏试玩：现场实机体验《无限暖暖》、《万物契约》、《恋与深空》VR 试玩版。\n- 叠纸一日生活：感受公司企业文化和生活日常。\n- 面试/Offer 直通：有机会速通面试拿Offer.\n\n**活动面向25届、26届在读学生**，现场感受第一线的游戏开发，同时跟招聘相结合，**提供实习/工作机会**。\n\n如果你有志于游戏开发，不要错过这个机会，现在扫描下方二维码报名。\n\n![](https://cdn.beekka.com/blogimg/asset/202410/bg2024100913.webp)",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100913.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "披萨盒",
+          "link": "https://mossandfog.com/pizza-hut-will-deliver-your-resume-printed-on-a-pizza-box-to-prospective-employers/",
+          "description": "外卖披萨都装在盒子里，很少有人想过，怎么利用这个盒子。\n\n披萨连锁品牌\"必胜客\"，最近在纽约推出了一种全新的做法。\n\n他们发现，75%的求职简历从未被认真读过，那么如果把简历印在披萨盒子上，是不是可以让更多的人看到？上图就是一个叫做 John Dough 的人的简历。\n\n求职者可以向披萨公司付费，将自己的简历印到盒子上，并且指定希望送到哪些区域。\n\n当该区域的公司订购披萨时，这些盒子就会送过去。高管们吃披萨时，就会看到盒子上的简历。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100902.webp",
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100903.webp",
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100904.webp"
+          ]
+        },
+        {
+          "title": "小五机器人",
+          "link": "https://www.sohu.com/a/811566628_120201799",
+          "description": "腾讯 Robotics X 实验室，发布\"小五\"机器人（The Five），用于家居环境，适合养老、医疗等场景。\n\n该机器人有四条腿，轮足复合设计，在平地、斜坡、鹅卵石地面都可以行走，还可以爬梯。\n\n它的两只手可以搀扶老人，也可以搬运物品。\n\n不需要的时候，它还能折叠起来，便于收纳和运输。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100107.webp",
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100108.webp",
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100110.webp",
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100109.webp",
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100111.webp"
+          ]
+        },
+        {
+          "title": "太空旅行的食物",
+          "link": "https://www.nytimes.com/2024/10/03/science/asteroids-food-space.html",
+          "description": "地球到火星的旅程，单程最少需要6个月，如果去更远的星球，则需要更长的时间。宇航员的食物如何解决？\n\n目前的飞船无法携带大量食物，长期任务的食物只能在飞船上生产。\n\n为了解决这个问题，美国国防部正在开展一项实验，使用小行星的碎片生产食物。\n\n上图是一颗叫做\"贝努\"的小行星碎片，主要成分是碳氢化合物。科学家将这些碎片喂给细菌，产出有机物，作为人类食品的原料。\n\n据估计，重达8550万吨的小行星\"贝努\"可以让一名宇航员吃上约600年，最理想的情况下，可以吃17,000年。\n\n但是，这是不是意味着在航行途中，飞船必须去捕获小行星，然后带着它一起飞？",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100404.webp"
+          ]
+        },
+        {
+          "title": "中国天眼阵列",
+          "link": "https://www.jfdaily.com/news/detail?id=800825",
+          "description": "\"中国天眼\"是世界最大的射电望远镜之一，直径500米。\n\n为了提高分辨率，天文台决定在周边的山头上，再建设24台直径40米的射电望远镜。\n\n这样的话，一共25台射电望远镜，组成一个阵列，可以大大提高太空图像的清晰度。\n\n上个月，第一台试验机已经开始建设。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092805.webp",
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092803.webp",
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092804.webp"
+          ]
+        },
+        {
+          "title": "其他",
+          "link": null,
+          "description": "（1）中国公开登月服，宇航员将穿着它登陆月球表面。\n\n（2）佛罗里达即将遭遇米尔顿飓风，房主使用绷带固定屋顶，防止被吹走。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092801.webp",
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024101001.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "垫紫草的诱惑",
+          "link": "https://blog.sciencenet.cn/home.php?mod=space&uid=52727&do=blog&id=1444437",
+          "description": "作者是中科院植物所的研究员，讲述在云南白马雪山4800米海拔处，发现垫紫草的故事。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100402.webp"
+          ]
+        },
+        {
+          "title": "如何使用 CSS flexbox 制作时间线",
+          "link": "https://www.jonashietala.se/blog/2024/08/25/a_simple_timeline_using_css_flexbox/",
+          "description": "一篇简单教程，教你使用 flex 布局，制作出上图的时间线（timeline）样式。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202408/bg2024082507.webp"
+          ]
+        },
+        {
+          "title": "服务器的基本设置",
+          "link": "https://becomesovran.com/blog/server-setup-basics.html",
+          "description": "本文介绍，如果自己搭建一台公开访问的服务器，怎么进行设置。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202408/bg2024082513.webp"
+          ]
+        },
+        {
+          "title": "我如何构建自己的博客",
+          "link": "https://www.joshwcomeau.com/blog/how-i-built-my-blog-v2/",
+          "description": "这篇文章详细介绍作者的博客技术方案，这个方案比较复杂，基于 Next.js + MDX。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092812.webp"
+          ]
+        },
+        {
+          "title": "LLM 书签收藏方案",
+          "link": "https://nekonull.me/posts/llm_x_bookmark/",
+          "description": "作者介绍了自己的书签收藏工作流：收藏书签后，自动抓取全文，并用 AI 生成页面摘要，以备未来查找和回顾。",
+          "user": "@jerrylususu",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5280",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100802.webp"
+          ]
+        },
+        {
+          "title": "btop 使用介绍",
+          "link": "https://mp.weixin.qq.com/s/Qr-z0-zL44UjnItmDlsMzg",
+          "description": "Linux 系统一般使用 top 命令，查看系统运行情况，本文介绍更好用的 btop 命令。",
+          "user": "@xiaobox",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5252",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024093007.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "MiKaPo",
+          "link": "https://github.com/AmyangXYZ/MiKaPo",
+          "description": "一个纯前端的二次元动作捕捉方案，在网页上，从视频/图片/摄像头提取动作、表情来控制动画角色。",
+          "user": "@AmyangXYZ",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5237",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092808.webp"
+          ]
+        },
+        {
+          "title": "LockPass",
+          "link": "https://github.com/ftyszyx/lockpass",
+          "description": "作者模仿 1password，做了一个开源的密码管理器。",
+          "user": "@ftyszyx",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5254",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100105.webp"
+          ]
+        },
+        {
+          "title": "Copi",
+          "link": "https://github.com/s1ntoneli/Copi",
+          "description": "macOS 系统的剪贴板替代工具，防止第三方应用程序访问剪贴板。",
+          "user": "@s1ntoneli",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5238",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092809.webp"
+          ]
+        },
+        {
+          "title": "mdict 词典安卓 App",
+          "link": "https://github.com/mumu-lhl/mdict-android",
+          "description": "mdict 词典的安卓 App，使用 Flutter 开发，代码开源。",
+          "user": "@mumu-lhl",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5263",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100403.webp"
+          ]
+        },
+        {
+          "title": "命令行 mdict 词典",
+          "link": "https://github.com/lengyijun/mdict-cli-rs",
+          "description": "命令行的 mdict 词典。",
+          "user": "@lengyijun",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5270",
+          "images": []
+        },
+        {
+          "title": "独白",
+          "link": "https://apps.apple.com/app/id6648770338",
+          "description": "一个练习口语的 iOS App，你不断朗读句子，进行录音，支持多种语言。",
+          "user": "@sniperboy0829",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5097",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092806.webp"
+          ]
+        },
+        {
+          "title": "证件照制作网站",
+          "link": "https://www.idphoto.cn/",
+          "description": "免费在线证件照制作。",
+          "user": "@huangzhuo492008824",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5257",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100112.webp"
+          ]
+        },
+        {
+          "title": "HivisionIDPhoto",
+          "link": "https://github.com/Zeyi-Lin/HivisionIDPhotos",
+          "description": "类似的开源项目。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "OneIMG",
+          "link": "https://github.com/byodian/oneimg",
+          "description": "一个开源的、纯前端的文字转图片的网页应用。",
+          "user": "@byodian",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5268",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100506.webp"
+          ]
+        },
+        {
+          "title": "WebChat",
+          "link": "https://github.com/molvqingtai/WebChat",
+          "description": "开源的浏览器插件，基于 WebRTC，为同一个页面的访问者建立去中心化、无服务器的匿名聊天，可用于任意网站。",
+          "user": "@molvqingtai",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5256",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100106.webp"
+          ]
+        },
+        {
+          "title": "TvT.js",
+          "link": "https://github.com/hawk86104/icegl-three-vue-tres",
+          "description": "一个基于 ThreeJS + Vue + TresJS 封装的框架，用 Vue 组件的方式写 3D 可视化项目。",
+          "user": "@hawk86104",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5281",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100803.webp"
+          ]
+        },
+        {
+          "title": "Hexo 主题 Night",
+          "link": "https://github.com/hai-zou/hexo-theme-night",
+          "description": "一款开源的 Hexo 博客主题，支持国际化和暗黑模式。",
+          "user": "@hai-zou",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5287",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100907.webp"
+          ]
+        },
+        {
+          "title": "联网麻将游戏",
+          "link": "https://github.com/liumengniu/majiang",
+          "description": "麻将游戏的一个开源实现，分成服务端和客户端。",
+          "user": "@liumengniu",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5247",
+          "images": []
+        },
+        {
+          "title": "X Guard",
+          "link": "https://chromewebstore.google.com/detail/x-guard/lljdlddjpnlabinhkgmhmnfacgjkggim",
+          "description": "一个 X（Twitter）内容过滤的浏览器插件。",
+          "user": "@zmzimpl",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5249",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092911.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI 相关",
+      "items": [
+        {
+          "title": "NotebookLM",
+          "link": "https://blog.google/technology/ai/notebooklm-audio-overviews/",
+          "description": "谷歌推出的一个新服务，可以将一篇文章转成学习笔记或者播客。\n\n也就是说，你上传文章后，它可以将文章转成一个英文的广播节目，内容是两个 AI 主持人一问一答介绍这篇文章。它甚至能将 Youtube 的视频转成播客。\n\n下面是一篇使用感受，作者用它将一篇地质学论文，转成几分钟的播客节目，放给8岁的儿子听。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024093004.webp",
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100302.webp"
+          ]
+        },
+        {
+          "title": "Silo",
+          "link": "https://silo.kwok.ink",
+          "description": "纯前端的多模型对话、文生图工具，可以在网页同时使用多个 AI 模型，进行比较。代码开源。",
+          "user": "@KwokKwok",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5246",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092910.webp"
+          ]
+        },
+        {
+          "title": "Praises",
+          "link": "https://github.com/ElmTran/praises",
+          "description": "跨平台的文本转语音的桌面工具，支持调用多个 API，免费使用。",
+          "user": "@ElmTran",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5283",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100901.webp"
+          ]
+        },
+        {
+          "title": "AIPPT",
+          "link": "https://www.aippt.cn/",
+          "description": "免费的 PPT 生成服务，有模板和多语言支持。",
+          "user": "@icaohongyuan",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5261",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100301.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "Hacker News 搜索引擎",
+          "link": "https://hn.algolia.com/",
+          "description": "第三方的\"黑客新闻\"搜索引擎，使用体验很不错。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202408/bg2024083001.webp"
+          ]
+        },
+        {
+          "title": "Zeli",
+          "link": "https://zeli.app",
+          "description": "这个网站实时给\"黑客新闻\"每个链接生成摘要。",
+          "user": "@mazzzystar",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5273",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100604.webp"
+          ]
+        },
+        {
+          "title": "TypeScript 题库网页版",
+          "link": "https://typehero.dev/",
+          "description": "TypeScript 题库 Type Challenge 的网页版。",
+          "user": "@vortesnail",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5250",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024093006.webp"
+          ]
+        },
+        {
+          "title": "开源许可证选择器",
+          "link": "https://open-source-license-chooser.toolsnav.top/zh/",
+          "description": "回答几个问题，帮你选择一个开源许可证。",
+          "user": "@wincatcher",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5236",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092807.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "黑洞光束",
+          "link": "https://mashable.com/article/black-hole-hubble-nasa-beam-through-space",
+          "description": "哈勃望远镜拍到了一张令人惊叹的照片。\n\n银河系中心的 M87 星系，向外喷出一根巨大的光束，长度足足有3000光年。\n\n据美国宇航局的解释，M87 星系的中心是一个黑洞。黑洞本身不发光，但是周围物质会围绕它快速旋转。有时，吸入黑洞的物质会\"改变路线\"成两股喷流，向相反的方向发射。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100104.webp"
+          ]
+        },
+        {
+          "title": "拉格朗日标准模型",
+          "link": "https://www.symmetrymagazine.org/article/the-deconstructed-standard-model-equation",
+          "description": "拉格朗日标准模型是一个描述粒子行为的统一方程，非常复杂。\n\n这个方程有几十行，分成5个部分。尽管如此，它依然是描述粒子行为最简单、最紧凑的形式。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100601.webp",
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100602.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "巨型光学望远镜的替代方案",
+          "link": null,
+          "description": "巨型光学望远镜，指的是透镜直径超过10米的望远镜。\n\n为了建造下一代巨型望远镜，美国政府准备拨款不超过16亿美元。这是很大一笔钱，但可能还不够，这样的望远镜预计将耗资30亿美元或更多。\n\n但是，我有不同想法。我认为，**巨型光学望远镜不值得建造，应该用小型光学望远镜（直径 0.5米～1米）的组合取代它**。\n\n巨型光学望远镜的建造，需要削平整个山头，建立牢固的地基和同样巨大的配套设置。为了运送建筑材料，要先在山上开辟公路。一条两车道的公路只有5米宽，怎么运输这面10米直径的透镜都成了大问题。\n\n我们这个时代，技术设备正变得越来越小，计算机从房间大小变成了口袋设备，摄像头可以做到微米级的像素产品，为什么望远镜要越做越大呢？\n\n（1）小型望远镜成本更低。在美国购买一台0.5米直径的光学望远镜，价格是56,000美元；一台性能优秀的直径1米的光学望远镜，价格现在是57万美元。即使购买100台这样的望远镜，也不过几千万美元，而一台巨型望远镜需要投入30亿美元。\n\n（2）天文学图像的重点，已经从光学照片转移到了软件处理。完全可以在多个夜晚对天空的同一区域进行多次曝光，然后用软件将它们组合成一张图像，而不需要更大更清晰的镜头。\n\n以上两点，使得我们完全可以将许多小型望远镜组合在一起，而不是建造单个巨大的望远镜。我们可以让望远镜组合扫描整个天空，再拼成一张巨型照片。\n\n这种向小型望远镜的转变，将从根本上改变望远镜工程。天文望远镜将从结构和机械工程，变成一种软件开发。\n\n这种转变很有吸引力，因为软件可以渐进式改进，天文学家还可以轻松利用各种软件工具，处理大量数据。\n\n此外，小型望远镜的组合也更灵活。使用巨型望远镜，你只能指向一个方向，但使用许多小型望远镜，你可以将视野分开，还可以每个镜头使用不同的滤光片。\n\n最后，如果某个零件发生故障，巨型望远镜需要整个停机，而小型望远镜的组合只需要停掉那一台，其他还能正常工作，这样更方便系统维修。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024100906.webp",
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030603.webp",
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030604.webp",
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030605.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "奥特曼",
+          "link": "https://ia.samaltman.com/",
+          "description": "技术繁荣本身不一定能让人们幸福，但它会明显改善世界各地人们的生活。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "匿名",
+          "link": null,
+          "description": "城市并不吵闹，汽车才吵闹。电动汽车没有发动机噪音，会让城市重新回归安静。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "Lobste.rs 读者",
+          "link": "https://lobste.rs/s/2rrnzz/announcing_voidzero_next_generation#c_rxudn5",
+          "description": "JavaScript 世界的\"一代\"有多长：六个月、一年、还是三个月？JS 工具之间的竞争之激烈令人震惊。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "匿名",
+          "link": null,
+          "description": "每天花8个小时以上的时间，开发和维护你不关心的东西，会导致你的不快乐。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        }
+      ]
+    }
+  ]
+}

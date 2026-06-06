@@ -1,0 +1,355 @@
+{
+  "title": "科技爱好者周刊（第 357 期）：稳定币的博弈",
+  "link": "https://www.ruanyifeng.com/blog/2025/07/weekly-issue-357.html",
+  "number": 357,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "稳定币的博弈",
+          "description": "稳定币（stable coin）是最近的热点，新闻媒体不断提及。\n\n起因是今年5月，香港通过了[《稳定币条例》](https://www.hkma.gov.hk/gb_chi/news-and-media/press-releases/2025/05/20250521-3/)，8月1日马上就要生效，允许企业申请牌照、发行稳定币。\n\n可以想象，**香港有了稳定币，对于大家来说，就多一个金融机会和金融工具**。\n\n但是，大多数人并不清楚，稳定币是什么？有什么用？\n\n我就来谈谈看法，为什么香港发行稳定币意义很大，其实很好懂。\n\n（一）\n\n稳定币属于加密货币的一种。它的由来跟比特币有关。\n\n比特币是最早的加密货币，价格波动十分剧烈。今天值5个烧饼，明天可能值8个，后天又变成4个。\n\n这注定了，它不适合作为交易工具，你根本不会用它来买卖其他东西。\n\n于是，人们想到可以创造**一种价格稳定的加密货币，也就是稳定币**。以目前最大的稳定币 USDT 为例，它是 Tether 公司在2014年开始发行的（比特币是2009年诞生的）。\n\nTether 承诺，USDT 的价格保持不变，始终为1美元。你给 Tether 公司1美元，就可以得到1枚 USDT（不是实物，而是记录在区块链账本上）。等你不需要了，就把 USDT 再卖给 Tether 公司，拿回1美元。\n\n理论上，只要 Tether 始终保留足够的美元储备，那么稳定币与美元的比价就能维持在1:1。Tether 公开了自己的财务，绝大部分收到的美元都购买了美国国债，所以大家觉得它的承诺是可信。\n\n一旦人们认可，稳定币等价于美元，那么**凡是可以使用美元的地方，都可以使用稳定币**，你就可以用稳定币购买各种各样东西。\n\n现在，USDT 是世界上交易量最大的加密货币，超过了比特币。大部分情况下，它被用来买卖其他加密货币。\n\n（二）\n\n使用稳定币时，人们发现，**它可以逃避美国政府的监管**。\n\n稳定币的流动完全脱离银行体系，是匿名钱包之间的交易，根本没办法追踪和监管。\n\n举例来说，美国政府某一天突然发布命令，禁止张三使用美元。这种情况下，张三改用稳定币，向李四购买想要的东西，李四再将稳定币兑换成美元。\n\n美国政府完全不会察觉，发生了这样一笔交易。即使政府监控美元的兑换，由于稳定币还可以兑换成其他加密货币，追踪是不可能的。\n\n美国政府也意识到了这个问题，于是本周正在通过一个[《GENIUS 法案》](https://en.wikipedia.org/wiki/GENIUS_Act)，它是历史上第一个稳定币的全面监管法案。\n\n这个法案的主要内容有三条。\n\n- （美元）稳定币的发行机构，必须在美国管辖范围内，且获得政府许可。\n- 发行机构所得的美元必须 1:1 转成银行存款。\n- 美国政府有权阻止、冻结、销毁外国机构发行的（美元）稳定币。\n\n（三）\n\n香港政府这次通过的《稳定币比例》，实在是很妙的一招。**它允许持牌机构发行港币支持的稳定币。**\n\n大家知道，港币跟美元汇率是[不变的](https://zh.wikipedia.org/wiki/%E9%A6%99%E6%B8%AF%E8%81%AF%E7%B9%AB%E5%8C%AF%E7%8E%87%E5%88%B6%E5%BA%A6)，7.8港币等于1美元，因此港币稳定币与美元稳定币的汇率也是不变的。\n\n所以，**港币稳定币可以替代美元稳定币，进而间接替代美元**。这里最重要的一点是，港币稳定币的发行和使用，都不受美国控制。\n\n也就是说，香港创造出了一种价值跟美元挂钩，但可以逃避美国监管的金融工具。可以设想，如果某些情况下，国际贸易无法用美元结算，也许就可以用港币稳定币结算。\n\n（四）\n\n最后一个问题，人民币稳定币可能出现吗？\n\n就像上面说的，稳定币很难监管，且可以自由兑换成美元，所以我认为，跟人民币挂钩的稳定币应该不会出现。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071201.webp",
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071202.webp",
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071203.webp",
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071609.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "美国租车巨头 Hertz 公司，引入了汽车扫描仪",
+          "link": "https://www.nytimes.com/2025/07/09/travel/rental-car-ai-scanner-hertz.html",
+          "description": "还车的时候，扫描仪使用摄像头，对车身拍摄数千张高分辨率图像，与提车时进行比较。如果发现新增的凹痕和损伤，就会要求赔偿。这对租车公司不仅高效，而且因为有电脑的照片比对，减少了争议。投入使用后，罚款金额比使用前增长6倍。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071408.webp"
+          ]
+        },
+        {
+          "title": "合肥某家海底捞门店，服务员佩戴二维码胸牌上菜",
+          "link": "https://finance.sina.com.cn/tech/roll/2025-07-13/doc-inffiefn5362065.shtml",
+          "description": "据说，这样便于顾客向服务员打赏。有人认为，这是变相索要小费。媒体报道后，店家取消了二维码胸牌。我觉得，不仅不应该取消，还应该在服务业推广，只是名称要改成\"员工码\"，除了打赏，还可以用来投诉。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071407.webp"
+          ]
+        },
+        {
+          "title": "加拿大出现了一件啼笑皆非的事情",
+          "link": "https://www.cbc.ca/news/entertainment/ai-band-hoax-velvet-sundown-1.7575874",
+          "description": "一支名为 Velvet Sundown 的乐队，突然横空出世，进入 Spotify 的热门播放榜。没人知道他们从何而来，没有照片，没有介绍，查不到个人资料。人们猜测他们是 AI 生成的。面对质疑，乐队始终保持沉默。突然有一天，一个男子在网上自称是该乐队的发言人，宣称乐队是真人，并发布了照片。这些照片一看就是 AI 生成的，反而做实了质疑。照片广泛传播后，乐队终于坐不住了，发表声明：所谓发言人是假的，照片是粉丝恶搞的，但承认音乐确实是 AI 生成的。讽刺的是，经过媒体曝光，乐队知名度大大提高，播放量继续攀升。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070703.webp",
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070704.webp",
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070705.webp"
+          ]
+        },
+        {
+          "title": "谷歌安卓团队负责人 Sameer Samat，主动透露 ChromeOS 将与安卓合并",
+          "link": "https://www.techradar.com/phones/android/i-think-you-see-the-future-first-on-android-googles-android-leader-sameer-samat",
+          "description": "安卓的目标是，将手机、平板与笔记本打造成统一平台。以后会有安卓笔记本，可以直接运行手机应用。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071501.webp"
+          ]
+        },
+        {
+          "title": "上周，X 公司发布 Grok 4 模型。用户震惊地发现，如果向它询问当前时事，它会先查看马斯克的立场",
+          "link": "https://simonwillison.net/2025/Jul/11/grok-musk/",
+          "description": "据推测，这应该不是故意设计的。而是，作为 X 公司的产品，Grok 会查看该平台用户的想法。它知道马斯克是 X 公司的老板，就先去查看他。最搞笑的还在后面，因为这件事影响太坏，Grok 4 公开修改了系统提示，明确要求模型不要参考埃隆·马斯克的发言。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071104.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "Django 框架的起源",
+          "link": "https://simonwillison.net/2025/Jul/13/django-birthday/",
+          "description": "本周是 Django 框架的20周年纪念日，创始人 Simon Willison 回忆发明过程，很多有趣的细节，比如他最早只是想用 Python 替换掉 PHP 4。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071410.webp"
+          ]
+        },
+        {
+          "title": "树莓派安装 PiKVM 教程",
+          "link": "https://www.xda-developers.com/built-pikvm-control-pc-remotely-game-changer/",
+          "description": "登录一台远程计算机，控制它的桌面，一个简单的方法就是使用 KVM 设备。本文演示如何在树莓派上安装 PiKVM。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025070503.webp"
+          ]
+        },
+        {
+          "title": "Elm 语言的现状",
+          "link": "https://engagesoftware.com/news/post/7033/using-elm-in-2025",
+          "description": "Elm 是一种 Web 开发语言，非常有特色，但是从2019年至今没有新版本。本文指出 Elm 没有死亡，而是一直在发展，社区非常活跃。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071502.webp"
+          ]
+        },
+        {
+          "title": "CSS 的 if() 函数",
+          "link": "https://developer.chrome.com/blog/if-article?hl=zh-cn",
+          "description": "Chrome 浏览器的137版本，开始支持 CSS 的条件语句---- if() 函数。CSS 越来越像编程语言了。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071712.webp"
+          ]
+        },
+        {
+          "title": "如何添加 Git 子命令",
+          "link": "https://github.com/shangwenhe/shangwenhe.github.io/issues/69",
+          "description": "本文教你怎么手动增加一个`git branch.note`命令。",
+          "user": "shangwenhe",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7294",
+          "images": []
+        },
+        {
+          "title": "避免 continue 语句",
+          "link": "https://www.teamten.com/lawrence/programming/avoid-continue.html",
+          "description": "本文提出循环结构的 continue 语句根本不必要，让阅读代码变得不流畅，你不应该使用这条语句。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042501.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Anytype",
+          "link": "https://download.anytype.io/",
+          "description": "开源的多平台笔记软件，Obsidian 的替代品，自带点对点的同步功能。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071713.webp"
+          ]
+        },
+        {
+          "title": "Pangolin",
+          "link": "https://github.com/fosrl/pangolin",
+          "description": "一个带有 Web 界面的反向代理服务器，用于从公网访问内网服务，开源的 Cloudflare Tunnerl 替代品。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071102.webp"
+          ]
+        },
+        {
+          "title": "Upyo",
+          "link": "https://github.com/dahlia/upyo",
+          "description": "一个 JS 库，提供 email 收发的所有功能。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071503.webp"
+          ]
+        },
+        {
+          "title": "OpenCut",
+          "link": "https://github.com/OpenCut-app/OpenCut",
+          "description": "开源的视频编辑软件，目标是成为剪映的替代品，目前只有 Web 版。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071411.webp"
+          ]
+        },
+        {
+          "title": "Toodoo",
+          "link": "https://apps.apple.com/cn/app/id6736378337",
+          "description": "户外轨迹导航的苹果设备应用，支持离线地图、等高线和 3D 卫星地图导航，可以生成运动轨迹视频，手机端完全免费。",
+          "user": "haozes",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7258",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071402.webp"
+          ]
+        },
+        {
+          "title": "TcpViz",
+          "link": "https://github.com/ruanyf/weekly/issues/7260",
+          "description": "这个网站用来对 pcap 网络包文件进行可视化分析，一键生成分析报告。",
+          "user": "jlingjace",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7260",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071403.webp"
+          ]
+        },
+        {
+          "title": "WebCurl",
+          "link": "https://github.com/o8oo8o/WebCurl",
+          "description": "网页版 API 调试工具，Postman 的简易替代品，前端只有一个 HTML 文件。",
+          "user": "o8oo8o",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7254",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071401.webp"
+          ]
+        },
+        {
+          "title": "HubProxy",
+          "link": "https://github.com/sky22333/hubproxy",
+          "description": "基于 Go 语言的自托管应用，提供 Docker 和 GitHub 的加速服务。",
+          "user": "sky22333",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7278",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071701.webp"
+          ]
+        },
+        {
+          "title": "配置文件管理器",
+          "link": "https://github.com/HeroIsUseless/configeditor",
+          "description": "一个跨平台桌面应用，用来编辑本地和远程的各种配置文件，可以在编辑后，一键保存并重启对应的服务。",
+          "user": "HeroIsUseless",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7257",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071404.webp"
+          ]
+        },
+        {
+          "title": "Configs",
+          "link": "https://github.com/iHongRen/configEditor",
+          "description": "macOS 的配置文件编辑器，它会自动扫描发现本地的配置文件。",
+          "user": "iHongRen",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7270",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071607.webp"
+          ]
+        },
+        {
+          "title": "MeetSpot",
+          "link": "https://github.com/JasonRobertDestiny/MeetSpot",
+          "description": "一个开源的 Web 地图应用，用户输入多个参与者的出发位置，它会推荐对大家距离合适的聚会场所（如咖啡馆、餐厅、图书馆等）。",
+          "user": "JasonRobertDestiny",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7289",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071702.webp"
+          ]
+        },
+        {
+          "title": "好享记账",
+          "link": "https://github.com/suyu610/journal-flutter",
+          "description": "开源的记账应用，链接是 Flutter 前端仓库，另有后端的 Java 仓库。",
+          "user": "suyu610",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7293",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071714.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI 相关",
+      "items": [
+        {
+          "title": "epub 电子书双语翻译 Python 库",
+          "link": "https://github.com/BlackHole1/...",
+          "description": "一个使用 AI 模型，对 epub 电子书进行双语翻译的 Python 库。",
+          "user": "BlackHole1",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7273",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071608.webp"
+          ]
+        },
+        {
+          "title": "PoPo",
+          "link": "https://github.com/AmyangXYZ/PoPo",
+          "description": "一个很有意思的开源应用，使用自然语言发出指令（\"弯腰\"、\"大笑\"等等），控制网页上的 3D 模型人，在线试用。",
+          "user": "AmyangXYZ",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7268",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071504.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "Kite",
+          "link": "https://kite.kagi.com/",
+          "description": "搜索引擎公司 Kagi 推出的一个新闻网站，完全由 AI 驱动：AI 选择新闻，提炼出摘要，并翻译成用户指定的语言。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071409.webp"
+          ]
+        },
+        {
+          "title": "x86-64 汇编语言入门",
+          "link": "https://gpfault.net/posts/asm-tut-0.txt.html",
+          "description": "面向初学者的汇编语言教程，从内存和寄存器讲起，标题链接是第一讲，后面还有第二、三、四讲。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071406.webp"
+          ]
+        },
+        {
+          "title": "HTTP 状态码详解",
+          "link": "https://evertpot.com/http/",
+          "description": "一组系列文章，逐一详细解释68个官方的 HTTP 状态码。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071101.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "美国最近上映的僵尸电影《28年后》，是用 iPhone 15 Pro Max 拍的。",
+          "description": "上图是20个 iPhone 一起拍出多视角镜头。导演选择 iPhone 来拍摄，是因为想做不一样的尝试，手机很便携，还可以绑在演员身上拍。为了拍出最好的效果，拍摄时还会使用很多辅助设备，主要是专业镜头和稳定器。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071603.webp",
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071604.webp",
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071605.webp",
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071606.webp"
+          ]
+        },
+        {
+          "title": "乐高人体解剖玩偶",
+          "link": "https://kottke.org//12/06/cool-anatomical-sculptures-of-lego-people",
+          "description": "一位美国艺术家将乐高玩偶，改造成人体解剖积木。下面是正常的乐高人偶。下面是改造后的人体解剖人偶。经过这样的改造，普通的玩偶顿时变成了艺术品。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071602.webp",
+            "https://cdn.beekka.com/blogimg/asset/202507/bg2025071405.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "数量胜于质量",
+          "description": "学期开始时，佛罗里达大学摄影课的教授，将学生分成两组。一组是数量组，按照作业的数量评分；另一组是质量组，按照作业的质量评分。数量组拍出100张合格照片为 A，90张为 B，80张为 C。质量组只需要提交一张完美的照片，评分就基于这张照片。如果你是摄影课的学生，你会选择哪一组？学期结束时，教授发现，所有最佳照片都来自数量组。数量组必须多拍，所以学生慢慢习惯了接受摄影的不完美，从一次次的实践之中，开始精通摄影，最终从许多次不完美的拍摄之中，诞生出一张完美的照片。想想看，100次拍摄意味着什么：100次与光的对话、100次构图实验、100次的反思机会去检讨意图与结果之间的差距，然后进行调整。相反的，质量组不得不苦苦学习理论，搞清楚如何拍出一张完美的照片，先掌握理想的构图，再探索最佳的技巧。他们因此积累了丰富的摄影知识，却没有培养出那种只有反复按下快门才能获得的直觉。这就好比，质量组是地图专家，而数量组是探险家。学期结束时，质量组可以告诉你为什么某一张照片很棒，而数量组拍出了这样的照片。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "我真的不明白 Cursor 这样的 AI 工具，本身有什么价值。它就是一些 API 的包装器，对吧？",
+          "description": "我真的不明白 Cursor 这样的 AI 工具，本身有什么价值。它就是一些 API 的包装器，对吧？据我所知，世界上真正的 AI 公司大概只有四家，其他公司都是在贴牌。",
+          "images": []
+        },
+        {
+          "title": "大型科技公司付出天价薪水给 AI 人才。",
+          "description": "大型科技公司付出天价薪水给 AI 人才。公司是这样想的，AI 将是一个超过10万亿美元营收的机会，而 AI 研究人员人数上限只有几百人，那么每位研究人员每年薪水500万美元、1000万美元或2000万美元能有多大差别？要知道，就算每年向 AI 研究人员支付100亿美元的薪酬，这点钱还不到 Meta 年度资本支出的四分之一。",
+          "link": "https://blog.johnluttig.com/p/hypercapitalism-and-the-ai-talent",
+          "images": []
+        },
+        {
+          "title": "AI 就是一种新型的操作系统，帮你完成各种任务。",
+          "description": "AI 就是一种新型的操作系统，帮你完成各种任务。这个系统的 CPU 就是大模型，内存就是模型的上下文窗口，窗口越大能完成的任务规模就越大。",
+          "user": "Andrej Karpathy",
+          "user_link": "https://rlancemartin.github.io/2025/06/23/context_engineering/",
+          "images": []
+        },
+        {
+          "title": "这个世界有两种人",
+          "description": "这个世界有两种人：一种人用电脑来工作，另一种人看到电脑，会忘了工作，一心先摆弄电脑，把能改的都改完，直到完全顺手为止。",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,548 @@
+{
+  "title": "科技爱好者周刊：第 66 期",
+  "link": "https://www.ruanyifeng.com/blog/2019/07/weekly-issue-66.html",
+  "number": 66,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "",
+          "link": "",
+          "description": "生存是一种即时策略游戏，所有的人都是这场游戏的玩家。财务自由了，就是游戏赢家。\n\n具体来说，又分成两种游戏：财富游戏和地位游戏。财富游戏的玩家追求更多的财富，地位游戏的玩家追求更高的地位。\n\n古时候，地位越高，财富越多，当大官就是发大财，所以大家都玩地位游戏。现代社会，财富游戏和地位游戏慢慢脱离了关系，不当大官也可以发大财，财富游戏的玩家多了起来。\n\n这两种游戏有本质的区别。**地位游戏一定是零和的，有赢家就肯定有输家。** 比如，我当了部门主管，你就不能当了。所以，地位游戏很凶险，必须时刻提防其他玩家的冷枪。财富游戏不是零和的，我盖了一幢漂亮的房子，不影响你也盖一幢。我赚钱了，不影响其他人的利益，很可能还让其他人过得更好。比如，乔布斯创办了苹果公司，其他人就有了更好的电子产品可用。\n\n**创业是财富游戏，政治是地位游戏。** 因为上面的原因，我认为，创业值得参与，政治不值得参与。有些创业项目也是零和的，比如抢票技术、秒杀技术、游戏外挂等等，那也不值得参与。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019072414.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "前端面试知识图谱",
+          "link": "",
+          "description": "开课吧根据阿里、头条、美团等公司2019年的面试题，梳理了一份完整的 **\"高级前端工程师\"面试知识图谱**，XMind 格式，通过周刊这个平台带给需要的朋友，希望对大家面试有所帮助。此外，他们还有一个 **Flutter 视频教程**，也是免费的。想要学习这个最新的手机 App 开发框架的朋友，可以跟着学习。扫描下面二维码，就可以免费领取《前端面试知识图谱》和 Flutter 视频，只有500个免费名额。",
+          "user": "开课吧",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019072513.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019072512.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资讯",
+      "items": [
+        {
+          "title": "汤匙抗议",
+          "link": "https://www.courant.com/news/connecticut/hc-news-stamford-opioids-spoon-sculpture-0623-story.html",
+          "description": "最近，一位艺术家在加州普渡医药公司的大楼门口，扔下了一个钢制雕塑，重达300多公斤。这个雕塑是一个正在加热毒品的汤匙，抗议普渡医药公司制造阿片类药物，明知这类药物被当作毒品使用，而无所作为。该艺术家拒绝将雕塑移除，市政府不得不出钱移除，然后起诉了他。普渡医药公司因此发表声明，表示以后将不再主动推销阿片类药物。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019062901.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019062902.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019062903.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019062904.jpg"
+          ]
+        },
+        {
+          "title": "iOS App 访问统计：小屏幕 iPhone 份额最大",
+          "link": "",
+          "description": "一个开发者公布了他的 iOS App 的访问统计，份额最大的四种设备（iPhone 6，6s，7，8）都是4.7寸屏幕，占总量的近50%。他认为，这说明消费者并非一味喜欢大屏幕手机，但是苹果公司显然不这么想，正在放弃小屏幕，新的 iOS 13不再支持iPhone 5S，6 和 6+。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "太阳能甲醇岛",
+          "link": "https://arstechnica.com/science/2019/06/creative-thinking-researchers-propose-solar-methanol-island-using-ocean-co%E2%82%82/",
+          "description": "瑞士科学家提出一个设想，海洋上铺设直径100米的太阳能浮岛，利用太阳能发电。电力输送到旁边的轮船。轮船使用这些电力，从海水中提取氢气，与二氧化碳合成甲醇，然后定期将甲醇送回陆地，作为燃料。相比汽油，甲醇的安全性更好，更有利于环境保护。根据计算，只要有17万个这样的太阳能浮岛，就能弥补这个系统的成本。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019060902.jpg"
+          ]
+        },
+        {
+          "title": "爬墙机器人",
+          "link": "https://spectrum.ieee.org/automaton/robotics/robotics-hardware/trhex-hexapod-robot-microspines",
+          "description": "卡内基·梅隆大学的研究生，做出了一个爬墙机器人的原型。这个机器人脚趾的尖端带有小针，使得它可以悬挂在垂直的表面。目前，这个机器人只能爬倾斜度为55%的斜坡，改进腿部材料的强度以后，将可以爬墙。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019061302.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019061303.jpg"
+          ]
+        },
+        {
+          "title": "欧盟规定电动车必须安装噪音发生器",
+          "link": "",
+          "description": "欧盟最新规定，新生产的电动汽车必须配备一个噪音发生器。因为相比传统的内燃机汽车，电动车太安静，行人可能会因为无法听到，而处在危险之中，对于视力不好的人和盲人尤其如此。该法规规定，电动车必须产生跟传统发动机相似的噪音。特别是在倒车或行驶速度低于每小时19km时，汽车必须发出声音。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019073010.jpg"
+          ]
+        },
+        {
+          "title": "美国参议院通过法律减少电网自动化",
+          "link": "https://www.utilitydive.com/news/senate-passes-cybersecurity-bill-to-decrease-grid-digitization-move-toward/557959/",
+          "description": "美国参议院6月27日通过法律，要求减少电网自动化的程度，不得完全采用计算机控制，必须可以手动控制，目的是防止电网遭受黑客攻击时，出现大规模停电。2015年乌克兰电网遭受攻击，导致25万人停电，人工控制防止了更大的停电。美国议员说：\"如果乌克兰当时不依靠人工运行电网，结果可能会更糟。\"",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019070201.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019070202.jpg"
+          ]
+        },
+        {
+          "title": "世界最大太阳能电厂在阿联酋沙漠建成",
+          "link": "",
+          "description": "阿联酋在沙漠之中，建设了一个世界最大的太阳能电厂，一共安装了320万块太阳能板，可以为9万人供电。峰值发电量是1180兆瓦，相比之下，美国最大的太阳能厂是569兆瓦。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "天宫二号返回地球",
+          "link": "",
+          "description": "天宫二号空间站于7月19日返回地球，残骸落入南太平洋。2018年4月天宫一号接收不到地面控制，自由落体坠毁，当时引入世界关注，幸好最后落在海洋里。为了避免这种结果，天宫二号选择了受控坠毁。天宫二号是中国第一个真正意义的空间站，2016年9月发射。2016年10月，航天员景海鹏和陈冬在里面待了30天。由于它只有10.4米长，直径3.35米，跟一辆大卡车差不多，在这里待30天一定很折磨。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019071902.jpg"
+          ]
+        },
+        {
+          "title": "一句话消息",
+          "link": "",
+          "description": "苹果公司收购 Intel 公司的无线芯片业务，这说明苹果还是不愿意使用高通芯片，更别说华为了，一定要制造自己的 5G 芯片。收购价10亿美元，接收2200名员工。亚马逊公司配送中心的工人计划进行罢工，抗议受到机器人一样的对待。一名工人说：\"我必须每8秒取一件货物，每小时332件，每天工作10小时。\"美国队今年与中国队并列，夺得国际中学生奥林匹克数学竞赛团体冠军。下面是美国队6个成员的合影，其中5个是华裔。日本网友贴出京都动画工作室的内部照片。该工作室被一个神经病放火，已经有30多个动画师遇难。有人为了抢救画稿，而来不及逃离。一个肯尼亚斑马保护组织通过扫描斑马身上的条纹，识别每一匹斑马。该技术借鉴了扫描商品的条形码。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019072011.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019071901.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019071105.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019071106.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "如何编写幂等的 Bash 脚本？",
+          "link": "https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/",
+          "description": "幂等指的是不管运行多少次，都会得到同样的结果。幂等的 Bash 脚本的最大好处是，如果前一次执行中断，那么完全可以从头运行。本文讲解如何运用各种命令的参数，做到脚本的幂等性。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019070914.jpg"
+          ]
+        },
+        {
+          "title": "不用 Cookie 的用户追踪",
+          "link": "",
+          "description": "追踪用户的常见做法是，把用户 ID 保存在 Cookie。如果不用 Cookie，可以追踪吗？答案是可以的，一种思路是浏览器会缓存静态资源，那么用户 ID 保存在静态资源里面就可以，比如使用 etag 保存用户 ID。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "中国互联网报告2019",
+          "link": "https://www.scmp.com/china-internet-report",
+          "description": "《南华早报》出品的中国互联网行业的现状和预测报告，主要是大量的数据可视化图表。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "耗尽 CPU 的正则表达式",
+          "link": "https://blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019/#appendix-about-regular-expression-backtracking",
+          "description": "七月初，cloudflare 曾经全球中断服务，原因是一个正则表达式耗尽了 CPU 资源。现在，他们公布了这个正则表达式（上图），看着很复杂，简化以后，出问题是这个模式 `.*.*=.*`。七个字符里面包含三个贪婪匹配，从而导致急剧放大的计算量。上面链接详细解释，为什么这个模式有问题。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019072514.jpg"
+          ]
+        },
+        {
+          "title": "脊髓的带宽",
+          "link": "https://www.reddit.com/r/askscience/comments/7l56sb/how_much_bandwidth_does_the_spinal_cord_have/",
+          "description": "脊髓是人体的中枢神经传递信号的通路，它的带宽有多大？一个神经科人士估算，可以达到每秒16.625 GB的数据，比 5G 通信的最快速度，还要快几十倍。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "如何使用 Python 和 Tor 改变 IP 地址",
+          "link": "https://boredhacking.com/tor-webscraping-proxy/",
+          "description": "有的网站对爬虫有 IP 限制，该文作者将爬虫放在 Tor 网络后面，使得每次请求都有不一样的 IP 地址，从而避开限制。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "我如何发现 Instagram 的漏洞",
+          "link": "https://thezerohack.com/hack-any-instagram",
+          "description": "作者讲述他如何发现 Instagram 的一个漏洞，可以改掉任何用户的密码，最后得到 Facebook 公司三万美元奖金的故事。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "一场将 Safa 和 Marwa 分开的战斗",
+          "link": "https://www.bbc.co.uk/news/extra/PLNMqvmycN/conjoined-twins",
+          "description": "BBC 的长篇图片报道。Safa 和 Marwa 是一对头部连在一起的连体姐妹，一个英国的医疗团队试图将她们分开。希望有人把这篇报道译成中文。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019071603.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019071604.jpg"
+          ]
+        },
+        {
+          "title": "阿波罗登月计划如何促进计算机的进步",
+          "link": "https://www.fastcompany.com/90362753/how-nasa-gave-birth-to-modern-computing-and-gets-no-credit-for-it",
+          "description": "今年7月20日是阿波罗登月计划50周年的纪念日，本文回顾了登月对计算机的推动作用。上图就是导航系统的主机壳，右边是它的输入模块。",
+          "user": "starshipsea",
+          "user_link": "https://github.com/ruanyf/weekly/issues/681",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019071609.jpg"
+          ]
+        },
+        {
+          "title": "为视频弹幕引入新的 HTML 标签",
+          "link": "",
+          "description": "本文总结了视频弹幕的特点，建议引入新的 HTML 标签`<bulletchatlist>`和`<bulletchat>`。",
+          "user": "Mrlilili",
+          "user_link": "https://github.com/ruanyf/weekly/issues/705",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019072401.png"
+          ]
+        },
+        {
+          "title": "原创与前沿的区别",
+          "link": "https://mp.weixin.qq.com/s/6meIeT_mcC3XTQfsYBQraQ",
+          "description": "自然科学基金要求注明，所申请的项目属于原创性研究，还是聚焦前沿。相当多的人分不清这两者，我所在的学科组讨论的大约300个项目，大约有20%标注为\"原创性研究\"，其实全部属于\"聚焦前沿\"。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "不要眨眼 (Don't Blink)",
+          "link": "",
+          "description": "一个开源游戏，浏览器随机选择另一个用户，双方通过摄像头出现在网页上，谁先眨眼谁就输。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019061309.jpg"
+          ]
+        },
+        {
+          "title": "Module Linker",
+          "link": "",
+          "description": "一个 Chrome 浏览器插件，可以将 GitHub 里面的模块加载语句（比如`import xxx from yyy`），变成一个链接，点击以后就进入该模块的源码。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Pika CDN",
+          "link": "https://www.pika.dev/cdn/",
+          "description": "一个专门为 NPM 里面的 ES6 模块提供的 CDN 服务，浏览器可以直接加载该 CDN 的 ES6 模块。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "SikuliX",
+          "link": "",
+          "description": "一个跨平台的桌面自动化工具，可以编写脚本，自动执行桌面操作。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Pock",
+          "link": "https://pock.dev/",
+          "description": "这个软件可以把 Macbook 笔记本的 Dock 栏都搬到 Touchbar。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019062005.jpg"
+          ]
+        },
+        {
+          "title": "web-flash",
+          "link": "",
+          "description": "网站后台管理系统，基于 Spring Boot + Vue.js 搭建。",
+          "user": "enilu",
+          "user_link": "https://github.com/ruanyf/weekly/issues/635",
+          "images": []
+        },
+        {
+          "title": "jexcel",
+          "link": "https://github.com/paulhodel/jexcel",
+          "description": "一个浏览器电子表格的 JS 库，与 Excel 兼容。",
+          "user": "ctolib",
+          "user_link": "https://github.com/ruanyf/weekly/issues/639",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019062201.jpg"
+          ]
+        },
+        {
+          "title": "Zvm",
+          "link": "https://github.com/5A59/Zvm",
+          "description": "一款 Python 实现的 \"超轻量级\" JVM，代码简单，结构清晰，方便学习 JVM 原理。",
+          "user": "5A59",
+          "user_link": "https://github.com/ruanyf/weekly/issues/641",
+          "images": []
+        },
+        {
+          "title": "Exthouse",
+          "link": "https://github.com/treosh/exthouse",
+          "description": "Chrome 浏览器的插件会对浏览器性能造成影响。这个工具可以分析评估插件对性能的影响。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Serveo",
+          "link": "https://serveo.net/",
+          "description": "一个将本地计算机暴露在互联网上的服务。它的原理很简单，你在本地通过 SSH 与该网站建立远程代理，该网站会生成一个 URL，通过这个 URL 其他人就能访问你的本地计算机。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "uPic",
+          "link": "https://github.com/gee1k/uPic",
+          "description": "一个简洁的 Mac 图床客户端，用来从桌面端上传图片到图床。",
+          "user": "gee1k",
+          "user_link": "https://github.com/ruanyf/weekly/issues/642",
+          "images": []
+        },
+        {
+          "title": "Gallery Go",
+          "link": "https://www.google.com/photos/gallery-go/",
+          "description": "谷歌官方推出的安卓应用，一个离线的照片管理器，可以自动按照主题整理照片。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019072413.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "程序员在线工具集合",
+          "link": "",
+          "description": "该网站收集专供程序员使用的一些在线工具。",
+          "user": "hubs",
+          "user_link": "https://github.com/ruanyf/weekly/issues/629",
+          "images": []
+        },
+        {
+          "title": "Linux kernel 开发人员的博客聚合网站",
+          "link": "",
+          "description": "Linux kernel 开发人员的博客聚合网站。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "SQL 风格指南",
+          "link": "https://github.com/mattm/sql-style-guide#guidelines",
+          "description": "SQL 语句如何写得清晰明确，这个仓库列出了风格规则。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "LaTex 教程",
+          "link": "https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes",
+          "description": "Overleaf 提供的 LaTex 新人教程，容易入门。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "天文学资源集合",
+          "link": "",
+          "description": "该仓库收集优秀的天文学资源。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "voxinsta",
+          "link": "https://www.voxinsta.com/",
+          "description": "Instagram 是世界最大的图片分享工具，但是没有\"发现\"频道，无法浏览平台上面的优秀图片。这个网站就可以充当 Instagram 的发现频道。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "《Doom》像素图像转高分辨率",
+          "link": "",
+          "description": "1993年的电子游戏《Doom》，里面的人物都是像素图像。现在，有人通过神经网络训练，将这些像素图形转成了高分辨率图像。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019062008.jpg"
+          ]
+        },
+        {
+          "title": "世界最大的室内海滩（热带岛屿）",
+          "link": "",
+          "description": "距离德国首都柏林60公里的地方，有一个废弃的飞机库，长360米，宽210米，高107米，面积有七个足球场那么大。一家马来西亚公司将其改造为世界最大的室内海滩，可以容纳6000个游客，足足有四百张躺椅。飞机库的表面都改成了玻璃，使得它成为了一个巨大的暖房。在德国严寒的冬季，也是四季如春的气候。目前，里面生长着5万株热带植物。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019062207.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019062204.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019062205.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019062206.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019062208.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "创业公司的倒闭与比特币零售店",
+          "link": "",
+          "description": "2017年，我的创业公司倒闭了。...这件事的启示就是，不要忽视荒谬的想法。先尝试一下，让市场告诉你它是否荒谬。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "戈亚尼亚事故",
+          "link": "https://en.wikipedia.org/wiki/Goi%C3%A2nia_accident",
+          "description": "1985年，巴西的一家民营癌症医院搬迁...最终，这一小撮铯产生了3000立方米的污染废物。这些废物被埋在城郊两个绿色土丘中。而这片土地要经过300年的时间才可以重新使用。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019062304.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019062305.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019062303.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201906/bg2019062306.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "任正非谈人才政策",
+          "link": "",
+          "description": "人才政策一贯是\"爱一行，干一行；干一行，专一行\"，没有强迫大家去干一行就一定要爱一行。",
+          "user": "任正非",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "任正非谈员工分类",
+          "link": "",
+          "description": "认同华为公司价值观的、而且能给企业创造效益的员工，要给予重用和提拨。不认同华为公司价值观的、而且不能给企业创造效益的员工，要给予劝退。具备两者之一的员工，要予以分类和改造。",
+          "user": "任正非",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "极简宇宙史",
+          "link": "https://book.douban.com/subject/26697350/",
+          "description": "如果太阳是一只西瓜那样大小，地球将会处于43米之外，需要望远镜才能看到它。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "乔治 R.R. 马丁谈读书",
+          "link": "https://goel.io/why-read/",
+          "description": "喜欢读书的人在死之前，活过1000次，不读书的人只活过一次。",
+          "user": "乔治 R.R. 马丁",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "播客的优势",
+          "link": "",
+          "description": "播客的优势就是诚实，它让我们能够在人们的耳边轻声细语，并告诉他们我们的看法。今天这种诚实和内心沟通很少见，因此很有价值。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "招聘",
+      "items": [
+        {
+          "title": "资深 Web 前端工程师 - 美团",
+          "link": "https://zhaopin.meituan.com/",
+          "description": "美团基础研发平台，面向公司内部提供基础服务，例如云计算、虚拟化、中间件、基础服务等。工作地点：上海长宁。团队主要负责公司内部知识管理、在线实时协作相关平台研发。希望你有最好有3年以上前端开发经验，对 React、Node、前端工程化的有丰富经验。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019071905.jpg"
+          ]
+        },
+        {
+          "title": "前端程序员 - 疯狂游戏",
+          "link": "http://www.hortorgames.com",
+          "description": "疯狂游戏，国内小游戏 Top 1 公司。工作地点：北京海淀区。疯狂游戏成立于2010年，成功打造多款风靡全国的游戏，如《海盗来了》、《头脑王者》、《成语小秀才》、《疯狂猜图》、《疯狂猜歌》等。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019071903.jpg"
+          ]
+        },
+        {
+          "title": "资深前端开发工程师 - 美团外卖",
+          "link": "https://zhaopin.meituan.com/job-detail?jobId=22392374",
+          "description": "美团外卖上海研发中心。工作地点：上海中山公园。团队负责美团外卖小程序、m站等用户端产品的研发，及小程序基础设施体系化建设。欢迎具有3年以上前端经验的同学加入。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019071906.jpg"
+          ]
+        },
+        {
+          "title": "高级前端工程师 - 比特大陆",
+          "link": "https://github.com/btccom/blackboard",
+          "description": "比特大陆矿池团队。工作地点：北京市奥北科技园。团队负责比特大陆矿池及多币种区块链浏览器项目研发。欢迎具有3年以上工作经验的同学加入团队。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201907/bg2019072507.jpg"
+          ]
+        }
+      ]
+    }
+  ]
+}

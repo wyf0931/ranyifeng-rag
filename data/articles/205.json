@@ -1,0 +1,354 @@
+{
+  "title": "科技爱好者周刊（第 205 期）：互联网风口过去了吗？",
+  "link": "https://www.ruanyifeng.com/blog/2022/05/weekly-issue-205.html",
+  "number": 205,
+  "sections": [
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "封面图",
+          "description": "美国毅力号火星漫游车拍到的\"火星日食\"照片",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050410.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "本周话题",
+      "items": [
+        {
+          "title": "互联网风口过去了吗？",
+          "description": "疫情前，有人问马云，怎么看待互联网风口。马云说，风口来了猪都会飞，但风过去后摔死的一定都是猪。\n\n![](https://cdn.beekka.com/blogimg/asset/202205/bg2022050101.webp)\n\n过去一年，堪称互联网行业的寒冬。国内大厂普遍都在收缩业务，裁减人员。股票也是大跌，就连腾讯、阿里的股价也没有逃脱腰斩。\n\n![](https://cdn.beekka.com/blogimg/asset/202205/bg2022050102.webp)\n\n很多人在问，互联网风口过去了吗？猪要摔死了吗？我谈谈自己的想法。\n\n首先要看到，这不是中国独有的现象，国外互联网公司日子也不好过。流媒体平台 Netflix 和脸书的股价，最近都是暴跌。\n\n![](https://cdn.beekka.com/blogimg/asset/202205/bg2022050411.webp)\n\n原因是这两家公司的用户数量，历史上第一次，没有任何增加，甚至还有小幅下降。\n\n这才是现在的最大难题：**互联网用户的数量可能到头了**。\n\n以智能手机为例，它是最重要的上网设备，但是销量不断下滑，2022年第一季度全世界同比下滑了11%，中国大陆下滑了14.4%。这说明互联网可能没有新增用户了。\n\n所以，总体上来看，互联网的爆发期确实是过去了。但是，也不能因此断定就没有风口了。因为互联网的范围太广泛，至少可以分成三个行业，各自情况非常不同。\n\n（1）消费互联网：争夺消费者的时间和金钱，电商、直播都属于这一类。这个行业已经告别了增量时代，进入存量时代。\n\n（2）企业互联网：为企业服务，公有云和 SaaS 工具属于这一类。据我所知，它们过去一年都活得很不错。就算宏观经济不好，如果云服务可以帮企业省钱，企业还是愿意买的。\n\n（3）产业互联网：针对某个垂直产业的互联网应用，比如华为去年成立五大军团（煤矿军团、港口军团、光伏军团、公路军团等），就属于这一类。\n\n综合分析上面三个互联网行业，我认为，消费互联网目前遇到了瓶颈，用户的总数到头了，但是单个用户的消费金额还是会增长，所以最多就是行业增长速度变慢了、竞争更激烈了，向上的趋势并没有改变。后面如果元宇宙有突破，依然是一个风口。\n\n至于企业互联网和产业互联网，才刚刚起步，根本不存在用户饱和，非常看好，风口不仅没有过去，可能才刚刚起风。\n\n所以，大家还是应该坚定信心，**互联网依然大有可为**。没有其他技术像它一样，再小的产品也能面向全世界用户，边际成本几乎为零。如果它不行了，其他行业恐怕更不行了。"
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "计算机双翼能力专场讲座",
+          "description": "很多同学现在都是多手准备，既准备面试就业，也准备考研考公务员，尽量多一些出路。有些在职人士遇到职场瓶颈，也是这种打算。\n\n本周课程就是为此而设计的，把考研准备和技术提升放到了一起。讲解如何准备考研的同时，穿插了编程技能培训，课程名称就叫做 **《计算机硕士学历 + 硬核技术 双翼提升训练营》**。\n\n整个训练营分成四天直播课（含录播内容），包括学历提升和技术提升两个部分。**技术提升部分**设置了四个专场讲座，都是目前招聘需求最大的几个方向，你可以根据自己的情况，选听一门。\n\n第一门：人工智能 AI 专场。大厂算法岗招聘需求拆解，算法工程师的技能树。\n\n第二门：Java 专场。Java 语言历史与现状，Java 程序员生存指南。\n\n第三场：Web 前端专场。面试渠道和技巧分享，简历硬伤分析，前端进阶路线。\n\n第四场：算法研发 CS 专场。CS 研发工程师能力模型，研发浪潮现状分析。\n\n主讲老师都是各自领域的技术专家，结合行业发展趋势，剖析大厂相关岗位能力模型，介绍大厂筛选简历套路、面试拿 OFFER 技巧，让你的求职之路更畅通。\n\n![](https://cdn.beekka.com/blogimg/asset/220204/bg2022042601.webp)\n\n**学历提升部分**，由前新东方优秀讲师刘硕、前阿里技术专家李超等领衔授课，详细讲解计算机考研招生流程和最新政策，分析报考趋势，以及公共课、专业课成绩提升技巧。\n\n同时会配合开课吧自主研发的 AI 系统，根据历年数据（报考人数、分数线等），进行科学估分和排位，为你制定专属备考方案，精准择校择专业。\n\n整个课程还有下面的特点：（1）讲解通俗易懂，照顾转行的在职人士，目标是让零基础的人也理解该怎么做、怎么学；（2）导师以多年实战经验总结，运用科学记忆法引导，帮你消化疑难知识点；（3）讲师、助教、班主任三位一体跟踪式服务，全程为你答疑解惑。\n\n周刊读者可以不用花钱，零元报名。如果你还不确定，到底是就业还是考研，或对考试难度、考哪个方向、是否脱产等问题有疑惑，不妨到时直接咨询讲师，或许就会豁然开朗。\n\n![](https://cdn.beekka.com/blogimg/asset/202205/bg2022050524.webp)\n\n微信扫描上方二维码，了解课程详情并报名。报名后，添加老师微信，领取课程和以下的**到课福利**。\n\n- AI 学习路径资料\n- Java 应聘简历范例 + 面试百题\n- 前端应聘简历范例\n- 百度内部面试评估表",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022042601.webp",
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050524.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "隐身镜",
+          "link": "https://www.odditycentral.com/news/uk-based-company-creates-functional-invisibility-shields.html",
+          "description": "神话传说中经常有隐身衣，现在一家英国公司发明了隐身镜，只要躲在镜子后面就能隐身。它的原理很简单，就是一组透镜，但是可以让投射的光线偏离镜子背后的人，好像拐弯一样，落在更远的地方，导致背后的人就隐身了。这种镜子完全依赖光学，不需要电源，使用树脂制作，厚度5厘米，重4公斤，便携性也不错。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022032408.webp",
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022032409.webp",
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022032410.webp"
+          ]
+        },
+        {
+          "title": "动物讣告",
+          "link": "https://mp.weixin.qq.com/s/qJsdUemQMwfQoYaQ1Qxjwg",
+          "description": "南京红山森林动物园的一只獐子突发疾病去世，饲养员非常难过。经过领导同意，写了一张100字的讣告，概括了这只小獐子的一生，挂在笼子上告知游客。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022042707.webp",
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022042708.webp"
+          ]
+        },
+        {
+          "title": "火箭回收",
+          "link": "https://www.bbc.com/news/science-environment-61307512",
+          "description": "美国的创业公司火箭实验室，本周完成了一项史无前例的实验，使用直升飞机回收火箭助推器。此前，只有 SpaceX 公司回收过助推器，方案是让它自动降落到海中平台。火箭实验室的方案更简单，助推器下落时打开降落伞，直升飞机抓住降落伞即可。这样的技术难度低，有利于降低火箭发射成本。以后，火箭发射势必更加便宜和容易。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050405.webp",
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050403.webp",
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050404.webp"
+          ]
+        },
+        {
+          "title": "远程充电",
+          "link": "https://newatlas.com/energy/us-navy-beams-1-6-kw-power-kilometer-microwaves/",
+          "description": "无线充电可以相隔多少距离？上个月，美国海军做了一个实验，相隔一公里进行无线充电，成功建立了1.6千瓦的能量传输。它的原理很简单。发射端将电能转换成微波，当微波撞击接收端的整流天线时，就会产生直流电流。这次实验采用了 10GHz 的微波，这个频率不受雨水的影响，对鸟类、动物和人也是安全的。该技术短期内不太可能投入日常使用，美国军方的目的是，将其用于为前方部队输送电力，从而减少燃料运输。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022042401.webp",
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022042402.webp",
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022042403.webp"
+          ]
+        },
+        {
+          "title": "传染性疫苗",
+          "link": "https://www.iflscience.com/health-and-medicine/scientists-are-working-on-contagious-vaccines/",
+          "description": "病毒具有传染性，疫苗为什么不可以呢？美国爱达荷大学的一个团队正在研究传染性疫苗，这种疫苗可以传染给其他人，让被传染者获得免疫力。该方法虽然可以快速达到群体免疫，但是有一定的风险，因为这种疫苗必然含有弱化病毒，存在病毒变异和激活的可能。如果能够保证安全性，它将很有前途。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022032801.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "如何使用 CSS 偷取用户信息",
+          "link": "https://scotthelme.co.uk/can-you-get-pwned-with-css/",
+          "description": "本文介绍了几种只使用 CSS 获取用户信息（比如密码）的方法，以及对策。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022030306.webp"
+          ]
+        },
+        {
+          "title": "不需要 JavaScript 的5件事",
+          "link": "https://lexoral.com/blog/you-dont-need-js/",
+          "description": "有一些网页互动，并不需要用 JavaScript 实现，本文介绍了5种这样的情况，比如折叠显示。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022030307.webp"
+          ]
+        },
+        {
+          "title": "如何了解用户的访问历史",
+          "link": "https://varun.ch/history",
+          "description": "浏览器不允许 JS 脚本获取用户的访问历史，作者想出了一个很聪明的方法，让用户自己确认是否访问过某个网站。文章只给出了思路，大家要看这个页面的源码。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022030702.webp"
+          ]
+        },
+        {
+          "title": "如何用 esbuild 替换 Create React App 中的 Webpack",
+          "link": "https://devtails.xyz/how-to-replace-webpack-in-create-react-app-with-esbuild",
+          "description": "Create React App 是 React 的官方工具，它的默认打包器是 Webpack，本文介绍如何将报告器更换为速度更快的 esbuild，把打包时间减少为原来的1%（6秒到60毫秒）。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022030801.webp"
+          ]
+        },
+        {
+          "title": "Mac 电脑的开发环境搭建指南（2022版）",
+          "link": "https://www.robinwieruch.de/mac-setup-web-development/",
+          "description": "作者买了一部最新的 MacBook Pro，详细记录了搭建 Web 开发环境的所有步骤。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202202/bg2022022701.webp"
+          ]
+        },
+        {
+          "title": "无聊猿游艇俱乐部是什么",
+          "link": "https://www.newbiescrypto.com/p/bored-ape-yacht-club-part-1",
+          "description": "无聊猿原来只是几个朋友组成的兴趣团队，现在据说估值50亿美元，而且发生在一年之内。这篇文章解释了这是怎么回事，他们的 NFT 怎么发展成为一个会员俱乐部。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050501.webp"
+          ]
+        },
+        {
+          "title": "银行支付系统的简单解释",
+          "link": "https://gendal.me/2013/11/24/a-simple-explanation-of-how-money-moves-around-the-banking-system/",
+          "description": "本文通俗解释了银行转账是怎么回事，从 A 银行向 B 银行汇款是怎么实现的。内容写得不错，但是没有金融基础的同学，本文可能不好懂，需要耐心看。"
+        },
+        {
+          "title": "如何使用 GDB 调试 C 程序",
+          "link": "https://felix-knorr.net/posts/2022-02-27-direct-gdb.html",
+          "description": "本文是一篇入门教程，教你如何使用 GDB 调试 C 语言程序。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022030308.webp"
+          ]
+        },
+        {
+          "title": "使用 GitHub Actions 获得短信通知",
+          "link": "https://ben.balter.com/2021/12/15/github-actions-website-api-change-notification/",
+          "description": "本文演示如何使用 GitHub Actions 监控服务状态，出现变化时，自动发短信到手机。"
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Noto Emoji",
+          "link": "https://github.com/googlefonts/noto-emoji",
+          "description": "谷歌推出的一款单色的 Emoji 表情字体，共有3000多个符号，优点是体积小。如果希望表情符号在各平台都是同一个样子，可以用它。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050103.webp"
+          ]
+        },
+        {
+          "title": "Fengari",
+          "link": "https://fengari.io/",
+          "description": "浏览器的 Lua 虚拟机，可以让网页执行 Lua 语言脚本。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202202/bg2022022202.webp"
+          ]
+        },
+        {
+          "title": "Flmngr",
+          "link": "https://index.php.flmngr.com/",
+          "description": "这个项目就是单个 index.php 文件，只要把该文件放在图片目录之中，就能作为图库访问。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202202/bg2022022301.webp"
+          ]
+        },
+        {
+          "title": "Spacedrive",
+          "link": "https://www.spacedrive.app/",
+          "description": "跨平台的文件浏览器，可以挂载云盘，统一操作。",
+          "user": "willshion",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2349",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050518.webp"
+          ]
+        },
+        {
+          "title": "bilihub",
+          "link": "https://github.com/sansui-orz/bilihub",
+          "description": "bilibili 视频命令行下载工具。",
+          "user": "sansui-orz",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2344"
+        },
+        {
+          "title": "GithubX",
+          "link": "https://github.com/riskers/github-plus-extension",
+          "description": "一个浏览器插件，用来对你在 GitHub 上打星的项目，进行分类管理，因为 GitHub 官方不提供自定义分类，很难找某个收藏的项目。",
+          "user": "riskers",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2347",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050516.webp"
+          ]
+        },
+        {
+          "title": "codepng",
+          "link": "https://github.com/xiaoluoboding/codepng",
+          "description": "一个开源工具，可以将任意链接转换生成可分享的图片。",
+          "user": "xiaoluoboding",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2354",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050519.webp"
+          ]
+        },
+        {
+          "title": "xfrpc",
+          "link": "https://github.com/liudf0716/xfrpc",
+          "description": "frp 项目的 C 语言客户端，主要用于基于 Openwrt 的路由器上，进行内网穿透。",
+          "user": "liudf0716",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2353"
+        },
+        {
+          "title": "CTF 工具套件",
+          "link": "https://github.com/HoshinoSuzumi/Common-Tools",
+          "description": "为 CTF 黑客比赛参加者准备的常用工具套件。",
+          "user": "HoshinoSuzumi",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2357",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050522.webp"
+          ]
+        },
+        {
+          "title": "8位 CPU 模拟器",
+          "link": "https://github.com/exuanbo/assembler-simulator",
+          "description": "一个网页应用，提供了8位 CPU 模拟器，可以用来学习 x86 架构的原理。",
+          "user": "exuanbo",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2358",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050523.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "计算机网络",
+          "link": "https://gaia.cs.umass.edu/kurose_ross/wireshark.php",
+          "description": "（Computer Networking: A Top-Down Approach）一本免费下载的英文教材，使用 Wireshark 软件讲授计算机网络。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022030206.webp"
+          ]
+        },
+        {
+          "title": "动画云图",
+          "link": "https://earth2day.com/TheWall/",
+          "description": "该网站把气象云图的变化，以动画形式表现出来，并且可以按各个国家查看。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010903.webp"
+          ]
+        },
+        {
+          "title": "前端工程化",
+          "link": "https://q.shanyue.tech/engineering/",
+          "description": "网友原创的前端工程化的三十八篇短文章，每篇大概五百字左右，涵盖了开发、打包、运维等众多内容。",
+          "user": "shfshanyue",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2348",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050517.webp"
+          ]
+        },
+        {
+          "title": "Iconoir",
+          "link": "https://iconoir.com/",
+          "description": "开源的 SVG 图标搜索引擎，目前有1000多个图标。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022011001.webp"
+          ]
+        },
+        {
+          "title": "深度学习面试题",
+          "link": "https://github.com/BoltzmannEntropy/interviews.ai",
+          "description": "这是一本英文的正式出版物，收集了几百道深度学习面试题，每一道题都有解答。作者提供此书 PDF 文件的免费下载。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022011106.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "MacBook Pro 2021 主板拆解",
+          "description": "2021款 MacBook Pro 是第一款装备了 M1 Pro 芯片的苹果笔记本。著名的 ifixit 网站拆解了这台电脑，发现它的主板相当美观，采用对称设计，CPU 位于主板中央。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022011319.webp",
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022011320.webp",
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022011321.webp"
+          ]
+        },
+        {
+          "title": "Java.com 官网",
+          "description": "Java 语言的官网主页，十五年来几乎没有变化。这在商业网站里面相当罕见，堪称一绝。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022043005.webp",
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022043006.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "音爆实验",
+          "description": "超音速飞行会产生震耳欲聋的噪音，这称为\"音爆\"。\n\n上世纪60年代，美国航空管理局 FAA 想知道民用超音速飞行是否可行，就在俄克拉何马城做一个实验，测试居民对音爆的忍耐程度。\n\n俄克拉何马城之所以被选中，因为当地的经济依赖航空业，并且有一个大型的空军基地，居民对这类实验比较宽容。\n\n![](https://cdn.beekka.com/blogimg/asset/202201/bg2022010507.webp)\n\n1964年2月3日早上七点，音爆实验开始。美国空军每天在城市上空，进行8次超音速飞行。\n\n一开始，居民们还比较容易忍受。但是，很多人发现，音爆使得他们无法午休了。\n\n![](https://cdn.beekka.com/blogimg/asset/202205/bg2022050521.webp)\n\n实验连续进行了三个月之后，该市最高的两座建筑，共有147扇窗户被震破。居民们开始要求停止实验了。\n\n当年7月30日，实验进行了六个月之后，终于停止。截止此时，共有9,594起建筑物损坏投诉，主要是震碎了玻璃和石膏。\n\n一位居民感叹：\"整整六个月，我们都在接受音爆的惩罚。\"\n\n一份事后的调查报告称，73%的受访者表示可以在每天八次音爆的情况下无限期地生活，25%的人表示他们不能接无限期的音爆。大约3%的人表示严重抗议，俄克拉何马城有50万人口，3%代表了大约1万5000人受到严重影响。\n\n最终结果就是，美国再也没有推动民用的超音速飞行。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010507.webp",
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050521.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "KK 70 岁感言",
+          "link": "https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/",
+          "description": "上周4月28日是《失控》的作者凯文·凯利老师（Kevin Kelly）的70大寿。最近三年的生日，他都要给年轻人写一些建议，今年写了103条，下面选出几条。\n\n1、永远不要为你不想成为的人工作。\n\n2、不要犯同样的错误，尝试犯新的错误。\n\n3、效率被高估了，休息被严重低估了。没有良好的休息，不可能有高效率。\n\n4、不要追求更好的方法来尽快完成任务，而要追求更好的任务，让你做得不想停下来。\n\n5、没有\"准时\"这回事，你要么迟到，要么早到。\n\n6、回答\"我要做什么？\"，需要先回答\"我要成为谁？\"。",
+          "user": "ddiiiik",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2355",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050520.webp"
+          ]
+        }
+      ]
+    }
+  ]
+}

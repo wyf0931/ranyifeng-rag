@@ -1,0 +1,367 @@
+{
+  "title": "科技爱好者周刊（第 244 期）：大数据已死",
+  "link": "https://www.ruanyifeng.com/blog/2023/03/weekly-issue-244.html",
+  "number": 244,
+  "sections": [
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "封面图",
+          "link": null,
+          "description": "新西兰小镇 Tirau，在公路边放置了很多波纹铁皮做的奇特建筑。上图的小狗其实是一个公共厕所。（via）",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023022804.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "大数据已死",
+          "link": null,
+          "description": "大数据这个词，大家想必耳熟能详。这是最大众化的 IT 词汇之一，全社会曾经都热衷于它。\n\n![](https://cdn.beekka.com/blogimg/asset/202302/bg2023022203.webp)\n\n[百度指数](https://index.baidu.com/v2/main/index.html#/trend/%E5%A4%A7%E6%95%B0%E6%8D%AE?words=%E5%A4%A7%E6%95%B0%E6%8D%AE)显示，大数据从2011年开始进入搜索引擎，然后快速传播，在2017年～2019年之间达到顶峰。\n\n那时，大家都认为，数据在未来将指数式增长，世界将被海量数据淹没。如何处理这些数据，就成为了关键问题。它决定了一个企业甚至一个国家在信息时代的竞争力。\n\n于是，企业纷纷寻求大数据解决方案，出现了很多相关的招聘岗位，还都是高薪。高校也积极响应，有[报道](https://m.mp.oeeee.com/a/BAAFRD000020200728349302.html)称，国内有600多所高校开设了大数据专业或大数据学院，其中包括[北京大学](https://www.math.pku.edu.cn/bks/zyjs/69751.htm)、[复旦大学](https://sds.fudan.edu.cn/)这样的名校。\n\n![](https://cdn.beekka.com/blogimg/asset/202302/bg2023022204.webp)\n\n但是，十年过去了，大数据并没有成为发展的瓶颈，我们依然足以处理产生的所有数据，在可预见的将来也是如此。\n\n**预言中的大数据时代，看上去不仅没有来临，反而变得遥遥无期了。** 大数据这个词的热度，也在不断降温，被提及次数变少了，招聘岗位也慢慢不见了。\n\n与之相应的是，大数据这个技术领域，也进展甚微，没有诞生新的概念和理论，技术没有突破，很多方向都停滞不前。\n\n比如，专为处理大数据而设计的 NoSQL 数据库，声势越来越小，陷入停滞，反而是传统的关系型数据库（SQLite、Postgres、MySQL）强劲增长，越发受欢迎。\n\n这是怎么回事？\n\n![](https://cdn.beekka.com/blogimg/asset/202302/bg2023022808.webp)\n\n谷歌的大数据工程师乔丹·蒂加尼 （Jordan Tigani），最近直言不讳地说：大数据已死。\n\n他认为，**大数据时代已经结束了，大数据的存储和分析，作为一个技术问题已经解决了。** 用户已经不必担心数据大小了，再多的数据都不是问题。\n\n他提出了大数据已死的6个理由，我觉得很有说服力，下面就跟大家分享。\n\n__（1）绝大多数企业到不了大数据级别。__ 企业的数据量往往不到 1TB，很多甚至不到 100GB。\n\n假设一家中等规模的制造业公司，拥有1000个客户，每个客户每天产生一个订单，每个订单包含100个产品。这家公司一天产生的数据量，依然远远小于 1 MB。三年后，数据总量也只有 1 GB，达到 1 TB 需要几千年。\n\n就算是大型互联网公司，大多数时候也到不了大数据级别。假设某个营销活动有100万用户参加，并且同一时间，该公司开展了几十个这样的营销活动，每天的数据量依然不足 1 GB，就算加上各种日志，可能也只有几个 GB，这跟大数据相差甚远。\n\n__（2）存储和计算正在分离。__ 大数据包含数据存储和数据计算两个方面，如果放在一个系统里面处理，确实很难。\n\n但是，这两方面现在已经能够脱钩，变成两个独立系统，各自都能独立扩展。这意味着，数据计算不受数据存储（数据库大小）的限制，反之依然。\n\n因此，大数据作为单一问题就不存在了，变成了海量存储和大型计算两个问题。\n\n__（3）没有新业务的情况下，数据是线性增长的，__ 即每天的新增数据与以前的数据结构相同。\n\n以前的数据一旦写入数据库，通常就不再发生变化，也没有新的计算需求，相关计算在以前就完成了。这时只要对最近的新增数据进行单独计算，然后保存就可以了。你很少需要每天扫描一遍旧数据：那些数据一成不变，为什么要一遍一遍计算它们呢？\n\n因此，对于一家企业来说，数据会指数式增长这个假设并不成立。而且，数据计算的需求，其实比数据存储的需求小得多，因为老数据很少需要再次计算。\n\n__（4）人们看重的往往只是最近的数据__。最频繁的查询是针对24小时内产生的数据，一周前的数据的查询可能性要低20倍，一个月前的历史数据只会偶尔被查询。\n\n这意味着，大数据更像静态数据，而不完全是动态数据。既然以前的数据很少用到，那么就可以压缩保存。一个包含10年数据的表格，可能会达到 PB 级别，但是如果压缩保存历史数据，压缩后可能不到 50 GB。\n\n__（5）真正拥有大数据的公司，几乎从不查询全部数据。__他们90%的查询涉及的数据少于 100 MB，涉及 TB 级别数据的查询非常少。\n\n就算查询 TB 级别数据，查询性能的优先级往往并不高。等一个周末或几天才拿到结果，通常是可以接受的。\n\n另外，大型数据集的查询非常昂贵。谷歌的 BigQuery 的 PB 级别查询报价是 5,000 美元，即使是大公司也不会经常使用。\n\n__（6）硬件的飞速发展，使得单台计算机的计算能力大增。__ 2004年，谷歌发表 MapReduce 论文时，单机的计算能力还比较弱，很多计算必须通过分布式完成。\n\n2006年，AWS 推出了 EC2 云主机，你只能用到一个单核 CPU 和 2 GB 内存。今天，AWS 的标准实例具有64个内核和 256 GB 内存。如果愿意多花钱，还可以拿到445个内核和超过 24 TB 内存。\n\n单机计算能力大大增强，意味着大数据的最大难点----分布式计算----即使被用到，困难程度也大大降低。\n\n综上所述，结论就是：**数据量已经不需要特别关注了，再也不必担心处理不了海量数据了。** 大数据作为一个技术问题，已经解决了。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023022203.webp",
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023022204.webp",
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023022808.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "AI 时装表演",
+          "link": "https://mymodernmet.com/malik-afegbua-fashion-show-for-elders/",
+          "description": "一位非洲艺术家使用 AI 生成了一场时装表演。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023022601.webp",
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023022602.webp",
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023022603.webp",
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023022604.webp"
+          ]
+        },
+        {
+          "title": "马桶冲水的气溶胶",
+          "link": "https://www.colorado.edu/today/2022/12/08/cu-scientists-shine-light-what-comes-when-you-flush",
+          "description": "公共卫生学家一直呼吁，马桶冲水会产生气溶胶的粒子扩散，可能会传播病原体，但是没有证据证实这种扩散的速度和分布。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022120821.webp",
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022120822.webp"
+          ]
+        },
+        {
+          "title": "GPS 艺术",
+          "link": "https://interestingengineering.com/culture/man-travels-4000-miles-marriage",
+          "description": "谷歌地图会根据 GPS 信号，显示运动轨迹。很多人就通过这种方式，在谷歌地图作画，称为 GPS 艺术。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022120901.webp",
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022120902.webp"
+          ]
+        },
+        {
+          "title": "火山熔岩表演",
+          "link": "https://phys.org/news/2022-12-lava-iceland-volcano.html",
+          "description": "冰岛首都雷克雅未克有一个特殊的剧场演出，表演熔岩流出火山。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022120904.webp",
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022120905.webp",
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022120906.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "我如何搭建自己的博客",
+          "link": "https://www.joshwcomeau.com/blog/how-i-built-my-blog/",
+          "description": "作者详细介绍自己使用 Next.js 框架和其他 React 工具，搭建博客的过程。他要使用 MDX 格式将 React 组件加入 Markdown 文件。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022122702.webp"
+          ]
+        },
+        {
+          "title": "Steam Deck 上市一周年",
+          "link": "https://boilingsteam.com/steam-deck-first-anniversary-of-the-ultimate-gaming-platform/",
+          "description": "本月，掌上游戏机 Steam Deck 上市满一周年了。本文介绍了这个设备的很多创新，尤其在软件上。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023022801.webp"
+          ]
+        },
+        {
+          "title": "如何配置 nano 编辑器",
+          "link": "https://ariadne.space/2021/08/13/gnu-nano-is-my-editor-of-choice/",
+          "description": "服务器都自带 nano 编辑器，但是一般认为它的功能比较弱。本文介绍只要正确配置，它就会变得很好用。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022122805.webp"
+          ]
+        },
+        {
+          "title": "Stripe 如何用 Markdoc 构建交互式文档",
+          "link": "https://stripe.com/blog/markdoc",
+          "description": "Markdoc 是 Markdown 的一种扩展语法，允许在生成 HTML 页面时插入组件，用户可以跟文档交互。本文介绍 Stripe 公司怎么使用 Markdoc 构建文档。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022091603.webp"
+          ]
+        },
+        {
+          "title": "CSS 的颜色格式",
+          "link": "https://www.joshwcomeau.com/css/color-formats/",
+          "description": "这篇长文详细介绍 CSS 颜色的各种格式，如果想深入掌握如何表示颜色，推荐阅读这篇文章。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022123102.webp"
+          ]
+        },
+        {
+          "title": "使用 ClickHouse 查询 GitHub",
+          "link": "https://til.simonwillison.net/clickhouse/github-explorer",
+          "description": "ClickHouse 是著名的数据仓库软件，它的官网有一个练习场，可以在线查询2011年以来所有的 GitHub 事件，总共31亿条记录。本文演示怎么使用这个数据库。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023010201.webp"
+          ]
+        },
+        {
+          "title": "用信鸽解释 HTTPS",
+          "link": "https://baida.dev/articles/https-explained-with-carrier-pigeons",
+          "description": "作者以信鸽传书举例，解释 HTTPS 协议是什么，写得很好，这个例子也很贴切。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023010303.webp"
+          ]
+        },
+        {
+          "title": "Windows 11 有多少层 UI？",
+          "link": "https://ntdotdev.wordpress.com/2023/01/01/state-of-the-windows-how-many-layers-of-ui-inconsistencies-are-in-windows-11/",
+          "description": "一篇挺有趣的文章，作者检视 Windows 11 的 UI 里面保存了多少以前的样式，甚至找出了遗留的 Windows XP 和 Windows 3.1 的样式。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023010302.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "去除网页粘性元素的书签脚本",
+          "link": null,
+          "description": "一个书签脚本，用于去除网页的粘性（sticky）元素。很多网站使用这种元素生成遮罩层，非常讨厌。类似的脚本还有 unsticky。",
+          "images": []
+        },
+        {
+          "title": "幕境",
+          "link": "https://github.com/tangshimin/MuJing",
+          "description": "英语学习软件，用户上传原版视频和字幕，软件会自动生成词库。以后播放视频时，遇到词库里面的单词，该词就会以弹幕形式自动展示释义。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023022806.webp"
+          ]
+        },
+        {
+          "title": "轻快图床",
+          "link": "https://github.com/ischenliang/quickly-picture-bed",
+          "description": "一个基于 Web 的图床系统。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023022805.webp"
+          ]
+        },
+        {
+          "title": "DataStation",
+          "link": "https://github.com/multimeric/DataStation",
+          "description": "开源的数据探索工具，可以从各种数据源导入数据，然后自定义数据的查询和展示形式（图表、仪表盘、地图等等）。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023022807.webp"
+          ]
+        },
+        {
+          "title": "DrissionPage",
+          "link": "https://github.com/g1879/DrissionPage",
+          "description": "一个基于 Python 的网页自动化工具，可以编写脚本操作浏览器。",
+          "images": []
+        },
+        {
+          "title": "count_lines_of_code",
+          "link": "https://github.com/nicklasXYZ/count_lines_of_code",
+          "description": "一个 JS 写的命令行工具，可以估计开发某个代码库花费的大致时间。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022072904.webp"
+          ]
+        },
+        {
+          "title": "MeiliSearch",
+          "link": "https://github.com/meilisearch/meilisearch",
+          "description": "一个开源的全文搜索引擎，号称可以替代 Elasticsearch，支持中文。",
+          "images": []
+        },
+        {
+          "title": "silence-remover",
+          "link": "https://github.com/nicedoc/silence-remover",
+          "description": "一个命令行工具，自动删除视频里面的无声片段，比较适合处理演讲、讲座视频。",
+          "images": []
+        },
+        {
+          "title": "Tabler",
+          "link": "https://github.com/tabler/tabler",
+          "description": "一个基于 Bootstrap 的网页 UI 框架，专用于开发管理后台。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022072905.webp"
+          ]
+        },
+        {
+          "title": "codeconvert.ai",
+          "link": "https://codeconvert.ai/",
+          "description": "这个网站可以把一种语言的代码，转成另一种语言，比如把 JS 代码转 PHP 代码。它是收费服务，但是有免费额度。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022093005.webp"
+          ]
+        },
+        {
+          "title": "VueTube",
+          "link": "https://github.com/VueTubeApp/VueTube",
+          "description": "网友自己开发的 Youtube 手机客户端，支持安卓和 iOS。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022100102.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "CSS Bed",
+          "link": "https://www.cssbed.com/",
+          "description": "这个网页收集并展示各种无类的极简化 CSS 框架。如果你想选一个简单的 CSS 框架，可以看看它。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022091111.webp"
+          ]
+        },
+        {
+          "title": "C 语言手册（GNU C Language Manual）",
+          "link": "https://lists.gnu.org/archive/html/info-gnu/2022-09/msg00005.html",
+          "description": "理查德·斯托曼最近编写的 C 语言教程，这是源码，GitHub 有转换好的 PDF 文件下载。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022091201.webp"
+          ]
+        },
+        {
+          "title": "高辨识度英文字体",
+          "link": null,
+          "description": "一种高辨识度的英文字体，容易混淆的字符都做了明显区别，比如 1 和 I、i 和 l。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022121001.webp"
+          ]
+        },
+        {
+          "title": "Python 入门教程",
+          "link": null,
+          "description": "一本简单实用的 Python 入门英文教程。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "AI 生成的美国总统卡通画像",
+          "link": null,
+          "description": "一位美国专栏作家使用 AI，为每一位美国总统生成了 Pixar 式的卡通风格画像。下面是最近半个世纪的美国总统。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023022502.webp",
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023022503.webp",
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023022504.webp",
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023022505.webp"
+          ]
+        },
+        {
+          "title": "布鲁塞尔化",
+          "link": "https://en.wikipedia.org/wiki/Brusselization",
+          "description": "上个世纪60年代和70年代，比利时首都布鲁塞尔对城市规划放任自流，导致传统街区里面出现了很多毫不协调的高层建筑。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022091102.webp",
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022091103.webp",
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022091104.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "K-219 核潜艇事故",
+          "link": null,
+          "description": "K-219 是苏联海军的一艘核潜艇，可以携带16枚导弹，这些导弹配备32枚或48枚核弹头。\n\n![](https://cdn.beekka.com/blogimg/asset/202209/bg2022091105.webp)\n\n1986年10月3日星期五，它正在大西洋航行，导弹发射管突然爆炸起火。苏联后来声称，这是因为与美国潜艇发生了碰撞，但是美国海军否认。\n\n两名苏联水手在爆炸中当场丧生，第三名水手不久后死于有毒气体。更糟糕的是，爆炸将潜艇炸出一个缺口，海水涌入，潜艇从海底40米快速坠落到300米。\n\n艇长不得不立即关闭所有舱室之间的密封门，防止海水不断涌入。\n\n25名水手被困在一个密封舱出不来。经过紧张的会议，艇长最终同意打开这个密封舱，让他们出来。\n\n最可怕的是，核反应堆本应自动关闭，但还在运行。如果一直这样下去，后果不堪设想。反应堆舱室的温度已经超过60摄氏度，并且充满了有毒的硝酸烟雾，但还是必须有人进去，手动将控制棒放入反应堆，让其停止运行。\n\n第一个士兵进入反应堆舱，但是只插入一根控制棒（共需插入四根），就耗尽了氧气。他不得不退出，一走出来就昏了过去。\n\n这时，一个20岁的士兵表示，愿意去完成这项任务。他穿着防化服，进入房间，成功关闭了反应堆。但是，房间里发生了大火，增加了压力，压力差使得这个士兵无法再打开门出来，最后他在反应堆舱内窒息而死。他后来被追授俄罗斯联邦英雄称号。\n\n核反应堆关闭后，潜艇就失去了动力。艇长完全依靠电池供电，让 K-219 浮出水面。然后，苏联准备派出一艘货轮将这艘潜艇拖回港口。\n\n但是，海水仍在不断渗入，到了三天后的10月6日，已经完全无法修复。所有人员不得不撤离，这艘潜艇和携带的核武器就这样沉入了6000米的大西洋海底，至今仍在那里。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202209/bg2022091105.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "",
+          "link": null,
+          "description": "摩尔定律只说了，每18个月计算机芯片的晶体管数量增加一倍，但是没有说增加一倍所需要投入的科研人员，今天是1970年代的18倍。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "",
+          "link": null,
+          "description": "我做过70多个创业项目，只有4个成功。总体来看，我的成功率只有5%左右，我做的事情95%是要失败的。\n\n所以...... 我就要去做更多的项目啊。",
+          "user": "推特网友",
+          "user_link": "https://twitter.com/levelsio/status/1457315274466594817",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": null,
+          "description": "一些科学家像鸟，从鸟瞰的角度看待问题，注重面前的广阔风景，不需要太多细节。另一些科学家像青蛙，只盯着眼前的事物，喜欢深入细节。",
+          "user": "《物理学的鸟和青蛙》",
+          "user_link": "https://3quarksdaily.com/3quarksdaily/2020/11/birds-and-frogs-in-physics.html",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": null,
+          "description": "你应该开始写博客，如果不知道写什么，就写你学到的东西，以及写下你创造或建立的东西。",
+          "user": "《博客写什么》",
+          "user_link": "https://simonwillison.net/2022/Nov/6/what-to-blog-about/",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": null,
+          "description": "世界隐藏的终极真相是，这个世界是我们创造出来的东西，而且可以很容易地做出不同的样子。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "鸣谢",
+      "items": [
+        {
+          "title": "FlowUS 知识管理与协作平台",
+          "link": "https://flowus.cn?promotionChannel=GW_RYF_01",
+          "description": "国内新一代知识管理与协作平台，文档 + 表格 + 网盘。你可以用它写文档、做主页、管理数据、存储文件等等。每一期周刊同时发布在 FlowUs 专栏。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023030205.webp"
+          ]
+        }
+      ]
+    }
+  ]
+}

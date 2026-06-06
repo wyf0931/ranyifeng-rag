@@ -1,0 +1,446 @@
+{
+  "title": "科技爱好者周刊（第 189 期）：下一个内卷的行业",
+  "link": "https://www.ruanyifeng.com/blog/2021/12/weekly-issue-189.html",
+  "number": 189,
+  "sections": [
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "封面图",
+          "link": "",
+          "description": "12月初，江西鄱阳湖进入枯水期，湖底的明代千眼古桥露出真容。古桥长达2公里多，有将近1000个桥洞。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021122211.webp"
+          ]
+        },
+        {
+          "title": "月亮的颜色",
+          "link": "https://greenflash.photo/greenflash-gallery/greenflash-gallery/portfolio/colors-of-the-moon/",
+          "description": "由于大气反射，月球会呈现不同的颜色。一个意大利摄影师拍摄了许多满月的照片，他找出了48种颜色，将它们组合在一起。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021092708.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021092709.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021092710.jpg"
+          ]
+        },
+        {
+          "title": "古埃及凳子",
+          "link": "https://woodenfossils.wordpress.com/2021/09/21/building-a-theban-lattice-stool/",
+          "description": "大英博物馆收藏了一个3500年前的古埃及凳子。这个凳子是用木头做的，保存情况之良好，令人震惊。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021092711.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021092712.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021092713.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021092716.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "本周话题：下一个内卷的行业",
+          "link": "",
+          "description": "一年多以前，周刊[讨论过](https://www.ruanyifeng.com/blog/2020/09/weekly-issue-126.html)，\"内卷\"这个词到底是什么意思？当时的结论是，内卷的原义是\"向内发展\"，因为向外发展受到了阻碍，就开始向内部要效益。结果往往是恶性竞争，因为 **蛋糕做不大了，大家只能争夺对方的份额。**\n\n一年过去了，内卷已经成了常见词。很多行业早就出现了内卷，比如培训业、电商、视频、直播等等。这样的行业，都有一个共同点：**市场没有扩张，利润没有增长，但是从业人员却越来越忙、越来越累，业务开展越来越难。**\n\n下一个内卷的行业，会是谁？我也不卖关子，直接说吧，很可能是游戏业。\n\n你可能不相信这个结论：游戏业非常赚钱，而且一直在高速增长，怎么会内卷呢？我本来也不相信，但是上周发布的[《2021年中国游戏产业报告》](https://www.36kr.com/p/1529590053941640)，公布了中国游戏市场的两个增长率：\n- 销售收入增长 6.40%，达到2965亿。\n- 游戏用户增长 0.22%，达到6.66亿。\n\n这两个增长率都非常低。销售收入虽然增长6.4%，但如果考虑到游戏业的投入，每年都在增加，就意味着，今年的行业利润没有增长，可能还有下跌。更要命的是，用户总数只增长了0.22%。这是有史以来最低的增长率，以前每年游戏人口都要增长几千万，今年只增长了100多万，接近零增长了。\n\n这就是说，国内的游戏用户可能已经到天花板了，市场饱和了。玩游戏的人口大概就是这个数量了，**国内的游戏市场以后就没有增量用户了。**\n\n虽然游戏行业还是会成长，因为每个用户的游戏支出会增加。但是，一个行业没有了增量用户，产品也没有变化，不就是将要发生内卷了吗？这会给游戏行业带来很多深远的影响，竞争会进一步增强，游戏公司的利润率也会慢慢降下来，从业人员的工资也不容易增长了。\n\n怎么才能摆脱内卷？其实很简单，就是全力向外发展，开拓新市场。我能想到的有两个方向：一是为国外市场开发游戏，赚外国人的钱可能更容易一些；二是开发 VR/AR/元宇宙这些新类型的游戏，吸引以前不玩游戏的新用户。\n\n![图片](https://cdn.beekka.com/blogimg/asset/202112/bg2021122102.webp)\n![图片](https://cdn.beekka.com/blogimg/asset/202112/bg2021122103.webp)\n![图片](https://cdn.beekka.com/blogimg/asset/202112/bg2021122104.webp)\n![图片](https://cdn.beekka.com/blogimg/asset/202112/bg2021121901.webp)",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021122102.webp",
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021122103.webp",
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021122104.webp",
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021121901.webp"
+          ]
+        },
+        {
+          "title": "便利蜂超市的选址方法",
+          "link": "https://mp.weixin.qq.com/s/heRqYI-GFw5EX_0r_4Jh9g",
+          "description": "《南方周末》报道，连锁超市\"便利蜂\"为了找到最佳的店址，招募大量信息采集员，将摄像头悄悄地放在了多个城市的居民楼、写字楼，甚至国家机关的门口，测算每个地点的人流。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021122012.webp"
+          ]
+        },
+        {
+          "title": "韩国为什么这么卷？",
+          "link": "https://zhuanlan.zhihu.com/p/444286151",
+          "description": "韩国人均 GDP 超过3万美元，是一个中等富裕的国家。但是，人口出生率超低，年轻人的教育和就业竞争激烈、老年人贫穷现象严重，为什么会变成这样？上图是韩国的人口分布图，全国一半人口聚集在首尔都市圈，韩国的许多问题都与此有关。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021121202.webp"
+          ]
+        },
+        {
+          "title": "我被载入校史，因为差点炸了课堂",
+          "link": "https://mp.weixin.qq.com/s/RmHjh4rpRupQtvm_le8YTQ",
+          "description": "作者大学时进行化学实验，不小心出了一次爆炸事故，幸好危险物的量比较少，没有造成严重后果，此后就成了实验室的反面教材。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021121614.webp"
+          ]
+        },
+        {
+          "title": "2021年中国十大丑陋建筑评选结果",
+          "link": "https://mp.weixin.qq.com/s/TN124SNg7wcWNxRElRdy2w",
+          "description": "建筑畅言网每年评选当年的中国十大丑陋建筑，这是今年的结果。上图是广州的阿里巴巴华南运营中心。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021121806.webp"
+          ]
+        },
+        {
+          "title": "大开眼界的 Pegasus 间谍软件",
+          "link": "https://m.facebook.com/story.php?story_fbid=10159084773734215&id=673654214&_rdr",
+          "description": "一家以色列公司开发的间谍软件 Pegasus，实现细节令人大开眼界。只要你打开 iPhone 的通信软件 iMessage，查看包含病毒的消息，不用点击任何链接，就会中招。它是怎么做到的？",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "2021年全球域名排行",
+          "link": "https://blog.cloudflare.com/popular-domains-year-in-review-2021/",
+          "description": "CDN 服务提供商 Cloudflare 统计了今年访问量最大的前10个域名，Tiktok.com 登上首位，成了全世界访问量最大的网站，Google.com 首次被挤到了第二位。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021122212.webp"
+          ]
+        },
+        {
+          "title": "我写了一个 VR 游戏",
+          "link": "http://blog.runevision.com/2021/11/launching-eye-of-temple-this-was-my.html",
+          "description": "作者一个人写了一个 VR 游戏，放到 Steam 商店去卖。大家可以看看文章里面的游戏视频，还是很酷的。虽然没有大卖，他还是觉得很有收获。本文是他的感受。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021120301.webp"
+          ]
+        },
+        {
+          "title": "我的 Linux 开发环境",
+          "link": "https://deepu.tech/my-beautiful-linux-development-environment/",
+          "description": "这是一组六篇的系列文章，作者详细介绍了他如何在自己的桌面电脑搭建 Linux 开发环境。各篇内容依次是硬件介绍、Gnome 配置、Zsh 配置、VS Code 配置、桌面环境、开发环境配置。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021120601.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "Vue 3.0 框架实战视频教程",
+          "link": "https://wx.kaikeba.com/xiaoke/market/landing-page/v2/N3MIpFtF2DZ91C502gp?kol_ad_code=VqPwI4BeH5FMNofXUHk",
+          "description": "本周的学习资料就是现在最热门的框架 **Vue.js 3.0 的一个视频辅导教程**，帮助你实现 Vue 的进阶，顺利通过第二阶段。内容包括三个部分：（1）Vue 原理和源码剖析，（2）认识 Composition API，（3）实现一个\"飞机大战\"游戏。微信扫描上方二维码，或者访问链接了解课程详情，**0 元** 领取这份资料。保证没有任何套路，先到先得。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021092802.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020123014.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020123016.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021122214.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "全向轮",
+          "link": "https://carbuzz.com/news/toyotas-radical-all-wheel-steering-will-let-you-turn-on-the-spot",
+          "description": "丰田公司获得了一项全向轮专利，最大特点是车轮本身可以朝向任意方向（上图），使得车辆可以360度任意移动。现有的全向轮往往是麦卡纳姆轮（下图），它本身不能转向，是通过车轮表面的45度滚轴与地面的摩擦力，形成力的 X 分量与 Y 分量不同强度的合成，实现任意转向。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202110/bg2021100306.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202110/bg2021100305.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202110/bg2021100307.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202110/bg2021100308.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202110/bg2021100309.jpg"
+          ]
+        },
+        {
+          "title": "绿宝石外墙",
+          "link": "https://www.cnbeta.com/articles/tech/1214189.htm",
+          "description": "国际奢侈品牌宝格丽，在上海新开张的专卖店有一个绿色外墙（上图），看上去很华丽，像是镶嵌了绿宝石。实际上，它的材料是回收的啤酒瓶，经过加工变成特殊的绿色玻璃，增加反射面，会产生耀目的光芒，有宝石般的视觉效果。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021122016.webp",
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021122017.webp",
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021122018.webp",
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021122019.webp"
+          ]
+        },
+        {
+          "title": "纳米雕塑",
+          "link": "https://www.micromonument.com/",
+          "description": "为了庆祝人类纳米研究的丰硕成果，美国乔治亚理工学院制作了一个纳米雕塑：一面胜利的旗帜在旗杆上迎风飘扬。旗杆高度是122微米，宽度是44微米，大约是头发丝的一半。它放在一个晶圆底座上，肉眼可能看不见，只有通过显微镜才能看到。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202110/bg2021100701.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202110/bg2021100702.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202110/bg2021100703.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202110/bg2021100704.jpg"
+          ]
+        },
+        {
+          "title": "镜子阵列",
+          "link": "https://github.com/bencbartlett/3D-printed-mirror-array",
+          "description": "一位美国程序员将许多六边形的小镜子，放在 3D 打印出来的一个底盘上，用来求婚。每块镜子的反射角度都经过精心计算，放在一起就会反射出一行字\"Marry me?\"（嫁给我好吗？）。他把 3D 打印的 STL 文件放在 GitHub 仓库里面，如果你有 3D 打印机，可以下载打印。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202111/bg2021111207.webp",
+            "https://cdn.beekka.com/blogimg/asset/202111/bg2021111208.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202111/bg2021111209.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202111/bg2021111210.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202111/bg2021111211.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202111/bg2021111212.jpg"
+          ]
+        },
+        {
+          "title": "机器人分身",
+          "link": "https://cn.nikkei.com/industry/scienceatechnology/46857-2021-12-03-05-00-10.html",
+          "description": "日本大阪大学的一个教授，却一直在研究遥控机器人，让机器人充当人类的远程分身。他的公司推出的第一个产品，是一个 3D 动画人物，她的一举一动都需要人类遥控。操作员坐在家中，通过摄像头，将自已的表情和动作映射到动画人物，并通过麦克风与外部用户交谈。这个产品可以用在车站、码头、景点等处，提供咨询服务。下一步，教授打算推出真正的遥控机器人。操作员在家里，远程操作机器人的动作，充当超市店员搬运货物。由于日本人口萎缩，缺少劳动力，他很看好这种技术的前景。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021120305.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Docker 管理面板（终端）",
+          "link": "https://github.com/jesseduffield/lazydocker",
+          "description": "一个终端里面的 Docker 管理面板，可以同时操作多个容器，并且实时显示每个容器的运行状况。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021120205.webp"
+          ]
+        },
+        {
+          "title": "dog",
+          "link": "https://github.com/ogham/dog",
+          "description": "命令行的 DNS 查询工具，作用与 dig 类似，但是简化了用法和输出格式，更易于使用。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021120504.webp"
+          ]
+        },
+        {
+          "title": "Vizzu",
+          "link": "https://github.com/vizzuhq/vizzu-lib",
+          "description": "一个 JS 的数据可视化动画库，功能很强，可以用来制作数据图表的动画。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021120401.webp"
+          ]
+        },
+        {
+          "title": "TownScaper",
+          "link": "https://oskarstalberg.com/game/",
+          "description": "一个休闲小游戏，已经在主机平台上架，这里是它最近发布的浏览器版。只要随意点击，就能生成不可思议的美丽建筑物。更妙的是，所有设置都保存在 URL 里面，可以分享给其他人。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021120209.webp"
+          ]
+        },
+        {
+          "title": "GitHub / GitLab 仓库 Web IDE 按钮",
+          "link": "https://github.com/nicedoc/gitlab-ide-button",
+          "description": "一个浏览器插件，为 GitHub 和 Gitlab 的仓库主页加入\"在 Web IDE 打开\"的按钮。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202111/bg2021111504.jpg"
+          ]
+        },
+        {
+          "title": "GitHub Skyline",
+          "link": "https://skyline.github.com/",
+          "description": "这个网页工具将你过去一年的 GitHub 活动，创建成一张图表。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021120602.webp"
+          ]
+        },
+        {
+          "title": "知竹",
+          "link": "https://www.yxsss.com/",
+          "description": "一款在线的甘特图工具，可以直观地体现出成员、任务、时间之间的关系。",
+          "user": "lizhichao",
+          "user_link": "https://github.com/ruanyf/weekly/issues/2117",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021122106.webp"
+          ]
+        },
+        {
+          "title": "PCB 名片",
+          "link": "https://github.com/Hanqaqa/PCB_Business_Card",
+          "description": "作者用 PCB 电路板制作名片，并且分享了设计文件。只要在他的文件基础上进行修改，然后提交给 PCB 工厂就可以了。每张名片的成本大约为几块钱人民币。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021120708.webp",
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021120709.webp"
+          ]
+        },
+        {
+          "title": "Sound Map（声音地图）",
+          "link": "https://ciudadseva.com/",
+          "description": "这个项目的创意很好，用户打开电脑的麦克风，录制一段声音上传，网站就把它显示在世界地图上，你可以选择地球的某个地点听那里的声音。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021120805.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "中华古籍资源库",
+          "link": "http://www.nlc.cn/pcab/zy/zhgj_zyk/",
+          "description": "国家图书馆的项目，整理保存至今的中华古籍，做成数据库可以搜索，并且提供扫描版在线阅读。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021121304.webp"
+          ]
+        },
+        {
+          "title": "Netflix 分类编号链接",
+          "link": "https://www.netflix-codes.com/",
+          "description": "视频网站 Netflix 页面不提供节目的详细分类，但其实内部有一套视频分类。这个网站列出每个分类的编号，并提供进入链接。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202111/bg2021111801.jpg"
+          ]
+        },
+        {
+          "title": "静态网站评论系统服务与工具汇总",
+          "link": "https://www.banterly.net/2021/11/02/add-a-comment-system-to-a-static-website/",
+          "description": "这篇文章总结了静态网站加入评论系统的方法，并列出了可用的服务和工具软件。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202111/bg2021111808.jpg"
+          ]
+        },
+        {
+          "title": "Nona 搜索引擎",
+          "link": "https://www.nona.de/",
+          "description": "德国的搜索引擎，可以搜索中文，搜索质量还可以。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202111/bg2021111901.jpg"
+          ]
+        },
+        {
+          "title": "Rust 语言入门教程（Web 开发者版）",
+          "link": "https://www.rust-lang.org/",
+          "description": "这个 Rust 语言的入门教程，是为网站开发者定制的，一共23个例子，每个例子都有讲解，需要你自己在网页上动手完成练习题。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202111/bg2021112201.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "飞机引擎的启示",
+          "link": "",
+          "description": "最早的飞机都是单引擎。\n\n上图中，飞机的动力全来自机首的那个螺旋桨。那时的引擎很不可靠，经常发生事故。为了减少伤亡，也为了增加飞机的负荷，设计师开始为飞机添加第二个引擎。\n\n双引擎确实提高了性能，但也带来了额外的复杂性，反而造成了更多的伤亡。这是因为在空中，如果坏掉一个引擎，只剩下另一个引擎，这时飞机的推力是不均衡的，很难控制重心去安全降落。\n\n从概率的角度看，如果一台引擎的故障率为25%，增加一个引擎后，飞机的故障率（任何一个引擎出现故障）会上升到44%！这意味着，如果你不能控制好剩下的那个引擎安全降落，那么添加第二个引擎会让你更容易坠毁。\n\n后来，飞机发动机越来越强大和可靠，单个引擎的故障率大大降低，而且飞行员和工程师也终于学会如何在损失部分动力的情况下，更好地控制双引擎飞机，飞行才变得安全。\n\n这对于个人和企业有巨大的启示意义。如果你已经有了一个事业（或工作），不要冒然扩展到第二个事业（或工作）。因为在初始阶段，增加的引擎会给你带来更多的风险。只有降低单引擎的故障率，并确保你只靠剩下的引擎也能安全降落，双引擎才会给你带来更高的安全性。\n\n不幸的是，就像战争经常推动高风险的飞机设计，人们也通常会在经济困难的时候从事两份工作。如果第一份工作是高负荷的，你再去从事第二份工作，那么很可能到头来，你连第一份工作也保不住。如果那时第二份工作不足以让你维持生计，你就有麻烦了。\n\n不过，计算机时代使得情况有一点点变化。数字控制技术的进步，促成了多轴飞行器的诞生。它们都至少有四个微型引擎，每个引擎只负责总负载的一小部分。任何一个或两个失败，都很容易被其他人弥补。\n\n同样的，在计算机和互联网出现之前，一个人几乎不可能有4个收入来源，但今天，一个人可以有多种小金额的收入来源，比如下班后开网约车、将住宅的空房间作为民宿出租等等。即使每个收入来源都不多，可能也比只有一个主要的收入来源更好、更安全。这里的关键是每个收入来源要尽可能独立，不要相互干扰。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021122201.webp",
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021122202.webp",
+            "https://cdn.beekka.com/blogimg/asset/202110/bg2021100302.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "欧洲有方便的火车系统，但是跨国旅游时，欧洲人更喜欢坐飞机，而不是火车。因为，欧洲大陆30多个国家，每一个都有自己独立的票务系统，你需要在不同的网站上，以多种语言跟多家火车运营商打交道，完全是一场噩梦。",
+          "link": "",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "我投失过至少9000次投篮，输了近300场比赛，26次没有命中最后的关键球。在生活中，我一次又一次地失败，这就是我成功的原因。",
+          "link": "https://news.ycombinator.com/item?id=29283402",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "我不认为苹果会造汽车。汽车业务的利润率很低，而且假如价格是5万美元一辆，市场容量只有几百万辆（特斯拉2021年销量不到100万辆），对于苹果来说，这个销量有点太小了。如果是自动驾驶汽车，事情可能会不一样，但是在可预见的未来，真正的5级自动驾驶仍然无法做到。",
+          "link": "",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Youtube 有一个著名的数学视频制作者，叫做 3blue1brown。这个网名的来历，是因为他的右眼有四分之三的蓝色（blue）和四分之一的棕色（brown），他的头像也是同样的来历。",
+          "link": "",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202111/bg2021110202.jpg"
+          ]
+        },
+        {
+          "title": "过去几十年，中国农民从农村迁移到城市的工厂。我一直不明白，城市工厂的条件并不好，有些相当差，为什么有这么多农民去？后来，我看了一部美国纪录片，想明白了。很多美国年轻人搬到洛杉矶去当演员，其中99%年轻人的生活会变得更糟，但是有机会逃离他们原来的处境，对很多人来说依然是一个强大的吸引力。",
+          "link": "",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

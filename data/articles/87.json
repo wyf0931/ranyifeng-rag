@@ -1,0 +1,503 @@
+{
+  "title": "科技爱好者周刊：第 87 期",
+  "link": "https://www.ruanyifeng.com/blog/2019/12/weekly-issue-87.html",
+  "number": 87,
+  "sections": [
+    {
+      "name": "刊首语",
+      "items": [
+        {
+          "title": "不要自称为程序员",
+          "link": "https://www.ruanyifeng.com/blog/2011/10/dont_call_yourself_a_programmer.html",
+          "description": "企业最关心的（或者说唯一在乎的）事情，就是增加收入、降低成本。企业实际上需要的不是程序员，而是能够帮助它们增加收入、降低成本的人。企业雇佣你，是为了让你帮它们完成某个可以增加收入、降低成本的项目，而不是为了让你追求个人的软件成就。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201912/bg2019121805.jpg"
+          ]
+        },
+        {
+          "title": "新工程师要干的五件事",
+          "link": "https://evanliman.to/2019/10/06/so-youre-a-new-grad-software-engineer.html",
+          "description": "新人加入一个开发团队时，要干五件事。前面四件事是了解技术架构、了解开发流程、补强基础知识、从微小的改善入手（比如关掉几个 issue）。这些都是常识，但是第五件事，很多新人都没意识到，你应该要去做，而且完全有能力做，那就是你要为团队写文档。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201912/bg2019121807.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "彩云小译",
+          "link": "https://fanyi.caiyunapp.com/#/web",
+          "description": "彩云小译是一款翻译工具，有 Chrome 浏览器插件和手机 App，支持网页双语显示、视频字幕翻译、同传等功能，翻译质量高，可定制性强，支持英译中、中译英、日语。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201912/bg2019121705.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201912/bg2019121506.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201912/bg2019121507.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资讯",
+      "items": [
+        {
+          "title": "18000年前的狗",
+          "link": "",
+          "description": "西伯利亚冻土带融化，科学家发现一只18000年前的狗，死时只有两个月大，保存完好。DNA 测序发现它属于狼到狗之间的过渡品种，是已知最古老的狗。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019113004.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019113005.jpg"
+          ]
+        },
+        {
+          "title": "酒驾锁",
+          "link": "https://www.cbc.ca/news/canada/montreal/drunk-driving-twice-quebec-breathalyzer-for-life-1.5369145",
+          "description": "加拿大魁北克规定，十年内两次酒驾者每次开车前必须向呼吸分析仪吹气，一旦发现喝过酒，汽车发动机将无法点火。这是目前全世界对酒驾的最严厉立法。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019113007.jpg"
+          ]
+        },
+        {
+          "title": "下一代充电头",
+          "link": "https://www.theverge.com/circuitbreaker/2019/1/30/18203879/gan-chargers-anker-powerport-atom-pd-1-ravpower-45w",
+          "description": "新一代电源使用 GaN（氮化镓）取代传统的硅，使得大功率电源可以做得很小。氮化镓的能源效率更高，不会烫手或爆炸。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201912/bg2019120304.jpg"
+          ]
+        },
+        {
+          "title": "人脸识别挂号",
+          "link": "",
+          "description": "复旦大学附属上海肿瘤医院推出专家号的人脸识别系统，预约挂号时需人脸识别，防止黄牛倒号。每位患者可绑定一位代挂号人。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019112708.jpg"
+          ]
+        },
+        {
+          "title": "2019年度颜色",
+          "link": "https://www.nytimes.com/2019/12/04/style/pantone-color-2020-classic-blue.html",
+          "description": "Pantone 评选年度最佳颜色为'经典蓝'，比亮蓝色更暗，代表诚实、可靠、稳定，认为蓝色不再代表忧郁。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201912/bg2019120610.jpg"
+          ]
+        },
+        {
+          "title": "皮肤薄膜",
+          "link": "http://sh.people.com.cn/n2/2019/1109/c134768-33522773.html",
+          "description": "日本花王公司推出一种皮肤薄膜，在脸上喷涂白色粉末后形成超细薄膜，可掩盖色斑、保湿，透气性好，可直接在上面化妆，卸妆时撕下。每罐售价约3239元人民币。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201912/bg2019120701.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201912/bg2019120702.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201912/bg2019120703.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201912/bg2019120704.jpg"
+          ]
+        },
+        {
+          "title": "一句话消息",
+          "link": "",
+          "description": "IBM 统计：一名客服可支持5400个Mac用户或242个PC用户。法国议员提议禁止黑色星期五。美国加州规定初中上课不早于8点，高中不早于8点半。微软宣布下一代主机 Xbox Series X 明年发售，造型为竖向长方体。Oracle 制作了1060个树莓派集群。以色列科学家开发'去除水'的图像处理技术。俄罗斯健美运动员注射凡士林导致肌肉坏死。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201912/bg2019121411.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201912/bg2019121412.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019112201.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019112202.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019111504.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019112101.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019112102.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "如何绕过 GitHub 的 OAuth 认证",
+          "link": "https://blog.teddykatz.com/2019/11/05/github-oauth-bypass.html",
+          "description": "作者介绍如何通过发出一个 HEAD 请求绕过 GitHub 的 OAuth 认证，获取未授权数据。GitHub 支付25000美元奖金。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Pixar 的技术",
+          "link": "https://www.fxguide.com/fxfeatured/the-tech-of-pixar-part-1-piper-daring-to-be-different/",
+          "description": "本文通过图片介绍 Pixar 公司如何制作动画电影。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019110809.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019110810.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019110811.jpg"
+          ]
+        },
+        {
+          "title": "CSS 打印样式10分钟教程",
+          "link": "https://www.paperplane.app/blog/print-css-basics/",
+          "description": "一篇简短的教程，讲解如何使用 CSS 设置网页打印时的样式。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "JSON 解析器的最大嵌套层数",
+          "link": "https://github.com/lovasoa/bad_json_parsers/blob/master/README.md",
+          "description": "作者测试每种语言的 JSON 解析器最多可以解析多少层嵌套的 JSON，V8 可解析5713层。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "20行 Shell 脚本的马尔可夫链",
+          "link": "https://0x0f0f0f.github.io/posts/2019/11/really-fast-markov-chains-in-~20-lines-of-sh-grep-cut-and-awk/",
+          "description": "使用20行 Shell 脚本实现一个简单的马尔可夫链。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Linux 软件包的打包方式",
+          "link": "https://www.ibm.com/developerworks/cn/linux/l-lo-rpm-build-package/index.html",
+          "description": "以 Hello World 程序为例，解释如何打包成 RPM 软件包。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "实时协同编辑的实现",
+          "link": "https://yafeilee.com/blogs/100",
+          "description": "以 ShowMeBug 为例，介绍如何实现多人同时编辑一篇文档。",
+          "user": "windy",
+          "user_link": "https://github.com/ruanyf/weekly/issues/952",
+          "images": []
+        },
+        {
+          "title": "我对 Rust 语言的第一印象",
+          "link": "https://deepu.tech/first-impression-of-rust/",
+          "description": "Rust 语言入门教程，作者整理的学习笔记，讲解基本语法。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "什么是瀑布式开发？",
+          "link": "https://martinfowler.com/bliki/WaterfallProcess.html",
+          "description": "马丁·福勒解释瀑布式开发的含义，以及为什么敏捷开发优于它。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019111503.jpg"
+          ]
+        },
+        {
+          "title": "为什么 Python 3 升级需要这么长时间？",
+          "link": "https://stackoverflow.blog/2019/11/14/why-is-the-migration-to-python-3-taking-so-long/",
+          "description": "探讨 Python 2 升级到 Python 3 花了超过10年的原因：企业升级成本高、风险大，Python 3 一开始优点不多。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "海盗湾正在尝试高质量的视频流播放",
+          "link": "https://torrentfreak.com/the-pirate-bay-is-trialing-high-quality-video-streaming-links-191209/",
+          "description": "海盗湾添加视频播放功能，跳转到 BayStream 平台播放热门视频。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "vy",
+          "link": "https://github.com/vyapp/vy",
+          "description": "命令行极简风格的 IDE。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019111412.jpg"
+          ]
+        },
+        {
+          "title": "必收",
+          "link": "http://bishouapp.com",
+          "description": "收集和订阅外部内容的应用，支持收藏网址、微信文章、头条文章等。",
+          "user": "sinner-xing",
+          "user_link": "https://github.com/ruanyf/weekly/issues/964",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019111414.jpg"
+          ]
+        },
+        {
+          "title": "Youtube 开源前端",
+          "link": "https://github.com/TeamNewPipe/NewPipe",
+          "description": "Youtube 的开源前端，换皮肤，可自建实例。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019111506.jpg"
+          ]
+        },
+        {
+          "title": "p2",
+          "link": "https://github.com/crislin2046/p2.",
+          "description": "极简的 PDF 文件转 PNG 图片的开源服务器。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Same Page",
+          "link": "https://chrome.google.com/webstore/detail/same-page",
+          "description": "Chrome 浏览器插件，让浏览同一网页的访问者互联聊天。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019111701.jpg"
+          ]
+        },
+        {
+          "title": "Joplin",
+          "link": "https://github.com/laurent22/joplin",
+          "description": "笔记和待办事项软件，支持桌面、手机和命令行，多端同步。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019111704.jpg"
+          ]
+        },
+        {
+          "title": "CodeSlide",
+          "link": "https://github.com/glample/CodeSlide",
+          "description": "以幻灯片形式展示源码的工具。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019111711.jpg"
+          ]
+        },
+        {
+          "title": "色彩无障碍性检查",
+          "link": "https://whocanuse.com/",
+          "description": "查看配色方案对不同视力障碍人群的可用性并评分。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "远程浏览器",
+          "link": "https://browsergap.xyz/",
+          "description": "提供免费远程浏览器，可在本地浏览器中打开远程浏览器访问网站。代码开源。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "zim",
+          "link": "https://zim-wiki.org/index.html",
+          "description": "桌面端 Wiki 编辑器，维护储存在本地的 Wiki。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201911/bg2019111807.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "线性代数免费教程",
+          "link": "https://www.math.ucdavis.edu/~linear/linear.pdf",
+          "description": "免费的线性代数英文教程，可在线阅读，也提供 PDF 下载。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Vue.js 源码解析",
+          "link": "https://github.com/NLRX-WJC/Learn-Vue-Source-Code",
+          "description": "从初学者角度将 Vue.js 分成九个模块讲解源码。",
+          "user": "NLRX-WJC",
+          "user_link": "https://github.com/ruanyf/weekly/issues/977",
+          "images": []
+        },
+        {
+          "title": "机器学习数据集列表",
+          "link": "https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research",
+          "description": "维基百科列表，收集用于机器学习训练数据的数据集，共几百个。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "微积分图说教程",
+          "link": "https://0a.io/chapter1/calculus-explained.html",
+          "description": "使用图片解释微积分基本概念。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201912/bg2019120103.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201912/bg2019120104.jpg"
+          ]
+        },
+        {
+          "title": "Nefertiti 头像 3D 打印源文件",
+          "link": "https://www.thingiverse.com/thing:12345",
+          "description": "古埃及女王 Nefertiti 头像的 3D 打印源文件免费下载，精度高。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "Basecamp 广告",
+          "link": "",
+          "description": "Basecamp 公司在谷歌搜索页投放广告，标题为'我们不想投放此广告'，抗议谷歌允许其他公司在其品牌词上做广告。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019102104.jpg"
+          ]
+        },
+        {
+          "title": "世界上最危险的桥",
+          "link": "https://www.dailymail.co.uk/travel/travel_news/article-3428130/Is-dangerous-bridge-world-rotting-roadway-Russia-daredevils-repair-cars-just-INCHES-edge.html",
+          "description": "俄罗斯贝加尔湖地区的 Kuandinsky 大桥，两米宽，无护栏，木板腐烂，雪天湿滑，被称为世界上最危险的桥。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201908/bg2019083002.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201908/bg2019083003.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201908/bg2019083004.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201908/bg2019083007.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "锂电池的问题",
+          "link": "https://www.engineering.com/ElectronicsDesign/ElectronicsDesignArticles/ArticleID/17435/Will-Your-Electric-Car-Save-the-World-or-Wreck-It.aspx",
+          "description": "电动车使用锂电池，能量效率高但能量密度低，寿命短，锂、石墨、镍、钴开采污染环境，回收成本高。锂电池不是解决能源问题的灵丹妙药。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201912/bg2019121902.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201912/bg2019121903.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201909/bg2019090907.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201909/bg2019090908.jpg"
+          ]
+        },
+        {
+          "title": "我吃了毒蘑菇",
+          "link": "http://blog.mycology.cornell.edu/2006/11/22/i-survived-the-destroying-angel/",
+          "description": "作者误食鹅膏菌毒蘑菇，经历呕吐、腹泻、肝损伤，最终幸存。2006年美国三例中毒，作者是唯一幸存者。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019101801.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201910/bg2019101802.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论与数字",
+      "items": [
+        {
+          "title": "言论1",
+          "link": "",
+          "description": "我们都知道，如果可以回到过去，改变任何一件小事情，都将极大地改变未来。然而，几乎没有人想到，今天只要小小改变，就会改变自己的未来。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "言论2",
+          "link": "",
+          "description": "在产业界中，您需要证明你的产品，并最终赚钱，这样才能成功。学术界不是这样。学者发表的论文几乎没有用处，但是只要其他学者引用，他就成功了。",
+          "user": "HN 读者",
+          "user_link": "https://news.ycombinator.com/item?id=21350848",
+          "images": []
+        },
+        {
+          "title": "言论3",
+          "link": "",
+          "description": "你知道，Instagram 被10亿美元收购时，只有12个员工吗？",
+          "user": "HN 读者",
+          "user_link": "https://news.ycombinator.com/item?id=21359505",
+          "images": []
+        },
+        {
+          "title": "言论4",
+          "link": "",
+          "description": "纳德拉（Nadella）接手微软 CEO 时，遇到的最严重历史遗留问题是：公司充满了大量早就功成名就和发财的老员工，你怎样领导公司走向不一样的未来呢？",
+          "user": "《一个微软前员工的思考》",
+          "user_link": "https://onezero.medium.com/speaking-truth-to-power-reflections-on-a-career-at-microsoft-90f80a449e36",
+          "images": []
+        },
+        {
+          "title": "言论5",
+          "link": "",
+          "description": "我口袋里有一个小设备，可以访问几乎全部的人类知识。我却用它与不认识的人进行毫无意义的争论，并看猫的照片。",
+          "user": "HN 读者",
+          "user_link": "https://news.ycombinator.com/item?id=21360284",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "招聘信息",
+      "items": [
+        {
+          "title": "黑帕云",
+          "link": "https://hipacloud.com",
+          "description": "位于武汉光谷的创业公司，构建无代码企业应用搭建平台。招聘前端架构师、资深 SaaS 产品经理。联系方式：yiting@hipacloud.com",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "易路软件",
+          "link": "https://www.ersoft.cn/",
+          "description": "聚焦企业人力资源 SaaS 领域，工作地点上海闵行区。招聘前端工程师，参与 PC 端、H5、小程序、Node 服务开发。详细要求和联系方式见 GitHub 评论。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,432 @@
+{
+  "title": "科技爱好者周刊（第 366 期）：旧金山疯狂的 AI 广告",
+  "link": "https://www.ruanyifeng.com/blog/2025/09/weekly-issue-366.html",
+  "number": 366,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "旧金山疯狂的 AI 广告",
+          "link": "",
+          "description": "上期周刊提到，旧金山有一个广告牌，上面是一个谜语，指向某个 AI 公司的网址。\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025090702.webp)\n\n我原以为，这只是个别现象，但是本周看到了[一篇报道](https://www.sfgate.com/tech/article/bay-area-tech-scene-dorky-now-terrifying-21042943.php)，才发现我错了。\n\n**旧金山市已经为 AI 疯狂了**，城里的 AI 广告铺天盖地。相比之下，中国的 AI 热潮只能算是静悄悄。\n\n旧金山的地理位置，就在硅谷旁边，美国主要的 AI 公司大部分位于这个地区。另外，斯坦福大学也在这里。\n\n过去两年中，AI 概念支撑着美国股市不断疯涨，造就了无数富豪。旧金山就是最狂热的风暴中心，资金和人才正在疯狂涌入。\n\n站在大街上，每一栋高楼顶上都是 AI 广告牌。\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091709.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091710.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091711.webp)\n\n上面第一张图，有一个广告牌写着\"你妈妈也会喜欢的 AI 客服\"（AI customer support even your mother will like），这是词穷到找不到其他广告词了吗？\n\n你开车上高速公路，路边也都是 AI 广告。\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091707.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091708.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091712.webp)\n\n你在公交车站等车，看到的也是 AI 广告，上面写着\"停止雇佣人类\"（Stop Hiring Humans）。\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091713.webp)\n\n不仅 AI 公司做广告，那些跟 AI 没关系的公司也在做。\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091714.webp)\n\n上面是 Postman 公司的广告，它是一个 API 测试工具，按理说跟 AI 没关系。\n\n但是，广告上写着\"你的 API 为 AI 做好准备吗？\"，言下之意就是可以用它来测试，就是这样蹭热度。\n\n这些无所不在的 AI 广告，不是科幻电影，而是旧金山眼下的样子。\n\n这么多广告，一方面因为确实有商机，但是更大的原因是 AI 公司钱太多，他们吸引到了源源不断的风险投资，还能去股市圈钱。资本急需看到效果。\n\n于是，这些公司拼命做广告，曝光越多，市场占有率和公司估值也会随之提高，从而吸引更多的资本。\n\n这就叫泡沫经济，只要没破，你就用力吹，能吹多大就多大，这样会有奖赏。\n\n但是，作为一个普通人，每天被这些广告包围，狂轰滥炸，是不是有点太荒诞了。AI 作为一种新技术，目的是提高工作效率，解放人类，可现在变得像一种宗教，向你灌输，让你膜拜。人好像成了它的附庸，活在一个 AI 构建出来的世界里。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025090702.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091709.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091710.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091711.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091707.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091708.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091712.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091713.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091714.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "Apache 软件基金会",
+          "link": "https://linuxiac.com/the-apache-software-foundation-unveils-new-oak-leaf-logo/",
+          "description": "Apache 软件基金会（简写 ASF）是世界最大的开源软件组织之一，最近更改了徽标，从羽毛变成了像树叶。\"apache\"这个词，原是一个北美印第安部落的名字，羽毛就是该部落的象征。有人批评，这种象征太刻板，用在当代不合适。所以这次就改成了像树叶，更中性，也比喻开源软件的韧性、开放性和责任感。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091301.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091302.webp"
+          ]
+        },
+        {
+          "title": "风力发电机叶片运输飞机",
+          "link": "https://spectrum.ieee.org/wind-turbine-blade-transport-plane",
+          "description": "风力发电机有巨大的叶片，陆上运输非常不方便。一家美国公司决定，建造专门运送风力叶片的飞机。它的整个机舱（包括头部）都用来放叶片，驾驶舱移到了飞机的顶上。装卸叶片需要打开飞机的整个后舱，像塞牙签一样塞进去，非常壮观。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091704.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091705.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091706.webp"
+          ]
+        },
+        {
+          "title": "世界最高的向日葵",
+          "link": "https://www.guinnessworldrecords.com/news/2025/9/tallest-sunflower-as-high-as-a-three-storey-house-topples-decade-old-record",
+          "description": "美国印第安纳州的一个农民，培育出了世界最高的向日葵，从底部到花尖一共有10.9米。这件事最大的难点之一，就是如果向日葵长得太高，茎就支撑不住果实，必须使用支撑架。这个农民专门搭了三层支架。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091602.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091603.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091604.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091605.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091606.webp"
+          ]
+        },
+        {
+          "title": "Micro-LED 灯珠作为随机数生成器",
+          "link": "https://discovery.kaust.edu.sa/en/article/25936/micro-leds-boost-random-number-generation/",
+          "description": "一个国外研究团队最近证明，Micro-LED 灯珠可以当作随机数生成器。他们发现，LED 发出的电磁波强度波动（单位时间的光子数量）是随机的，而且随机数的生成速率很高。由于 LED 灯珠很便宜，如果这个发现证明有实用价值，随机数生成的难题也许就解决了。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091702.webp"
+          ]
+        },
+        {
+          "title": "章鱼腿的分工",
+          "link": "https://www.discoverwildlife.com/animal-facts/marine-animals/octopus-arm-flexibility-helps-complex-behaviours",
+          "description": "一项研究发现，章鱼前4条腿用于探索，后4条腿用于行走。这跟人类上肢、下肢的分工有点像，多足机器人的设计可以参考。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091202.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "你可能不需要高端 CPU",
+          "link": "https://www.xda-developers.com/high-end-cpu-is-overkill-now/",
+          "description": "本文提出几个理由，普通用户购买8核以上的高端 CPU，可能是浪费。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091609.webp"
+          ]
+        },
+        {
+          "title": "如何用 make 命令编译 C 程序",
+          "link": "https://jvns.ca/blog/2025/06/10/how-to-compile-a-c-program/",
+          "description": "一篇 C 语言初级教程，介绍 make 命令怎么编译一个程序。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025062702.webp"
+          ]
+        },
+        {
+          "title": "去除多余的真值判断",
+          "link": "https://eslint.org/blog/2024/10/code-review-nit-to-ecosystem-improvements/",
+          "description": "ESlint 有一条规则，如果某条判断语句始终是 `true` 或者 `false`，那么就报错，因为这个判断是多余的。现在，TypeScript 5.6 也引入了这个规则，默认报错。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024101610.webp"
+          ]
+        },
+        {
+          "title": "CSS 的 cos() 和 sin()",
+          "link": "https://css-tricks.com/the-most-hated-css-feature-cos-and-sin/",
+          "description": "本文讲解使用 CSS 的三角函数，做出圆形布局。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091703.webp"
+          ]
+        },
+        {
+          "title": "HTTP 的 Options 方法",
+          "link": "https://evertpot.com/discovering-features-with-http-options/",
+          "description": "HTTP 方法，除了常用的 GET 和 POST 等，还有一个不常用的 OPTIONS，本文介绍它的用法。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024101701.webp"
+          ]
+        },
+        {
+          "title": "你应该采用虚拟机，而不是双重启动",
+          "link": "https://www.xda-developers.com/reasons-embrace-virtual-machines-instead-dual-booting/",
+          "description": "本文认为，不再有必要安装两个系统，做双重启动了，完全可以改用虚拟机。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025040403.webp"
+          ]
+        },
+        {
+          "title": "神奇的苏联地图",
+          "link": "https://threadreaderapp.com/thread/1413532678318612482.html",
+          "description": "苏联地图的细节程度令人难以置信。他们出版的外国地图会标注桥梁在水面上的高度、承载能力以及主要建筑材料，河流的宽度、流向、深度，森林的树木种类等等。至今也不清楚，他们怎么得到这些信息，又为什么画在公开出版的地图上。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091701.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Seelen UI",
+          "link": "https://www.xda-developers.com/4-reasons-seelen-ui-makes-windows-feel-like-new-operating-system/",
+          "description": "一个 Windows 应用，可以让 Windows 桌面变得像 Mac 桌面，同时集成了工作区和平铺式窗口管理器。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091303.webp"
+          ]
+        },
+        {
+          "title": "Ladder",
+          "link": "https://github.com/kubero-dev/ladder",
+          "description": "开源的网页抓取查看工具。用户输入网址，它会自动将网页抓取展示出来。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110703.webp"
+          ]
+        },
+        {
+          "title": "oq",
+          "link": "https://github.com/plutov/oq",
+          "description": "终端查看 OpenAPI 规格文件的工具。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091201.webp"
+          ]
+        },
+        {
+          "title": "httpjail",
+          "link": "https://github.com/coder/httpjail",
+          "description": "一个跨平台的命令行程序，可以限制本机的 HTTP/HTTPs 请求，只有开白名单，才能发出请求。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Highlight",
+          "link": "https://www.highlight.io",
+          "description": "一个开源的报错监控平台。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023110711.webp"
+          ]
+        },
+        {
+          "title": "草梅 Auth",
+          "link": "https://github.com/CaoMeiYouRen/caomei-auth",
+          "description": "基于 Nuxt 框架的登录平台，支持 OAuth2.0 协议，有邮箱、用户名、手机、验证码、社交媒体等多种登录方式。",
+          "user": "@CaoMeiYouRen",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7760",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091402.webp"
+          ]
+        },
+        {
+          "title": "Neovide",
+          "link": "https://neovide.dev/",
+          "description": "Neovim 编辑器的一个跨平台图形界面封装，很多功能都配置好了。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072509.webp"
+          ]
+        },
+        {
+          "title": "Gokapi",
+          "link": "https://github.com/Forceu/Gokapi",
+          "description": "一个自托管的文件分享服务，只有管理员才能上传。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072602.webp"
+          ]
+        },
+        {
+          "title": "Swap.js",
+          "link": "https://github.com/josephernest/Swap",
+          "description": "一个很简单的 JS 库，通过 Ajax 让普通的多页面网站，产生单页应用的\"局部更新\"效果。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "AI 相关",
+      "items": [
+        {
+          "title": "SSHLLM",
+          "link": "https://github.com/sshllm/sshai",
+          "description": "基于 SSH 的 AI 客户端，先用 ssh 登录到服务器，然后通过它使用 AI 大模型。",
+          "user": "@aicu-icu",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7759",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091401.webp"
+          ]
+        },
+        {
+          "title": "PDF to Video",
+          "link": "",
+          "description": "免费将 PDF 文件转成一段讲解视频，配上动画和语音。",
+          "user": "@icaohongyuan",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7764",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091501.webp"
+          ]
+        },
+        {
+          "title": "MQTT/EMQX MCP Server",
+          "link": "https://github.com/ysfscream/mcp-mqtt",
+          "description": "这个库允许使用 MQTT 协议接入 MCP 服务器，方便 AI 直接操作物联网设备。",
+          "user": "@ysfscream",
+          "user_link": "https://github.com/ruanyf/weekly/issues/7766",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091601.webp"
+          ]
+        },
+        {
+          "title": "Pierce",
+          "link": "https://github.com/plastic-labs/pierce",
+          "description": "一个开源的前端应用，使用自然语言生成网站 UI，类似于 V0/Lovable。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025081107.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "PostHog",
+          "link": "https://posthog.com/",
+          "description": "这是一家公司的官网，做得好像操作系统的桌面一样，如果长时间无操作，甚至还会出现屏保。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091304.webp"
+          ]
+        },
+        {
+          "title": "Katalog",
+          "link": "https://www.katalog-barbaraiweins.com/#images",
+          "description": "一位摄影师为她的每一件个人物品（书籍、衣服、药品等等），拍了一张照片，放到网站上，一共有12795张。她想告诉大家，不要低估你拥有的物品数量。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202501/bg2025010205.webp"
+          ]
+        },
+        {
+          "title": "大数据教科书（The Big Data Textbook）",
+          "link": "https://ghislainfourny.github.io/big-data-textbook/",
+          "description": "苏黎世联邦理工学院的大数据英文教科书，免费阅读。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072404.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "封面图",
+          "link": "https://photo.cctv.com/2025/09/13/PHOA1r3Rs9Xo0zSv3TeTgdLk250913.shtml",
+          "description": "9月12日，武汉的长江文化艺术季开幕式上，无人机组成江豚的图案。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091801.webp"
+          ]
+        },
+        {
+          "title": "ChatGPT 仿冒品",
+          "link": "",
+          "description": "ChatGPT 是最受欢迎的 AI 应用之一，它的 Logo 是六根链条组成的圆角六边形。但是，你现在去苹果的应用商店，搜索\"ChatGPT\"，你会看到无数的仿冒品。上面就是各种仿冒品的图标，真的 ChatGPT 也在其中。仿冒品的名字也是尽量往 ChatGPT 靠，比如 ChatBot、AI Bot、Open Chat AI 等等。你能从一堆李鬼里面，找出真品吗。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091607.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091608.webp"
+          ]
+        },
+        {
+          "title": "旧金山创业公司倒闭的二手家具",
+          "link": "",
+          "description": "旧金山是美国创业之都，有无数风投支持的创业公司。很自然的，倒闭的公司也很多。于是，就滋生了一门生意，有人专门收购那些倒闭公司的办公家具，再以折扣价卖出。收购来的办公家具，就堆放在大仓库里，想要的人自己去挑。很多硅谷大公司，比如 Pinterest、谷歌和 Facebook，裁掉员工以后，也会把多余的办公家具卖到这里。这些二手的办公家具往往都是名牌货，现在以半价出售，所以生意很好。由于美国股市这几年都是大牛市，创纪录的风险投资涌向创业公司，很大一部分钱都用在办公家具。随着倒闭的公司越来越多，废旧办公家具源源不断，根本收购不完，二手家具的好日子看来还在后头。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202411/bg2024111407.webp",
+            "https://cdn.beekka.com/blogimg/asset/202411/bg2024111408.webp",
+            "https://cdn.beekka.com/blogimg/asset/202411/bg2024111409.webp",
+            "https://cdn.beekka.com/blogimg/asset/202411/bg2024111410.webp",
+            "https://cdn.beekka.com/blogimg/asset/202411/bg2024111411.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "澳大利亚内陆内海计划",
+          "link": "",
+          "description": "1.4亿年前，澳大利亚的内陆地区曾经是一片封闭的内海。后来，海水干涸，那里变成了一片干旱荒芜的荒漠。\n\n![](https://cdn.beekka.com/blogimg/asset/202508/bg2025083003.webp)\n\n由于内陆的地势比沿海低15米，历史上有人设想过重新蓄水，恢复内陆的\"地中海\"。\n\n![](https://cdn.beekka.com/blogimg/asset/202508/bg2025083004.webp)\n\n但是，澳大利亚并没有那么多淡水，而且内陆的水分蒸发大于降雨，所以这个计划无法实现。\n\n进入21世纪后，随着工程能力的进步，有人重新提出了这个计划，设想修建一条600公里的管道，将海水引入内陆。\n\n管道沿途都铺设太阳能板（澳大利亚的太阳能极其丰富），产生电能，作为水泵的动力，将水不断泵入内陆。\n\n这样的话，一旦内陆形成湖泊，降雨量也会随之增加，彻底改变干旱缺水的现状。而且，还能建立航运业，设立新兴的滨海城市，提升经济与移民潜力。\n\n但是，不少人反对这个计划，引入海水以后，内陆土地将彻底盐碱化，无法耕种。另外，输水管道建设成本巨大，初步预估超过2000亿元。\n\n澳大利亚人还在权衡，是否要推动这个疯狂的计划。近年来，随着全球气温上升，内陆一年比一年酷热，越来越不适合生存。支持声现在有所抬头，狂掷几千亿，建造一片海，毕竟这是改变内陆气候唯一可能的方法。\n\n![](https://cdn.beekka.com/blogimg/asset/202508/bg2025083005.webp)",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025083003.webp",
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025083004.webp",
+            "https://cdn.beekka.com/blogimg/asset/202508/bg2025083005.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "鲍里斯·切尔尼",
+          "link": "https://etsd.tech/posts/coders-end/",
+          "description": "有了 AI，代码不再珍贵。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "美国网友",
+          "link": "https://sethpurcell.com/writing/screens-in-museums/",
+          "description": "现在的博物馆大量使用电子屏幕，但是我带儿子去博物馆不是为了看屏幕，否则在家使用平板电脑就可以了。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "杰森·朗斯托夫",
+          "link": "https://jason.energy/more-pie/",
+          "description": "职业生涯就像一场吃馅饼比赛，获胜的奖品是你要接着吃更多的馅饼。这是否是一件好事，取决于你是否喜欢这项工作。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "选择无聊和灵活的技术",
+          "link": "https://dkarlovi.github.io/choose-boring/",
+          "description": "许多人，尤其是新工程师，错误地认为使用复杂的工具和语言会做出更强大、更具创新性的产品。事实恰恰相反。最有效的组件是简单、可预测、枯燥无趣的成熟技术。它们为我们提供了进一步开发复杂项目所需的基础。你不是要建造一座有趣的桥梁，你要建造的是人们以后要充满信心走在上面的坚固桥梁。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

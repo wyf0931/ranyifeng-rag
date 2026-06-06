@@ -1,0 +1,486 @@
+{
+  "title": "科技爱好者周刊（第 145 期）：大家不出门，经济怎么办？",
+  "link": "https://www.ruanyifeng.com/blog/2021/02/weekly-issue-145.html",
+  "number": 145,
+  "sections": [
+    {
+      "name": "封面图",
+      "items": [
+        {
+          "title": "封面图",
+          "link": "",
+          "description": "2021年1月24日，三只海龟被海水冲上了以色列的一处海滩。兽医对其中一只受伤的海龟进行 CT 扫描。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202102/bg2021020303.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "本周话题",
+      "items": [
+        {
+          "title": "大家不出门，经济怎么办？",
+          "link": "",
+          "description": "最近，我和一个朋友聊天。他说了一个观点，令我印象深刻。他说，大家都低估了外卖行业的深远影响。外卖的兴起，是一件具有重大历史意义的事件。他的理由是，以前的网络经济，只是日常生活的补充。但是，外卖不是这样，它直接替代了日常生活的一部分。互联网有一个副效应，就是大家越来越不用出门，办公、购物、学习、交流、娱乐都可以通过网络完成。外卖把这个副效应急剧提升，外出吃饭、买菜，这些原本不得不出门的日常事务，都通过网络解决了。一定要出门才能完成的事情，正在变得越来越少，甚至多人聚餐也可以通过网络。我问大家一个问题：如果所有人减少一半的出门，对社会和经济有何影响？首先，实体经济会加速死掉，它们依赖传统的顾客上门模式，没人上门就活不了。其次，商业地产会很惨，店面租不出去，购物中心纷纷关门。最后，人与人之间的纽带变弱了，不出门就接触不到其他人，网络很难建立人与人的沟通。以前，互联网的很多商业机会，来自如何让大家不出门，就能完成想做的事情。我猜想，以后的商业机会，也许来自如何让大家出门，增强人与人之间的纽带。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202102/bg2021020301.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202102/bg2021020302.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021013004.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "Vue3.0 从实战到源码剖析训练营",
+          "link": "",
+          "description": "本期活动由开课吧提供，主讲老师杨涛是 Vue 3.0 的代码贡献者。课程共三天，手写 Vue 3.0 核心源码，包含面试难题讲解和实战造轮子。上课时间2月5日、6日、7日每晚8点。原价388元，周刊读者福利价0.99元。微信扫描二维码添加助理老师了解详情。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202102/bg2021020406.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202102/bg2021020407.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202102/bg2021020408.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "可视锚鱼",
+          "link": "https://sichuan.scol.com.cn/sczh/202101/58037620.html",
+          "description": "2021年1月25日，四川省射洪市公安抓获了两个犯罪嫌疑人，原因是他们使用可视锚鱼设备捕鱼。可视锚鱼通过水下摄像头实时查看水下情况，一旦发现大鱼靠近立刻拉起鱼钩钩住鱼身，捕鱼效率很高，一天可达上百斤。警方认为这属于非法捕鱼，因为使用滚钩对鱼类造成巨大创伤。该工具在电商平台大量出售。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012809.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012810.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012812.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012811.jpg"
+          ]
+        },
+        {
+          "title": "蓝色闪电",
+          "link": "https://www.sciencenews.org/article/space-station-detectors-found-source-weird-blue-jet-lightning",
+          "description": "2019年，国际空间站宇航员观察到地球平流层有奇特的蓝色闪电。2021年1月21日《自然》杂志发表论文证实其形成原理：高空云上方带有正电荷，若更上方空气带有负电荷，会形成自下而上的闪电；平流层主要气体是氮气，电离过程中出现蓝色；地面空气多种气体组成，电离呈白色。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012202.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012205.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012206.jpg"
+          ]
+        },
+        {
+          "title": "内置 PC 的运动鞋",
+          "link": "",
+          "description": "电脑配件制造商 NZXT 与时尚公司 Artifact Studios 合作展示了一款 PC 运动鞋，鞋内内置完整 PC 电脑，包括 NZXT 散热器、主板、风扇，鞋跟上有 RTX 3080 显卡。脱下鞋插上电源即可当电脑主机使用，但尚不清楚是玩笑还是产品。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "彩色小说《喧哗与骚动》",
+          "link": "https://latimesblogs.latimes.com/jacketcopy/2012/07/the-sound-and-the-fury-as-william-faulkner-imagined-in-color.html",
+          "description": "美国作家福克纳的《喧哗与骚动》出版于1929年，长篇心理独白没有标点符号，读者难懂。福克纳曾想用不同颜色墨水表示不同叙述视角但未实现。现在有出版社使用14种颜色重新出版精装版，每种颜色表示不同时期。预定7月6日发货，限量1480本，售价345美元，目前已预购1000本。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012210.jpg"
+          ]
+        },
+        {
+          "title": "新发现的蓝色颜料 YInMn blue",
+          "link": "https://www.smithsonianmag.com/smart-news/first-blue-pigment-discovered-200-years-finally-sale-180976769/",
+          "description": "2009年俄勒冈大学偶然发现新的蓝颜料 YInMn blue，这是200多年来首次发现蓝颜料新的合成方法（上一次是1807年）。它能更好地吸收其他颜色光谱，呈现更纯更鲜艳的蓝色。近期上市，一小管（37克）售价179.40美元。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012507.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021013001.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012508.jpg"
+          ]
+        },
+        {
+          "title": "一句话消息",
+          "link": "",
+          "description": "南半球澳大利亚悉尼市区地面温度接近50度，气象学家警告这些地区已不适合夏天居住，人们可能不得不搬离或搬到地下居住。丰宁抽水蓄能电站位于河北承德，是世界最大的抽水蓄能电站，已完成建设，将于今年年底发电。马斯克说很有信心 SpaceX 公司在2026年将人类带上火星，并开始建设火星殖民地。调查显示受疫情影响人们居家时间变多，整体入睡时间延迟2到3小时，我国超3亿人存在睡眠障碍。教育部要求中小学生原则上不得将手机带入校园。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012501.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021013104.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202102/bg2021020209.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202102/bg2021020102.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202102/bg2021020105.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "16点阵字体研究",
+          "link": "https://mp.weixin.qq.com/s/iX8inI6kiS5TSqWbwFP7EQ",
+          "description": "很多电子显示牌使用 16x16 点阵显示文字，本文以公交车辆显示牌为例，研究不同中文字体的显示效果。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012709.jpg"
+          ]
+        },
+        {
+          "title": "迅雷客户端的代码结构",
+          "link": "https://zhuanlan.zhihu.com/p/337048581",
+          "description": "迅雷客户端是 Electron 应用，前端文件未加密，作者研究了其代码结构。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012702.jpg"
+          ]
+        },
+        {
+          "title": "iOS 证书幕后原理",
+          "link": "http://chuquan.me/2020/03/22/ios-certificate-principle/",
+          "description": "Apple 为严格管理 app 发布，制定了一套复杂的基于证书的校验机制。本文从技术面图文并茂地介绍 iOS 开发各种证书之间的关系及其背后原理。",
+          "user": "baochuquan",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1620",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021013002.jpg"
+          ]
+        },
+        {
+          "title": "20年前参加高中信息学奥赛（NOIP）的经历",
+          "link": "https://justyy.com/archives/45269",
+          "description": "作者回顾高三时参加信息学奥林匹克竞赛，拿到 NOIP 全国三等奖的经历。",
+          "user": "DoctorLai",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1624",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021013003.jpg"
+          ]
+        },
+        {
+          "title": "揭秘隔空充电技术",
+          "link": "https://zhidx.com/p/255150.html",
+          "description": "小米11支持隔空充电，本文介绍背后的技术原理。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021013101.jpg"
+          ]
+        },
+        {
+          "title": "新的 CSS 长宽比属性 aspect-ratio",
+          "link": "https://web.dev/aspect-ratio/",
+          "description": "Chrome 88 浏览器支持新的 CSS 属性 aspect-ratio，可以设置容器的长宽比。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021013103.jpg"
+          ]
+        },
+        {
+          "title": "我对软件开发的一些看法",
+          "link": "https://chriskiehl.com/article/thoughts-after-6-years",
+          "description": "作者总结在软件行业工作多年后，哪些看法改变，哪些未变，共罗列近30条观点。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "如何将树莓派 4 代当作台式机？",
+          "link": "https://debugger.medium.com/my-impressions-on-using-a-raspberry-pi-4-as-a-desktop-replacement-ff677c885149",
+          "description": "树莓派 4 代配置强，可作为台式机。作者介绍安装步骤及 Raspbian 与 Ubuntu 两个操作系统的比较。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012707.jpg"
+          ]
+        },
+        {
+          "title": "10个需要改掉的 Typescript 编码习惯",
+          "link": "https://startup-cto.net/10-bad-typescript-habits-to-break-this-year/",
+          "description": "作者分享10个编写 Typescript 的坏习惯，简述原因及改正建议。",
+          "user": "naruco",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1631",
+          "images": []
+        },
+        {
+          "title": "为什么 Go 是我最喜欢的编程语言？",
+          "link": "https://michael.stapelberg.ch/posts/2017-08-19-golang_favorite/",
+          "description": "一个程序员总结 Go 语言的优点，仅罗列优点。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "在线电子书阅读器 (epub / mobi / pdf / azw3)",
+          "link": "",
+          "description": "浏览器内的电子书阅读器，支持 azw3、epub、mobi、pdf 格式，拖入网页即可阅读。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "端到端加密在线聊天室",
+          "link": "",
+          "description": "Web 端多人在线聊天室，支持端到端加密。",
+          "user": "Dup4",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1619",
+          "images": []
+        },
+        {
+          "title": "Xonsh",
+          "link": "https://github.com/xonsh/xonsh",
+          "description": "使用 Python 写的 Linux Shell，可在 Bash 代码中使用 Python 语法。",
+          "user": "morefreeze",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1621",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021013106.jpg"
+          ]
+        },
+        {
+          "title": "RawTherapee",
+          "link": "",
+          "description": "一个开源的 Raw 格式相片编辑器。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Valetudo",
+          "link": "https://github.com/Hypfer/Valetudo",
+          "description": "米家和石头扫地机器人的开源固件，提供 Web 界面进行操作。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021013107.jpg"
+          ]
+        },
+        {
+          "title": "Semgrep",
+          "link": "https://github.com/returntocorp/semgrep",
+          "description": "支持多种语言（Java、JS、Py、Ruby、TS 等）的代码静态分析工具，可自定义扫描规则。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202102/bg2021020103.jpg"
+          ]
+        },
+        {
+          "title": "在线文字转手写体工具",
+          "link": "",
+          "description": "在线开源工具，可将文字转为手写体并下载图片。默认只支持英文，可添加中文字体并指定背景图片。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "字幕文件时间轴自动生成工具",
+          "link": "",
+          "description": "开源工具，通过机器学习自动为字幕文件生成时间轴。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "纯 CSS 条纹生成器",
+          "link": "",
+          "description": "纯 CSS 条纹生成器，在线调节参数并生成代码。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202102/bg2021020317.jpg"
+          ]
+        },
+        {
+          "title": "Archivy",
+          "link": "https://github.com/archivy/archivy/",
+          "description": "开源知识库软件，可本地架设管理个人笔记。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202102/bg2021020318.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "肌肉维基",
+          "link": "https://musclewiki.com/",
+          "description": "英文维基网站，提供人体每一块肌肉的详细资料。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012110.jpg"
+          ]
+        },
+        {
+          "title": "荷兰国家博物馆在线艺术库",
+          "link": "https://www.rijksmuseum.nl/en/rijksstudio",
+          "description": "荷兰国家博物馆将收藏的71万件艺术品放上网，可免费下载高清图片，有大量珍贵名画。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012207.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012209.jpg"
+          ]
+        },
+        {
+          "title": "Python 练习题网站",
+          "link": "",
+          "description": "提供大量英文 Python 初学者练习题，并有详细解答。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012807.jpg"
+          ]
+        },
+        {
+          "title": "在线课程搜索引擎",
+          "link": "",
+          "description": "收录24万多门各种语言课程，包含免费和付费课程。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021011516.jpg"
+          ]
+        },
+        {
+          "title": "Akiyoshi 教授的视觉错觉图片",
+          "link": "",
+          "description": "日本立命馆大学 Akiyoshi 教授的个人主页，收集大量视觉错觉图片。例如随着页面滚动，你会觉得某图层在抖动。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "寄居蟹桥",
+          "link": "https://www.theguardian.com/environment/2021/jan/23/how-wildlife-crossings-are-helping-reindeer-bears-and-even-crabs-aoe",
+          "description": "印度洋圣诞节岛，每年十月或十一月，数百万红蟹从森林涌向海洋交配产卵。当地人为帮助它们安全通过公路，建造了一座桥。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012502.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012503.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012504.jpg"
+          ]
+        },
+        {
+          "title": "地球的水和空气",
+          "link": "https://ourplnt.com/water-air-earth/",
+          "description": "如果地球上所有水和空气集中在一起，水球直径1400公里，地球直径12742公里。所有生命依靠这些水和空气而存在。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012708.jpg"
+          ]
+        },
+        {
+          "title": "软件的投入比例",
+          "link": "https://blog.feenk.com/developers-spend-most-of-their-time-figuri-7aj1ocjhe765vvlln8qqbuhto/",
+          "description": "1979年出版的《软件工程与设计原理》中给出大型软件生命周期中程序员投入时间比例：需求分析 3%，系统分析 3%，系统设计 5%，编码 7%，模块测试 8%，集成测试 7%，维护 67%。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012808.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "AWS 的诞生",
+          "link": "https://threadreaderapp.com/thread/1347677573900242944.html",
+          "description": "2000年互联网泡沫破灭时，作者在亚马逊工作。公司面临破产，最终决定用 Linux 服务器替换昂贵的 Sun 服务器。成功转换后基础设施成本下降80%以上。CEO 贝佐斯思考将多余服务器容量出租给其他公司，同时解耦内部依赖，最终催生了 AWS。贝佐斯受电网启发：1900年企业需自备发电机，2000年企业不应必须自建数据中心。AWS 大大降低创业公司启动成本，创新爆炸。永远不要浪费危机带来的机会。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202102/bg2021020305.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202102/bg2021020304.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "《星露谷的游戏设计》",
+          "link": "https://www.pixelatedplaygrounds.com/sidequests/game-design-perspective-stardew-valley",
+          "description": "我在游戏《星露谷》上花了很多时间，不禁希望可以在游戏里雇用某人为牛和山羊挤奶，而不必每天早上花时间陪它们。我喜欢这个游戏，是因为向往田园生活，渴望逃避大公司的人生。但是最终，我仍然想雇用别人为我工作，这个游戏让我在支持资本主义还是反对资本主义方面摇摆不定。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202101/bg2021012509.jpg"
+          ]
+        },
+        {
+          "title": "NoSQL 的问题",
+          "link": "",
+          "description": "NoSQL 数据库的问题在于，随着时间的流逝，你的简单模型不可避免地变得越来越复杂，然后它不再起作用。在过去的十年中，我已经意识到使用 RDBMS 数据库基本上是100％的正确选择。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "写作的痛苦",
+          "link": "",
+          "description": "写作时感到的痛苦，是理清思想的痛苦。—— David Perell",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "勃兰多里尼定律",
+          "link": "https://en.wikipedia.org/wiki/Brandolini%27s_law",
+          "description": "勃兰多里尼定律，又称谣言不对称原理，指出批驳网络谣言的难度：反驳谣言所需的能量比产生谣言要高一个数量级。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "书籍的再版与寿命",
+          "link": "",
+          "description": "如果一本书四十年来一直再版，我们可以期待再过四十年它也会再版。如果再过十年，它确实还在再版，我就会预期它还会再存在五十年。已经存在很长时间的事物，不会像人一样'老化'，而是恰恰相反，会增加额外的预期寿命。一种事物的坚固性与其已经存在的时间成正比！",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "驯化动物的外观变化",
+          "link": "",
+          "description": "研究人员发现，随着狼、狐狸、牛、猪等野生物种的驯化，它们的外观也会发生变化，出现皮肤斑点、松软的耳朵和弯曲的尾巴。这些似乎都有利于引发人类的好奇心和友善。这就是为什么现代犬比冰河世纪的狼看起来友好得多的原因。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

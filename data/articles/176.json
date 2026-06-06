@@ -1,0 +1,448 @@
+{
+  "title": "科技爱好者周刊（第 176 期）：中国法院承认 GPL 吗？",
+  "link": "https://www.ruanyifeng.com/blog/2021/09/weekly-issue-176.html",
+  "number": 176,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "中国法院承认 GPL 吗？",
+          "link": "",
+          "description": "开源软件通常带有许可证。大家一直很想知道，如果国内用户不遵守许可证，可以去法院告他吗？\n\n上周有一条[新闻](https://www.oschina.net/news/159435)，深圳市中级人民法院一审判决，被告违反了 GPL 许可证，赔偿侵权费50万元。\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021091509.jpg)\n\n很多程序员很兴奋，认为这代表 GPL 许可证得到中国法院的认可。\n\n我仔细读了[判决书](https://wenshu.court.gov.cn/website/wenshu/181107ANFZ0BXSK4/index.html?docId=05f553bd178d4354bb48ad5100c1314f)，觉得跟大家想的不一样，这个案件很复杂，得不出法院认可 GPL 的结论。\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021091510.jpg)\n\n我简单说一下案情。\n\n济宁市罗盒网络科技有限公司（以下简称\"罗盒科技\"）在 GitHub 开源了软件 VirtualApp，使用了 GPL 许可证。但是，他同时又声明，不得用于商业用途，除非购买商业授权。\n\n大家觉得，这个声明有问题吗？ **可以既采用 GPL 许可证，又不许用于商业用途吗？**\n\n回答是，这个声明有很大问题。GPL 许可证允许商用，只要你用了这个许可证，别人就可以把你的代码用于商业用途。\n\n[开源小知识]\n\n如果想禁止商用，就不能使用 Copyleft 许可证（比如 GPL），而是要添加一个自己的许可声明，比如\"源码只供个人学习，不得商用，除非购买商业许可证\"。\n\n因此，罗盒科技一开始的许可证选择，就有问题，后来果然出了问题。\n\n有一个叫做\"点心桌面\"的商业 App，使用了 VirtualApp。罗盒科技就控告开发商福建风灵公司侵权，要求赔偿2000万元。\n\n罗盒科技起诉的理由，不是对方违反 GPL，没有开源\"点心桌面\"，而是对方没有付款，就将代码用于商业用途。\n\n所以，准确的说，这个案件跟 GPL 许可证没有直接关系，只跟风灵公司没有获得商业授权有关。法院最后判决被告败诉，也是这个原因。\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021091511.jpg)\n\n但是前面说了，GPL 许可证允许商业用途，风灵公司就抓住了这一点，为自己辩护，宣称自己使用的是项目的 GPL 版本，不是商业版本，因此可以商用。\n\n他们没想到的是，GPL 许可证的[第八条](https://www.gnu.org/licenses/gpl-3.0.html)明确写明，如果使用者不开源自己的代码，GPL 授权失效。\n\n第八条 传播或修改代码时，如果不遵守规定的条件，授权自动终止。\n\n法院因此认为，风灵公司不符合条件，不能使用 GPL 为自己的商业行为辩护。所以，这个案件不是法院认可了 GPL，而是法院认为被告不适用 GPL 许可证。\n\n假如风灵公司遵守了 GPL，公开了\"点心桌面\"的源码，那还构成侵权吗？我的个人看法是，那样就不侵权。\n\n总之，GPL 在国内维权还是很困难。它是按照美国法律写的，所有中文版都是网友翻译的，有没有准确表达含义都很难说。 **中国法院就算认可 GPL，也是作为代码作者与用户之间的合同看待。**\n\n这意味着两点。\n\n（1）只有代码作者才能提起侵权诉讼，其他人没法控告违反 GPL 的行为。\n\n（2）就算胜诉，最多就是对方软件下架或者赔偿损失，很难强制开源代码，因为中国合同法没有这种先例，而且法律允许对方拒绝继续履行合同。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091509.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091510.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091511.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "使用 Node.js 开发一个 CLI 工具",
+          "link": "",
+          "description": "Node.js 诞生已经超过10年了。因为它，前端开发出现了翻天覆地的变化。\n\n直到今天，你要学习前端的主流技术，首先就要掌握 Node.js，因为所有开发都要在它下面完成。\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021091601.jpg)\n\n很多同学都想知道，怎么才能掌握 Node.js？\n\n对于新人来说，其实只要掌握两个知识点，就能上手了：**一个是 CommonJS 模块格式，另一个就是命令行环境** （command line，简写为 CLI）。其余部分就是普通的 JavaScript 语法。\n\n上面两个知识点之中，CommonJS 比较简单，命令行有点难，因为内容多，需要了解操作系统，以及 Node.js 提供的各种系统接口，最常用的就是文件系统接口。\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021091604.jpg)\n\n这一周介绍的课程，就是 **《教你使用 Node.js 开发一个 CLI 工具》**，教大家快速入门命令行开发。\n\n这是一门视频课，手把手带你从零开始写一个 JS 脚本，把它做成命令行工具，并发布到 NPM 上面，可以给其它人下载使用。\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021091602.jpg)\n\n它不同于那些直接讲述技术点的课程，不是生硬的文档解读，而是从具体的问题出发，带出知识点，立足于教会学习者，解决现实场景中的实际问题，属于\"实务导向\"。\n\n课程的主讲老师崔效瑞，有丰富的前端开发经验，是 Vue 3 的代码贡献者，也是 Element3 技术负责人、mini-vue 作者。\n\n![](https://cdn.beekka.com/blogimg/asset/202109/bg2021091603.jpg)\n\n微信扫描上方二维码报名，就可以领取这门视频课，并了解课程的详细情况。课程推广期间，**不收取任何费用**，保证没有套路。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091601.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091604.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091602.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091603.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "二氧化碳捕捉工厂",
+          "link": "https://climeworks.com/orca",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091101.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091102.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091103.jpg"
+          ]
+        },
+        {
+          "title": "搞笑诺贝尔奖",
+          "link": "https://mp.weixin.qq.com/s/9mTIHBJox5JMkrbl9nJcqA",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091303.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091304.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091305.jpg"
+          ]
+        },
+        {
+          "title": "违规跑鞋",
+          "link": "https://www.thepaper.cn/newsDetail_forward_14479959",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091401.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091402.jpg"
+          ]
+        },
+        {
+          "title": "游戏厅的衰落",
+          "link": "https://www.japantimes.co.jp/life/2021/06/06/digital/japanese-gaming-arcades-pandemic/",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202108/bg2021082006.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202108/bg2021082007.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202108/bg2021082008.jpg"
+          ]
+        },
+        {
+          "title": "漂浮式光伏电站",
+          "link": "http://m.cnhubei.com/content/2021-05/15/content_13795434.html",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021090906.jpg"
+          ]
+        },
+        {
+          "title": "果蝇独居的后果",
+          "link": "https://www.nature.com/articles/d41586-021-02194-2",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202108/bg2021082105.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202108/bg2021082104.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "WebOS 死亡十周年纪念",
+          "link": "https://sspai.com/post/68372",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202108/bg2021082206.jpg"
+          ]
+        },
+        {
+          "title": "消灭后视镜",
+          "link": "https://mp.weixin.qq.com/s/tUeFiMbQhpmXkffxVsts5w",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202108/bg2021082405.jpg"
+          ]
+        },
+        {
+          "title": "如何免费搭建一个 VS Code 网页版",
+          "link": "https://justyy.com/archives/45744",
+          "description": "",
+          "user": "DoctorLai",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1953",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091514.jpg"
+          ]
+        },
+        {
+          "title": "你所不知道的 ASML",
+          "link": "https://threadreaderapp.com/thread/1429464932446183431.html",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202108/bg2021082306.jpg"
+          ]
+        },
+        {
+          "title": "12 张视觉错觉图片",
+          "link": "https://nautil.us/blog/12-mind_bending-perceptual-illusions",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202108/bg2021082803.jpg"
+          ]
+        },
+        {
+          "title": "绝对值的计算并不简单",
+          "link": "https://habr.com/en/post/574082/",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202108/bg2021082305.jpg"
+          ]
+        },
+        {
+          "title": "React usePrevious 钩子",
+          "link": "https://davidwalsh.name/react-useprevious-hook",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "浏览器的\"包导入地图\"",
+          "link": "https://github.com/wicg/import-maps",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Ventoy",
+          "link": "https://github.com/ventoy/Ventoy",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202108/bg2021082403.jpg"
+          ]
+        },
+        {
+          "title": "WebDen",
+          "link": "https://webden.dev/landing/",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202108/bg2021082605.jpg"
+          ]
+        },
+        {
+          "title": "高亮显示网页源码的工具",
+          "link": "",
+          "description": "一个 Web 小工具，输入网址，就可以高亮显示该网址的源码，非常好用。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "fishdraw",
+          "link": "https://github.com/LingDong-/fishdraw",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202108/bg2021081311.jpg"
+          ]
+        },
+        {
+          "title": "MDvideo",
+          "link": "http://mdvideo.gshll.com/",
+          "description": "",
+          "user": "linqian02",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1952",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091513.jpg"
+          ]
+        },
+        {
+          "title": "GitHub 搜索引擎",
+          "link": "",
+          "description": "油猴脚本，用来处理 GitHub 的网页搜索结果，可以根据仓库分类，并自动获取分页结果，即不用点击\"下一页\"了。",
+          "user": "foamzou",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1941",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091210.jpg"
+          ]
+        },
+        {
+          "title": "iDraw.js",
+          "link": "https://idraw.js.org/",
+          "description": "",
+          "user": "chenshenhai",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1949",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091308.jpg"
+          ]
+        },
+        {
+          "title": "PikaScript",
+          "link": "",
+          "description": "",
+          "user": "pikasTech",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1944",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091306.jpg"
+          ]
+        },
+        {
+          "title": "miniprogram-state",
+          "link": "",
+          "description": "小程序状态管理库，方便管理页面状态，支持各公司的小程序。",
+          "user": "linjc",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1940",
+          "images": []
+        },
+        {
+          "title": "Neumorphism",
+          "link": "https://neumorphism.coldstone.fun/",
+          "description": "",
+          "user": "xrr2016",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1951",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091512.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "Samantha Ming 的前端技巧",
+          "link": "https://www.samanthaming.com/",
+          "description": "",
+          "user": "wxyudl",
+          "user_link": "https://www.samanthaming.com/",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091307.jpg"
+          ]
+        },
+        {
+          "title": "糖尿病教育网站",
+          "link": "https://dtc.ucsf.edu/zh-hans/",
+          "description": "",
+          "user": "Stupid-Human",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1938",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091110.jpg"
+          ]
+        },
+        {
+          "title": "程序员的数学导论",
+          "link": "https://pimbook.org/",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202108/bg2021081702.jpg"
+          ]
+        },
+        {
+          "title": "SQL Bolt",
+          "link": "https://sqlbolt.com/",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202107/bg2021071714.jpg"
+          ]
+        },
+        {
+          "title": "国际数据管理手册",
+          "link": "http://www.grcdi.nl/gsb/global%20sourcebook.html",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202108/bg2021080512.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "手机学习网页开发",
+          "link": "https://www.linkedin.com/posts/shubham-sharma-34bbab18b_webdevelopment-css-html-activity-6820715919568961536-WApS/",
+          "description": "一个尼泊尔老师在网上贴出照片，他的学生没有笔记本电脑，只能通过手机架设开发环境，学习网页开发。经过两个月，这个学生已经初步掌握 HTML、CSS 和 JS。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202107/bg2021072205.jpg"
+          ]
+        },
+        {
+          "title": "世界上最长的钢琴",
+          "link": "https://www.alexanderpiano.nz/page/the-alexander-piano",
+          "description": "钢琴的音质与琴弦的长度有关。琴弦越长，振动越慢，就能发出越低频的声音，所以高级的三角钢琴，体积都很大，长度都不短于2.3米。一个新西兰青年阿德里安不禁突发奇想，如果制造一个特别长的钢琴，不就可以发出非常低的音频吗？他决定自己来造一个，从图书馆找到资料，在钢琴师傅的指导下，开始动手建造。最后，他造出了世界上最长的钢琴，长度接近10米。他说，本想造得更长，但是他家的车库放不下了。果然，这架钢琴的音质相当好，吸引了很多专业音乐家专程来演奏，还灌制了唱片。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202107/bg2021071706.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202107/bg2021071707.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202107/bg2021071708.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202107/bg2021071704.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202107/bg2021071705.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202107/bg2021071709.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202107/bg2021071710.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202107/bg2021071711.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202107/bg2021071712.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202107/bg2021071713.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "乔布斯的白板事件",
+          "link": "",
+          "description": "摘自沃尔特·艾萨克森的《乔布斯传》。\n\n1985年，30岁的乔布斯被赶出了苹果公司。他随即创立了 NeXT 公司，继续开发符合他理想的下一代个人电脑。\n\n1986年，一家叫做 Pixar 的图形硬件公司找到了乔布斯。那家公司濒临破产，急需资金。乔布斯经过思考，同意给钱，成为这家公司的最大投资者。最初，这只是一笔单纯的风险投资。但是后来几年，Pixar 还是不断亏损，乔布斯不得不追加投资，最后索性成了公司的董事长，直接介入公司管理。那时，乔布斯每周有一两天去 Pixar 公司办公，剩下的时间就去 NeXT 公司办公。\n\n进入九十年代以后，NeXT 公司和 Pixar 公司的业务都不见起色，看上去两家公司都会失败。这是乔布斯一生中的最低潮，他的压力很大。\n\n有一天，Pixar 公司开会，乔布斯对 Pixar 创始人史密斯和其他高管破口大骂。因为他们一直拖延，没有按时拿出下一代图像电脑的电路设计。那个时候，NeXT 的新产品也没有按时完成。史密斯就反唇相讥：\"嘿，你的 NeXT 电路板做完了吗？不要光盯着我们。\"乔布斯听了勃然大怒。史密斯后来回忆：\"他气到失去理智。\" 史密斯说话有西南部口音，乔布斯就学他的口音，冷嘲热讽。史密斯说：\"他欺人太甚，太过分了。我也气炸了，什么话都骂出口。于是我们几乎贴着对方的面，大约只隔一个巴掌宽，互相对骂。\"\n\n乔布斯开会时，一定要把白板据为己有，不轻易让别人使用。史密斯利用自己的大块头，一把推开他，迳自走到白板前，边写边解释。乔布斯吼道：\"你给我住手！\" \"咦？\"史密斯回击：\"白板是你的吗？我不能写吗？简直是胡扯。\"乔布斯气得当场离席。\n\n这场会议以后不久，史密斯就辞职离开了 Pixar，自己创业开了一件软件公司，专攻电脑绘图和影像编辑。他很幸运，微软后来买下了他的公司。他可能是历史上唯一一位，创立了两家公司，一家卖给了乔布斯，另一家卖给了比尔·盖茨。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091611.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091613.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202109/bg2021091612.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "1",
+          "link": "",
+          "description": "如果你走得足够远，其实就再也没办法回去了。当你回到故乡，原来的一切都已经消失了。不过，这也不算什么，归根结底，旅程才是你的故事中最重要的部分。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "2",
+          "link": "",
+          "description": "二战开始后，德国轰炸伦敦。伦敦市区每天晚上都有炸弹落下，郊区的炸弹比较少，可能每周一次。战后的调查发现，在这段时期，市区居民的胃溃疡发病率显著增加，奇怪的是，郊区居民的胃溃疡发病率，增加得比市区还要大得多。这说明压力的不确定性比压力本身伤害更大。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "3",
+          "link": "",
+          "description": "Dropbox 这个软件给人的感觉是，很早就达到了顶峰，然后随着开发团队尝试添加越来越多的功能，而逐渐变得糟糕。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "4",
+          "link": "",
+          "description": "赚到一百万美元以后，再往前走的动力都来自你的热情。",
+          "user": "Joel Spolsky",
+          "user_link": "https://news.ycombinator.com/item?id=27865101",
+          "images": []
+        },
+        {
+          "title": "5",
+          "link": "",
+          "description": "幸福的秘诀就是永远抱有低期望值。（the secret to happiness is low expectations.）",
+          "user": "Hacker News 读者",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

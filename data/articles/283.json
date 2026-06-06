@@ -1,0 +1,421 @@
+{
+  "title": "科技爱好者周刊（第 283 期）：[年终感想] 没有目的地，向前走",
+  "link": "https://www.ruanyifeng.com/blog/2023/12/weekly-issue-283.html",
+  "number": 283,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "《我从来没有目标》",
+          "link": "https://m.signalvnoise.com/ive-never-had-a-goal/",
+          "description": "今天，我想分享 BaseCamp 公司创始人 Jason Fried 的一篇短文，题目就叫《我从来没有目标》。下面就是这篇文章的主要内容。我不记得自己有什么目标，那种很具体的目标。有些事情我一直想做，但如果不做，我也能接受。有些事情值得去做，但如果没有做到，我也不觉得很遗憾。我的目标不是那样。我做事，我尝试，我建造，我想要取得进步，我想让我做的东西使得自己、使得公司、使得家庭、使得社会变得更好。但我从未设定过目标。这不是我做事的方式。目标是当你到达时就会消失的东西。一旦你到达了，它就消失了。你总是可以设置另一个，我只是不按这样的步骤行事。我只是做我正在做的事情，然后就到了现在的地方。今天我继续以同样的方式对待工作和生活。他的文章到这里就结束了。我很喜欢作者的这种态度。你可以不给自己设定目标，因为目标是你做事的副产品。只要你按照自己的信念，不断地努力去做事、去尝试，就可以了，至于能做到哪一步，顺其自然就好了。有一句成语\"功不唐捐\"，就是这个意思，付出的努力不会白费。西方人说：\"Passion never fails\"（激情不会失败），也是同样的意思。建造那些你想要建造的东西，努力做事，认真生活，人生可以没有目标。新的一年，我想我也是这样，没有目的地，就是向前走。",
+          "user": "Jason Fried",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121604.webp",
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121605.webp",
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121607.webp",
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121606.webp",
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121608.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "掘金年度技术演讲",
+          "link": "https://juejin.cn/meetings/talk2023?utm_source=ruanyifeng",
+          "description": "每到年末，都会有很多年度演讲，盘点过去一年。今年，掘金社区做了一个尝试，推出了\"年度技术演讲\"，专门盘点2023年的技术大事。活动时间是明年1月20日（星期六），上午是主论坛的技术嘉宾演讲，下午是分论坛的专业领域讨论会，涉及大前端、云、AI 等热点领域。这一年很不容易，终于过完了，主办方搭了一个场子，让大家聚在一起分享技术趋势，结交朋友。活动地点是深圳的万丽酒店，点击这个链接，或扫描上方二维码，了解活动详情并免费报名。因为这次的场地是五星级酒店，座位有限，采用实名制，会有一个审核环节。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023122107.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "冷知识",
+      "items": [
+        {
+          "title": "美国国防部是世界最大的老虎机运营商之一",
+          "link": "https://www.npr.org/2022/07/31/1110882487/dod-slot-machines-overseas-bases",
+          "description": "以提高\"军人的士气、福利和娱乐\"的名义，美国国防部在海外的美军基地运行着3,000多台老虎机，每年从中赚取1亿美元的收入。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023120414.webp"
+          ]
+        },
+        {
+          "title": "美国现在还有工厂生产搓衣板",
+          "link": "https://www.wsj.com/amp/articles/americas-last-washboard-factory-isnt-ready-to-throw-in-the-towel-11674744553",
+          "description": "疫情期间，搓衣板的销量增长了57%，不过其中40%是作为打击乐器出售的。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121705.webp"
+          ]
+        },
+        {
+          "title": "假肚脐贴纸",
+          "link": "https://www.scmp.com/news/people-culture/gender-diversity/article/3230438/fake-belly-buttons-all-rage-china-women-seek-freedom-dress-and-boost-confidence-some-raise-body",
+          "description": "为了让腿显得更长，中国厂商发明了\"假肚脐\"贴纸。它贴在实际肚脐上方几厘米处，然后把真肚脐遮住，创造出双腿更长的错觉。电商网站上，4元可以买到32张。根据商品说明，它们不反光，甚至防水，还不易脱落。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121706.webp"
+          ]
+        },
+        {
+          "title": "一道闪电含有大约0.25千瓦时的能量",
+          "link": "",
+          "description": "一道闪电含有大约0.25千瓦时的能量，换算成电费，只有1角多的人民币。闪电的能量虽然不是非常大，但是持续时间只有几微秒，电压高达数百万伏，所以才会如此危险。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121703.webp"
+          ]
+        },
+        {
+          "title": "远程娃娃机App",
+          "link": "https://www.ft.com/content/c5aedb42-8ab6-40d3-bbfb-6ac8112e4c15",
+          "description": "一家以色列公司推出了手机 App \"远程娃娃机\"，让你在手机上远程操作他们仓库里面的实体娃娃机。如果抓到了，他们就把娃娃寄给你。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121704.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Google Gemini",
+      "items": [
+        {
+          "title": "Gemini Pro 免费使用站点",
+          "link": "https://googlegemini.co/",
+          "description": "这是网友写的一个极简 UI，调用 Gemini 的 API。你可以试用作者部署的 Demo，也可以本地运行。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023122108.webp",
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121717.webp"
+          ]
+        },
+        {
+          "title": "Google Gemini 的图像能力测试",
+          "link": "https://blog.roboflow.com/first-impressions-with-google-gemini/",
+          "description": "一个外国程序员分别对 Gemini 和 GPT-4V 进行了四项测试（图片问答、文字识别、文档识别、物体检测），然后写了这篇文章。大家可以看看测试结果，到底孰强孰弱。我们还可以学习他的测试方法，用于评估其他模型。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121402.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "Have I Been Pwned 的创始人",
+          "link": "https://www.abc.net.au/news/2023-09-23/cybersecurity-troy-hunt-have-i-been-pwned-fighting-data-breaches/102803748",
+          "description": "\"Have I Been Pwned\"（上图）是一个著名的密码泄漏检查网站，输入邮件地址，它会显示你的密码是否泄漏。本文介绍该网站创始人的故事（下图）。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023122109.webp",
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023092405.webp"
+          ]
+        },
+        {
+          "title": "Linux 如何安装字体",
+          "link": "https://linuxiac.com/how-to-install-fonts-on-linux/",
+          "description": "本文总结了 Linux 安装字体的各种方法。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082601.webp"
+          ]
+        },
+        {
+          "title": "浏览器的67个调试技巧",
+          "link": "https://alan.norbauer.com/articles/browser-debugging-tricks",
+          "description": "浏览器的开发者工具怎么调试 JS 脚本，本文介绍67个高级技巧。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023111107.webp"
+          ]
+        },
+        {
+          "title": "ESLint 新规则：禁止常量运算式",
+          "link": "https://eslint.org/blog/2022/07/interesting-bugs-caught-by-no-constant-binary-expression/",
+          "description": "本文介绍 ESLint 的一条新规则`no-constant-binary-expression`，如果一个 JavaScript 运算式的运算结果为常量，就报错。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023111209.webp"
+          ]
+        },
+        {
+          "title": "构建 Web 应用的四种方法",
+          "link": "https://tomhummel.com/posts/four-web-apps/",
+          "description": "本文总结了目前架设网站的四种方法：静态网站、云函数、服务器、容器。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023111211.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "ASCII 圣诞树",
+          "link": "",
+          "description": "一个 Python 脚本，可以在终端窗口显示下雪和圣诞树。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121603.webp"
+          ]
+        },
+        {
+          "title": "AI 图片动漫化",
+          "link": "",
+          "description": "这个网站可以将上传的图片动漫化，也可以通过文本生成动漫图片。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121601.webp"
+          ]
+        },
+        {
+          "title": "CBox",
+          "link": "https://github.com/jokimina/cbox-chrome-extension",
+          "description": "Chrome 浏览器插件，通过快捷键唤起一个弹窗，执行各种操作（搜索、浏览历史、跳转标签）。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121901.webp"
+          ]
+        },
+        {
+          "title": "DartBook",
+          "link": "https://github.com/lindeer/dartbook",
+          "description": "作者重新实现的 GitBook，加快了 Markdown 的解析速度，并新增了一些功能。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121906.webp"
+          ]
+        },
+        {
+          "title": "文字/代码分享网站",
+          "link": "",
+          "description": "一个基于 Cloudflare Worker 实现的文字/代码分享网站，类似于 Pastebin。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023122101.webp"
+          ]
+        },
+        {
+          "title": "命令行文件翻译工具",
+          "link": "",
+          "description": "一个命令行的文件翻译工具，可以翻译.txt、.pdf、.docx、.md、.mobi、.epub 文件，需要 OpenAI key。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "V2ex 论坛增强插件",
+          "link": "",
+          "description": "一款浏览器插件，用来增强 V2ex 论坛的功能。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121907.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "ChatGPT 周刊助手",
+          "link": "",
+          "description": "网友将周刊迄今的所有内容进行了向量化索引，提交给 ChatGPT，然后就可以跟周刊问答了。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121916.webp"
+          ]
+        },
+        {
+          "title": "每日热点新闻",
+          "link": "",
+          "description": "ChatGPT 选出的每日热点新闻。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023122004.webp"
+          ]
+        },
+        {
+          "title": "Emoji 搜索引擎",
+          "link": "",
+          "description": "Emoji 搜索引擎，支持30种语言，代码开源。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121802.webp"
+          ]
+        },
+        {
+          "title": "中文版黑客新闻",
+          "link": "https://dizkaz.com/",
+          "description": "作者用 Go 语言实现的黑客新闻的克隆版。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121903.webp"
+          ]
+        },
+        {
+          "title": "独立开发者平台",
+          "link": "",
+          "description": "针对独立开发者的交流、合作、分享的平台。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121905.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "新年创意礼物",
+      "items": [
+        {
+          "title": "浇花吸管",
+          "link": "https://plantstraws.co/products/plant-straw-small",
+          "description": "金属管里装有棉条，将水缸里的水吸到花盆里面。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121715.webp"
+          ]
+        },
+        {
+          "title": "以色列OTOTO设计工作室的创意厨具",
+          "link": "https://ototodesign.com/collections/new",
+          "description": "包括沥水篮、汤勺、搁架、玻璃杯、榨汁器等。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121709.webp",
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121710.webp",
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121713.webp",
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121712.webp",
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121714.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "海水含氧量",
+          "link": "https://e360.yale.edu/features/as-ocean-oxygen-levels-dip-fish-face-an-uncertain-future",
+          "description": "全球变暖对地球生物产生巨大威胁，其中一个较少被注意、但影响巨大的威胁就是海水含氧量。海水里面溶解了氧气，海洋生物依赖这些氧气。根据观测，海水的氧气含量正在不断下降，海洋生物越来越难生存。这有四个原因。（1）全球变暖，海水升温。根据物理学，温度上升会让溶解的气体变少。（2）海水流动变小。深层海水的含氧量，取决于表层海水的混入，但是地表的融冰增加，使得注入海洋的地表水密度变小，不利于向下混合。（3）洋流减少。南极和北极正在快速升温，与赤道的温差变小，抑制洋流和地表的风。这进一步减少了海水流动。（4）浮游生物增加。海水升温导致细菌和藻类大量繁殖，它们会吞噬海水里面的氧气，使得其他生物窒息。以上原因导致海水含氧量不断减少。它的后果十分严重，海洋鱼类种类随之减少，而且鱼类也会变得更小、发育不良。大量鱼类迁移到含氧量更高的水域，导致气温最高的热带海洋地区将没有鱼。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023122110.webp",
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023122111.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "Tim Carmody 的评论",
+          "link": "https://kottke.org/23/11/snarkmarket-turns-20",
+          "description": "学生不再是学生，新手变成专家，大家开始组建家庭，所有对你的时间的要求都变得非常苛刻。",
+          "user": "Tim Carmody",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "行业泡沫信号",
+          "link": "",
+          "description": "如果一个行业向不擅长其工作的人支付高薪，这是一个信号，表明该行业存在泡沫。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "软件工程的教训",
+          "link": "",
+          "description": "（1）如果不了解系统的工作原理，就无法在系统之上构建东西。（2）尖端方法是灾难的根源。（3）那些宣传得很美好的事物都是炒作，你只能得到承诺的一小部分效果。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "慢就是顺利，顺利就是快",
+          "link": "https://dtransposed.github.io/blog/2023/11/02/Remote-SWE/",
+          "description": "慢就是顺利，顺利就是快。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "茶的两种读音",
+          "link": "https://resobscura.substack.com/p/historical-maps-probably-helped-cause",
+          "description": "全世界各种语言的\"茶\"，只有两种读音，一种是 chai，另一种是 tea。它们都来源于中文，第一种是北方普通话读音，第二种是福建沿海的闽南话读音。显然，采用第一种读音的国家，茶叶源自中国的陆路传播。采用第二种读音的国家，茶叶源自中国的海路传播。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "iPhone 应用",
+      "items": [
+        {
+          "title": "嗯背单词",
+          "link": "",
+          "description": "iPhone 背单词应用。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121902.webp"
+          ]
+        },
+        {
+          "title": "成语接龙游戏",
+          "link": "https://animos.ai/zh-CN#description",
+          "description": "小朋友跟 AI 模型玩成语接龙游戏。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121904.webp"
+          ]
+        }
+      ]
+    }
+  ]
+}

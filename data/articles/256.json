@@ -1,0 +1,422 @@
+{
+  "title": "科技爱好者周刊（第 256 期）：最酷的乐高作品",
+  "link": "https://www.ruanyifeng.com/blog/2023/05/weekly-issue-256.html",
+  "number": 256,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "最酷的乐高作品",
+          "link": "https://brickexperimentchannel.wordpress.com/2023/04/29/lego-googol-machine/",
+          "description": "国外网友用乐高搭出的齿轮减速器。它的动力来自一个电动机，每分钟旋转375次。经过一系列齿轮减速，最终会带动一个塑料玩偶。减速效果达到了匪夷所思的 10^100 : 1。原理很简单，就是小齿轮带动大齿轮。一个8齿的小齿轮带动一个24齿的大齿轮，转速放慢3倍。大齿轮上面再固定一个8齿的小齿轮，去带动一个更大的40齿的齿轮，转速再慢5倍。不断重复，转速越来越慢。作者甚至还用到了168齿的超级齿轮。最终的减速比就达到了惊人的 10^100 : 1。我从没想过，乐高积木能达到宇宙级别的数量级，真是神奇。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052219.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052210.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052404.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052211.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052212.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052213.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052214.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052215.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052216.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052217.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052218.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052220.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "腾讯 PAG",
+      "items": [
+        {
+          "title": "腾讯 PAG 动效组件",
+          "link": "https://pag.art/",
+          "description": "腾讯开发的一个跨平台动效组件，只要做一次动画，就能用在所有平台（手机、Web、小程序、Windows、Linux、Mac......）。它不依赖平台自带的图形渲染，本质上是独立的图形渲染解决方案。优点：开发成本低、简化开发流程、支持所有 AE 特性、资源占有少、自带开发工具 PAG Viewer。腾讯从2017年开始研发，已在微信、QQ、王者荣耀、小红书、知乎等产品中使用。去年已开源。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052201.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052203.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052204.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "声控手机",
+          "link": "https://interestingengineering.com/innovation/humane-ai-wearable-potential-iphone-killer",
+          "description": "一家美国创业公司发布了一个可穿戴的声控装置，号称可以取代手机。最大特点是没有屏幕，投影在手掌上操作。据说还能解决手机上瘾。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052205.webp"
+          ]
+        },
+        {
+          "title": "AI 漫画",
+          "link": "https://the-decoder.com/the-last-stargazer-is-a-comic-created-with-ai-art/",
+          "description": "一个美国漫画家使用 AI 模型生成了一本漫画书，已上架销售。最大难度是 AI 很难保持画风统一，需反复输入主角长相。整部漫画耗时一个月制作，在亚马逊网上书店畅销。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112704.webp",
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112702.webp",
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022112703.webp"
+          ]
+        },
+        {
+          "title": "洛杉矶候车亭",
+          "link": "https://walkingtheworld.substack.com/p/why-the-us-cant-have-nice-things",
+          "description": "洛杉矶市政府引入了一种只能供一人使用的候车亭，既可以遮阳，夜间还能当作路灯，但既不足以遮阳也不足以照明，每个成本1万美元。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052511.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052512.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052513.webp"
+          ]
+        },
+        {
+          "title": "无叶片飞机",
+          "link": "https://interestingengineering.com/transportation/us-startups-bladeless-vtol-can-reach-up-to-08-mach",
+          "description": "一家美国公司开发出了无叶片的垂直起降飞机。原理与无叶片风扇相似，采用压缩空气产生推力。动力比较小，目前只用于小型无人飞机。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011901.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011902.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "AI 模型为什么都以羊驼起名",
+          "link": "https://sspai.com/post/79443",
+          "description": "那些开源的 AI 模型的名字，往往跟偶蹄目羊驼有关，这是为什么。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023051819.webp"
+          ]
+        },
+        {
+          "title": "飞碟幻想消亡史",
+          "link": "https://mp.weixin.qq.com/s/x3haEmgZF2qZ4Os4vmixjA",
+          "description": "上个世纪《飞碟探索》曾经是国内发行量最大的科普杂志之一。本文回顾了它的兴衰史，'飞碟热'的消退也是中国人科学素质提高的一种表现。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052509.webp"
+          ]
+        },
+        {
+          "title": "我发现的一个支付宝漏洞",
+          "link": "https://zhuanlan.zhihu.com/p/625230704",
+          "description": "作者先在'闲鱼'购物，再在支付宝付款，结果被骗。他发现骗子钻了漏洞，通过代码让交易自动确认'收货'。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052517.webp"
+          ],
+          "user": "childrentime",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3141"
+        },
+        {
+          "title": "我的线上立案遭遇",
+          "link": "https://mp.weixin.qq.com/s/yxiKVuSSZD16id698gIvKA",
+          "description": "作者跟银行发生纠纷，准备线上向法院申请立案，但是法院的立案系统很难用，一连操作了四次还没成功。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052518.webp"
+          ],
+          "user": "dingjs",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3138"
+        },
+        {
+          "title": "英特尔发布全新架构 x86S",
+          "link": "https://news.mydrivers.com/1/911/911250.htm",
+          "description": "英特尔发布了一个新的 CPU 指令集 x86S，只支持64位模式，可以简化 CPU 的设计。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052508.webp"
+          ]
+        },
+        {
+          "title": "zip 域名的安全担忧",
+          "link": "https://www.bleepingcomputer.com/news/security/new-zip-domains-spark-debate-among-cybersecurity-experts/",
+          "description": ".zip 和 .mov 现在都是顶级域名，开放注册。setup.zip 已经不仅是文件，而是一个可以访问的域名，可能会有一点安全风险。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023051901.webp"
+          ]
+        },
+        {
+          "title": "无边界鼠标",
+          "link": "https://learn.microsoft.com/en-us/windows/powertoys/mouse-without-borders",
+          "description": "微软发布了一项新功能'无边界鼠标'（Mouse Without Borders），Windows 直接支持一个鼠标操作局域网的四台电脑。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052401.webp"
+          ]
+        },
+        {
+          "title": "别再说 C/C++",
+          "link": "https://brycevandegrift.xyz/blog/stop-saying-c-and-c++/",
+          "description": "很多人认为，C 和 C++ 是两种很相似的语言，前者是后者的子集。本文提出这种看法不对，它们非常不一样。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052304.webp"
+          ],
+          "user": "wrenashe",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3136"
+        }
+      ]
+    },
+    {
+      "name": "数据仓库 ByConity 开源 + 招聘",
+      "items": [
+        {
+          "title": "云原生数据仓库 ByConity 正式开源",
+          "link": "https://byconity.github.io/",
+          "description": "字节自研的云原生数据仓库 ByConity 正式开源。它在 ClickHouse 基础上进行大规模改造，具有读写分离、弹性扩缩容、租户资源隔离和数据读写的强一致性等特点。同时字节数据平台团队正在招聘 OLAP 引擎工程师和数据仓库工程师。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052515.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Convoy",
+          "link": "https://github.com/frain-dev/convoy",
+          "description": "开源的 Webhooks 网关，自带管理后台，具有重试、速率限制、静态 IP、熔断等大量功能。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023040108.webp",
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023040119.webp"
+          ]
+        },
+        {
+          "title": "OpenSettings",
+          "link": null,
+          "description": "一个修改 Windows 11 配置的工具。特点是可以根据使用场景，从它的网站下载对应的配置文件，然后运行该文件就完成配置。",
+          "images": []
+        },
+        {
+          "title": "RunApi",
+          "link": "https://www.showdoc.com.cn/runapi/30291",
+          "description": "国内公司开发的一个跨平台桌面软件，用于 API 接口开发测试，类似于 Postman。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052302.webp"
+          ],
+          "user": "star7th",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3128"
+        },
+        {
+          "title": "Shaku",
+          "link": "https://github.com/JSerZANP/shaku",
+          "description": "一个 Markdown 页面的增强渲染工具，可以基于代码块里面的注释，将代码渲染成指定样式。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052303.webp"
+          ],
+          "user": "DongHY1",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3133"
+        },
+        {
+          "title": "eslint-plugin-filename-rules",
+          "link": null,
+          "description": "一个 ESLint 插件，检查文件名是否符合指定规则。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023040202.webp"
+          ],
+          "user": "DukeLuo",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3132"
+        },
+        {
+          "title": "GitStatic",
+          "link": null,
+          "description": "只需在命令行执行一条命令，就能自己搭建 Git 服务器，简单易用，但是不带 Web 界面。",
+          "images": []
+        },
+        {
+          "title": "JShelter",
+          "link": "https://jshelter.org/",
+          "description": "一个浏览器扩展，指定你要关闭哪些浏览器 API，主要用来防止被追踪。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023040403.webp"
+          ]
+        },
+        {
+          "title": "Tails",
+          "link": "https://tails.boum.org/index.en.html",
+          "description": "一个融合了 Debian 和 Tor 的操作系统，放到 U 盘里面，插入 USB 接口就能用，可以很好地保护隐私。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023010701.webp"
+          ]
+        },
+        {
+          "title": "Just",
+          "link": "https://just.systems/",
+          "description": "一个命令运行器，类似于 Make，但不具备构建功能。它允许把一个项目的所有命令行命令，都写在一个文件里面，并可以指定命令之间的依赖关系，还可以跨平台使用。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011002.webp"
+          ]
+        },
+        {
+          "title": "Dora.ai",
+          "link": "https://www.dora.run/",
+          "description": "国人开发的一个 AI 工具，给出文本描述就能生成网页，还能添加 3D 互动。目前处于测试阶段，需要排队登记内测资格。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052521.webp"
+          ],
+          "user": "CharlesLiuyx",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3144"
+        }
+      ]
+    },
+    {
+      "name": "稀土开发者大会",
+      "items": [
+        {
+          "title": "稀土开发者大会2023",
+          "link": "https://conf.juejin.cn/xdc2023/?utm_source=0525rrydrz",
+          "description": "由稀土掘金社区主办的技术大会，2023年6月30日到7月1日在北京举行，安排十几个论坛和许多干货演讲。学生票99元，使用专属优惠码 ruanyifeng 可以799元购买大会尊享全票。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052507.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "Stable Diffusion and ControlNet 开源 AI 模型指南",
+          "link": null,
+          "description": "英文电子书，介绍这两个重要的 AI 开源项目的用法，对于自己架设 AI 模型很有帮助，免费阅读。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052002.webp"
+          ]
+        },
+        {
+          "title": "Bing 壁纸数据集",
+          "link": null,
+          "description": "网友提供从必应壁纸抓取的数据。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052301.webp"
+          ],
+          "user": "mouday",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3126"
+        },
+        {
+          "title": "Zero to Mastery 强化学习网站（中文版）",
+          "link": null,
+          "description": "日本的 AI 畅销书作者斋藤康毅为他的深度学习系列书籍创建的专题网站，最近推出了中文版，可用来对强化学习知识查漏补缺。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052519.webp"
+          ],
+          "user": "RiverTwilight",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3143"
+        },
+        {
+          "title": "OpenWrt 路由器固件定制网站",
+          "link": null,
+          "description": "网友开发的路由器 Openwrt 系统定制网站，代码开源。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023041908.webp"
+          ],
+          "user": "kiddin9",
+          "user_link": "https://github.com/kiddin9/OpenWrt_x86-r2s-r4s-r5s-N1"
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "如果历史",
+          "link": "https://restofworld.org/2023/ai-tiktok-creators-rewrite-history/",
+          "description": "国外的 Tiktok 出现了一个'虚构历史'的风潮，许多账户发布 AI 生成的虚构历史的图片和视频，吸引了很多观众。一个很热门的话题是'如果印度统治英国会怎么样？'，AI 模型给出了英国警察在马路上骑骆驼的画面。其他话题还包括'如果墨西哥赢得了1848年美墨战争？'、'如果印加帝国存在到今天？'。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052206.webp",
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052207.webp"
+          ]
+        },
+        {
+          "title": "地形图",
+          "link": "https://twitter.com/Locati0ns",
+          "description": "一位 3D 打印爱好者，将各国和各地区的地形图 3D 打印出来，很直观。展示了泰国、加利福尼亚州、西班牙的地形图。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022030907.webp",
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022030908.webp",
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022030909.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "明希豪森三难困境",
+          "link": "https://zh.wikipedia.org/wiki/%E6%98%8E%E5%B8%8C%E8%B1%AA%E6%A3%AE%E4%B8%89%E9%9A%BE%E5%9B%B0%E5%A2%83",
+          "description": "德国哲学家曾经提出，凡是使用数学和逻辑学证明的命题，不可能是绝对真理。理由是如果要证明真理，论证必须有可以依赖的前提。但是，前提是否正确也需要论证，那么最终只有三种可能性。\n- 循环论证：论点与论据互相支持。\n- 无穷倒退：论证的前提没有尽头。\n- 武断终止：论证终止于一个广泛接受的前提，不再对这个前提进行论证。\n这三种可能性都不够理想，故称为'明希豪森三难困境'。明希豪森男爵是德国民间故事里面的一位虚构人物，陷在沼泽时，曾经拉着自己的头发逃出了沼泽，常用来比喻不可能的事情。这告诉我们，数学和逻辑学是有局限的，它们必须建立在一些无法证明的、公认的公理之上。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023052520.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "美国经济的优势",
+          "link": "https://www.economist.com/leaders/2023/04/13/the-lessons-from-americas-astonishing-economic-record",
+          "description": "美国经济的一个优势是，在美国创业很容易，解雇员工和企业破产也很容易，这大大方便了资源的快速重组。"
+        },
+        {
+          "title": "工作永无止境",
+          "link": "https://patwalls.com/the-work-never-ends",
+          "description": "工作永无止境，所以学会热爱工作，享受工作，沉迷于工作吧，否则人生就太痛苦了。"
+        },
+        {
+          "title": "谷歌的效率低下",
+          "link": "https://old.reddit.com/r/ArtificialInteligence/comments/12h2ppg/ive_tested_google_bard_vs_chatgpt_and_im_shocked/jfo3dmx/",
+          "description": "人们认为谷歌是一个由研究人员、工程师、产品经理、QA、项目经理、管理人员组成的优秀团队的集体。不是的。虽然有很多杰出的工程师，一些世界级的研究人员，偶尔会有一些热情的产品经理，但总的来说，谷歌只是一个大集团，除了有钱之外，与大型政府组织没有什么不同。效率低下是公司规模扩大时的副作用。"
+        },
+        {
+          "title": "手机与隐私",
+          "link": null,
+          "description": "一旦你的手机与手机信号塔开始连接，你就没有隐私了。"
+        }
+      ]
+    },
+    {
+      "name": "历史上的本周",
+      "items": [
+        {
+          "title": "程序员是怎样的人",
+          "link": "https://www.ruanyifeng.com/blog/2022/06/weekly-issue-209.html",
+          "description": "2022 #209"
+        },
+        {
+          "title": "游戏开发者的年薪",
+          "link": "https://www.ruanyifeng.com/blog/2021/05/weekly-issue-159.html",
+          "description": "2021 #159"
+        },
+        {
+          "title": "播客的价值",
+          "link": "https://www.ruanyifeng.com/blog/2020/05/weekly-issue-109.html",
+          "description": "2020 #109"
+        },
+        {
+          "title": "互联网时代很难交朋友",
+          "link": "https://www.ruanyifeng.com/blog/2019/06/weekly-issue-59.html",
+          "description": "2019 #59"
+        }
+      ]
+    },
+    {
+      "name": "鸣谢",
+      "items": [
+        {
+          "title": "FlowUS",
+          "link": "https://flowus.cn?promotionChannel=GW_RYF_01",
+          "description": "周刊得到国内新一代知识管理与协作平台 FlowUs 的帮助，深表感谢。FlowUS = 文档 + 表格 + 网盘。你可以用它写文档、做主页、管理数据、存储文件等等。每一期周刊同时发布在 FlowUs 专栏，欢迎大家也去开通自己的专栏和主页。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023030205.webp"
+          ]
+        }
+      ]
+    }
+  ]
+}

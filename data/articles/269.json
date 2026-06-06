@@ -1,0 +1,350 @@
+{
+  "title": "科技爱好者周刊（第 269 期）：为什么英雄不使用炸药",
+  "link": "https://www.ruanyifeng.com/blog/2023/09/weekly-issue-269.html",
+  "number": 269,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "为什么英雄不使用炸药",
+          "link": "https://www.ruanyifeng.com/blog/2023/09/weekly-issue-269.html",
+          "description": "经典奇幻电影《指环王》，大家都看过吧？\n\n里面有一个细节，你肯定没注意。我也是听[别人说](https://warfantasy.wordpress.com/2023/08/20/why-fantasy-avoids-gunpowder/)才发现的：**这个故事里面的好人，都不使用炸药。**\n\n炸药（或者炮弹）是最有效的攻城杀敌方法，但是人类之王阿拉贡从来不用，作战方法永远是举着宝剑冲入敌阵。\n\n![](https://cdn.beekka.com/blogimg/asset/202308/bg2023082702.webp)\n\n\n不仅人类不使用火药，精于冶炼的矮人也不使用，会法术的精灵和巫师就更不屑使用了。\n\n反倒是坏人一方的哥布林和兽人，使用了炸药。比如圣盔谷之战，他们就炸毁了城墙。\n\n![](https://cdn.beekka.com/blogimg/asset/202308/bg2023082703.webp)\n\n\n这真的很奇怪，为什么好人只使用冷兵器，坏人却在使用更高级的热兵器？\n\n一种解释是，《指环王》是中世纪故事，那时火药还未传入欧洲，坏人一方碰巧先知道了火药的制造方法。\n\n问题是不仅《指环王》，**所有的奇幻/科幻作品，英雄几乎都不使用炸药，更喜欢肉搏战。**\n\n《冰与火之歌》也没有枪支和炸药，只有冷兵器和女主角的龙。\n\n![](https://cdn.beekka.com/blogimg/asset/202308/bg2023082704.webp)\n\n\n《星球大战》倒是有炸药，最厉害的帝国死星（death star），可以一击炸掉整个行星。但是，绝地武士坚持使用光剑，一定要跟敌人肉搏。\n\n![](https://cdn.beekka.com/blogimg/asset/202308/bg2023082705.webp)\n\n\n《复仇者联盟》的超级英雄使用炸药吗？一个都没有，反倒有人使用盾牌和弓箭。\n\n![](https://cdn.beekka.com/blogimg/asset/202308/bg2023082706.webp)\n\n\n总之，**英雄们好像商量好了一样，集体放弃炸药，更愿意使用冷兵器和拳头。**\n\n这跟真实历史完全相反。自从火药发明，战争的破坏和恐怖大大升级。\n\n火药出现之前，战争的胜负取决于肉搏战，士兵的个人力量和训练水平是决定因素。而且，有骑兵的一方占优势。\n\n火药出现之后，战争进入了工业化阶段。士兵个人不那么重要了，谁的炮火更强大，谁获胜。所以，骑兵很快就被淘汰，也没人再造城墙和城堡了。\n\n因此，**火药意味着两大变化：一是化学反应胜过个人能力，二是战争不需要面对面肉搏了。**\n\n这两点都不利于文艺作品塑造英雄。只要使用了炸药，就显示不出英雄的力量。另外，英雄需要多年的训练和学习，而炸药只需短期培训，这也不利于文艺作品讲故事。\n\n结论就是，**炸药象征着工业革命和科学，跟个人英雄是冲突的**。一旦使用了炸药，英雄故事就讲不好了，削弱了感染力，所以奇幻/科幻小说和电影里面，主角都不用炸药。\n\n进一步说，随着工业革命的不断发展，个人在机器和科学面前越来越微不足道。这导致个人英雄主义在现实主义作品中，已经表现不出来了，只能转移到奇幻/科幻作品。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082702.webp",
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082703.webp",
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082704.webp",
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082705.webp",
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082706.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "钢琴的重新设计",
+          "link": "https://whipsaw.com/2023/06/05/unveiling-ravenchord-a-radical-piano-redesign-from-dan-harden/",
+          "description": "钢琴发明于17世纪，从那时起就几乎没有变化。但是最近，一个美国设计师尝试重新设计钢琴。他将琴弦从钢琴后部移到了下部，并且取消了琴盖。这样，观众可以直接看到钢琴内部，并且钢琴也变得更轻便，造型更有现代感。问题是这样的话，钢琴就没有共鸣腔，不知道会不会影响音色。另外，这种钢琴不能对着墙壁，声音可能会传不出去。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023080701.webp",
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023080702.webp",
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023080703.webp"
+          ]
+        },
+        {
+          "title": "花粉 API",
+          "link": "https://cloud.google.com/blog/products/maps-platform/announcing-pollen-api-providing-actionable-info-about-airborne-pollen-levels-worldwide",
+          "description": "有些人对花粉过敏，或者患有过敏性鼻炎。为了方便这样的人群，谷歌地图最近推出了\"花粉 API\"。它将全球陆地分成 1 公里 x 1 公里的网格，根据各种数据，使用模型预测，网格内15种植物的花粉情况。你选择一个地点，就能知道当地的花粉活动情况。另外，谷歌地图同时还推出了一个\"太阳能 API\"。你只要选中一栋房屋，它会根据卫星照片，计算出屋顶可以安装多少面积的光伏板（上图），以及按照当地的日照情况，全年可以发多少度电。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023083005.webp",
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023083006.webp"
+          ]
+        },
+        {
+          "title": "百年域名",
+          "link": "https://www.techspot.com/news/99956-wordpress-now-offers-100-year-domain-hosting-plan.html",
+          "description": "域名必须每年付款，如果忘了或者你不在了，这个域名就不属于你了。目前，域名最长可以一次性续费10年。WordPress 公司最近推出了一个\"百年域名\"产品，允许域名一次性续费100年。它同时还提供网站空间的100年托管，也就是说，只要你购买这个产品，就能保证自己的域名和网站在今后100年内都能访问，无论你还在不在。它的价格是3.8万美元（接近28万元人民币），必须一次付清。但是如果 WordPress 公司在100年内消失了，这个产品会怎样，就不知道了。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023083103.webp"
+          ]
+        },
+        {
+          "title": "AI 假书",
+          "link": "https://www.kocpc.com.tw/archives/508194",
+          "description": "网友发现，亚马逊网上书店有两本关于蘑菇的书籍，其实是 AI 写的，而且内容还是错的。这两本书的作者，署名都为 Edwin J. Smith，但是根本查不到这个人。书籍内容经过软件检测，85% 以上为 AI 撰写。最要命的是，它关于毒蘑菇的部分是错的，如果相信它的描述，可能会误食有毒蘑菇。纽约真菌学会为此发了一条推特，提醒用户只购买知名作者和真实采集者的书籍，这可能会关系到你的生命。目前，美国各大网上书店都有大量 AI 写的书，伪装成真人作者，读者根本无法察觉。这种现象今后很可能越来越严重。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023083110.webp",
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023083111.webp",
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023083112.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "华为的 5G 之谜",
+          "link": "https://wallstreetcn.com/articles/3696704",
+          "description": "华为本周开售 Mate 60 Pro。多方测试都表明，这部手机支持 5G。在美国制裁之下，华为怎么做出 5G 芯片（上图），目前大家都在猜测。本文是这个事件的一篇报道，另可以参考[《德国之声》](https://www.dw.com/zh/%E7%A0%94%E7%A9%B6%E6%9C%BA%E6%9E%84%E5%8D%8E%E4%B8%BA%E6%9C%89%E6%9C%9B%E5%9B%9E%E5%BD%925g%E6%89%8B%E6%9C%BA%E5%B8%82%E5%9C%BA/a-66214462)。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023083001.webp"
+          ]
+        },
+        {
+          "title": "我在2023年买了一台 iPhone 5",
+          "link": "https://sspai.com/post/81711",
+          "description": "作者花了220元人民币，买了一台 iPhone 5 作为备用机，这台10年前的手机能满足基本需要吗？上图左是 iPhone 13 mini，右是 iPhone 5。",
+          "user": "@gadore",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3413",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082804.webp"
+          ]
+        },
+        {
+          "title": "GPU 云服务商 CoreWeave 的故事",
+          "link": "https://archive.is/iessm",
+          "description": "《华尔街日报》的报道。2017年，一个基金经理买了几块 GPU，用来挖加密货币，发现非常赚钱，就不停地买 GPU。后来，加密货币暴跌，他们手里已经有几千块显卡了。为了减少损失，就开始在云上出租 GPU 运算时间。去年底 ChatGPT 出现后，他们的公司 CoreWeave 顿时成了明星。今年他们拿了 Nvidia 的风投，并向银行借了23亿美元，购买更多的 GPU。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082805.webp"
+          ]
+        },
+        {
+          "title": "为什么开发者喜欢 Rust 语言？",
+          "link": "https://github.blog/2023-08-30-why-rust-is-the-most-admired-language-among-developers/",
+          "description": "GitHub 官网的博客文章，分析 Rust 语言受欢迎的原因，为什么能在短短几年内快速崛起。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023083102.webp"
+          ]
+        },
+        {
+          "title": "大型存储系统 S3 的构建和运行",
+          "link": "https://www.allthingsdistributed.com/2023/07/building-and-operating-a-pretty-big-storage-system.html",
+          "description": "本文是亚马逊存储服务 S3 副总裁 Andy Warfield 的演讲，解释这个大型网络存储系统是怎么运行的。他在该部门工作了17年。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072802.webp"
+          ]
+        },
+        {
+          "title": "Node.js 测试工具简介",
+          "link": "https://developers.redhat.com/articles/2023/07/27/introduction-nodejs-reference-architecture-testing",
+          "description": "本文介绍了三种常用的 Node.js 测试工具：Jest、Mocha 和 Node.js 内置测试工具。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072915.webp"
+          ]
+        },
+        {
+          "title": "如何使用 Python 的 multiprocessing 模块",
+          "link": "https://developers.redhat.com/articles/2023/07/27/how-use-python-multiprocessing-module",
+          "description": "Python 的初学者教程，介绍如何完成简单的多进程编程。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072916.webp"
+          ]
+        },
+        {
+          "title": "如何用 CSS 实现随机数",
+          "link": "https://hypersphere.blog/blog/randomness-in-css-using-trigonometry/",
+          "description": "作者演示了 CSS 生成随机数的一种方法，不过相当复杂，留在这里备查吧。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023080103.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "youki",
+          "link": "https://github.com/containers/youki",
+          "description": "一个用 Rust 语言写的 Docker 镜像运行器。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023063002.webp"
+          ]
+        },
+        {
+          "title": "Tabserve",
+          "link": "https://tabserve.dev/",
+          "description": "一个有趣的网络应用，浏览器只要访问它的网站，就能建立一个反向代理，让公网可以访问你的当前计算机（即 localhost）。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023070101.webp"
+          ]
+        },
+        {
+          "title": "react-json-view",
+          "link": "https://github.com/YYsuni/react-json-view",
+          "description": "一个展示 JSON 数据的 React 组件。",
+          "user": "@YYsuni",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3400",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082509.webp"
+          ]
+        },
+        {
+          "title": "dtrx",
+          "link": "https://github.com/dtrx-py/dtrx",
+          "description": "一个基于 Python 的命令行工具，可以解开大部分压缩格式。相当于只装一个工具，就能解开各种压缩包。",
+          "user": "@lengyijun",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3401",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082510.webp"
+          ]
+        },
+        {
+          "title": "OpenAI 文档翻译",
+          "link": "https://github.com/isuperwm/openai-doc-translator",
+          "description": "浏览器插件，利用 ChatGPT 批量翻译各种格式的文档。",
+          "user": "@isuperwm",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3405",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082510.webp"
+          ]
+        },
+        {
+          "title": "examor",
+          "link": "https://github.com/codeacme17/examor",
+          "description": "这个工具允许用户上传文档，它会根据这些文档生成各种问答题，可以用来面试、教学和复习。它代码开源，需要用户自己搭建服务。",
+          "user": "@codeacme17",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3408",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082611.webp"
+          ]
+        },
+        {
+          "title": "极速图片压缩器",
+          "link": "https://www.ticompressor.com/online/",
+          "description": "一款图片压缩软件，有在线版和 Windows 桌面版。",
+          "user": "@Dreamer365",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3417",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023083104.webp"
+          ]
+        },
+        {
+          "title": "漫画工厂",
+          "link": "https://huggingface.co/spaces/jbilcke-hf/comic-factory",
+          "description": "一个 AI 引擎，输入剧情自动产生多种风格漫画（日式、美式等等）。",
+          "user": "@Y024",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3420",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023083105.webp"
+          ]
+        },
+        {
+          "title": "DB-GPT",
+          "link": "http://dev.dbgpt.site/",
+          "description": "用户上传 Excel 文件，该[开源](https://github.com/eosphoros-ai/DB-GPT/)工具让你与文件聊天，向它发出指令。",
+          "user": "@csunny",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3423",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023083107.webp"
+          ]
+        },
+        {
+          "title": "code-jump",
+          "link": "https://github.com/ruanyf/weekly/issues/3419",
+          "description": "VSCode 插件，用户可以使用快捷键，跳转到指定目录，类似于 z、autojump、zoxide 等命令行工具。",
+          "user": "@webxmsj",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3419"
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "Email Self-Defense",
+          "link": "https://emailselfdefense.fsf.org/en/",
+          "description": "自由软件基金会发布的详细操作步骤，如何在各种平台上对邮件使用 GnuPG 加密。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072301.webp"
+          ]
+        },
+        {
+          "title": "Generative AI 教程合集",
+          "link": "https://github.com/zht1130/generative-ai-tutorial-collection",
+          "description": "该仓库收集各种生成式 AI 的教程。",
+          "user": "@zht1130",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3422",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023083106.webp"
+          ]
+        },
+        {
+          "title": "Iconicon",
+          "link": "https://iconicon.cc/",
+          "description": "一个很好用的图标搜索引擎，收入了10万+的图标，可以定制和下载每个图标。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023072403.webp"
+          ]
+        },
+        {
+          "title": "learncpp",
+          "link": "https://www.learncpp.com/",
+          "description": "这个英文网站提供免费的 C++ 课程。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023010401.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "封面图：珠海长隆宇宙飞船",
+          "link": "",
+          "description": "珠海的长隆宇宙飞船，即将开业。它原名长隆海洋科学乐园，是全球最大的室内海洋馆，集科学馆、乐园、配套酒店于一体，可以同时容纳5万人。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082610.webp"
+          ]
+        },
+        {
+          "title": "屁股测试机",
+          "link": "https://www.techradar.com/news/samsung-built-a-robot-butt-just-to-test-its-smartphones-durability",
+          "description": "韩国水原的三星实验室，有一个手机测试的机器。它的主要部分是一个机器屁股，穿着蓝色牛仔裤，反复坐在手机，测试手机的抗压性。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082602.webp"
+          ]
+        },
+        {
+          "title": "北极废弃城市",
+          "link": "https://www.accuweather.com/en/travel/drone-footage-shows-spectacular-view-of-ghost-town-frozen-in-time/911317",
+          "description": "北极圈的冰原上，有一座苏联时代的煤矿小城，已经废弃多年。2021年3月，一位摄影师用无人机拍摄了这座废弃的北极城市。\n这座城市的鼎盛时期，拥有13座矿山和几十万工人。苏联解体后，煤矿关闭，人们纷纷离开。\n现在，许多窗户被打破或拆除，导致风雪进入，室内冰天雪地。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102711.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102712.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102713.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102714.webp",
+            "https://cdn.beekka.com/blogimg/asset/202210/bg2022102715.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "故意放弃收入",
+          "link": "",
+          "description": "本文摘自 37signals 公司的《重来3》（电子工业出版社，2020）一书。\n\n绝大多数软件公司，比如我们，都难以抵抗大客户的诱惑。这是因为绝大多数企业软件是按人头收费的。\n\n举例来说，你把软件卖给一家7人的小公司，每人收费10美元，那么这家公司每月为你带来70美元的收入。\n\n但是，如果你卖给一家120人的公司，每月就有1200美元的收入。卖给1200人或1.2万人的公司，对收入的提升就更不用说了。\n\n这就是大公司的诱惑，真的会让软件公司上瘾。\n\n但是，**我们从第一天起就决定，拒绝这种按人头收费的商业模式**。这不是因为我们不喜欢钱，而是因为我们更加喜欢自由！\n\n它的问题在于，它会让你依赖大客户，丢失对产品的控制力，决定了你要把时间花在谁身上。一旦采用这种模式，就不可能避开这些压力，唯一的办法就是放弃该模式。\n\n所以，我们采用了截然相反的做法。今天，我们的软件价格是每月99美元，不限制人数。你的公司有5个人、50个人、500个人、还是5000个人，价格全都一样。你只需每月花费99美元，想付更多也不行。\n\n乍一看，我们的做法简直毫无道理。为什么放着眼前的钱不拿呢，白白让最大的客户占便宜。要知道，就算让他们付10倍、甚至100倍的价格，对他们也不是大问题。\n\n但是，我们有自己的理由。\n\n（1）既然没有哪个客户付得比较多，那也就没谁对功能、修改或例外情况有特别的发言权。\n\n这就让我们可以自由地开发自己想要的软件。当你心里没有恐惧，不担心服务不好少数几个超级大客户时，做正确的事就会容易得多。\n\n（2）我们希望自己的产品，为像我们一样的小企业服务。我们自己就是小企业，我们希望帮到他们。这是实实在在的机会，让我们发挥实实在在的影响力。\n\n（3）追求大合同必然会带来很多销售成本，比如客户关系、销售会议等等。我们非常厌恶这些事情，不愿陷进去。一旦你想从大客户那儿挣到大钱，这些东西就无可避免，不想碰它们就只有不做。\n\n你可能会说，为什么不两种生意都做呢？一种业务模式面向小企业，同时另一组人专门服务大客户。问题是，我们不想成为一个拥有两套企业文化的公司。小企业销售和大企业销售，这是两种很不一样的业务，需要两种很不一样的员工。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023083108.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "实时数据分析的诱惑",
+          "link": "",
+          "description": "实时数据分析很诱人，满足了我们对最新数据的渴望。但是实际上，很少需要根据实时数据做出产品决策。数据分析已经够困难了，真的没有必要尝试实时完成。"
+        },
+        {
+          "title": "维基百科点击哲学",
+          "link": "https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy",
+          "description": "点击维基百科条目的第一个链接，不断重复该过程，最终几乎一定会点击到\"哲学\"条目。\n\n据统计，2016年2月，维基百科97%的文章都是如此。"
+        },
+        {
+          "title": "互联网废弃原则",
+          "link": "https://blog.privacyguides.org/2023/07/21/threads-launch-twitter/",
+          "description": "互联网很可能建立在废弃原则之上：一个好用的新事物出现，同类的现有事物很快就会被废弃。"
+        },
+        {
+          "title": "网络社区伪装成营销渠道",
+          "link": "https://blog.privacyguides.org/2023/07/21/threads-launch-twitter/",
+          "description": "很多网络社区只是伪装成社区的营销渠道。"
+        },
+        {
+          "title": "平台消亡的路径",
+          "link": "",
+          "description": "平台是这样消亡的：首先，他们对用户有用；然后他们滥用免费用户，来为他们的收费用户提供更好的服务；最后，他们滥用这些收费客户，为自己获取更多的利益。然后，他们就死了。"
+        }
+      ]
+    }
+  ]
+}

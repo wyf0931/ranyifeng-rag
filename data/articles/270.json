@@ -1,0 +1,359 @@
+{
+  "title": "科技爱好者周刊（第 270 期）：\"精益开发\"的精益是什么？",
+  "link": "https://www.ruanyifeng.com/blog/2023/09/weekly-issue-270.html",
+  "number": 270,
+  "sections": [
+    {
+      "name": "封面图",
+      "items": [
+        {
+          "title": "封面图",
+          "description": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090607.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "\"精益开发\"的精益是什么？",
+          "description": "最流行的软件开发模式，现在是\"敏捷开发\"（agile development）。\n\n但是，很多人不知道，敏捷只是一种价值观，不是具体的方法。它包含一些原则，实现这些原则有很多不同方法，下面是主要的几种。\n\n- 极限编程（XP）\n- Scrum 开发\n- 看板开发（kanban）\n- 精益开发（lean）\n\n初来乍到，看到这些奇怪的专有名词，你会不会头晕啊，它们什么意思，跟编程有何关系？\n\n我正好读到一篇[老外的文章](https://elijahpotter.dev/articles/on_iteration_and_lean_thinking)，里面提到\"精益开发\"的一些小故事，读完豁然开朗，知道了\"精益\"的来历，就掌握它的做法了。下面分享给大家。\n\n\"精益\"（lean）这个词来自1988年的一篇论文**《精益生产系统的胜利》**，论文讨论为什么日本汽车击败了美国汽车？\n\n论文作者以福特和丰田两家公司为例，认为它们的生产方法完全不同。\n\n福特是早期的汽车霸主，强调批量生产，追求极致的生产效率，以降低汽车价格。以前，汽车是3000美元一辆，福特 T 型车的上市价格竟然为850美元，最终还降到了260美元，占领了美国大部分汽车市场。\n\n传说中，亨利·福特说过一句名言：\"顾客可以选择任何一种颜色，只要它是黑色。\" T 型车就只有黑色车型，这并非由于福特喜欢黑色，而是黑色油漆干得快，落地后可以最短时间出售，从而降低了成本。\n\n为了压低汽车价格，福特的生产流程是这样的：\n\n- 采购100辆汽车的原材料。\n- 制造100辆汽车的所有零件（总共超过十万个）。\n- 组装100辆汽车，然后出售。\n- 接收顾客反馈，生产下一批次。\n\n由于每个步骤都需要较长的时间，因此迭代周期很久，福特也很少改动车型。\n\n丰田公司采用了完全不同的生产方法。刚成立时，丰田是一家小公司，无力囤积原材料，也买不起生产不同零件的专用机器，只能选择通用机器，即同一台机器生产多种零件。\n\n因此，**他们的方法就是一次制造一辆车，并尽快出售**。如果有问题，就马上修改，避免再次生产有缺陷的车。\n\n- 获取一辆车的原材料。\n- 制造一辆汽车所需的零件。\n- 组装一辆车，然后出售。\n- 接收顾客反馈，生产下一辆车。\n\n这种流程有利于快速迭代和多次迭代，长期下来，丰田汽车逐渐变得更可靠耐用，更符合客户需要。\n\n虽然，单车成本上面，丰田依然高于大批量生产的福特，但是福特迭代缓慢，很多零件不符合需要，有缺陷还是被大量生产出来，造成巨大的浪费，公司的整体效益反而不如丰田。\n\n丰田的生产方法，就被称为\"精益方法\"（lean method）。英语单词 lean 的原意是\"瘦且健康\"，用在这里表示追求实效、快速行动，没有一丝浪费。\n\n后来，这种方法就被用在各种领域，管理领域叫做\"精益思维\"，生产领域叫做\"精益制造\"，软件开发领域叫做\"精益开发\"。\n\n总结一下，\"精益开发\"指的是**创建一个最小的产品原型，交付给客户，观察他们如何使用它，再快速推出小幅改进的下一代产品**。这样就能迎合快速变化的需求，不会引入无用功能。\n\n作为比较，福特方法则是详细计划所有功能，全部开发出来，然后一次性交付。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090201.webp",
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082803.webp",
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090202.webp",
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090203.webp",
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090204.webp",
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090205.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "Gizmodo 西班牙语版改为 AI 翻译",
+          "link": "https://example.com/gizmodo-ai",
+          "description": "老牌的 IT 资讯网站 Gizmodo 宣布，它的西班牙语版本全部改为 AI 翻译，编辑都被解雇。它的西班牙语网页底部，现在有一行免责声明：\"本站内容为自动翻译，可能会存在与原意的细微差异。\"",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090101.webp"
+          ]
+        },
+        {
+          "title": "ai 域名",
+          "link": "https://arstechnica.com/information-technology/2023/08/ai-fever-turns-anguillas-ai-domain-into-a-digital-gold-mine/",
+          "description": "顶级域名`.ai`属于安圭拉（anguillas），它是英国控制的加勒比海小岛，面积只比香港本岛大一点。AI 热潮使得`.ai`域名炙手可热，为安圭拉带来巨大财富。一个 ai 域名的年费现在是80美元左右（约人民币600元），还在上涨。2021年安圭拉从`.ai`域名注册获得了740万美元。现在出现了 ChatGPT，今年的收入估计可达3000万美元，占到当地 GDP 的10%。安圭拉人口只有1.5万，相当于每人每年分到2000美元。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090102.webp",
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090103.webp"
+          ]
+        },
+        {
+          "title": "众筹十年",
+          "link": "https://www.tomshardware.com/news/oscilloscope-watch-ships-after-10-years",
+          "description": "10年前，众筹是一种非常流行的产品发布方式。发起人通过网络筹集资金，投产后再把产品寄给出资者。但是，有些产品从来没有发货，还有些产品过了很久才发货。最近就有一块手表，10年前众筹，现在才发货。这块手表具有示波器功能，2013年众筹，此后就没了消息。等到大家都忘了，它却在今年7月30日宣布开始发货。用户等于拿到一个10年前的电子产品，但是无法退款或退货。众筹平台 Kickstarter 很清楚地规定，众筹是一种投资行为，不是购买行为。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090501.webp",
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090502.webp",
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090503.webp"
+          ]
+        },
+        {
+          "title": "增强现实挡风玻璃",
+          "link": "https://www.thedrive.com/news/apple-wants-to-patent-an-augmented-reality-windshield",
+          "description": "苹果公司申请了一项专利，让汽车的挡风玻璃变成一块增强现实（AR）屏幕。这块玻璃会显示各种信息，比如天气、地图、仪表数据等。它并不是投影上去的，而是玻璃本身就是一块透明的显示屏。最具创意的是，苹果还设想，路上遇到外文招牌，它会自动叠加翻译，用户会看到翻译后的招牌。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090106.webp",
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090608.webp",
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090609.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "任正非：华为有业务边界，人才要在边界内研究探索",
+          "link": "https://www.bjnews.com.cn/detail/1693810149129843.html",
+          "description": "9月4日，华为发布了任正非在高端技术人才使用工作组对标会上的最新讲话。任正非谈了华为的人才使用策略。"
+        },
+        {
+          "title": "我是怎样程序员入门的",
+          "link": "https://www.zhihu.com/question/614706706/answer/3146012068",
+          "description": "知乎的一个回答，作者记录大学四年，如何从完全不懂编程变成一个职业程序员。",
+          "user": "wind-liang",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3439"
+        },
+        {
+          "title": "如何将 iCloud 密码用于 Chrome",
+          "link": "https://www.kocpc.com.tw/archives/508132",
+          "description": "苹果设备自带一个 iCloud 密码管理器，只用于 Safari 浏览器。两年前，它向 Windows 系统的 Chrome/Edge 浏览器开放，现在 Mac 系统的 Chrome/Edge 也能使用了。"
+        },
+        {
+          "title": "如何自己写一个前端框架",
+          "link": "https://18alan.space/posts/how-hard-is-it-to-build-a-frontend-framework.html",
+          "description": "本文教你两个技巧，用它们就可以写一个简单的前端框架。"
+        },
+        {
+          "title": "维基百科 DNS",
+          "link": "https://meta.wikimedia.org/wiki/Wikimedia_DNS",
+          "description": "维基百科推出自己的 DNS，支持DNS-over-HTTPS（DoH）和 DNS-over-TLS（DoT）查询。"
+        },
+        {
+          "title": "如何终止无响应的 Linux 会话",
+          "link": "https://linuxiac.com/how-to-terminate-user-session-in-linux/",
+          "description": "使用 Linux 终端时，有时会卡住，失去响应，这时应该如何终止会话？"
+        },
+        {
+          "title": "AWS 网络基础知识",
+          "link": "https://medium.com/codenation-engineering/fundamentals-of-networking-in-aws-3ad3d0dc01dd",
+          "description": "本文介绍亚马逊云服务的一些基础网络知识，针对初学者，包括 VPC（虚拟私有云）、subnet（子网）、路由、安全组等，写得很好。"
+        },
+        {
+          "title": "财务安全的17条法则",
+          "link": "https://thetaoofwealth.wordpress.com/2013/02/17/harry-brownes-17-golden-rules-of-financial-safety/",
+          "description": "本文跟技术无关，介绍个人财务的17个注意点。我觉得说得很好，有参考价值，就保存一下链接吧。"
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Gitstars",
+          "link": "https://github.com/cfour-hi/gitstars",
+          "description": "一个在线工具，用来管理你打过星的 GitHub 项目。",
+          "user": "dllen",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3428",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090109.webp"
+          ]
+        },
+        {
+          "title": "figma 设计稿生成图片链接",
+          "link": "https://example.com/figma-image-link",
+          "description": "为 figma 设计稿生成可自动更新的图片链接，支持 jpg 、png 、svg 格式和 scale 参数。",
+          "user": "airyland",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3431",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090111.webp"
+          ]
+        },
+        {
+          "title": "MusicFree",
+          "link": "https://github.com/maotoumao/MusicFree",
+          "description": "一个开源的音乐播放器，通过插件支持各种音源，参见[示例插件库](https://github.com/maotoumao/MusicFreePlugins)。",
+          "user": "maotoumao",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3451",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090601.webp"
+          ]
+        },
+        {
+          "title": "NiceShots",
+          "link": "https://apps.apple.com/app/niceshots",
+          "description": "一个 iOS App，用来美化手机截图，可以实现带手机壳效果。",
+          "user": "JimmyByte",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3452",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090602.webp"
+          ]
+        },
+        {
+          "title": "TabX",
+          "link": "https://github.com/Developer27149/tabX",
+          "description": "一个 Chrome 插件，用来管理 Tab 页。",
+          "user": "Developer27149",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3441",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090207.webp"
+          ]
+        },
+        {
+          "title": "AI 小镇",
+          "link": "https://github.com/get-convex/ai-town",
+          "description": "一个开源的网页游戏，人物都是 AI 驱动的，用户加入这个虚拟小镇，就可以跟这些角色互动。",
+          "user": "dllen",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3442",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090401.webp"
+          ]
+        },
+        {
+          "title": "开屏广告跳过助手",
+          "link": "https://github.com/Lyeragain/gkd",
+          "description": "开源的安卓手机的开屏广告自动跳过助手。",
+          "user": "Lyeragain",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3402#issuecomment-1704958856",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090403.webp"
+          ]
+        },
+        {
+          "title": "刘海屏工具",
+          "link": "https://github.com/fengyiqicoder/notch-tool",
+          "description": "一款 MacOS 刘海屏工具，将快捷键藏在刘海里面，鼠标移入时显示。",
+          "user": "fengyiqicoder",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3445",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090404.webp"
+          ]
+        },
+        {
+          "title": "文件桥",
+          "link": "https://github.com/ppz-pro/file-bridge",
+          "description": "一个简单的 JS 脚本，用来架设静态文件服务器。A 电脑在网页上打开一个本地文件目录，B 电脑就能下载里面的文件，两者不必在同一局域网。",
+          "user": "daGaiGuanYu",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3449"
+        },
+        {
+          "title": "Whisper Web",
+          "link": "https://huggingface.co/spaces/Xenova/whisper-web",
+          "description": "不必登录，将英语音频转成文本的在线工具。",
+          "user": "Y024",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3457",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090709.webp"
+          ]
+        },
+        {
+          "title": "SDXL 体验站",
+          "link": "https://example.com/sdxl",
+          "description": "SDXL 是 Stable Diffusion 最新发布的画图模型。这是网友架设的体验站，不需要登陆也不需要付费，直接体验文生图。",
+          "user": "zengdamo",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3455",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090708.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "Hello 算法",
+          "link": "https://github.com/krahets/hello-algo",
+          "description": "一本开源的中文电子书籍，介绍数据结构与算法，配有动画图解。",
+          "user": "Y024",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3430",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090110.webp"
+          ]
+        },
+        {
+          "title": "AIHub",
+          "link": "https://www.aihub.cn/",
+          "description": "该网站收集各种 AI 工具和资源。",
+          "user": "liuluanping",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3427",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090108.webp"
+          ]
+        },
+        {
+          "title": "Web 音视频处理系列文章",
+          "link": "https://hughfenghen.github.io/web-media/",
+          "description": "一组系列文章，介绍如何在浏览器中处理音视频。",
+          "user": "hughfenghen",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3434",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090112.webp"
+          ]
+        },
+        {
+          "title": "yesicon",
+          "link": "https://yesicon.app/",
+          "description": "中文的图标搜索引擎，作者利用 ChatGPT 翻译了 Iconify 的 18 万个图标名。",
+          "user": "dongnaebi",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3440",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090206.webp"
+          ]
+        },
+        {
+          "title": "Awesome LLMs",
+          "link": "https://github.com/wuyifan18/awesome-llms",
+          "description": "这个仓库收集各种垂直领域的大语言模型。",
+          "user": "wuyifan18",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3453",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090603.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "国际橙",
+          "link": "https://en.wikipedia.org/wiki/International_orange",
+          "description": "国际橙是航空航天工业使用的一种醒目的颜色，用来将物体与周围环境区分开来。它是一种纯的橙色，但颜色更深，色调更偏红。NASA 的宇航服就采用过这种颜色。金门大桥也采用这种颜色。东京塔和很多高楼顶上的天线，也使用国际橙和白色相间的颜色。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023040616.webp",
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023040617.webp",
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023040618.webp",
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023040619.webp"
+          ]
+        },
+        {
+          "title": "手绘滑雪地图",
+          "link": "https://jamesniehues.com/",
+          "description": "美国有一位艺术家，手工绘制高山滑雪地图，追求高度还原真实地貌。这种地图在滑雪者里面非常受欢迎。下面就是最后的成品。相比高清卫星地图，这种地图现在只能当作艺术品。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023040806.webp",
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023040807.webp",
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023040808.webp",
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023040809.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "塑料回收的困难",
+          "description": "塑料是环境污染的主要来源之一，很多人提出回收塑料再利用，但是这很难起作用。\n\n首先，塑料有成千上万种，每种都有自己的成分和特性，包含不同的化学添加剂和着色剂，无法一起回收再利用。\n\n你只能将回收的塑料，先分类成不同的类型，再进行加工。举例来说，单单是饮料的宝特瓶，就有聚对苯二甲酸乙二醇酯 (PET#1)、高密度聚乙烯 (HDPE#2)、聚氯乙烯 (PVC#3)、低密度聚乙烯 (LDPE#4)、聚丙烯 (PP#5) 和聚苯乙烯 (PS#6)等多种类型，必须分开回收。\n\n这就是为什么宝特瓶的瓶盖和瓶身，必须分开的原因。你在麦当劳吃快餐，一次性的杯子、杯盖、托盘、袋子和餐具涉及到多种类型的塑料，也必须分开，不能放在一起回收。\n\n其次，塑料废物的再加工有很多限制。塑料是易燃品，一旦发生火灾，就会影响到附近的居民区，造成的损失比回收的好处还大。\n\n而且，不同于金属和玻璃，塑料不是惰性物质，可能包含有毒添加剂和化学品，塑料再生制品很可能有毒性。加拿大就禁止回收塑料做成食品包装。\n\n最后，塑料回收根本不经济。塑料的价格很低，但是收集、分类、运输、再加工塑料废物付出的成本高得惊人。再生塑料制品的价格降不下来，用户根本没有动力购买。\n\n由于以上三个原因，塑料回收不能解决塑料污染。\n\n为了解决塑料污染，最终只能限制塑料的使用，必须尽可能少用塑料，并且将塑料垃圾集中处理。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090604.webp",
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090605.webp",
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023090606.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "CSS 的复杂度已经赶上了 JavaScript",
+          "description": "CSS 每年都添加众多的新特性，对任何人来说都很难跟上，更不要说利用它们了。基本上，CSS 的复杂度已经赶上了 JavaScript。"
+        },
+        {
+          "title": "生活就是当你忙着制定其他计划时，发生在你身上的事情。",
+          "description": "生活就是当你忙着制定其他计划时，发生在你身上的事情。 -- 约翰·列侬",
+          "link": "https://martinburckhardt.substack.com/p/talking-to-jeff-sutherland"
+        },
+        {
+          "title": "人类正在创造我们自己的继任者",
+          "description": "人类正在创造我们自己的继任者：我们每天都让机器变得更美丽和精致，赋予它们更大的力量，并通过各种巧妙的设计，让它们拥有自我调节、自我行动的力量，他们的智力逐渐变得跟人类一样。随着岁月的流逝，我们将发现自己是劣等种族，而机器是一种不断进化的\"机械生命\"，最终可能取代人类成为主导物种。 -- 19世纪英国小说家塞缪尔·巴特勒，1863年6月13日发表的文章[《机器中的达尔文》](https://en.wikipedia.org/wiki/Darwin_among_the_Machines)"
+        },
+        {
+          "title": "我们一直没有发布1.0版，因为有一些高级功能没有完成。",
+          "description": "我们一直没有发布1.0版，因为有一些高级功能没有完成。但是现在，我们决定发布了，部分原因是那些没有完成的功能，在现实世界中似乎并不重要（不过以后我仍然想完成它们。）更重要的原因是，只有发布了1.0版，我们才能开始开发2.0版。"
+        },
+        {
+          "title": "我曾经请了三年假，去玩电子游戏",
+          "description": "我曾经请了三年假，去玩电子游戏（不是开玩笑）。后来重新回来，不得不从最低端的工资开始，好在工资很快又涨回来了。找工作的秘诀就是降低你的工资要求，只有降低很多，你才能被录取，对于程序员来说，通常它可以涨回来。"
+        }
+      ]
+    }
+  ]
+}

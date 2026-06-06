@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     flask_host: str = Field(default="127.0.0.1", description="Flask host")
     flask_port: int = Field(default=5000, description="Flask port")
 
-    max_search_results: int = Field(default=5, description="Maximum search results")
+    max_search_results: int = Field(default=100, description="Maximum search results")
     max_thinking_loops: int = Field(default=3, description="Maximum thinking loops")
     search_timeout: int = Field(default=30, description="Search timeout in seconds")
 

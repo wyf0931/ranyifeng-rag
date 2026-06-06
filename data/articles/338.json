@@ -1,0 +1,455 @@
+{
+  "title": "科技爱好者周刊（第 338 期）：重新思考 6G",
+  "link": "https://www.ruanyifeng.com/blog/2025/02/weekly-issue-338.html",
+  "number": 338,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": []
+    },
+    {
+      "name": "重新思考 6G",
+      "items": [
+        {
+          "title": "重新思考 6G",
+          "link": "https://spectrum.ieee.org/5g-bandwidth",
+          "description": "IEEE《科技纵览》文章提出带宽需求可能已经饱和。文章大意：对于绝大多数普通用户，目前网速已够用，进一步提高消费者无感。5G 从2018年部署至今没有杀手级应用，4G 就能满足绝大多数应用。文章列出网速数量级：4G 100Mb/s，5G 1Gb/s，6G 10Gb/s。最吃带宽的视频应用（Netflix 4K）只需15Mb/s，只有极少数应用如微软飞行模拟器2024（180Mb/s）达到5G门槛。结论：对于普通用户网络带宽可能到头，5G够用，6G升级没那么迫切。类比民航飞机过去50年速度没有变化。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021901.webp",
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021902.webp",
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021903.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": []
+    },
+    {
+      "name": "AI 动态（两则）",
+      "items": [
+        {
+          "title": "AI 的研究模式",
+          "link": "https://metaso.cn/",
+          "description": "2025年AI大模型进展：研究模式。AI会先思考框架、拆解步骤，再查找大量文献资料分析整合出结果。国外Google、OpenAI、Perplexity等公司上线Deep Research，国内秘塔AI上线研究模式。背后是双模型架构：深度推理由满血版DeepSeek R1完成，快速响应由秘塔自研模型完成。例子：写论文《基于区块链的碳信用交易系统》会给出思考步骤并生成研究框架。秘塔AI有学术数据库保证真实性，完全免费。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025022004.webp",
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025022003.webp"
+          ]
+        },
+        {
+          "title": "VS Code 使用 DeepSeek 的方法",
+          "link": "https://zjsms.com/iPg5wXhX/",
+          "description": "国内用户最简单方法是MarsCode编程助手。最新VSCode插件(1.1.62)和JetBrains插件(1.2.1.15)支持DeepSeek。使用时在AI对话框下方点击模型按钮，有三个模型：doubao-1.5-pro、DeepSeek R1/V3（满血版），全部免费。DeepSeek R1由火山方舟部署，TPS、TTFT等指标表现优异。MarsCode有体验有礼活动。MarsCode团队还发布了AI原生IDE——Trae。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021906.webp",
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021907.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "时间码的身份验证",
+          "link": "https://www.schneier.com/blog/archives/2025/02/pairwise-authentication-of-humans.html",
+          "description": "一个程序员想到用一次性时间码（TOTP）验证是否见到本人。A和B从未见过，可以访问网址输入双方名称，系统生成二维码，保存到验证器生成时间码。见面时时间码一致则表明是本人。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021507.webp"
+          ]
+        },
+        {
+          "title": "中国科学院研制中国首套机载大地磁场探测器",
+          "link": "",
+          "description": "将磁场探测器安装在环形支架上吊挂在直升飞机下方，飞行过程中读取磁场数据完成探测，用于高原铁路沿线磁场勘探。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021908.webp",
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021909.webp",
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021910.webp",
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021911.webp"
+          ]
+        },
+        {
+          "title": "被缚的机器狗",
+          "link": "https://www.instagram.com/p/DGE5M9Yuhwm/",
+          "description": "日本艺术家创作的作品：两条机器狗被铁链拴住，走来走去，有人经过会冲过来但被铁链拉住，给人恐怖、怜悯、荒谬的感觉。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021916.webp",
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021917.webp",
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021918.webp"
+          ]
+        },
+        {
+          "title": "NBA苹果Vision Pro应用添加直播3D桌面模式",
+          "link": "https://www.uploadvr.com/nba-apple-vision-pro-app-tabletop-view/",
+          "description": "球场的实时画面变成3D棋盘。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021506.webp"
+          ]
+        },
+        {
+          "title": "小行星2024 YR4可能在2032年撞击地球",
+          "link": "https://www.qlwb.com.cn/detail/25693204.html",
+          "description": "美国宇航局宣布，直径40-90米的2024 YR4小行星，2032年撞击地球概率3.1%，若相撞可能毁灭一个城市。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021912.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "废弃 Create React App",
+          "link": "https://react.dev/blog/2025/02/14/sunsetting-create-react-app",
+          "description": "React官方宣布正式废弃Create React App，建议通过框架来使用，即不建议直接用React。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021505.webp"
+          ]
+        },
+        {
+          "title": "Unicode 字符的迷你柱状图",
+          "link": "https://blog.jonudell.net/2021/08/05/the-tao-of-unicode-sparklines/",
+          "description": "介绍怎么使用Unicode字符生成迷你的柱状图。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202408/bg2024082702.webp"
+          ]
+        },
+        {
+          "title": "多页应用不输给单页应用",
+          "link": "https://htmx.org/essays/you-cant/",
+          "description": "单页应用是主流，本文提出多页应用也可以做到SPA的各种优点。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202411/bg2024111805.webp"
+          ]
+        },
+        {
+          "title": "详解 Linux 硬链接和软链接",
+          "link": "https://bhoot.dev/2024/on-linux-file-and-links/",
+          "description": "Linux有两种特殊文件：硬链接和软链接，本文详细解释它们的区别。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202411/bg2024111910.webp"
+          ]
+        },
+        {
+          "title": "了解 CSS 的 overflow: clip",
+          "link": "https://ishadeed.com/article/overflow-clip/",
+          "description": "CSS的overflow属性有一个clip值，可以截去溢出部分，通过它可做出很多页面效果。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202411/bg2024112001.webp"
+          ]
+        },
+        {
+          "title": "什么是网页的元信息？",
+          "link": "https://www.thisdaysportion.com/posts/dublin-core-what-is-it-good-for",
+          "description": "介绍如何在网页中插入元信息（作者、关键词、内容描述等），便于计算机检索。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024090301.webp"
+          ]
+        },
+        {
+          "title": "如何安装 ADB",
+          "link": "https://www.xda-developers.com/install-adb-windows-macos-linux/",
+          "description": "ADB是电脑连接安卓手机必需的，本文分别介绍Windows/macOS/Linux如何安装ADB。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202501/bg2025010503.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "（未命名）",
+          "link": "",
+          "description": "一个手机App（支持iOS和安卓），把电子书转成有声书，支持中文，但内置老外语音生硬。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021607.webp"
+          ]
+        },
+        {
+          "title": "GIXY",
+          "link": "https://github.com/dvershinin/gixy",
+          "description": "一个开源的命令行工具，检查NGINX的配置文件是否有错误。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "uchū",
+          "link": "https://uchu.style/",
+          "description": "一款互联网调色板，提供预设的CSS配色方案，采用新的oklch()函数声明颜色。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021803.webp"
+          ]
+        },
+        {
+          "title": "（未命名）",
+          "link": "",
+          "description": "使用Bun作为解释器的Shell环境，可以在命令行直接运行JavaScript脚本。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072603.webp"
+          ]
+        },
+        {
+          "title": "Spotube",
+          "link": "https://github.com/KRTirtho/spotube",
+          "description": "一个另类的Spotify跨平台客户端，从Spotify获取数据，然后播放来自其他音源（如YouTube）的音频，不必购买会员。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072604.webp"
+          ]
+        },
+        {
+          "title": "Kener",
+          "link": "https://github.com/rajnandan1/kener",
+          "description": "一个自托管的状态页，用来监控指定网站是否正常在线。类似工具还有Uptime Kuma。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072609.webp"
+          ]
+        },
+        {
+          "title": "gtrash",
+          "link": "https://github.com/umlx5h/gtrash",
+          "description": "Linux和Mac系统的被删除文件的垃圾桶，可以在终端里面还原文件。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072618.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI 工具",
+      "items": [
+        {
+          "title": "DeepSRT",
+          "link": "https://chromewebstore.google.com/detail/deepsrt-experience-the-fa/mdaaadlpcanoofcoeanghbmpbdbhladd",
+          "description": "一个Chrome插件，观看Youtube视频时在浏览器侧边栏展示视频总结和字幕。",
+          "user": "@tsungmin",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6108",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021503.webp"
+          ]
+        },
+        {
+          "title": "（未命名）",
+          "link": "",
+          "description": "AI深度研究的前端UI，可以接入各种大模型，结合搜索引擎和网页抓取，对各种主题进行迭代式深入研究。",
+          "user": "@AnotiaWang",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6110",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021504.webp"
+          ]
+        },
+        {
+          "title": "AI 翻译助手",
+          "link": "https://github.com/ItusiAI/AI-Translation-Assistant-Pro",
+          "description": "开源的AI翻译网站。",
+          "user": "@321208008",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6121",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021701.webp"
+          ]
+        },
+        {
+          "title": "GitSeek",
+          "link": "https://gitseek.dev/",
+          "description": "给定一个代码库，使用自然语言搜索需要的代码片段。",
+          "user": "@i-richardwang",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6132",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025022001.webp"
+          ]
+        },
+        {
+          "title": "AI 多人聊天室",
+          "link": "https://github.com/maojindao55/botgroup.chat",
+          "description": "一个开源的、基于React和Cloudflare Pages的AI聊天室，跟多个AI模型同时聊天。",
+          "user": "@maojindao55",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6133",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025022002.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "四级词汇手册",
+          "link": "https://github.com/vxiaozhi/vocabulary-book-by-deepseek",
+          "description": "使用DeepSeek编写的四级词汇手册，提供单词的词义、词根、例句、辅助记忆、助记图像等。",
+          "user": "@vxiaozhi",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6107",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021501.webp"
+          ]
+        },
+        {
+          "title": "唐韵",
+          "link": "https://www.chinesepoems.org/",
+          "description": "一款界面简洁的古诗词网站。",
+          "user": "@LLSean",
+          "user_link": "https://github.com/ruanyf/weekly/issues/6086",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021502.webp"
+          ]
+        },
+        {
+          "title": "（未命名）",
+          "link": "",
+          "description": "欧美科技网站头条新闻的AI摘要，实时更新。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021805.webp"
+          ]
+        },
+        {
+          "title": "Discuo",
+          "link": "https://discuo.com",
+          "description": "一个极简主义的论坛，不需要注册就能发言，类似于Reddit，可以创建各种频道。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202501/bg2025010602.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "饼图与直方图",
+          "link": "https://perthirtysix.com/visualizing-data-is-an-art",
+          "description": "同样的百分比数据，分别使用饼图和直方图表示，可读性不一样。一般认为直方图更易读，因为人类比较长度的能力强于比较角度的能力。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021601.webp",
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021602.webp"
+          ]
+        },
+        {
+          "title": "瑞士护照",
+          "link": "https://www.swissinfo.ch/chi/politics/%E6%96%B0%E7%89%88%E7%91%9E%E5%A3%AB%E6%8A%A4%E7%85%A7%E4%B8%8A%E6%9E%B6/48023134",
+          "description": "新版的瑞士护照每一页都有紫外线水印。紫外线灯下，封面显示瑞士国徽（十字），其他页面显示山脉的等高线和地图。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021913.webp",
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021914.webp",
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025021915.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "凯文·凯利的旅行经验",
+          "link": "",
+          "description": "作者：凯文·凯利\n我已经认真旅行了50多年，学到了很多东西。\n旅行有两种模式：休息模式和体验模式。体验模式是为了发现新事物，获得新体验，投入一场结果不确定的冒险。\n很多人旅行误区是想看遍所有地方。其实在更少的地方待更长时间更好，放慢速度，多休息。\n旅行最难忘的时刻通常发生在你停下来的时候。\n你可以前往旅行成本最低的地方，同样预算可以待更长时间。\n为了获得最佳旅行体验，你要么投入很多钱，要么投入很多时间。时间比金钱好得多，因为金钱可以买到时间，但金钱买不到时间所能提供的东西。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202502/bg2025022005.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "",
+          "link": "",
+          "description": "我发现，AI 大模型生成代码时，总是优先使用2022年11月 ChatGPT 发布之前流行的技术。AI 给予这些技术的优先待遇，将扩展它们的采用和寿命。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "我认为欧洲真的要加强。在过去的20年里，美国经济和中国经济的增长速度远远快于欧洲经济。如果不放松对人工智能技术的严格限制，欧洲有可能成为一个“博物馆”。——瑞典首相克里斯特松",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "在商业领域，最先做到的人有优势。但是，在研究和学术领域，成功往往不属于最先理解的人，而属于理解得最好的人，真正的优势来自于深刻、基础性的见解。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "先行者开辟了道路，后来者用更少的计算资源迅速缩小差距，这就存在了先发劣势。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "以谦逊和好奇的态度对待工作时，你会学到更多，参与得更充分。初学者的心态是一种财富。保持真实的自我有助于你找到自己真正的使命。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

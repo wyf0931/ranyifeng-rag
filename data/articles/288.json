@@ -1,0 +1,363 @@
+{
+  "title": "科技爱好者周刊（第 288 期）：技术写作的首要诀窍",
+  "link": "https://www.ruanyifeng.com/blog/2024/01/weekly-issue-288.html",
+  "number": 288,
+  "sections": [
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "仓库机器人",
+          "link": "https://www.businessinsider.com/new-amazon-warehouse-robot-humanoid-2023-10",
+          "description": "亚马逊公司开始在仓库，测试一款人形机器人。它用于捡货和搬运，每小时的运行成本是10至12美元。如果将来大量应用，成本可望降到2至3美元。它跟工人一起工作（下图）。工人都非常害怕，这种机器人取代他们。亚马逊表示，机器人只是协助工人，并不会取代后者。如果让你跟机器人一起上班，做差不多的事情，而且它还不要薪水，大概没人会心情好吧。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023120804.webp",
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023120805.webp",
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023120806.webp"
+          ]
+        },
+        {
+          "title": "蜜蜂条形码",
+          "link": "https://theapiarist.org/barcoding-bees/",
+          "description": "科学家研究蜜蜂，需要追踪每一只蜜蜂的行为，但怎样才能在一群蜜蜂中，分清谁是谁呢？科学家想到了一个绝妙的办法，在每一只蜜蜂身上，贴上一个简化的二维码。这种二维码的面积是2.1平方毫米（即边长不足1.5毫米），重0.6毫克，是工蜂重量的 0.7%，共可以表示2048只蜜蜂。科学家手动为每只蜜蜂贴上二维码，一共贴了1400只，然后在高速摄像机下就可以读到这些二维码，从而分辨出每一只的行为。蜂巢里面同时有上千只蜜蜂，放大图像后，就可以画出每只蜜蜂的行动路线（下图），分析它们在干什么，与谁合作。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024011901.webp",
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024011902.webp",
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024011903.webp",
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024011904.webp"
+          ]
+        },
+        {
+          "title": "舌头鼠标",
+          "link": "https://www.nbcnews.com/tech/tech-news/tongue-controlled-touchscreens-hit-market-year-rcna133270",
+          "description": "今年的拉斯维加斯\"消费电子展\" CES 上，展示了一款\"舌头鼠标\"。它使用牙套，将一块迷你触摸板固定在上颚，不需要用手，只用舌头就能控制鼠标。这个设备的原意是，方便手部损伤的或瘫痪的人士使用电脑，但后来发现，它在健全人中也有市场，机械师或外科医生可以用它控制电脑，同时腾出双手干其他事情。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024011905.webp"
+          ]
+        },
+        {
+          "title": "防盗盒",
+          "link": "https://www.curbed.com/2023/01/shoplifting-crime-wave-spam-keeper-retail-loss-prevention-design.html",
+          "description": "欧美的小型零售店，比如杂货店和小超市，越来越流行把商品放在防盗盒里面。这种透明的塑料盒，需要钥匙才能打开，顾客自己取不出商品，只有店员才能打开。盒子还内置 RFID 芯片，如果擅自带出商店，会引发警报器。这样就大大减少了商品损耗和被窃。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011702.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011703.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011704.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "高德地图如何实现红绿灯倒计时？",
+          "link": "https://mp.weixin.qq.com/s/3_LNM62zoHaJsmvAryujEw",
+          "description": "高德地图会显示，红绿灯倒计时读秒。本文介绍背后的专利。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012401.webp"
+          ]
+        },
+        {
+          "title": "2023年前端技术盘点与展望",
+          "link": "https://mp.weixin.qq.com/s/LiygBJqMN8U_vSpAjxMibQ",
+          "description": "腾讯云开发者公众号与腾讯 MoonWebTeam 前端团队联合推出的长篇技术报告。",
+          "user": "ryantang1991",
+          "user_link": "https://github.com/ryantang1991"
+        },
+        {
+          "title": "JS 空数组的 every() 方法",
+          "link": "https://humanwhocodes.com/blog/2023/09/javascript-wtf-why-does-every-return-true-for-empty-array/",
+          "description": "every() 方法对于空数组总是返回 true，这是为什么。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023120209.webp"
+          ]
+        },
+        {
+          "title": "8个开源密码管理器介绍",
+          "link": "https://itsfoss.com/open-source-password-managers/",
+          "description": "密码管理器用来管理各种登录密码，本文介绍8个开源的密码管理器。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023120205.webp"
+          ]
+        },
+        {
+          "title": "令人震惊的 CSS 动画效果",
+          "link": "https://codersblock.com/blog/the-surprising-things-that-css-can-animate/",
+          "description": "本文介绍一些高级的 CSS 动画技巧。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023120513.webp"
+          ]
+        },
+        {
+          "title": "HTTP/3 详解",
+          "link": "https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/",
+          "description": "一组系列文章，向初学者介绍 HTTP/3 协议的设计，以及与 HTTP/2 的不同之处。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023091202.webp"
+          ]
+        },
+        {
+          "title": "CPU 制造过程图解",
+          "link": "https://blog.robertelder.org/how-to-make-a-cpu/",
+          "description": "作者使用大量图片，简明通俗解释如何从石头制造出 CPU。读了以后，对于 CPU 的制造流程就有一个大致的了解。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023102301.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Gemini Pro 客户端",
+          "link": "https://chat.googlegemini.co/",
+          "description": "作者修改了 ChatGPT Next Web 的源码，使其可以用于 Gemini Pro。",
+          "user": "lchh5",
+          "user_link": "https://github.com/lchh5",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012005.webp"
+          ]
+        },
+        {
+          "title": "木鱼",
+          "description": "一个敲木鱼的网页 App，移动端打开时，只有侦测到手机陀螺仪的角度变化，才算一次敲击动作，这时可以把手机想象成敲木鱼的棒子。",
+          "user": "jwenjian",
+          "user_link": "https://github.com/jwenjian",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012006.webp"
+          ]
+        },
+        {
+          "title": "Moodist",
+          "link": "https://github.com/geekyouth/moodist",
+          "description": "一个开源的 Docker 镜像文件，提供50多种背景声，比如风声、雨声、咖啡馆的声音。",
+          "user": "geekyouth",
+          "user_link": "https://github.com/geekyouth",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012301.webp"
+          ]
+        },
+        {
+          "title": "Echo UI",
+          "link": "https://echoui.dev/zh/",
+          "description": "一款专为 Web Audio API 设计的 UI 库，适合用来搭建基于 Web 的音频应用。",
+          "user": "codeacme17",
+          "user_link": "https://github.com/codeacme17",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012302.webp"
+          ]
+        },
+        {
+          "title": "Photor",
+          "link": "https://www.photor.fun/",
+          "description": "截图美化工具，可以在线使用，也可以通过浏览器插件使用。",
+          "user": "sleepy-zone",
+          "user_link": "https://github.com/sleepy-zone",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012303.webp"
+          ]
+        },
+        {
+          "title": "Message Pusher",
+          "description": "开源的消息推送平台，整合邮件、钉钉、企业微信等多种通知方式。",
+          "user": "engigu",
+          "user_link": "https://github.com/engigu",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012304.webp"
+          ]
+        },
+        {
+          "title": "Tiny RDM",
+          "link": "https://redis.tinycraft.cc/zh/",
+          "description": "Redis 桌面管理客户端，支持 Mac、Windows、Linux。",
+          "user": "tiny-craft",
+          "user_link": "https://github.com/tiny-craft",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012306.webp"
+          ]
+        },
+        {
+          "title": "Frigate",
+          "link": "https://github.com/blakeblackshear/frigate",
+          "description": "开源的摄像头固件，具有实时目标物体侦测。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023111906.webp"
+          ]
+        },
+        {
+          "title": "InstantID",
+          "link": "https://instantid.org/#playground",
+          "description": "只使用一张图片，就可以提取人脸，用于个性化图像合成，并支持各种不同的风格。",
+          "user": "zinc1234596",
+          "user_link": "https://github.com/zinc1234596",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012402.webp"
+          ]
+        },
+        {
+          "title": "HandBrake",
+          "link": "https://handbrake.fr/",
+          "description": "一个跨平台的桌面应用，用于转换视频编码。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023111910.webp"
+          ]
+        },
+        {
+          "title": "Animotion",
+          "link": "https://cssanimotion.pages.dev/",
+          "description": "一个网页 CSS 动画生成器，可视化设定动画，自动生成代码。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023111911.webp"
+          ]
+        },
+        {
+          "title": "Ada",
+          "link": "https://github.com/ada-url/ada",
+          "description": "一个 URL 解析器，符合最新规范，使用 C++ 编写，可以快速处理 URL。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023112102.webp"
+          ]
+        },
+        {
+          "title": "Inpaint-web",
+          "link": "https://github.com/lxfater/inpaint-web",
+          "description": "开源的图片修复和超分辨率工具, 纯浏览器端实现。",
+          "user": "lxfater",
+          "user_link": "https://github.com/lxfater",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012501.webp"
+          ]
+        },
+        {
+          "title": "人像生成工具",
+          "link": "https://sinqi.tools/zh/avatar",
+          "description": "基于手绘风 SVG 人物画像集合 Open Peeps，一个人物画像的在线定制工具。",
+          "user": "zerosoul",
+          "user_link": "https://github.com/zerosoul",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012502.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "唐库学习",
+          "link": "http://www.tanglib.com/",
+          "description": "电子书网站，提供世界名著的中英双语对照朗读。",
+          "user": "bigtang5",
+          "user_link": "https://github.com/bigtang5",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012003.webp"
+          ]
+        },
+        {
+          "title": "AI 字体",
+          "description": "该网站列出 AI 生成的字体，可以在线使用它们进行文字渲染。它还支持网页手写八个字，生成自己的 AI 字体。",
+          "user": "qq345386817",
+          "user_link": "https://github.com/qq345386817",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012007.webp",
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012008.webp"
+          ]
+        },
+        {
+          "title": "云原生应用市场",
+          "link": "https://hub.grapps.cn/",
+          "description": "用户可以在这里浏览各种云原生应用，并一键安装到各类运行环境（ Docker、Kubernetes、Rainbond），支持国内镜像加速。",
+          "user": "RainBondsongyg",
+          "user_link": "https://github.com/RainBondsongyg",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012305.webp"
+          ]
+        },
+        {
+          "title": "iHateRegex",
+          "link": "https://ihateregex.io/",
+          "description": "一个收集常用正则表达式的资源库，并通过可视化帮助理解，基于 regexper。",
+          "user": "zkerhcy",
+          "user_link": "https://github.com/zkerhcy",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012009.webp"
+          ]
+        },
+        {
+          "title": "古诗词网",
+          "description": "学习欣赏中国古诗词的网站。",
+          "user": "meetqy",
+          "user_link": "https://github.com/meetqy",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012010.webp"
+          ]
+        },
+        {
+          "title": "极简博客",
+          "link": "https://dev.mblog.club/",
+          "description": "作者用 NextJS + Laf 云搭建的博客托管网站，赠送二级域名。",
+          "user": "kingwrcy",
+          "user_link": "https://github.com/kingwrcy",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012004.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "旧金山人行道",
+          "link": "https://zachklein.com/Sidewalk+Garden",
+          "description": "下面是美国旧金山市的一段人行道，2015年的样子。一位设计师决心改造这段人行道，营造出'城市森林'的景观。人行道宽3.66米，他保留中间一半供通行，两侧改为绿化。中间一段重新铺设路面以后，他在2016年在两侧种上植物。2022年，这段路变成了下面这样。这不由让人想起了那句有名的话：'种一棵树的最佳时间是十年前，其次就是现在。'",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082603.webp",
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082604.webp",
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082605.webp",
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082606.webp",
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082607.webp",
+            "https://cdn.beekka.com/blogimg/asset/202308/bg2023082608.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "一个关于 NetBSD 服务器的故事",
+          "description": "2010年的某一天，我接到一个电话。客户想在内网部署几个服务（dhcp、内部 DNS、Apache + PHP 服务器、NFS 和 Samba 件服务器），需要架设一台服务器。我建议客户购买企业级硬件，但是他们坚持使用已有的服务器，那是一台消费级电脑：没有双电源，没有远程管理功能，硬盘也是消费级的。客户原计划安装 Windows 2008 Server，然后在上面部署这些服务。我考虑到只有两天时间，就建议改成安装 NetBSD 系统。客户同意了。我安装完以后，就移交给了客户。后面的一个月，除了一些网络延迟问题，客户的反馈基本是正面的。接下来的两三年里，我偶尔对这台服务器进行了一些调整，随后就与客户失去了联系。2021年2月，我又接到了那个客户的电话，他们想要一个新的防火墙。这意味着那台 NetBSD 服务器还在运行！出于好奇，我接受了这个任务。我惊讶地发现，这台服务器的工作完全正常。它不再对外网提供访问了，但在内网运行顺利。NFS SMB、DNS、SMTP 都是正常运行，它正在执行大约80%的原始任务。最让我惊讶的是它的正常运行时间。上一次重启是在2012年，那时发生了一次小地震。客户有备用发电机，因此服务器始终拥有不间断电源。谁能想到，这台机器当初只花了几个小时安装，而且全部都是消费级硬件，但是正常运行了九年没有重启，并且这些年基本上是无人管理的。我现在明白了，为什么我没有----也永远不会----发财。我以前的老板抱怨，我偏爱为客户推荐稳定可靠的解决方案，这等于较少的长期利润。据他说，需要频繁维护的不可靠解决方案，才能带来最多的收入。但是我觉得，出色的工作应该是持续有效的，不需要不断的修复。现在，我不确定这台服务器是否仍在运行，如果有机会我一定会检查一下。我很感激 NetBSD，它值得信赖，是一个轻量级、稳定、安全且高效的操作系统。在我看来，它至今仍然没有得到应有的赞誉和地位。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024012315.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "AI 聊天机器人像神一样",
+          "description": "AI 聊天机器人很快就会变得强大无比，看上去像神一样，未来也许会出现崇拜 AI 的教派。"
+        },
+        {
+          "title": "债务是一种改造手段",
+          "link": "https://medium.com/blob-streaming/programming-as-a-career-isnt-right-for-me-f9f0846fef82",
+          "description": "那些背负巨额债务以完成学业的学生，不太可能有远大的理想。因为当人们陷入债务时，他们就没有时间思考其他问题。债务是一种改造手段，当这些学生毕业时，他们不仅背负着沉重的债务，思想上已经被改造过了，使他们成为消费经济的有效组成部分。",
+          "user": "诺姆·乔姆斯基"
+        },
+        {
+          "title": "哥德尔不完备定理",
+          "description": "1931年，奥地利逻辑学家库尔特·哥德尔提出了重要的\"哥德尔不完备定理\"。他证明，任何一组数学公理都不可能是完备的，总有一些事实无法用这些公理来证明；同时，他还证明，没有一组公理具有一致性（即永远不会导致矛盾）。这意味着，任何一个理论体系总有一些无法证明的命题，或者说，你能证明什么，取决于你的起始假设，而这些假设是不能证明的。"
+        },
+        {
+          "title": "软件功能的数量与工程师数量",
+          "description": "一家公司需要多少工程师？这与软件功能的数量有关，与软件用户的数量无关。如果软件要添加更多功能，就需要更多工程师。如果软件功能单一，但是规模很大，甚至有几亿用户，事实上并不需要很多工程师。"
+        }
+      ]
+    }
+  ]
+}

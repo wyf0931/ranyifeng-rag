@@ -1,0 +1,427 @@
+{
+  "title": "科技爱好者周刊（第 310 期）：内容农场的 AI 赚钱术",
+  "link": "https://www.ruanyifeng.com/blog/2024/07/weekly-issue-310.html",
+  "number": 310,
+  "sections": [
+    {
+      "name": "封面图",
+      "items": [
+        {
+          "title": "封面图",
+          "link": "https://www.facebook.com/photo.php?fbid=785809217049222&id=100068604533594&set=a.526690652961081",
+          "description": "热闹的重庆南滨路夜市，就在长江边上，江对面就是渝中半岛的高楼。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072110.webp"
+          ],
+          "user": null,
+          "user_link": null
+        }
+      ]
+    },
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "内容农场的 AI 赚钱术",
+          "link": null,
+          "description": "内容农场指的是，通过炮制大量文章，以骗取点击、赚取流量的网站。它会炮制数以万计的垃圾文章，每个页面充满了广告，冠以诱人的、关键词优化的标题，吸引读者点进去看。以前，内容农场要聘请写手，到处搜罗资料，来生成内容。现在简单了，交给 AI 来写，两秒就生成一篇。而且，AI 的价格已经足够低，低到单次浏览的广告收入就可以覆盖成本。下面，我就来演示，打造一个 AI 内容农场是多么便宜。\n\n首先，可以根据热搜，找到读者感兴趣的主题。\n\n我们随便找一个经常搜索的 IT 问题，比如关闭 Windows 的更新功能。\n\n然后，让 AI 撰写文章。\n\n这时你需要一段精确的提示词（prompt），我从[老外的文章](https://batchmon.com/blog/ai-cheaper-than-ads/)拷贝了一段。\n\n你是一位优秀的博客作者。你撰写的博客在搜索引擎中排名靠前，因为你了解 SEO 以及如何使用高度相关和热门的关键字。你的博客文章信息丰富，可帮助用户实现他们所寻找的内容。\n\n你将收到搜索博客文章的用户的查询。你将创建与他们的查询相匹配、有帮助且能回答或与他们所搜索的内容相关的博客文章。\n\n仅使用博客文章进行回复。\n\n读者的问题是：如何关闭 Windows 的更新功能？\n\n我把这段提示词，输入一个国产 AI。\n\nAI 马上给出了下面的文章。\n\n接着，我们计算一下，上面这篇文章要花多少钱。\n\nAI 计费是根据 token（词元），我用的那个国产 AI，收费标准如下：\n\n- 输入：0.0008元/千 token\n- 输出：0.0020元/千 token\n\n我们用 OpenAI 的 token 计算器，可以得到上面的输入是168个 token，输出是622个 token，那么总费用如下：\n\n（168 * 0.0008 + 622 * 0.0020）/ 1000 = 0.00138\n\n也就是说，**这篇文章的成本是人民币0.00138元**，一分钱可以生成7篇，生成1000篇也只要1.38元。\n\n那么，我能用它赚取多少广告费呢？\n\n国内广告平台的数据比较少，国外一般使用谷歌广告，它的收入是0.2美元～2.5美元/千次浏览。\n\n我们就取最低的0.2美元，相当于人民币1.45元，那么单次浏览就是0.00145元，刚好高于文章的生成成本。\n\n因此，**每一次浏览都是赚钱的**，只要有人点进来就弥补内容成本了，后面再点进来都是纯利润。\n\n内容农场从来没有这么容易过，我先买一个热搜数据库，然后花费100多元，就能生成10万篇文章，最后加入广告，做好 SEO，网站上线，等着用户点进来就行了。\n\n不难想象，资讯类网站未来大概都是这个模式。真人生产内容，成本太高，无法与 AI 内容抗衡，注定只能是小众网站。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072004.webp",
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072005.webp",
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072006.webp",
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072401.webp",
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072007.webp"
+          ],
+          "user": null,
+          "user_link": null
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "Windows 全球故障",
+          "link": null,
+          "description": "上周，Windows 系统出现全球故障，几百万台电脑发生蓝屏，无法启动。原因是安全软件公司 CrowdStrike 的更新包，引发了内核故障。微软的解释是，多年前，欧盟认为微软自家的安全软件 Windows Defender 有垄断嫌疑，微软必须向其他安全软件开放同样的内核访问权限，所以 CrowdStrike 才能修改内核。相比之下，苹果公司始终不开放内核权限，所以这次故障不影响 Mac 系统。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072301.webp",
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072302.webp",
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072506.webp"
+          ],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "幸福感",
+          "link": null,
+          "description": "心理学家以前认为，幸福感是一个 U 形曲线，两头高中间低，中年人最不快乐。但是，最新研究发现，人们的心理已经发生了变化。现在的幸福感是一根向上的曲线。心理学家的解释是，对于现在的年轻人，青春期变得十分困难，属于人生的低点。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072108.webp"
+          ],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "沙漏啤酒杯",
+          "link": null,
+          "description": "夏天，人们喝啤酒，容易暴饮。一家日本公司推出了'沙漏啤酒杯'，据说可以把喝啤酒的速度降低三倍。这个杯子可以容纳350毫升啤酒，但是中间瓶颈处只有6毫米，相当于用一根6毫米的吸管喝啤酒。该公司把这个杯子定位为玩具。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072303.webp",
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072304.webp"
+          ],
+          "user": null,
+          "user_link": null
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "阿里云公共 DNS 免费版限速",
+          "link": "https://www.landiannews.com/archives/105048.html",
+          "description": "阿里云的免费 DNS 自9月30日开始限速，单个 IP 的请求数不能超过 20QPS，超过需要使用付费版。它开了公共 DNS 限速的先河。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072008.webp"
+          ],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": ".top域名的钓鱼问题",
+          "link": "https://krebsonsecurity.com/2024/07/phish-friendly-domain-registry-top-put-on-notice/",
+          "description": ".top 是钓鱼网站最泛滥的域名，它的注册管理商是一家中国公司。ICANN 已要求该公司采取行动，否则将吊销它的管理权。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072501.webp"
+          ],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "JS 测试框架 Jest 入门",
+          "link": "https://blog.stackademic.com/testing-in-javascript-with-jest-085b26e1750e",
+          "description": "初学者教程，简单介绍如何使用 Jest 写测试用例。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072106.webp"
+          ],
+          "user": "Faizan711",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4852"
+        },
+        {
+          "title": "Cron 定时任务入门",
+          "link": "https://linuxiac.com/how-to-use-cron-and-crontab-on-linux/",
+          "description": "一篇 Linux 初学者教程，介绍如何使用 cron 设置定时任务，非常详细。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030602.webp"
+          ],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "前端构建概述",
+          "link": "https://sunsetglow.net/posts/frontend-build-systems.html",
+          "description": "本文综合介绍前端构建的概念、步骤和工具。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202406/bg2024062301.webp"
+          ],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "GitHub 的 fork 仓库的安全问题",
+          "link": "https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github",
+          "description": "GitHub 允许 fork 他人的仓库。只要一个仓库被 fork 过，那么就再也删不掉了，即使转为私有仓库，他人也可能看到你新提交的代码。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072502.webp"
+          ],
+          "user": null,
+          "user_link": null
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Foliate",
+          "link": "https://github.com/johnfactotum/foliate",
+          "description": "Linux 平台的 epub 电子书阅读软件。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072112.webp"
+          ],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "Sendune",
+          "link": "https://github.com/SendWithSES/Drag-and-Drop-Email-Designer",
+          "description": "一个可视化的 HTML 电子邮件设计工具，代码开源。类似的还有一个 HTML 邮件制作库 mjml。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072002.webp"
+          ],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "hash-wasm",
+          "link": "https://github.com/Daninet/hash-wasm",
+          "description": "一个轻量级的哈希函数库，提供了二十几种常见的哈希算法，比如 MD5 和 SHA-1，以及更安全的 BLAKE3。",
+          "images": [],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "fastdownload",
+          "link": "https://github.com/jaykali/fastdownload",
+          "description": "这个开源工具用来架设一个缓存网站，可以抓取其他网站和网页，建立一个缓存版本，通过它来中介访问。",
+          "images": [],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "WebUI",
+          "link": "https://github.com/webui-dev/webui",
+          "description": "一个跨平台的桌面应用的打包程序，允许你直接将浏览器作为桌面应用的前端，比 Electron 要轻量化很多，同时又避免使用 WebView。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024010704.webp"
+          ],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "深蹲计数器",
+          "link": "https://github.com/zhaoolee/Sport",
+          "description": "一个开源的 Web 应用，通过移动设备的加速度计，实现深蹲计数。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072402.webp"
+          ],
+          "user": "zhaoolee",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4869"
+        },
+        {
+          "title": "Anori",
+          "link": "https://anori.app/",
+          "description": "一个浏览器插件，可以在主页上定制各种小组件。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024042002.webp"
+          ],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "Blur Frame",
+          "link": "https://blurframe.com/",
+          "description": "这个在线工具可以为图片加上模糊景深，还可以 3D 旋转图片。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024042004.webp"
+          ],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "FastDownload",
+          "link": "https://fastdownload.app/",
+          "description": "一个下载各种流媒体视频的在线工具，支持 Youtube 和 TikTok。",
+          "images": [],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "Stack",
+          "link": "https://github.com/stackframe-projects/stack",
+          "description": "开源的用户管理解决方案，自带前端组件和管理后台。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202404/bg2024042204.webp"
+          ],
+          "user": null,
+          "user_link": null
+        }
+      ]
+    },
+    {
+      "name": "AI 相关",
+      "items": [
+        {
+          "title": "Album AI",
+          "link": "https://github.com/gcui-art/album-ai",
+          "description": "一个开源工具，将你的图片输入 AI，通过聊天来检索，相当于 AI 整理相册。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072107.webp"
+          ],
+          "user": "blueeon",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4856"
+        },
+        {
+          "title": "雅思和托福作文批改",
+          "link": "https://github.com/ruanyf/weekly/issues/3483",
+          "description": "GPT4 批改雅思和托福作文。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072403.webp"
+          ],
+          "user": "zengdamo",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3483"
+        },
+        {
+          "title": "OpenG",
+          "link": "https://openg.icu/",
+          "description": "一个开源的 AI 应用搜索引擎，收入超过1万个应用。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072102.webp"
+          ],
+          "user": "xiaoguopku",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4849"
+        },
+        {
+          "title": "Brev AI",
+          "link": "https://brev.ai/zh-CN",
+          "description": "免费在线的 AI 音乐生成器，不需要注册。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072210.webp"
+          ],
+          "user": "zdamo4194",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4862"
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "AIEmoji",
+          "link": "https://ai-emoji.bettergogo.com/",
+          "description": "Emoji 搜索引擎，输入想表达的内容，返回最匹配的 Emoji 符号。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072101.webp"
+          ],
+          "user": "bettergoo",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4848"
+        },
+        {
+          "title": "算法可视化",
+          "link": "https://gallery.selfboot.cn/algorithms/",
+          "description": "作者在 AI 协助下，完成的经典算法的交互式可视化网站，代码开源。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072105.webp"
+          ],
+          "user": "selfboot",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4851"
+        },
+        {
+          "title": "美国大学录取率查询",
+          "link": "https://www.collegetuitioncompare.com/colleges/state-university-of-new-york-at-stony-brook/admission/",
+          "description": "这个网站可以查询美国各大学历年的申请成功率。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072211.webp"
+          ],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "DevDocs",
+          "link": "https://devdocs.io/",
+          "description": "这个网站可以查询 Web 标准和主流软件工具的 API 文档。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024011506.webp"
+          ],
+          "user": null,
+          "user_link": null
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "墨西哥的面积",
+          "link": "https://unchartedterritories.tomaspueyo.com/p/25-fascinating-facts-about-mexico",
+          "description": "墨西哥是一个面积很大的国家，大到出乎你的想象。欧洲的30个国家，可以一起放进墨西哥，包括德国、英国、爱尔兰、奥地利、捷克、匈牙利等等。历史上，墨西哥的面积甚至更大，比现在大一倍多。墨西哥的领土主要被美国抢走。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024071901.webp",
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024071902.webp"
+          ],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "美墨边境",
+          "link": "https://unchartedterritories.tomaspueyo.com/p/whats-mexicos-future",
+          "description": "下图是美国和墨西哥的边境。左侧是美国的圣地亚哥市，基本上是农村；右侧是墨西哥的蒂华纳市，完全是都市。两边的反差这么大，主要是墨西哥北部的经济完全依靠美国，越靠近美国的地方，经济越繁荣。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072204.webp"
+          ],
+          "user": null,
+          "user_link": null
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "我的编程信念",
+          "link": "https://evanhahn.com/programming-beliefs-as-of-july-2024/",
+          "description": "下面是我目前对计算机编程的一些看法。\n\n（1）当面临一项艰巨的任务时，我会问自己：'如果我根本不做这件事会怎么样？'大多数情况下，这是一个愚蠢的问题，但大约 5% 的情况，我意识到我可以完全跳过一些工作。\n（2）'简单'和'容易'之间的区别很重要。简单是复杂的对立面。复杂性来自多个东西捆绑在一起。容易是另外一回事，复杂的东西也可以很容易。\n（3）消除无效状态（NULL）。如果我可以设计数据/类型防止无效状态，那么就可以消除大量的错误来源。\n（4）代码的可测试性，基本上与代码模块化是一回事。\n（5）软件最重要的问题都是非技术性的。\n（6）制作无用的东西可能是学习新事物的好方法。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024072505.webp"
+          ],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "东亚商人为什么喜欢喝酒",
+          "link": null,
+          "description": "东亚商人经常出去喝酒，在酒桌上讨论生意。世界其他地区并不如此，这是为什么？这跟东亚文化有关。东亚地区强调集体主义和等级制度，不提倡面对面直接说出想法，更喜欢通过隐含和间接的方式表达。饮酒是一种弥补方法。酒精会降低人们的抑制力，从而促进了人际关系和信息共享。",
+          "images": [],
+          "user": null,
+          "user_link": null
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "王传福关于造车的勇气",
+          "link": null,
+          "description": "王传福多年前关于造车的一句话给了我很大的勇气。他说很多企业因为不了解，会把技术想象到令人畏惧的高度，这种畏惧正是对手给后来者营造了一种产业恐吓。他们不断地告诉你做不成，投入很大，研发很难，直到你放弃。其实你解决不了的不是因为你没有能力，而是你缺乏勇气。",
+          "images": [],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "区块链三难困境",
+          "link": null,
+          "description": "以太坊创始人之一的 Vitalik Buterin 在2017年曾经提出，区块链存在三难困境：无法同时实现去中心化、可扩展性和安全性。",
+          "images": [],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "世界最长的巴士路线",
+          "link": null,
+          "description": "世界最长的巴士路线是从英国伦敦到印度加尔各答，一共16000公里，单程要开50天。这条线路已经在1976年停运，当时的票价相当于今天的2200英镑（约20000人民币）。",
+          "images": [],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "Slack 的全称",
+          "link": null,
+          "description": "Slack 是一款工作场所生产力聊天工具，但你可能不知道，它是一个缩写词，意为'所有通信和知识的可搜索日志'（Searchable Log of All Communication and Knowledge）。",
+          "images": [],
+          "user": null,
+          "user_link": null
+        },
+        {
+          "title": "道格拉斯·亚当斯的技术反应规则",
+          "link": null,
+          "description": "可以用下面的一套规则来描述我们对技术的反应：\n（1）当你出生时，世界上的任何事物都是正常和普通的，是世界自然的运作方式。\n（2）当你十五岁到三十五岁之间发明的任何东西都是新的、令人兴奋的和革命性的，你可能会在其中找到一份职业。\n（3）在你三十五岁以后，世界上发明的任何东西都是违背事物自然规律的。",
+          "images": [],
+          "user": null,
+          "user_link": null
+        }
+      ]
+    }
+  ]
+}

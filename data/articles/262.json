@@ -1,0 +1,350 @@
+{
+  "title": "科技爱好者周刊（第 262 期）：告别密码",
+  "link": "https://www.ruanyifeng.com/blog/2023/07/weekly-issue-262.html",
+  "number": 262,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "告别密码",
+          "link": "",
+          "description": "上网体验最差的环节，肯定是密码。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071203.webp)\n\n互联网发展了20多年，所有环节都巨大改善，只有密码除外，还是20年前的用法。\n\n更准确的说，它的用户体验比20年前更差了。密码的强度要求现在越来越高，一般不能少于8个字符，还要包括特殊符号。另外，除了密码，通常还有其他验证（短信、图片识别、OTP 时间码等等）。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071204.webp)\n\n最让人无语的是，即使变得如此麻烦，依然不能杜绝密码被盗、被破解、被钓鱼的风险。\n\n多年来，业界一直努力，试图解决密码问题。近两年终于有了突破，各大公司达成一致，设计出了一套**密码的替代方案：密钥登陆，英文叫做 Passkey**。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071205.webp)\n\nPasskey 这个方案可以做到，登录不需要密码，解决了上面提到的所有问题，而且用户很容易上手，主要厂商已经全部支持。\n\n2022年 WWDC 大会，[苹果宣布](https://developer.apple.com/passkeys/)支持 Passkey。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023070801.webp)\n\n2023年5月，[谷歌](https://blog.google/technology/safety-security/the-beginning-of-the-end-of-the-password/)和[微软](https://www.microsoft.com/en-us/security/blog/2023/05/04/how-microsoft-can-help-you-go-passwordless-this-world-password-day/)同时宣布，全面接入 Passkey。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071206.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023070803.webp)\n\n今天，我就简单讲讲，Passkey 到底怎么回事。\n\n其实，手机 App 早就做到了\"无密码登录\"，按一下指纹，或者人脸识别，就可以登录，完全不需要密码。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071207.webp)\n\n于是，很早就有人想到了，可以设计一套通用机制，让网站也去调用手机上面的硬件识别，从而彻底告别密码。这就是 Passkey 的由来。\n\n具体来说，Passkey 之所以不要密码，因为采用了密钥登录。**网站不再保存用户密码，而是保存用户的公钥**。登录时，用户必须用自己的私钥，解开公钥加密的随机数，从而确认身份。\n\n这也意味着，用户要自己保存私钥。这是很麻烦的事情，因此 Passkey 协议的重点，就在于密钥的生成和保管彻底自动化了。\n\n**Passkey 要求用户必须配备一个\"身份管理器\"**（通常由操作系统提供），这个\"身份管理器\"负责生成密钥，然后公钥交给网站保存，私钥由它自己保存。\n\n等到用户登录网站，需要私钥证明自己身份时，网站就要向用户选定的\"身份管理器\"发出请求。这时，\"身份管理器\"就会调用操作系统的指纹识别或者人脸识别，要求用户完成验证。如果用户通过了，\"身份管理器\"就允许用户使用保存在里面的私钥。\n\n目前，iOS 和安卓已经支持 Passkey，自带\"身份管理器\"，有些笔记本（比如 Macbook）也支持。如果是台式机，没有任何识别设备，浏览器就会给出二维码或者蓝牙，让手机代为验证。\n\n\"身份管理器\"也可以做成独立的硬件（比如 Yubikey），这就需要花钱买了。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023071208.webp)\n\nPasskey 是一个很复杂的协议，上面我说的只是它的核心思路，也不知道说清楚了没有。但是，**对于用户来说，它是很简单的**，就是按一下指纹，或者扫一下人脸，就登录网站了。至于密码，忘了它吧。\n\n我预测，再过一两年，等到这个协议的封装库和框架出台，它就会迅速流行，大大减少密码的使用。\n\n大家现在可以去[Passkeys.io](https://passkeys.io)，亲身体验一下无密码登录，更详细的细节请参考后面的文章（[1](https://www.slashid.dev/blog/passkeys-security-implementation/)，[2](https://css-tricks.com/passkeys-what-the-heck-and-why/)，[3](https://www.stavros.io/posts/clearing-up-some-passkeys-misconceptions/)）。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071203.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071204.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071205.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023070801.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071206.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023070803.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071207.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071208.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "木屑马桶",
+          "link": "https://www.dezeen.com/2023/03/22/woodio-wood-composite-toilet/",
+          "description": "一家芬兰公司推出了木屑马桶，从座圈到底座，都是木屑做的。\n\n这家公司在木屑中加入树脂材料，使其完全防水，同时非常牢固。相比陶瓷马桶，主要好处是环保，可以大量减少二氧化碳排放（因为陶瓷需要烧制），而且很轻。\n\n下一步，该公司会继续推出木屑洗脸盆和木屑浴缸 。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023032910.webp",
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023032909.webp",
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023032911.webp",
+            "https://cdn.beekka.com/blogimg/asset/202303/bg2023032908.webp"
+          ]
+        },
+        {
+          "title": "干扰无人车",
+          "link": "https://www.thedrive.com/news/rebels-are-disabling-waymo-cruise-robotaxis-with-traffic-cones",
+          "description": "旧金山市允许无人驾驶出租车上路，你可以用软件叫车。\n\n美国网友近日发现了一个重大 Bug，根据他发布的视频，只要把停车锥放在引擎盖上（下图），这辆无人驾驶车就会立刻自动停下来，不再行驶，哪怕是在路中央。\n\n这个 Bug 好像不那么容易修复。这个事件凸显了无人驾驶的困难，软件如何判别恶意破坏呢。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023070704.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023070703.webp"
+          ]
+        },
+        {
+          "title": "最热的一天",
+          "link": "https://apnews.com/article/global-record-breaking-heat-july-27069b5380117534d78f1f40a6edc7a0",
+          "description": "美国缅因大学有一个全球气候模型，根据气象站、卫星数据、计算机模拟的数据，得到全球每个地点的实时气温。\n\n他们发现，7月6日是有纪录以来最热的一天，全球平均气温达到17.23摄氏度。更糟糕的是，第二名和第三名，分别是今年7月5日和7月4日。\n\n上图是[他们官网](https://climatereanalyzer.org/clim/t2_daily/)的历年气温图表，那根最粗的黑线就是2023年。从6月开始，黑线就快速上升，远远超出过以往任何一年。\n\n另外，根据全球气温分布图（上图），可以看到现在的地球，整个低纬度和中纬度都是高温区，只有高原地区除外，非常触目惊心。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071105.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071106.webp"
+          ]
+        },
+        {
+          "title": "全球最大LED球馆",
+          "link": "",
+          "description": "拉斯维加斯的威尼斯酒店，最近建了一个球馆，非常奇特。它是全球最大的球形建筑，同时也是全球最大的 LED 装置，高111米，宽516米。\n\n它的外壳都是 LED 屏幕，可以对外播放球形视频，夜晚亮灯，极其夺目。\n\n它的内部则是一个正常的球馆，可以举办大型体育比赛和演唱会。\n\n这样的装置肯定会成为地标，以及游客的最爱，但同时也是一个高耗能的巨大光污染。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071107.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071108.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071109.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071110.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071111.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071112.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "\"进化\"这个词正确吗？",
+          "link": "https://mp.weixin.qq.com/s/5fF7o8EePoIhqZ4x0KrTaQ",
+          "description": "本文讨论一个观点，\"进化\"（evolution）这个词是否应该改成\"演化\"？因为生物更多是在适应环境，不一定变得进步。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023070511.webp"
+          ]
+        },
+        {
+          "title": "我如何创立海外一人 SaSS 公司",
+          "link": "https://mp.weixin.qq.com/s/x6PLSIMn_1qcKnXWPT-J-Q",
+          "description": "作者讲述自己如何一个人将面向海外用户的 SaSS 服务，注册成公司。",
+          "images": []
+        },
+        {
+          "title": "爱奇艺 TV 版如何占用用户带宽",
+          "link": "https://news.mydrivers.com/1/922/922097.htm",
+          "description": "电视机装了爱奇艺 TV 版，息屏状态下，居然在上传数据，只有拔掉电源才会停止。它默认把用户机器用作 CDN 节点。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071201.webp"
+          ]
+        },
+        {
+          "title": "全方位对比 Postgres 和 MySQL (2023 版)",
+          "link": "https://mp.weixin.qq.com/s/xf7qb4oAVHyi4_U32FSKPA",
+          "description": "Postgres 和 MySQL 是两大最主流的关系型数据库，本文对它们进行全方位的比较。",
+          "user": "milasuperstar",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3269",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071318.webp"
+          ]
+        },
+        {
+          "title": "如何破解滑动验证码？",
+          "link": "https://mp.weixin.qq.com/s/iK_JkVRrh5vIRBjnQbDOyw",
+          "description": "本文介绍了图片滑动验证码的实现原理和流程分析，以及如何破解。",
+          "user": "niumoo",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3266",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071316.webp"
+          ]
+        },
+        {
+          "title": "优化人工智能生成的二维码",
+          "link": "https://antfu.me/posts/ai-qrcode-refine",
+          "description": "作者尝试让二维码，尽可能像人类可以看懂的图片，同时机器还能扫描。上图其实是一个二维码，本文记录了优化过程。",
+          "user": "POKEZHANG",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3247",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071313.webp"
+          ]
+        },
+        {
+          "title": "React 服务器组件的问题",
+          "link": "https://marmelab.com/blog/2023/06/05/react-angularjs-moment.html",
+          "description": "React 官方开始推广服务器组件，本文作者表示担忧，这会让现有的很多写法都失效。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202306/bg2023060701.webp"
+          ]
+        },
+        {
+          "title": "Chrome 支持模块名映射",
+          "link": "https://web.dev/import-maps-in-all-modern-browsers/",
+          "description": "Chrome 浏览器加载 JS 模块时，需要给出模块的 URL。但是，现在只要指定模块名与 URL 之间的映射，浏览器就可以从模块名加载。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023050302.webp"
+          ]
+        },
+        {
+          "title": "中国与美国的云服务竞争",
+          "link": "https://interconnected.blog/us-vs-china-a-cloud-proxy-war/",
+          "description": "美国政府正考虑把中国的云服务商（阿里云、腾讯云、华为云）赶出美国机房。本文分析中美云服务商在东南亚、拉美和中东的全球竞争。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023070510.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "一个 TypeScript 库",
+          "link": "https://buf.build/blog/connect-web-protobuf-grpc-in-the-browser",
+          "description": "一个 TypeScript 库，用于从浏览器调用 RPC 服务器，参见[介绍文章](https://buf.build/blog/connect-web-protobuf-grpc-in-the-browser)。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022080504.webp"
+          ]
+        },
+        {
+          "title": "一个浏览器的同步插件",
+          "link": "",
+          "description": "一个浏览器的同步插件，最大特点是跨浏览器同步，比如安卓的 Chrome 同步了桌面的 Firefox。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202212/bg2022122212.webp"
+          ]
+        },
+        {
+          "title": "I Don't Care About Commit Message",
+          "link": "https://github.com/mefengl/vscode-i-dont-care-about-commit-message",
+          "description": "VS Code 插件，使用 AI 自动生成代码提交的 Commit 摘要，你就不必自己写了。它需要 OpenAI API Key。",
+          "user": "mefengl",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3248",
+          "images": []
+        },
+        {
+          "title": "React1s",
+          "link": "https://github.com/aaamoon/react1s",
+          "description": "浏览器插件，本地开发 React 项目时，点击页面元素，就会跳转到编辑器的对应组件位置。",
+          "user": "aaamoon",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3268",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071317.webp"
+          ]
+        },
+        {
+          "title": "TGSCAN",
+          "link": "https://github.com/tgscan-dev/tgscan",
+          "description": "开源的 Telegram 搜索引擎。",
+          "user": "HandelDev",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3263",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071314.webp"
+          ]
+        },
+        {
+          "title": "LeaferJS",
+          "link": "https://www.leaferjs.com/",
+          "description": "一个国产的 Canvas 2D 图形渲染引擎，追求极致性能。",
+          "user": "leaferjs",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3246",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071312.webp"
+          ]
+        },
+        {
+          "title": "AltTab",
+          "link": "https://github.com/lwouis/alt-tab-macos",
+          "description": "这个软件可以让 Mac 电脑具备 Windows 的 alt + tab 键的功能，方便地切换各个窗口。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023051203.webp"
+          ]
+        },
+        {
+          "title": "一个命令行备份工具",
+          "link": "",
+          "description": "一个命令行工具，类似于苹果的 Time Machine 备份工具，对文件和目录进行增量备份，以后可以恢复到任意时点。它支持跨平台使用。",
+          "images": []
+        },
+        {
+          "title": "XState",
+          "link": "https://xstate.js.org/",
+          "description": "一个 JS 库，实现了有限状态机，设计得很简洁，可以用来学习有限状态机。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023051501.webp"
+          ]
+        },
+        {
+          "title": "hat-syslog",
+          "link": "https://github.com/hat-open/hat-syslog",
+          "description": "Linux 系统日志 Syslog 的图形操作工具。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023051602.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "美国无线电频谱表",
+          "link": "https://www.beautifulpublicdata.com/the-united-states-radio-frequency-allocation-chart/",
+          "description": "美国政府发布的无线电频谱表，可视化展示美国的所有频段分配，直接下载 [PDF 文件](https://ntia.gov/sites/default/files/publications/january_2016_spectrum_wall_chart_0.pdf)。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023020809.webp"
+          ]
+        },
+        {
+          "title": "编写你自己的 React、ProseMirror 和 Redux",
+          "link": "https://nytimes.github.io/oak-byo-react-prosemirror-redux/",
+          "description": "《纽约时报》技术团队编写的培训教程，指导新人自己实现前端的 React 等基础库。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202302/bg2023020811.webp"
+          ]
+        },
+        {
+          "title": "基于 ChatGPT 的 AI 选股工具（仅限中国 A 股）",
+          "link": "",
+          "description": "基于 ChatGPT 的 AI 选股工具（仅限中国 A 股）。",
+          "user": "yvonuk",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3265",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023071315.webp"
+          ]
+        },
+        {
+          "title": "GeoCities 的 gif 图库",
+          "link": "https://gifcities.org/",
+          "description": "上个世纪的 GeoCities 平台存有海量的 Gif 小动画。这个网站有所有这些文件的存档，并提供搜索。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022082303.webp"
+          ]
+        },
+        {
+          "title": "FlagWaver",
+          "link": "https://krikienoid.github.io/flagwaver/",
+          "description": "这个网页模拟旗帜飘扬的效果，你可以上传自己的图片作为旗帜，然后定制各种参数。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202211/bg2022111201.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "1989年美联航811航班事故",
+          "link": "",
+          "description": "1989年2月24日，一架波音747执行美联航811航班，从洛杉矶飞往澳大利亚悉尼，中途在夏威夷停留。\n\n起飞后17分钟，机组人员听到一声巨响，发现前货舱门被炸飞。\n\n爆炸的力量如此巨大，在机身上撕开了一个大洞，机舱的五排座位都被掀起，上面的9个乘客瞬间就被弹出飞机。\n\n这9名乘客全部丧生。其中有一名乘客坐在走道对面，不属于爆炸的核心区域（上图最左侧箭头）。由于他没有系上安全带，是被气流带出去的，如果系了，很可能幸存下来。\n\n下面是机上乘客拍摄的事故发生后的机内景象，氧气面罩全都落下了，但是里面没有氧气，机内到处都是呼呼的风声。\n\n机长一瞬间认为死定了，但是后来发现，飞机还能飞行，只是爆炸一侧的两个发动机发生故障了。\n\n机组人员想尽办法，将飞机重新飞回了夏威夷，在机场平安落地。\n\n事故调查人员一开始认为是炸弹导致的，但后来确定原因是货舱门的电动锁有设计失误，起飞后并未切断门锁的马达电源，导致飞行中货舱门意外打开，酿成大祸。\n\n事后，所有波音747的门锁都更换了设计。并且，原来的外开门改成了内开门，在高空中，由于机内的气压大于机外，内开门是无法打开的。以后就再也没有发生过类似事故。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011710.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011711.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011712.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011713.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011714.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011715.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011716.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "三个原则可以帮助你有效地记笔记",
+          "link": "",
+          "description": "三个原则可以帮助你有效地记笔记。\n\n（1）笔记必须符合你的思维方式。\n\n做笔记要按照自己的思考方式，不能原封不动地按照老师（或者书本）的讲解方式。这样不仅你写起来更轻松，而且将来回顾笔记的时候，你也更容易理解自己当时的想法。\n\n（2）笔记必须代表你的知识。\n\n笔记不要仅仅复制/粘贴他人的话语，而要用自己的语言表达。你不妨标记清楚，哪些地方是已经理解的，哪些地方还没有理解或者有疑问。\n\n（3）笔记必须可以轻松检索。\n\n为了最大限度利用自己的笔记（其实也是节约自己的时间），它必须可以方便地检索。你要为每个部分写一个标题，并且定期整理出一份目录。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "编程需要知识的广度",
+          "link": "",
+          "description": "跟大家想的不一样，编程并不需要掌握深刻的思想，而是需要某种程度上记住文档，以便用某些固定词汇，清晰表达我们的想法。\n\n-- 《编程需要知识的广度》",
+          "images": []
+        },
+        {
+          "title": "爱护环境",
+          "link": "",
+          "description": "如果你真的爱护环境，那么买车的时候，你不是买一辆电动车，而是买一辆旧车，并尽量少用它。",
+          "images": []
+        },
+        {
+          "title": "在手机上看电影",
+          "link": "",
+          "description": "如果你在手机上看这部电影，你将永远不会体验到它。你认为你已经体验过了，但事实是没有。\n\n真是太糟了，你以为在该死的电话机上看电影，算看过电影吗。去看真实的电影吧。\n\n-- 大卫·林奇，著名的美国电影导演，谈有些观众在手机上看他的作品",
+          "images": []
+        },
+        {
+          "title": "理想的工人",
+          "link": "",
+          "description": "理想的工人是机器人，永不疲倦，永不休息，只要最基本的维护。如果崩溃了，很容易被复制和替换。\n\n你越能够不休息地工作，越说服自己像机器人一样工作，你在市场上的就业价值就越大。\n\n-- 《休息不是为了优化》",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

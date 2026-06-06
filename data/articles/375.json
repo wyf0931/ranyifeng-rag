@@ -1,0 +1,417 @@
+{
+  "title": "科技爱好者周刊（第 375 期）：一扇门的 Bug",
+  "link": "https://www.ruanyifeng.com/blog/2025/11/weekly-issue-375.html",
+  "number": 375,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "一扇门的 Bug",
+          "link": "",
+          "description": "最离奇的软件 Bug，你听说过哪些？\n\n[下面这个](https://mastodon.gamedev.place/@TomF/115589875974658415)是我本周看到，绝对可以排进史上前十名。\n\n我把它译出来，跟大家分享，以下是第一人称的叙述：\n\n![](https://cdn.beekka.com/blogimg/asset/202511/bg2025112518.webp)\n\n2013年，我在 Valve 公司从事游戏开发。\n\n![](https://cdn.beekka.com/blogimg/asset/202511/bg2025112201.webp)\n\n当时，第一代虚拟现实 VR 头盔 Oculus DK1 刚刚发售。公司决定为这款头盔移植游戏，让我来移植，搞清楚 VR 的游戏环境。\n\n![](https://cdn.beekka.com/blogimg/asset/202511/bg2025112202.webp)\n\n我就选了2004年我们公司开发的《半条命2》来移植。\n\n![](https://cdn.beekka.com/blogimg/asset/202511/bg2025112203.webp)\n\n移植了一个片段后，我们发现实际效果很好，就决定移植整个游戏，并且发布了发售预告。\n\n移植过程中，我试玩了很多片段，但没有从头到尾玩一次。\n\n等到移植完成，就在发售前夕，我决定完整玩一次，如果发现有什么问题，就写在发布说明里面。\n\n我心想，应该不会有大问题，毕竟这个游戏已经发售10年了，无数人玩过，反响良好。\n\n但是，万万没有想到，我居然遇到了一个重大 Bug。\n\n![](https://cdn.beekka.com/blogimg/asset/202511/bg2025112205.webp)\n\n游戏的开头部分，玩家来到火车站，一个守卫让你进去一个房间。很奇怪，房间的门是关着的，你进不去，就......卡住了。\n\n你没死，就是哪儿也去不了。前面的门关着，你进不去，也退不出去，身后的大门已经关上了。你被困在一个走廊里，旁边有个守卫，无路可走。真是奇怪。\n\n游戏的剧情是，你必须进入这个房间，才能往下玩。你又去找守卫，他指着锁着的门，仅此而已，你被困住了。\n\n我上网查了视频，心想自己是不是记错了。没错，门应该是自动打开的，你走进去就行了，但是......现在这扇门却关了！\n\n![](https://cdn.beekka.com/blogimg/asset/202511/bg2025112206.webp)\n\n我心想完蛋了，这游戏没法发布了。\n\n我赶忙联系了其他人，包括一些十年前参与这个游戏开发的人。他们测试后，都说确实有问题，而且在非 VR 模式下也一样，门也是关着的，所以肯定不是我移植弄坏的。但没人知道原因，因为代码根本没改过。\n\n有人甚至追溯到游戏的原始源代码，编译了最初发售时的游戏版本----结果发现，那个原始版本也坏了，门也是关着的。\n\n这怎么可能？大家慌了，这意味着这个 Bug 十年前就存在，但当年编译为什么没出现，十年后重新编译就出现了，这到底什么回事？\n\n在花了大约一天时间，重新使用当年的调试和回放工具之后，一位同事弄明白了哪里出了问题。\n\n如果仔细观看游戏，你会发现这扇门有一瞬间，其实自动解锁并打开了，但是房间里还有第二个守卫站在门后。这个守卫站得离门非常近，门打开的一瞬间会轻轻碰到守卫的脚趾，然后又弹回，重新关上，并自动上锁。由于游戏没有考虑怎么处理这种情况并重新打开门，所以游戏就卡住，你无法前进了。\n\n![](https://cdn.beekka.com/blogimg/asset/202511/bg2025112207.webp)\n\n一旦弄明白怎么回事，解决方法就很简单。我们把守卫往后移大约一毫米，门就很顺利自动打开了。\n\n现在我们可以发布游戏了。但是，问题还是没有彻底解决。为什么这个游戏当初没有出现这个 Bug，原版里守卫的脚趾也挡着门啊？为什么十年后重新编译，Bug 就出现呢？或者说，Bug 其实一直都在，为什么十年前这扇门没有关上呢？\n\n于是，一场旷日持久的漏洞搜寻就此展开。\n\n我们终于发现了答案，就是老生常谈的浮点运算。\n\n《半条命2》于2004年发布，当时编译用的是较旧的8087或 x87 数学指令集。这些指令集的浮点数精度五花八门，有些是32位，有些是64位，有些是80位，不同的代码段使用了不同的精度。\n\n十年后的2013年，SSE 指令集已经成为所有 x86 CPU 的标准配置，编译器默认使用 SSE，它有明确的精度，根据代码需求使用32位或64位，是可以预测的。\n\n真相就是，十年前编译用了32位精度，现在用了64位，小数点的差异造成了几毫米的误差，让守卫的脚趾碰到了门。\n\n好了，现在玩家终于可以走进大门，继续玩下去了。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112518.webp",
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112201.webp",
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112202.webp",
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112203.webp",
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112205.webp",
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112206.webp",
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112207.webp",
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112208.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "AI 授课",
+          "link": "https://www.theguardian.com/education/2025/nov/20/university-of-staffordshire-course-taught-in-large-part-by-ai-artificial-intelligence",
+          "description": "英国斯塔福德郡大学的学生，向媒体投诉。\n\n他们上课时，老师的幻灯片（下图）完全是用 AI 生成的，甚至老师也不讲课，而是播放 AI 生成的授课语音。\n\n学生非常气愤，因为学校规定，学生如果提交 AI 生成的作业，会被开除，但是老师却在用 AI 讲课。\n\n这一方面反映了英国的大学教育质量日趋下降，另一方面也让人反思。如果大学广泛使用 AI 授课，或者老师的教学质量还不如 AI，那么学生还需要上大学吗，为什么不直接向 AI 学习？",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112102.webp"
+          ]
+        },
+        {
+          "title": "螃蟹椅",
+          "link": "https://mossandfog.com/toyotas-crab-like-wheelchair-that-walks/",
+          "description": "丰田公司推出一款概念产品，像螃蟹一样行走的椅子。\n\n它的四条腿可以活动，由电机控制铰链。人坐在上面，它会自己行走，还能爬台阶。\n\n它还能趴下站起。\n\n我预计，国内很快会推出类似产品，可以驮着人行走的机器人，市场很大。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025111217.webp",
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025111219.webp",
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025111220.webp"
+          ]
+        },
+        {
+          "title": "量子计算机",
+          "link": "https://www.ianvisits.co.uk/articles/you-can-see-a-working-quantum-computer-in-ibms-london-office-85464/",
+          "description": "IBM 公司的伦敦办公室，正在展示一台量子计算机。\n\n这台机器建造于2019年，已经过时了。但是你不能走进办公室看，只能在门口远远地看。\n\n这东西据说是计算机的未来，可以快速破解现有的加密算法。不过，它工作时需要低温冷却，接近绝对零度，所以不可能在家里使用。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112503.webp",
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112506.webp",
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112504.webp",
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112505.webp"
+          ]
+        },
+        {
+          "title": "政府网站的费用",
+          "link": "https://www.abc.net.au/news/2025-11-23/bureau-of-meteorology-new-website-cost-blowout-to-96-million/106042202",
+          "description": "制作一个政府网站要花多少钱？答案是9650万澳元（约4.5亿人民币）。\n\n澳大利亚气象局的新网站，设计费用410万澳元，开发费用7980万澳元，发布和安全测试费用1260万澳元，共计9650万澳元。\n\n由于远远超过了410万澳元的预算，这件事被媒体披露后，引起了公众哗然。\n\n更可笑的是，新网站发布后，农民反映找不到降雨数据，不得不又换回旧版网站。\n\n政府的计算机系统，如何保证高效好用，又不浪费纳税人的钱，真是一个难题。\n\n大家可以去参观这个4.5亿人民币开发的网站 [bom.gov.au](https://www.bom.gov.au/)。另外，[旧版网站](https://reg.bom.gov.au/)目前也依然在线。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112514.webp",
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112515.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "为什么每个数据库都使用 B 树",
+          "link": "https://mehmetgoekce.substack.com/p/b-trees-why-every-database-uses-them",
+          "description": "一篇科普文章，介绍为什么 B 树比二叉树更适合数据库。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112401.webp"
+          ]
+        },
+        {
+          "title": "为什么评估新模型越来越难",
+          "link": "https://simonwillison.net/2025/Nov/24/claude-opus/",
+          "description": "著名程序员西蒙·威利森感叹，他已经评估不了最新的大模型了。因为各种模型的能力越来越强，简单的题目都会解，必须用很高深的题目去测。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112508.webp"
+          ]
+        },
+        {
+          "title": "固态硬盘不能长时间断电",
+          "link": "https://www.xda-developers.com/your-unpowered-ssd-is-slowly-losing-your-data/",
+          "description": "本文指出，消费级的固态硬盘（SSD）在断电状态下，超过一年就会丢失数据。\n\n目前，最好的固态硬盘也不能断电超过十年。所以，如果长时间不用，数据不要保存在固态硬盘。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112509.webp"
+          ]
+        },
+        {
+          "title": "中国龙芯的基准测试",
+          "link": "https://lemire.me/blog/2025/11/23/how-good-are-chinese-cpus-benchmarking-the-loongson-3a6000/",
+          "description": "一个老外程序员测试龙芯 3A6000 处理器，跟2021年发布的英特尔 Xeon Gold 6338 对比。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112522.webp"
+          ]
+        },
+        {
+          "title": "C 代码里面的 URL",
+          "link": "https://susam.net/url-in-c.html",
+          "description": "上面这段 C 语言代码里面有一个 URL，居然是可以编译的，这是为什么？",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112706.webp"
+          ]
+        },
+        {
+          "title": "如何做一个简单的搜索引擎",
+          "link": "https://karboosx.net/post/4eZxhBon/building-a-simple-search-engine-that-actually-works",
+          "description": "本文介绍搜索引擎的原理，如何自己动手写一个简单的搜索引擎。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112602.webp"
+          ]
+        },
+        {
+          "title": "DIY NAS：2026 年版",
+          "link": "https://blog.briancmoses.com/2025/11/diy-nas-2026-edition.html",
+          "description": "作者详细介绍自己组装 NAS 的配置，可以参考。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112708.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "dnslookup",
+          "link": "",
+          "description": "测试 DNS 服务器的命令行工具，可以测试本地到 DNS 服务器的延迟，以及 DNS 解析获取域名的 IP 地址的耗时。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112101.webp"
+          ]
+        },
+        {
+          "title": "Lemon4iPhone",
+          "link": "",
+          "description": "一个跨平台的桌面应用，让电脑连接管理 iPhone。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112405.webp"
+          ]
+        },
+        {
+          "title": "SVG.js",
+          "link": "https://svgjs.dev",
+          "description": "一个网页 JS 库，用来生成和操作 SVG 图片动画。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112406.webp"
+          ]
+        },
+        {
+          "title": "impala",
+          "link": "https://github.com/pythops/impala",
+          "description": "Linux 平台管理 WiFi 的一个终端应用。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112303.webp"
+          ]
+        },
+        {
+          "title": "blog-starter",
+          "link": "",
+          "description": "一个基于 Next.js 的静态博客网站模版。",
+          "user": "YYsuni",
+          "user_link": "https://github.com/ruanyf/weekly/issues/8262",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112106.webp"
+          ]
+        },
+        {
+          "title": "pdfpc-ts",
+          "link": "https://github.com/Master-Hash/pdfpc-ts",
+          "description": "一个开源网站，用于幻灯片演示，特点是同时带有演示者视图，用于提词，类似于桌面应用 pdfpc。",
+          "user": "Master-Hash",
+          "user_link": "https://github.com/ruanyf/weekly/issues/8264",
+          "images": []
+        },
+        {
+          "title": "剪存",
+          "link": "https://github.com/snsogbl/clip-save",
+          "description": "开源的桌面软件，用来保存剪贴板历史，支持 Windows/Mac。",
+          "user": "snsogbl",
+          "user_link": "https://github.com/ruanyf/weekly/issues/8269",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112302.webp"
+          ]
+        },
+        {
+          "title": "Hoa",
+          "link": "https://github.com/hoa-js/hoa",
+          "description": "一个受 Koa 和 Hono 启发的 JS 服务器框架，适用于 Cloudflare Worker。",
+          "user": "nswbmw",
+          "user_link": "https://github.com/ruanyf/weekly/issues/8289",
+          "images": []
+        },
+        {
+          "title": "NodeBBS",
+          "link": "https://github.com/aiprojecthub/nodebbs",
+          "description": "开源的基于 JS 语言的现代论坛系统。",
+          "user": "wengqianshan",
+          "user_link": "https://github.com/ruanyf/weekly/issues/8294",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112701.webp"
+          ]
+        },
+        {
+          "title": "MyTube",
+          "link": "https://github.com/franklioxygen/MyTube",
+          "description": "一个需要自搭建的 Web 服务，用来下载与管理 Youtube/Bilibili 两大平台的视频。",
+          "user": "franklioxygen",
+          "user_link": "https://github.com/ruanyf/weekly/issues/8300",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112704.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI 相关",
+      "items": [
+        {
+          "title": "invoice",
+          "link": "",
+          "description": "一个开源的 Web 应用，用户上传账单，它会用 AI 进行识别和财务分析。",
+          "user": "JasonRobertDestiny",
+          "user_link": "https://github.com/ruanyf/weekly/issues/8270",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112301.webp"
+          ]
+        },
+        {
+          "title": "KoalaQA",
+          "link": "https://github.com/chaitin/KoalaQA",
+          "description": "开源的 AI 客服系统，可以搭建问答平台、开发者社区、用户服务社区。",
+          "user": "Trc0g",
+          "user_link": "https://github.com/ruanyf/weekly/issues/8286",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112502.webp"
+          ]
+        },
+        {
+          "title": "seekdb",
+          "link": "https://github.com/oceanbase/seekdb",
+          "description": "OceanBase 团队推出的一款开源 AI 数据库，支持向量计算，兼容 MySQL。",
+          "user": "liboyang0730",
+          "user_link": "https://github.com/ruanyf/weekly/issues/8288",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112521.webp"
+          ]
+        },
+        {
+          "title": "OPENUGC",
+          "link": "https://chat.openugc.com",
+          "description": "一个 AI 网页客户端，可以配置模型、Agent 和 MCP，功能较全，但是不开源。",
+          "user": "aicu-icu",
+          "user_link": "https://github.com/ruanyf/weekly/issues/8298",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112703.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "LangGraph 教程",
+          "link": "",
+          "description": "LangGraph 是一个开源 Agent 开发框架，本教程是基于 Jupyter Notebook 的可交互教程，介绍这个框架的具体实践。",
+          "user": "luochang212",
+          "user_link": "https://github.com/ruanyf/weekly/issues/8283",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112501.webp"
+          ]
+        },
+        {
+          "title": "nano-banana-pro-prompts",
+          "link": "",
+          "description": "这个仓库收集了500+的 Nano Banana Pro 模型提示词，每一个提示词都有图片，超过一半提示词带有参数。",
+          "user": "DophinL",
+          "user_link": "https://github.com/ruanyf/weekly/issues/8297",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112702.webp"
+          ]
+        },
+        {
+          "title": "OCR Arena",
+          "link": "",
+          "description": "这个网站是一个 AI 竞技场，比较不同模型的 OCR（光学识别）能力，目前排名第一的是 Gemini 3。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112507.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "飞机场模型",
+          "link": "https://www.core77.com/posts/138995/Historically-Accurate-Airport-Dioramas-by-AV-Pro-Designs",
+          "description": "一位退休的美国飞行员，喜欢制作飞机场模型。他的网站上有大量的作品照片，大家可以点进去看。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112510.webp",
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112511.webp",
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112709.webp",
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112710.webp",
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112512.webp",
+            "https://cdn.beekka.com/blogimg/asset/202511/bg2025112513.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "",
+          "link": "",
+          "description": "经常有人对我说：\n\n- 我想跟你简单聊聊天？\n- 下周我们一起喝咖啡吧？\n- 我们一起来讨论一下吧？\n\n我的回答永远是：不，不，不。\n\n![](https://cdn.beekka.com/blogimg/asset/202408/bg2024082212.webp)\n\n我确实可以满足你的要求，但我就是不能做。\n\n即使它们可能是重要的机会，即使只需要花费我15分钟，即使这是其他人都会同意去做的事情，我也不想做。\n\n我必须限制一天中被别人占用的时间，否则我自己就没有剩下的时间了。\n\n即使我让你占用我的时间以后，还会剩下一些时间，我也可能因此失去能量和专注力，再来利用好这些剩下的时间。\n\n时间是我们最不可替代的资产----我们无法购买更多的时间。我们一秒钟都无法收回失去的时间。我们只能希望尽可能少地浪费。\n\n但是现实生活中，不知何故，很多人将时间视为所有资源中最可再生的，用掉就用掉了，反正还有别的时间。\n\n![](https://cdn.beekka.com/blogimg/asset/202408/bg2024082213.webp)\n\n所以，如果你问我是否可以聊天或聚一聚，答案是不。我希望你能够明白，我这样回答的理由。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202408/bg2024082212.webp",
+            "https://cdn.beekka.com/blogimg/asset/202408/bg2024082213.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "1. 编程是我遇到过的最能抑制傲慢的良药。",
+          "link": "https://tratt.net/laurie/blog/2020/automatic_syntax_error_recovery.html",
+          "description": "编程是我遇到过的最能抑制傲慢的良药。如果一个人很傲慢，你就让他去编程。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "2. 训练一个观点与众不同的模型，会越来越困难。",
+          "link": "",
+          "description": "训练一个观点与众不同的模型，会越来越困难。因为如果你的观点与真实数据和真实世界不符，你就不能简单地用外部材料来训练模型。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "3. 现在是2025年，AI 像病毒一样迅速传播。",
+          "link": "https://tonsky.me/blog/hiring-ai/",
+          "description": "现在是2025年，AI 像病毒一样迅速传播。哪怕你还在坚持手工制作精品，人们也很容易将你的辛勤劳动误认为是毫无灵魂、缺乏灵感的机器垃圾。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "4. 人生苦短，死亡来得如此轻易。",
+          "link": "https://kottke.org/25/11/my-pace",
+          "description": "人生苦短，死亡来得如此轻易。如果我只是随波逐流，转眼间就会变成老翁。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "5. 如果一件东西100%实用，它就一定是漂亮的。",
+          "link": "https://www.bedelstein.com/post/mcmaster-carr",
+          "description": "如果一件东西100%实用，它就一定是漂亮的，比如没有丑陋的钉子或丑陋的锤子。但是，有很多丑陋的汽车，因为汽车并不是所有部分都实用。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

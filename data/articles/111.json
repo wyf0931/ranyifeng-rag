@@ -1,0 +1,479 @@
+{
+  "title": "科技爱好者周刊（第 111 期）：智能电视的误区",
+  "link": "https://www.ruanyifeng.com/blog/2020/06/weekly-issue-111.html",
+  "number": 111,
+  "sections": [
+    {
+      "name": "本周话题",
+      "items": [
+        {
+          "title": "智能电视的误区",
+          "link": "",
+          "description": "国内的智能电视机，现在都自带系统，一打开就是各种菜单，有直播、影视、游戏、应用等等。\n\n我不赞成这样的设计，也不愿意购买这样的电视机。\n\n![](https://cdn.beekka.com/blogimg/asset/202006/bg2020061009.jpg)\n\n这是因为电视机的使用年限很长，可能达到10年。内置的操作系统不可能跟着更新这么久，事实上很多电视机自从出厂，就再也不更新系统了。以后，你一打开电视，就会看到过时的系统。\n\n而且，为了压低成本，智能电视使用的 CPU、内存和储存，都是很差的配置，不可能有好的性能和体验。只要一两年，系统就会变得很卡，动不动就提醒你没有剩余空间了。\n\n正确的做法应该是，电视机和系统是分开的两个硬件，不集成在一起。电视机最好就是一个单纯的显示设备，操作系统由机顶盒来承担。\n\n但是，这在国内恐怕很难做到。因为国内电视机的操作系统，很大的目的是播放开机广告，他们舍不得这一块的利益。\n\n![](https://cdn.beekka.com/blogimg/asset/202006/bg2020061010.jpg)\n\n同理，自带操作系统的智能家电，我都建议不要购买，比如可以上网的互联网冰箱。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061009.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061010.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "数据分析全套讲解",
+          "link": "",
+          "description": "随着数据量的增加，越来越多的场景需要分析数据。这已经不仅是对工程师的要求，几乎成为每个岗位的必备技能。产品经理和市场运营，如果会用工具分析数据，对业务成长和个人发展都能带来巨大的好处。\n\n正是因为上面的原因，企业越来越看重数据分析这项技能，招聘市场也出现了巨大的数据人才需求。学好数据分析，会为你增加求职机会，提高求职成功率。\n\n![](https://cdn.beekka.com/blogimg/asset/202006/bg2020061007.jpg)\n\n但是，数据分析的知识点很散，涉及不同领域的基础知识和多种工具，很多学习者觉得无从下手，抓不住重点，学习起来常常毫无头绪。\n\n别急，这有一份由开课吧提供赞助，并由廖雪峰老师历时3个月精心打磨的 **《数据分析全套讲解》** 学习视频。本资料是最新升级版，包含了基础和进阶两大部分内容，从下面的内容介绍可以看出，覆盖的知识点是非常全面的。\n\n一、基础篇-数据分析必备技能\n\n44个知识点纯干货内容，每天2小时，5天掌握数据分析必备技能。学习内容：Excel 数据可视化，Python 数据可视化，SQL 数据操作，K-means聚类分析，数据挖掘逻辑回归。\n\n二、进阶篇-常用数据分析方法论\n\n介绍了验证分析与建模预测，理论与实战结合。学习内容：数据集中趋势 ，假设检验，多元线性回归程序与可视化，逻辑回归模型，分类模型评估指标，AQI 分析与预测。\n\n这套全新的数据分析资料原价值1980元，现在有168个免费名额。需要的朋友请扫码下面的二维码，添加微信就可以免费领取。\n\n![](https://cdn.beekka.com/blogimg/asset/202006/bg2020061008.jpg)\n\n开课吧另有 **《大数据分析全栈工程师》** 课程，适合数据分析工程师岗位，具体情况也可以扫描上面二维码了解。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061007.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061008.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资讯",
+      "items": [
+        {
+          "title": "英国连续60天无煤电",
+          "link": "",
+          "description": "由于疫情期间用电需求下降，到6月10日为止，英国已经连续60天没有燃烧任何煤炭了。这是工业革命后从没有过的。英国现在只剩下四个燃煤电厂，4月10日英国国家电网让最后一台燃煤发电机停机，直到现在。\n\n十年前，英国约40％的电力来自煤炭。而现在，英国拥有世界上最大的海上风能产业，以及世界最大的风电场。这个风电厂位于约克郡，发电量占英国全国电力的5％。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061004.jpg"
+          ]
+        },
+        {
+          "title": "共享单车的新去处",
+          "link": "https://twitter.com/shenzhilong001/status/1270523302138613763",
+          "description": "缅甸教育部向中国收购了36.5万辆废弃的共享单车。这些车在仰光维修完毕后，免费发放给有需要的贫困的缅甸学生。\n\n长久以来，大批共享单车在中国遭人为损坏或丢弃。缅甸政府想到了国内数十万贫困学生缺乏交通工具，于去年底以每辆35元人民币的价格向中国收购了这些车。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061005.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061006.jpg"
+          ]
+        },
+        {
+          "title": "模仿特朗普的实验",
+          "link": "https://www.businessinsider.com/twitter-donald-trump-suspendthepres-experiment-policies-suspension-glorifying-violence-2020-6",
+          "description": "一个推特用户做了一个实验，注册了一个帐号，特拉普发什么推特，他就发一样的内容，不是转发，而是原文复制，除此以外不发其他内容。\n\n结果，推特官方三天就注意到了他，关闭帐号12小时，要求他在这段时间内删除违规言论。同样的话，特朗普可以说，你说就不行。媒体报道这件事以后，推特恢复了这个账号，并说关闭帐号是一个\"失误\"。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020060505.jpg"
+          ]
+        },
+        {
+          "title": "桔子皮的功能",
+          "link": "https://www.princeton.edu/news/2017/08/22/orange-new-green-how-orange-peels-revived-costa-rican-forest",
+          "description": "美国生态学家16年前做了一个实验，说服哥斯达黎加国家公园，允许一家果汁公司将12000吨桔子皮，倾倒在一块贫瘠的土地上，卡车整整运送了1000次。\n\n16年后，他们重新访问这块土地，发现那里已经是一片郁郁葱葱的森林了，跟旁边的土地形成巨大的对比（上图），地面生物量（以树木的木材量计算）增加了176％。生态学家认为，这对如何回收食品工业的生产残余物，有很大的启示意义。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020060801.jpg"
+          ]
+        },
+        {
+          "title": "90岁游戏Youtuber",
+          "link": "",
+          "description": "日本90岁的森滨子（Hamako Mori）老人，公认是世界年龄最大的游戏 Youtuber。她每天都会花至少3个小时打游戏，还在 Youtube 上面维护一个自己的频道。接受采访时，她说消灭游戏里面的敌人是一种绝佳的压力缓解剂。\n\n她从40年前的1981年开始玩游戏，已经玩过200多个游戏。她最喜欢的游戏包括侠盗猎车手（Grand Theft Auto）和奇幻角色扮演游戏《上古卷轴5：天际》。2014年，她的孙子为她建了一个 YouTube 频道\"Gamer Grandma\"，每月上传三四个视频，目前有30万订户。她谈到频道时说：\"这件事很有趣，很多人关注你，你就不是一个人玩了。\"现在，她正热切期待着 PlayStation 5 发布。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061201.jpg"
+          ]
+        },
+        {
+          "title": "一句话新闻：谷歌高亮显示搜索文本",
+          "link": "",
+          "description": "谷歌开始尝试在用户点击跳出搜索结果页后，直接在外部网页上，高亮显示搜索文本，并且浏览器将自动向下滚动至相关部分。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020060501.jpg"
+          ]
+        },
+        {
+          "title": "一句话新闻：Stack Overflow 2020年开发者调查薪资排名",
+          "link": "",
+          "description": "Stack Overflow 的《2020年开发者调查》显示，美国平均工资最高的程序员依次是Scala、Go 和 Objective-C。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020060502.jpg"
+          ]
+        },
+        {
+          "title": "一句话新闻：Rust语言蝉联最受喜爱编程语言",
+          "link": "",
+          "description": "StackOverflow 的《2020年开发者调查》还显示，Rust 语言连续五年排名程序员最喜欢的编程语言。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "一句话新闻：Signal提供一键模糊脸部功能",
+          "link": "",
+          "description": "加密通信软件 Signal 开始提供\"一键模糊脸部\"的功能，防止在分享的照片中泄露周围人的脸部信息。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061202.jpg"
+          ]
+        },
+        {
+          "title": "一句话新闻：中国科学家从草图生成逼真人像",
+          "link": "",
+          "description": "中国科学家发表了一项研究成果，可以从草图直接生成逼真的人像。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020060506.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020060802.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "如何备份 IMAP 电子邮件到本地",
+          "link": "https://smalldata.tech/blog/2020/04/07/imap-email-backup",
+          "description": "有些电子邮件服务使用 IMAP 协议（比如 GMail），本文介绍如何使用一个 Python 脚本，将邮件从服务器备份到本地。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Node.js 缓冲区介绍",
+          "link": "https://livecodestream.dev/post/2020-06-06-a-complete-introduction-to-node-buffers/",
+          "description": "本文介绍 Buffer（缓冲区）在 Node.js 里面是什么东西，以及这个内置类的简单用法。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "如何简单实现 CSS 主题的切换",
+          "link": "https://uglyduck.ca/quick-dirty-theme-switcher/",
+          "description": "本文介绍一个简单的方法，为网页指定多个 CSS 主题，允许用户手动切换主题。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Bookmarklets 简介",
+          "link": "https://www.ph-uhl.com/0010-Bookmarklets/",
+          "description": "本文介绍 JavaScript 的书签工具 Bookmarklets 是什么，以及作者常用的一些 Bookmarklets。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "根证书到期引发的问题",
+          "link": "https://scotthelme.co.uk/impending-doom-root-ca-expiring-legacy-clients/",
+          "description": "HTTPS 协议加密的基础是证书，但是证书都有时间期限。根证书是其他所有证书可信性的保证，如果它过期了怎么办？",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020060901.jpg"
+          ]
+        },
+        {
+          "title": "使用 Cloudflare worker 实现 Todo 清单",
+          "link": "https://codeforgeek.com/build-a-todo-app-using-cloudflare-workers-and-kv/",
+          "description": "Cloudflare worker 是一种 Serverless 服务，使用 JavaScript 语言，相对比较简单。本文教大家怎么用它实现一个 Todo 清单，自己不需要架设服务器，还能在后端储存数据。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061001.jpg"
+          ]
+        },
+        {
+          "title": "使用 Graphviz 生成示意图",
+          "link": "https://ncona.com/2020/06/create-diagrams-with-code-using-graphviz/",
+          "description": "本文介绍命令行下如何使用 Graphviz，编写脚本生成示意图。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061012.jpg"
+          ]
+        },
+        {
+          "title": "Linux 系统云备份解决方案：Borg + Vorta",
+          "link": "https://simon-frey.com/blog/borgvorta-is-finally-a-usable-backup-solution-for-linux-desktop/",
+          "description": "家庭电脑的数据，如何定时备份到云端？本文介绍使用开源工具 Borg，快速将增量数据上传云端，可以自己架设储存服务器，也可以使用现成的云服务。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "如何架设 VS Code 服务器",
+          "link": "https://hackernoon.com/how-you-can-set-up-remote-development-workflow-with-vs-code-in-your-browser-3y3q3wu9",
+          "description": "VS Code 是流行的代码编辑器，它不仅是一个本地软件，也是一个云端服务，可以自己在服务器上架设，然后就能在任何地方通过浏览器使用了。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061013.jpg"
+          ]
+        },
+        {
+          "title": "如何用 C 语言写一个简单的 CHIP-8 模拟器",
+          "link": "https://cjting.me/2020/06/07/chip8-emulator/",
+          "description": "CHIP-8 是一个很简单的虚拟机，有16个8位寄存器和35个指令，可以使用 4K 内存。作者在它上面实现俄罗斯方块，为将来写 GBA 模拟器做准备。",
+          "user": "cj1128",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1286",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Grid.js",
+          "link": "https://gridjs.io/",
+          "description": "一个网页表格库，可以用作各种前端框架的插件。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020060504.jpg"
+          ]
+        },
+        {
+          "title": "换脸视频生成服务",
+          "link": "https://myvoiceyourface.com/",
+          "description": "一个在线服务，用户可以上传一张照片和一段视频，网站会将照片里的人脸，替换视频里面的人脸。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020060507.jpg"
+          ]
+        },
+        {
+          "title": "Docker-OSX",
+          "link": "",
+          "description": "一个包含 MacOS 系统的 Docker 镜像，可以运行在 Linux 系统。也就是说，你能在 Linux 上运行 Mac 系统了。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "node-dns-api",
+          "link": "",
+          "description": "一个 Node.js 写的 DNS 服务器，可以通过 API 修改设置。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "WebTorrent",
+          "link": "https://webtorrent.io/desktop/",
+          "description": "一个在浏览器进行 BT 下载的 JS 库，可以网页 BT 下载，也有桌面客户端。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061002.jpg"
+          ]
+        },
+        {
+          "title": "JS 自动生成中国山水画",
+          "link": "",
+          "description": "一个自动生成中国山水画的 JS 实现。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Request修改器",
+          "link": "",
+          "description": "一款浏览器插件，可以修改浏览器发出的网络请求，相当于简易版的 Postman。",
+          "user": "tangkaichuan",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1277",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061107.jpg"
+          ]
+        },
+        {
+          "title": "Stretchly",
+          "link": "",
+          "description": "一个开源桌面软件，隔一段时间（默认25分钟）就跳出一个提示，提醒你离开电脑运动一下。",
+          "user": "ketra21",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1276",
+          "images": []
+        },
+        {
+          "title": "chil",
+          "link": "https://zhuanlan.zhihu.com/p/144169144",
+          "description": "一个远程调试网页的工具，只要在网页里面加载这个库，就可以远程打开 Chrome 开发者工具，主要用于调试手机端网页。",
+          "user": "surunzi",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1281",
+          "images": []
+        },
+        {
+          "title": "hyperbuild",
+          "link": "https://github.com/wilsonzlin/hyperbuild",
+          "description": "HTML 代码的最小化工具，可以精简网页源码的体积。Rust 语言写的，有 Node.js、Python、Java、Ruby 的移植。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "JavaScript 20 年",
+          "link": "",
+          "description": "一本免费的英文电子书，回顾和介绍 JavaScript 是怎么发展起来的，从诞生直到 ES2015 标准的通过。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "C 语言内部原理",
+          "link": "http://www.avabodh.com/cin/cin.html",
+          "description": "一本英文的小教材，介绍 C 语言如何转换成汇编语言，从汇编的角度深入理解 C 语言的语法规则。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "数据科学在线课程",
+          "link": "https://davidadrian.cc/top-courses-data-science/",
+          "description": "数据科学在线课程那么多，哪些课应该优先考虑？这篇文章列了一个推荐名单。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020060701.jpg"
+          ]
+        },
+        {
+          "title": "设计工具收集",
+          "link": "https://nodesign.dev/",
+          "description": "该网站收集各种设计工具和设计资源，没有设计师的时候，可以使用它们。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020060902.jpg"
+          ]
+        },
+        {
+          "title": "PHP 大事记",
+          "link": "https://www.jetbrains.com/lp/php-25/",
+          "description": "今年是 PHP 语言诞生25周年，Jetbrains 公司制作了一个网页，列出这25年中 PHP 的各种大事，网页制作得非常精致。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061011.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "报纸的广告收入",
+          "link": "https://stratechery.com/2020/never-ending-niches/",
+          "description": "下图是第二次世界大战以后，美国报纸业的广告收入变化。互联网出现以后，报纸的广告收入就自由落体般下跌，目前已经低于70年前的水平。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061003.jpg"
+          ]
+        },
+        {
+          "title": "苏联太空杂志的幻想插图",
+          "link": "",
+          "description": "冷战期间，随着太空技术的发展，苏联出现了大量的太空知识杂志和大众科学杂志，最多时全国有200种。这些杂志上有大量关于太空的幻想插图。\n\n这些图显示了当时苏联科幻文学的发达，以及民众对太空探索的好奇。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202003/bg2020031908.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202003/bg2020031909.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202003/bg2020031910.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202003/bg2020031911.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "气候变化已经不可逆了，人类文明的崩溃将是最可能的结果",
+          "link": "",
+          "description": "澳大利亚国立大学教授威尔·斯特芬（Will Steffen）提出：\"气候变化已经不可逆了，人类文明的崩溃将是最可能的结果。\"\n\n![](https://cdn.beekka.com/blogimg/asset/202006/bg2020061101.jpg)\n\n无论人类是否减少二氧化碳排放，都已经为时过晚，因为15个已知的全球气候临界点，已经有9个激活了。\n\n![](https://cdn.beekka.com/blogimg/asset/202006/bg2020061103.jpg)\n\n- [✓] 北极海冰开始融化\n- [✓] 格陵兰冰盖开始融化\n- [✓] 南极西部冰盖开始崩解\n- [✓] 南极东部冰盖开始崩解\n- [✓] 西伯利亚冻土层开始融化\n- 海底甲烷开始释放\n- [✓] 大西洋\"热盐循环\"洋流开始减速\n- 厄尔尼诺现象加剧\n- 大气喷射流减速或停滞\n- 印度洋夏季季风出现波动\n- 西非季风转变\n- 北美西南部开始干旱\n- [✓] 亚马逊雨林开始消失\n- [✓] 高纬度森林开始消失\n- [✓] 澳大利亚大堡礁开始消失\n- 海洋不再大量吸收碳元素\n\n上面15个变化，只要有一个成为现实，都将对气候造成巨大影响，严重威胁人类。\n\n目前已经有9个成为了现实。\n\n![](https://cdn.beekka.com/blogimg/asset/202006/bg2020061102.jpg)\n\n一篇2014年的感人故事，儿子在Xbox里面发现了过世父亲的身影，故事发生在国外：\n\nWell, when i was 4, my dad bought a trusty XBox.\n\n我4岁的时候，父亲买了一台Xbox\n\nyou know, the first, ruggedy, blocky one from 2001.\n\n你知道的，是那台坚硬、结实，2001年推出的Xbox\n\nwe had tons and tons and tons of fun playing all kinds of games together\n\n我们一起玩了许多游戏，而且玩得非常开心....\n\nuntil he died, when i was just 6.\n\n...直到他去世为止，那年我才6岁\n\ni couldnt touch that console for 10 years.\n\n在往后十年，我没有办法碰那台游戏机\n\nbut once i did, i noticed something.\n\n直到有一次我打开它，我发现了一件事情\n\nwe used to play a racing game, Rally Sports Challenge.\n\n过去我曾与父亲玩过一款叫做《越野挑战赛》的赛车游戏\n\nactually pretty awesome for the time it came.\n\n实际上在当年，它真的很好玩\n\nand once i started meddling around... i found a GHOST.literaly.\n\n而当我开始在这款游戏中四处浏览时，我遇到了货真价实的\"幽灵\"。\n\nyou know, when a time race happens,\n\n在这款赛车游戏的计时赛中\n\nthat the fastest lap so far gets recorded as a ghost driver?\n\n最佳纪录保持者的记录将会以幽灵车手状态出来与你一同赛车\n\nyep, you guessed it\n\n是的，你猜到了！\n\nhis ghost still rolls around the track today.\n\n父亲的灵魂至今仍在赛车场上奔驰着\n\nand so i played and played,and played,\n\n于是我一遍又一遍的挑战\n\nuntill i was almost able to beat the ghost.\n\n我慢慢的可以追上这位幽灵车手\n\nuntil one day i got ahead of it,i surpassed it, and...\n\n终于有一天，我成功了！我超越祂了！然后...\n\ni stopped right in front of the finish line,\n\n我在终点线前停下来\n\njust to ensure i wouldnt delete it.\n\n确保我不会就这样删除\"父亲的记录\"。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061101.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061103.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202006/bg2020061102.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "我的皮肤黑，冬天在美国呆了两个多月后，缺乏日照，就感到很糟糕",
+          "link": "",
+          "description": "我的皮肤黑，冬天在美国呆了两个多月后，缺乏日照，就感到很糟糕，身心崩溃了，感冒，偏头痛，关节痛。直到后来被诊断出患有急性维生素 D 缺乏症。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "在美国，我很难与外界脱节",
+          "link": "",
+          "description": "在美国，我很难与外界脱节。只有回古巴探亲，才会脱离互联网。那些都是美好的日子，前三天感觉很奇怪，但是随后你就忘记了互联网的存在，开始与人们聊天、跳舞、游泳，沉浸在交谈中。这是一件非常有意义的事情，让我觉得我们与自己的本性非常脱节。\n\n-- [Hacker News 读者](https://news.ycombinator.com/item?id=23419868)讨论《你有没有过脱离互联网/电话》",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "印度很大一部分人口（约50％）年龄低于24岁",
+          "link": "",
+          "description": "印度很大一部分人口（约50％）年龄低于24岁，这为印度提供了数十年的庞大劳动力。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "转移学习（TL）是机器学习的一个研究领域",
+          "link": "",
+          "description": "转移学习（TL）是机器学习的一个研究领域，指的是如何将解决一个问题时获得的知识，应用于另一个相关的问题。有些人也具有这种能力，在感兴趣的每个领域都非常出色，擅长创新。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "跟一般的看法相反，路上骑自行车的人越多，他们就越安全",
+          "link": "",
+          "description": "跟一般的看法相反，路上骑自行车的人越多，他们就越安全。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "阿波罗8号宇宙飞船有560万个零件",
+          "link": "",
+          "description": "阿波罗8号宇宙飞船有560万个零件，以及150万个系统和组件。即使它们每一个都有99.9％的可靠性，预期也会产生560个故障。\n\n-- 宇航员[迈克尔·柯林斯](https://en.wikipedia.org/wiki/Michael_Collins_%28astronaut%29)（Michael Collins）",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

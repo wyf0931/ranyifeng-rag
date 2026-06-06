@@ -1,0 +1,374 @@
+{
+  "title": "科技爱好者周刊（第 139 期）：生物学的可怕进展",
+  "link": "https://www.ruanyifeng.com/blog/2020/12/weekly-issue-139.html",
+  "number": 139,
+  "sections": [
+    {
+      "name": "本周话题",
+      "items": [
+        {
+          "title": "生物学的可怕进展",
+          "link": "https://www.aier.org/article/the-fdas-deadly-caution/",
+          "description": "上周，一家美国网站发表了一篇 mRNA 疫苗的文章，我看了大吃一惊。\n\nmRNA 是一种全新的技术，第一次用来研发疫苗。大家猜猜看，研发时间花了多久？\n\n答案令人跌破眼镜。**Moderna 公司的 mRNA 疫苗是2020年1月11日开始研发，两天后的1月13日就完成了。**\n\n这个日期不仅早于武汉封城（1月23日），也早于美国第一例 COVID-19 病例（1月20日）。也就是说，Moderna 公司没有看到病例，对这种疾病基本上一无所知的情况下，就做出了疫苗，这也太惊人了。\n\n事情是这样的，2020年1月11日，复旦大学张永振教授的团队将新冠病毒的 DNA 序列公布在网上。当天下午，Moderna 注意到了，实验室分析了这个序列，认为可以制作疫苗，一个周末就完成了。由于1月11日是周六，合理的猜想是，如果加班赶工，可能一天内就能做出来。\n\n后面的日程表是这样的：\n\n- 1月13日，完成研发。\n- 2月7日，完成第一批次临床生产。\n- 3月4日，FDA 批准进行第1期临床试验。\n- 3月16日，第一个人类受试者接受疫苗。\n- 3月23日，Moderna 开始扩大规模生产。\n- 4月27日，FDA 批准进行第2期临床试验。\n- 7月27日，开始进行第3期临床试验。\n- 11月16日，第3期结果显示，该疫苗有效预防感染，达到94.5％。\n- 12月11日，FDA 颁发紧急使用授权。\n\n大家可以看到，后面的一整年都花在临床试验和报批。疫苗本身没有变过，就是当初两天研究出来的成果，最后证明有效率是95%。\n\n为什么 mRNA 疫苗可以开发得这么快，而且不需要活体的病毒样本？\n\n根据[美国疾控中心](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mrna.html)的网站，mRNA 本质上是一种通知技术，把病毒特征通知免疫细胞。所以，只要知道 DNA 序列，找出病毒的特征，理论上很快就能做出疫苗，跟解数学题差不多。\n\n这件事情的意义在于，如果这一次，mRNA 疫苗证明有效，那么以后的疫苗开发可能都会很快。而且，临床试验和审批流程可能也不再需要这么久，因为生效机制是相同的，只需要验证免疫细胞确实能认出病毒即可。\n\n我们普通人都没有意识到，当代生物科技已经这么先进了，DNA 的精密分析和组装，变成了小菜一碟。如果疫苗有了快速的解决方案，这是不是意味着，新冠肺炎很可能就是人类最后一次病毒大流行。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020122105.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020122301.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020122106.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "Web Component 组件开发资料",
+          "description": "组件化是 Web 开发的方向，这是大家公认的。但是，浏览器一直没有原生的组件支持，这才导致 React 和 Vue 这样的组件框架的出现。\n\n谷歌公司（主要是 Chrome 团队）提出的 Web Component 技术，就是希望解决这个问题，让浏览器原生支持组件。这项技术已经成为国际标准，而且由于是 Chrome 在推，前景非常看好，Youtube 网站就是用它开发的。\n\n本周的课程资料就是 **《Web Component 组件化开发》** ，一个90分钟的视频讲座，由开课吧提供。想要了解和学习这项技术的同学，可以看看。\n\n课程内容包括：\n- 组件化开发的思想到底是什么？\n- Web Component 技术的构成：自定义元素，template 标签，拓展原有组件\n- 如何用上面三项技术写一个组件？\n\n除了讲课内容以外，还提供配套代码下载。\n\n微信扫描下面的二维码，就可以免费领取这份90分钟的学习资料。原价 399 元，限时 **0 元领取** ，没有任何条件，不用转发和分享，仅限 200 名。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020122404.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020122405.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020122403.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资讯",
+      "items": [
+        {
+          "title": "智能水表",
+          "link": "https://finance.sina.com.cn/tech/2020-12-13/doc-iiznctke6317394.shtml",
+          "description": "上海市长宁区江苏路街道，为辖区内的6户独居老人安装了智能水表。一旦12小时内，智能水表的读数（用水量）低于0.01立方米，居委会便会立即收到信号，及时派专人上门查看。\n\n同时，街道还安装了智能门磁装置，只要这些老人的门24小时没有打开过，也会发出预警信息。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020121408.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020120916.jpg"
+          ]
+        },
+        {
+          "title": "360度VR旅行",
+          "description": "旧金山一家创业公司推出360度 VR 旅行服务，用户选择一个旧金山的风景点，在指定时间导游会带你去参观。整个过程都是网络进行。\n\n导游使用360摄像机拍摄实时画面，通过 Youtube360 进行直播，用户在家里戴上 VR 眼镜收看直播。整个过程中，导游会提供实时解说，你还可以跟导游对话。这个服务的价格是，每小时39美元到59美元。"
+        },
+        {
+          "title": "空心光纤",
+          "link": "https://www.wsj.com/articles/high-frequency-traders-push-closer-to-light-speed-with-cutting-edge-cables-11608028200",
+          "description": "美国华尔街的高频交易公司，正在部署空心光纤，使得他们的网络交易命令可以传得比别人更快。空心光纤是下一代光纤，每根光纤的玻璃芯内部是空心的，比人的头发还要窄。因为光在空气中的传播速度比玻璃快50％，所以空心光纤的传输速度要大大高过标准光纤。\n\n空心光纤代替标准光纤，可能会使交易命令的传输时间减少数百纳秒（一纳秒等于十亿分之一秒）。历史上，高频交易公司一直在追求更快的网络速度。十年前，有一家证券公司花费3亿美元，铺设芝加哥到纽约的直线光纤电缆，实现两地之间的最短距离。仅仅过了几年，他们又用微波网络取代了这条3亿美元的线路，只因为传输时间可以少4毫秒。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020121602.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020121603.jpg"
+          ]
+        },
+        {
+          "title": "27年前冷冻的胚胎出生",
+          "description": "2020年10月，一个名叫莫莉·吉布森（Molly Gibson）的女婴在美国华盛顿州出生，但是科学意义上，这时她已经27岁了。因为她来自一枚27年前冷冻的胚胎。她现在的父母有不孕症，选择接受这枚没有遗传关系的、1992年10月冷冻的胚胎植入母亲的子宫，进行生育。这创下了胚胎冷冻时间最长、然后生育的世界记录。\n\n美国国家胚胎捐赠中心（NEDC）保存有捐赠的冷冻胚胎，允许不孕症的家庭领养一个未使用的胚胎。目前，美国大约有100万个冷冻的人类胚胎。冷冻胚胎技术是1984年在澳大利亚出现的，由于冷冻胚胎的保质期是无限的，所以未来可能还会有冷冻时间更长的胚胎诞生。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020120407.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020120408.jpg"
+          ]
+        },
+        {
+          "title": "电动车无法普及",
+          "link": "http://www.nbd.com.cn/articles/2020-12-23/1579335.html",
+          "description": "日前，丰田汽车的社长丰田章男公开表示，电动车是过度炒作，各国政府提出放弃汽油车，全面转向电动车是不现实的，只是一种作秀。原因是电动车会导致巨大的电力需求，全面转型成本巨大，并会将污染转移到发电环节。\n\n他以日本为例，日本的大部分电力都来自于煤炭和天然气，如果全面转向电动车，那么到了夏季尖峰用电时段，日本将面临\"无电可用\"的窘境，而建立全国的充电网络更是天价的花费。\n\n他的警告并非没有根据。特斯拉的超级充电桩，最大功率是 250kW，即每小时耗电250度。目前，中国国内功率最小的充电桩，也要达到 3.5kW，高于空调的耗电。如果居民晚上下班回家，同时在小区里为自己的电动车充电，电网确实可能无法负荷。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020122307.jpg"
+          ]
+        },
+        {
+          "title": "小米公司小米手机11发布会邀请函内嵌骁龙888芯片",
+          "description": "小米公司的小米手机 11 发布会邀请函，内嵌一颗高通骁龙888芯片实物，堪称制作成本最贵的邀请函。这块目前最顶级的手机芯片，售价估计在200美元左右。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020122406.jpg"
+          ]
+        },
+        {
+          "title": "哈萨克斯坦政府要求安装根证书",
+          "description": "哈萨克斯坦政府要求国民，在计算机上安装政府提供的根证书，然后才能访问互联网。苹果、谷歌、微软、Mozilla 进行合作，只要发现该证书，就会提示访问不安全。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020121801.jpg"
+          ]
+        },
+        {
+          "title": "法国对谷歌和亚马逊罚款",
+          "description": "法国对谷歌和亚马逊分别罚款1亿欧元和3500万欧元，理由是它们的网站事先未征求访问者的同意，就设置 Cookie。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020121101.jpg"
+          ]
+        },
+        {
+          "title": "美国阿尔忒弥斯计划宇航员名单",
+          "description": "美国宣布\"阿尔忒弥斯（Artemis）计划\"18名宇航员的大名单，将在他们之中产生下一次月球登陆的候选人。美国宇航局承诺，一定会让一位女性登上月球，创造历史。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020121406.jpg"
+          ]
+        },
+        {
+          "title": "美国国会通过9000亿美元救助法案",
+          "description": "美国国会通过新一轮9000亿美元的 Covid-19 救助法案，其中包括70亿美元的宽带补助，保证民众可以用上宽带，低收入家庭每月可以获得50美元的宽带费。"
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "颗粒积木的妙用",
+          "link": "https://www.coolapk.com/feed/23451115?shareKey=ZDY5ODdkNGVmOTg2NWZkNTU2MzI~",
+          "description": "作者介绍自己使用颗粒积木搭出了手机支架、笔筒等等。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020121303.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020121304.jpg"
+          ]
+        },
+        {
+          "title": "《自然》评选 2020 年度十大科学发现",
+          "link": "https://mp.weixin.qq.com/s/CVzJjOq87FTYjwRSno04yQ",
+          "description": "Nature 杂志评出的2020年度10大科学发现，包括压力使得头发变白的机制、首次观察到宇宙中的快速无线电爆发、大气层的臭氧空洞有修复迹象等等。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020121705.jpg"
+          ]
+        },
+        {
+          "title": "2020年设计师工具调查报告",
+          "link": "https://uxtools.co/survey-2020/",
+          "description": "UXtools 对设计师的年度调查，各种工具的使用情况，上图是使用最多的 UI 设计软件，前五名依次是 Figma、Sketch、Adobe XD、Illustrator、Photoshop。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020121706.jpg"
+          ]
+        },
+        {
+          "title": "如何找出 CDN 背后的主机真实 IP 地址",
+          "link": "https://soatok.blog/2020/05/09/how-to-de-anonymize-scam-knock-off-sites-hiding-behind-cloudflare/",
+          "description": "网站启用了 CDN 以后，外部用户就看不到源站的真实 IP 地址了。本文介绍了一个小技巧，某些情况下可能有用。"
+        },
+        {
+          "title": "链接的 noopener，noreferrer 和 nofollow 设置",
+          "link": "https://blog.bhanuteja.dev/noopener-noreferrer-and-nofollow-when-to-use-them-how-can-these-prevent-phishing-attacks",
+          "description": "为了安全性，网页链接最好设置`rel=\"noopener noreferrer nofollow\"`，本文介绍这三个值的作用。"
+        },
+        {
+          "title": "开源软件商业模式的死亡",
+          "link": "https://joemorrison.medium.com/death-of-an-open-source-business-model-62bc227a7e9b",
+          "description": "开源软件常见的商业模式是\"软件开源 + 服务收费\"，但是云服务商正在杀死这种模式。\n\n如果你免费提供软件，并且这种软件足够受欢迎，云服务商将不可避免地使用你的代码提供竞争性服务。他们会毫不留情地用自己的方法痛击你，在你的前院倾倒垃圾。而你的律师则站在你耳边低语，\"什么也做不了。\""
+        },
+        {
+          "title": "<details>标签的一个作用",
+          "link": "https://shkspr.mobi/blog/2020/12/a-terrible-way-to-do-footnotes-in-html/",
+          "description": "作者提出，可以使用`<details>`标签在网页里面添加脚注（上图）。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020121102.jpg"
+          ]
+        },
+        {
+          "title": "完善的 Bash 脚本的最简单形式",
+          "link": "https://betterdev.blog/minimal-safe-bash-script-template/",
+          "description": "本文通过一个模板，介绍 Bash 脚本的基本知识，如何写出安全的、基本功能完善的脚本。"
+        },
+        {
+          "title": "如何使用 GitHub Actions 发布到 GitHub Pages",
+          "link": "https://itsopensource.com/publish-github-pages-with-github-actions/",
+          "description": "一个简单的教程，教你通过 GitHub Actions 构建一个静态博客，自动发布到 GitHub Pages。"
+        },
+        {
+          "title": "Navigator 对象的实验性属性",
+          "link": "https://umaar.com/dev-tips/242-considerate-javascript/",
+          "description": "本文介绍浏览器的 Navigator 对象的几个实验性属性，比如获取本机的内存、CPU 核心和网络连接类型。"
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "imgdiff",
+          "link": "https://github.com/n7olkachev/imgdiff",
+          "description": "比较两张图片差异的命令行工具。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020121707.jpg"
+          ]
+        },
+        {
+          "title": "Browseranalytics",
+          "link": "https://github.com/ni554n/browseranalytics",
+          "description": "Chrome 浏览器的插件，显示一个仪表盘，分析你的浏览历史，显示你在哪些网站花费最多时间。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020121802.jpg"
+          ]
+        },
+        {
+          "title": "老照片修复",
+          "link": "https://hotpot.ai/restore-picture",
+          "description": "一个在线工具，去除老照片的破损和折痕。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020121901.jpg"
+          ]
+        },
+        {
+          "title": "Cloudflare Pages",
+          "link": "https://pages.cloudflare.com/",
+          "description": "Cloudflare 推出的静态网站构建和托管服务，目前正在 beta 测试，可以申请参加。",
+          "user": "Wazons",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1559",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020122001.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020122002.jpg"
+          ]
+        },
+        {
+          "title": "Funny2",
+          "link": "https://funny2.com/",
+          "description": "一个在线工具，将照片转成基于几何形状的水彩画。"
+        },
+        {
+          "title": "OwnCast",
+          "link": "https://github.com/owncast/owncast",
+          "description": "一个可以自己搭建的开源流媒体服务，用作视频的在线播放。"
+        },
+        {
+          "title": "tetris",
+          "link": "https://github.com/k-vernooy/tetris",
+          "description": "命令行的俄罗斯方块游戏。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020122104.jpg"
+          ]
+        },
+        {
+          "title": "Remove Background from Image",
+          "link": "https://www.removebg.com/",
+          "description": "一个在线工具，上传肖像照，软件会自动去除背景，生成各种节日照片。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020122302.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "恐龙的声音",
+          "link": "https://www.google.com/search?q=what%20sound%20does%20a%20dinosaur%20make",
+          "description": "谷歌搜索 \"what sound does a dinosaur make\"（恐龙的声音是什么），网页就会显示一系列可以播放的动物叫声。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020122003.jpg"
+          ]
+        },
+        {
+          "title": "Elixir 中文社区",
+          "link": "https://elixirschool.com/zh/",
+          "description": "Elixir School 这个英语博客，是学习 Elixir 这门编程语言的首选。笔者抽出了一些时间翻译了这些博客。",
+          "user": "caicaishmily",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1558",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020121703.jpg"
+          ]
+        },
+        {
+          "title": "SRE 学校",
+          "link": "https://linkedin.github.io/school-of-sre/",
+          "description": "Linkedin 工程团队专门写给新人的 SRE （站点可靠性工程）教程，介绍了一个 DevOps 工程师需要掌握的各种基础知识。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020120902.jpg"
+          ]
+        },
+        {
+          "title": "计算机安全培训材料",
+          "link": "https://pentesterlab.com/",
+          "description": "该网站提供计算机安全方面完整的英文培训材料，共包含29节课。"
+        },
+        {
+          "title": "免费 Python 书籍清单",
+          "link": "https://github.com/PythonFreeBooksAlong/Free-Python-Books",
+          "description": "本文整理了一张免费书籍清单，都是网上合法的 Python 学习资源，书目相当多。"
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "芬兰极光营地",
+          "link": "https://www.instagram.com/p/CJENLJPK0A9/",
+          "description": "芬兰的极光营地，游客住在雪地营房里面，观赏夜晚的极光。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020122303.jpg"
+          ]
+        },
+        {
+          "title": "瑞士的军事掩体",
+          "link": "https://www.amusingplanet.com/2015/07/the-camouflaged-military-bunkers-of.html",
+          "description": "瑞士是一个中立国，但拥有强大的军事力量。阿尔卑斯山上遍布军事设施，并精心制作了掩体，以便融入周围的景观。\n\n其中一些伪装成巨大的岩石，另一些伪装成安静的别墅或谷仓，它们在紧急情况下会打开，露出加农炮和重型机枪。\n\n瑞士全国有将近30万个掩体和5,100个公共避难所，这些掩体可容纳整个瑞士人口。按人均计算，瑞士拥有世界最大的军队之一，有20万在职人员和360万后备人员。每个34岁以下（有时50岁以下）的男性公民都是预备役士兵。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020120811.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020120812.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020120813.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020120814.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020120815.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020120816.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "世界末日时钟",
+          "link": "https://en.wikipedia.org/wiki/Doomsday_Clock",
+          "description": "1945年，美国在日本投放了两颗原子弹，这引发了核战争引发世界末日的担忧。\n\n1947年，一些参与曼哈顿计划的核物理学家，在芝加哥大学出版了一本杂志《原子科学家公报》。封面上画了一个时钟，表示人类离世界末日正在倒计时。\n\n午夜零点表示世界末日，时钟的时间离零点还有7分钟。这个时钟因此称为\"世界末日时钟\"（Doomsday Clock）。\n\n后来，杂志的每一期都是这个封面，但是距离世界末日的时间一直在调整，迄今为止一共调整了22次。\n\n1949年，苏联试验原子弹，末日时钟调为3分钟。\n1953年，美国和苏联开始测试氢弹，调为2分钟。\n1963年，美苏签订《部分禁止核试验条约》，调为12分钟。\n1981年，苏联入侵阿富汗，美苏军备竞赛升级，里根政府提出\"星球大战\"计划，调为4分钟。\n1991年，柏林墙倒塌，东欧巨变，美苏签署《第一阶段削减战略武器条约》，调为17分钟。\n2007年，气候变暖，核电站不断增加，调为5分钟。\n2017年，特朗普当选美国总统，否认气候变化，调为150秒。\n2018年，朝鲜试验核武器，调为120秒。\n2020年1月23日，由于全球气候变暖无法避免，调为100秒。也就是说，科学家认为，现在是距离世界末日最近的时刻。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202011/bg2020112902.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202011/bg2020112904.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202011/bg2020112903.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202011/bg2020112905.jpg"
+          ]
+        },
+        {
+          "title": "虚假学术会议",
+          "description": "上个世纪，土耳其人塞马尔·阿尔迪（Cemal Ardil）注册成立了一家\"世界科学技术工程学院\"（World Academy of Science, Engineering and Technology，简称 WASET）。这是一家营利性机构，专门安排各种各样虚假的学术会议，人为提高演讲者和论文提交者的学术履历。\n\n它每年组织成千上万次科学会议，会议的名称与真正的科学团体组织的真实会议很相似。2018年，世界科学技术工程学院共发布了49,844个会议广告，其中许多会议名称雷同，而且安排在同一天的同一地点。比如2016年2月，里约热内卢的一家酒店同一时间安排了116场科学会议。\n\n这些会议的质量很差，任何人只要支付注册费就可以提交论文。很多科学家在不知情的情况下，被列入组委会名单。\n\n2013年发生了一件丑闻，一个英国科学家在世界科学技术工程学院主办的期刊《国际医学，药学，生物和生命科学杂志》上，发表了一篇假论文，数据都是伪造的。然后，他自己引用这篇论文，将成果提交给了《科学》杂志。\n\n外界计算，世界科学技术工程学院2017年的收入大约为4,495,219美元。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020121403.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020121404.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202012/bg2020121405.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "言论1",
+          "description": "不要被贪婪的公司动机所吸引，不要投入全部的时间和精力，这绝对会导致您毫无正当理由地失去自己的一生。",
+          "user": "Jonathan Carter",
+          "user_link": "https://jonathancarter.org/2020/12/10/centos-stream-or-debian/"
+        },
+        {
+          "title": "言论2",
+          "description": "优秀的人讨论思想，普通的人讨论事件，狭隘的人讨论人。",
+          "user": "埃莉诺·罗斯福"
+        },
+        {
+          "title": "言论3",
+          "description": "达尔文发现，澳大利亚附近的很多小岛上，昆虫不会飞。他猜测这是因为岛屿的风较大，会飞的昆虫很可能被吹到海里，这导致这些昆虫的后代完全丧失了飞行的能力。"
+        },
+        {
+          "title": "言论4",
+          "description": "一个人在生物学上，每天的生存需要消耗 90W 的能量，相当于单个电灯泡所需的能量。但是考虑到人类使用各种设备（家用电器、交通工具等等），每人每天平均消耗 3,000W 的能量。如果你是美国人，这个数字会上升到接近 11,000W，这相当于一头蓝鲸（地球上最大的哺乳动物）的能量需求。",
+          "user": "物理学家杰弗里·韦斯特",
+          "user_link": "https://linkedstarsblog.com/2018/12/17/scaling-considerations-in-complex-systems-and-organizations-implications/"
+        },
+        {
+          "title": "言论5",
+          "description": "阅读各种资料、书籍、文章，只是让你懂得更多，并不会让你提高技能。只有通过练习（practice）才能提高技能。如果你想变得更好，那就去动手做。",
+          "user": "Jason Fried",
+          "user_link": "https://twitter.com/jasonfried/status/1338626702264582146"
+        },
+        {
+          "title": "言论6",
+          "description": "如果我与某人在办公室合作一年，我会知道他的孩子的名字，以及他在周末要做的事情。但如果我们是远程合作，我就什么都不会知道，因为远程会让工作变得直接，没有人与人之间的了解。",
+          "user": "David Perell"
+        }
+      ]
+    }
+  ]
+}

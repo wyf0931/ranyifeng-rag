@@ -1,0 +1,382 @@
+{
+  "title": "科技爱好者周刊（第 367 期）：Nano Banana 的几个妙用",
+  "link": "https://www.ruanyifeng.com/blog/2025/09/weekly-issue-367.html",
+  "number": 367,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "人像处理",
+          "description": "图像模型的最常见任务，一定是人像处理。我们先上传一张生活照片。\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091308.webp)\n\n然后，让模型将其转成证件照，提示词如下。\n\n请为照片里面的人物生成1寸证件照，要求白底，职业正装，睁眼微笑。\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091309.webp)\n\n这个效果有点惊人啊。它意味着，人物的表情、发型、妆容、服饰、姿势都是可以改变的。\n\n下面就是改变人物表情，让其侧脸对着镜头微笑。\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091319.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091320.webp)\n\n改变人物的姿势，\"将下面第二张图片的人物，改成第一张图片的姿势。\"\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091316.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091317.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091318.webp)\n\n照相馆以后危险了，肖像照、旅游照、集体照都可以交给 AI 了。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091308.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091309.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091319.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091320.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091316.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091317.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091318.webp"
+          ]
+        },
+        {
+          "title": "建筑处理",
+          "description": "图像模型的另一个用途是家居装潢，要看家装效果图就让 AI 生成，更改装潢配色和家具，都是小 case。\n\n下面是一个难度更高的例子，上传一张户型图，让它变成 3D 模型渲染图。\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091310.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091311.webp)\n\n从照片提取建筑模型，也挺神奇。\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091323.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091324.webp)",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091310.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091311.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091323.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091324.webp"
+          ]
+        },
+        {
+          "title": "包装处理",
+          "description": "下面，让模型更改物品的包装，\"将图二的漫画形象，贴到图一的包装盒，生成一张专业的产品照\"。\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091313.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091314.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091315.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025092112.webp)\n\n书籍的封面、软件的包装盒，也可以同样生成。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091313.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091314.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091315.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092112.webp"
+          ]
+        },
+        {
+          "title": "地图处理",
+          "description": "图像模型的另一个大市场是地图应用（地理信息），只不过还没想到可以收费的玩法。下面就是一个创新的用例。\n\n上传一张地图，上面用箭头标注你选定的地点，让模型\"生成沿着红色箭头看到的场景。\"\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025092114.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025092115.webp)\n\n它甚至可以从地形等高线图，生成红色箭头处的实景图。\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091326.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202509/bg2025091327.webp)",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092114.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092115.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091326.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091327.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "超音速厨师刀",
+          "link": "https://seattleultrasonics.com/products/c-200-ultrasonic-8-chefs-knife",
+          "description": "一家美国公司推出了超音速厨师刀。它的刀柄上有一个按钮，按下后，刀锋就会进入超声波模式。根据介绍，开启超声波后，刀刃每秒振动超过4万次，使刀具比实际锋利得多，会节省高达50%的切菜力气。某些情况下，把它放在食物上，它会依靠振动发出的波，自动把食物切开。这把刀内置了电池，所以还有配套的刀具充电器。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092107.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092108.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092109.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092110.webp"
+          ]
+        },
+        {
+          "title": "粘土电路板",
+          "link": "https://feministhackerspaces.cargo.site/Clay-PCB-Tutorial",
+          "description": "电路板是电子产品的基础。一位国外网友，为了演示电路板并不是高深的产品，特别制作了一块粘土电路板。他把全过程的照片都放上网，先采集泥巴，然后将其压平。在上面挖出电路，然后进行烧制。最后，装上铜线和电子元件，电路板就做好了。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091901.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091902.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091903.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091904.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091905.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091906.webp"
+          ]
+        },
+        {
+          "title": "AI 行业就业趋势",
+          "link": "",
+          "description": "根据知名分析师玛丽·米克尔的 AI 报告，如果从 IT 行业中剔除 AI 相关岗位，美国 IT 行业的就业人数多年来一直处于持平或下降趋势。上图中，蓝线是 IT 行业的总就业人数，绿线是剔除 AI 岗位的就业人数，中间的高峰是疫情期间。这就是说，虽然 IT 行业本身一直在扩张，但是全部就业增长都发生在 AI 领域。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092303.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "超越沙盒",
+          "link": "https://bughunters.google.com/blog/6715529872080896/beyond-sandbox-domains-rendering-untrusted-web-content-with-safecontentframe",
+          "description": "如何在网页上安全地运行第三方代码？谷歌提出一个全新的解决方案 SafeContentFrame。它是一个 JS 库，会将第三方代码加载到一个单独域名 googleusercontent.com 上面，再用 iframe 将其插入当前网页，这样就提供了最大限度的隔离。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092116.webp"
+          ]
+        },
+        {
+          "title": "离线应用为什么尚未流行？",
+          "link": "https://marcobambini.substack.com/p/why-local-first-apps-havent-become",
+          "description": "离线使用功能一直没有流行起来，作者认为，离线使用就相当于建立一个分布式系统，面临着复杂的同步问题，很难做对。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092301.webp"
+          ]
+        },
+        {
+          "title": "Elasticsearch 不适合用作数据库",
+          "link": "https://www.paradedb.com/blog/elasticsearch-was-never-a-database",
+          "description": "Elasticsearch 是目前主流的搜索服务，能否把它用作主要数据库？本文告诉你不可以，它不是为数据库而设计的。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092007.webp"
+          ]
+        },
+        {
+          "title": "如何使用 Python 生成音频的文字稿",
+          "link": "https://www.pavlinbg.com/posts/python-speech-to-text-guide",
+          "description": "一篇简单的入门教程，一步步教你自己写 Python 脚本，通过 Whisper 模型提取音频的文字稿。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092302.webp"
+          ]
+        },
+        {
+          "title": "避免使用 @ts-ignore",
+          "link": "https://evanhahn.com/ts-ignore-is-almost-always-the-worst-option/",
+          "description": "TypeScript 的 @ts-ignore 标注，用来关闭下一行的所有报错。作者认为不应该使用它，宁愿改用 @ts-expect-error 标注或者 any 类型。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092406.webp"
+          ]
+        },
+        {
+          "title": "Apple 的私有 CSS 属性，为网页添加\"液态玻璃\"效果",
+          "link": "https://alastair.is/apple-has-a-private-css-property-to-add-liquid-glass-effects-to-web-content/",
+          "description": "作者发现，苹果为 Safari 浏览器添加了一个没有公开的 CSS 属性，让网页元素呈现\"液态玻璃\"效果。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092010.webp"
+          ]
+        },
+        {
+          "title": "如何调整 systemd 加快启动",
+          "link": "https://www.xda-developers.com/systemd-tweaks-boost-boot-time/",
+          "description": "一篇初学者教程，教你5个技巧，通过调整 systemd 设置，缩短启动时间。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092403.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "gpu-kill",
+          "link": "https://github.com/kagehq/gpu-kill",
+          "description": "显示 GPU 运行信息的一个工具，自带 Web 管理面板，支持 Nvidia/AMD/Intel/Apple 各种品牌。另有一个在线 GPU 性能测试网站 Volume Shader BM。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092201.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092410.webp"
+          ],
+          "user": "@BOS1980"
+        },
+        {
+          "title": "RustNet",
+          "link": "https://github.com/domcyrus/rustnet",
+          "description": "监控网络流量的终端工具，会显示连接的详细信息，跨平台。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092011.webp"
+          ]
+        },
+        {
+          "title": "PortNote",
+          "link": "https://github.com/crocofied/PortNote",
+          "description": "一个自托管的仪表盘，列出被各种服务占用的本地端口。与 Compose 文件结合后，可以启动/停止 Docker 容器。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060114.webp"
+          ]
+        },
+        {
+          "title": "Atlas",
+          "link": "https://github.com/karam-ajaj/atlas",
+          "description": "一个 Docker 容器，扫描当前网络，图形化显示网络节点信息。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092407.webp"
+          ]
+        },
+        {
+          "title": "终端文件管理器",
+          "description": "基于终端的文件管理器，支持 Linux 和 Mac。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202506/bg2025060107.webp"
+          ]
+        },
+        {
+          "title": "Yazi",
+          "link": "https://github.com/sxyazi/yazi",
+          "description": "类似的终端文件管理器。",
+          "images": []
+        },
+        {
+          "title": "frp 辅助脚本",
+          "link": "https://gofrp.org/zh-cn/docs/overview/",
+          "description": "内网穿透工具 frp 的一个客户端辅助 Bash 脚本，简化隧道的创建和管理。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092101.webp"
+          ],
+          "user": "@openapphub"
+        },
+        {
+          "title": "任务管理软件",
+          "description": "开源的任务管理软件，支持 Web/手机/桌面各个平台，可以 Docker 部署。",
+          "images": [],
+          "user": "@CaryTrivett"
+        },
+        {
+          "title": "数据库备份工具",
+          "description": "网友自己写的 PostgreSQL/MySQL 数据库的备份工具，可以自动备份、加密、压缩数据库，并将备份文件上传至腾讯云 COS 或阿里云 OSS。",
+          "images": [],
+          "user": "@iKeepLearn"
+        },
+        {
+          "title": "X-CMD",
+          "link": "https://github.com/x-cmd/x-cmd",
+          "description": "一个命令行工具集，一键启用 1000+ CLI 工具，跨平台，支持 AI 功能。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092412.webp"
+          ],
+          "user": "@Zhengqbbb"
+        }
+      ]
+    },
+    {
+      "name": "AI 相关",
+      "items": [
+        {
+          "title": "Huxe",
+          "link": "https://www.huxe.com/",
+          "description": "个人语音伴侣，生成类似播客的\"每日简报\"，供你收听，内容包括当日新闻、兴趣爱好、个人日历和邮件等。它来自 NotebookLM 的主创人员，他们离开谷歌后的创业产品。目前免费使用。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092404.webp"
+          ]
+        },
+        {
+          "title": "AIPex",
+          "link": "https://github.com/AIPexStudio/AIPex",
+          "description": "周刊以前介绍过的一个开源 Chrome 插件，功能现在扩展了，可以通过 AI 进行浏览器自动化。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091908.webp"
+          ],
+          "user": "@buttercannfly"
+        },
+        {
+          "title": "binglish",
+          "link": "https://github.com/klemperer/binglish",
+          "description": "一个 Python 脚本，自动为 Windows 更换必应 Bing 每日壁纸，并在壁纸上添加\"每日单词\"，AI 生成单词解释和例句。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092401.webp"
+          ],
+          "user": "@klemperer"
+        },
+        {
+          "title": "Index-TTS 微调模型",
+          "description": "网友基于 B 站开源的 Index-TTS 语音合成模型的微调模型，提升语音的韵律感和自然度。",
+          "images": [],
+          "user": "@asr-pub"
+        },
+        {
+          "title": "Neovate",
+          "link": "https://github.com/neovateai/neovate-code",
+          "description": "基于终端的智能编码助手（Code Agent），可以看作是开源的 Claude Code。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092411.webp"
+          ],
+          "user": "@xierenyuan"
+        },
+        {
+          "title": "FlyCut Caption",
+          "description": "一个基于 Web 的 AI 视频字幕编辑工具，可以视频语音自动转文本，生成字幕。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092402.webp"
+          ],
+          "user": "@x007xyz"
+        },
+        {
+          "title": "mcpstore",
+          "link": "https://github.com/whillhill/mcpstore",
+          "description": "一个 MCP 服务的管理工具，接入各种 MCP 服务器，自带 Web 管理面板。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092005.webp"
+          ],
+          "user": "@whillhill"
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "99个物理小实验",
+          "link": "https://interactivetextbooks.tudelft.nl/showthephysics/Introduction/About.html",
+          "description": "一本在线的英文书籍，精选了荷兰中学物理的99个小实验，涉及各个领域（力、光、磁、波等等）。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092003.webp"
+          ]
+        },
+        {
+          "title": "npm 安全措施仓库",
+          "description": "最近爆出了一系列 npm 软件包投毒事件，这个仓库收录了各种 npm 安全措施，分为使用者和发布者两大部分。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "电动车原理",
+          "description": "网上流传的电动车原理图片。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025091907.webp"
+          ]
+        },
+        {
+          "title": "一道几何题",
+          "link": "https://samjshah.com/2025/08/05/sangaku-puzzle-i-cant-solve/",
+          "description": "正方形里面有一个小圆，请问小圆的半径与正方形边长的关系是多少？这道题好像很不容易，答案是正方形边长的 4/33。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092001.webp",
+            "https://cdn.beekka.com/blogimg/asset/202509/bg2025092002.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "高级程序员与低级程序员使用 AI 的方式",
+          "description": "根据我的观察，公司里面的高级程序员和低级程序员，使用 AI 的方式是不一样的。\n\n**高级程序员并不完全信任 AI 的输出，只是用 AI 加速项目**。他们一般会审查和重构 AI 生成的代码，对于 AI 的架构决策也是抱着怀疑的态度。\n\n初级程序员更倾向于跳过审查和重构，全盘接受 AI 的输出，从而导致\"纸牌屋式\"的代码：看起来能发挥作用，一旦投入使用就会崩溃。\n\n我不知道，AI 未来会不会替代程序员，但是现阶段，AI 编程还不能解决100%的软件问题，但已经可以解决70%的问题。这相当于，**AI 可以减轻高级程序员70%的工作量**。\n\n剩下的30%，依然需要依靠程序员的经验和专业知识，而**初级程序员恰恰缺少的是这30%**。\n\n所以，听起来可能违反直觉：AI 对高级程序员比对初级程序员帮助更大，更容易产生工作成果。\n\n现阶段的 AI，更像团队中的一个非常有干劲的初级程序员，可以快速编写代码，但需要不断的监督和纠正。**你知道的越多，你就越能指导它。**\n\n所以，AI 的正确用法是，高级程序员用它来加速他们已经知道如何做的事情，初级程序员用它来学习该做什么。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "马斯克：AI 会一直扩展",
+          "link": "https://t.wangbase.com/0ZKey",
+          "description": "AI 会一直扩展，一直到大部分太阳的能量都被用于计算。",
+          "images": []
+        },
+        {
+          "title": "马斯克：火星自给自足",
+          "link": "https://t.wangbase.com/0ZKey",
+          "description": "我认为，火星可以在30年内自给自足。每两年，行星会排成一条直线，你就可以出发去火星。所以，30年内大约有10到15个左右的火星出发窗口。每次出发，运往火星的货物吨位会呈指数级增长，那么30年内，我们可以让火星自给自足。",
+          "images": []
+        },
+        {
+          "title": "氛围清理即服务",
+          "link": "https://donado.co/en/articles/2025-09-16-vibe-coding-cleanup-as-a-service/",
+          "description": "软件业悄然兴起一种新的工作\"氛围清理\"（Vibe Coding cleanup），专门解决\"氛围编程\"导致的问题。这真是 AI 时代最大的讽刺：人类被雇来清理 AI 的垃圾。",
+          "images": []
+        },
+        {
+          "title": "扎克伯格：风险不是过于激进，而是不够激进",
+          "link": "https://finance.sina.cn/7x24/2025-09-19/detail-infqzkhk9726343.d.html",
+          "description": "AI 泡沫是很有可能的，但对于 Meta 这样的公司来说，更大的风险是犹豫不决。如果我们最终为 AI 浪费了数千亿美元，显然非常不幸，但我实际上认为错过 AI 的风险更高。对于我们来说，风险不是过于激进，而是不够激进。",
+          "images": []
+        },
+        {
+          "title": "乔布斯：下一阶段的计算机是代理",
+          "link": "https://simonwillison.net/2025/Sep/18/steve-jobs/",
+          "description": "今天的计算机是响应者（responder）：你让它做某事，它就会去做。下一阶段的计算机是\"代理\"（agent），它就像一个盒子里的小人，开始预测你想要什么。它不是帮助你，而是引导你处理大量的信息，就像你在盒子里有一个小伙伴。",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

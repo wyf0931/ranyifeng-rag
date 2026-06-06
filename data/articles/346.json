@@ -1,0 +1,416 @@
+{
+  "title": "科技爱好者周刊（第 346 期）：未来就是永恒感的丧失",
+  "link": "https://www.ruanyifeng.com/blog/2025/04/weekly-issue-346.html",
+  "number": 346,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "未来就是永恒感的丧失",
+          "link": "",
+          "description": "有一类人叫做未来学家（Futurists），专门研究未来。\n\n![](https://cdn.beekka.com/blogimg/asset/202504/bg2025042301.webp)\n\n这类人通常很快被忘记，因为他们的预测基本不准。就算偶尔说对了，后人也会觉得稀松平常。\n\n历史上最著名的未来学家，大概是一个叫做[阿尔文·托夫勒](https://baike.baidu.com/item/%E9%98%BF%E5%B0%94%E6%96%87%C2%B7%E6%89%98%E5%A4%AB%E5%8B%92/9533188)（Alvin Toffler，1928--2016）的美国人。\n\n![](https://cdn.beekka.com/blogimg/asset/202504/bg2025042302.webp)\n\n上个世纪七十和八十年代，他写过很多预测未来的书，非常畅销。1983年，国内就引进了他的书，轰动一时。\n\n时过境迁，现在几乎没人提他了。\n\n前些日子，一个朋友对我说，你可以去看看他的书，居然没有完全过时。\n\n我看了一些片段，很震惊。这些片段根本不像写于半个世纪之前，更像写于现在。\n\n![](https://cdn.beekka.com/blogimg/asset/202504/bg2025042303.webp)\n\n托夫勒的第一本书，叫做[《未来的冲击》](https://book.douban.com/subject/1843857/)，写于1970年，国内有中文版。\n\n下面就是他的主要观点。大家一定要记住，这些话写于1970年，那个时候还没有信息革命，既没有个人电脑，也没有手机和互联网。\n\n托夫勒认为，人类以前是农业社会，现在是工业社会，即将进入**超工业社会**。\n\n超工业社会有两个特征。\n\n首先，工业人口只占少部分，大部分人从事脑力劳动。\n\n其次，即使少部分人从业工业，生产出来的工业品，也大大超过需要。\n\n那么，问题就来了。如果50%、甚至40%的工业生产能力，就能生产出满足所有人需要的工业品，那么会怎样？\n\n托夫勒说，**为了消化掉多余的工业品，结果就是加速**。社会开始让消费加速，让技术也加速，最终让商品的流通速度变快，只有这样才能消费更多的商品。\n\n这意味着，人类社会将变快。**我们生活的根本特征，不再是持久，而是短暂**。\n\n（1）生活用品变得短暂，越来越多一次性产品：一次性筷子，一次性圆珠笔，一次性塑料瓶，甚至一次性衣服。\n\n（2）即使长期使用的产品，也在快速升级换代。微波炉、洗衣机这样的耐用消费品，人们也只要今年的型号，不要去年的型号。\n\n（3）社会充斥着速成食品、速成教育，甚至城镇也可以速成。\n\n（4）知识短暂化，用过即弃。\n\n（5）工作变得短暂。职位、公司、甚至行业，随时都会消失，新的部门和行业不断涌现。\n\n（6）生活环境变得短暂。人们经常搬家，不会在一个地方久居。\n\n（7）人际关系变得肤浅。人与人之间很难产生稳定深入的关系，交流持续的时间缩短，更多的是偶遇和点头之交。\n\n（8）人们面对快速变化，内心感到疲惫和衰弱，情绪变得不稳定，精神病人变多。\n\n总之，未来的根本特征，就是永恒感的丧失，取而代之的是短暂感。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042301.webp",
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042302.webp",
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042303.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "Trae 的 万「友」引力计划",
+          "link": "https://sourl.co/6M23d8",
+          "description": "本周，字节的 AI 编辑器 [Trae](https://sourl.co/inA2ng) 发了新版，可以**调用 MCP 服务器**了。\n\n这可是重磅消息，开辟了一个全新天地，我还写了[一篇教程](https://www.ruanyifeng.com/blog/2025/04/trae-mcp.html)。\n\n官方为了推广，投入了大量资源，Doubao、DeepSeek、Claude、Gemini、GPT-4o，**现在都是免费用**（后三个模型需要 Trae 海外版）。\n\n为了让更多的同学参与，只要你深度体验 Trae，**完成简单任务，就可以获得相应积分**，兑换奖品。\n\n奖品包括 华为 MatePad Air、雷蛇机械键盘、热门 App 会员卡等。\n\n详情访问[这个链接](https://sourl.co/6M23d8)，或者扫描上方海报的二维码。\n\n机会难得，**既能学习 AI 和 MCP，还能拿奖品**，大家不要错过哦。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042411.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "虚拟味觉",
+          "link": "https://arstechnica.com/science/2024/11/licking-this-lollipop-will-let-you-taste-virtual-flavors/",
+          "description": "香港城市大学的科学家，提出了一种虚拟味觉的实现方法。\n\n他们做了一个类似棒棒糖的\"虚拟味觉器\"，用户把它含在嘴里。\n\n它会以\"离子泳\"的形式，释放水凝胶。目前，一共9种口味的水凝胶，也就是说用户可以尝到9种味道：糖、盐、柠檬酸、樱桃、百香果、绿茶、牛奶、榴莲和葡萄柚。\n\n这里的关键是，水凝胶的释放可以编程控制，因此可以用来在电子游戏中增强用户体验，或者网上购物时让用户先品尝食品味道。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202501/bg2025010603.webp"
+          ]
+        },
+        {
+          "title": "旅行推销员问题",
+          "link": "https://baike.baidu.com/item/%E6%97%85%E8%A1%8C%E5%95%86%E9%97%AE%E9%A2%98/7737042",
+          "description": "最近，一个国际团队打破了[旅行推销员问题的世界纪录](https://www.math.uwaterloo.ca/tsp/korea/index.html)。\n\n他们规划出一条最短路线，可以一次性走遍韩国所有81,998家酒吧。\n\n一刻不停的步行，完成这条路线一共需要178天。\n\n此前的世界纪录是2021年创造的，走完荷兰57,912个纪念碑的最短路线。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042406.webp",
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042407.webp"
+          ]
+        },
+        {
+          "title": "Vision Pro 用于微创手术",
+          "link": "",
+          "description": "苹果的 AR 头盔 Vision Pro，售价高达3万元人民币，销量并不好。\n\n用户普遍觉得，它的用处并不大，售价又这么贵。但是，它意外在一个场合非常受欢迎。\n\n美国的一些医院发现，它可以用于微创手术。医生戴着头盔，给病人开刀，上图就是两个这样的医生。\n\n很多手术，尤其是涉及血管和神经的手术，要求非常精细，动刀位置不能有一点差错。\n\n医生不可能凑上去看，现在都是用摄像头放大后，看着显示器动刀。\n\nVision Pro 戴在眼前，影像更大，看得更清楚，而且还能叠加多窗口，显示心率血压等指标。\n\n医生非常喜欢这个设备。价格完全不是问题，因为手术用显示器的价格是 Vision Pro 的好几倍。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024102002.webp",
+            "https://cdn.beekka.com/blogimg/asset/202410/bg2024102003.webp"
+          ]
+        },
+        {
+          "title": "其他",
+          "link": "",
+          "description": "（1）北京举行[机器人半程马拉松](https://www.yicai.com/news/102579232.html)比赛。21公里的路程，冠军成绩是2小时40分42秒，需要更换三次电池。\n\n（2）4月25日的日出前，土星、金星、月亮，将组成[笑脸图案](https://www.popsci.com/science/smiley-face-triple-conjunction/)。\n\n（3）亚马逊在欧洲实验，让送货卡车配备[心脏除颤器](https://www.bloomberg.com/news/articles/2025-04-10/amazon-turned-drivers-into-first-responders-in-europe-experiment)，一旦送货时遇到突发心脏病的人，可以进行急救。\n\n（4）索尼推出[全球最小的激光雷达](https://petapixel.com/2025/04/15/sony-unveils-the-worlds-smallest-and-lightest-lidar-depth-sensor/)，适合用于无人机、机器人。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042101.webp",
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042304.webp",
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025041603.webp",
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042108.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "昊龙：中国首个货运航天飞机",
+          "link": "https://finance.sina.com.cn/tech/digi/2024-12-31/doc-ineciyiv2558351.shtml",
+          "description": "天宫空间站的补给，目前由天舟飞船完成。但是，天舟每次返回大气层，都会烧毁。\n\n国内正在研究可以重复使用的\"昊龙\"货运飞船，以降低货运成本。\n\n昊龙已经完成了设计，正在工程测试阶段。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042404.webp",
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042405.webp"
+          ]
+        },
+        {
+          "title": "如何使用 UTM 在 Mac 电脑架设虚拟机",
+          "link": "https://rkiselenko.dev/blog/development-on-mac-with-utm/development-on-mac-with-lima/",
+          "description": "一篇教程，教你如何在 MacBook 安装 utm 虚拟机，从而方便地使用 Linux 系统。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042109.webp"
+          ]
+        },
+        {
+          "title": "清理 <head>",
+          "link": "https://getoutofmyhead.dev/",
+          "description": "网页的`<head>`部分里面，很多标签是不必要的，这个网站介绍可以删除的标签，比如 favicon、Apple touch icons。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042110.webp"
+          ]
+        },
+        {
+          "title": "线上故障应急处理：4 年多 on call 经验总结",
+          "link": "https://jt26wzz.com/posts/0007-online-firefighting-real-world-lessions-from-4-years-on-call/",
+          "description": "我的第一份工作是 CDN 基础设施研发，考虑到公司体量，那些年其实故障蛮多的。在故障处理中，积累了一些经验教训，总结回顾一下。",
+          "user": "@swananan",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042003.webp"
+          ]
+        },
+        {
+          "title": "在 Docker 沙箱中运行 MCP Server",
+          "link": "https://miantiao.me/posts/guide-to-running-mcp-server-in-a-sandbox/",
+          "description": "本地运行他人的 MCP 服务器有极大的风险，本文介绍怎么在 Docker 沙箱里面运行。",
+          "user": "@ccbikai",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042402.webp"
+          ]
+        },
+        {
+          "title": "如何用 Whisper 生成字幕",
+          "link": "https://kracekumar.com/post/subtitle-generator-using-whisper/",
+          "description": "本文是作者的操作记录，演示如何用 OpenAI 公司的 Whisper 模型为视频文件生成字幕。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202501/bg2025011915.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Pigment",
+          "link": "",
+          "description": "一个 CSS 组件库，使用最新的 CSS 规范，也就是说，不考虑兼容老旧浏览器。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202501/bg2025011605.webp"
+          ]
+        },
+        {
+          "title": "strippets",
+          "link": "https://github.com/biosugar0/strippets",
+          "description": "一个从 TypeScript 脚本剥离类型代码的工具，也就是将 TS 脚本转成 JS 脚本，但是不进行类型检查。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092811.webp"
+          ]
+        },
+        {
+          "title": "Oslo",
+          "link": "https://oslojs.dev/",
+          "description": "一个 TypeScript 的用户身份认证库，功能全面，密码登录、双因素认证、外部身份提供商等都支持。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202409/bg2024092901.webp"
+          ]
+        },
+        {
+          "title": "SingleFile",
+          "link": "https://github.com/gildas-lormeau/SingleFile",
+          "description": "Chrome 浏览器插件，自动保存所有浏览过的网页，提供浏览历史的全文搜索。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202407/bg2024070505.webp"
+          ]
+        },
+        {
+          "title": "CSS 转 unoCSS / TailwindCSS 工具",
+          "link": "",
+          "description": "这个网页工具将 CSS 代码转成 unoCSS 或者 [TailwindCSS](https://to-tailwindcss.netlify.app/) 的写法。",
+          "user": "@Simon-He95",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042401.webp"
+          ]
+        },
+        {
+          "title": "NoteGen",
+          "link": "https://github.com/codexu/note-gen",
+          "description": "跨平台的 Markdown 笔记软件，支持接入 AI 模型。",
+          "user": "@codexu",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042002.webp"
+          ]
+        },
+        {
+          "title": "github-hosts",
+          "link": "https://github.com/jvxiao/github-hosts",
+          "description": "一个修改 hosts 文件，加快 GitHub 访问速度的 Python 脚本。\n这里还有一个 [Cursor](https://cursor-host.aolifu.org/) 的 hosts 文件生成器。",
+          "user": "@jvxiao",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042308.webp"
+          ]
+        },
+        {
+          "title": "旅游翻译器",
+          "link": "https://besttraveltranslator.com",
+          "description": "网友做的旅行翻译网站，支持对话翻译和拍照翻译，[代码开源](https://github.com/traveltranslator1/traveltranslator1)。",
+          "user": "@traveltranslator1",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042305.webp"
+          ]
+        },
+        {
+          "title": "Shui",
+          "link": "https://github.com/rock-zhang/Shui",
+          "description": "开源的桌面软件，定时提醒喝水。",
+          "user": "@rock-zhang",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042306.webp"
+          ]
+        },
+        {
+          "title": "SnowAdmin",
+          "link": "https://github.com/WANG-Fan0912/SnowAdmin",
+          "description": "基于 Vue + Vite 的网站管理后台模版。",
+          "user": "@WANG-Fan0912",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042307.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "特定领域（例如 Ai等）",
+      "items": [
+        {
+          "title": "chatlog",
+          "link": "https://github.com/sjzar/chatlog",
+          "description": "用 AI 处理微信本地聊天记录的工具。",
+          "user": "@sjzar",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042001.webp"
+          ]
+        },
+        {
+          "title": "recipe-mcp",
+          "link": "https://github.com/worryzyy/recipe-mcp",
+          "description": "一个 MCP 服务器，提供中文菜谱、餐食规划。",
+          "user": "@worryzyy",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "BrowserUse",
+          "link": "https://github.com/yuyutaotao/BrowserUse",
+          "description": "字节推出的 JS 工具，最新功能是通过 AI 和 adb，完成安卓手机自动化。它早先已经可以浏览器自动化。",
+          "user": "@yuyutaotao",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042310.webp",
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042403.webp"
+          ]
+        },
+        {
+          "title": "MCP-Gateway",
+          "link": "https://github.com/iFurySt/mcp-gateway",
+          "description": "一个 Go 语言写的网关服务，将已有的 API 转成 MCP 服务，无需改动任何代码。",
+          "user": "@iFurySt",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "全球地铁线路图",
+          "link": "https://www.metrolinehub.com/zh",
+          "description": "这个网站收集了全球各大城市的地铁地图。",
+          "user": "@027xiguapi",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042309.webp"
+          ]
+        },
+        {
+          "title": "如是我闻",
+          "link": "https://rushiwowen.co",
+          "description": "佛经阅读平台，带有 AI 翻译和问答。",
+          "user": "@bolechen",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042004.webp"
+          ]
+        },
+        {
+          "title": "exif.help",
+          "link": "https://exif.help",
+          "description": "该网站对用户上传的照片给出详尽描述，从而可以发现照片泄漏了多少信息。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024121909.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "日本木匠大会",
+          "link": "https://www.bigsandwoodworking.com/kezurou-kai-39/",
+          "description": "日本每年举行一次全国[木匠大会](https://www.bigsandwoodworking.com/kezurou-kai-39/)。\n\n大会有一个项目，就是刨花比赛，看看谁的刨花最薄。\n\n比赛规定，木材必须是宽55毫米、长1800毫米的桧木。进入决赛的5名选手，为了公平，将使用同一块桧木。\n\n刨出来的刨花必须完整，没有裂口，长度在1米左右，才能参加评分。\n\n工作人员把所有选手的刨花，挂在黑板上，进行公示，评委进行打分。\n\n这些的刨花如此之薄，令人不敢相信。\n\n冠军选手的成绩是50微米，也就是1毫米的20分之一。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042111.webp",
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042112.webp",
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042120.webp",
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042121.webp",
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042114.webp",
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042115.webp",
+            "https://cdn.beekka.com/blogimg/asset/202504/bg2025042410.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "文摘",
+          "link": "",
+          "description": "我是一个信息瘾君子，对各种信息上瘾。\n\n当我想学习一项新技能，或者有了一种新爱好，我就立即前往亚马逊网上书店，购买3～4本该主题的书籍。\n\n现在我的书柜里面、有关于 HTML 基础知识、纸牌魔术、高尔夫、编剧、赛车、冥想、举重以及大约10个其他主题的书籍。\n\n我也会订阅一些博客和播客，阅读所有最受欢迎的帖子，聆听了各种专家访谈。有时候，我甚至会在 Evernote 做一些笔记，或者在浏览器为某些页面添加书签。\n\n然而，我总是缺少一件事：实际成果。\n\n我对那么多东西感兴趣，也学了很多，但是没有做出什么成果。\n\n我只是查找和使用信息，这很容易，对于像我这样好奇的人来说，这通常也非常有趣。\n\n但它实际上并没有完成任何事情，这是伪工作，一种自我安慰。\n\n创造才是更有效的方式，你开始制作东西----网站、成功的高尔夫击球、剧本等等，不管是什么----然后，无非就是两种结果。一种结果是你意识到自己对它不那么感兴趣，另一种结果是你真的喜欢它，开始深入研究。无论哪一种结果，都是值得的，而盲目消费信息，则是一种无效的表面行为。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "AI 伴侣可以减少孤独感，但是会产生新的问题。它可能取代人际互动，让你丧失基本社交技能，从而变得更加孤立。",
+          "link": "https://peakhorse.substack.com/p/empty-calories-of-ai-a-cure-for-loneliness",
+          "description": "",
+          "user": "哈佛商学院的一项研究",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "简单和优雅不受欢迎，因为它们需要努力工作和纪律才能实现。",
+          "link": "",
+          "description": "",
+          "user": "Edsger Dijkstra",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "规则就像汽车上的安全带：一开始可能会有点不舒服，但一段时间后，使用规则就会成为习惯，不使用规则就变得不可想象。",
+          "link": "",
+          "description": "",
+          "user": "Gerard J. Holzmann",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "企业编程必须始终依赖流程，而不是个人。",
+          "link": "",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "我喜欢软件，因为软件可以创造无限可能性和一种非凡的民主。",
+          "link": "",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,356 @@
+{
+  "title": "科技爱好者周刊（第 261 期）：黑客马拉松的正确方式",
+  "link": "https://www.ruanyifeng.com/blog/2023/07/weely-issue-261.html",
+  "number": 261,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "黑客马拉松的正确方式",
+          "link": "",
+          "description": "你参加过黑客马拉松（hackathon）吗？\n\n那是一种编程比赛，程序员聚集到一个地点（通常是会议室），在指定时间完成各自的项目，然后评出获胜者。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023070512.webp)\n\n我知道的\"黑客马拉松\"都非常紧张，必须在48小时甚至24小时内拿出作品，晚上往往没时间睡觉，要熬通宵。\n\n下面是我在网上找到的一份[比赛办法](https://www.woshipm.com/active/2228696.html)，很具有普遍性。\n\n团队规模：参赛队伍的最高人数限制为 5 人。\n演示原型：参赛者必须演示原型，可以考虑搭配幻灯片或视频。\n比赛方式：现场决赛的队伍或个人在同一场地的规定时间内，完成并提交组委会发放的同一考题。\n\n但是，我最近看到了国外的一份[黑客马拉松举办通知](https://oceansprint.org/)，才意识到其实还有另一种方式，而且那才是正确的比赛方式。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023070201.webp)\n\n这个比赛叫做\"NixOS 海洋编程冲刺 2023\"（NixOS Ocean Sprint 2023），看谁能找出 NixOS 这个操作系统的漏洞。\n\n比赛时间是今年10月份，任何人都可以报名，组委会挑选出20人参赛。\n\n它的不同之处在于比赛地点：加那利群岛！\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023070202.webp)\n\n那是西班牙著名的旅游胜地，大西洋的热带岛屿，景色优美，每年吸引几百万的全世界游客。\n\n组委会借了一个泳池大别墅，大家晚上住旅馆，白天就到别墅来比赛。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023070203.webp)\n\n编程累了，就去泳池游泳。到了饭点，所有人就聚在一起吃饭聊天。\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023070204.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202307/bg2023070205.webp)\n\n清晨和夜晚，你还可以去海滩运动。等到比赛结束，再游览一下加那利群岛。\n\n我顿时觉得，这才是黑客马拉松的正确方式，以前那种集训式的比赛方式太无趣了，**太看重竞技和名次，忽视了交流和乐趣**。\n\n黑客马拉松的结果，其实不重要，几十个小时的命题作文，能得到什么有价值的结果？反而是陌生的年轻人聚在一起，互相交流，结交朋友，碰撞思想，这才是最有价值的。另外，在风景美丽的热带海岛上\"编程 + 旅行\"，也会留下终身难忘的美好回忆。\n\n这样的比赛更接近黑客的本质：**编程是为了乐趣和好奇心，是一种探索，而不是竞技**。\n\n我真心建议，国内的黑客马拉松借鉴这种方式，也搬到风景优美的旅游区举行，至少要营造让大家结识攀谈的场合和时间，交流第一，比赛第二。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023070512.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023070201.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023070202.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023070203.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023070204.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023070205.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "指纹浏览器 AdsPower",
+          "link": "https://www.adspower.net/",
+          "description": "一款反指纹浏览器，防止网站获取你的浏览器指纹。它集成了所有反指纹措施，包括变造浏览器指纹、定制浏览器环境、浏览器自动化、窗口同步等。可用于数据采集、自动化测试、多店铺管理、社交媒体多账户管理等。基本功能免费。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023070705.png",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023070102.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023070103.webp",
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023070104.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "泳池机房",
+          "link": "https://arstechnica.com/information-technology/2023/03/free-data-center-heat-is-allegedly-saving-a-struggling-public-pool-24k-a-year/",
+          "description": "一家英国公司建造了“泳池机房”，把机房建在游泳馆，让其为温水泳池供暖。该公司声称可以让温水泳池的加热费用减少62%。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Fairphone 4 可维修度满分",
+          "link": "",
+          "description": "根据 iFixit 的评分，荷兰生产的 Fairphone 4 是全世界可维修度最高的手机，得到了满分10分。采用模块化设计，新手只用一把螺丝刀就能完成维修。但配置不高，价格却很高。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "关闭售票处",
+          "link": "https://www.sohu.com/a/694826920_119038",
+          "description": "英国铁路公司宣布，将在三年内关闭英国所有的火车售票处，用户只能在自助售票机或者网上购买。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "VR 头盔减少麻醉药用量",
+          "link": "",
+          "description": "美国科罗拉多大学的研究人员发现，让病人带上 VR 头盔开刀，可以减少麻醉药的用量。VR 头盔让病人更加放松，对疼痛的关注更少。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "中国限制出口镓和锗的影响",
+          "link": "https://m.laoyaoba.com/n/867801",
+          "description": "商务部、海关总署本周宣布，对镓和锗实施出口管制。本文介绍这两种金属的用途，以及这个举措的影响。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "中芯国际是怎么成立的？",
+          "link": "https://www.eet-china.com/mp/a232813.html",
+          "description": "回忆了上海市经委副主任江上舟，在2001年促成中芯国际在上海成立的往事。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "我私藏的英语学习工具",
+          "link": "https://sspai.com/post/80086",
+          "description": "作者介绍他使用的英语学习软件和服务。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "个人网站集成 GitHub issue 评论功能",
+          "link": "https://richard-docs.netlify.app/blogs/b-027",
+          "description": "作者采用 VitePress 搭建博客，本文介绍他怎么引入 GitHub issue 作为网站的评论功能。",
+          "user": "Richard-Zhang1019",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3237",
+          "images": []
+        },
+        {
+          "title": "为什么 OAuth 仍然很难？",
+          "link": "https://www.nango.dev/blog/why-is-oauth-still-hard",
+          "description": "分析 OAuth 的一些难点，为什么至今仍然让人觉得很困难。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "老旧 MacBook 如何安装 Linux",
+          "link": "https://boilingsteam.com/liberating-the-macbook-air-2013-with-linux-complete-guide/",
+          "description": "一篇详细的指南，教你怎么把过时的 Macbook 利用起来，装上 Linux。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "MySQL 和 MariaDB 的差异",
+          "link": "https://www.skeema.io/blog/2023/05/10/mysql-vs-mariadb-schema/",
+          "description": "MySQL 和 MariaDB 是两个常用的关系型数据库，后者是从前者分叉出来。两者基本是一样的，但也有很多差异。本文总结这些差异。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "AI \"越大越好\"已经走不通了",
+          "link": "https://www.economist.com/science-and-technology/2023/06/21/the-bigger-is-better-approach-to-ai-is-running-out-of-road",
+          "description": "《经济学家》杂志的一篇新闻分析，认为由于成本和训练材料的限制，AI 模型的规模可能已经到头了，并分析下一步的发展方向。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Dagu",
+          "link": "https://dagu.dev/",
+          "description": "开源 CI/CD 工具，可视化编排 DevOps 流程。",
+          "user": "lxitgto",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3233",
+          "images": []
+        },
+        {
+          "title": "ZoomIt",
+          "link": "https://zoom.it/",
+          "description": "一个桌面程序，对任意桌面区域产生放大镜效果。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Site Checker",
+          "link": "",
+          "description": "开源的 Chrome 浏览器插件，显示网站 ICP 备案、Whois、DNS、服务器位置及运营商信息。",
+          "user": "yuedanlabs",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3223",
+          "images": []
+        },
+        {
+          "title": "艺码",
+          "link": "https://yima.me/",
+          "description": "根据文字描述，将二维码转成一幅可扫描的图像的网页工具。",
+          "user": "Cobb9527",
+          "user_link": "https://github.com/ruanyf/weekly/issues/3226",
+          "images": []
+        },
+        {
+          "title": "Language Reactor",
+          "link": "https://www.languagereactor.com/",
+          "description": "浏览器插件，可以在 Netflix 和 Youtube 视频上，同时显示两种语言的字幕，方便学习外语。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Directus",
+          "link": "https://github.com/directus/directus",
+          "description": "运行在各种数据库之上，自动为数据库生成 REST + GraphQL API，并自带一个 Web 仪表盘。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "CheerpJ",
+          "link": "https://leaningtech.com/announcing-cheerpj-3-0-a-jvm-replacement-in-html5-and-webassembly-to-run-java-applications-and-applets-on-modern-browsers/",
+          "description": "一个实验性工具，将 JVM 解释器搬上网页，让 Java 代码可以直接在网页运行。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Flowbite",
+          "link": "https://flowbite.com/",
+          "description": "一个基于 Tailwind CSS 的 UI 组件库，目前有超过150个组件。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "komorebi",
+          "link": "https://github.com/LGUG2Z/komorebi",
+          "description": "Windows 系统的窗口管理器，自动在桌面编排多个应用程序窗口。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "WezTerm",
+          "link": "https://wezfurlong.org/wezterm/",
+          "description": "一个跨平台的终端模拟器，采用 GPU 加速，在显示上面有一定的性能优势。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "WebAuthn Guide",
+          "link": "https://webauthn.guide/",
+          "description": "新的、不需要密码的网站登录协议 WebAuthn 的综合介绍。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "DNS Playground",
+          "link": "https://messwithdns.net/",
+          "description": "一个 DNS 游乐场，为每个访问者提供一个免费子域名，你可以对它设置各种 DNS 记录，进行练习。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "68k.news",
+          "link": "http://68k.news/",
+          "description": "将谷歌新闻转成文本版，可以快速浏览。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Weather API",
+          "link": "https://openweathermap.org/api",
+          "description": "一个免费的天气 API，每月可调用2万次。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "APIVault",
+          "link": "https://apivault.dev/",
+          "description": "收集了大量公共 API，相当于 API 的搜索引擎，用户可以提交新的 API。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "超级计算机的冷却",
+          "link": "https://www.bloomberg.com/news/features/2023-01-05/frontier-supercomputer-world-s-fastest-needs-74-miles-of-cable",
+          "description": "美国田纳西州橡树岭国家实验室，有一台世界最快的超级电脑 Frontier，运算速度达到百亿亿次。它占地600多平方米，有9000多个运算节点，需要20多吨水来冷却。每个计算节点都有独立的水冷。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011208.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011209.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011210.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011211.webp",
+            "https://cdn.beekka.com/blogimg/asset/202301/bg2023011212.webp"
+          ]
+        },
+        {
+          "title": "世界最大的心脏",
+          "link": "https://www.vox.com/down-to-earth/2022/8/11/23291991/largest-animal-blue-whale-heartbeat",
+          "description": "蓝鲸是世界最大的动物，它的心脏也是世界最大的心脏，像一座小房子。为了让血液流到庞大身躯的各个部分，蓝鲸的心脏必须产生巨大的血压。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081202.webp",
+            "https://cdn.beekka.com/blogimg/asset/202208/bg2022081203.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "降低软件成本的两种方法",
+          "link": "",
+          "description": "如果想要降低软件的成本，一般有两种方法。\n（1）加快软件开发速度，缓慢的开发会耗尽公司的资金。\n（2）提高软件性能，更好的性能会减少资源消耗。\n\n我们用谷歌的数据来说明。2020年，谷歌使用了 15.5TW 的电力，电费总计30.85亿美元。同年，谷歌雇佣了27,169名软件工程师，人力成本总计48.56亿美元。由此可见，软件开发的人力成本比电费高得多。加快软件开发速度，可以节约人力成本，而提高软件性能可以节约电费。因此，针对开发速度进行优化，对降低成本的效果可能更明显。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "320年，12位总统，10位皇帝，2个共和国，一份报纸。",
+          "link": "",
+          "description": "世界最古老报纸《维也纳报》对自己历史的总结。该报创刊于1703年8月8日，今年6月30日停刊。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "我最近看到许多与\"人工智能\"相关的商业项目。它们都只是把各种数据发送到 ChatGPT 的 API，假装正在做一些新颖的、令人印象深刻的事情，实际上只是为了尽快拿到风险投资。",
+          "link": "",
+          "description": "",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "很多人说，AI 会带来大量失业，这是可能的，因为 AI 让你用更少的人做同样的事情。但是反过来说，它也让你用同样的人做更多的事情，所以 AI 也可能为大家变得更忙，从而增加就业。",
+          "link": "",
+          "description": "来自《人工智能和工作自动化》",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "我发现，工作中与计算机打交道时，逻辑很有用，但与人打交道时，逻辑很少有用。事实上，对于绝大多数的人际交往，逻辑、严谨、辩论都是没用的。",
+          "link": "",
+          "description": "来自《逻辑、严谨和辩论》",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "开篇小故事",
+  "items": [
+    {
+      "title": "本周话题：封闭系统的胜利",
+      "link": "",
+      "description": "这里记录每周值得分享的科技内容，周五发布。\n\n本杂志开源（GitHub: [ruanyf/weekly](https://github.com/ruanyf/weekly)），欢迎提交 issue，投稿或推荐科技内容。\n\n周刊讨论区的帖子[《谁在招人？》](https://github.com/ruanyf/weekly/issues/1580)，提供大量程序员就业信息，欢迎访问或发布工作/实习岗位。\n\n## 封面图\n\n![](https://cdn.beekka.com/blogimg/asset/202101/bg2021010101.jpg)\n\n2020年7月21日，SpaceX 公司的 Falcon 9 重型火箭即将发射。NEOWISE 彗星就在它的上方，划过浩瀚宇宙。很多网站评选这张照片为太空探索年度照片。（[via](https://twitter.com/spacex/status/1285264295417110528)）\n\n## 本周话题：封闭系统的胜利\n\n去年的一件大事，苹果公司发布 M1 芯片。\n\n它的表现好得惊人，比原先英特尔的芯片更快、更省电、还更便宜。\n\n![](https://cdn.beekka.com/blogimg/asset/202101/bg2021010501.jpg)\n\n为什么 M1 芯片的表现这么好？\n\n**一个 原因是，它其实不能算作 CPU，而是一个单片系统** （System on a Chip，简称 SoC），里面集成了中央处理器 CPU、图形处理器 GPU、机器学习芯片 NPU、安全芯片等等。\n\n当代芯片的制造技术已经发展到不可思议的程度，海量的晶体管可以做进一块指甲盖大小的硅片。以前，不同的电路需要由不同的芯片提供，现在可以集成为一块芯片。\n\n正是由于这么多组件做在一起，苹果才有办法，最大限度地优化电路，提高协同能力，节省电力。再加上，操作系统也是自家的，可以配合着修改底层，所以性能才能提高这么多。\n\n![](https://cdn.beekka.com/blogimg/asset/202101/bg2021010502.jpg)\n\n我问大家一个问题，如果 M1 大获成功，其他公司会怎么反应？\n\n答案很简单，别的公司不得不跟进。英特尔、 AMD、三星、华为等等迫于压力，就不能再单纯开发 CPU 了，而是必须开始搞自己的 SoC 芯片。\n\n前一阵，生产显卡的 Nvidia 想要收购 ARM 芯片公司，可能就是这种考虑，想将 GPU 和 CPU 融合在一起，跟苹果抗衡。有[消息](https://www.tomshardware.com/news/google-developing-own-processors-for-smartphones-and-chromebooks)说，谷歌也在开发自己的 SoC 芯片，用在 Pixel 手机和 ChromeBook。\n\n![](https://cdn.beekka.com/blogimg/asset/202101/bg2021010503.jpg)\n\nSoC 的盛行会带来一个后果，因为它把许多功能集成在一起，大量使用自定义的逻辑和接口，封装成一个黑箱，而且每家公司的设计都不一样，所以 **SoC 不可能是一个开放的、兼容的系统，只可能是封闭的专有系统。** 目前的手机硬件，就是这种状况。\n\n没人能改苹果的硬件，它的接口和规格都没有公开。以后，其他公司的系统也会是这样，个个都是黑箱，外人根本动不了。\n\n这意味着，对于桌面设备来说，个人兼容 PC 时代就要结束了，以后兼容硬件的可选择性越来越小，市场上都是基于不同 SoC 定制系统的整机。比如，自己想要更换显卡，也换不了，因为都做进 SoC 了，Linux 想驱动这些 SoC，会更困难，因为专有硬件都是不开源的。\n\n![](https://cdn.beekka.com/blogimg/asset/202101/bg2021010504.jpg)\n\n不仅硬件正在变成封闭系统，软件其实早就如此了。以前，只要一个浏览器，就能访问全部的互联网，现在不行了。微信、今日头条、抖音......这些都是封闭系统，把内容锁在自己的院子里，必须安装它们的 App 才能看，不支持 Web 浏览，结果它们都成功了。\n\n这种趋势正在蔓延，越来越多的网站选择放弃 Web 变成封闭系统。用户在网站上只能阅读一部分内容，想要获取全部内容，就必须安装 App。由于它们的蔓延，互联网正在变成一个个孤岛，信息自由开放、互连互通的梦想，似乎比任何时候都要遥远。\n\n封闭系统的最大问题就是，整个市场最终会被若干大公司主宰，它们控制了一切，这看上去就是现在的局面。",
+      "images": [
+        "https://cdn.beekka.com/blogimg/asset/202101/bg2021010101.jpg",
+        "https://cdn.beekka.com/blogimg/asset/202101/bg2021010501.jpg",
+        "https://cdn.beekka.com/blogimg/asset/202101/bg2021010502.jpg",
+        "https://cdn.beekka.com/blogimg/asset/202101/bg2021010503.jpg",
+        "https://cdn.beekka.com/blogimg/asset/202101/bg2021010504.jpg"
+      ]
+    }
+  ]
+}

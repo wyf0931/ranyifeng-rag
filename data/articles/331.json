@@ -1,0 +1,350 @@
+{
+  "title": "科技爱好者周刊（第 331 期）：你可能是一个 NPC",
+  "link": "https://www.ruanyifeng.com/blog/2024/12/weekly-issue-331.html",
+  "number": 331,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "你可能是一个 NPC",
+          "link": "https://www.gurwinder.blog/p/why-you-are-probably-an-npc",
+          "description": "最近，美国发生了一起轰动的大案，一家医疗保险公司的 CEO 当街[被人击杀](https://finance.sina.com.cn/stock/usstock/c/2024-12-11/doc-inczawih7483083.shtml)。\n\n嫌疑人很快抓到了，是一个26岁的青年，名为路易吉·曼吉奥内（Luigi Mangione）。\n\n![](https://cdn.beekka.com/blogimg/asset/202412/bg2024122601.webp)\n\n\n媒体纷纷挖掘这个青年的背景，发现他是[一个作家](https://www.gurwinder.blog/p/the-riddle-of-luigi-mangione)的粉丝。\n\n就在几个月前，他向作家打赏200美元，并进行了多次视频通话。\n\n媒体就去采访作家，询问两人在通话中说了什么。\n\n作家详细地回忆了他们的通话内容。其中有一段，我觉得很有意思，分享给大家。\n\n曼吉奥内对作家说，他很喜欢作家的一篇文章[《你可能是一个 NPC》](https://www.gurwinder.blog/p/why-you-are-probably-an-npc)。\n\nNPC 指的是电子游戏的\"非玩家角色\"，比如路人、门卫、警察等等，用来模拟现实环境，由程序控制，一举一动都是设计好的，没有自主意识。\n\n![](https://cdn.beekka.com/blogimg/asset/202412/bg2024122602.webp)\n\n\n作家的那篇文章提出，**人类越来越像机器人，彷佛 NPC 那样，行为逻辑都是预设好的**。\n\n![](https://cdn.beekka.com/blogimg/asset/202412/bg2024122603.webp)\n\n\n曼吉奥内高度认同这个观点。他前不久去日本旅行，认为日本充满了 NPC。他说了一件亲身见闻。\n\n一天早上，他在街上看到一名男子癫痫发作，倒在地上。他跑到最近的警察局求助，警察就跟着他去现场。\n\n路上遇到了红灯，警察立刻就停下来，坚持要等绿灯再过马路，即使那时马路上根本没有汽车。\n\n曼吉奥内很不理解，病人正在发病，神智不清，可能有生命危险，警察却坚持遵守交通规则。救人难道不是更重要的事情吗？\n\n他由此认为，日本人\"缺乏自由意志\"，规则怎么说就怎么做，不会自主行事，就是**活着的 NPC**。\n\n他还观察到，日本存在一种\"隐蔽族\"（hikikomori），他们不出门，一个人整天待在卧室里，用电子游戏、上网、视频来消磨时间。\n\n![](https://cdn.beekka.com/blogimg/asset/202412/bg2024122604.webp)\n\n\n曼吉奥内认为，这些人也是 NPC，他们失去了对生活的控制，无法参与社会生活，就选择放弃，等于丧失了生活的自主权。\n\n他观察到，这种现象不仅存在于日本，正在向全世界蔓延，世界各地越来越多的人正在成为 NPC。他们要么无法自主的生活，要么无法选择自己的行为，而是根据规则和指令来行事，就像被程序控制一样。\n\n科技公司推动和加剧了这种趋势，互联网使得人们越来越分心，把时间都花在网上肤浅的娱乐，不再集中注意力于自己的生活，把生活都交给程序，无法形成自主的意识和行为。\n\n以上就是曼吉奥内的观点，我认为是很真实的观察。一方面，人工智能使得机器人越来越像人类，另一方面，人类的自主性在消退，越来越像机器人。现实与游戏、人类与机器人，越来越难以区分了。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122601.webp",
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122602.webp",
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122603.webp",
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122604.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "AI 编程挑战赛",
+          "link": "http://zjsms.com/iUNhdBEk/",
+          "description": "全国 AI 编程挑战赛，应用赛道的作品提交到1月5日截止，算法赛道不能使用 AI。大赛有20万奖金池，获奖者有机会拿到岗位 offer。详情见前两期周刊或点击链接报名。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "我的几何人生",
+          "link": "http://paper.people.com.cn/rmrb/pc/content/202412/21/content_30047414.html",
+          "description": "著名华人数学家丘成桐，回顾自己的成长道路。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122310.webp"
+          ]
+        },
+        {
+          "title": "编程十年的感悟",
+          "link": "https://ramsayleung.github.io/zh/post/2024/编程十年的感悟/",
+          "description": "\"代码写多了才意识到，程序员的竞争力并不是写代码，也并不是哪门语言或者框架， 其核心竞争力是通过技术解决问题的能力\"。",
+          "user": "@ramsayleung",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5765",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122313.webp"
+          ]
+        },
+        {
+          "title": "我给博客添加 dark mode",
+          "link": "https://taxodium.ink/setup-blog-color-scheme.html",
+          "description": "作者介绍他为博客添加 dark mode 的处理方法和注意事项。",
+          "user": "@Spike-Leung",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5766",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122314.webp"
+          ]
+        },
+        {
+          "title": "七个最佳的生产力 Docker 镜像",
+          "link": "https://www.xda-developers.com/best-docker-containers-productivity/",
+          "description": "本文介绍七个可以自己用 Docker 镜像架设的生产力服务。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122504.webp"
+          ]
+        },
+        {
+          "title": "不可变 Linux 发行版",
+          "link": "https://linuxblog.io/immutable-linux-distros-are-they-right-for-you-take-the-test/",
+          "description": "越来越多的开发者开始使用不可变的 Linux 发行版（immutable Linux distro），即系统文件在运行期间不可更改。这样会让系统更稳定，也更容易迁移和回滚。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122511.webp"
+          ]
+        },
+        {
+          "title": "macOS 命令行内置的工具程序",
+          "link": "https://weiyen.net/articles/useful-macos-cmd-line-utilities",
+          "description": "本文介绍 macOS 内置的一些命令行工具程序，比如 security、open、pbcopy、pbpaste 等。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202411/bg2024110607.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "YunoHost",
+          "link": "https://yunohost.org",
+          "description": "一款虚拟机软件，内置了常见的云服务，可以一键启用，省去了安装云服务的麻烦，参见[介绍文章](https://www.xda-developers.com/yunohost-guide/)。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024121905.webp"
+          ]
+        },
+        {
+          "title": "MarkItDown",
+          "link": "https://github.com/microsoft/markitdown",
+          "description": "微软官方推出的工具，将各种格式的文件（主要是 Office 文件）转成 Markdown 格式。标题是 GitHub 仓库链接，下面是[线上体验](https://markitdown.pro)。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122303.webp"
+          ]
+        },
+        {
+          "title": "爱幕",
+          "link": "https://aimu.app",
+          "description": "在线字幕编辑器，支持音频提取和字幕翻译，免费使用，自己部署需付费。",
+          "user": "@zhw2590582",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5759",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122309.webp"
+          ]
+        },
+        {
+          "title": "Snapify",
+          "link": "",
+          "description": "截图美化工具。",
+          "user": "@cxhello",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5752",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122306.webp"
+          ]
+        },
+        {
+          "title": "单词收藏助手",
+          "link": "https://chromewebstore.google.com/detail/单词收藏助手-划词翻译-收藏单词/hlchmmedadpbeefeikleobfgjdieclho",
+          "description": "Chrome 插件 + 微信小程序，在网页上收藏单词，建立自己的词库，然后通过小程序加强记忆。",
+          "user": "@yuuk",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5744",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122304.webp"
+          ]
+        },
+        {
+          "title": "Free Open Graph Image Generator",
+          "link": "https://og.indiehub.best",
+          "description": "根据模版制作\"网页分享图\"（open graph）的在线工具。",
+          "user": "@javayhu",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5771",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122507.webp"
+          ]
+        },
+        {
+          "title": "Kyanos",
+          "link": "https://github.com/hengyoush/kyanos/blob/main/README_CN.md",
+          "description": "一个命令行的网络流量采集和分析工具，具有较强的数据过滤和分析能力。",
+          "user": "@hengyoush",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5773",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122508.webp"
+          ]
+        },
+        {
+          "title": "SheetBest",
+          "link": "",
+          "description": "一个开源的类 Excel 电子表格网页应用，支持多人协同编辑。",
+          "user": "@nusr",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5775",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122509.webp"
+          ]
+        },
+        {
+          "title": "红枫云盘",
+          "link": "https://github.com/honmaple/maple-file",
+          "description": "一个多协议云端文件存储的客户端，支持安卓和 macOS，基于 Flutter + Go 开发。",
+          "user": "@honmaple",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5781",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122510.webp"
+          ]
+        },
+        {
+          "title": "GitHub Cards",
+          "link": "https://github.cards",
+          "description": "将 GitHub 用户个人数据转换成卡片图。",
+          "user": "@iAmCorey",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5750",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122305.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI 相关",
+      "items": [
+        {
+          "title": "GCOP",
+          "link": "https://github.com/Undertone0809/gcop",
+          "description": "基于 AI 的 Git 提交消息生成和工作流程优化工具。",
+          "user": "@Undertone0809",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5754",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122307.webp"
+          ]
+        },
+        {
+          "title": "Codebase 问答",
+          "link": "",
+          "description": "该网站可以对 GitHub 代码库提问，由 AI 来回答，比如\"过去30天谁的提交次数最多\"。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122301.webp"
+          ]
+        },
+        {
+          "title": "Liubai",
+          "link": "https://github.com/yenche123/liubai",
+          "description": "开源的微信机器人，在微信里面同时调用三个 AI 模型，完成各种任务。",
+          "user": "@yenche123",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5761",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122311.webp"
+          ]
+        },
+        {
+          "title": "AI OCR",
+          "link": "https://functions-ocr.edgeone.app",
+          "description": "在线免费 AI OCR（图片文字识别）工具，所使用的前端代码和 AI 提示词见[这里](https://github.com/TencentEdgeOne/pages-templates/blob/main/examples/functions-ocr/functions/ocr/index.js)，灵感来自 [llama-ocr](https://github.com/Nutlope/llama-ocr)。",
+          "user": "@ringcrl",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5769",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122505.webp"
+          ]
+        },
+        {
+          "title": "Smart Alt Text Generator",
+          "link": "https://ai-alttext.com/",
+          "description": "上传图片，生成 SEO 友好的 alt 描述，支持多种语言。",
+          "user": "@wang1309",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5762",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122312.webp"
+          ]
+        },
+        {
+          "title": "色彩组合生成器",
+          "link": "",
+          "description": "该网站可以根据输入的关键词，生成对应的色彩组合。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122302.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "网站流量分析平台",
+          "link": "",
+          "description": "网站流量分析平台，根据域名查询网站流量情况。",
+          "user": "@wincatcher",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5757",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122308.webp"
+          ]
+        },
+        {
+          "title": "免费百万级 PNG 图片库",
+          "link": "",
+          "description": "免费的百万级 PNG 图片库。",
+          "user": "@shawnlee000",
+          "user_link": "https://github.com/ruanyf/weekly/issues/5770",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122506.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "无头鸡",
+          "link": "https://en.wikipedia.org/wiki/Mike_the_Headless_Chicken",
+          "description": "1945年，一个美国科罗拉多州的农民杀鸡时，砍掉了一只五个半月大的鸡的大部分头部。\n\n但是没有砍到颈静脉，并且一只耳朵和大部分脑干完好无损。因此，这只鸡虽然没有脑袋了，仍然可以保持平衡并笨拙地行走。\n\n农民发现这只鸡没有死，就决定继续养它，用滴管给它喂食。\n\n后来，这只鸡被巡回展出，门票是25美分，每月为主人带来4,500美元收入。\n\n1947年3月，它死于巡回展出途中。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202412/bg2024122606.webp"
+          ]
+        },
+        {
+          "title": "Windows 3.1 时钟",
+          "link": "",
+          "description": "市场上出现了 Windows 3.1 时钟，钟面就是 Windows 3.1 的桌面，看上去很有怀旧感。\n\n注意，上图的钟面不是液晶屏，而是印刷上去的。它是石英钟，使用一节五号电池。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024032801.webp",
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024032802.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "长期软件开发",
+          "link": "https://berthub.eu/articles/posts/on-long-term-software-development/",
+          "description": "有些领域的软件会持续运行几十年，比如发电厂、起搏器、飞机、桥梁、重型机械的软件。它们可能几年都不会改动，然后推出一个新的大版本。\n\n如果一个软件的开发周期长达几十年，需要长期维护，那么最好做到下面几点。\n\n（1）尽量减少依赖。\n\n软件的依赖项越多，长期越难以维护。依赖包括开发时依赖和运行时依赖，都是越少越好。\n\n现在，很多软件在运行时会调用云服务，这也不利于长期维护。\n\n（2）完备的测试用例。\n\n测试对于重构、删除/添加功能，会提供极大的帮助。当你中断3年后，重新开始开发，测试也会让你快速了解系统。\n\n（3）减少复杂性。\n\n复杂性是软件开发的头号敌人，会让最好的程序员和团队都铩羽而归。\n\n由于熵增定律和人类行为，除非你有意识地遏制，否则复杂性总是会增加。\n\n因此，你需要养成严格的开发习惯：尽早和频繁地重构，删除不必要的或重复的代码，花时间简化。\n\n（4）编写简单无趣的代码。\n\n代码越简单越好，重点是代码的运行逻辑要显而易见。你永远不会后悔编写了简单的代码。\n\n那些看上去很聪明、很高深的代码，会让后期的调试和理解变得复杂。特别注意那些高性能代码，只有当你正确理解它们时，它们才有效。\n\n另外，那些眼下时髦、被热炒的明星技术，如果没有得到充分验证，也需要规避。\n\n你最好只使用至少有10年历史的可靠技术。有一条规则是，某项技术的寿命与它们当前的年龄成正比，即存在越久的东西越可能继续存在。\n\n（5）日志、遥测和文档\n\n如果软件不是持续更新，开发者的注意力就会转到其他地方，不会立即跟进，所以需要有日志和遥测，能把运行过程记录下来。\n\n文档则可以帮助我们理解几年前、甚至十几年前，编写原始代码时的想法。可能的话，记录所有事物，不仅仅是代码，还有理念、想法和为什么。\n\n（6）团队\n\n团队人员变化是很常见的。在许多地方，在一个团队呆三年，就已经很久了。虽然你可以用良好的文档和出色的测试，来抵消这种人员变化，但这很困难。\n\n软件长寿的最简单办法之一，就是让开发成员长期稳定，保持工作十年。这意味着，你必须给你的程序员提供良好待遇，否则人们会离开。\n\n在某些地方，软件是外包公司或咨询顾问写的，他们将代码丢到你的系统中后离开。对于长期运行的软件，这是非常糟糕的安排。\n\n（7）开源\n\n让你的代码暴露在外界的眼光，是保持代码可靠的好方法。一个有趣的事实是，只有质量良好的代码，人们才愿意对外分享，也就是说，如果不开源，人们会愿意在组织内部接受质量更差的代码。\n\n开源代码有更高的标准、更多的测试，这是让代码不过时的绝佳机制。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "言论 1",
+          "link": "",
+          "description": "银行的 API 特别难用，设计得也很奇怪。我在为银行工作时，发现了原因。\n\nAPI 不是银行通信的方式，文件才是。银行执行的指令，不是通过我们习惯的 API 传送，而是通过文件接收。",
+          "images": []
+        },
+        {
+          "title": "言论 2",
+          "link": "https://walkingtheworld.substack.com/p/us-is-better-than-europe",
+          "description": "美国有很多问题，绝非理想的社会，但是第三世界国家的很多人，尤其是低收入人群，尽管对美国的真实情况一无所知，依然非常向往。\n\n在他们心目中，美国有财富、空间、自由、人性化管理等等。这不是真实的美国，而是美国在他们心目中的投影，他们向往的其实是自己想象中的生活方式。\n\n这是美国的一个很大的优势，尽管自身的诸多问题，依然能够对其他国家的人民产生吸引力。\n\n-- [《美国比欧洲好吗？》](https://walkingtheworld.substack.com/p/us-is-better-than-europe)",
+          "images": []
+        },
+        {
+          "title": "言论 3",
+          "link": "https://productme.org/posts/ai-for-product-managers",
+          "description": "产品经理的职责就是三件事：（1）了解用户需求；（2）提出解决方案；（3）安排任务执行。\n\n-- [《产品经理的 AI》](https://productme.org/posts/ai-for-product-managers)",
+          "images": []
+        },
+        {
+          "title": "言论 4",
+          "link": "https://nautil.us/the-sean-carrolls-explain-the-universe-1171296/",
+          "description": "一个生物学家说过：\"每个细菌的梦想都是变成两个。\" 这是生活的基本真理：你经历的一切只是使自己更加重要的一种手段。\n\n-- [Sean Carroll](https://nautil.us/the-sean-carrolls-explain-the-universe-1171296/)，进化生物学家",
+          "user": "Sean Carroll",
+          "user_link": "https://nautil.us/the-sean-carrolls-explain-the-universe-1171296/",
+          "images": []
+        },
+        {
+          "title": "言论 5",
+          "link": "https://nautil.us/the-sean-carrolls-explain-the-universe-1171296/",
+          "description": "我喜欢科学的一点是，无论你喜不喜欢，它都会让你相信。\n\n-- [肖恩·卡罗尔](https://nautil.us/the-sean-carrolls-explain-the-universe-1171296/)，物理学家",
+          "user": "肖恩·卡罗尔",
+          "user_link": "https://nautil.us/the-sean-carrolls-explain-the-universe-1171296/",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

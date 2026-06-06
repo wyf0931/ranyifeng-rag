@@ -1,0 +1,342 @@
+{
+  "title": "科技爱好者周刊（第 293 期）：一周是一年的2%",
+  "link": "https://www.ruanyifeng.com/blog/2024/03/weekly-issue-293.html",
+  "number": 293,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "一周是一年的2%",
+          "link": "https://nat.org/",
+          "description": "纳特·弗里德曼（Nat Friedman）曾经是 GitHub 的 CEO，现在是一名风险投资家。\n\n![](https://cdn.beekka.com/blogimg/asset/202403/bg2024031405.webp)\n\n他的[个人网站首页](https://nat.org/)，写着一些自己的信条。其中有一条，让我很震动。\n\n他写道：\"\n\n一周是一年的2%。\"\n\n我一直觉得，每周七天是很短的时间，尤其是发布周刊以后，更是过得飞快。\n\n但是，他的这句话让我意识到，每周其实是一年当中很重要的组成部分。虚度一周就是虚度一年的2%。\n\n你没有几周可以虚度的。只要多浪费几周，这一年很快过去。\n\n反过来，过好这一周，那么这一年的2%就有价值了。只要这样多过几周，一年就会变得很充实，有拿得出手的成果。\n\n我坚持写周刊，每周记录一点东西，整理一些思考，现在想起来，其实就是在督促自己过好这一年的2%。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024031405.webp"
+          ]
+        },
+        {
+          "title": "维苏威古卷",
+          "link": "https://scrollprize.org/grandprize",
+          "description": "[维苏威古卷](https://scrollprize.org/grandprize)\n\n公元79年10月24日，意大利的维苏威火山爆发，一天之内就毁灭了两万多人的庞贝古城。\n\n火山灰掩盖了整座城市，其中有一栋房子存放了各种书籍。直到18世纪，这栋房子才重新被发现，下面是考古学家的建筑复原图。\n\n![](https://cdn.beekka.com/blogimg/asset/202402/bg2024020606.webp)\n\n房子里面的1800多卷纸莎草古书，都已经完全碳化。\n\n![](https://cdn.beekka.com/blogimg/asset/202402/bg2024020601.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202402/bg2024020602.webp)\n\n考古学家试图展开这些烧焦的古书，但是纸张一碰就碎。\n\n![](https://cdn.beekka.com/blogimg/asset/202402/bg2024020603.webp)\n\n每一页的碎片就像下面这样。\n\n![](https://cdn.beekka.com/blogimg/asset/202402/bg2024020604.webp)\n\n没有人能从这些烧焦的古书上，读出一个字。\n\n2019年，一位美国科学家提出了一种新方法，使用短红外高光谱成像技术，对这些古卷进行 3D 扫描，然后虚拟建模，在不接触古卷的情况下，就可以展开或压平每一页，从而复现上面的笔迹。\n\n![](https://cdn.beekka.com/blogimg/asset/202402/bg2024020605.webp)\n\n![](https://cdn.beekka.com/blogimg/asset/202402/bg2024020607.webp)\n\n下面是扫描后的页面结果。\n\n![](https://cdn.beekka.com/blogimg/asset/202402/bg2024020608.webp)\n\n问题是上面的笔迹还是很模糊，无法确定是哪一个字母，更不要说读出句子了。\n\n2023年3月，在一些风险投资者的资助下，古卷保管单位举办了一次比赛，邀请全世界的程序员参加，要求使用机器学习，认出上面是什么字母，破解古卷的内容，奖金总额高达100万美元。\n\n主办单位原以为，一年之内成功的可能性不到30%。但是，2023年10月，21岁的内布拉斯加大学的学生卢克·法里托（Luke Farritor）就读出了第一个单词 ΠΟΡΦΥΡΑϹ（紫色）。\n\n![](https://cdn.beekka.com/blogimg/asset/202402/bg2024020609.webp)\n\n后来，他与正在柏林读博士的纳德（Youssef Nader）、瑞士苏黎世理工学院的机器人专业的学生席里格（Julian Schilliger），组成了一个团队，致力于建立一个完整的 AI 模型识别这些古书。\n\n![](https://cdn.beekka.com/blogimg/asset/202402/bg2024020610.webp)\n\n他们最终在比赛的截止日期前（2024年1月1日）识别出了2000个字符。\n\n下面就是采用他们的模型，识别出来的碎片，内容已经清晰还原出来了。\n\n![](https://cdn.beekka.com/blogimg/asset/202402/bg2024020611.webp)\n\n2月5日，主办单位宣布，他们获得了本次比赛的第一名。\n\n![](https://cdn.beekka.com/blogimg/asset/202402/bg2024020612.webp)\n\n由于比赛结果令人鼓舞，主办单位扩展了自己的目标，接下来将对90%的维苏威古卷，进行扫描和识别，彻底破解两千年前的罗马人在书里写了什么。\n\n他们所用的模型，已经全部开源，就放在 [GitHub](https://github.com/younader/Vesuvius-Grandprize-Winner)。任何人都可以安装和运行，尝试改进他们的模型，获得更好的结果。\n\n现代科技的发展，真像神话一样，烧成灰的纸都能辨认出文字。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202402/bg2024020606.webp",
+            "https://cdn.beekka.com/blogimg/asset/202402/bg2024020601.webp",
+            "https://cdn.beekka.com/blogimg/asset/202402/bg2024020602.webp",
+            "https://cdn.beekka.com/blogimg/asset/202402/bg2024020603.webp",
+            "https://cdn.beekka.com/blogimg/asset/202402/bg2024020604.webp",
+            "https://cdn.beekka.com/blogimg/asset/202402/bg2024020605.webp",
+            "https://cdn.beekka.com/blogimg/asset/202402/bg2024020607.webp",
+            "https://cdn.beekka.com/blogimg/asset/202402/bg2024020608.webp",
+            "https://cdn.beekka.com/blogimg/asset/202402/bg2024020609.webp",
+            "https://cdn.beekka.com/blogimg/asset/202402/bg2024020610.webp",
+            "https://cdn.beekka.com/blogimg/asset/202402/bg2024020611.webp",
+            "https://cdn.beekka.com/blogimg/asset/202402/bg2024020612.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "纸钢琴",
+          "link": "https://github.com/Mayuresh1611/Paper-Piano",
+          "description": "学习钢琴通常需要一个专门的琴房，如果是普通人家庭，购置和练习钢琴是非常不方便的。\n\n有人在 GitHub 上发布了一个令人耳目一新的项目，尝试零成本地解决这个问题，让你可以随时随地练习钢琴。\n\n你只要准备两张 A4 纸，水平连接在一起，两端各画两个方框，然后就可以在纸上练习钢琴了。\n\n这个软件通过摄像头，捕捉你的手指动作，转化成钢琴击键，让电脑发出对应的琴声。\n\n虽然这样不会有击键的感觉，但是不失为一种简单的解决方案。如果配一个仿真键盘，就比较完善了。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024031001.webp",
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024031002.webp"
+          ]
+        },
+        {
+          "title": "特斯拉的赛博卡车帐篷",
+          "link": "",
+          "description": "特斯拉的赛博卡车（Cybertruck）在2019年公布时，曾经展示了一个配套帐篷，可以装在车辆后部。\n\n当时展示的照片是这样的。\n\n现在，这个帐篷终于发货了，它实际长下面这样，与早先的设计大相径庭。\n\n而且，它的售价高达3000美元（约人民币22000元），令车主十分不满。\n\n自从赛博卡车正式发货以来，市场反响并不热烈，越来越多的人认为，它可能是特斯拉的一个失败产品。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024031003.webp",
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024031004.webp",
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024031005.webp"
+          ]
+        },
+        {
+          "title": "取消的苹果汽车",
+          "link": "https://sea.mashable.com/tech/31627/apple-car-leaked-design-info-reveals-it-wouldve-been-a-minivan",
+          "description": "上周有消息说，经过10年研发以后，苹果公司在内部宣布，取消了苹果汽车项目。\n\n现在网上有苹果汽车的原型照片泄漏。如果照片属实，苹果研发的竟然不是轿车，而是小货车。\n\n这实在难以置信，因为小货车无论造得多么好，销量肯定小于轿车。\n\n以前就有人指出，苹果不太可能真的去做汽车，因为市场规模太小。特斯拉一年销售不到200万辆，这种销量对苹果来说是不值得做的。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024031304.webp",
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024031305.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "黄仁勋斯坦福大学演讲",
+          "link": "https://finance.sina.cn/chanjing/gsxw/2024-03-11/detail-inamxtkr1619017.d.html",
+          "description": "2024年3月初，英伟达CEO黄仁勋回到母校美国斯坦福大学，进行了两次演讲，讲述了自己的经历和对 AI 的看法。这是演讲的中文翻译。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024031406.webp"
+          ]
+        },
+        {
+          "title": "Meta 的 H100 集群细节",
+          "link": "https://finance.sina.com.cn/tech/roll/2024-03-13/doc-inanczhq9639052.shtml",
+          "description": "Meta 公司公布了他们的 AI 集群细节。大家可以看看，AI 需要投多少钱。他们现在有两个集群，每个集群包含了24576块英伟达 H100 GPU（上图）。H100 的价格是2.5万美元～4万美元/块，也就是说，每个集群就要花费数亿美元。更厉害的是，他们计划今年年底前，将 H100 扩充至35万块，远期达到60万块。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024031303.webp"
+          ]
+        },
+        {
+          "title": "注释可以减少技术债务",
+          "link": "https://blogs.oracle.com/javamagazine/post/java-comments-reduce-technical-debt",
+          "description": "作者列举了代码注释的好处，论述得很好，然后大力推荐使用 Javadoc。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023111909.webp"
+          ]
+        },
+        {
+          "title": "VS Code 的垂直 Tab 页",
+          "link": "https://weberdominik.com/blog/vscode-vertical-tabs/",
+          "description": "本文介绍如何在 VS Code 编辑器里面，放置一个垂直的边栏，进行标签切换。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023112006.webp"
+          ]
+        },
+        {
+          "title": "Linux 服务器加固指南",
+          "link": "https://pboyd.io/posts/securing-a-linux-vm/",
+          "description": "你架设了一台 Linux 虚拟主机，如何让它变得更安全，本文列出了详细的操作步骤。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202307/bg2023073104.webp"
+          ]
+        },
+        {
+          "title": "家庭电子实验室设置指南",
+          "link": "https://badar.tech/2023/04/30/electronics-lab-bench-setup-guide/",
+          "description": "作者介绍他的家庭电子实验室的配置，喜欢玩电子装置的朋友可以参考。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023051206.webp"
+          ]
+        },
+        {
+          "title": "为什么去赌场是个坏主意",
+          "link": "https://easylang.dev/apps/tutorial_mcarlo.html",
+          "description": "作者写了一些简单的小程序，使用蒙特卡罗模拟，演示如果不断博彩（比如1000次）会是多少收益。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202305/bg2023051304.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Rot",
+          "link": "https://github.com/candiddev/rot",
+          "description": "一个命令行工具，用来对密码进行加密/解密，这样就可以把密码保存在公开的代码库了。"
+        },
+        {
+          "title": "Angie",
+          "link": "https://angie.software/en/",
+          "description": "一个 nginx 的分叉版本，由原始团队成员开发，增加了一些功能。类似的项目还有 free nginx。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121308.webp"
+          ]
+        },
+        {
+          "title": "LaVague",
+          "link": "https://github.com/lavague-ai/LaVague",
+          "description": "一个很有意思的概念产品，使用文字指令来操作网站，比如输入文字\"点击按钮\"，它就自动点击网页按钮，底层用的是浏览器自动化框架 Selenium。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024031403.webp"
+          ]
+        },
+        {
+          "title": "LapisCV",
+          "link": "https://github.com/BingyanStudio/LapisCV",
+          "description": "基于 Obsidian / Typora 编辑器的 Markdown 简历模板，可以导出 PDF 文件。",
+          "user": "YiNNx",
+          "user_link": "https://github.com/YiNNx",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024031209.webp"
+          ]
+        },
+        {
+          "title": "API 文档生成工具",
+          "link": "",
+          "description": "该工具生成 Swagger 或 OpenAPI 3 格式的 API 接口文档，也可当作简洁的 Postman 使用。",
+          "user": "rookie-luochao",
+          "user_link": "https://github.com/rookie-luochao",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024031210.webp"
+          ]
+        },
+        {
+          "title": "Git Diff 组件",
+          "link": "",
+          "description": "一个 React/Vue 组件，用来显示 git diff 的结果，类似于 GitHub 的样式。",
+          "user": "MrWangJustToDo",
+          "user_link": "https://github.com/MrWangJustToDo",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024031211.webp"
+          ]
+        },
+        {
+          "title": "AI 时间线",
+          "link": "http://www.ai-timeline.top/",
+          "description": "一个有意思的网站，输入一个关键词，自动生成该词的时间线，上图是输入\"github\"的生成结果，它的代码仓库在 [GitHub](https://github.com/zhugezifang/ai_timeline)。",
+          "user": "zhugezifang",
+          "user_link": "https://github.com/zhugezifang",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024031212.webp"
+          ]
+        },
+        {
+          "title": "英语学习工具",
+          "link": "https://earthworm.cuixueshe.com/",
+          "description": "一个开源的 Web 程序，通过连词造句的方式，经过不断重复练习英语，[线上体验](https://earthworm.cuixueshe.com/)。",
+          "user": "cuixiaorui",
+          "user_link": "https://github.com/cuixiaorui",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024031306.webp"
+          ]
+        },
+        {
+          "title": "Postal",
+          "link": "https://github.com/postalserver/postal",
+          "description": "一个开源的电子邮件服务器，自带 Web 界面。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121407.webp"
+          ]
+        },
+        {
+          "title": "briefsky",
+          "link": "https://briefsky.app/",
+          "description": "一个开源的天气预报前端，可以接入各种天气数据源。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023101702.webp"
+          ]
+        },
+        {
+          "title": "Qaul",
+          "link": "https://qaul.net/",
+          "description": "一个可以离线通信的软件，允许一群用户在不联网的情况下，通过本机的共享 WiFi 发送消息。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023101801.webp"
+          ]
+        },
+        {
+          "title": "Piped",
+          "link": "https://github.com/TeamPiped/Piped",
+          "description": "一个开源的 Youtube 网页前端 UI。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023101802.webp"
+          ]
+        },
+        {
+          "title": "Riffusion",
+          "link": "https://www.riffusion.com/",
+          "description": "一个免费的 AI 工具，给出一段提示，它会生成相应的歌曲，并且是带有歌词、人声演唱的。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023101803.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "IP 信息查询仓库",
+          "link": "",
+          "description": "这个仓库收集可以查询 IP 信息的免费网站。",
+          "user": "ihmily",
+          "user_link": "https://github.com/ihmily"
+        },
+        {
+          "title": "TypeScript 练习",
+          "link": "https://www.typescript-training.com/",
+          "description": "通过一个个小练习，讲授 TypeScript 语法。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023122603.webp"
+          ]
+        },
+        {
+          "title": "学习现代 C++",
+          "link": "https://learnmoderncpp.com/",
+          "description": "一个讲解 C++ 基础知识的自学教程。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023122701.webp"
+          ]
+        },
+        {
+          "title": "VirusTotal",
+          "link": "https://www.virustotal.com/",
+          "description": "软件病毒检测引擎，可以上传文件进行扫描，也可以指定需要扫描的文件或网址。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202304/bg2023042003.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "深海潜水器",
+          "link": "",
+          "description": "1925年，美国博物学家威廉·毕比（William Beebe）提出想造一种深海潜水器。当时，潜艇的最大下潜深度只有117米，而且没有窗口可以观察外部。\n\n威廉·毕比设计的潜水器为球形，因为球形最抗压，由铸铁制造，里面只能待一个人。\n\n潜水器的后端是一个透明的入舱口，采用螺栓固定，只能从外部打开，内部无法打开。\n\n前端是三个窗口，由76毫米厚的石英制成，这是当时最坚固的透明材料。\n\n潜水器内部由高压气瓶提供氧气，采用钠钙和氯化钙吸收二氧化碳和水分。\n\n1930年6月11日，它第一次下水，达到了400米深度，1934年达到了900米的深度。\n\n此后，威廉·毕比停止使用这个潜水器了，因为他觉得已经达到了观测海底生物的目的。\n\n而且，它不是很安全。每次下水，它必须系着钢缆，要靠钢缆拉上来。万一钢缆在压力下出现问题，或者钩子断了，潜水器里面的人必死无疑。\n\n现在，这个潜水器的复制品，陈列在美国华盛顿特区的国家地理博物馆。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100810.webp",
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100811.webp",
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100812.webp",
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100813.webp",
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100814.webp",
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100809.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "乔布斯的遗照",
+          "link": "https://profoto.com/int/profoto-stories/albert-watson-steve-jobs",
+          "description": "苹果创始人乔布斯的遗照是如何拍摄的？\n\n2011年10月5日，史蒂夫·乔布斯去世，苹果网站用苏格兰摄影师艾伯特·沃森 (Albert Watson) 在2006年拍摄的这张照片来纪念他。\n\n许多人知道，乔布斯并不太喜欢被人拍摄，这对摄影师是一种挑战。\n\n拍摄当日，摄影师被告知拍摄时间只有一小时，然而他却胸有成竹地说，只要三十分钟便能完成。\n\n艾伯特·沃森建议史蒂夫·乔布斯稍微前倾，说道：\"想象一下，桌子对面有四五个人不同意你的观点，但你知道自己是对的。\"\n\nSteve Jobs 凝视着镜头，眼神十分坚定，给人一种充满信念与智慧的感觉。这就是这幅肖像照的创作过程。\n\n离开时，史蒂夫·乔布斯看了一眼照片，问他是否可以拥有它，并说这\"也许是我拍过的最好的照片\"。\n\n五年后，艾伯特·沃森接到苹果公司的电话，问他是否仍保留那张乔布斯的照片。他当时感到十分惊讶，同时意识到事情的紧迫性，随即找到照片并发送给苹果公司。\n\n当天晚上，苹果在官网宣布乔布斯去世的消息，并附上艾伯特·沃森拍摄他的肖像，这张照片在网站上刊登了一个月，之后也成为乔布斯传记的封面，成为21世纪最广为人知的人像照片之一。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023101501.webp",
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023101502.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "李彦宏：以后不会存在程序员这种职业",
+          "link": "https://finance.sina.com.cn/jjxw/2024-03-10/doc-inamvkcs5017643.shtml",
+          "description": "以后不会存在\"程序员\"这种职业了，只要会说话，人人都具备程序员的能力。未来的编程语言只会剩下两种，一种叫做英文，一种叫做中文。",
+          "user": "李彦宏"
+        },
+        {
+          "title": "无事可做时",
+          "description": "你无事可做时，未来看起来就会让人灰心丧气。我早已放弃了为人生寻找某种意义之类的事情，但我确实尝试寻找一些有趣的事情来做。"
+        },
+        {
+          "title": "奥本海默中的物理方程",
+          "description": "电影《奥本海默》之中，奥本海默在黑板上写方程式，解释核裂变。这个方程式在物理上是完全正确的。大多数观众不会意识到这一点，但这让我这个物理学家感觉很好，黑板上有正确的方程！"
+        },
+        {
+          "title": "幸福的三大要素",
+          "link": "https://www.forbes.com/quotes/252/",
+          "description": "幸福的三大要素是：有要做的事（something to do）、有要爱的人（someone to love）、有寄予希望的东西（something to hope for）。",
+          "user": "亚历山大·查默斯"
+        }
+      ]
+    }
+  ]
+}

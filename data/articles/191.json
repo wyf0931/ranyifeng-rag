@@ -1,0 +1,395 @@
+{
+  "title": "科技爱好者周刊（第 191 期）：一个程序员的财务独立之路",
+  "link": "https://www.ruanyifeng.com/blog/2022/01/weekly-issue-191.html",
+  "number": 191,
+  "sections": [
+    {
+      "name": "封面图",
+      "items": [
+        {
+          "title": "封面图",
+          "link": "https://www.therobotreport.com/12-memorable-robotics-moments-of-2021/",
+          "description": "美国的 RobotReport 网站，评选波士顿动力公司的跳跃机器人为2021年度技术突破之一。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010201.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "一个程序员的财务独立之路",
+          "link": "https://software.rajivprab.com/2021/12/26/my-path-to-financial-independence-as-a-software-engineer/",
+          "description": "作者20岁时第一次当实习生，发现在 IT 行业，普通人有可能在30多岁就实现\"财务独立\"。从此，他就将财务独立作为自己的人生目标。2009年大学毕业，进入英特尔公司担任初级工程师。十二年后，他已经是亚马逊的高级工程师，净资产达到了240万美元。他详细说了自己怎么经过十二年的奋斗，在35岁做到财务独立。\n\n（1）**首要的努力方向，就是追求工资提升。**\n（2）**每过三年，就到别处面试。**\n（3）**建立良好的职业履历。**\n（4）**优先加入增长最快的领域。**\n（5）**投资你的钱。**\n（6）**节制消费。**\n\n以上就是他的一些主要做法，供大家参考。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010313.webp",
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010312.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "Go 语言高频面试题",
+          "link": "",
+          "description": "收集了2021年国内各大厂的面试真题，共250多道，按照学习顺序分类编排，每道题都包括简要的解题思路讲解，可以作为面试或学习指南。由极客时间制作。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010608.webp",
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021120102.webp",
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010606.webp",
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010605.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2021年度最佳新产品",
+      "items": [
+        {
+          "title": "键盘贴纸",
+          "link": "",
+          "description": "微软推出了一套可触摸的键盘贴纸，供盲人和视障人士使用。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010302.webp"
+          ]
+        },
+        {
+          "title": "磁铁睫毛膏",
+          "link": "",
+          "description": "一家美国公司推出了含有氧化铁粉末的睫毛膏，并配有磁性睫毛刷。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010303.webp"
+          ]
+        },
+        {
+          "title": "健康追踪内衣",
+          "link": "",
+          "description": "这款运动内衣，内置了电池和传感器，可以24小时感知穿戴者的睡眠质量、运动压力和心率。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010304.webp"
+          ]
+        },
+        {
+          "title": "飞机蓝牙系统",
+          "link": "",
+          "description": "松下公司开发了一套新系统，允许乘客用自己的蓝牙耳机连接飞机电视屏幕。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010305.webp"
+          ]
+        },
+        {
+          "title": "太阳帆",
+          "link": "",
+          "description": "美国宇航局研发成功不带有动力系统的太阳帆，依靠太阳风推动前进。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010306.webp"
+          ]
+        },
+        {
+          "title": "氢气炼钢",
+          "link": "",
+          "description": "一家瑞典钢铁公司发明了氢气炼钢，使用氢气还原氧元素，只产生水。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010307.webp"
+          ]
+        },
+        {
+          "title": "立体镜头",
+          "link": "",
+          "description": "佳能公司发布了一款两眼的镜头，安装后能拍摄立体视频。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010308.webp"
+          ]
+        },
+        {
+          "title": "空中加油无人机",
+          "link": "",
+          "description": "波音公司新开发的无人机，可以为战斗机空中加油。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010309.webp"
+          ]
+        },
+        {
+          "title": "雷达摄像头",
+          "link": "",
+          "description": "Ring 公司发布的一款家庭监控器，加上电波侦测，相当于一个微型的雷达。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010310.webp"
+          ]
+        },
+        {
+          "title": "两栖摩托艇",
+          "link": "",
+          "description": "一家法国军工公司开发了两栖摩托艇，在海上是高速快艇，到了岸上变成履带车。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010311.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "令人困惑的 HDMI 2.1",
+          "link": "https://www.cnbeta.com/articles/tech/1215181.htm",
+          "description": "本文介绍了高清视频 HDMI 2.1 标准，并且讨论了一个外行人容易误解的细节。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021121404.webp"
+          ]
+        },
+        {
+          "title": "德国最受欢迎的程序员技能排行",
+          "link": "https://pkdyn.mozello.site/blog/params/post/3910923/",
+          "description": "有人统计了德国程序员招聘广告里面出现频率最高的技能。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021121508.webp"
+          ]
+        },
+        {
+          "title": "自制 NFC 唱片卡",
+          "link": "https://hicks.design/journal/moo-card-player",
+          "description": "作者将 NFC 标签贴在纸卡片的背后，然后写入唱片数据，手机靠近即可播放。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021121108.webp",
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021121109.webp"
+          ]
+        },
+        {
+          "title": "node_modules 目录放入代码仓库",
+          "link": "https://www.jackfranklin.co.uk/blog/check-in-your-node-dependencies/",
+          "description": "本文提出 Node.js 项目的 node_modules 目录可以放入代码仓库，有很多好处。",
+          "images": []
+        },
+        {
+          "title": "where 与 having 子句的区别",
+          "link": "https://sql-bits.com/the-difference-between-where-and-having/",
+          "description": "SQL 查询有 where 子句和 having 子句，它们的区别是什么？",
+          "images": []
+        },
+        {
+          "title": "如何在 Mac 安装 Rails",
+          "link": "https://rails.new/",
+          "description": "这个网页以可视化的形式给出命令行怎么安装 Rails。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021121401.webp"
+          ]
+        },
+        {
+          "title": "为什么 ISO 格式应该被淘汰",
+          "link": "https://bkhome.org/news/202112/why-iso-was-retired.html",
+          "description": "作者认为 ISO 文件格式应该被淘汰，只使用 IMG 格式。",
+          "images": []
+        },
+        {
+          "title": "显示服务器是什么？",
+          "link": "https://zamundaaa.github.io/wayland/2021/12/14/about-gaming-on-wayland.html#display-servers",
+          "description": "本文解释 Linux 系统里面显示服务器的作用（X11 协议和 Wayland 协议）。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "xxh",
+          "link": "https://github.com/xxh/xxh",
+          "description": "远程服务器登录时，可自动将本地的 Shell 环境带到远程服务器。",
+          "images": []
+        },
+        {
+          "title": "Pico.css",
+          "link": "https://github.com/picocss/pico",
+          "description": "一个极小化的 CSS 框架，只有 8KB。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021121501.webp"
+          ]
+        },
+        {
+          "title": "一个浏览器插件，从搜索结果中去除指定网站或 URL",
+          "link": "",
+          "description": "一个浏览器插件，可以从 Google/Bing 的搜索结果里面去除指定网站或 URL。",
+          "images": []
+        },
+        {
+          "title": "Lapce",
+          "link": "https://github.com/lapce/lapce",
+          "description": "一个 Rust 语言写的轻量级代码编辑器，速度极快。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021121405.webp"
+          ]
+        },
+        {
+          "title": "console-helper",
+          "link": "",
+          "description": "一个 VS Code 插件，选中变量可自动插入 console.log 打印语句。",
+          "images": [],
+          "user": "@moore529"
+        },
+        {
+          "title": "PPTist",
+          "link": "https://github.com/pipipi-pikachu/PPTist",
+          "description": "一个 PPT 网页应用，还原了大部分 PowerPoint 常用功能。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010613.webp",
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010614.webp"
+          ],
+          "user": "@pipipi-pikachu",
+          "user_link": "https://github.com/pipipi-pikachu"
+        },
+        {
+          "title": "Codeverter",
+          "link": "",
+          "description": "一个 MacOS 的网页收藏器，支持分类、标记、收集图像。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010612.webp"
+          ],
+          "user": "@hite"
+        },
+        {
+          "title": "F-Droid",
+          "link": "https://f-droid.org/",
+          "description": "一个开源的安卓 App 商店，可以用来搭建自己的应用商店。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021121406.webp"
+          ]
+        },
+        {
+          "title": "GDB 图形前端",
+          "link": "",
+          "description": "调试工具 GDB 的一个前端，可以在图形界面上调试 C/C++ 程序。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021121407.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "中国山水画生成器代码分析系列",
+          "link": "https://github.com/LingDong-/shan-shui-inf",
+          "description": "一个老外用户写的24篇文章组成的系列，分析中国山水画生成器代码。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021122903.webp"
+          ],
+          "user": "@ameizi"
+        },
+        {
+          "title": "ECMAScript 标准提案列表",
+          "link": "",
+          "description": "该网站列出了 ECMAScript 标准所有各阶段的提案。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202111/bg2021113002.webp"
+          ]
+        },
+        {
+          "title": "eja.tv",
+          "link": "https://eja.tv/",
+          "description": "收集全世界可以网上免费观看的电视频道，共4029个频道。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202111/bg2021112908.jpg"
+          ]
+        },
+        {
+          "title": "黑客文萃",
+          "link": "",
+          "description": "在线刊物，收集了世界众多黑客在逆向分析、渗透测试等方面的文章。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010611.webp"
+          ],
+          "user": "@evmn"
+        },
+        {
+          "title": "DareBee",
+          "link": "https://darebee.com/workouts.html",
+          "description": "收集了1700多种身体锻炼的方法，每种方法都有插图说明。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021120206.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片和视频",
+      "items": [
+        {
+          "title": "小飞机坠机视频",
+          "link": "https://www.avweb.com/aviation-news/plane-crash-video-sparks-online-backlash/",
+          "description": "一个美国飞行爱好者的小飞机在空中发生故障，螺旋桨停转后坠毁，他跳伞逃生。",
+          "images": []
+        },
+        {
+          "title": "南非穷人怎么上网",
+          "link": "https://restofworld.org/2021/south-african-students-are-selling-school-wi-fi-passwords-for-lunch-money/",
+          "description": "南非穷人负担不起手机流量上网，只能在围墙栏杆外面蹭学校的 Wifi。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202111/bg2021110401.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "为什么关系型数据库是主流？",
+          "link": "",
+          "description": "现实世界中事物的关系更像一张互相连接的网，图数据库才是更合适的方式。但关系型数据库是主流，原因跟数据的存储媒介有关（磁带、磁盘线性存储）。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010610.webp"
+          ]
+        },
+        {
+          "title": "滑坡谬误",
+          "link": "https://zh.wikipedia.org/wiki/%E6%BB%91%E5%9D%A1%E8%AC%AC%E8%AA%A4",
+          "description": "滑坡谬误（Slippery slope）指的是使用一连串的因果推论，夸大了每个环节的因果强度，而得到不合理的结论。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202108/bg2021081405.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "言论1",
+          "link": "",
+          "description": "C 和 C++ 这两种语言不保证内存安全，后果就是所有软件安全问题的大约三分之二，都跟内存处理不当有或多或少的关系。",
+          "images": []
+        },
+        {
+          "title": "言论2",
+          "link": "",
+          "description": "媒体业务的核心，是每天能从消费者的注意力里面，分到多少分钟。",
+          "images": []
+        },
+        {
+          "title": "言论3",
+          "link": "",
+          "description": "不要跟本质有毒的人交易。--《五堂永恒的课》",
+          "images": []
+        },
+        {
+          "title": "言论4",
+          "link": "",
+          "description": "旧金山市政府每年拨款10亿美元帮助无家可归者，平均每人超过10万美元。但政府资助让流浪者处于无忧无虑的状态，不想再去工作。",
+          "images": []
+        },
+        {
+          "title": "言论5",
+          "link": "",
+          "description": "你永远不会通过与现实做斗争，而改变事物。想要改变事物，需要建立一个使现有模型过时的新模型。-- 富勒",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

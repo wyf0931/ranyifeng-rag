@@ -1,0 +1,399 @@
+{
+  "title": "科技爱好者周刊（第 292 期）：所有代码都是技术债",
+  "link": "https://www.ruanyifeng.com/blog/2024/03/weekly-issue-292.html",
+  "number": 292,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "所有代码都是技术债",
+          "link": null,
+          "description": "代码是公司的资产，公司总是鼓励大家多写代码。但是，很多人（尤其是管理层）没有意识到，**代码也是负债**。\n\n代码越多，债越多，这就是程序员常说的\"技术债\"。\n\n![](https://cdn.beekka.com/blogimg/asset/202403/bg2024030702.webp)\n\n今天我想谈谈，什么是\"技术债\"？为什么你拥有的代码太多，不是一件好事。\n\n\"技术债\"（technical debt）源自著名程序员沃德·坎宁安（Ward Cunningham）的[一篇文章](https://queue.acm.org/detail.cfm?id=2168798)。他写了一句话：\"**交付代码就像负债累累**。\"\n\n![](https://cdn.beekka.com/blogimg/asset/202403/bg2024030703.webp)\n\n你的代码一旦进入生产环境，就像背上一笔债务，将来需要不断支付利息，除非代码不再使用。\n\n这个比喻获得了共鸣，**人们把代码带来的负担，称为\"技术债\"**。\n\n为什么代码好比负债累累？这有两个原因。\n\n第一个原因是，由于各种限制，代码的实现有问题，包含了 Bug，或者选择了有问题的组件，后期需要修改或重写。\n\n第二个原因是，即使代码是完美的，但由于技术进步，它会逐渐腐化过时，后期需要不断维护和更新，这通常比原始开发成本更高。\n\n这意味着，**无论多么小心，上线的代码总是有\"技术债\"。** 可以这样说，[所有的代码都是技术债](https://www.tokyodev.com/articles/all-code-is-technical-debt)。\n\n![](https://cdn.beekka.com/blogimg/asset/202403/bg2024030704.webp)\n\n\"技术债\"的可怕之处，在于你必须按时偿还，如果拖着不还，它就会像雪球一样越滚越多，维护成本越来越高，直到再也无法维护，只能放弃这段代码。\n\n既然所有代码都是技术债，程序员写代码时，就必须考虑到它的长期成本，尽量减轻自己或别人日后的负担（利息）。\n\n一个基本的事实是 **代码越少，技术债越小；没有代码，就没有技术债**。从这个角度看，软件开发的正确做法是下面两点。\n\n（1）冗余的代码都要删除。\n\n（2）只实现那些必须实现的功能，除非绝对必要，不要引入新功能。新功能必然带来新的代码，而且新功能一旦添加，就很难废除，总是会保留下来。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030702.webp",
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030703.webp",
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030704.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "葫芦 AI",
+          "link": null,
+          "description": "主流的 AI 模型，目前都是收费制。如果同时使用多个模型，每月是一笔不小的费用，而且过程很麻烦。\n\n- GPT-4：20美元/月\n- 文心一言：49.9元人民币/月\n- Midjourney：10美元/月\n- DALL-E：每张图片0.02美元\n\n国内新出的\"葫芦 AI\"（HuLu AI），尝试解决这个问题。**它在同一个界面，提供上面四个模型的访问**，相当于\"四合一\"的国内镜像。\n\n这个服务刚刚推出，目前处在推广期，优惠力度很大，**只要298元，就可以永久无限量使用**，免除逐一访问 GPT4 / 文心一言 / Midjourney / DALL-E 的麻烦，而且访问速度快。\n\n![](https://cdn.beekka.com/blogimg/asset/202403/bg2024030706.webp)\n\n葫芦 AI 希望通过周刊，向国内的开发者介绍自己。推广期结束后，他们将恢复原价498元。\n\n它有试用点数，只要扫描上方海报的二维码，就可以**免费试用**。大家觉得效果满意，再考虑付费。\n\n如果你对 AI 还不熟悉，葫芦 AI 还免费赠送学习资料。扫描__上方二维码__时，微信添加助理，就可以领取 **【Sora 入门手册】** + **【ChatGPT 提示词大全】** + **【AI 变现案例实战手册】** 的 AI 资料包。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030706.webp"
+          ]
+        },
+        {
+          "title": "掘金动手实验室",
+          "link": "https://www.bagevent.com/event/8791420?bag_track=ryf",
+          "description": "学习新技术，最重要的就是动手实操，但是这样的机会比较少，你不一定能遇到让你尝试的场景。\n\n本周有一个好消息，**掘金动手实验室（JUEJIN Code Lab）** 正式推出啦！\n\n它是一个__新技术实操__为主题的系列活动，致力于__理论知识转化为实际应用__，并让参与者之间进行技术交流。\n\n它由稀土掘金技术社区精心策划，与众多领先的工具和平台厂商携手合作，将涵盖多个技术领域，确保每一位参与者都能找到自己感兴趣的内容。\n\n![](https://cdn.beekka.com/blogimg/asset/202403/bg2024030707.webp)\n\n第一期活动的主题，就是现在最热门的 AI，由稀土掘金社区和扣子（coze.cn）共同发起。**本次活动通过动手实操的方式，让你的想法和创意在 AI 的帮助下落地。**\n\n活动分为3月16日的[北京场](https://www.bagevent.com/event/8791420?bag_track=ryf)和3月30日的[深圳场](https://www.bagevent.com/event/8796081?bag_track=ryf)，地点就在北京/深圳的字节工区。\n\n所有线下参与的同学，除了能够接触 AI 开发以外，还都有机会获得掘金的丰富礼包、以及扣子（coze.cn）的官网推荐、API 内测和官方访谈。\n\n欢迎大家[点击链接](https://www.bagevent.com/event/8791420?bag_track=ryf)，或者扫码海报的二维码，报名参与，进行 AI 开发实操。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030707.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "USB 止痒器",
+          "link": "https://shkspr.mobi/blog/2023/12/usb-c-cures-mosquito-bites/",
+          "description": "市场上出现了一种奇特的 USB 设备，当你被蚊虫叮咬后，它可以用来止痒。\n\n你把它插入手机的 USB-C 口，然后用 App 可以控制它的发热。\n\n当它发热以后，将其贴在被咬处，等同于热敷，很快就不痒了。\n\n这么一个小玩意，在亚马逊的售价居然为30英镑（270元人民币）。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121911.webp",
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121912.webp",
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023121910.webp"
+          ]
+        },
+        {
+          "title": "无音爆超音速客机",
+          "link": null,
+          "description": "美国宇航局正在开发一种没有音爆的超音速客机，并且已经生产出了一架原型机。\n\n这架飞机长约30米，细长的圆锥形机头几乎占其整架飞机的三分之一。据说这种结构可以消除导致音爆的冲击波。\n\n由于它的机头太长，驾驶室几乎位于整机二分之一的位置。这样的超音速飞机即使没有音爆，也载不了多少乘客吧。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202401/bg2024011704.webp"
+          ]
+        },
+        {
+          "title": "单叶片风力发电机",
+          "link": "https://newatlas.com/energy/touchwind-floating-wind-turbine/",
+          "description": "传统的风力发电机有三个叶片。\n\n一家荷兰公司发明了单叶片的风力发电机。\n\n它装在浮标上面，水底下是一个大桶，通过铁链固定在海床上。\n\n因为它是浮动的，根据风力和风向的不同，它跟海平面的角度也在随时发生变化。\n\n它的优点主要是，制造和安装的成本低。目前处于测试阶段，顺利的话将会大规模部署。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023091702.webp",
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023091703.webp",
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023091704.webp",
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023091705.webp"
+          ]
+        },
+        {
+          "title": "车贷防拖欠专利",
+          "link": "https://www.thedrive.com/news/future-fords-could-repossess-themselves-and-drive-away-if-you-miss-payments",
+          "description": "汽车贷款逾期不还，怎么办？福特汽车申请了一项专利，专门对付不还车贷的人。\n\n在贷款偿还期前后，车辆会发出多次付款提醒。如果置之不理，车辆就会开始失去一些功能，比如空调、GPS、车窗控制等等。\n\n每当车主出现在车内时，车辆就发出语音提醒，要你还款。\n\n如果车主还是不还车贷，这个专利还有一个终极大招：车辆会自动开回停车场或者拖车点，让福特公司拖走回收。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023101811.webp",
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023101812.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "OpenAI 回应马斯克的长文",
+          "link": "https://finance.sina.com.cn/stock/usstock/c/2024-03-06/doc-inamkuik5589602.shtml",
+          "description": "马斯克起诉OpenAI，称后者违背开源承诺，成为微软的盈利性子公司。这篇是OpenAI长篇回应的中文翻译，透露了很多内幕。主要内容是 AI 需要大量算力和资金，所以不得不成立盈利性部门，马斯克当年对此知情，并表示支持。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030708.webp"
+          ]
+        },
+        {
+          "title": "Perplexity 会是\"搜索的未来\"吗？",
+          "link": "https://wallstreetcn.com/articles/3709779",
+          "description": "英伟达 CEO 黄仁勋向媒体透露，他每天都使用 AI 工具 Perplexity 进行搜索。本文介绍这个对话式搜索引擎。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030607.webp"
+          ]
+        },
+        {
+          "title": "入行 15 年，我还是觉得编程很难",
+          "link": "https://mp.weixin.qq.com/s/B7Z0ROkiBqqxVKkLNR9BxQ",
+          "description": "腾讯技术专家对其15年程序人生的思考，总结了8点经验看法。",
+          "images": []
+        },
+        {
+          "title": "100万级安装量的开源作品，一年有多少打赏收入？",
+          "link": "https://juejin.cn/post/7341593721100451880",
+          "description": "作者在自己的开源作品里面，放了一个赞赏码，一年带来330元的收入。",
+          "user": "xxxily",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4092",
+          "images": []
+        },
+        {
+          "title": "HTML 的 Switch 控件",
+          "link": "https://webkit.org/blog/15054/an-html-switch-control/",
+          "description": "Safari 17.4 引入了一个新的表单控件\"滑块开关\"（switch），从而将 iPhone 的这个控件带入了网页。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202402/bg2024022915.webp"
+          ]
+        },
+        {
+          "title": "为什么我选择 Tauri 而不是 Electron",
+          "link": "https://aptabase.com/blog/why-chose-to-build-on-tauri-instead-electron",
+          "description": "作者本来使用 Electron 开发跨平台桌面应用，后来改成了 Tauri。本文讲述了原因，以及他的感受。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202311/bg2023111608.webp"
+          ]
+        },
+        {
+          "title": "text-wrap 的换行控制",
+          "link": "https://clagnut.com/blog/2424",
+          "description": "长文本的自动换行，由 CSS 的 text-wrap 属性控制。本文讨论如何使用这个属性，让标题产生更美观的自动换行。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100516.webp"
+          ]
+        },
+        {
+          "title": "计算机从哪里获取时间？",
+          "link": "https://dotat.at/@/2023-05-26-whence-time.html",
+          "description": "计算机从 NTP（时间服务器）获取当前时间，但是 NTP 的时间又从何而来？本文图文形式地介绍人类如何确定时间。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100607.webp"
+          ]
+        },
+        {
+          "title": "如何在 Windows 上测试 Safari",
+          "link": "https://james.darpinian.com/blog/safari-on-windows",
+          "description": "苹果的 Safari 浏览器现在没有 Windows 版，本文教你一种方法，依然可以在 Windows 上测试这个浏览器。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100808.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Ente",
+          "link": "https://github.com/ente-io/ente",
+          "description": "一个云相册软件，Google Photos 和 iCloud Photos 的替代品，以前是闭源产品，最近刚刚开源。它的主要特点是提供端对端加密。其他的云相册软件，还有 Immich 和 PhotoPrism。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030301.webp"
+          ]
+        },
+        {
+          "title": "Earthly",
+          "link": "https://earthly.dev/",
+          "description": "一个开源的 CI/CD 框架，可以在本地架设自动构建服务。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202207/bg2022072502.webp"
+          ]
+        },
+        {
+          "title": "Vikunja",
+          "link": "https://vikunja.io/",
+          "description": "一个开源的代办事项（to-do）App，提供多种视图，有 Web 版和桌面版，还可以自己架设。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023120707.webp"
+          ]
+        },
+        {
+          "title": "日文排版工具",
+          "link": null,
+          "description": "一个在线工具，生成漂亮的日文排版，支持横竖版式、自动假名标注、深浅两种主题、字体配置、高亮、下划线、字体等。",
+          "user": "miusuncle",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4080",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030202.webp"
+          ]
+        },
+        {
+          "title": "Web-Check",
+          "link": "https://web-check.xyz/",
+          "description": "开源的网站分析工具, 可以分析网站的 IP 信息、SSL 链、DNS 记录、Cookie、域名信息、服务器位置、网站性能等，查看 Demo。",
+          "user": "WFANG12719",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4086",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030401.webp"
+          ]
+        },
+        {
+          "title": "AI 一键抠图",
+          "link": null,
+          "description": "AI 一键抠图（去除背景）的在线工具。",
+          "user": "handsometong",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4087",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030501.webp"
+          ]
+        },
+        {
+          "title": "zz-plan",
+          "link": "https://zz-plan.com/",
+          "description": "甘特图/横道图的在线制作工具。",
+          "user": "lizhichao",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4088",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030502.webp"
+          ]
+        },
+        {
+          "title": "Windows in Docker",
+          "link": null,
+          "description": "Docker 容器里运行 Windows 系统，可选择 Win7，Win10，Win11 等，支持自动激活，还支持远程桌面连接。",
+          "user": "wrenashe",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4091",
+          "images": []
+        },
+        {
+          "title": "Rsdoctor",
+          "link": "https://github.com/web-infra-dev/rsdoctor",
+          "description": "一个 JS 构建器的分析工具，能够查看构建产物的模块关系，并分析构建器对代码的更改，支持 Rspack 和 Webpack。",
+          "user": "easy1090",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4095",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030601.webp"
+          ]
+        },
+        {
+          "title": "Photo Relay",
+          "link": "https://github.com/zobor/photo-relay",
+          "description": "一个封面图片制作的在线工具。 Demo",
+          "user": "zobor",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4094",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030503.webp"
+          ]
+        },
+        {
+          "title": "opfs-tools",
+          "link": "https://github.com/hughfenghen/opfs-tools",
+          "description": "浏览器私有文件系统 OPFS API 的一个封装库，提供更简单好用的 API。",
+          "user": "hughfenghen",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4099",
+          "images": []
+        },
+        {
+          "title": "正则搜索替换 VSCode 插件",
+          "link": null,
+          "description": "一个使用正则表达式进行代码搜索、替换的 VSCode 插件。",
+          "user": "HerringtonDarkholme",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4100",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "一译",
+          "link": "https://yiyibooks.cn/",
+          "description": "用户可以在该网站搜索或者上传 arXiv 论文（暂时只支持 HTML 版本的论文），它会自动机器翻译，提供对照阅读。",
+          "user": "yiyibooks",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4083",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030204.webp"
+          ]
+        },
+        {
+          "title": "京墨",
+          "link": "https://github.com/hefengbao/jingmo",
+          "description": "一个开源的安卓 App，随身的古诗文、歇后语、成语、绕口令等等的图书馆。",
+          "user": "hefengbao",
+          "user_link": "https://github.com/ruanyf/weekly/issues/4081",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030203.webp"
+          ]
+        },
+        {
+          "title": "OpenMoji",
+          "link": "https://github.com/hfg-gmuend/openmoji",
+          "description": "这个项目收集各种开源的 Emoji，开发者和设计师可以提交自己的作品。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023091302.webp"
+          ]
+        },
+        {
+          "title": "常用 Docker Compose 配置文件",
+          "link": null,
+          "description": "这个仓库收集各种常用的 Docker Compose 配置文件。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202312/bg2023122601.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "落叶艺术",
+          "link": "https://kottke.org/23/09/artistic-leaf-raking",
+          "description": "一个欧洲艺术家在公园里，把落叶整理成各种奇怪的形状，让公园有了更多的趣味。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023092809.webp",
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023092810.webp",
+            "https://cdn.beekka.com/blogimg/asset/202309/bg2023092811.webp"
+          ]
+        },
+        {
+          "title": "最后的快车",
+          "link": "https://www.filfre.net/2023/10/the-last-express/",
+          "description": "《最后的快车》（The Last Express）是上个世纪末发行的一款电子游戏。它讲述了一个美国人在1914年，登上最后一班从巴黎到伊斯坦布尔的\"东方快车\"的故事。整个游戏场景，都发生在车厢内。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100801.webp",
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100802.webp",
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100803.webp",
+            "https://cdn.beekka.com/blogimg/asset/202310/bg2023100804.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "有些人就像 ChatGPT",
+          "link": null,
+          "description": "大家都说 ChatGPT 像人，但是我觉得，还有另一方面，那就是**有些人很像 ChatGPT**，尤其是在学术界。\n\nChatGPT 不理解任何材料，但可以利用这些材料，快速找到问题的合理答案。它会综合和模仿，有时表现得非常令人信服，就像某个知识渊博的人在谈论某个主题。\n\n学术界的很多人也是这样，他们很聪明，吸收了说话和构建理论的方法，并且善于听起来令人信服。\n\n但是，如果你问一个探索性的问题，就会发现他们的理解很少，一切侃侃而谈都是表面的，没有深度。这都是模仿而不是真正的思想，他们只是故意让别人觉得似乎有道理。\n\n许多领域的许多人，表现得就像 ChatGPT 的真人版，特别是在那些不做太多实证工作、不涉及对事实或假设进行检验的学科。他们制造的文本越多，就越危险。\n\n这种人有很多明显迹象，比如使用非常笼统的术语，以及听起来巧妙的表述或行话，内容里面很少有事实，例子也很少或者很随意，没有真实的感受，而且通常也不会足够清楚地说出他不同意什么。\n\n我现在意识到，我不理解某人在说什么，有时很可能是他们不知道自己在说什么，表现得像 ChatGPT。\n\n我将其称为\"吹泡泡\"，即没有实质内容但能让他人信服的说话能力。这是很多大学领导的重要技能。\n\n现在，ChatGPT 向我们展示了尽管不理解，但将大量材料合成为可信的文本流，是完全可以做到的。也许这是不可避免的，但真是一种非常不健康的恶习----人们应该走出去，观察事物，清晰说出自己的真实感受。\n\n我明确意识到，自己更愿意被那些行为不像机器人的人包围，更愿意倾听那些有原创思想的人的声音。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202403/bg2024030801.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "如果你没有时间集中精力学习新知识...",
+          "description": "如果你没有时间集中精力学习新知识，那么就花时间复习已经学过的内容。",
+          "link": null,
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "浏览器地址栏兼作搜索输入栏...",
+          "description": "浏览器地址栏兼作搜索输入栏，这一定是史上最值钱的 UI 控件。谷歌为了成为这个控件的默认搜索引擎，每年支付 Firefox 4亿美元，Safari 150-200亿美元。",
+          "link": null,
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "一切都是模糊的...",
+          "description": "一切都是模糊的，直至你试图使其精确时，你才会发现，我们日常表达出来的精确与真正的精确相距甚远。以至于当我们说话时，你无法假设这就是对方真正的意思。 -- 伯特兰·罗素（Bertrand Russel），英国哲学家",
+          "link": "https://siddhesh.substack.com/p/projects",
+          "user": "伯特兰·罗素",
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "忒修斯之船...",
+          "description": "忒修斯之船（Ship of Theseus）是公元一世纪的希腊作家普鲁塔克提出的哲学问题：如果雅典国王忒修斯的船的木头逐渐被替换，直到所有的木头都不是原来的木头，那这艘船还是原来的那艘船吗？ -- 维基百科",
+          "link": "https://zh.wikipedia.org/wiki/%E5%BF%92%E4%BF%AE%E6%96%AF%E4%B9%8B%E8%88%B9",
+          "user": "维基百科",
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "每一个最佳实践的背后都有一个恐怖的经历...",
+          "description": "每一个最佳实践的背后都有一个恐怖的经历。 -- Julia Evans",
+          "link": "https://buttondown.email/hillelwayne/archive/advice-for-new-software-devs-whove-read-all-those/",
+          "user": "Julia Evans",
+          "user_link": null,
+          "images": []
+        }
+      ]
+    }
+  ]
+}

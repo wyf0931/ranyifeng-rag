@@ -1,0 +1,453 @@
+{
+  "title": "每周分享第 25 期",
+  "link": "https://www.ruanyifeng.com/blog/2018/10/weekly-issue-25.html",
+  "number": 25,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "安卓手机十周年",
+          "link": "https://www.cnet.com/news/the-t-mobile-g1-smartphone-almost-looked-like-a-blackberry/",
+          "description": "这里记录过去一周，我看到的值得分享的东西，每周五发布。\n\n上周我看到一个报道，9月23日是安卓手机的十周年纪念日。\n\n十年前的2008年9月23日，HTC 发布了世界上第一台安卓手机 G1，3.2英寸屏幕，320x480分辨率，256MB内存， 1150mAh电池，并带有一个实体的全键盘。\n\n真不敢相信，智能手机真正开始普及，仅仅只有十年。\n\n这十年，人类的生活完全改变。十年前，每个人都以与现在完全不同的方式生活着。2008年，没人用手机付款，大家在地铁读书看报，或者听着 iPod，想要给别人发消息，只能用短信。那些只凭一个 App 就成为独角兽的公司，一家都不存在。许多人还没有意识到，只需要做出一个受欢迎的 App，你就能创业，如果成功还能发财。\n\n我敢预言，接下来的十年会有更大的变化，因为现在有了人工智能。2028年，我们的生活将是什么样？完全无法想象。我写过一本书叫做《未来世界的幸存者》，预言大多数人在未来世界很难有出路，因为没法跟机器竞争。你要么会造机器，要么比机器强，否则怎么办呢。\n\n这个《每周分享》专栏其实是那本书的延续，主题就是关注未来，关注那些将要流行的新技术和新趋势。有人说过，未来已经到来，只是还未流行。我们需要在未来变得流行之前，做好准备。假如2008年这个专栏就存在，那么我希望，安卓刚出来的时候，我们就知道这个东西会改变世界，带来无数机会，应该去学习如何开发 App。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100501.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100502.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "新闻",
+      "items": [
+        {
+          "title": "零件搜索",
+          "link": "https://techcrunch.com/2018/07/19/amazons-new-ar-part-finder-helps-you-shop-for-those-odd-nuts-and-bolts/",
+          "description": "亚马逊推出\"零件搜索\"（part search）。用户只要拍摄一个零件（比如螺丝），亚马逊就会给出提示，让用户选择相关参数，以便确定到底是哪一种零件。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100503.jpg"
+          ]
+        },
+        {
+          "title": "维秘程序员",
+          "link": "https://www.georgetakei.com/victoria-secret-model-lyndsey-scott-2603966880.html",
+          "description": "据美国媒体报道，黑人姑娘 Lyndsey Scott 是\"维多利亚的秘密\"的内衣模特，同时也是程序员，懂得五种编程语言。还是 StackOverflow 的 iOS 顶级回答者，为 code.org 录制过课程。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100504.jpg"
+          ]
+        },
+        {
+          "title": "AR 界面",
+          "link": "https://medium.com/@nathangitter/what-i-learned-making-five-arkit-prototypes-7a30c0cd3956",
+          "description": "一个开发者使用 ARKit 2 为 iOS 手表增加了 AR 界面（现实增强界面）。当用户带着 AR 眼镜操作手表的时候，会看到辅助信息。比如打开\"天气\"的时候，就会看到上图。这种 AR 界面的意义在于，未来的 UI 不必局限于设备之中，三维空间都可以是 UI。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100505.jpg"
+          ]
+        },
+        {
+          "title": "5万年前的狼",
+          "link": "https://www.theguardian.com/science/2018/sep/14/spectacular-ice-age-wolf-pup-and-caribou-dug-up-in-canada",
+          "description": "加拿大在北方的冻土区，发现了一个冰河时期的狼的木乃伊。据检测，距今已有5万年。这头狼的保存情况好得惊人，皮毛、皮肤和肌肉组织都保存下来了，头部、尾部、爪子、皮肤和头发的细节都很好。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100506.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100507.jpg"
+          ]
+        },
+        {
+          "title": "美国最后一个小儿麻痹症患者",
+          "link": "",
+          "description": "9月7日，美国最后一个小儿麻痹症患者 David Salamone 去世，享年28岁。他的特别之处在于，他不是自然感染，而是由于使用小儿麻痹症疫苗，而得了小儿麻痹症。我们知道，疫苗的本质是灭活的病毒，即丧失活性的病毒。美国原来采用是口服小儿麻痹症疫苗，优点是服用方便，成本较低，但是有可能使得极少数的儿童（每年个位数）由于无力抵抗灭活的病毒而得病。David Salamone 就是这样得病了，由于这个案例，美国政府决定疫苗从口服改为注射，灭活病毒含量大大下降，从此再也没有发生过由于疫苗而得病的案例。他就成了美国最后一个小儿麻痹症患者。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "细菌食品",
+          "link": "https://daily.jstor.org/would-you-like-some-germs-with-your-wheaties/",
+          "description": "畜牧业是人类蛋白质供给的主要来源之一，也是温室气体的主要来源之一。每一吨红肉的背后，都是大量的二氧化碳释放。为了减少温室气体，科学家提出，我们也可以食用细菌产生的蛋白质。有些细菌可以食用糖或氨，随着它们的生长，可以被干燥，碾成粉末，用作蛋白质供人类或牲畜食用。计算后发现，如果大规模应用，到2050年，细菌每年可替代175至3.07亿吨的饲料，减少土地使用量6％，温室气体排放减少7％。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100508.jpg"
+          ]
+        },
+        {
+          "title": "PlayStation Classic 游戏主机",
+          "link": "",
+          "description": "索尼会在12月3日发售 PlayStation Classic 游戏主机，用来玩早期的 PS 游戏。主机大小跟一本书差不多，价格99美元。但是，多少人愿意买个新机器玩老游戏，让人怀疑，尤其是老游戏的分辨率最高只能到720P。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100509.jpg"
+          ]
+        },
+        {
+          "title": "周口店保护棚",
+          "link": "https://wap.xinmin.cn/content/31433493.html",
+          "description": "四十多万年前，北京猿人生活的周口店遗址，最近在山上修了一个保护棚，把猿人洞的露天洞口遮蔽起来。保护棚长77.5米，宽54.5米，高35.7米。保护棚分为内外两层叶片，外层叶片不仅可以遮风挡雨，而且设有种植槽，植物可以生长在棚顶。内层叶片尽量与洞内岩壁融为一体。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100510.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100511.jpg"
+          ]
+        },
+        {
+          "title": "熔岩灯",
+          "link": "https://blog.cloudflare.com/statement-concerning-events-at-glowbeam-technologies/",
+          "description": "美国电视剧《海军罪案调查处.》（NCIS）最近播出的第十六季第一集，讲述一家公司使用熔岩灯作为随机数生成器，结果被插入木马，导致核反应堆被渗透。这个装置其实不是虚构的，而是 Cloudflare 公司的真实发明。他们旧金山总部就有一个熔岩灯墙，对面是一个摄像头，每秒拍一一张照片。熔岩灯里面是一团蜡滴，会不断变换形状、颜色和位置，所以拍出来的照片都不一样，可以当作随机数。Cloudflare 公司已经发布了澄清声明，表示该发明并没有用于生产环境，因此不存在插入木马的可能。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100512.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100513.jpg"
+          ]
+        },
+        {
+          "title": "一句话新闻",
+          "link": "",
+          "description": "Firefox在 Windows 10 上面默认开启了 WebRender，使用 GPU 渲染网页，而不是传统的 CPU。这将大大改善网页的渲染性能，页面滚动和动画都会有更好的表现。大部分数据科学家都被互联网公司挖走了，美国高校的 AI 教育现在缺乏师资。Uber CEO称，该公司的目标是10年后人们不再拥有个人汽车，想要出门的时候，平台已经为你安排好了车。UPS 快递公司在伦敦用电动卡车，取代普通卡车送货。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100514.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "教程",
+      "items": [
+        {
+          "title": "PyPy 的十五年",
+          "link": "https://morepypy.blogspot.com/2018/09/the-first-15-years-of-pypy.html",
+          "description": "PyPy 是用 Python 编写的 Python 解释器，这也是它名字的来源。该项目的创始人回顾了走过的十五年。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "Linux 内核与 Mac 内核的差异",
+          "link": "http://www.linuxandubuntu.com/home/difference-between-linux-kernel-mac-kernel",
+          "description": "Linux 内核与 Mac 内核虽然都源于 Unix，但是差别较大。Mac 内核继承 BSD Unix，有一些很老的代码，并且做了大量的定制。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "六种虚拟私有网络工具",
+          "link": "https://opensource.com/article/18/8/open-source-tools-vpn",
+          "description": "一些虚拟私有网络的相关知识。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "你不需要Momentjs",
+          "link": "https://github.com/you-dont-need/You-Dont-Need-Momentjs",
+          "description": "本文列举如何用 date-fns 或者原生方法，取代 moment.js。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "Severless 的缺点",
+          "link": "https://dev.to/rohitakiwatkar/can-you-use-serverless-architecture-everywhere-any-drawbacks--gfj",
+          "description": "决定使用 Severless 架构之前，你应该读一下这篇文章，了解这种架构的一些问题。目前，最大的问题是，一旦用了它，就很难再摆脱对服务提供商的依赖。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "IPFS 介绍",
+          "link": "https://blog.cloudflare.com/distributed-web-gateway/",
+          "description": "IPFS 是一个具有 web 接口的分布式数据库，一旦写入，你的内容就将永远存在，且无法修改。本文是一篇很不错的介绍文章， Cloudflare 在文中宣布开通 IPFS 网关服务。如果你有自己的 IPFS 节点，就可以让 Cloudflare 的 CDN 网络分发你的内容。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "ActivityPub 协议介绍",
+          "link": "https://jeremydormitzer.com/blog/what-is-activitypub-and-how-will-it-change-the-internet/",
+          "description": "ActivePub 是一种分布式的通信协议，本文以 Mastodon 为例，介绍为什么它可以改变互联网。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "Github 的语义搜索",
+          "link": "https://githubengineering.com/towards-natural-language-semantic-code-search/",
+          "description": "Github 正在测试语义搜索，匹配的依据不再是关键字，而是搜索的语义。比如，搜索\"连接两个字符串\"，就会跳出相关的代码。本文介绍实现细节。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "为什么 Reason 语言合适写 React 应用？",
+          "link": "https://medium.freecodecamp.org/psst-heres-why-reasonreact-is-the-best-way-to-write-react-5088d434d035",
+          "description": "Facebook 在开发 React 的同时，还发明了一种新语言 Reason，它是 OCaml 语言的变种。Reason 和 React 的创始人是相同的，这篇文章解释了为什么 Reason 语言天生适合写 React 应用。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "现在的歌词变简单了吗？",
+          "link": "https://pudding.cool/2017/05/song-repetition/index.html",
+          "description": "简单的歌词通常有重复的内容。这篇文章使用压缩算法，比较现在的歌词与过去的歌词，看看哪个压缩得更小，内容更简单。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "免费电子书：如何通过数据进行预测",
+          "link": "",
+          "description": "免费电子书，如何通过数据进行预测。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100515.jpg"
+          ]
+        },
+        {
+          "title": "Python 语法互动教学",
+          "link": "",
+          "description": "通过网页上的互动实例，教授 Python 语法。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100516.jpg"
+          ]
+        },
+        {
+          "title": "13KB 网页小游戏",
+          "link": "",
+          "description": "一个 13KB 的网页小游戏。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "各大公司 UI 组件库的 Storybook",
+          "link": "",
+          "description": "各大公司的 UI 组件库的 Storybook 展示。Storybook 是一种 React 组件的展示工具。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100517.jpg"
+          ]
+        },
+        {
+          "title": "v8.dev",
+          "link": "https://v8.dev/",
+          "description": "v8 引擎新的官方网站。为了体现 v8 高效快速的特点，这个网站故意做得很简单，能够快速加载。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "ktmm",
+          "link": "https://github.com/ao/ktmm",
+          "description": "有时候，系统通过鼠标判断用户是否走开了。这个工具可以让鼠标保持运行。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100518.jpg"
+          ]
+        },
+        {
+          "title": "Windows画板程序图片编译执行",
+          "link": "",
+          "description": "一个有点玩笑性质的项目。它可以将 Windows 画板程序制作的程序图片，编译执行。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "Carbon",
+          "link": "https://carbon.now.sh/",
+          "description": "将代码保存成图片的开源服务，可以用来上传到社交媒体。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100519.jpg"
+          ]
+        },
+        {
+          "title": "Airdroid",
+          "link": "https://www.maketecheasier.com/airdroid-connect-android-phone-to-linux/",
+          "description": "Airdroid 是一个手机 App，可以将安卓手机与桌面电脑相连，用来传递文件。只需在手机上安装，然后桌面电脑访问一个局域网网址即可。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100520.jpg"
+          ]
+        },
+        {
+          "title": "代码协同网站",
+          "link": "",
+          "description": "一个代码协同的网站。你新建一个代码片段，然后把网址分享给其他人，就可以看到他们的实时编辑。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "基于 Python 的跨平台 Shell",
+          "link": "",
+          "description": "一个基于 Python 的 Shell，最大特点就是跨平台。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "wwwbasic",
+          "link": "https://github.com/google/wwwbasic",
+          "description": "一个可以在网页运行的 BASIC 语言实现。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "perkeep",
+          "link": "https://perkeep.org/",
+          "description": "perkeep 是一个开源工具，可以将你的文件同步储存到多个节点，保证不会丢失。它可以用作个人的储存系统，可以看作是亚马逊 S3 服务的本地实现。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100521.jpg"
+          ]
+        },
+        {
+          "title": "搭建 Web 服务下载 Youtube 视频的工具",
+          "link": "",
+          "description": "搭建 Web 服务下载 Youtube 视频的工具。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "逃离东德",
+          "link": "http://www.hisutton.com/The%20Escape%20of%20Bernd%20Boettger.html",
+          "description": "第二次世界大战以后，德国分裂成东德和西德，两边处于敌对状态。28岁的工程师 Bernd Boettge 想逃离东德，到西方去。陆地边界都是封锁的，只有从海上偷渡。最初，他尝试游泳，但是很快体力耗尽，被抓住了。由于他是东德需要的工程师，所以没被关进监狱。Bernd Boettge 不死心，决心第二次偷渡。为了能在水下呼吸，他让西德的阿姨寄来了一套潜水服。然后，自己改装了一台二冲程汽油发动机。这种发动机的体积很小，一般用于动力自动车，可以在水下作为动力装置，拉着他前进。发送机需要空气，因此他添加了一个橡胶的呼吸管，排气管则位于上方的圆柱形容器中。这个容器也起到浮子的作用。发动机带动螺旋桨，后面会拖着一个架子，他自己就挂在这个架子上。整个装置重约22磅（大约10公斤），足够轻，可以手里拿着穿过海滩，总成本大约50美元。他没办法测试，只能寄希望第一次下水就成功。如果再被抓住，肯定就完了。1968年9月8日，在黑暗的掩护下，他在格拉尔 - 米里茨（Graal-Müritz）的海面下水，慢慢穿过探照灯和巡逻船。在海里前进了25公里之后，成功到达了丹麦。上图为他到达丹麦时的照片。后来，他为这个装置申请了专利，并由其他公司投入了生产：大海里面拖动潜水员的汽油动力拖动器。1974年，Bernd Boettge 死于西班牙的一次潜水事故。至今不知道，这是真的事故，还是东德策划的暗杀。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100522.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100523.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100524.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100525.jpg"
+          ]
+        },
+        {
+          "title": "拉里佩奇去哪了？",
+          "link": "",
+          "description": "2018年9月5日，美国国会召开听证会。推特 CEO 和 Facebook 总裁都出席了，但是45岁的谷歌创始人拉里佩奇却没去。他的座位空着。Alphabet （谷歌的母公司）在一份声明中说，谷歌全球事务负责人参加了听证会，而\"拉里佩奇正专注于其他项目和长期技术问题。\"问题是，拉里佩奇已经将近5年没有亮相，没有任何新闻报道，他消失了。2013年以来，他没有参与任何产品发布会或对外的电话会议。2015年以来，他没有接受过任何新闻采访。公司的日常管理交给了 Sundar Pichai，外界不知道他在干嘛。2011年，他接替埃里克施密特，担任谷歌的 CEO。他每周工作80小时，大量阅读商业管理书籍，很快他就对管理和运营厌倦了，想把更多时间用于研发。一个前谷歌高管说，一次开会时，他对正在汇报的员工说\"你做的事情很无聊\"。另一次，有人请示他解决公司内部两个团队之间的矛盾，他回答说\"你们不能自己解决吗？\"2015年谷歌重组，Sundar Pichai 成为谷歌的 CEO，佩奇担任母公司 Alphabet 的 CEO。从此，他更专注于那些疯狂的未来项目，比如自动驾驶飞行器、机器人、谷歌光纤等等，不再出现在公众场合，甚至谷歌内部员工也极少看见他。拉里佩奇的隐居，让人感觉他像一个身体虚弱和衰老的名人，但实际上他比 Sundar Pichai 年轻。他的最后一次公开露面，是2014年的一次TED演讲，谈论谷歌的未来。此后，他就不再出现了，也不知道未来是否还会出现。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100526.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100527.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "本周图片",
+      "items": [
+        {
+          "title": "漫画：以安全名义把用户信息都留住",
+          "link": "",
+          "description": "很多手机应用，就是上面这张漫画，说是整个社会的写照也可以：以安全名义把用户信息都留住，同时把用户隐私剥个精光。（via 推特@nixcraft）",
+          "user": "nixcraft",
+          "user_link": "https://twitter.com/nixcraft/status/1040536061590622208",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100528.jpg"
+          ]
+        },
+        {
+          "title": "可可豆荚",
+          "link": "",
+          "description": "巧克力是全世界最流行的食品之一，它的主要原料是可可豆。可可豆长在一种红色的豆荚里面。每个豆荚包裹额20～25个可可豆。好几个非洲国家的经济，就依赖这种树。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100529.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100530.jpg"
+          ]
+        },
+        {
+          "title": "吐舌头的河马",
+          "link": "",
+          "description": "日本名古屋东山动物园有一只喜欢歪着头、吐舌头的小河马。现在成了动物园推特账户@tomotomotomomo 的明星。",
+          "user": "tomotomotomomo",
+          "user_link": "https://twitter.com/tomotomotomomo",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100531.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100532.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "新奇",
+      "items": [
+        {
+          "title": "自动魔方",
+          "link": "https://media.dmm-make.com/item/4462/",
+          "description": "日本开发出了自动旋转的魔方。里面安装了电机和芯片，会自动复原。",
+          "user": null,
+          "user_link": null,
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100533.jpg",
+            "https://cdn.beekka.com/blogimg/asset/201810/bg2018100534.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "本周金句",
+      "items": [
+        {
+          "title": "约翰·格伦的思考",
+          "link": "https://www.wired.co.uk/article/space-tourism-mars-colonies-spacex-nasa-martin-rees",
+          "description": "我在想这个火箭有两万个零件，每一个都是由最低价的投标者制造的。\n\n-- 约翰·格伦，第一个进入地球轨道的美国宇航员。有人问，坐在火箭里面等待发射时，他在想什么？他说了上面的回答。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        },
+        {
+          "title": "游戏开发者的收益",
+          "link": "https://infinitroid.com/blog/posts/did_i_just_waste_3_years",
+          "description": "我已经投入了2,600多个小时，编写了62,176行代码（主要是C ++）。该游戏的收入为27.92美元，每小时收入约0.01美元。\n\n-- 一个游戏开发者。他用了三年，独自一人开发游戏，放到 Steam 平台销售后，只有四个人购买。现在，他不得不考虑放弃这个游戏，这意味这三年时间都白费了。",
+          "user": null,
+          "user_link": null,
+          "images": []
+        }
+      ]
+    }
+  ]
+}

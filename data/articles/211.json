@@ -1,0 +1,374 @@
+{
+  "title": "科技爱好者周刊（第 211 期）：虚拟商品可以拉动 GDP",
+  "link": "https://www.ruanyifeng.com/blog/2022/06/weekly-issue-211.html",
+  "number": 211,
+  "sections": [
+    {
+      "name": "封面图",
+      "items": [
+        {
+          "title": "封面图",
+          "link": "https://www.ruanyifeng.com/blog/2022/06/weekly-issue-211.html",
+          "description": "6月21日，河南濮阳市到达 40℃ 高温。为了降温，某小区开启人工降雨，大楼楼顶的喷淋系统向楼身喷水，相当于为整个小区浇一个凉水澡。据报道，喷淋一次的成本为6000元左右。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062216.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "本周话题",
+      "items": [
+        {
+          "title": "虚拟商品可以拉动 GDP",
+          "link": "https://www.ruanyifeng.com/blog/2022/06/weekly-issue-211.html",
+          "description": "本周，脸书宣布推出线上的虚拟服装商店，里面有很多名牌服装（比如 Prada），用户买来在虚拟世界穿。虚拟商品的交易，可以拉动 GDP 增长，与实物商品的效果是一样的。虚拟服装、游戏道具、表情包......这些纯数字的虚拟商品，交易金额都是 GDP 的一部分，用户买得越多，GDP 就越高。不夸张地说，购买一个游戏道具，也是在为 GDP 做贡献。\n\n虚拟商品只要发生了交易，就会计入 GDP。但是，虚拟商品与实物商品有一个重大区别：它不受资源约束，生产不消耗资源。虚拟商品可以在零消耗的情况下，增加 GDP。\n\n最近，游戏版号恢复发放，可能就有这方面的考虑。国家以后刺激经济的时候，也可以考虑刺激虚拟商品的消费，这完全不会增加实体经济的负担。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062208.webp",
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062113.webp",
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062114.webp",
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062115.webp",
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062116.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "Go 语言学习资料包",
+          "link": "",
+          "description": "极客时间内部制作的三份学习材料，包括 Go 语言讲座视频、Go 高频面试真题、Go 实战训练营。微信扫码添加工作人员可免费领取。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021120101.webp",
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062306.webp",
+            "https://cdn.beekka.com/blogimg/asset/202112/bg2021120102.webp",
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062307.webp",
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062305.webp"
+          ]
+        },
+        {
+          "title": "稀土开发者大会",
+          "link": "https://conf.juejin.cn/xdc2022/wap/?utm_source=ruanyfblogjiangshi",
+          "description": "掘金社区筹办的稀土开发者大会，开始报名了。这次邀请到了尤雨溪，来做主论坛演讲。大会的技术专题里面，有四个跟前端开发息息相关：①大前端工程架构与性能优化、②低代码探索和实践、③大前端技术探索、④现代Web开发。报名和听演讲都是免费开放的。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062323.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技动态",
+      "items": [
+        {
+          "title": "星巴克充电站",
+          "link": "https://www.fastcompany.com/90730929/starbucks-wants-to-become-the-gas-station-of-the-future-for-evs",
+          "description": "星巴克正在美国做实验，将咖啡馆与充电站结合起来。它与沃尔沃汽车合作，沿着丹佛到西雅图的2200公里高速公路，每隔160公里，就开设一家带有充电桩的咖啡馆。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202203/bg2022033114.webp"
+          ]
+        },
+        {
+          "title": "人类中耳源自鱼腮",
+          "link": "http://digitalpaper.stdaily.com/http_www.kjrb.com/kjwzb/html/2022-06/03/content_536486.htm",
+          "description": "中科院团队根据一块4亿多年前的云南曲靖宽甲鱼化石，首次发现人类中耳最早是从鱼鳃演变而来的实物证据。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062222.webp",
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062223.webp"
+          ]
+        },
+        {
+          "title": "0.016Hz OLED 显示屏",
+          "link": "",
+          "description": "TCL 华星公司发布全球首款刷新率 0.016Hz（每分钟刷新一次）的 OLED 显示屏，而且亮度、色彩、可视角都没有损失，在强光下也可做到完全无闪烁。主要用于智能手表和其他可穿戴设备。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062302.webp"
+          ]
+        },
+        {
+          "title": "云养蜂",
+          "link": "https://www.timesofisrael.com/israeli-bee-tech-startup-beewise-pulls-in-80m-investment-for-robotic-beehives/",
+          "description": "一家以色列公司推出了 AI 蜂箱，外观像一个小号集装箱，里面可以放置24个蜂架，还配置了摄像头和计算机设备。养蜂人可以远程管理、云端养蜂。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022040103.webp",
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022040105.webp",
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022040104.webp",
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022040106.webp"
+          ]
+        },
+        {
+          "title": "香水喇叭",
+          "link": "https://robbreport.com/gear/gadgets/byredo-ojas-room-diffuser-speaker-design-1234659357/",
+          "description": "一家瑞典奢侈品公司推出了香水喇叭，播放音乐的同时，会散播香水。你可以根据不同的音乐，选择不同的香水。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050702.webp",
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050703.webp",
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050704.webp"
+          ]
+        },
+        {
+          "title": "AirTag 找行李",
+          "link": "",
+          "description": "一对英国夫妻用 AirTag 找到了航空公司丢失的托运行李。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050908.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "视频播放器还有前途吗",
+          "link": "https://finance.sina.cn/tech/2022-06-18/detail-imizirau9109321.d.html",
+          "description": "腾讯 QQ 影音最新关闭了下载，本文回顾桌面软件的视频播放器的兴起和没落。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062221.webp"
+          ]
+        },
+        {
+          "title": "毒蘑菇如何识别",
+          "link": "https://mp.weixin.qq.com/s/8pPXUUoam6WbpiyTuk5aiw",
+          "description": "B 站有一位视频作者，拍各种视频，教大家识别毒蘑菇。本文介绍一些这方面的知识。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062212.webp",
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062213.webp"
+          ]
+        },
+        {
+          "title": "如何在用户离开页面时可靠地发送 HTTP 请求",
+          "link": "https://css-tricks.com/send-an-http-request-on-page-exit/",
+          "description": "用户关闭页面，或者点击链接离开，这时如何保证 HTTP 请求还能发送出去？本文分析了几种方法。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022041005.webp"
+          ]
+        },
+        {
+          "title": "如何使用蒙特卡罗模拟计算圆周率 pi",
+          "link": "https://vitomirj.medium.com/good-beginner-exercise-for-improving-programming-monte-carlo-simulation-of-the-approximation-of-838dc17eb6bc",
+          "description": "作者解释蒙特卡罗方法，使用 Python 语言写了一个小程序，计算圆周率，图文并茂。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202201/bg2022010204.webp"
+          ]
+        },
+        {
+          "title": "Linux 的四个查找命令",
+          "link": "https://www.madebygps.com/an-intro-to-finding-things-in-linux/",
+          "description": "Linux 有四个常用的查找命令：locate、whereis、which 和 find。本文介绍它们的区别和简单用法。",
+          "images": []
+        },
+        {
+          "title": "Flatpak 安装包有什么问题？",
+          "link": "https://ludocode.com/blog/flatpak-is-not-the-future",
+          "description": "Flatpak 是 Linux 系统常见的安装包格式。本文详细讨论了这种格式，认为它的发展方向是不对的。",
+          "images": []
+        },
+        {
+          "title": "U+202E 骗术",
+          "link": "https://galogetlatorre.blogspot.com/2013/07/how-can-you-be-fooled-by-u202e-trick.html",
+          "description": "U+202E 是一个特殊的 Unicode 字符，可以这个字符后面的字符串从右到左显示。很多病毒软件利用此特性诱骗用户。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202202/bg2022021911.webp"
+          ]
+        },
+        {
+          "title": "Docker 架设静态网站的最小解决方案",
+          "link": "https://lipanski.com/posts/smallest-docker-image-static-website",
+          "description": "作者想通过 Docker 提供静态网站服务，找到了一个只需要在静态文件之外加入一个 186KB 服务器的解决方案。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "起亚音乐软件",
+          "link": "",
+          "description": "起亚汽车公司推出的一款音乐软件，提供了8种背景音（水声、风声、雨声等），可以加入音乐文件，合成后输出新的音乐。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022043002.webp"
+          ]
+        },
+        {
+          "title": "Fugu",
+          "link": "https://github.com/shafy/fugu",
+          "description": "一款开源的网站访问统计服务，需要自己在服务器上架设。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050301.webp"
+          ]
+        },
+        {
+          "title": "Dufs",
+          "link": "https://github.com/sigoden/dufs",
+          "description": "一个简单的文件服务器，可以提供静态文件服务，支持上传、下载、搜索、访问控制、webdav 等功能。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062304.webp"
+          ]
+        },
+        {
+          "title": "b",
+          "link": "",
+          "description": "C/C++ 项目的构建工具，类似于 GCC，号称是零配置，直接运行就能构建出项目。",
+          "images": []
+        },
+        {
+          "title": "Keytap3",
+          "link": "https://keytap3.ggerganov.com/",
+          "description": "一个概念性项目。手机打开这个网页，然后使用麦克风，监听键盘打字，经过训练可以从击键声还原出输入内容。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050401.webp"
+          ]
+        },
+        {
+          "title": "Wolvic",
+          "link": "https://wolvic.com/",
+          "description": "适用于 VR 头盔的浏览器，代码基于已经终止开发的 Firefox Reality。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050402.webp"
+          ]
+        },
+        {
+          "title": "地球时钟",
+          "link": "https://earthclock.cwandt.com/",
+          "description": "这个网站使用卫星照片，显示当前的数字时间，还提供 Mac 屏保程序下载。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050409.webp",
+            "https://cdn.beekka.com/blogimg/asset/202205/bg2022050510.webp"
+          ]
+        },
+        {
+          "title": "Tailscale",
+          "link": "",
+          "description": "这服务可以将不同的设备（电脑和手机），组成一个虚拟网络，通过它的网关提供外部访问，而不管那些设备原来是否在同一个局域网。收费服务，有免费账户。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202202/bg2022022005.webp"
+          ]
+        },
+        {
+          "title": "cardboardwm",
+          "link": "",
+          "description": "Linux 系统的窗口管理器，特点是采用滚动式窗口，屏幕垂直分成几个窗口，可以水平滚动，好像走马灯一样。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "黑客技巧（HackTricks）",
+          "link": "https://book.hacktricks.xyz/",
+          "description": "免费的英文电子书，介绍一些破解计算机系统的黑客方法。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022041003.webp"
+          ]
+        },
+        {
+          "title": "合同示范文本库",
+          "link": "https://cont.12315.cn/",
+          "description": "国家市场监管总局开发的一个数据库，面向社会免费开放，提供常见合同的示范文本。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062301.webp"
+          ]
+        },
+        {
+          "title": "100 NumPy Exercises",
+          "link": "",
+          "description": "这个网站从面试题、邮件列表和文档里面，选出了100个 numpy 常见问题，并配上答案，供大家练习。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202206/bg2022062209.webp"
+          ]
+        },
+        {
+          "title": "Airbnb 疯狂建筑物改造比赛",
+          "link": "",
+          "description": "Airbnb 推出了一个比赛，向全世界征集最疯狂的建筑物改造的点子。最终评选出100位获奖者，每人可以得到10万美元资助，去实现自己的想法。报名截止期是7月22日。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/220204/bg2022041705.webp"
+          ]
+        },
+        {
+          "title": "JavaScript 设计模式教程",
+          "link": "",
+          "description": "一本英文的原创教程，免费在线阅读和下载。它使用 JavaScript 语言为例，详细介绍每一种设计模式。最后演示如何将这些设计模式运用于 React 框架，搭建 Web 应用。",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "最奇特的旗帜",
+          "link": "https://blog.kobadoo.com/2022/02/the-only-flag-of-world-that-is-shredded.html",
+          "description": "西班牙萨莫拉省（Zamora）的旗帜，由9根布条组成。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202202/bg2022022313.webp",
+            "https://cdn.beekka.com/blogimg/asset/202202/bg2022022314.webp"
+          ]
+        },
+        {
+          "title": "中华巨马",
+          "link": "https://finance.ifeng.com/c/7zyQLyHEp3Q",
+          "description": "一家大连研发了巨型机器马，叫做\"中华巨马\"，高8.4米、长9米、加上马车总长14.5米、自重47吨。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202202/bg2022020808.webp",
+            "https://cdn.beekka.com/blogimg/asset/202202/bg2022020809.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "西福特计划",
+          "link": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E7%A6%8F%E7%89%B9%E8%AE%A1%E5%88%92",
+          "description": "冷战时期，美军为了稳定进行全球无线通信，决定在电离层中散布4.3亿根铜针，以增强无线信号。1963年成功进行了通信，后因通信卫星发明而废弃。",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202111/bg2021112113.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202111/bg2021112112.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "言论1",
+          "link": "",
+          "description": "如果你的项目调用谷歌地图，会付出很高的成本。谷歌对每个请求都收费：方向、搜索自动补全、地点详细信息、地点照片、街景照片、静态地图、动态地图和时区查找......所有 API 没有一个是免费的。而且，谷歌禁止你将它的数据与其他地图服务结合。",
+          "images": []
+        },
+        {
+          "title": "言论2",
+          "link": "",
+          "description": "如果你有强烈的好奇心，祝贺你，你的智力胃口很好！",
+          "images": []
+        },
+        {
+          "title": "言论3",
+          "link": "",
+          "description": "一个人必须专攻一些事情才能赚钱。我总是告诉我的孩子：你需要学会某种技能，而且这种技能要强于别人，这样才会有人付钱给你。然后你再付钱请人，帮你做那些你觉得无聊或困难的事情。",
+          "images": []
+        },
+        {
+          "title": "言论4",
+          "link": "",
+          "description": "英国科学家研究，什么因素会导致人类感到无聊。最后发现，世界上最无聊的人具有以下特征：职业是宗教数据录入，爱好是看电视，居住地是偏僻小镇。",
+          "images": []
+        },
+        {
+          "title": "言论5",
+          "link": "",
+          "description": "我曾经使用一个 App，在苹果手机上编写 Python 程序。手机打字速度有点慢，但我发现，它有一个地方是革命性的。我先是坐在沙发上，边看电视边写，然后躺在床上继续写剩下的代码。这与坐在办公桌前写代码相比，真令人感到轻松，我喜欢这样写代码。",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

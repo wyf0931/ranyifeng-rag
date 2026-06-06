@@ -1,0 +1,448 @@
+{
+  "title": "科技爱好者周刊（第 123 期）：互联网公司与湘军的军制",
+  "link": "https://www.ruanyifeng.com/blog/2020/09/weekly-issue-123.html",
+  "number": 123,
+  "sections": [
+    {
+      "name": "开篇小故事",
+      "items": [
+        {
+          "title": "互联网公司与湘军的军制",
+          "link": "",
+          "description": "大学里，我读过一本历史学著作，罗尔纲的[《湘军兵志》](https://baike.baidu.com/item/%E6%B9%98%E5%86%9B%E5%85%B5%E5%BF%97)。\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020090303.jpg)\n\n湘军是清朝末年曾国藩在湖南省组建的一支军队，清朝全靠它，打败了太平天国。这里有一个疑问：为什么国家的正规军（绿营）接连战败，但是一支地方的民兵部队却能连克强敌？湘军到底有何不同？\n\n经过研究，罗尔纲先生得出结论：湘军最大的不同，就是它的制度。\n\n一般来说，军队都是国家招募的，但是湘军不是，士兵都是将领个人招募。曾国藩让将领自己去招兵，你招来多少人，就带领多少人。这样就导致了，招来的都是老乡、朋友、姻亲、同学，变成了将领的私人军队，军饷往往也必须自己解决。\n\n这样的制度意味着，一支军队都是熟人组成的，只听命于主将，别人指挥不动，士兵的奖惩都由主将说了算。所以，湘军的凝聚力、服从性和战斗力大大强于绿营，后者完全是一盘散沙，无心战斗。\n\n我觉得，互联网公司跟湘军有类似之处，尤其是大公司。互联网公司内部也是一个个小团队，每个团队都是由主管组建和招募。组员的所有利益都在主管手里，工作绩效、晋升、奖金都是主管说了算。这就跟湘军的指挥和管理制度很像。\n\n这样的团队，好处是比较容易指挥，战斗力有保证；坏处是主管决定了你的生杀大权，导致组员必须迎合讨好主管。现实中，有人甚至形容存在\"跪舔主管\"的现象。很多人想象中，互联网公司的管理，应该是比较先进和科学的，其实不完全是，也存在很多封建的成分。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202009/bg2020090303.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "活动",
+      "items": [
+        {
+          "title": "React 教学视频",
+          "link": "https://wx.kaikeba.com/vip_course/afzg70hmbg/6aehur8rcv?tenant=wx5046bc7413796142",
+          "description": "本周的课程资料是，开课吧提供的 React 教学视频。\n\n大家都知道，React 虽然是全世界影响力最大的前端框架，但是难度并不低。学会它的整个 API 要花不少时间，理解设计思想和掌握底层原理更不容易。\n\n但是，React 在国内有着广泛的生产应用，面试也是一定会问到的。如果不懂它的技术栈，就会大大降低个人竞争力。许多同学没有做好前期准备，直接看文档，导致进度缓慢，不少人抱怨苦苦学了1个多月，还是似懂非懂。\n\n别着急，开课吧的 **《React 原理剖析 + 组件化》** 系统视频，不仅讲解了基础原理，而且其中的综合实战项目包含了 react、react-router、redux、react-redux、antd 等 React 全家桶相关技术点的相关使用，内容针对性比较强。\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020090302.jpg)\n\n这个视频课程现在限量免费开放，仅限100名，需要的同学可以点击[这个链接](https://wx.kaikeba.com/vip_course/afzg70hmbg/6aehur8rcv?tenant=wx5046bc7413796142)，或者扫描下面二维码领取。\n\n![](https://cdn.beekka.com/blogimg/asset/202009/bg2020090301.jpg)",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202009/bg2020090302.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202009/bg2020090301.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "资讯",
+      "items": [
+        {
+          "title": "牛脸识别",
+          "link": "https://www.washingtonpost.com/world/asia_pacific/facial-recognition-china-animals-farms-agriculture/2020/08/23/9808c710-d6fb-11ea-b9b2-1ea733b97910_story.html",
+          "description": "《华尔街邮报》报道，河北省的奶牛场正在使用\"牛脸识别\"技术。通过摄像头识别每头奶牛，记录它们的健康状况、授精日期、妊娠试验结果等。\n\n如果一头牛显示出疾病或其他问题的症状，饲养员马上就会在手机上收到警报。以前对奶牛的监控，都是通过耳朵打孔（下图）或戴在脚踝上的电子标签。这些方法不仅很麻烦，而且奶牛一直在努力清除身上的异物，很多时候都会让标识脱落。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082408.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082409.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082407.jpg"
+          ]
+        },
+        {
+          "title": "婆罗洲雨林的声音",
+          "link": "https://www.raspberrypi.org/blog/raspberry-pi-listening-posts-hear-the-borneo-rainforest/",
+          "description": "世界自然基金会（WWF）资助了 [SAFE Acoustics 项目](http://acoustics.safeproject.net/06:00/10/51503)，在印尼婆罗洲雨林里面放置收音头。用户可以在项目网站上收听雨林的实时声音或者录音，比如黎明日出的声音（上图）。\n\n收音头通过太阳能板供电，收录的声音由一个树莓派编码，然后通过 3G 网络发给服务器（下图）。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082501.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082504.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082502.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082503.jpg"
+          ]
+        },
+        {
+          "title": "水上苹果商店",
+          "link": "https://www.theverge.com/2020/8/24/21399749/apple-store-retail-singapore-floating-design-marina-bay-sands",
+          "description": "世界第一家水上苹果商店，即将在新加坡开幕。这是全球第512家苹果商店，它浮在水面上，像一艘宇宙飞船，必须通过水上走廊才能进入商店。\n\n到了晚上亮灯，这个商店就像一个海上的灯笼。官方宣传手册这样介绍：\"晚上，球体散发出温暖的光芒，让人联想起中秋节期间传统灯笼的设计。商店的鸟瞰图则像是凝视着天空的玻璃虹膜。\"",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082505.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082506.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082507.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082508.jpg"
+          ]
+        },
+        {
+          "title": "密码盒",
+          "link": "https://www.wired.com/story/dicekeys-cryptography/",
+          "description": "安全的做法是，每个网站使用不同的、完全不可猜测的密码。密码生成软件一般用来达到这个目的，但是加州大学伯克利分校的计算机科学家最近发明了实体的密码生成器，叫做 DiceKeys。\n\n一个塑料盒子里面放着25个骰子，每个骰子的6个面上都印着不同的随机字符。只要扔一把骰子，然后将它们重新放到盒子里，就会得到一个随机的结果。然后，它有一个配套的手机 App，对着盒子扫描一下，就会记住每个骰子的方向和字符，生成一个高强度密码。你可以把这个密码盒保存起来，下次要用时，再对着它扫描一下，就会重新得到密码。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082311.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082312.jpg"
+          ]
+        },
+        {
+          "title": "人工光合作用",
+          "link": "https://techxplore.com/news/2020-08/wireless-device-fuel-sunlight-carbon.html",
+          "description": "剑桥大学的研究人团队开发出一种设备，可以利用阳光，将二氧化碳和水转化为燃料，无需任何电力或其他能源。也就是说，他们正在尝试实现人工光合作用。\n\n这种设备使用一种感光纸，上面有催化剂，可以利用阳光的能量，将二氧化碳和水转化为氧气和甲酸，从而当作燃料使用。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082605.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082604.jpg"
+          ]
+        },
+        {
+          "title": "一句话消息",
+          "link": "",
+          "description": "[研究报告]称，目前全球有31亿人玩视频游戏，其中有一半只在手机上玩。\n\n[Japanese company SkyDrive]称，它已经制造完成了\"飞行汽车\"，世界第一台垂直起降的电动飞行器，试飞了四分钟。\n\n[亚马逊]获得美国政府批准，可以使用无人机送货。\n\n[北极]新出现了一个深达50米的巨型\"火山口\"，据信这是由于地下甲烷爆炸导致的。\n\n[Mozilla 的员工]发现，只要根据某个人的50条～150条的浏览历史，就足以识别一个人。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082302.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020083001.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202009/bg2020090102.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020083004.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020083005.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202009/bg2020090203.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文章",
+      "items": [
+        {
+          "title": "如何用简单英语写作",
+          "link": "http://www.plainenglish.co.uk/how-to-write-in-plain-english.html",
+          "description": "本文介绍几个很实用的英语写作规则，帮助你写出简单易懂的英语。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "如何使用 SQL 查询 Git 日志",
+          "link": "https://willschenk.com/articles/2020/gitlog_in_sqlite/",
+          "description": "本文介绍如何将 Git 日志导出到 SQLite 数据库，从而可以用 SQL 语句进行查询。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "GPS 定位原理",
+          "link": "https://blog.digitalbunker.dev/2020/08/28/how-do-global-positioning-systems-gps-work/",
+          "description": "本文介绍 GPS 卫星系统如何能够定位，写得比较容易懂。定位的关键是卫星上的原子钟必须准确报时。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082902.jpg"
+          ]
+        },
+        {
+          "title": "芯片国产化的三大障碍",
+          "link": "http://tech.sina.com.cn/csj/2020-08-10/doc-iivhuipn7797138.shtml",
+          "description": "中国想要摆脱芯片对外国技术的依赖，必须克服三大障碍：光刻机、芯片设计软件、高纯度硅材料。每一项的难度都极高。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "异步操作需要设置超时",
+          "link": "https://robertovitillo.com/default-timeouts/",
+          "description": "本文是一个提醒，进行异步操作的时候（比如 AJAX 请求），要设置超时。因为 AJAX 默认没有超时限制，浏览器会一直等下去，极端情况下，可能会耗尽套接字的资源池。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "任正非：为什么华为现在要搞基础研究？",
+          "link": "https://news.sina.com.cn/c/2020-08-29/doc-iivhvpwy3734657.shtml",
+          "description": "2020年7月29-31日，任正非访问上海交通大学、复旦大学、东南大学、南京大学的讲话摘要。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "如何让 Linux 不区分文件名大小写",
+          "link": "https://www.collabora.com/news-and-blog/blog/2020/08/27/using-the-linux-kernel-case-insensitive-feature-in-ext4/",
+          "description": "Linux 5.2 开始，支持不区分文件名大小写，本文教你怎么打开这个功能。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "短消息发送一次性验证码的标准",
+          "link": "https://trineo.com/blog/2020/08/phishing-resistant-one-time-codes",
+          "description": "很多网站采用短消息发送一次性验证码，作为用户认证的手段。苹果和谷歌已经商定了短消息格式标准，GitHub 开始采用这个标准。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202009/bg2020090101.jpg"
+          ]
+        },
+        {
+          "title": "React 列表 key 属性的三个常见错误",
+          "link": "https://dev.to/thawkin3/common-mistakes-with-react-keys-1jcc",
+          "description": "React 框架要求列表的每一项都带有 `key` 属性，本文介绍这个属性的三个需要注意的地方。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "items": [
+        {
+          "title": "Bootstrap Icons 1.0",
+          "link": "",
+          "description": "Bootstrap 的图标库发布1.0正式版，包含1100多个图标，全部都是 SVG 格式，可以插入 img 标签。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082901.jpg"
+          ]
+        },
+        {
+          "title": "ranger",
+          "link": "https://github.com/ranger/ranger",
+          "description": "一个命令行的文件管理器，支持 Vi 快捷键。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020083003.jpg"
+          ]
+        },
+        {
+          "title": "Broot",
+          "link": "https://dystroy.org/broot/",
+          "description": "一个很有特色的命令行目录浏览工具，有很多功能，比如列出每个子目录的大小。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202009/bg2020090104.jpg"
+          ]
+        },
+        {
+          "title": "Nessie",
+          "link": "https://www.radsix.com/",
+          "description": "一个极简的浏览器，快速、占用资源低、不需要安装，绿色使用。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202009/bg2020090106.jpg"
+          ]
+        },
+        {
+          "title": "Lunar",
+          "link": "https://github.com/alin23/Lunar",
+          "description": "调节 Mac 电脑外接显示器亮度的软件，可以根据时间，自动调节亮度。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202009/bg2020090202.jpg"
+          ]
+        },
+        {
+          "title": "大数据实战项目",
+          "link": "",
+          "description": "一个完整的大数据实践项目，通过 hive 分析 nginx 日志，将分析结果通过 flask + echarts 进行可视化展示。",
+          "user": "TurboWay",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1394",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202009/bg2020090206.jpg"
+          ]
+        },
+        {
+          "title": "go-zero",
+          "link": "https://github.com/tal-tech/go-zero",
+          "description": "一个国产的 web 和 rpc 微服务框架，含极简的 API 定义和生成工具 goctl，可以根据定义的 api 文件一键生成各语言的调用代码。",
+          "user": "yangyongzhen",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1397",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202009/bg2020090207.jpg"
+          ]
+        },
+        {
+          "title": "Hacker News Top 10 每日排名",
+          "link": "",
+          "description": "订阅 Hacker News 每日排名最高的10条新闻。具体方法是，通过 GitHub Actions 定时执行脚本，获取帖子，记录到了项目的 issue 里，用户通过 watch GitHub 仓库或者 RSS 订阅。",
+          "user": "timqian",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1398",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "资源",
+      "items": [
+        {
+          "title": "searX 实例列表",
+          "link": "",
+          "description": "[searX](https://github.com/asciimoo/searx) 是一个开源的搜索引擎，汇总来自70多个搜索服务（包括谷歌）的结果，不跟踪也不分析用户。使用时，需要自己架设实例。这个网站列出了世界各地现有的实例，以及访问速度的实时统计。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082303.jpg"
+          ]
+        },
+        {
+          "title": "iOS 开发课程",
+          "link": "https://cs193p.sites.stanford.edu/",
+          "description": "斯坦福大学的高质量免费课程，使用了最新的 SwiftUI，充分展示了 APP 开发的整个流程，适合新手进行 iOS 的开发入门。",
+          "user": "BranLiang",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1393",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082905.jpg"
+          ]
+        },
+        {
+          "title": "1GB 手机流量价格世界排名",
+          "link": "",
+          "description": "该网站收集全世界各国家和地区的 1GB 手机流量的价格。中国大陆的平均价格是0.61美元，排在第12位，属于手机上网很便宜的地方。美国平均需要8美元，排在第188位，是非常贵的地方。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082309.jpg"
+          ]
+        },
+        {
+          "title": "Python 免费教程",
+          "link": "",
+          "description": "一本免费 Python 教程，使用 Repl.it 在线编程环境学习 Python。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "在线工具秘籍",
+          "link": "https://github.com/zhaoolee/OnlineToolsBook",
+          "description": "这个中文仓库收集各种好用的在线小工具。",
+          "user": "zhaoolee",
+          "user_link": "https://github.com/ruanyf/weekly/issues/1391",
+          "images": []
+        },
+        {
+          "title": "fast.ai 深度学习教程",
+          "link": "",
+          "description": "fast.ai 公司推出的深度学习教程。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "图片",
+      "items": [
+        {
+          "title": "世界最长的火车路线",
+          "link": "",
+          "description": "目前，世界最长的火车路线是从葡萄牙波尔图开始，一直到达越南南部，全长17000公里。你可以全程乘坐火车，但需要经过多次换车。\n\n整个路程最快也要耗时327小时，相当于13天半，总票价2000美元以上。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082606.jpg"
+          ]
+        },
+        {
+          "title": "巴比伦乘法公式",
+          "link": "",
+          "description": "古代巴比伦人使用下面的公式，计算两个数的乘积。\n\n![](https://cdn.beekka.com/blogimg/asset/202008/bg2020082906.jpg)\n\n这个公式可以使用几何图形证明，请看下面的瓷砖图案。",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082906.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082907.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "文摘",
+      "items": [
+        {
+          "title": "高德纳：不收电子邮件",
+          "link": "",
+          "description": "1990年1月1日以后，我就一直很快乐，因为我不再收电子邮件了。\n\n我从1975年左右开始使用电子邮件，在我看来，用了15年的电子邮件已经足够了。\n\n...",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202009/bg2020090304.jpg"
+          ]
+        },
+        {
+          "title": "沙皇核弹纪录片",
+          "link": "https://thebarentsobserver.com/en/security/2020/08/rosatom-releases-previously-classified-documentary-video-50-mt-novaya-zemlya-test",
+          "description": "今年8月20日，为了纪念苏联核工业发展75周年，俄罗斯在 YouTube 上发布了一部讲述沙皇核弹的纪录片。\n\n...",
+          "user": "",
+          "user_link": "",
+          "images": [
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082306.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082307.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082305.jpg",
+            "https://cdn.beekka.com/blogimg/asset/202008/bg2020082304.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "言论",
+      "items": [
+        {
+          "title": "Bob Martin",
+          "link": "",
+          "description": "架构师的工作不是做出决策，而是尽可能久地推迟决策，先在不做出重大决策的情况下构建程序，以便以后有足够信息时再做出决策。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "公钥加密已经发明40多年了，但是我们仍然把魔术数字印在信用卡上，任何看到它们的人都可以未经授权拿走我们所有的钱。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "我曾经极度贫穷，冬天开不起暖气。我发现，最好的取暖方法是晚上在毛毯下塞一只猫，放在两腿之间，并且将毯子拉到头顶上方，留出缝隙以呼吸。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "我加入谷歌，是因为需要更多钱；离开谷歌，是因为需要更多时间。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "",
+          "link": "",
+          "description": "压力分成好几种。有一些压力让你感觉快要死了，另一些压力让你感觉自己更有生命力。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        },
+        {
+          "title": "Hacker News 读者",
+          "link": "",
+          "description": "如果微软推出容器服务，有些人是不会买的。但是，GitHub 的容器服务，他们就会买。我认为，这就是微软收购 GitHub 的部分原因。",
+          "user": "",
+          "user_link": "",
+          "images": []
+        }
+      ]
+    }
+  ]
+}
