@@ -95,7 +95,14 @@ REASONING: [你的分析过程]
 IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
 
                 logger.info(f"[think] Invoking LLM...")
-                response = self.llm.invoke(prompt)
+
+                # Try using messages format instead of string prompt
+                messages = [
+                    {"role": "system", "content": "You are a helpful assistant that analyzes search results and decides if more information is needed."},
+                    {"role": "user", "content": prompt}
+                ]
+                response = self.llm.invoke(messages)
+
                 logger.info(f"[think] LLM invoke completed, got response type: {type(response)}")
 
                 content = response.content.strip()
@@ -150,7 +157,7 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
 
                 context = "\n".join(context_parts)
 
-                prompt = f"""基于以下搜索结果回答用户查询。
+                user_message = f"""基于以下搜索结果回答用户查询。
 
 用户查询: {query}
 
@@ -159,7 +166,12 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
 
 请提供准确、有帮助的答案。如果搜索结果不足以回答问题，请诚实地说明。"""
 
-                response = self.llm.invoke(prompt)
+                # Use messages format
+                messages = [
+                    {"role": "system", "content": "You are a helpful assistant that answers questions based on search results from technology weekly articles."},
+                    {"role": "user", "content": user_message}
+                ]
+                response = self.llm.invoke(messages)
                 state["answer"] = response.content.strip()
 
                 # Update history
