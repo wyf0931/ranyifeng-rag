@@ -1,16 +1,16 @@
 # Environment
 .env
 
+# macOS
+.DS_Store
+
 # Runtime files
 .flask.pid
 *.pid
 
 # Database
-*.db
 *.db-shm
 *.db-wal
-data/rag.db
-
 # Logs
 logs/
 *.log
