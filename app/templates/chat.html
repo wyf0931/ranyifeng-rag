@@ -427,20 +427,17 @@
                             break;
 
                         case 'search_complete':
-                            const lastSearch = this.timeline.findLast(t => t.type === 'search');
-                            if (lastSearch) {
-                                lastSearch.status = 'complete';
-                                lastSearch.resultsCount = data.results_count;
-                                lastSearch.tokenizedQuery = data.tokenized_query;
-                            } else {
-                                this.timeline.push({
-                                    type: 'search',
-                                    status: 'complete',
-                                    resultsCount: data.results_count,
-                                    tokenizedQuery: data.tokenized_query,
-                                    timestamp
-                                });
-                            }
+                            // Create a new search event for each iteration
+                            this.timeline.push({
+                                type: 'search',
+                                status: 'complete',
+                                iteration: data.iteration,
+                                resultsCount: data.results_count,
+                                tokenizedQuery: data.tokenized_query,
+                                query: data.query,
+                                isOriginalSearch: data.is_original_search || false,
+                                timestamp
+                            });
                             break;
 
                         case 'think_complete':

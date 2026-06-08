@@ -290,6 +290,7 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords，应包含�
 
             yield {"type": "search_start", "data": {"query": query}}
 
+            original_query = query  # Store original query for first iteration display
             current_query = query
             all_search_results = []
             loop_count = 0
@@ -300,16 +301,19 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords，应包含�
                 results = db_service.search(current_query, limit=settings.max_search_results)
                 all_search_results.extend(results)
 
-                # Get the tokenized query for display
-                tokenized_query = db_service.tokenize_query(current_query)
+                # For first iteration, show original query tokenized keywords
+                # For subsequent iterations, show the actual query used
+                display_query = original_query if loop_count == 1 else current_query
+                tokenized_query = db_service.tokenize_query(display_query)
 
                 yield {
                     "type": "search_complete",
                     "data": {
                         "iteration": loop_count,
                         "results_count": len(results),
-                        "query": current_query,
-                        "tokenized_query": tokenized_query
+                        "query": display_query,
+                        "tokenized_query": tokenized_query,
+                        "is_original_search": loop_count == 1
                     }
                 }
 
