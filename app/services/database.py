@@ -145,8 +145,8 @@ class DatabaseService:
         if not search_tokens:
             return ""
 
-        # Return the OR query string
-        return " OR ".join(search_tokens)
+        # Return space-separated tokens for display
+        return " ".join(search_tokens)
 
     def get_session(self) -> Session:
         """Get database session."""
