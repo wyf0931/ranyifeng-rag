@@ -300,12 +300,16 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords，应包含�
                 results = db_service.search(current_query, limit=settings.max_search_results)
                 all_search_results.extend(results)
 
+                # Get the tokenized query for display
+                tokenized_query = db_service.tokenize_query(current_query)
+
                 yield {
                     "type": "search_complete",
                     "data": {
                         "iteration": loop_count,
                         "results_count": len(results),
-                        "query": current_query
+                        "query": current_query,
+                        "tokenized_query": tokenized_query
                     }
                 }
 

@@ -157,6 +157,12 @@
                                                 </div>
                                                 <span class="text-xs text-gray-400" x-text="formatTime(event.timestamp)"></span>
                                             </div>
+                                            <div x-show="event.tokenizedQuery" class="mt-2">
+                                                <div class="text-xs text-gray-500 mb-1">搜索关键词 (jieba分词):</div>
+                                                <div class="bg-white rounded px-2 py-1">
+                                                    <code class="text-xs text-blue-700" x-text="event.tokenizedQuery"></code>
+                                                </div>
+                                            </div>
                                             <div x-show="event.status === 'complete'" class="text-gray-500 text-xs mt-1">
                                                 找到 <span class="font-medium text-gray-700" x-text="event.resultsCount"></span> 条结果
                                             </div>
@@ -425,11 +431,13 @@
                             if (lastSearch) {
                                 lastSearch.status = 'complete';
                                 lastSearch.resultsCount = data.results_count;
+                                lastSearch.tokenizedQuery = data.tokenized_query;
                             } else {
                                 this.timeline.push({
                                     type: 'search',
                                     status: 'complete',
                                     resultsCount: data.results_count,
+                                    tokenizedQuery: data.tokenized_query,
                                     timestamp
                                 });
                             }

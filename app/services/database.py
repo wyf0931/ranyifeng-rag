@@ -126,6 +126,28 @@ class DatabaseService:
 
         return results
 
+    def tokenize_query(self, query: str) -> str:
+        """Tokenize query with jieba and return the search query string.
+
+        This is used to display the actual search keywords to users.
+        """
+        if not query or not query.strip():
+            return ""
+
+        # Tokenize query with jieba
+        tokens = jieba.cut_for_search(query)
+
+        # Filter out single characters, whitespace, and stopwords
+        search_tokens = [t for t in tokens if len(t) > 1 and t.strip() and t not in self.stopwords]
+        if not search_tokens:
+            search_tokens = [t for t in tokens if t.strip() and t not in self.stopwords]
+
+        if not search_tokens:
+            return ""
+
+        # Return the OR query string
+        return " OR ".join(search_tokens)
+
     def get_session(self) -> Session:
         """Get database session."""
         if self.engine is None:
