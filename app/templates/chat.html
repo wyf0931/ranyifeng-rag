@@ -181,6 +181,12 @@
                                                       x-text="event.decision">
                                                 </span>
                                             </div>
+                                            <div x-show="event.improvedQuery && event.decision === 'CONTINUE'" class="mt-2">
+                                                <div class="text-xs text-gray-500 mb-1">优化后的搜索关键词:</div>
+                                                <div class="bg-white rounded px-2 py-1">
+                                                    <code class="text-xs text-purple-700" x-text="event.improvedQuery"></code>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <div x-show="event.type === 'rewrite'" class="bg-purple-50 rounded p-2">
@@ -435,6 +441,7 @@
                                 iteration: data.iteration,
                                 reasoning: data.reasoning,
                                 decision: data.decision,
+                                improvedQuery: data.improved_query || '',
                                 timestamp
                             });
                             break;
