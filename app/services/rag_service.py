@@ -1,8 +1,7 @@
-from typing import Dict, Any, List, TypedDict, Annotated
+from typing import Dict, Any, List, TypedDict
 from loguru import logger
 from langchain_openai import ChatOpenAI
 from langgraph.graph import StateGraph, END
-from langgraph.checkpoint.memory import MemorySaver
 from app.config import settings
 from app.services.database import db_service
 
@@ -28,141 +27,122 @@ class RAGService:
         )
         self.graph = self._build_graph()
 
-    def _build_graph(self) -> StateGraph:
-        """Build RAG workflow graph using LangGraph."""
+    def think_and_rewrite(self, state: RAGState) -> RAGState:
+        """Think about search results and rewrite query for better search.
 
-        def rewrite_query(state: RAGState) -> RAGState:
-            """Rewrite user query for better search."""
-            query = state["query"]
-            logger.info(f"[rewrite_query] START - query: {query}")
+        This merged node:
+        1. Analyzes if current search results are sufficient
+        2. If not sufficient, extracts relevant terms from search results
+        3. Outputs both reasoning and improved keywords in one step
 
-            prompt = f"""请改写以下用户查询信息，作为搜索 keywords。
+        Example: User searches "油猴 脚本", results contain "tampermonkey"
+        The LLM should extract "tampermonkey" as a new keyword.
+        """
+        query = state.get("rewritten_query") or state["query"]
+        results = state.get("search_results", [])
+        loop_count = state.get("loop_count", 0) + 1
+        logger.info(f"[think_and_rewrite] START - query: {query}, results_count: {len(results)}, loop_count: {loop_count}")
 
-output should be concise keywords that capture the essence of the query, suitable for searching a database of article titles. Use space to separate keywords.
+        try:
+            # Format search results with rich context
+            context = "\n".join([
+                f"- 标题: {r['title']}\n  来源: {r['article_title']}\n  描述: {r['description']}"
+                for r in results
+            ])
 
-example:
-user query: "如何提升学习效率？"
-rewritten keywords: "提升 学习效率 方法 技巧"
+            logger.info(f"[think_and_rewrite] Calling LLM with context length: {len(context)} chars")
 
-user query: "为什么我的代码报错之前没有输出？"
-rewritten keywords: "代码 报错 没有 输出 原因"
-
-user query: {query}
-"""
-
-            messages = [
-                {"role": "system", "content": "You are a helpful assistant that rewrites user queries into search keywords."},
-                {"role": "user", "content": prompt}
-            ]
-            response = self.llm.invoke(messages)
-            state["rewritten_query"] = response.content.strip()
-            state["loop_count"] = state.get("loop_count", 0) + 1
-            logger.info(f"[rewrite_query] END - rewritten_query: {state['rewritten_query']}, loop_count: {state['loop_count']}")
-            return state
-
-        def search(state: RAGState) -> RAGState:
-            """Search for relevant content."""
-            query = state.get("rewritten_query") or state["query"]
-            logger.info(f"[search] START - query: {query}")
-            results = db_service.search(query, limit=settings.max_search_results)
-            state["search_results"] = results
-            logger.info(f"[search] END - found {len(results)} results")
-            return state
-
-        def think(state: RAGState) -> RAGState:
-            """Think about search results and decide if more info needed."""
-            query = state.get("rewritten_query") or state["query"]
-            results = state.get("search_results", [])
-            loop_count = state.get("loop_count", 0)
-            logger.info(f"[think] START - query: {query}, results_count: {len(results)}, loop_count: {loop_count}")
-
-            try:
-                # Format search results
-                context = "\n".join([
-                    f"- {r['title']} ({r['article_title']}): {r['description']}"
-                    for r in results
-                ])
-
-                logger.info(f"[think] Calling LLM with context length: {len(context)} chars")
-
-                prompt = f"""用户查询: {query}
+            prompt = f"""用户查询: {query}
 
 搜索结果:
 {context}
 
 请分析:
 1. 这些结果是否足够回答用户查询?
-2. 如果不够，需要如何改进搜索keywords?
+2. 如果不够，请从搜索结果的标题和描述中提取相关关键词，结合用户查询生成改进的搜索keywords
+
+重要提示:
+- 优先使用搜索结果中出现的专业术语、英文名、同义词
+- 例如: 用户搜"油猴 脚本"，结果中包含"Tampermonkey"，则应提取"Tampermonkey"作为关键词
+- 例如: 用户搜"前端框架"，结果中包含"React Vue Angular"，则应提取这些框架名
 
 返回格式:
 DECISION: [CONTINUE/ANSWER]
 REASONING: [你的分析过程]
-IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
+IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords，应包含从搜索结果提取的相关术语]"""
 
-                logger.info(f"[think] Invoking LLM...")
+            logger.info(f"[think_and_rewrite] Invoking LLM...")
 
-                # Use messages format for LangChain ChatOpenAI
-                messages = [
-                    {"role": "system", "content": "You are a helpful assistant that analyzes search results and decides if more information is needed."},
-                    {"role": "user", "content": prompt}
-                ]
-                response = self.llm.invoke(messages)
+            messages = [
+                {"role": "system", "content": "You are a helpful assistant that analyzes search results and improves search queries by extracting relevant terms from results."},
+                {"role": "user", "content": prompt}
+            ]
+            response = self.llm.invoke(messages)
 
-                content = response.content.strip()
-                logger.info(f"[think] LLM response received, length: {len(content)} chars")
+            content = response.content.strip()
+            logger.info(f"[think_and_rewrite] LLM response received, length: {len(content)} chars")
 
-                # Parse response
+            # Parse response
+            decision = "ANSWER"
+            improved_query = query
+            reasoning = ""
+
+            for line in content.split("\n"):
+                if line.startswith("DECISION:"):
+                    decision = line.split(":", 1)[1].strip().upper()
+                elif line.startswith("REASONING:"):
+                    reasoning = line.split(":", 1)[1].strip()
+                elif line.startswith("IMPROVED_QUERY:"):
+                    improved_query = line.split(":", 1)[1].strip()
+
+            state["thinking"] = reasoning
+            state["decision"] = decision
+            state["rewritten_query"] = improved_query
+            state["loop_count"] = loop_count
+
+            # Check loop limit
+            if loop_count >= settings.max_thinking_loops:
                 decision = "ANSWER"
-                improved_query = query
-                reasoning = ""
+                state["decision"] = decision
 
-                for line in content.split("\n"):
-                    if line.startswith("DECISION:"):
-                        decision = line.split(":", 1)[1].strip().upper()
-                    elif line.startswith("REASONING:"):
-                        reasoning = line.split(":", 1)[1].strip()
-                    elif line.startswith("IMPROVED_QUERY:"):
-                        improved_query = line.split(":", 1)[1].strip()
+            logger.info(f"[think_and_rewrite] END - decision: {decision}, improved_query: {improved_query}")
+            return state
+        except Exception as e:
+            logger.error(f"[think_and_rewrite] ERROR: {e}", exc_info=True)
+            state["thinking"] = f"思考过程出错: {str(e)}"
+            state["decision"] = "ANSWER"
+            state["loop_count"] = loop_count
+            return state
 
-                state["thinking"] = reasoning
-                state["decision"] = decision  # Store decision for should_continue to use
-                state["rewritten_query"] = improved_query
+    def search_node(self, state: RAGState) -> RAGState:
+        """Search for relevant content."""
+        query = state.get("rewritten_query") or state["query"]
+        logger.info(f"[search] START - query: {query}")
+        results = db_service.search(query, limit=settings.max_search_results)
+        state["search_results"] = results
+        logger.info(f"[search] END - found {len(results)} results")
+        return state
 
-                # Check loop limit
-                if loop_count >= settings.max_thinking_loops:
-                    decision = "ANSWER"
-                    state["decision"] = decision
+    def generate_node(self, state: RAGState) -> RAGState:
+        """Generate final answer based on all search results."""
+        query = state["query"]
+        results = state.get("search_results", [])
+        logger.info(f"[generate] START - query: {query}, results_count: {len(results)}")
 
-                logger.info(f"[think] END - decision: {decision}, improved_query: {improved_query}")
-                return state
-            except Exception as e:
-                logger.error(f"[think] ERROR at line {e.__traceback__.tb_lineno if hasattr(e, '__traceback__') else 'unknown'}: {e}", exc_info=True)
-                logger.error(f"[think] ERROR type: {type(e).__name__}, args: {e.args}")
-                state["thinking"] = f"思考过程出错: {str(e)}"
-                state["rewritten_query"] = query
-                # On error, default to answering with current results
-                return state
-
-        def generate_answer(state: RAGState) -> RAGState:
-            """Generate final answer based on all search results."""
-            query = state["query"]
-            results = state.get("search_results", [])
-            logger.info(f"[generate_answer] START - query: {query}, results_count: {len(results)}")
-
-            try:
-                # Build comprehensive context
-                context_parts = []
-                for r in results:
-                    context_parts.append(f"""
+        try:
+            # Build comprehensive context
+            context_parts = []
+            for r in results:
+                context_parts.append(f"""
 标题: {r['title']}
 来源: {r['article_title']} - {r['article_link']}
 描述: {r['description']}
 链接: {r['link']}
 """)
 
-                context = "\n".join(context_parts)
+            context = "\n".join(context_parts)
 
-                user_message = f"""基于以下搜索结果回答用户查询。
+            user_message = f"""基于以下搜索结果回答用户查询。
 
 用户查询: {query}
 
@@ -171,68 +151,75 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
 
 请提供准确、有帮助的答案。如果搜索结果不足以回答问题，请诚实地说明。"""
 
-                # Use messages format
-                messages = [
-                    {"role": "system", "content": "You are a helpful assistant that answers questions based on search results from technology weekly articles."},
-                    {"role": "user", "content": user_message}
-                ]
-                response = self.llm.invoke(messages)
-                state["answer"] = response.content.strip()
+            # Use messages format
+            messages = [
+                {"role": "system", "content": "You are a helpful assistant that answers questions based on search results from technology weekly articles."},
+                {"role": "user", "content": user_message}
+            ]
+            response = self.llm.invoke(messages)
+            state["answer"] = response.content.strip()
 
-                # Update history
-                if "history" not in state:
-                    state["history"] = []
-                state["history"].append({
-                    "query": query,
-                    "rewritten_query": state.get("rewritten_query", ""),
-                    "thinking": state.get("thinking", ""),
-                    "answer": state["answer"],
-                    "sources": [r["link"] for r in results]
-                })
+            # Update history
+            if "history" not in state:
+                state["history"] = []
+            state["history"].append({
+                "query": query,
+                "rewritten_query": state.get("rewritten_query", ""),
+                "thinking": state.get("thinking", ""),
+                "answer": state["answer"],
+                "sources": [r["link"] for r in results]
+            })
 
-                logger.info(f"[generate_answer] END - answer generated successfully")
-                return state
-            except Exception as e:
-                logger.error(f"[generate_answer] ERROR: {e}", exc_info=True)
-                state["answer"] = f"生成回答时出错: {str(e)}\n\n搜索结果:\n" + "\n".join([
-                    f"- {r['title']}: {r['description']}"
-                    for r in results[:5]
-                ])
-                return state
+            logger.info(f"[generate] END - answer generated successfully")
+            return state
+        except Exception as e:
+            logger.error(f"[generate] ERROR: {e}", exc_info=True)
+            state["answer"] = f"生成回答时出错: {str(e)}\n\n搜索结果:\n" + "\n".join([
+                f"- {r['title']}: {r['description']}"
+                for r in results[:5]
+            ])
+            return state
 
-        def should_continue(state: RAGState) -> str:
-            """Decide whether to rewrite, continue searching or generate answer."""
-            decision = state.get("decision", "ANSWER")
-            loop_count = state.get("loop_count", 0)
+    def should_continue(self, state: RAGState) -> str:
+        """Decide whether to continue searching or generate answer."""
+        decision = state.get("decision", "ANSWER")
+        loop_count = state.get("loop_count", 0)
 
-            if loop_count >= settings.max_thinking_loops:
-                return "generate"
-
-            if decision == "CONTINUE":
-                return "rewrite"  # Go to rewrite instead of directly to search
+        if loop_count >= settings.max_thinking_loops:
             return "generate"
 
+        if decision == "CONTINUE":
+            return "search"  # Go to search with improved query
+        return "generate"
+
+    def _build_graph(self) -> StateGraph:
+        """Build RAG workflow graph using LangGraph."""
         # Build graph
         workflow = StateGraph(RAGState)
 
-        workflow.add_node("rewrite", rewrite_query)
-        workflow.add_node("search", search)
-        workflow.add_node("think", think)
-        workflow.add_node("generate", generate_answer)
+        workflow.add_node("search", self.search_node)
+        workflow.add_node("think_and_rewrite", self.think_and_rewrite)
+        workflow.add_node("generate", self.generate_node)
 
         workflow.set_entry_point("search")
-        workflow.add_edge("search", "think")
-
         workflow.add_conditional_edges(
-            "think",
-            should_continue,
+            "search",
+            lambda state: "think_and_rewrite" if state.get("search_results") else "generate",
             {
-                "rewrite": "rewrite",
+                "think_and_rewrite": "think_and_rewrite",
                 "generate": "generate"
             }
         )
 
-        workflow.add_edge("rewrite", "search")
+        workflow.add_conditional_edges(
+            "think_and_rewrite",
+            self.should_continue,
+            {
+                "search": "search",
+                "generate": "generate"
+            }
+        )
+
         workflow.add_edge("generate", END)
 
         return workflow.compile()
@@ -285,8 +272,7 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
 
         Yields events as they happen during the RAG workflow:
         - search_start, search_complete
-        - think_complete
-        - rewrite_complete
+        - think_complete (merged think and rewrite)
         - answer_complete
         - error (if something goes wrong)
         """
@@ -323,8 +309,9 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
                     }
                 }
 
+                # Use merged think_and_rewrite prompt
                 context = "\n".join([
-                    f"- {r['title']} ({r['article_title']}): {r['description']}"
+                    f"- 标题: {r['title']}\n  来源: {r['article_title']}\n  描述: {r['description']}"
                     for r in results
                 ])
 
@@ -335,15 +322,20 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
 
 请分析:
 1. 这些结果是否足够回答用户查询?
-2. 如果不够，需要如何改进搜索keywords?
+2. 如果不够，请从搜索结果的标题和描述中提取相关关键词，结合用户查询生成改进的搜索keywords
+
+重要提示:
+- 优先使用搜索结果中出现的专业术语、英文名、同义词
+- 例如: 用户搜"油猴 脚本"，结果中包含"Tampermonkey"，则应提取"Tampermonkey"作为关键词
+- 例如: 用户搜"前端框架"，结果中包含"React Vue Angular"，则应提取这些框架名
 
 返回格式:
 DECISION: [CONTINUE/ANSWER]
 REASONING: [你的分析过程]
-IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
+IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords，应包含从搜索结果提取的相关术语]"""
 
                 messages = [
-                    {"role": "system", "content": "You are a helpful assistant that analyzes search results and decides if more information is needed."},
+                    {"role": "system", "content": "You are a helpful assistant that analyzes search results and improves search queries by extracting relevant terms from results."},
                     {"role": "user", "content": think_prompt}
                 ]
                 response = self.llm.invoke(messages)
@@ -366,20 +358,13 @@ IMPROVED_QUERY: [如果需要继续，提供改进的查询keywords]"""
                     "data": {
                         "iteration": loop_count,
                         "reasoning": reasoning,
-                        "decision": decision
+                        "decision": decision,
+                        "improved_query": improved_query if decision == "CONTINUE" else ""
                     }
                 }
 
                 if decision == "ANSWER" or loop_count >= settings.max_thinking_loops:
                     break
-
-                yield {
-                    "type": "rewrite_complete",
-                    "data": {
-                        "iteration": loop_count,
-                        "new_query": improved_query
-                    }
-                }
 
                 current_query = improved_query
 
