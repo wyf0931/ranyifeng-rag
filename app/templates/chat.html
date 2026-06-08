@@ -421,23 +421,22 @@
                             this.timeline.push({
                                 type: 'search',
                                 status: 'start',
+                                iteration: data.iteration || 1,
                                 query: data.query,
                                 timestamp
                             });
                             break;
 
                         case 'search_complete':
-                            // Create a new search event for each iteration
-                            this.timeline.push({
-                                type: 'search',
-                                status: 'complete',
-                                iteration: data.iteration,
-                                resultsCount: data.results_count,
-                                tokenizedQuery: data.tokenized_query,
-                                query: data.query,
-                                isOriginalSearch: data.is_original_search || false,
-                                timestamp
-                            });
+                            // Find and update the corresponding search_start event
+                            const lastSearch = this.timeline.findLast(t => t.type === 'search' && t.status === 'start');
+                            if (lastSearch) {
+                                lastSearch.status = 'complete';
+                                lastSearch.resultsCount = data.results_count;
+                                lastSearch.tokenizedQuery = data.tokenized_query;
+                                lastSearch.query = data.query;
+                                lastSearch.isOriginalSearch = data.is_original_search || false;
+                            }
                             break;
 
                         case 'think_complete':
